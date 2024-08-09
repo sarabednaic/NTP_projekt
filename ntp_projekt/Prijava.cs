@@ -26,5 +26,10 @@ namespace ntp_projekt
         {
 
         }
+
+        private void PrijavaNaslovLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

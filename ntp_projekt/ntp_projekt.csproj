@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BrisanjeProjekta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrisanjeProjekta.Designer.cs">
+      <DependentUpon>BrisanjeProjekta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prijava.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BrisanjeProjekta.resx">
+      <DependentUpon>BrisanjeProjekta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Prijava.resx">
       <DependentUpon>Prijava.cs</DependentUpon>
     </EmbeddedResource>
