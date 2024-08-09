@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ntp_projekt
 {
-    public partial class Form1 : Form
+    public partial class BrisanjeProjekta : Form
     {
-        public Form1()
+        public BrisanjeProjekta()
         {
             InitializeComponent();
         }
@@ -45,6 +45,11 @@ namespace ntp_projekt
         private void button2_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void BrisanjeProjektaUserButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
