@@ -52,6 +52,18 @@
     <Compile Include="Deaktivacija_racuna.Designer.cs">
       <DependentUpon>Deaktivacija_racuna.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dodaj_projekt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodaj_projekt.Designer.cs">
+      <DependentUpon>Dodaj_projekt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dodaj_zadatak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodaj_zadatak.Designer.cs">
+      <DependentUpon>Dodaj_zadatak.cs</DependentUpon>
+    </Compile>
     <Compile Include="Postavke.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +86,12 @@
     </Compile>
     <EmbeddedResource Include="Deaktivacija_racuna.resx">
       <DependentUpon>Deaktivacija_racuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodaj_projekt.resx">
+      <DependentUpon>Dodaj_projekt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodaj_zadatak.resx">
+      <DependentUpon>Dodaj_zadatak.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Postavke.resx">
       <DependentUpon>Postavke.cs</DependentUpon>
