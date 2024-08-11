@@ -75,7 +75,7 @@
     </Compile>
     <Compile Include="PopisZadataka.Designer.cs">
       <DependentUpon>PopisZadataka.cs</DependentUpon>
-
+	</Compile>
     <Compile Include="Deaktivacija_racuna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,7 +136,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PopisZadataka.resx">
       <DependentUpon>PopisZadataka.cs</DependentUpon>
-      
+	</EmbeddedResource>
     <Compile Include="Registracija.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,7 +174,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UrediZadatak.resx">
       <DependentUpon>UrediZadatak.cs</DependentUpon>
-
+	</EmbeddedResource>
     <EmbeddedResource Include="Registracija.resx">
       <DependentUpon>Registracija.cs</DependentUpon>
 
