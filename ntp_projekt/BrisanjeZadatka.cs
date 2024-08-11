@@ -26,5 +26,15 @@ namespace ntp_projekt
         {
 
         }
+
+        private void BrisanjeZadatkaArrowButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BrisanjeZadatkaPFPButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrisanjeZadatka));
             System.Windows.Forms.Label BriasnjeZadatkaNaslovLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrisanjeZadatka));
             this.BrisanjeZadatkaHeaderButton = new System.Windows.Forms.Button();
             this.BrisanjeZadatkaArrowButton = new System.Windows.Forms.Button();
             this.BrisanjeZadatkaUserButton = new System.Windows.Forms.Button();
@@ -39,6 +39,19 @@
             this.BrisanjeZadatkaIzbrisiProjektButton = new System.Windows.Forms.Button();
             BriasnjeZadatkaNaslovLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // BriasnjeZadatkaNaslovLabel
+            // 
+            BriasnjeZadatkaNaslovLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            BriasnjeZadatkaNaslovLabel.Font = new System.Drawing.Font("Leelawadee UI", 40F, System.Drawing.FontStyle.Bold);
+            BriasnjeZadatkaNaslovLabel.Location = new System.Drawing.Point(252, 220);
+            BriasnjeZadatkaNaslovLabel.MaximumSize = new System.Drawing.Size(911, 142);
+            BriasnjeZadatkaNaslovLabel.Name = "BriasnjeZadatkaNaslovLabel";
+            BriasnjeZadatkaNaslovLabel.Size = new System.Drawing.Size(911, 142);
+            BriasnjeZadatkaNaslovLabel.TabIndex = 10;
+            BriasnjeZadatkaNaslovLabel.Text = "Brisanje Zadatka";
+            BriasnjeZadatkaNaslovLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            BriasnjeZadatkaNaslovLabel.Click += new System.EventHandler(this.BriasnjeProjektaNaslovLabel_Click);
             // 
             // BrisanjeZadatkaHeaderButton
             // 
@@ -50,16 +63,18 @@
             this.BrisanjeZadatkaHeaderButton.Name = "BrisanjeZadatkaHeaderButton";
             this.BrisanjeZadatkaHeaderButton.Size = new System.Drawing.Size(1414, 117);
             this.BrisanjeZadatkaHeaderButton.TabIndex = 5;
+            this.BrisanjeZadatkaHeaderButton.UseCompatibleTextRendering = true;
             this.BrisanjeZadatkaHeaderButton.UseVisualStyleBackColor = true;
             // 
             // BrisanjeZadatkaArrowButton
             // 
             this.BrisanjeZadatkaArrowButton.Image = ((System.Drawing.Image)(resources.GetObject("BrisanjeZadatkaArrowButton.Image")));
-            this.BrisanjeZadatkaArrowButton.Location = new System.Drawing.Point(43, 0);
+            this.BrisanjeZadatkaArrowButton.Location = new System.Drawing.Point(31, 8);
             this.BrisanjeZadatkaArrowButton.Name = "BrisanjeZadatkaArrowButton";
-            this.BrisanjeZadatkaArrowButton.Size = new System.Drawing.Size(118, 117);
+            this.BrisanjeZadatkaArrowButton.Size = new System.Drawing.Size(118, 100);
             this.BrisanjeZadatkaArrowButton.TabIndex = 6;
             this.BrisanjeZadatkaArrowButton.UseVisualStyleBackColor = true;
+            this.BrisanjeZadatkaArrowButton.Click += new System.EventHandler(this.BrisanjeZadatkaArrowButton_Click);
             // 
             // BrisanjeZadatkaUserButton
             // 
@@ -76,23 +91,12 @@
             // 
             this.BrisanjeZadatkaPFPButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BrisanjeZadatkaPFPButton.Image = ((System.Drawing.Image)(resources.GetObject("BrisanjeZadatkaPFPButton.Image")));
-            this.BrisanjeZadatkaPFPButton.Location = new System.Drawing.Point(1314, 12);
+            this.BrisanjeZadatkaPFPButton.Location = new System.Drawing.Point(1296, 12);
             this.BrisanjeZadatkaPFPButton.Name = "BrisanjeZadatkaPFPButton";
             this.BrisanjeZadatkaPFPButton.Size = new System.Drawing.Size(88, 88);
             this.BrisanjeZadatkaPFPButton.TabIndex = 9;
             this.BrisanjeZadatkaPFPButton.UseVisualStyleBackColor = true;
-            // 
-            // BriasnjeZadatkaNaslovLabel
-            // 
-            BriasnjeZadatkaNaslovLabel.Font = new System.Drawing.Font("Leelawadee UI", 40F, System.Drawing.FontStyle.Bold);
-            BriasnjeZadatkaNaslovLabel.Location = new System.Drawing.Point(252, 220);
-            BriasnjeZadatkaNaslovLabel.MaximumSize = new System.Drawing.Size(911, 142);
-            BriasnjeZadatkaNaslovLabel.Name = "BriasnjeZadatkaNaslovLabel";
-            BriasnjeZadatkaNaslovLabel.Size = new System.Drawing.Size(911, 142);
-            BriasnjeZadatkaNaslovLabel.TabIndex = 10;
-            BriasnjeZadatkaNaslovLabel.Text = "Brisanje Zadatka";
-            BriasnjeZadatkaNaslovLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            BriasnjeZadatkaNaslovLabel.Click += new System.EventHandler(this.BriasnjeProjektaNaslovLabel_Click);
+            this.BrisanjeZadatkaPFPButton.Click += new System.EventHandler(this.BrisanjeZadatkaPFPButton_Click);
             // 
             // BrisanjeZadatkaLozinkaTextBox
             // 
@@ -129,7 +133,10 @@
             // 
             // BrisanjeZadatka
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1414, 953);
             this.Controls.Add(this.BrisanjeZadatkaIzbrisiProjektButton);
             this.Controls.Add(this.BrisanjeZadatkaPonovnoLozinkaTextBox);
@@ -139,9 +146,12 @@
             this.Controls.Add(this.BrisanjeZadatkaUserButton);
             this.Controls.Add(this.BrisanjeZadatkaArrowButton);
             this.Controls.Add(this.BrisanjeZadatkaHeaderButton);
-            this.MaximumSize = new System.Drawing.Size(1440, 1024);
+            this.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.MinimumSize = new System.Drawing.Size(1440, 1024);
             this.Name = "BrisanjeZadatka";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

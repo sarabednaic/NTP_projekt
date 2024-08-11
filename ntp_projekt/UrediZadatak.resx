@@ -117,14 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="BriasnjeZadatkaNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
+  <metadata name="UrediZadatakHeaderButton.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="UrediProjektArrowButton.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="BrisanjeZadatkaArrowButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="UrediProjektArrowButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEMAAAAmCAYAAACf8yaaAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAAcBJREFUaEPt2T1LXEEUh/FtYqFNxMbGFyLaqKUgRkGjFoKNWgkWWiRNxMokWFhb
+        DQAACw0B7QfALAAAAcBJREFUaEPt2T1LXEEUh/FtYqFNxMbGFyLaqKUgRkGjFoKNWgkWWiRNxMokWFhb
         aL6AfoR0KSxU0C9goY2giIIINr4gBgVF85ziwjL8YVfYexnO3Qd+9TBnYXdmtlAt+4bxFyfYwxxy2SLe
         hDXkqu9Qg0j0IRfN4BVqCIkluG8Mz1ADKLYC133GP6jNh6bhtm7cQm08dI4GuKwdV1AbD12jEy77hAuo
         jYfuYecOl7XiDGrjoSd8gctaUO4gXjAJlzXhAGrjITtvLMBljTiG2rgyD5fV4BBq08o67HslK834gNSr
@@ -135,10 +138,10 @@
         YII=
 </value>
   </data>
-  <data name="BrisanjeZadatkaPFPButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="UrediZadatakPFPButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFIAAABSCAYAAADHLIObAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAACIlJREFUeF7lnWtW4koQgFnCLMGlzA4uO7jsYGYHzg5mdsAs4I5ASAghYHjIQx7y
+        DQAACw0B7QfALAAACIlJREFUeF7lnWtW4koQgFnCLMGlzA4uO7jsYGYHzg5mdsAs4I5ASAghYHjIQx7y
         GBBQJIIPlATza8787NsV4lGxFJF087DO+Y4/CElXUd1V3V0dPasWQsjOnz9/vIPB4Eut0fTnC0Utncvp
         CS2ppw+yRMtkyH46Q5L0r5bOWKlMVk8dZLVK43ege3r67da89cI9nNt9HKFKf7q8vPRVaw3/Ua1mJbQU
         CYkSCYTFdxONJ8h+Kq2ns1l/s9n817Ks7TQsGG80Gvk6JydaIpkkwSUNNw85Fifgte1u91+nCZst1DM+
@@ -177,4 +180,7 @@
         1LCmF7ofNUSAGoR67YTmdRMk2YeswM4MNDAaveYLfHf1/8jC4/kfXubLqHOhcNcAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="UrediZadatakNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
 </root>
