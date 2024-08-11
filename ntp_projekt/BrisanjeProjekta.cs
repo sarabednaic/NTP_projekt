@@ -51,5 +51,10 @@ namespace ntp_projekt
         {
 
         }
+
+        private void DodajProjektProfilPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

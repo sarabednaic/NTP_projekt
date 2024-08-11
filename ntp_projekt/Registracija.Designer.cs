@@ -48,7 +48,7 @@
             // RegistracijaButton
             // 
             RegistracijaButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            RegistracijaButton.Location = new System.Drawing.Point(855, 728);
+            RegistracijaButton.Location = new System.Drawing.Point(855, 762);
             RegistracijaButton.Name = "RegistracijaButton";
             RegistracijaButton.Size = new System.Drawing.Size(220, 60);
             RegistracijaButton.TabIndex = 8;
@@ -80,7 +80,7 @@
             // RegistracijaNaslovLabel
             // 
             RegistracijaNaslovLabel.Font = new System.Drawing.Font("Leelawadee UI", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            RegistracijaNaslovLabel.Location = new System.Drawing.Point(733, 173);
+            RegistracijaNaslovLabel.Location = new System.Drawing.Point(733, 144);
             RegistracijaNaslovLabel.Name = "RegistracijaNaslovLabel";
             RegistracijaNaslovLabel.Size = new System.Drawing.Size(486, 120);
             RegistracijaNaslovLabel.TabIndex = 5;
@@ -135,7 +135,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1418, 962);
+            this.ClientSize = new System.Drawing.Size(1898, 1024);
             this.Controls.Add(this.RegistracijaJezikComboBox);
             this.Controls.Add(textRegistracijaPonovoLozinkaTextBox);
             this.Controls.Add(RegistracijaPrezimeTextBox);
@@ -150,6 +150,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.UseWaitCursor = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Registracija_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

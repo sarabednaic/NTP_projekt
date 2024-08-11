@@ -42,7 +42,7 @@
             // PrijavaNaslovLabel
             // 
             PrijavaNaslovLabel.Font = new System.Drawing.Font("Leelawadee UI", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            PrijavaNaslovLabel.Location = new System.Drawing.Point(528, 126);
+            PrijavaNaslovLabel.Location = new System.Drawing.Point(523, 126);
             PrijavaNaslovLabel.Name = "PrijavaNaslovLabel";
             PrijavaNaslovLabel.Size = new System.Drawing.Size(309, 120);
             PrijavaNaslovLabel.TabIndex = 0;
@@ -55,7 +55,7 @@
             PrijavaKorisnickoImeTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             PrijavaKorisnickoImeTextBox.Location = new System.Drawing.Point(385, 284);
             PrijavaKorisnickoImeTextBox.Name = "PrijavaKorisnickoImeTextBox";
-            PrijavaKorisnickoImeTextBox.Size = new System.Drawing.Size(452, 31);
+            PrijavaKorisnickoImeTextBox.Size = new System.Drawing.Size(452, 26);
             PrijavaKorisnickoImeTextBox.TabIndex = 1;
             PrijavaKorisnickoImeTextBox.Text = "korisničko ime";
             // 
@@ -64,7 +64,7 @@
             PrijavaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             PrijavaLozinkaTextBox.Location = new System.Drawing.Point(385, 354);
             PrijavaLozinkaTextBox.Name = "PrijavaLozinkaTextBox";
-            PrijavaLozinkaTextBox.Size = new System.Drawing.Size(452, 31);
+            PrijavaLozinkaTextBox.Size = new System.Drawing.Size(452, 26);
             PrijavaLozinkaTextBox.TabIndex = 2;
             PrijavaLozinkaTextBox.Text = "lozinka";
             PrijavaLozinkaTextBox.TextChanged += new System.EventHandler(this.PrijavaLozinkaTextBox_TextChanged);
@@ -85,7 +85,7 @@
             this.PrijavaRegistracijaLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.PrijavaRegistracijaLinkLabel.Location = new System.Drawing.Point(542, 513);
             this.PrijavaRegistracijaLinkLabel.Name = "PrijavaRegistracijaLinkLabel";
-            this.PrijavaRegistracijaLinkLabel.Size = new System.Drawing.Size(314, 25);
+            this.PrijavaRegistracijaLinkLabel.Size = new System.Drawing.Size(232, 20);
             this.PrijavaRegistracijaLinkLabel.TabIndex = 4;
             this.PrijavaRegistracijaLinkLabel.TabStop = true;
             this.PrijavaRegistracijaLinkLabel.Text = "Nemate račun? Registrirajte se!";

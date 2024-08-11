@@ -34,9 +34,9 @@
             System.Windows.Forms.Label DeaktivacijaNaslovLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Deaktivacija_racuna));
             this.DeaktivacijaProfilPanel = new System.Windows.Forms.Panel();
-            this.DeaktivacijaNatragButton = new System.Windows.Forms.Button();
             this.DeaktivacijaProfilPictureBox = new System.Windows.Forms.PictureBox();
             this.DeaktivacijaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.DeaktivacijaNatragButton = new System.Windows.Forms.Button();
             DeaktivacijaButton = new System.Windows.Forms.Button();
             DeaktivacijaPonovnoLozinkaTextBox = new System.Windows.Forms.TextBox();
             DeaktivacijaLozinkaTextBox = new System.Windows.Forms.TextBox();
@@ -100,24 +100,15 @@
             this.DeaktivacijaProfilPanel.Size = new System.Drawing.Size(1920, 90);
             this.DeaktivacijaProfilPanel.TabIndex = 9;
             // 
-            // DeaktivacijaNatragButton
-            // 
-            this.DeaktivacijaNatragButton.BackColor = System.Drawing.Color.Transparent;
-            this.DeaktivacijaNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaNatragButton.BackgroundImage")));
-            this.DeaktivacijaNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.DeaktivacijaNatragButton.Location = new System.Drawing.Point(12, 10);
-            this.DeaktivacijaNatragButton.Name = "DeaktivacijaNatragButton";
-            this.DeaktivacijaNatragButton.Size = new System.Drawing.Size(64, 64);
-            this.DeaktivacijaNatragButton.TabIndex = 23;
-            this.DeaktivacijaNatragButton.UseVisualStyleBackColor = false;
-            // 
             // DeaktivacijaProfilPictureBox
             // 
+            this.DeaktivacijaProfilPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaProfilPictureBox.BackgroundImage")));
+            this.DeaktivacijaProfilPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DeaktivacijaProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaProfilPictureBox.Image")));
             this.DeaktivacijaProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaProfilPictureBox.InitialImage")));
-            this.DeaktivacijaProfilPictureBox.Location = new System.Drawing.Point(1828, 10);
+            this.DeaktivacijaProfilPictureBox.Location = new System.Drawing.Point(1822, 13);
             this.DeaktivacijaProfilPictureBox.Name = "DeaktivacijaProfilPictureBox";
-            this.DeaktivacijaProfilPictureBox.Size = new System.Drawing.Size(60, 60);
+            this.DeaktivacijaProfilPictureBox.Size = new System.Drawing.Size(65, 65);
             this.DeaktivacijaProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.DeaktivacijaProfilPictureBox.TabIndex = 22;
             this.DeaktivacijaProfilPictureBox.TabStop = false;
@@ -125,14 +116,25 @@
             // DeaktivacijaProfilLinkLabel
             // 
             this.DeaktivacijaProfilLinkLabel.AutoSize = true;
-            this.DeaktivacijaProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.DeaktivacijaProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.DeaktivacijaProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DeaktivacijaProfilLinkLabel.Location = new System.Drawing.Point(1679, 28);
+            this.DeaktivacijaProfilLinkLabel.Location = new System.Drawing.Point(1650, 31);
             this.DeaktivacijaProfilLinkLabel.Name = "DeaktivacijaProfilLinkLabel";
-            this.DeaktivacijaProfilLinkLabel.Size = new System.Drawing.Size(130, 25);
+            this.DeaktivacijaProfilLinkLabel.Size = new System.Drawing.Size(157, 29);
             this.DeaktivacijaProfilLinkLabel.TabIndex = 0;
             this.DeaktivacijaProfilLinkLabel.TabStop = true;
             this.DeaktivacijaProfilLinkLabel.Text = "Sara Bednaić";
+            // 
+            // DeaktivacijaNatragButton
+            // 
+            this.DeaktivacijaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.DeaktivacijaNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaNatragButton.BackgroundImage")));
+            this.DeaktivacijaNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DeaktivacijaNatragButton.Location = new System.Drawing.Point(12, 12);
+            this.DeaktivacijaNatragButton.Name = "DeaktivacijaNatragButton";
+            this.DeaktivacijaNatragButton.Size = new System.Drawing.Size(64, 64);
+            this.DeaktivacijaNatragButton.TabIndex = 23;
+            this.DeaktivacijaNatragButton.UseVisualStyleBackColor = false;
             // 
             // Deaktivacija_racuna
             // 

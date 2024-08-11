@@ -32,19 +32,19 @@
             System.Windows.Forms.Label DodajZadatakClanoviLabel;
             System.Windows.Forms.TextBox DodajZadatakNazivTextBox;
             System.Windows.Forms.Label DodajZadatakNaslovLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DodajZadatak));
             System.Windows.Forms.TextBox DodajZadatakOpisTextBox;
             System.Windows.Forms.TextBox DodajZadatakStatusTextBox;
             System.Windows.Forms.Label label1;
             System.Windows.Forms.Button DodajZadatakButton;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DodajZadatak));
             this.DodajZadatakClanoviListBox = new System.Windows.Forms.CheckedListBox();
             this.DodajZadatakProfilPanel = new System.Windows.Forms.Panel();
-            this.DodajZadatakNatragButton = new System.Windows.Forms.Button();
-            this.DodajZadatakProfilPictureBox = new System.Windows.Forms.PictureBox();
-            this.DodajZadatakProfilLinkLabel = new System.Windows.Forms.LinkLabel();
             this.DodajZadatakProjektcomboBox = new System.Windows.Forms.ComboBox();
             this.DodajZadatakDateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.DodajZadatakDateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.DodajZadatakProfilPictureBox = new System.Windows.Forms.PictureBox();
+            this.DodajZadatakNatragButton = new System.Windows.Forms.Button();
+            this.DodajZadatakProfilLinkLabel = new System.Windows.Forms.LinkLabel();
             DodajZadatakVrijemeLabel = new System.Windows.Forms.Label();
             DodajZadatakClanoviLabel = new System.Windows.Forms.Label();
             DodajZadatakNazivTextBox = new System.Windows.Forms.TextBox();
@@ -53,7 +53,6 @@
             DodajZadatakStatusTextBox = new System.Windows.Forms.TextBox();
             label1 = new System.Windows.Forms.Label();
             DodajZadatakButton = new System.Windows.Forms.Button();
-            this.DodajZadatakProfilPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DodajZadatakProfilPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,15 +82,6 @@
             DodajZadatakClanoviLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             DodajZadatakClanoviLabel.UseWaitCursor = true;
             // 
-            // DodajZadatakClanoviListBox
-            // 
-            this.DodajZadatakClanoviListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.DodajZadatakClanoviListBox.FormattingEnabled = true;
-            this.DodajZadatakClanoviListBox.Location = new System.Drawing.Point(631, 493);
-            this.DodajZadatakClanoviListBox.Name = "DodajZadatakClanoviListBox";
-            this.DodajZadatakClanoviListBox.Size = new System.Drawing.Size(715, 211);
-            this.DodajZadatakClanoviListBox.TabIndex = 30;
-            // 
             // DodajZadatakNazivTextBox
             // 
             DodajZadatakNazivTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
@@ -110,61 +100,6 @@
             DodajZadatakNaslovLabel.Size = new System.Drawing.Size(874, 120);
             DodajZadatakNaslovLabel.TabIndex = 27;
             DodajZadatakNaslovLabel.Text = "Dodaj novi projektni zadatak";
-            // 
-            // DodajZadatakProfilPanel
-            // 
-            this.DodajZadatakProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.DodajZadatakProfilPanel.Controls.Add(this.DodajZadatakNatragButton);
-            this.DodajZadatakProfilPanel.Controls.Add(this.DodajZadatakProfilPictureBox);
-            this.DodajZadatakProfilPanel.Controls.Add(this.DodajZadatakProfilLinkLabel);
-            this.DodajZadatakProfilPanel.Location = new System.Drawing.Point(0, 1);
-            this.DodajZadatakProfilPanel.Name = "DodajZadatakProfilPanel";
-            this.DodajZadatakProfilPanel.Size = new System.Drawing.Size(1920, 90);
-            this.DodajZadatakProfilPanel.TabIndex = 26;
-            // 
-            // DodajZadatakNatragButton
-            // 
-            this.DodajZadatakNatragButton.BackColor = System.Drawing.Color.Transparent;
-            this.DodajZadatakNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DodajZadatakNatragButton.BackgroundImage")));
-            this.DodajZadatakNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.DodajZadatakNatragButton.Location = new System.Drawing.Point(12, 10);
-            this.DodajZadatakNatragButton.Name = "DodajZadatakNatragButton";
-            this.DodajZadatakNatragButton.Size = new System.Drawing.Size(64, 64);
-            this.DodajZadatakNatragButton.TabIndex = 23;
-            this.DodajZadatakNatragButton.UseVisualStyleBackColor = false;
-            // 
-            // DodajZadatakProfilPictureBox
-            // 
-            this.DodajZadatakProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("DodajZadatakProfilPictureBox.Image")));
-            this.DodajZadatakProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("DodajZadatakProfilPictureBox.InitialImage")));
-            this.DodajZadatakProfilPictureBox.Location = new System.Drawing.Point(1828, 10);
-            this.DodajZadatakProfilPictureBox.Name = "DodajZadatakProfilPictureBox";
-            this.DodajZadatakProfilPictureBox.Size = new System.Drawing.Size(60, 60);
-            this.DodajZadatakProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.DodajZadatakProfilPictureBox.TabIndex = 22;
-            this.DodajZadatakProfilPictureBox.TabStop = false;
-            // 
-            // DodajZadatakProfilLinkLabel
-            // 
-            this.DodajZadatakProfilLinkLabel.AutoSize = true;
-            this.DodajZadatakProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DodajZadatakProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DodajZadatakProfilLinkLabel.Location = new System.Drawing.Point(1679, 28);
-            this.DodajZadatakProfilLinkLabel.Name = "DodajZadatakProfilLinkLabel";
-            this.DodajZadatakProfilLinkLabel.Size = new System.Drawing.Size(130, 25);
-            this.DodajZadatakProfilLinkLabel.TabIndex = 0;
-            this.DodajZadatakProfilLinkLabel.TabStop = true;
-            this.DodajZadatakProfilLinkLabel.Text = "Sara Bednaić";
-            // 
-            // DodajZadatakProjektcomboBox
-            // 
-            this.DodajZadatakProjektcomboBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.DodajZadatakProjektcomboBox.FormattingEnabled = true;
-            this.DodajZadatakProjektcomboBox.Location = new System.Drawing.Point(631, 297);
-            this.DodajZadatakProjektcomboBox.Name = "DodajZadatakProjektcomboBox";
-            this.DodajZadatakProjektcomboBox.Size = new System.Drawing.Size(715, 28);
-            this.DodajZadatakProjektcomboBox.TabIndex = 34;
-            this.DodajZadatakProjektcomboBox.Text = "dodijeli zadatak projektu";
             // 
             // DodajZadatakOpisTextBox
             // 
@@ -185,20 +120,6 @@
             DodajZadatakStatusTextBox.Size = new System.Drawing.Size(95, 26);
             DodajZadatakStatusTextBox.TabIndex = 36;
             DodajZadatakStatusTextBox.Text = "status";
-            // 
-            // DodajZadatakDateTimePicker1
-            // 
-            this.DodajZadatakDateTimePicker1.Location = new System.Drawing.Point(631, 779);
-            this.DodajZadatakDateTimePicker1.Name = "DodajZadatakDateTimePicker1";
-            this.DodajZadatakDateTimePicker1.Size = new System.Drawing.Size(200, 26);
-            this.DodajZadatakDateTimePicker1.TabIndex = 37;
-            // 
-            // DodajZadatakDateTimePicker2
-            // 
-            this.DodajZadatakDateTimePicker2.Location = new System.Drawing.Point(894, 779);
-            this.DodajZadatakDateTimePicker2.Name = "DodajZadatakDateTimePicker2";
-            this.DodajZadatakDateTimePicker2.Size = new System.Drawing.Size(200, 26);
-            this.DodajZadatakDateTimePicker2.TabIndex = 38;
             // 
             // label1
             // 
@@ -224,12 +145,93 @@
             DodajZadatakButton.Text = "Dodaj projektni zadatak";
             DodajZadatakButton.UseVisualStyleBackColor = false;
             // 
+            // DodajZadatakClanoviListBox
+            // 
+            this.DodajZadatakClanoviListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.DodajZadatakClanoviListBox.FormattingEnabled = true;
+            this.DodajZadatakClanoviListBox.Location = new System.Drawing.Point(631, 493);
+            this.DodajZadatakClanoviListBox.Name = "DodajZadatakClanoviListBox";
+            this.DodajZadatakClanoviListBox.Size = new System.Drawing.Size(715, 211);
+            this.DodajZadatakClanoviListBox.TabIndex = 30;
+            // 
+            // DodajZadatakProfilPanel
+            // 
+            this.DodajZadatakProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.DodajZadatakProfilPanel.Location = new System.Drawing.Point(0, 0);
+            this.DodajZadatakProfilPanel.Name = "DodajZadatakProfilPanel";
+            this.DodajZadatakProfilPanel.Size = new System.Drawing.Size(1920, 90);
+            this.DodajZadatakProfilPanel.TabIndex = 26;
+            // 
+            // DodajZadatakProjektcomboBox
+            // 
+            this.DodajZadatakProjektcomboBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.DodajZadatakProjektcomboBox.FormattingEnabled = true;
+            this.DodajZadatakProjektcomboBox.Location = new System.Drawing.Point(631, 297);
+            this.DodajZadatakProjektcomboBox.Name = "DodajZadatakProjektcomboBox";
+            this.DodajZadatakProjektcomboBox.Size = new System.Drawing.Size(715, 28);
+            this.DodajZadatakProjektcomboBox.TabIndex = 34;
+            this.DodajZadatakProjektcomboBox.Text = "dodijeli zadatak projektu";
+            // 
+            // DodajZadatakDateTimePicker1
+            // 
+            this.DodajZadatakDateTimePicker1.Location = new System.Drawing.Point(631, 779);
+            this.DodajZadatakDateTimePicker1.Name = "DodajZadatakDateTimePicker1";
+            this.DodajZadatakDateTimePicker1.Size = new System.Drawing.Size(200, 26);
+            this.DodajZadatakDateTimePicker1.TabIndex = 37;
+            // 
+            // DodajZadatakDateTimePicker2
+            // 
+            this.DodajZadatakDateTimePicker2.Location = new System.Drawing.Point(894, 779);
+            this.DodajZadatakDateTimePicker2.Name = "DodajZadatakDateTimePicker2";
+            this.DodajZadatakDateTimePicker2.Size = new System.Drawing.Size(200, 26);
+            this.DodajZadatakDateTimePicker2.TabIndex = 38;
+            // 
+            // DodajZadatakProfilPictureBox
+            // 
+            this.DodajZadatakProfilPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DodajZadatakProfilPictureBox.BackgroundImage")));
+            this.DodajZadatakProfilPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DodajZadatakProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("DodajZadatakProfilPictureBox.Image")));
+            this.DodajZadatakProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("DodajZadatakProfilPictureBox.InitialImage")));
+            this.DodajZadatakProfilPictureBox.Location = new System.Drawing.Point(1823, 13);
+            this.DodajZadatakProfilPictureBox.Name = "DodajZadatakProfilPictureBox";
+            this.DodajZadatakProfilPictureBox.Size = new System.Drawing.Size(65, 65);
+            this.DodajZadatakProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DodajZadatakProfilPictureBox.TabIndex = 43;
+            this.DodajZadatakProfilPictureBox.TabStop = false;
+            // 
+            // DodajZadatakNatragButton
+            // 
+            this.DodajZadatakNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.DodajZadatakNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DodajZadatakNatragButton.BackgroundImage")));
+            this.DodajZadatakNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DodajZadatakNatragButton.Location = new System.Drawing.Point(12, 12);
+            this.DodajZadatakNatragButton.Name = "DodajZadatakNatragButton";
+            this.DodajZadatakNatragButton.Size = new System.Drawing.Size(64, 64);
+            this.DodajZadatakNatragButton.TabIndex = 41;
+            this.DodajZadatakNatragButton.UseVisualStyleBackColor = false;
+            // 
+            // DodajZadatakProfilLinkLabel
+            // 
+            this.DodajZadatakProfilLinkLabel.AutoSize = true;
+            this.DodajZadatakProfilLinkLabel.BackColor = System.Drawing.Color.Transparent;
+            this.DodajZadatakProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.DodajZadatakProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DodajZadatakProfilLinkLabel.Location = new System.Drawing.Point(1651, 31);
+            this.DodajZadatakProfilLinkLabel.Name = "DodajZadatakProfilLinkLabel";
+            this.DodajZadatakProfilLinkLabel.Size = new System.Drawing.Size(157, 29);
+            this.DodajZadatakProfilLinkLabel.TabIndex = 42;
+            this.DodajZadatakProfilLinkLabel.TabStop = true;
+            this.DodajZadatakProfilLinkLabel.Text = "Sara Bednaić";
+            // 
             // DodajZadatak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1898, 1024);
+            this.Controls.Add(this.DodajZadatakProfilPictureBox);
+            this.Controls.Add(this.DodajZadatakNatragButton);
+            this.Controls.Add(this.DodajZadatakProfilLinkLabel);
             this.Controls.Add(DodajZadatakButton);
             this.Controls.Add(this.DodajZadatakDateTimePicker2);
             this.Controls.Add(this.DodajZadatakDateTimePicker1);
@@ -248,8 +250,6 @@
             this.Name = "DodajZadatak";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.DodajZadatakProfilPanel.ResumeLayout(false);
-            this.DodajZadatakProfilPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DodajZadatakProfilPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -259,11 +259,11 @@
         #endregion
         private System.Windows.Forms.CheckedListBox DodajZadatakClanoviListBox;
         private System.Windows.Forms.Panel DodajZadatakProfilPanel;
-        private System.Windows.Forms.Button DodajZadatakNatragButton;
-        private System.Windows.Forms.PictureBox DodajZadatakProfilPictureBox;
-        private System.Windows.Forms.LinkLabel DodajZadatakProfilLinkLabel;
         private System.Windows.Forms.ComboBox DodajZadatakProjektcomboBox;
         private System.Windows.Forms.DateTimePicker DodajZadatakDateTimePicker1;
         private System.Windows.Forms.DateTimePicker DodajZadatakDateTimePicker2;
+        private System.Windows.Forms.PictureBox DodajZadatakProfilPictureBox;
+        private System.Windows.Forms.Button DodajZadatakNatragButton;
+        private System.Windows.Forms.LinkLabel DodajZadatakProfilLinkLabel;
     }
 }

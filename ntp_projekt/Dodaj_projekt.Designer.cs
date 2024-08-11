@@ -28,73 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DodajProjekt));
             System.Windows.Forms.Label DodajProjektNaslovLabel;
             System.Windows.Forms.TextBox DodajProjektNazivTextBox;
             System.Windows.Forms.TextBox DodajProjektOpisTextBox;
             System.Windows.Forms.Button DodajProjektButton;
             System.Windows.Forms.Label DodajProjektClanoviLabel;
             System.Windows.Forms.Label DodajProjektOvlastiLabel;
-            this.DodajProjektProfilPanel = new System.Windows.Forms.Panel();
-            this.DodajProjektNatragButton = new System.Windows.Forms.Button();
-            this.DodajProjektProfilPictureBox = new System.Windows.Forms.PictureBox();
-            this.DodajProjektProfilLinkLabel = new System.Windows.Forms.LinkLabel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DodajProjekt));
             this.DodajProjektClanoviListBox = new System.Windows.Forms.CheckedListBox();
             this.DodajProjektOvlastiListBox = new System.Windows.Forms.CheckedListBox();
+            this.DodajProjektProfilLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.DodajProjektNatragButton = new System.Windows.Forms.Button();
+            this.DodajProjektProfilPictureBox = new System.Windows.Forms.PictureBox();
+            this.DodajProjektProfilPanel = new System.Windows.Forms.Panel();
             DodajProjektNaslovLabel = new System.Windows.Forms.Label();
             DodajProjektNazivTextBox = new System.Windows.Forms.TextBox();
             DodajProjektOpisTextBox = new System.Windows.Forms.TextBox();
             DodajProjektButton = new System.Windows.Forms.Button();
             DodajProjektClanoviLabel = new System.Windows.Forms.Label();
             DodajProjektOvlastiLabel = new System.Windows.Forms.Label();
-            this.DodajProjektProfilPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DodajProjektProfilPictureBox)).BeginInit();
+            this.DodajProjektProfilPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // DodajProjektProfilPanel
-            // 
-            this.DodajProjektProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.DodajProjektProfilPanel.Controls.Add(this.DodajProjektNatragButton);
-            this.DodajProjektProfilPanel.Controls.Add(this.DodajProjektProfilPictureBox);
-            this.DodajProjektProfilPanel.Controls.Add(this.DodajProjektProfilLinkLabel);
-            this.DodajProjektProfilPanel.Location = new System.Drawing.Point(-1, 0);
-            this.DodajProjektProfilPanel.Name = "DodajProjektProfilPanel";
-            this.DodajProjektProfilPanel.Size = new System.Drawing.Size(1920, 90);
-            this.DodajProjektProfilPanel.TabIndex = 10;
-            // 
-            // DodajProjektNatragButton
-            // 
-            this.DodajProjektNatragButton.BackColor = System.Drawing.Color.Transparent;
-            this.DodajProjektNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DodajProjektNatragButton.BackgroundImage")));
-            this.DodajProjektNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.DodajProjektNatragButton.Location = new System.Drawing.Point(12, 10);
-            this.DodajProjektNatragButton.Name = "DodajProjektNatragButton";
-            this.DodajProjektNatragButton.Size = new System.Drawing.Size(64, 64);
-            this.DodajProjektNatragButton.TabIndex = 23;
-            this.DodajProjektNatragButton.UseVisualStyleBackColor = false;
-            // 
-            // DodajProjektProfilPictureBox
-            // 
-            this.DodajProjektProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("DodajProjektProfilPictureBox.Image")));
-            this.DodajProjektProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("DodajProjektProfilPictureBox.InitialImage")));
-            this.DodajProjektProfilPictureBox.Location = new System.Drawing.Point(1828, 10);
-            this.DodajProjektProfilPictureBox.Name = "DodajProjektProfilPictureBox";
-            this.DodajProjektProfilPictureBox.Size = new System.Drawing.Size(60, 60);
-            this.DodajProjektProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.DodajProjektProfilPictureBox.TabIndex = 22;
-            this.DodajProjektProfilPictureBox.TabStop = false;
-            // 
-            // DodajProjektProfilLinkLabel
-            // 
-            this.DodajProjektProfilLinkLabel.AutoSize = true;
-            this.DodajProjektProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DodajProjektProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DodajProjektProfilLinkLabel.Location = new System.Drawing.Point(1679, 28);
-            this.DodajProjektProfilLinkLabel.Name = "DodajProjektProfilLinkLabel";
-            this.DodajProjektProfilLinkLabel.Size = new System.Drawing.Size(130, 25);
-            this.DodajProjektProfilLinkLabel.TabIndex = 0;
-            this.DodajProjektProfilLinkLabel.TabStop = true;
-            this.DodajProjektProfilLinkLabel.Text = "Sara Bednaić";
             // 
             // DodajProjektNaslovLabel
             // 
@@ -124,24 +79,6 @@
             DodajProjektOpisTextBox.Size = new System.Drawing.Size(715, 26);
             DodajProjektOpisTextBox.TabIndex = 13;
             DodajProjektOpisTextBox.Text = "opis projekta";
-            // 
-            // DodajProjektClanoviListBox
-            // 
-            this.DodajProjektClanoviListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.DodajProjektClanoviListBox.FormattingEnabled = true;
-            this.DodajProjektClanoviListBox.Location = new System.Drawing.Point(630, 430);
-            this.DodajProjektClanoviListBox.Name = "DodajProjektClanoviListBox";
-            this.DodajProjektClanoviListBox.Size = new System.Drawing.Size(715, 211);
-            this.DodajProjektClanoviListBox.TabIndex = 14;
-            // 
-            // DodajProjektOvlastiListBox
-            // 
-            this.DodajProjektOvlastiListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.DodajProjektOvlastiListBox.FormattingEnabled = true;
-            this.DodajProjektOvlastiListBox.Location = new System.Drawing.Point(630, 692);
-            this.DodajProjektOvlastiListBox.Name = "DodajProjektOvlastiListBox";
-            this.DodajProjektOvlastiListBox.Size = new System.Drawing.Size(715, 142);
-            this.DodajProjektOvlastiListBox.TabIndex = 15;
             // 
             // DodajProjektButton
             // 
@@ -179,10 +116,77 @@
             DodajProjektOvlastiLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             DodajProjektOvlastiLabel.UseWaitCursor = true;
             // 
+            // DodajProjektClanoviListBox
+            // 
+            this.DodajProjektClanoviListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.DodajProjektClanoviListBox.FormattingEnabled = true;
+            this.DodajProjektClanoviListBox.Location = new System.Drawing.Point(630, 430);
+            this.DodajProjektClanoviListBox.Name = "DodajProjektClanoviListBox";
+            this.DodajProjektClanoviListBox.Size = new System.Drawing.Size(715, 211);
+            this.DodajProjektClanoviListBox.TabIndex = 14;
+            // 
+            // DodajProjektOvlastiListBox
+            // 
+            this.DodajProjektOvlastiListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.DodajProjektOvlastiListBox.FormattingEnabled = true;
+            this.DodajProjektOvlastiListBox.Location = new System.Drawing.Point(630, 692);
+            this.DodajProjektOvlastiListBox.Name = "DodajProjektOvlastiListBox";
+            this.DodajProjektOvlastiListBox.Size = new System.Drawing.Size(715, 142);
+            this.DodajProjektOvlastiListBox.TabIndex = 15;
+            // 
+            // DodajProjektProfilLinkLabel
+            // 
+            this.DodajProjektProfilLinkLabel.AutoSize = true;
+            this.DodajProjektProfilLinkLabel.BackColor = System.Drawing.Color.Transparent;
+            this.DodajProjektProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.DodajProjektProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DodajProjektProfilLinkLabel.Location = new System.Drawing.Point(1651, 31);
+            this.DodajProjektProfilLinkLabel.Name = "DodajProjektProfilLinkLabel";
+            this.DodajProjektProfilLinkLabel.Size = new System.Drawing.Size(157, 29);
+            this.DodajProjektProfilLinkLabel.TabIndex = 26;
+            this.DodajProjektProfilLinkLabel.TabStop = true;
+            this.DodajProjektProfilLinkLabel.Text = "Sara Bednaić";
+            // 
+            // DodajProjektNatragButton
+            // 
+            this.DodajProjektNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.DodajProjektNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DodajProjektNatragButton.BackgroundImage")));
+            this.DodajProjektNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DodajProjektNatragButton.Location = new System.Drawing.Point(12, 12);
+            this.DodajProjektNatragButton.Name = "DodajProjektNatragButton";
+            this.DodajProjektNatragButton.Size = new System.Drawing.Size(64, 64);
+            this.DodajProjektNatragButton.TabIndex = 26;
+            this.DodajProjektNatragButton.UseVisualStyleBackColor = false;
+            // 
+            // DodajProjektProfilPictureBox
+            // 
+            this.DodajProjektProfilPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DodajProjektProfilPictureBox.BackgroundImage")));
+            this.DodajProjektProfilPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DodajProjektProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("DodajProjektProfilPictureBox.Image")));
+            this.DodajProjektProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("DodajProjektProfilPictureBox.InitialImage")));
+            this.DodajProjektProfilPictureBox.Location = new System.Drawing.Point(1823, 13);
+            this.DodajProjektProfilPictureBox.Name = "DodajProjektProfilPictureBox";
+            this.DodajProjektProfilPictureBox.Size = new System.Drawing.Size(65, 65);
+            this.DodajProjektProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DodajProjektProfilPictureBox.TabIndex = 27;
+            this.DodajProjektProfilPictureBox.TabStop = false;
+            // 
+            // DodajProjektProfilPanel
+            // 
+            this.DodajProjektProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.DodajProjektProfilPanel.Controls.Add(this.DodajProjektProfilPictureBox);
+            this.DodajProjektProfilPanel.Controls.Add(this.DodajProjektNatragButton);
+            this.DodajProjektProfilPanel.Controls.Add(this.DodajProjektProfilLinkLabel);
+            this.DodajProjektProfilPanel.Location = new System.Drawing.Point(0, 0);
+            this.DodajProjektProfilPanel.Name = "DodajProjektProfilPanel";
+            this.DodajProjektProfilPanel.Size = new System.Drawing.Size(1920, 90);
+            this.DodajProjektProfilPanel.TabIndex = 10;
+            // 
             // DodajProjekt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1898, 1024);
             this.Controls.Add(DodajProjektOvlastiLabel);
             this.Controls.Add(DodajProjektClanoviLabel);
@@ -198,21 +202,20 @@
             this.Name = "DodajProjekt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)(this.DodajProjektProfilPictureBox)).EndInit();
             this.DodajProjektProfilPanel.ResumeLayout(false);
             this.DodajProjektProfilPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DodajProjektProfilPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel DodajProjektProfilPanel;
-        private System.Windows.Forms.Button DodajProjektNatragButton;
-        private System.Windows.Forms.PictureBox DodajProjektProfilPictureBox;
-        private System.Windows.Forms.LinkLabel DodajProjektProfilLinkLabel;
         private System.Windows.Forms.CheckedListBox DodajProjektClanoviListBox;
         private System.Windows.Forms.CheckedListBox DodajProjektOvlastiListBox;
+        private System.Windows.Forms.LinkLabel DodajProjektProfilLinkLabel;
+        private System.Windows.Forms.Button DodajProjektNatragButton;
+        private System.Windows.Forms.PictureBox DodajProjektProfilPictureBox;
+        private System.Windows.Forms.Panel DodajProjektProfilPanel;
     }
 }

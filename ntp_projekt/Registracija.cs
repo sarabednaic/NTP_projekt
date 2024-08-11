@@ -16,5 +16,10 @@ namespace ntp_projekt
         {
             InitializeComponent();
         }
+
+        private void Registracija_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

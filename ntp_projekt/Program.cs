@@ -17,7 +17,7 @@ namespace ntp_projekt
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new Prijava());
+            Application.Run(new UrediZadatak());
 
             
 
