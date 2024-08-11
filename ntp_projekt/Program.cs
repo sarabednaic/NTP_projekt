@@ -16,7 +16,11 @@ namespace ntp_projekt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PopisZadataka());
+
+            Application.Run(new Prijava());
+
+            
+
         }
     }
 }

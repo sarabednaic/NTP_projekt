@@ -42,7 +42,7 @@
             // PrijavaNaslovLabel
             // 
             PrijavaNaslovLabel.Font = new System.Drawing.Font("Leelawadee UI", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            PrijavaNaslovLabel.Location = new System.Drawing.Point(552, 101);
+            PrijavaNaslovLabel.Location = new System.Drawing.Point(528, 126);
             PrijavaNaslovLabel.Name = "PrijavaNaslovLabel";
             PrijavaNaslovLabel.Size = new System.Drawing.Size(309, 120);
             PrijavaNaslovLabel.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             PrijavaKorisnickoImeTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             PrijavaKorisnickoImeTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            PrijavaKorisnickoImeTextBox.Location = new System.Drawing.Point(418, 260);
+            PrijavaKorisnickoImeTextBox.Location = new System.Drawing.Point(385, 284);
             PrijavaKorisnickoImeTextBox.Name = "PrijavaKorisnickoImeTextBox";
             PrijavaKorisnickoImeTextBox.Size = new System.Drawing.Size(452, 31);
             PrijavaKorisnickoImeTextBox.TabIndex = 1;
@@ -62,7 +62,7 @@
             // PrijavaLozinkaTextBox
             // 
             PrijavaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            PrijavaLozinkaTextBox.Location = new System.Drawing.Point(418, 330);
+            PrijavaLozinkaTextBox.Location = new System.Drawing.Point(385, 354);
             PrijavaLozinkaTextBox.Name = "PrijavaLozinkaTextBox";
             PrijavaLozinkaTextBox.Size = new System.Drawing.Size(452, 31);
             PrijavaLozinkaTextBox.TabIndex = 2;
@@ -72,7 +72,7 @@
             // PrijavaPrijavaButton
             // 
             PrijavaPrijavaButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            PrijavaPrijavaButton.Location = new System.Drawing.Point(539, 389);
+            PrijavaPrijavaButton.Location = new System.Drawing.Point(506, 413);
             PrijavaPrijavaButton.Name = "PrijavaPrijavaButton";
             PrijavaPrijavaButton.Size = new System.Drawing.Size(220, 60);
             PrijavaPrijavaButton.TabIndex = 3;
@@ -83,7 +83,7 @@
             // 
             this.PrijavaRegistracijaLinkLabel.AutoSize = true;
             this.PrijavaRegistracijaLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.PrijavaRegistracijaLinkLabel.Location = new System.Drawing.Point(576, 482);
+            this.PrijavaRegistracijaLinkLabel.Location = new System.Drawing.Point(542, 513);
             this.PrijavaRegistracijaLinkLabel.Name = "PrijavaRegistracijaLinkLabel";
             this.PrijavaRegistracijaLinkLabel.Size = new System.Drawing.Size(314, 25);
             this.PrijavaRegistracijaLinkLabel.TabIndex = 4;
@@ -94,7 +94,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1418, 968);
+            this.ClientSize = new System.Drawing.Size(1898, 1024);
             this.Controls.Add(this.PrijavaRegistracijaLinkLabel);
             this.Controls.Add(PrijavaPrijavaButton);
             this.Controls.Add(PrijavaLozinkaTextBox);

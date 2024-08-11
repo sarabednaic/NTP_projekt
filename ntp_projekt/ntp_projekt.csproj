@@ -75,6 +75,31 @@
     </Compile>
     <Compile Include="PopisZadataka.Designer.cs">
       <DependentUpon>PopisZadataka.cs</DependentUpon>
+
+    <Compile Include="Deaktivacija_racuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deaktivacija_racuna.Designer.cs">
+      <DependentUpon>Deaktivacija_racuna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dodaj_projekt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodaj_projekt.Designer.cs">
+      <DependentUpon>Dodaj_projekt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dodaj_zadatak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodaj_zadatak.Designer.cs">
+      <DependentUpon>Dodaj_zadatak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Postavke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Postavke.Designer.cs">
+      <DependentUpon>Postavke.cs</DependentUpon>
+
     </Compile>
     <Compile Include="Prijava.cs">
       <SubType>Form</SubType>
@@ -84,6 +109,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
     <Compile Include="UrediProjekt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +136,25 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PopisZadataka.resx">
       <DependentUpon>PopisZadataka.cs</DependentUpon>
+      
+    <Compile Include="Registracija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registracija.Designer.cs">
+      <DependentUpon>Registracija.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Deaktivacija_racuna.resx">
+      <DependentUpon>Deaktivacija_racuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodaj_projekt.resx">
+      <DependentUpon>Dodaj_projekt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodaj_zadatak.resx">
+      <DependentUpon>Dodaj_zadatak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Postavke.resx">
+      <DependentUpon>Postavke.cs</DependentUpon>
+      
     </EmbeddedResource>
     <EmbeddedResource Include="Prijava.resx">
       <DependentUpon>Prijava.cs</DependentUpon>
@@ -123,11 +168,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+
     <EmbeddedResource Include="UrediProjekt.resx">
       <DependentUpon>UrediProjekt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UrediZadatak.resx">
       <DependentUpon>UrediZadatak.cs</DependentUpon>
+
+    <EmbeddedResource Include="Registracija.resx">
+      <DependentUpon>Registracija.cs</DependentUpon>
+
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
