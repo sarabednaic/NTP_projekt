@@ -40,8 +40,8 @@
             System.Windows.Forms.Label PostavkeOstalePostavkeLabel;
             System.Windows.Forms.Label PostavkeJezikLabel;
             System.Windows.Forms.Label PostavkeFontLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Postavke));
             System.Windows.Forms.Button PostavkeOdjavaButton;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Postavke));
             this.PostavkeJezikComboBox = new System.Windows.Forms.ComboBox();
             this.PostavkeProfilnaPictureBox = new System.Windows.Forms.PictureBox();
             this.PostavkeNatragButton = new System.Windows.Forms.Button();
@@ -208,6 +208,18 @@
             PostavkeFontLabel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             PostavkeFontLabel.UseWaitCursor = true;
             // 
+            // PostavkeOdjavaButton
+            // 
+            PostavkeOdjavaButton.BackColor = System.Drawing.Color.Red;
+            PostavkeOdjavaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            PostavkeOdjavaButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            PostavkeOdjavaButton.Location = new System.Drawing.Point(842, 873);
+            PostavkeOdjavaButton.Name = "PostavkeOdjavaButton";
+            PostavkeOdjavaButton.Size = new System.Drawing.Size(220, 60);
+            PostavkeOdjavaButton.TabIndex = 26;
+            PostavkeOdjavaButton.Text = "Odjavi me";
+            PostavkeOdjavaButton.UseVisualStyleBackColor = false;
+            // 
             // PostavkeJezikComboBox
             // 
             this.PostavkeJezikComboBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
@@ -231,10 +243,10 @@
             // 
             // PostavkeNatragButton
             // 
-            this.PostavkeNatragButton.BackColor = System.Drawing.Color.Transparent;
+            this.PostavkeNatragButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PostavkeNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PostavkeNatragButton.BackgroundImage")));
-            this.PostavkeNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PostavkeNatragButton.Location = new System.Drawing.Point(60, 43);
+            this.PostavkeNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PostavkeNatragButton.Location = new System.Drawing.Point(12, 12);
             this.PostavkeNatragButton.Name = "PostavkeNatragButton";
             this.PostavkeNatragButton.Size = new System.Drawing.Size(64, 64);
             this.PostavkeNatragButton.TabIndex = 22;
@@ -292,18 +304,6 @@
             this.PostavkeFontButton1.Text = "aA";
             this.PostavkeFontButton1.UseVisualStyleBackColor = true;
             // 
-            // PostavkeOdjavaButton
-            // 
-            PostavkeOdjavaButton.BackColor = System.Drawing.Color.Red;
-            PostavkeOdjavaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            PostavkeOdjavaButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            PostavkeOdjavaButton.Location = new System.Drawing.Point(842, 873);
-            PostavkeOdjavaButton.Name = "PostavkeOdjavaButton";
-            PostavkeOdjavaButton.Size = new System.Drawing.Size(220, 60);
-            PostavkeOdjavaButton.TabIndex = 26;
-            PostavkeOdjavaButton.Text = "Odjavi me";
-            PostavkeOdjavaButton.UseVisualStyleBackColor = false;
-            // 
             // PostavkeDeaktivacijaLinkLabel
             // 
             this.PostavkeDeaktivacijaLinkLabel.AutoSize = true;
@@ -322,7 +322,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1898, 1050);
+            this.ClientSize = new System.Drawing.Size(1898, 1024);
             this.Controls.Add(this.PostavkeDeaktivacijaLinkLabel);
             this.Controls.Add(PostavkeOdjavaButton);
             this.Controls.Add(PostavkePromjenaButton);
@@ -334,7 +334,6 @@
             this.MinimumSize = new System.Drawing.Size(1440, 1018);
             this.Name = "Postavke";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Postavke";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.PostavkeProfilnaPictureBox)).EndInit();
             this.PostavkePanel.ResumeLayout(false);
