@@ -149,6 +149,7 @@
     <EmbeddedResource Include="PopisProjekta.resx">
       <DependentUpon>PopisProjekta.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="PopisZadataka.resx">
       <DependentUpon>PopisZadataka.cs</DependentUpon>
