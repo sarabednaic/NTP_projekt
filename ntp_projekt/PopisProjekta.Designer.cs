@@ -28,14 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Label PopisProjektaNaslovLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopisProjekta));
-            System.Windows.Forms.Label UrediZadatakNaslovLabel;
             this.PopisProjektaListDataGridView = new System.Windows.Forms.DataGridView();
-            this.PopisProjektaHeaderButton = new System.Windows.Forms.Button();
-            this.PopisProjektaUserButton = new System.Windows.Forms.Button();
-            this.PopisProjektaPFPButton = new System.Windows.Forms.Button();
-            this.PopisProjektaArrowButton = new System.Windows.Forms.Button();
-            this.PopisProjetkaAddButton = new System.Windows.Forms.Button();
+            this.PopisProjektaAddButton = new System.Windows.Forms.Button();
             this.PopisProjektaSortButton = new System.Windows.Forms.Button();
             this.PopisProjektaSearchRichTextBox = new System.Windows.Forms.RichTextBox();
             this.PopisProjektaSearchButton = new System.Windows.Forms.Button();
@@ -44,6 +40,8 @@
             this.PopisProjektaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
             PopisProjektaNaslovLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PopisProjektaListDataGridView)).BeginInit();
+            this.PopisProjektaPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PopisProjektaProfilPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // PopisProjektaNaslovLabel
@@ -61,6 +59,7 @@
             // PopisProjektaListDataGridView
             // 
             this.PopisProjektaListDataGridView.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PopisProjektaListDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.PopisProjektaListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PopisProjektaListDataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.PopisProjektaListDataGridView.Location = new System.Drawing.Point(645, 362);
@@ -71,7 +70,7 @@
             this.PopisProjektaListDataGridView.Size = new System.Drawing.Size(1233, 696);
             this.PopisProjektaListDataGridView.TabIndex = 23;
             // 
-            // PopisProjektaHeaderButton
+            // PopisProjektaAddButton
             // 
             this.PopisProjektaAddButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.PopisProjektaAddButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -84,49 +83,6 @@
             this.PopisProjektaAddButton.TabIndex = 28;
             this.PopisProjektaAddButton.UseVisualStyleBackColor = false;
             this.PopisProjektaAddButton.Click += new System.EventHandler(this.PopisProjektaAddButton_Click);
-            // 
-            // PopisProjektaUserButton
-            // 
-            this.PopisProjektaUserButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PopisProjektaUserButton.Location = new System.Drawing.Point(1138, 35);
-            this.PopisProjektaUserButton.Name = "PopisProjektaUserButton";
-            this.PopisProjektaUserButton.Size = new System.Drawing.Size(188, 47);
-            this.PopisProjektaUserButton.TabIndex = 25;
-            this.PopisProjektaUserButton.Text = "Korisničko ime";
-            this.PopisProjektaUserButton.UseVisualStyleBackColor = true;
-            // 
-            // PopisProjektaPFPButton
-            // 
-            this.PopisProjektaPFPButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PopisProjektaPFPButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisProjektaPFPButton.BackgroundImage")));
-            this.PopisProjektaPFPButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisProjektaPFPButton.Location = new System.Drawing.Point(1332, 14);
-            this.PopisProjektaPFPButton.Name = "PopisProjektaPFPButton";
-            this.PopisProjektaPFPButton.Size = new System.Drawing.Size(88, 88);
-            this.PopisProjektaPFPButton.TabIndex = 26;
-            this.PopisProjektaPFPButton.UseVisualStyleBackColor = true;
-            // 
-            // PopisProjektaArrowButton
-            // 
-            this.PopisProjektaArrowButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisProjektaArrowButton.BackgroundImage")));
-            this.PopisProjektaArrowButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisProjektaArrowButton.Location = new System.Drawing.Point(46, 35);
-            this.PopisProjektaArrowButton.Name = "PopisProjektaArrowButton";
-            this.PopisProjektaArrowButton.Size = new System.Drawing.Size(110, 53);
-            this.PopisProjektaArrowButton.TabIndex = 27;
-            this.PopisProjektaArrowButton.UseVisualStyleBackColor = true;
-            // 
-            // PopisProjetkaAddButton
-            // 
-            this.PopisProjetkaAddButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PopisProjetkaAddButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PopisProjetkaAddButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisProjetkaAddButton.BackgroundImage")));
-            this.PopisProjetkaAddButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisProjetkaAddButton.Location = new System.Drawing.Point(1251, 885);
-            this.PopisProjetkaAddButton.Name = "PopisProjetkaAddButton";
-            this.PopisProjetkaAddButton.Size = new System.Drawing.Size(84, 75);
-            this.PopisProjetkaAddButton.TabIndex = 28;
-            this.PopisProjetkaAddButton.UseVisualStyleBackColor = false;
             // 
             // PopisProjektaSortButton
             // 
@@ -141,25 +97,13 @@
             this.PopisProjektaSortButton.TabIndex = 29;
             this.PopisProjektaSortButton.UseVisualStyleBackColor = false;
             // 
-            // UrediZadatakNaslovLabel
-            // 
-            UrediZadatakNaslovLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            UrediZadatakNaslovLabel.AutoSize = true;
-            UrediZadatakNaslovLabel.Font = new System.Drawing.Font("Leelawadee UI", 22F, System.Drawing.FontStyle.Bold);
-            UrediZadatakNaslovLabel.Location = new System.Drawing.Point(578, 155);
-            UrediZadatakNaslovLabel.Name = "UrediZadatakNaslovLabel";
-            UrediZadatakNaslovLabel.Size = new System.Drawing.Size(250, 78);
-            UrediZadatakNaslovLabel.TabIndex = 30;
-            UrediZadatakNaslovLabel.Text = "Projekti";
-            UrediZadatakNaslovLabel.Click += new System.EventHandler(this.UrediZadatakNaslovLabel_Click);
-            // 
             // PopisProjektaSearchRichTextBox
             // 
             this.PopisProjektaSearchRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.PopisProjektaSearchRichTextBox.Location = new System.Drawing.Point(999, 272);
             this.PopisProjektaSearchRichTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PopisProjektaSearchRichTextBox.Name = "PopisProjektaSearchRichTextBox";
-            this.PopisProjektaSearchRichTextBox.Size = new System.Drawing.Size(488, 40);
+            this.PopisProjektaSearchRichTextBox.Size = new System.Drawing.Size(367, 33);
             this.PopisProjektaSearchRichTextBox.TabIndex = 31;
             this.PopisProjektaSearchRichTextBox.Text = "";
             // 
@@ -217,7 +161,7 @@
             // 
             // PopisProjekta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -225,13 +169,9 @@
             this.Controls.Add(this.PopisProjektaPanel);
             this.Controls.Add(this.PopisProjektaSearchButton);
             this.Controls.Add(this.PopisProjektaSearchRichTextBox);
-            this.Controls.Add(UrediZadatakNaslovLabel);
+            this.Controls.Add(PopisProjektaNaslovLabel);
             this.Controls.Add(this.PopisProjektaSortButton);
-            this.Controls.Add(this.PopisProjetkaAddButton);
-            this.Controls.Add(this.PopisProjektaArrowButton);
-            this.Controls.Add(this.PopisProjektaPFPButton);
-            this.Controls.Add(this.PopisProjektaUserButton);
-            this.Controls.Add(this.PopisProjektaHeaderButton);
+            this.Controls.Add(this.PopisProjektaAddButton);
             this.Controls.Add(this.PopisProjektaListDataGridView);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximumSize = new System.Drawing.Size(2551, 1332);
@@ -241,6 +181,9 @@
             this.Text = "PopisProjekta";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.PopisProjektaListDataGridView)).EndInit();
+            this.PopisProjektaPanel.ResumeLayout(false);
+            this.PopisProjektaPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PopisProjektaProfilPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,11 +192,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView PopisProjektaListDataGridView;
-        private System.Windows.Forms.Button PopisProjektaHeaderButton;
-        private System.Windows.Forms.Button PopisProjektaUserButton;
-        private System.Windows.Forms.Button PopisProjektaPFPButton;
-        private System.Windows.Forms.Button PopisProjektaArrowButton;
-        private System.Windows.Forms.Button PopisProjetkaAddButton;
+        private System.Windows.Forms.Button PopisProjektaAddButton;
         private System.Windows.Forms.Button PopisProjektaSortButton;
         private System.Windows.Forms.RichTextBox PopisProjektaSearchRichTextBox;
         private System.Windows.Forms.Button PopisProjektaSearchButton;

@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopisZadataka));
-            this.PopisZadatakaHeaderButton = new System.Windows.Forms.Button();
-            this.PopisZadatakaUserButton = new System.Windows.Forms.Button();
-            this.PopisZadatakaPFPButton = new System.Windows.Forms.Button();
-            this.PopisZadatakaArrowButton = new System.Windows.Forms.Button();
             this.PopisZadatakaImeProjektaLabel = new System.Windows.Forms.Label();
             this.PopisZadatakaClanoviLabel = new System.Windows.Forms.Label();
             this.PopisZadatakaAdminiLabel = new System.Windows.Forms.Label();
@@ -42,53 +38,16 @@
             this.PopisZadatakaClanoviListBox = new System.Windows.Forms.ListBox();
             this.PopisZadatakaAdminiListBox = new System.Windows.Forms.ListBox();
             this.PopisZadatakaListDataGridView = new System.Windows.Forms.DataGridView();
+            this.PopisZadatakaNatragButton = new System.Windows.Forms.Button();
+            this.PopisZadatakaProfilPanel = new System.Windows.Forms.Panel();
+            this.PopisZadatakaProfilPictureBox = new System.Windows.Forms.PictureBox();
+            this.PopisZadatakaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
             this.PopisZadatakaAddButton = new System.Windows.Forms.Button();
+            this.PopisZadatakaOpisLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PopisZadatakaListDataGridView)).BeginInit();
+            this.PopisZadatakaProfilPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PopisZadatakaProfilPictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // PopisZadatakaHeaderButton
-            // 
-            this.PopisZadatakaHeaderButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PopisZadatakaHeaderButton.Enabled = false;
-            this.PopisZadatakaHeaderButton.Location = new System.Drawing.Point(0, 0);
-            this.PopisZadatakaHeaderButton.MaximumSize = new System.Drawing.Size(0, 117);
-            this.PopisZadatakaHeaderButton.MinimumSize = new System.Drawing.Size(0, 117);
-            this.PopisZadatakaHeaderButton.Name = "PopisZadatakaHeaderButton";
-            this.PopisZadatakaHeaderButton.Size = new System.Drawing.Size(1444, 117);
-            this.PopisZadatakaHeaderButton.TabIndex = 10;
-            this.PopisZadatakaHeaderButton.UseVisualStyleBackColor = true;
-            // 
-            // PopisZadatakaUserButton
-            // 
-            this.PopisZadatakaUserButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PopisZadatakaUserButton.Location = new System.Drawing.Point(1133, 35);
-            this.PopisZadatakaUserButton.Name = "PopisZadatakaUserButton";
-            this.PopisZadatakaUserButton.Size = new System.Drawing.Size(188, 47);
-            this.PopisZadatakaUserButton.TabIndex = 11;
-            this.PopisZadatakaUserButton.Text = "Korisničko ime";
-            this.PopisZadatakaUserButton.UseVisualStyleBackColor = true;
-            // 
-            // PopisZadatakaPFPButton
-            // 
-            this.PopisZadatakaPFPButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PopisZadatakaPFPButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisZadatakaPFPButton.BackgroundImage")));
-            this.PopisZadatakaPFPButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisZadatakaPFPButton.Location = new System.Drawing.Point(1327, 14);
-            this.PopisZadatakaPFPButton.Name = "PopisZadatakaPFPButton";
-            this.PopisZadatakaPFPButton.Size = new System.Drawing.Size(88, 88);
-            this.PopisZadatakaPFPButton.TabIndex = 12;
-            this.PopisZadatakaPFPButton.UseVisualStyleBackColor = true;
-            this.PopisZadatakaPFPButton.Click += new System.EventHandler(this.PopisDokumentacijePFPButton_Click);
-            // 
-            // PopisZadatakaArrowButton
-            // 
-            this.PopisZadatakaArrowButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisZadatakaArrowButton.BackgroundImage")));
-            this.PopisZadatakaArrowButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisZadatakaArrowButton.Location = new System.Drawing.Point(36, 35);
-            this.PopisZadatakaArrowButton.Name = "PopisZadatakaArrowButton";
-            this.PopisZadatakaArrowButton.Size = new System.Drawing.Size(88, 47);
-            this.PopisZadatakaArrowButton.TabIndex = 13;
-            this.PopisZadatakaArrowButton.UseVisualStyleBackColor = true;
             // 
             // PopisZadatakaImeProjektaLabel
             // 
@@ -100,7 +59,7 @@
             this.PopisZadatakaImeProjektaLabel.Name = "PopisZadatakaImeProjektaLabel";
             this.PopisZadatakaImeProjektaLabel.Size = new System.Drawing.Size(336, 63);
             this.PopisZadatakaImeProjektaLabel.TabIndex = 14;
-            this.PopisZadatakaImeProjektaLabel.Text = "Ime Projekta";
+            this.PopisZadatakaImeProjektaLabel.Text = "Ime projekta";
             // 
             // PopisZadatakaClanoviLabel
             // 
@@ -168,6 +127,8 @@
             // 
             this.PopisZadatakaClanoviListBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.PopisZadatakaClanoviListBox.Enabled = false;
+            this.PopisZadatakaClanoviListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.PopisZadatakaClanoviListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.PopisZadatakaClanoviListBox.FormattingEnabled = true;
             this.PopisZadatakaClanoviListBox.ItemHeight = 29;
             this.PopisZadatakaClanoviListBox.Items.AddRange(new object[] {
@@ -185,6 +146,8 @@
             // 
             this.PopisZadatakaAdminiListBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.PopisZadatakaAdminiListBox.Enabled = false;
+            this.PopisZadatakaAdminiListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.PopisZadatakaAdminiListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.PopisZadatakaAdminiListBox.FormattingEnabled = true;
             this.PopisZadatakaAdminiListBox.ItemHeight = 29;
             this.PopisZadatakaAdminiListBox.Items.AddRange(new object[] {
@@ -199,6 +162,7 @@
             // PopisZadatakaListDataGridView
             // 
             this.PopisZadatakaListDataGridView.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PopisZadatakaListDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.PopisZadatakaListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PopisZadatakaListDataGridView.Location = new System.Drawing.Point(727, 490);
             this.PopisZadatakaListDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -264,6 +228,7 @@
             // PopisZadatakaAddButton
             // 
             this.PopisZadatakaAddButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PopisZadatakaAddButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.PopisZadatakaAddButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisZadatakaAddButton.BackgroundImage")));
             this.PopisZadatakaAddButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PopisZadatakaAddButton.Location = new System.Drawing.Point(1799, 1070);
@@ -288,13 +253,14 @@
             // 
             // PopisZadataka
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(2525, 1261);
             this.Controls.Add(this.PopisZadatakaOpisLabel);
             this.Controls.Add(this.PopisZadatakaAddButton);
+            this.Controls.Add(this.PopisZadatakaProfilPanel);
             this.Controls.Add(this.PopisZadatakaListDataGridView);
             this.Controls.Add(this.PopisZadatakaAdminiListBox);
             this.Controls.Add(this.PopisZadatakaClanoviListBox);
@@ -312,16 +278,15 @@
             this.Text = "PopisZadataka";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.PopisZadatakaListDataGridView)).EndInit();
+            this.PopisZadatakaProfilPanel.ResumeLayout(false);
+            this.PopisZadatakaProfilPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PopisZadatakaProfilPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button PopisZadatakaHeaderButton;
-        private System.Windows.Forms.Button PopisZadatakaUserButton;
-        private System.Windows.Forms.Button PopisZadatakaPFPButton;
-        private System.Windows.Forms.Button PopisZadatakaArrowButton;
         private System.Windows.Forms.Label PopisZadatakaImeProjektaLabel;
         private System.Windows.Forms.Label PopisZadatakaClanoviLabel;
         private System.Windows.Forms.Label PopisZadatakaAdminiLabel;
@@ -331,6 +296,11 @@
         private System.Windows.Forms.ListBox PopisZadatakaClanoviListBox;
         private System.Windows.Forms.ListBox PopisZadatakaAdminiListBox;
         private System.Windows.Forms.DataGridView PopisZadatakaListDataGridView;
+        private System.Windows.Forms.Button PopisZadatakaNatragButton;
+        private System.Windows.Forms.Panel PopisZadatakaProfilPanel;
+        private System.Windows.Forms.PictureBox PopisZadatakaProfilPictureBox;
+        private System.Windows.Forms.LinkLabel PopisZadatakaProfilLinkLabel;
         private System.Windows.Forms.Button PopisZadatakaAddButton;
+        private System.Windows.Forms.Label PopisZadatakaOpisLabel;
     }
 }

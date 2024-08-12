@@ -22,11 +22,6 @@ namespace ntp_projekt
             StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
         }
 
-        private void PrijavaLozinkaTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -75,6 +70,16 @@ namespace ntp_projekt
         private void BrisanjeProjektaNatragButton_Click(object sender, EventArgs e)
         {
             StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
+        }
+
+        private void DodajProjektProfilPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BrisanjeProjekta_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
