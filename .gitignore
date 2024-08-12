@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/ntp_projekt/PopisZadataka.cs
+/ntp_projekt/PopisZadataka.Designer.cs
+/ntp_projekt/PopisZadataka.resx
