@@ -102,9 +102,10 @@
             DodajProjektOvlastiLabel.BackColor = System.Drawing.Color.Transparent;
             DodajProjektOvlastiLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             DodajProjektOvlastiLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            DodajProjektOvlastiLabel.Location = new System.Drawing.Point(608, 716);
+            DodajProjektOvlastiLabel.Location = new System.Drawing.Point(811, 895);
+            DodajProjektOvlastiLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             DodajProjektOvlastiLabel.Name = "DodajProjektOvlastiLabel";
-            DodajProjektOvlastiLabel.Size = new System.Drawing.Size(453, 43);
+            DodajProjektOvlastiLabel.Size = new System.Drawing.Size(604, 54);
             DodajProjektOvlastiLabel.TabIndex = 54;
             DodajProjektOvlastiLabel.Text = "Dodijeli administratorske ovlasti";
             DodajProjektOvlastiLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -125,9 +126,10 @@
             DodajProjektClanoviLabel.BackColor = System.Drawing.Color.Transparent;
             DodajProjektClanoviLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             DodajProjektClanoviLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            DodajProjektClanoviLabel.Location = new System.Drawing.Point(608, 528);
+            DodajProjektClanoviLabel.Location = new System.Drawing.Point(811, 660);
+            DodajProjektClanoviLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             DodajProjektClanoviLabel.Name = "DodajProjektClanoviLabel";
-            DodajProjektClanoviLabel.Size = new System.Drawing.Size(287, 43);
+            DodajProjektClanoviLabel.Size = new System.Drawing.Size(383, 54);
             DodajProjektClanoviLabel.TabIndex = 53;
             DodajProjektClanoviLabel.Text = "Dodijeli članove";
             DodajProjektClanoviLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -137,9 +139,10 @@
             // 
             DodajProjektNazivTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             DodajProjektNazivTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            DodajProjektNazivTextBox.Location = new System.Drawing.Point(612, 335);
+            DodajProjektNazivTextBox.Location = new System.Drawing.Point(816, 419);
+            DodajProjektNazivTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             DodajProjektNazivTextBox.Name = "DodajProjektNazivTextBox";
-            DodajProjektNazivTextBox.Size = new System.Drawing.Size(715, 26);
+            DodajProjektNazivTextBox.Size = new System.Drawing.Size(952, 31);
             DodajProjektNazivTextBox.TabIndex = 50;
             // 
             // DodajProjektOpisLabel
@@ -147,9 +150,10 @@
             DodajProjektOpisLabel.BackColor = System.Drawing.Color.Transparent;
             DodajProjektOpisLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             DodajProjektOpisLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            DodajProjektOpisLabel.Location = new System.Drawing.Point(608, 370);
+            DodajProjektOpisLabel.Location = new System.Drawing.Point(811, 462);
+            DodajProjektOpisLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             DodajProjektOpisLabel.Name = "DodajProjektOpisLabel";
-            DodajProjektOpisLabel.Size = new System.Drawing.Size(287, 43);
+            DodajProjektOpisLabel.Size = new System.Drawing.Size(383, 54);
             DodajProjektOpisLabel.TabIndex = 55;
             DodajProjektOpisLabel.Text = "Opis projekta";
             DodajProjektOpisLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -166,9 +170,10 @@
             DodajProjektButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             DodajProjektButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             DodajProjektButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            DodajProjektButton.Location = new System.Drawing.Point(857, 914);
+            DodajProjektButton.Location = new System.Drawing.Point(1143, 1142);
+            DodajProjektButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             DodajProjektButton.Name = "DodajProjektButton";
-            DodajProjektButton.Size = new System.Drawing.Size(220, 60);
+            DodajProjektButton.Size = new System.Drawing.Size(293, 75);
             DodajProjektButton.TabIndex = 58;
             DodajProjektButton.Text = "Uredi projekt";
             DodajProjektButton.UseVisualStyleBackColor = false;
@@ -298,7 +303,7 @@
             // 
             // UrediProjekt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
