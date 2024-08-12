@@ -63,6 +63,8 @@
     <Compile Include="BrisanjeZadatka.Designer.cs">
       <DependentUpon>BrisanjeZadatka.cs</DependentUpon>
     </Compile>
+    <Compile Include="Korisnik.cs" />
+    <Compile Include="Projekt.cs" />
     <Compile Include="StartApk.cs" />
     <Compile Include="MainFormManager.cs" />
     <Compile Include="PopisDokumentacije.cs">
@@ -136,6 +138,7 @@
     <Compile Include="UrediZadatak.Designer.cs">
       <DependentUpon>UrediZadatak.cs</DependentUpon>
     </Compile>
+    <Compile Include="Zadatak.cs" />
     <EmbeddedResource Include="BrisanjeProjekta.resx">
       <DependentUpon>BrisanjeProjekta.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -185,7 +188,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-
     <EmbeddedResource Include="UrediProjekt.resx">
       <DependentUpon>UrediProjekt.cs</DependentUpon>
     </EmbeddedResource>
