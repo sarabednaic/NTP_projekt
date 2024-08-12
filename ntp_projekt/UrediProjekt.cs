@@ -46,5 +46,10 @@ namespace ntp_projekt
         {
             StartApk.MainFormManager.TrenutnaForma = new UrediProjekt();
         }
+
+        private void DodajProjektNazivTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

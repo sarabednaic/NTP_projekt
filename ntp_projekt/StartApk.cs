@@ -18,7 +18,7 @@ namespace ntp_projekt
         public StartApk() {
             mainFormManager = new MainFormManager
             {
-                TrenutnaForma = new PopisZadataka()
+                TrenutnaForma = new Prijava()
             };
             
             Application.Run(mainFormManager);

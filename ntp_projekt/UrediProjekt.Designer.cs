@@ -81,11 +81,7 @@
             DodajProjektNazivLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             DodajProjektNazivLabel.UseWaitCursor = true;
             // 
-            this.UrediProjektImeTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.UrediProjektImeTextBox.Location = new System.Drawing.Point(294, 280);
-            this.UrediProjektImeTextBox.Name = "UrediProjektImeTextBox";
-            this.UrediProjektImeTextBox.Size = new System.Drawing.Size(827, 31);
-            this.UrediProjektImeTextBox.TabIndex = 14;
+            // DodajProjektOvlastiLabel
             // 
             DodajProjektOvlastiLabel.BackColor = System.Drawing.Color.Transparent;
             DodajProjektOvlastiLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -99,29 +95,7 @@
             DodajProjektOvlastiLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             DodajProjektOvlastiLabel.UseWaitCursor = true;
             // 
-            DodajProjektOvlastiLabel.BackColor = System.Drawing.Color.Transparent;
-            DodajProjektOvlastiLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            DodajProjektOvlastiLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            DodajProjektOvlastiLabel.Location = new System.Drawing.Point(811, 895);
-            DodajProjektOvlastiLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            DodajProjektOvlastiLabel.Name = "DodajProjektOvlastiLabel";
-            DodajProjektOvlastiLabel.Size = new System.Drawing.Size(604, 54);
-            DodajProjektOvlastiLabel.TabIndex = 54;
-            DodajProjektOvlastiLabel.Text = "Dodijeli administratorske ovlasti";
-            DodajProjektOvlastiLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            DodajProjektOvlastiLabel.UseWaitCursor = true;
-            // 
-            DodajProjektClanoviLabel.BackColor = System.Drawing.Color.Transparent;
-            DodajProjektClanoviLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            DodajProjektClanoviLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            DodajProjektClanoviLabel.Location = new System.Drawing.Point(811, 660);
-            DodajProjektClanoviLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            DodajProjektClanoviLabel.Name = "DodajProjektClanoviLabel";
-            DodajProjektClanoviLabel.Size = new System.Drawing.Size(383, 54);
-            DodajProjektClanoviLabel.TabIndex = 53;
-            DodajProjektClanoviLabel.Text = "Dodijeli članove";
-            DodajProjektClanoviLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            DodajProjektClanoviLabel.UseWaitCursor = true;
+            // DodajProjektClanoviLabel
             // 
             DodajProjektClanoviLabel.BackColor = System.Drawing.Color.Transparent;
             DodajProjektClanoviLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,45 +112,16 @@
             // DodajProjektNazivTextBox
             // 
             DodajProjektNazivTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            DodajProjektNazivTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             DodajProjektNazivTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             DodajProjektNazivTextBox.Location = new System.Drawing.Point(816, 419);
-            DodajProjektNazivTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            DodajProjektNazivTextBox.Margin = new System.Windows.Forms.Padding(4);
             DodajProjektNazivTextBox.Name = "DodajProjektNazivTextBox";
             DodajProjektNazivTextBox.Size = new System.Drawing.Size(952, 31);
             DodajProjektNazivTextBox.TabIndex = 50;
+            DodajProjektNazivTextBox.TextChanged += new System.EventHandler(this.DodajProjektNazivTextBox_TextChanged);
             // 
             // DodajProjektOpisLabel
-            // 
-            DodajProjektOpisLabel.BackColor = System.Drawing.Color.Transparent;
-            DodajProjektOpisLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            DodajProjektOpisLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            DodajProjektOpisLabel.Location = new System.Drawing.Point(811, 462);
-            DodajProjektOpisLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            DodajProjektOpisLabel.Name = "DodajProjektOpisLabel";
-            DodajProjektOpisLabel.Size = new System.Drawing.Size(383, 54);
-            DodajProjektOpisLabel.TabIndex = 55;
-            DodajProjektOpisLabel.Text = "Opis projekta";
-            DodajProjektOpisLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            DodajProjektOpisLabel.UseWaitCursor = true;
-            // 
-            DodajProjektNazivTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            DodajProjektNazivTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            DodajProjektNazivTextBox.Location = new System.Drawing.Point(816, 419);
-            DodajProjektNazivTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            DodajProjektNazivTextBox.Name = "DodajProjektNazivTextBox";
-            DodajProjektNazivTextBox.Size = new System.Drawing.Size(952, 31);
-            DodajProjektNazivTextBox.TabIndex = 50;
-            // 
-            DodajProjektButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            DodajProjektButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            DodajProjektButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            DodajProjektButton.Location = new System.Drawing.Point(1143, 1142);
-            DodajProjektButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            DodajProjektButton.Name = "DodajProjektButton";
-            DodajProjektButton.Size = new System.Drawing.Size(293, 75);
-            DodajProjektButton.TabIndex = 58;
-            DodajProjektButton.Text = "Uredi projekt";
-            DodajProjektButton.UseVisualStyleBackColor = false;
             // 
             DodajProjektOpisLabel.BackColor = System.Drawing.Color.Transparent;
             DodajProjektOpisLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -196,13 +141,12 @@
             DodajProjektButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             DodajProjektButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             DodajProjektButton.Location = new System.Drawing.Point(1143, 1142);
-            DodajProjektButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            DodajProjektButton.Margin = new System.Windows.Forms.Padding(4);
             DodajProjektButton.Name = "DodajProjektButton";
             DodajProjektButton.Size = new System.Drawing.Size(293, 75);
             DodajProjektButton.TabIndex = 58;
             DodajProjektButton.Text = "Uredi projekt";
             DodajProjektButton.UseVisualStyleBackColor = false;
-            DodajProjektButton.Click += new System.EventHandler(this.DodajProjektButton_Click);
             // 
             // UrediZadatakSubmitButton
             // 
@@ -225,7 +169,7 @@
             this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaProfilPictureBox);
             this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaProfilLinkLabel);
             this.DeaktivacijaProfilPanel.Location = new System.Drawing.Point(0, 0);
-            this.DeaktivacijaProfilPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeaktivacijaProfilPanel.Margin = new System.Windows.Forms.Padding(4);
             this.DeaktivacijaProfilPanel.Name = "DeaktivacijaProfilPanel";
             this.DeaktivacijaProfilPanel.Size = new System.Drawing.Size(2560, 112);
             this.DeaktivacijaProfilPanel.TabIndex = 29;
@@ -236,7 +180,7 @@
             this.DeaktivacijaNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaNatragButton.BackgroundImage")));
             this.DeaktivacijaNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DeaktivacijaNatragButton.Location = new System.Drawing.Point(16, 15);
-            this.DeaktivacijaNatragButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeaktivacijaNatragButton.Margin = new System.Windows.Forms.Padding(4);
             this.DeaktivacijaNatragButton.Name = "DeaktivacijaNatragButton";
             this.DeaktivacijaNatragButton.Size = new System.Drawing.Size(85, 80);
             this.DeaktivacijaNatragButton.TabIndex = 23;
@@ -250,7 +194,7 @@
             this.DeaktivacijaProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaProfilPictureBox.Image")));
             this.DeaktivacijaProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaProfilPictureBox.InitialImage")));
             this.DeaktivacijaProfilPictureBox.Location = new System.Drawing.Point(2429, 16);
-            this.DeaktivacijaProfilPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeaktivacijaProfilPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.DeaktivacijaProfilPictureBox.Name = "DeaktivacijaProfilPictureBox";
             this.DeaktivacijaProfilPictureBox.Size = new System.Drawing.Size(87, 81);
             this.DeaktivacijaProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -275,7 +219,7 @@
             // DodajProjektOpisRichTextBox
             // 
             this.DodajProjektOpisRichTextBox.Location = new System.Drawing.Point(816, 509);
-            this.DodajProjektOpisRichTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DodajProjektOpisRichTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.DodajProjektOpisRichTextBox.Name = "DodajProjektOpisRichTextBox";
             this.DodajProjektOpisRichTextBox.Size = new System.Drawing.Size(952, 150);
             this.DodajProjektOpisRichTextBox.TabIndex = 57;
@@ -286,7 +230,7 @@
             this.DodajProjektOvlastiListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.DodajProjektOvlastiListBox.FormattingEnabled = true;
             this.DodajProjektOvlastiListBox.Location = new System.Drawing.Point(816, 945);
-            this.DodajProjektOvlastiListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DodajProjektOvlastiListBox.Margin = new System.Windows.Forms.Padding(4);
             this.DodajProjektOvlastiListBox.Name = "DodajProjektOvlastiListBox";
             this.DodajProjektOvlastiListBox.Size = new System.Drawing.Size(952, 144);
             this.DodajProjektOvlastiListBox.TabIndex = 52;
@@ -296,7 +240,7 @@
             this.DodajProjektClanoviListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.DodajProjektClanoviListBox.FormattingEnabled = true;
             this.DodajProjektClanoviListBox.Location = new System.Drawing.Point(816, 712);
-            this.DodajProjektClanoviListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DodajProjektClanoviListBox.Margin = new System.Windows.Forms.Padding(4);
             this.DodajProjektClanoviListBox.Name = "DodajProjektClanoviListBox";
             this.DodajProjektClanoviListBox.Size = new System.Drawing.Size(952, 172);
             this.DodajProjektClanoviListBox.TabIndex = 51;

@@ -127,12 +127,11 @@
             this.PopisDokumentacijeNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisDokumentacijeNatragButton.BackgroundImage")));
             this.PopisDokumentacijeNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PopisDokumentacijeNatragButton.Location = new System.Drawing.Point(16, 15);
-            this.PopisDokumentacijeNatragButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PopisDokumentacijeNatragButton.Margin = new System.Windows.Forms.Padding(4);
             this.PopisDokumentacijeNatragButton.Name = "PopisDokumentacijeNatragButton";
             this.PopisDokumentacijeNatragButton.Size = new System.Drawing.Size(85, 80);
             this.PopisDokumentacijeNatragButton.TabIndex = 23;
             this.PopisDokumentacijeNatragButton.UseVisualStyleBackColor = false;
-            this.PopisDokumentacijeNatragButton.Click += new System.EventHandler(this.PopisDokumentacijeNatragButton_Click);
             // 
             // PopisDokumentacijePanel
             // 
@@ -141,7 +140,7 @@
             this.PopisDokumentacijePanel.Controls.Add(this.PopisDokumentacijeProfilPictureBox);
             this.PopisDokumentacijePanel.Controls.Add(this.PopisDokumentacijeProfilLinkLabel);
             this.PopisDokumentacijePanel.Location = new System.Drawing.Point(3, 1);
-            this.PopisDokumentacijePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PopisDokumentacijePanel.Margin = new System.Windows.Forms.Padding(4);
             this.PopisDokumentacijePanel.Name = "PopisDokumentacijePanel";
             this.PopisDokumentacijePanel.Size = new System.Drawing.Size(2560, 112);
             this.PopisDokumentacijePanel.TabIndex = 30;
@@ -153,7 +152,7 @@
             this.PopisDokumentacijeProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PopisDokumentacijeProfilPictureBox.Image")));
             this.PopisDokumentacijeProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("PopisDokumentacijeProfilPictureBox.InitialImage")));
             this.PopisDokumentacijeProfilPictureBox.Location = new System.Drawing.Point(2429, 16);
-            this.PopisDokumentacijeProfilPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PopisDokumentacijeProfilPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.PopisDokumentacijeProfilPictureBox.Name = "PopisDokumentacijeProfilPictureBox";
             this.PopisDokumentacijeProfilPictureBox.Size = new System.Drawing.Size(87, 81);
             this.PopisDokumentacijeProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -225,7 +224,7 @@
             // 
             // PopisDokumentacije
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;

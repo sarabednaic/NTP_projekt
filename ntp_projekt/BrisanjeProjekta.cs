@@ -72,14 +72,11 @@ namespace ntp_projekt
             StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
         }
 
-        private void DodajProjektProfilPanel_Paint(object sender, PaintEventArgs e)
+        private void BrisanjeProjektaLozinkaTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void BrisanjeProjekta_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

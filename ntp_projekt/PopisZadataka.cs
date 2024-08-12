@@ -71,5 +71,15 @@ namespace ntp_projekt
         {
             StartApk.MainFormManager.TrenutnaForma = new DodajZadatak();
         }
+
+        private void PopisZadatakaProfilPictureBox_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Postavke();
+        }
+
+        private void PopisZadatakaProfilLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Postavke();
+        }
     }
 }

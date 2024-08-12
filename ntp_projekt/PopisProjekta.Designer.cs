@@ -69,6 +69,7 @@
             this.PopisProjektaListDataGridView.RowTemplate.Height = 33;
             this.PopisProjektaListDataGridView.Size = new System.Drawing.Size(1233, 696);
             this.PopisProjektaListDataGridView.TabIndex = 23;
+            this.PopisProjektaListDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PopisProjektaListDataGridView_CellContentClick);
             // 
             // PopisProjektaAddButton
             // 
@@ -82,7 +83,7 @@
             this.PopisProjektaAddButton.Size = new System.Drawing.Size(80, 75);
             this.PopisProjektaAddButton.TabIndex = 28;
             this.PopisProjektaAddButton.UseVisualStyleBackColor = false;
-            this.PopisProjektaAddButton.Click += new System.EventHandler(this.PopisProjektaAddButton_Click);
+            this.PopisProjektaAddButton.Click += new System.EventHandler(this.PopisProjektaAddButton_Click_1);
             // 
             // PopisProjektaSortButton
             // 
@@ -103,7 +104,7 @@
             this.PopisProjektaSearchRichTextBox.Location = new System.Drawing.Point(999, 272);
             this.PopisProjektaSearchRichTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PopisProjektaSearchRichTextBox.Name = "PopisProjektaSearchRichTextBox";
-            this.PopisProjektaSearchRichTextBox.Size = new System.Drawing.Size(367, 33);
+            this.PopisProjektaSearchRichTextBox.Size = new System.Drawing.Size(488, 40);
             this.PopisProjektaSearchRichTextBox.TabIndex = 31;
             this.PopisProjektaSearchRichTextBox.Text = "";
             // 
@@ -143,7 +144,7 @@
             this.PopisProjektaProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PopisProjektaProfilPictureBox.TabIndex = 22;
             this.PopisProjektaProfilPictureBox.TabStop = false;
-            this.PopisProjektaProfilPictureBox.Click += new System.EventHandler(this.PopisProjektaProfilPictureBox_Click);
+            this.PopisProjektaProfilPictureBox.Click += new System.EventHandler(this.PopisProjektaProfilPictureBox_Click_1);
             // 
             // PopisProjektaProfilLinkLabel
             // 
@@ -157,11 +158,11 @@
             this.PopisProjektaProfilLinkLabel.TabIndex = 0;
             this.PopisProjektaProfilLinkLabel.TabStop = true;
             this.PopisProjektaProfilLinkLabel.Text = "Sara Bednaić";
-            this.PopisProjektaProfilLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.PopisProjektaProfilLinkLabel_LinkClicked);
+            this.PopisProjektaProfilLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.PopisProjektaProfilLinkLabel_LinkClicked_1);
             // 
             // PopisProjekta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;

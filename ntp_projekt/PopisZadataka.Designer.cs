@@ -97,7 +97,6 @@
             this.PopisZadatakaReportButton.Size = new System.Drawing.Size(80, 75);
             this.PopisZadatakaReportButton.TabIndex = 17;
             this.PopisZadatakaReportButton.UseVisualStyleBackColor = true;
-            this.PopisZadatakaReportButton.Click += new System.EventHandler(this.PopisZadatakaReportButton_Click);
             // 
             // PopisZadatakaSearchRichTextBox
             // 
@@ -184,7 +183,6 @@
             this.PopisZadatakaNatragButton.Size = new System.Drawing.Size(85, 80);
             this.PopisZadatakaNatragButton.TabIndex = 23;
             this.PopisZadatakaNatragButton.UseVisualStyleBackColor = false;
-            this.PopisZadatakaNatragButton.Click += new System.EventHandler(this.PopisZadatakaNatragButton_Click);
             // 
             // PopisZadatakaProfilPanel
             // 
@@ -211,6 +209,7 @@
             this.PopisZadatakaProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PopisZadatakaProfilPictureBox.TabIndex = 22;
             this.PopisZadatakaProfilPictureBox.TabStop = false;
+            this.PopisZadatakaProfilPictureBox.Click += new System.EventHandler(this.PopisZadatakaProfilPictureBox_Click);
             // 
             // PopisZadatakaProfilLinkLabel
             // 
@@ -224,6 +223,7 @@
             this.PopisZadatakaProfilLinkLabel.TabIndex = 0;
             this.PopisZadatakaProfilLinkLabel.TabStop = true;
             this.PopisZadatakaProfilLinkLabel.Text = "Sara Bednaić";
+            this.PopisZadatakaProfilLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.PopisZadatakaProfilLinkLabel_LinkClicked);
             // 
             // PopisZadatakaAddButton
             // 
@@ -237,7 +237,6 @@
             this.PopisZadatakaAddButton.Size = new System.Drawing.Size(80, 75);
             this.PopisZadatakaAddButton.TabIndex = 29;
             this.PopisZadatakaAddButton.UseVisualStyleBackColor = false;
-            this.PopisZadatakaAddButton.Click += new System.EventHandler(this.PopisZadatakaAddButton_Click);
             // 
             // PopisZadatakaOpisLabel
             // 
@@ -253,7 +252,7 @@
             // 
             // PopisZadataka
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
