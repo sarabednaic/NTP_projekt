@@ -51,5 +51,30 @@ namespace ntp_projekt
         {
 
         }
+
+        private void DeaktivacijaNatragButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new PopisZadataka();
+        }
+
+        private void DeaktivacijaProfilLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Postavke();
+        }
+
+        private void DeaktivacijaProfilPictureBox_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Postavke();
+        }
+
+        private void DodajZadatakDateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DodajProjektButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new UrediZadatak();
+        }
     }
 }

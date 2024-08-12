@@ -10,41 +10,46 @@ using System.Windows.Forms;
 
 namespace ntp_projekt
 {
-    public partial class UrediProjekt : Form
+    public partial class DodajProjekt : Form
     {
-        public UrediProjekt()
+        public DodajProjekt()
         {
             InitializeComponent();
         }
 
-        private void UrediProjektArrowButton_Click(object sender, EventArgs e)
+        private void DodajProjektClanoviListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void UrediZadatakNaslovLabel_Click(object sender, EventArgs e)
+        private void DodajProjektOvlastiListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void DeaktivacijaNatragButton_Click(object sender, EventArgs e)
+        private void DodajProjekt_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DodajProjektNatragButton_Click(object sender, EventArgs e)
         {
             StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
         }
 
-        private void DeaktivacijaProfilLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void DodajProjektProfilLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
-        private void DeaktivacijaProfilPictureBox_Click(object sender, EventArgs e)
+        private void DodajProjektProfilPictureBox_Click(object sender, EventArgs e)
         {
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
         private void DodajProjektButton_Click(object sender, EventArgs e)
         {
-            StartApk.MainFormManager.TrenutnaForma = new UrediProjekt();
+            StartApk.MainFormManager.TrenutnaForma = new DodajProjekt();
         }
     }
 }

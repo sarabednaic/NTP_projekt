@@ -31,5 +31,15 @@ namespace ntp_projekt
         {
 
         }
+
+        private void PrijavaPrijavaButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
+        }
+
+        private void PrijavaRegistracijaLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Registracija();
+        }
     }
 }

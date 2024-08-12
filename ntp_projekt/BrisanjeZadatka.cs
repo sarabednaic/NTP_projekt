@@ -36,5 +36,25 @@ namespace ntp_projekt
         {
 
         }
+
+        private void BrisanjeZadatkaNatragButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new PopisZadataka();
+        }
+
+        private void BrisanjeZadatkaIzbrisiZadatakButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new PopisZadataka();
+        }
+
+        private void DeaktivacijaProfilPictureBox_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Postavke();
+        }
+
+        private void BrisanjeZadatkaProfilLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Postavke();
+        }
     }
 }
