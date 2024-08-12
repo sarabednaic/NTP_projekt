@@ -16,5 +16,20 @@ namespace ntp_projekt
         {
             InitializeComponent();
         }
+
+        private void DodajProjektClanoviListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DodajProjektOvlastiListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DodajProjekt_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,40 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Label UrediZadatakNaslovLabel;
+            System.Windows.Forms.Label PopisProjektaNaslovLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopisProjekta));
             this.PopisProjektaListDataGridView = new System.Windows.Forms.DataGridView();
-            this.PopisProjetkaAddButton = new System.Windows.Forms.Button();
+            this.PopisProjektaAddButton = new System.Windows.Forms.Button();
             this.PopisProjektaSortButton = new System.Windows.Forms.Button();
             this.PopisProjektaSearchRichTextBox = new System.Windows.Forms.RichTextBox();
             this.PopisProjektaSearchButton = new System.Windows.Forms.Button();
-            this.DeaktivacijaNatragButton = new System.Windows.Forms.Button();
-            this.DeaktivacijaProfilPanel = new System.Windows.Forms.Panel();
-            this.DeaktivacijaProfilPictureBox = new System.Windows.Forms.PictureBox();
-            this.DeaktivacijaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
-            UrediZadatakNaslovLabel = new System.Windows.Forms.Label();
+            this.PopisProjektaNatragButton = new System.Windows.Forms.Button();
+            this.PopisProjektaPanel = new System.Windows.Forms.Panel();
+            this.PopisProjektaProfilPictureBox = new System.Windows.Forms.PictureBox();
+            this.PopisProjektaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
+            PopisProjektaNaslovLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PopisProjektaListDataGridView)).BeginInit();
-            this.DeaktivacijaProfilPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DeaktivacijaProfilPictureBox)).BeginInit();
+            this.PopisProjektaPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PopisProjektaProfilPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // UrediZadatakNaslovLabel
+            // PopisProjektaNaslovLabel
             // 
-            UrediZadatakNaslovLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            UrediZadatakNaslovLabel.AutoSize = true;
-            UrediZadatakNaslovLabel.Font = new System.Drawing.Font("Leelawadee UI", 30F, System.Drawing.FontStyle.Bold);
-            UrediZadatakNaslovLabel.Location = new System.Drawing.Point(833, 117);
-            UrediZadatakNaslovLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            UrediZadatakNaslovLabel.Name = "UrediZadatakNaslovLabel";
-            UrediZadatakNaslovLabel.Size = new System.Drawing.Size(256, 81);
-            UrediZadatakNaslovLabel.TabIndex = 30;
-            UrediZadatakNaslovLabel.Text = "Projekti";
-            UrediZadatakNaslovLabel.Click += new System.EventHandler(this.UrediZadatakNaslovLabel_Click);
+            PopisProjektaNaslovLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            PopisProjektaNaslovLabel.AutoSize = true;
+            PopisProjektaNaslovLabel.Font = new System.Drawing.Font("Leelawadee UI", 30F, System.Drawing.FontStyle.Bold);
+            PopisProjektaNaslovLabel.Location = new System.Drawing.Point(719, 115);
+            PopisProjektaNaslovLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            PopisProjektaNaslovLabel.Name = "PopisProjektaNaslovLabel";
+            PopisProjektaNaslovLabel.Size = new System.Drawing.Size(473, 81);
+            PopisProjektaNaslovLabel.TabIndex = 30;
+            PopisProjektaNaslovLabel.Text = "Popis projekata";
+            PopisProjektaNaslovLabel.Click += new System.EventHandler(this.UrediZadatakNaslovLabel_Click);
             // 
             // PopisProjektaListDataGridView
             // 
             this.PopisProjektaListDataGridView.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PopisProjektaListDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.PopisProjektaListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PopisProjektaListDataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.PopisProjektaListDataGridView.Location = new System.Drawing.Point(484, 290);
             this.PopisProjektaListDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.PopisProjektaListDataGridView.Name = "PopisProjektaListDataGridView";
@@ -70,18 +72,18 @@
             this.PopisProjektaListDataGridView.Size = new System.Drawing.Size(925, 557);
             this.PopisProjektaListDataGridView.TabIndex = 23;
             // 
-            // PopisProjetkaAddButton
+            // PopisProjektaAddButton
             // 
-            this.PopisProjetkaAddButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PopisProjetkaAddButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.PopisProjetkaAddButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisProjetkaAddButton.BackgroundImage")));
-            this.PopisProjetkaAddButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisProjetkaAddButton.Location = new System.Drawing.Point(1351, 851);
-            this.PopisProjetkaAddButton.Margin = new System.Windows.Forms.Padding(2);
-            this.PopisProjetkaAddButton.Name = "PopisProjetkaAddButton";
-            this.PopisProjetkaAddButton.Size = new System.Drawing.Size(60, 60);
-            this.PopisProjetkaAddButton.TabIndex = 28;
-            this.PopisProjetkaAddButton.UseVisualStyleBackColor = false;
+            this.PopisProjektaAddButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PopisProjektaAddButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.PopisProjektaAddButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisProjektaAddButton.BackgroundImage")));
+            this.PopisProjektaAddButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PopisProjektaAddButton.Location = new System.Drawing.Point(1351, 851);
+            this.PopisProjektaAddButton.Margin = new System.Windows.Forms.Padding(2);
+            this.PopisProjektaAddButton.Name = "PopisProjektaAddButton";
+            this.PopisProjektaAddButton.Size = new System.Drawing.Size(60, 60);
+            this.PopisProjektaAddButton.TabIndex = 28;
+            this.PopisProjektaAddButton.UseVisualStyleBackColor = false;
             // 
             // PopisProjektaSortButton
             // 
@@ -118,52 +120,52 @@
             this.PopisProjektaSearchButton.TabIndex = 32;
             this.PopisProjektaSearchButton.UseVisualStyleBackColor = true;
             // 
-            // DeaktivacijaNatragButton
+            // PopisProjektaNatragButton
             // 
-            this.DeaktivacijaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.DeaktivacijaNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaNatragButton.BackgroundImage")));
-            this.DeaktivacijaNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DeaktivacijaNatragButton.Location = new System.Drawing.Point(12, 12);
-            this.DeaktivacijaNatragButton.Name = "DeaktivacijaNatragButton";
-            this.DeaktivacijaNatragButton.Size = new System.Drawing.Size(64, 64);
-            this.DeaktivacijaNatragButton.TabIndex = 23;
-            this.DeaktivacijaNatragButton.UseVisualStyleBackColor = false;
+            this.PopisProjektaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PopisProjektaNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisProjektaNatragButton.BackgroundImage")));
+            this.PopisProjektaNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PopisProjektaNatragButton.Location = new System.Drawing.Point(12, 12);
+            this.PopisProjektaNatragButton.Name = "PopisProjektaNatragButton";
+            this.PopisProjektaNatragButton.Size = new System.Drawing.Size(64, 64);
+            this.PopisProjektaNatragButton.TabIndex = 23;
+            this.PopisProjektaNatragButton.UseVisualStyleBackColor = false;
             // 
-            // DeaktivacijaProfilPanel
+            // PopisProjektaPanel
             // 
-            this.DeaktivacijaProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaNatragButton);
-            this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaProfilPictureBox);
-            this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaProfilLinkLabel);
-            this.DeaktivacijaProfilPanel.Location = new System.Drawing.Point(1, 1);
-            this.DeaktivacijaProfilPanel.Name = "DeaktivacijaProfilPanel";
-            this.DeaktivacijaProfilPanel.Size = new System.Drawing.Size(1920, 90);
-            this.DeaktivacijaProfilPanel.TabIndex = 33;
+            this.PopisProjektaPanel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PopisProjektaPanel.Controls.Add(this.PopisProjektaNatragButton);
+            this.PopisProjektaPanel.Controls.Add(this.PopisProjektaProfilPictureBox);
+            this.PopisProjektaPanel.Controls.Add(this.PopisProjektaProfilLinkLabel);
+            this.PopisProjektaPanel.Location = new System.Drawing.Point(1, 1);
+            this.PopisProjektaPanel.Name = "PopisProjektaPanel";
+            this.PopisProjektaPanel.Size = new System.Drawing.Size(1920, 90);
+            this.PopisProjektaPanel.TabIndex = 33;
             // 
-            // DeaktivacijaProfilPictureBox
+            // PopisProjektaProfilPictureBox
             // 
-            this.DeaktivacijaProfilPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaProfilPictureBox.BackgroundImage")));
-            this.DeaktivacijaProfilPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DeaktivacijaProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaProfilPictureBox.Image")));
-            this.DeaktivacijaProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaProfilPictureBox.InitialImage")));
-            this.DeaktivacijaProfilPictureBox.Location = new System.Drawing.Point(1822, 13);
-            this.DeaktivacijaProfilPictureBox.Name = "DeaktivacijaProfilPictureBox";
-            this.DeaktivacijaProfilPictureBox.Size = new System.Drawing.Size(65, 65);
-            this.DeaktivacijaProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.DeaktivacijaProfilPictureBox.TabIndex = 22;
-            this.DeaktivacijaProfilPictureBox.TabStop = false;
+            this.PopisProjektaProfilPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisProjektaProfilPictureBox.BackgroundImage")));
+            this.PopisProjektaProfilPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PopisProjektaProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PopisProjektaProfilPictureBox.Image")));
+            this.PopisProjektaProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("PopisProjektaProfilPictureBox.InitialImage")));
+            this.PopisProjektaProfilPictureBox.Location = new System.Drawing.Point(1822, 13);
+            this.PopisProjektaProfilPictureBox.Name = "PopisProjektaProfilPictureBox";
+            this.PopisProjektaProfilPictureBox.Size = new System.Drawing.Size(65, 65);
+            this.PopisProjektaProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PopisProjektaProfilPictureBox.TabIndex = 22;
+            this.PopisProjektaProfilPictureBox.TabStop = false;
             // 
-            // DeaktivacijaProfilLinkLabel
+            // PopisProjektaProfilLinkLabel
             // 
-            this.DeaktivacijaProfilLinkLabel.AutoSize = true;
-            this.DeaktivacijaProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.DeaktivacijaProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DeaktivacijaProfilLinkLabel.Location = new System.Drawing.Point(1650, 31);
-            this.DeaktivacijaProfilLinkLabel.Name = "DeaktivacijaProfilLinkLabel";
-            this.DeaktivacijaProfilLinkLabel.Size = new System.Drawing.Size(157, 29);
-            this.DeaktivacijaProfilLinkLabel.TabIndex = 0;
-            this.DeaktivacijaProfilLinkLabel.TabStop = true;
-            this.DeaktivacijaProfilLinkLabel.Text = "Sara Bednaić";
+            this.PopisProjektaProfilLinkLabel.AutoSize = true;
+            this.PopisProjektaProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.PopisProjektaProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PopisProjektaProfilLinkLabel.Location = new System.Drawing.Point(1650, 31);
+            this.PopisProjektaProfilLinkLabel.Name = "PopisProjektaProfilLinkLabel";
+            this.PopisProjektaProfilLinkLabel.Size = new System.Drawing.Size(157, 29);
+            this.PopisProjektaProfilLinkLabel.TabIndex = 0;
+            this.PopisProjektaProfilLinkLabel.TabStop = true;
+            this.PopisProjektaProfilLinkLabel.Text = "Sara Bednaić";
             // 
             // PopisProjekta
             // 
@@ -172,12 +174,12 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1898, 1024);
-            this.Controls.Add(this.DeaktivacijaProfilPanel);
+            this.Controls.Add(this.PopisProjektaPanel);
             this.Controls.Add(this.PopisProjektaSearchButton);
             this.Controls.Add(this.PopisProjektaSearchRichTextBox);
-            this.Controls.Add(UrediZadatakNaslovLabel);
+            this.Controls.Add(PopisProjektaNaslovLabel);
             this.Controls.Add(this.PopisProjektaSortButton);
-            this.Controls.Add(this.PopisProjetkaAddButton);
+            this.Controls.Add(this.PopisProjektaAddButton);
             this.Controls.Add(this.PopisProjektaListDataGridView);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
@@ -187,9 +189,9 @@
             this.Text = "PopisProjekta";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.PopisProjektaListDataGridView)).EndInit();
-            this.DeaktivacijaProfilPanel.ResumeLayout(false);
-            this.DeaktivacijaProfilPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DeaktivacijaProfilPictureBox)).EndInit();
+            this.PopisProjektaPanel.ResumeLayout(false);
+            this.PopisProjektaPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PopisProjektaProfilPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,13 +200,13 @@
         #endregion
 
         private System.Windows.Forms.DataGridView PopisProjektaListDataGridView;
-        private System.Windows.Forms.Button PopisProjetkaAddButton;
+        private System.Windows.Forms.Button PopisProjektaAddButton;
         private System.Windows.Forms.Button PopisProjektaSortButton;
         private System.Windows.Forms.RichTextBox PopisProjektaSearchRichTextBox;
         private System.Windows.Forms.Button PopisProjektaSearchButton;
-        private System.Windows.Forms.Button DeaktivacijaNatragButton;
-        private System.Windows.Forms.Panel DeaktivacijaProfilPanel;
-        private System.Windows.Forms.PictureBox DeaktivacijaProfilPictureBox;
-        private System.Windows.Forms.LinkLabel DeaktivacijaProfilLinkLabel;
+        private System.Windows.Forms.Button PopisProjektaNatragButton;
+        private System.Windows.Forms.Panel PopisProjektaPanel;
+        private System.Windows.Forms.PictureBox PopisProjektaProfilPictureBox;
+        private System.Windows.Forms.LinkLabel PopisProjektaProfilLinkLabel;
     }
 }

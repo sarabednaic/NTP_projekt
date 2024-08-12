@@ -29,16 +29,22 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Label BriasnjeZadatkaNaslovLabel;
+            System.Windows.Forms.TextBox BrisanjeZadatkaLozinkaTextBox;
+            System.Windows.Forms.TextBox BrisanjeZadatkaPonovnoLozinkaTextBox;
+            System.Windows.Forms.Label BrisanjeZadatkaPonovnoLozinkaLabel;
+            System.Windows.Forms.Label BrisanjeZadatkaLozinkaLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrisanjeZadatka));
-            this.BrisanjeZadatkaLozinkaTextBox = new System.Windows.Forms.RichTextBox();
-            this.BrisanjeZadatkaPonovnoLozinkaTextBox = new System.Windows.Forms.RichTextBox();
-            this.BrisanjeZadatkaIzbrisiProjektButton = new System.Windows.Forms.Button();
-            this.DeaktivacijaNatragButton = new System.Windows.Forms.Button();
-            this.DeaktivacijaProfilPanel = new System.Windows.Forms.Panel();
+            this.BrisanjeZadatkaIzbrisiZadatakButton = new System.Windows.Forms.Button();
+            this.BrisanjeZadatkaNatragButton = new System.Windows.Forms.Button();
+            this.BrisanjeZadatkaPanel = new System.Windows.Forms.Panel();
             this.DeaktivacijaProfilPictureBox = new System.Windows.Forms.PictureBox();
-            this.DeaktivacijaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.BrisanjeZadatkaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
             BriasnjeZadatkaNaslovLabel = new System.Windows.Forms.Label();
-            this.DeaktivacijaProfilPanel.SuspendLayout();
+            BrisanjeZadatkaLozinkaTextBox = new System.Windows.Forms.TextBox();
+            BrisanjeZadatkaPonovnoLozinkaTextBox = new System.Windows.Forms.TextBox();
+            BrisanjeZadatkaPonovnoLozinkaLabel = new System.Windows.Forms.Label();
+            BrisanjeZadatkaLozinkaLabel = new System.Windows.Forms.Label();
+            this.BrisanjeZadatkaPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DeaktivacijaProfilPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,61 +64,84 @@
             // 
             // BrisanjeZadatkaLozinkaTextBox
             // 
-            this.BrisanjeZadatkaLozinkaTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BrisanjeZadatkaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.BrisanjeZadatkaLozinkaTextBox.Location = new System.Drawing.Point(798, 443);
-            this.BrisanjeZadatkaLozinkaTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.BrisanjeZadatkaLozinkaTextBox.Name = "BrisanjeZadatkaLozinkaTextBox";
-            this.BrisanjeZadatkaLozinkaTextBox.Size = new System.Drawing.Size(345, 30);
-            this.BrisanjeZadatkaLozinkaTextBox.TabIndex = 11;
-            this.BrisanjeZadatkaLozinkaTextBox.Text = "Upišite trenutnu lozinku";
+            BrisanjeZadatkaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            BrisanjeZadatkaLozinkaTextBox.Location = new System.Drawing.Point(741, 423);
+            BrisanjeZadatkaLozinkaTextBox.Name = "BrisanjeZadatkaLozinkaTextBox";
+            BrisanjeZadatkaLozinkaTextBox.PasswordChar = '*';
+            BrisanjeZadatkaLozinkaTextBox.Size = new System.Drawing.Size(459, 26);
+            BrisanjeZadatkaLozinkaTextBox.TabIndex = 64;
             // 
             // BrisanjeZadatkaPonovnoLozinkaTextBox
             // 
-            this.BrisanjeZadatkaPonovnoLozinkaTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BrisanjeZadatkaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.BrisanjeZadatkaPonovnoLozinkaTextBox.Location = new System.Drawing.Point(798, 509);
-            this.BrisanjeZadatkaPonovnoLozinkaTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.BrisanjeZadatkaPonovnoLozinkaTextBox.Name = "BrisanjeZadatkaPonovnoLozinkaTextBox";
-            this.BrisanjeZadatkaPonovnoLozinkaTextBox.Size = new System.Drawing.Size(345, 29);
-            this.BrisanjeZadatkaPonovnoLozinkaTextBox.TabIndex = 12;
-            this.BrisanjeZadatkaPonovnoLozinkaTextBox.Text = "Ponovite trenutnu lozinku";
+            BrisanjeZadatkaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            BrisanjeZadatkaPonovnoLozinkaTextBox.Location = new System.Drawing.Point(741, 500);
+            BrisanjeZadatkaPonovnoLozinkaTextBox.Name = "BrisanjeZadatkaPonovnoLozinkaTextBox";
+            BrisanjeZadatkaPonovnoLozinkaTextBox.PasswordChar = '*';
+            BrisanjeZadatkaPonovnoLozinkaTextBox.Size = new System.Drawing.Size(459, 26);
+            BrisanjeZadatkaPonovnoLozinkaTextBox.TabIndex = 63;
             // 
-            // BrisanjeZadatkaIzbrisiProjektButton
+            // BrisanjeZadatkaPonovnoLozinkaLabel
             // 
-            this.BrisanjeZadatkaIzbrisiProjektButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BrisanjeZadatkaIzbrisiProjektButton.BackColor = System.Drawing.Color.Red;
-            this.BrisanjeZadatkaIzbrisiProjektButton.ForeColor = System.Drawing.Color.White;
-            this.BrisanjeZadatkaIzbrisiProjektButton.Location = new System.Drawing.Point(860, 602);
-            this.BrisanjeZadatkaIzbrisiProjektButton.Margin = new System.Windows.Forms.Padding(2);
-            this.BrisanjeZadatkaIzbrisiProjektButton.MaximumSize = new System.Drawing.Size(228, 62);
-            this.BrisanjeZadatkaIzbrisiProjektButton.Name = "BrisanjeZadatkaIzbrisiProjektButton";
-            this.BrisanjeZadatkaIzbrisiProjektButton.Size = new System.Drawing.Size(228, 62);
-            this.BrisanjeZadatkaIzbrisiProjektButton.TabIndex = 13;
-            this.BrisanjeZadatkaIzbrisiProjektButton.Text = "Izbriši zadatak";
-            this.BrisanjeZadatkaIzbrisiProjektButton.UseVisualStyleBackColor = false;
+            BrisanjeZadatkaPonovnoLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
+            BrisanjeZadatkaPonovnoLozinkaLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            BrisanjeZadatkaPonovnoLozinkaLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            BrisanjeZadatkaPonovnoLozinkaLabel.Location = new System.Drawing.Point(737, 468);
+            BrisanjeZadatkaPonovnoLozinkaLabel.Name = "BrisanjeZadatkaPonovnoLozinkaLabel";
+            BrisanjeZadatkaPonovnoLozinkaLabel.Size = new System.Drawing.Size(287, 43);
+            BrisanjeZadatkaPonovnoLozinkaLabel.TabIndex = 62;
+            BrisanjeZadatkaPonovnoLozinkaLabel.Text = "Ponovite lozinku za potvrdu brisanja zadatka";
+            BrisanjeZadatkaPonovnoLozinkaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            BrisanjeZadatkaPonovnoLozinkaLabel.UseWaitCursor = true;
             // 
-            // DeaktivacijaNatragButton
+            // BrisanjeZadatkaLozinkaLabel
             // 
-            this.DeaktivacijaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.DeaktivacijaNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaNatragButton.BackgroundImage")));
-            this.DeaktivacijaNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DeaktivacijaNatragButton.Location = new System.Drawing.Point(12, 12);
-            this.DeaktivacijaNatragButton.Name = "DeaktivacijaNatragButton";
-            this.DeaktivacijaNatragButton.Size = new System.Drawing.Size(64, 64);
-            this.DeaktivacijaNatragButton.TabIndex = 23;
-            this.DeaktivacijaNatragButton.UseVisualStyleBackColor = false;
+            BrisanjeZadatkaLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
+            BrisanjeZadatkaLozinkaLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            BrisanjeZadatkaLozinkaLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            BrisanjeZadatkaLozinkaLabel.Location = new System.Drawing.Point(737, 387);
+            BrisanjeZadatkaLozinkaLabel.Name = "BrisanjeZadatkaLozinkaLabel";
+            BrisanjeZadatkaLozinkaLabel.Size = new System.Drawing.Size(287, 43);
+            BrisanjeZadatkaLozinkaLabel.TabIndex = 61;
+            BrisanjeZadatkaLozinkaLabel.Text = "Upišite lozinku za potvrdu brisanja zadatka";
+            BrisanjeZadatkaLozinkaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            BrisanjeZadatkaLozinkaLabel.UseWaitCursor = true;
             // 
-            // DeaktivacijaProfilPanel
+            // BrisanjeZadatkaIzbrisiZadatakButton
             // 
-            this.DeaktivacijaProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaNatragButton);
-            this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaProfilPictureBox);
-            this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaProfilLinkLabel);
-            this.DeaktivacijaProfilPanel.Location = new System.Drawing.Point(1, 1);
-            this.DeaktivacijaProfilPanel.Name = "DeaktivacijaProfilPanel";
-            this.DeaktivacijaProfilPanel.Size = new System.Drawing.Size(1920, 90);
-            this.DeaktivacijaProfilPanel.TabIndex = 14;
+            this.BrisanjeZadatkaIzbrisiZadatakButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BrisanjeZadatkaIzbrisiZadatakButton.BackColor = System.Drawing.Color.Red;
+            this.BrisanjeZadatkaIzbrisiZadatakButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.BrisanjeZadatkaIzbrisiZadatakButton.ForeColor = System.Drawing.Color.White;
+            this.BrisanjeZadatkaIzbrisiZadatakButton.Location = new System.Drawing.Point(860, 602);
+            this.BrisanjeZadatkaIzbrisiZadatakButton.Margin = new System.Windows.Forms.Padding(2);
+            this.BrisanjeZadatkaIzbrisiZadatakButton.MaximumSize = new System.Drawing.Size(228, 62);
+            this.BrisanjeZadatkaIzbrisiZadatakButton.Name = "BrisanjeZadatkaIzbrisiZadatakButton";
+            this.BrisanjeZadatkaIzbrisiZadatakButton.Size = new System.Drawing.Size(228, 62);
+            this.BrisanjeZadatkaIzbrisiZadatakButton.TabIndex = 13;
+            this.BrisanjeZadatkaIzbrisiZadatakButton.Text = "Izbriši zadatak";
+            this.BrisanjeZadatkaIzbrisiZadatakButton.UseVisualStyleBackColor = false;
+            // 
+            // BrisanjeZadatkaNatragButton
+            // 
+            this.BrisanjeZadatkaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BrisanjeZadatkaNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BrisanjeZadatkaNatragButton.BackgroundImage")));
+            this.BrisanjeZadatkaNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BrisanjeZadatkaNatragButton.Location = new System.Drawing.Point(12, 12);
+            this.BrisanjeZadatkaNatragButton.Name = "BrisanjeZadatkaNatragButton";
+            this.BrisanjeZadatkaNatragButton.Size = new System.Drawing.Size(64, 64);
+            this.BrisanjeZadatkaNatragButton.TabIndex = 23;
+            this.BrisanjeZadatkaNatragButton.UseVisualStyleBackColor = false;
+            // 
+            // BrisanjeZadatkaPanel
+            // 
+            this.BrisanjeZadatkaPanel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BrisanjeZadatkaPanel.Controls.Add(this.BrisanjeZadatkaNatragButton);
+            this.BrisanjeZadatkaPanel.Controls.Add(this.DeaktivacijaProfilPictureBox);
+            this.BrisanjeZadatkaPanel.Controls.Add(this.BrisanjeZadatkaProfilLinkLabel);
+            this.BrisanjeZadatkaPanel.Location = new System.Drawing.Point(0, 0);
+            this.BrisanjeZadatkaPanel.Name = "BrisanjeZadatkaPanel";
+            this.BrisanjeZadatkaPanel.Size = new System.Drawing.Size(1920, 90);
+            this.BrisanjeZadatkaPanel.TabIndex = 14;
             // 
             // DeaktivacijaProfilPictureBox
             // 
@@ -127,17 +156,17 @@
             this.DeaktivacijaProfilPictureBox.TabIndex = 22;
             this.DeaktivacijaProfilPictureBox.TabStop = false;
             // 
-            // DeaktivacijaProfilLinkLabel
+            // BrisanjeZadatkaProfilLinkLabel
             // 
-            this.DeaktivacijaProfilLinkLabel.AutoSize = true;
-            this.DeaktivacijaProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.DeaktivacijaProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DeaktivacijaProfilLinkLabel.Location = new System.Drawing.Point(1650, 31);
-            this.DeaktivacijaProfilLinkLabel.Name = "DeaktivacijaProfilLinkLabel";
-            this.DeaktivacijaProfilLinkLabel.Size = new System.Drawing.Size(157, 29);
-            this.DeaktivacijaProfilLinkLabel.TabIndex = 0;
-            this.DeaktivacijaProfilLinkLabel.TabStop = true;
-            this.DeaktivacijaProfilLinkLabel.Text = "Sara Bednaić";
+            this.BrisanjeZadatkaProfilLinkLabel.AutoSize = true;
+            this.BrisanjeZadatkaProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.BrisanjeZadatkaProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BrisanjeZadatkaProfilLinkLabel.Location = new System.Drawing.Point(1650, 31);
+            this.BrisanjeZadatkaProfilLinkLabel.Name = "BrisanjeZadatkaProfilLinkLabel";
+            this.BrisanjeZadatkaProfilLinkLabel.Size = new System.Drawing.Size(157, 29);
+            this.BrisanjeZadatkaProfilLinkLabel.TabIndex = 0;
+            this.BrisanjeZadatkaProfilLinkLabel.TabStop = true;
+            this.BrisanjeZadatkaProfilLinkLabel.Text = "Sara Bednaić";
             // 
             // BrisanjeZadatka
             // 
@@ -146,10 +175,12 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1898, 1024);
-            this.Controls.Add(this.DeaktivacijaProfilPanel);
-            this.Controls.Add(this.BrisanjeZadatkaIzbrisiProjektButton);
-            this.Controls.Add(this.BrisanjeZadatkaPonovnoLozinkaTextBox);
-            this.Controls.Add(this.BrisanjeZadatkaLozinkaTextBox);
+            this.Controls.Add(BrisanjeZadatkaLozinkaTextBox);
+            this.Controls.Add(this.BrisanjeZadatkaPanel);
+            this.Controls.Add(BrisanjeZadatkaPonovnoLozinkaTextBox);
+            this.Controls.Add(this.BrisanjeZadatkaIzbrisiZadatakButton);
+            this.Controls.Add(BrisanjeZadatkaPonovnoLozinkaLabel);
+            this.Controls.Add(BrisanjeZadatkaLozinkaLabel);
             this.Controls.Add(BriasnjeZadatkaNaslovLabel);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
@@ -158,20 +189,19 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.DeaktivacijaProfilPanel.ResumeLayout(false);
-            this.DeaktivacijaProfilPanel.PerformLayout();
+            this.BrisanjeZadatkaPanel.ResumeLayout(false);
+            this.BrisanjeZadatkaPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DeaktivacijaProfilPictureBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.RichTextBox BrisanjeZadatkaLozinkaTextBox;
-        private System.Windows.Forms.RichTextBox BrisanjeZadatkaPonovnoLozinkaTextBox;
-        private System.Windows.Forms.Button BrisanjeZadatkaIzbrisiProjektButton;
-        private System.Windows.Forms.Button DeaktivacijaNatragButton;
-        private System.Windows.Forms.Panel DeaktivacijaProfilPanel;
+        private System.Windows.Forms.Button BrisanjeZadatkaIzbrisiZadatakButton;
+        private System.Windows.Forms.Button BrisanjeZadatkaNatragButton;
+        private System.Windows.Forms.Panel BrisanjeZadatkaPanel;
         private System.Windows.Forms.PictureBox DeaktivacijaProfilPictureBox;
-        private System.Windows.Forms.LinkLabel DeaktivacijaProfilLinkLabel;
+        private System.Windows.Forms.LinkLabel BrisanjeZadatkaProfilLinkLabel;
     }
 }

@@ -28,31 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Label BriasnjeProjektaNaslovLabel;
+            System.Windows.Forms.Label BrisanjeProjektaNaslovLabel;
+            System.Windows.Forms.Label BrisanjeProjektaLozinkaNazivLabel;
+            System.Windows.Forms.Label BrisanjeProjektaPonovnoLozinkaLabel;
+            System.Windows.Forms.TextBox BrisanjeProjektaPonovnoLozinkaTextBox;
+            System.Windows.Forms.TextBox BrisanjeProjektaLozinkaTextBox;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrisanjeProjekta));
             this.BrisanjeProjektaIzbrisiProjektButton = new System.Windows.Forms.Button();
-            this.BrisanjeProjektaLozinkaTextBox = new System.Windows.Forms.RichTextBox();
-            this.BrisanjeProjektaPonovnoLozinkaTextBox = new System.Windows.Forms.RichTextBox();
-            this.DodajProjektProfilPanel = new System.Windows.Forms.Panel();
-            this.DodajProjektProfilPictureBox = new System.Windows.Forms.PictureBox();
-            this.DodajProjektNatragButton = new System.Windows.Forms.Button();
-            this.DodajProjektProfilLinkLabel = new System.Windows.Forms.LinkLabel();
-            BriasnjeProjektaNaslovLabel = new System.Windows.Forms.Label();
-            this.DodajProjektProfilPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DodajProjektProfilPictureBox)).BeginInit();
+            this.BrisanjeProjektaPanel = new System.Windows.Forms.Panel();
+            this.BrisanjeProjektaProfilPictureBox = new System.Windows.Forms.PictureBox();
+            this.BrisanjeProjektaNatragButton = new System.Windows.Forms.Button();
+            this.BrisanjeProjektaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
+            BrisanjeProjektaNaslovLabel = new System.Windows.Forms.Label();
+            BrisanjeProjektaLozinkaNazivLabel = new System.Windows.Forms.Label();
+            BrisanjeProjektaPonovnoLozinkaLabel = new System.Windows.Forms.Label();
+            BrisanjeProjektaPonovnoLozinkaTextBox = new System.Windows.Forms.TextBox();
+            BrisanjeProjektaLozinkaTextBox = new System.Windows.Forms.TextBox();
+            this.BrisanjeProjektaPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BrisanjeProjektaProfilPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // BriasnjeProjektaNaslovLabel
+            // BrisanjeProjektaNaslovLabel
             // 
-            BriasnjeProjektaNaslovLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            BriasnjeProjektaNaslovLabel.AutoSize = true;
-            BriasnjeProjektaNaslovLabel.Font = new System.Drawing.Font("Leelawadee UI", 40F, System.Drawing.FontStyle.Bold);
-            BriasnjeProjektaNaslovLabel.Location = new System.Drawing.Point(607, 248);
-            BriasnjeProjektaNaslovLabel.Name = "BriasnjeProjektaNaslovLabel";
-            BriasnjeProjektaNaslovLabel.Size = new System.Drawing.Size(681, 106);
-            BriasnjeProjektaNaslovLabel.TabIndex = 3;
-            BriasnjeProjektaNaslovLabel.Text = "Brisanje projekta";
-            BriasnjeProjektaNaslovLabel.Click += new System.EventHandler(this.label1_Click);
+            BrisanjeProjektaNaslovLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            BrisanjeProjektaNaslovLabel.AutoSize = true;
+            BrisanjeProjektaNaslovLabel.Font = new System.Drawing.Font("Leelawadee UI", 40F, System.Drawing.FontStyle.Bold);
+            BrisanjeProjektaNaslovLabel.Location = new System.Drawing.Point(607, 248);
+            BrisanjeProjektaNaslovLabel.Name = "BrisanjeProjektaNaslovLabel";
+            BrisanjeProjektaNaslovLabel.Size = new System.Drawing.Size(681, 106);
+            BrisanjeProjektaNaslovLabel.TabIndex = 3;
+            BrisanjeProjektaNaslovLabel.Text = "Brisanje projekta";
+            BrisanjeProjektaNaslovLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // BrisanjeProjektaLozinkaNazivLabel
+            // 
+            BrisanjeProjektaLozinkaNazivLabel.BackColor = System.Drawing.Color.Transparent;
+            BrisanjeProjektaLozinkaNazivLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            BrisanjeProjektaLozinkaNazivLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            BrisanjeProjektaLozinkaNazivLabel.Location = new System.Drawing.Point(717, 431);
+            BrisanjeProjektaLozinkaNazivLabel.Name = "BrisanjeProjektaLozinkaNazivLabel";
+            BrisanjeProjektaLozinkaNazivLabel.Size = new System.Drawing.Size(287, 43);
+            BrisanjeProjektaLozinkaNazivLabel.TabIndex = 57;
+            BrisanjeProjektaLozinkaNazivLabel.Text = "Upišite lozinku za potvrdu brisanja zadatka";
+            BrisanjeProjektaLozinkaNazivLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            BrisanjeProjektaLozinkaNazivLabel.UseWaitCursor = true;
+            // 
+            // BrisanjeProjektaPonovnoLozinkaLabel
+            // 
+            BrisanjeProjektaPonovnoLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
+            BrisanjeProjektaPonovnoLozinkaLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            BrisanjeProjektaPonovnoLozinkaLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            BrisanjeProjektaPonovnoLozinkaLabel.Location = new System.Drawing.Point(717, 512);
+            BrisanjeProjektaPonovnoLozinkaLabel.Name = "BrisanjeProjektaPonovnoLozinkaLabel";
+            BrisanjeProjektaPonovnoLozinkaLabel.Size = new System.Drawing.Size(287, 43);
+            BrisanjeProjektaPonovnoLozinkaLabel.TabIndex = 58;
+            BrisanjeProjektaPonovnoLozinkaLabel.Text = "Ponovite lozinku za potvrdu brisanja zadatka";
+            BrisanjeProjektaPonovnoLozinkaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            BrisanjeProjektaPonovnoLozinkaLabel.UseWaitCursor = true;
+            // 
+            // BrisanjeProjektaPonovnoLozinkaTextBox
+            // 
+            BrisanjeProjektaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            BrisanjeProjektaPonovnoLozinkaTextBox.Location = new System.Drawing.Point(721, 544);
+            BrisanjeProjektaPonovnoLozinkaTextBox.Name = "BrisanjeProjektaPonovnoLozinkaTextBox";
+            BrisanjeProjektaPonovnoLozinkaTextBox.PasswordChar = '*';
+            BrisanjeProjektaPonovnoLozinkaTextBox.Size = new System.Drawing.Size(459, 26);
+            BrisanjeProjektaPonovnoLozinkaTextBox.TabIndex = 59;
+            // 
+            // BrisanjeProjektaLozinkaTextBox
+            // 
+            BrisanjeProjektaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            BrisanjeProjektaLozinkaTextBox.Location = new System.Drawing.Point(721, 467);
+            BrisanjeProjektaLozinkaTextBox.Name = "BrisanjeProjektaLozinkaTextBox";
+            BrisanjeProjektaLozinkaTextBox.PasswordChar = '*';
+            BrisanjeProjektaLozinkaTextBox.Size = new System.Drawing.Size(459, 26);
+            BrisanjeProjektaLozinkaTextBox.TabIndex = 60;
             // 
             // BrisanjeProjektaIzbrisiProjektButton
             // 
@@ -69,74 +119,54 @@
             this.BrisanjeProjektaIzbrisiProjektButton.UseVisualStyleBackColor = false;
             this.BrisanjeProjektaIzbrisiProjektButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // BrisanjeProjektaLozinkaTextBox
+            // BrisanjeProjektaPanel
             // 
-            this.BrisanjeProjektaLozinkaTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BrisanjeProjektaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.BrisanjeProjektaLozinkaTextBox.Location = new System.Drawing.Point(721, 466);
-            this.BrisanjeProjektaLozinkaTextBox.Name = "BrisanjeProjektaLozinkaTextBox";
-            this.BrisanjeProjektaLozinkaTextBox.Size = new System.Drawing.Size(459, 37);
-            this.BrisanjeProjektaLozinkaTextBox.TabIndex = 1;
-            this.BrisanjeProjektaLozinkaTextBox.Text = "Upišite trenutnu lozinku";
+            this.BrisanjeProjektaPanel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BrisanjeProjektaPanel.Controls.Add(this.BrisanjeProjektaProfilPictureBox);
+            this.BrisanjeProjektaPanel.Controls.Add(this.BrisanjeProjektaNatragButton);
+            this.BrisanjeProjektaPanel.Controls.Add(this.BrisanjeProjektaProfilLinkLabel);
+            this.BrisanjeProjektaPanel.Location = new System.Drawing.Point(0, 0);
+            this.BrisanjeProjektaPanel.Name = "BrisanjeProjektaPanel";
+            this.BrisanjeProjektaPanel.Size = new System.Drawing.Size(1920, 90);
+            this.BrisanjeProjektaPanel.TabIndex = 11;
+            this.BrisanjeProjektaPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.DodajProjektProfilPanel_Paint);
             // 
-            // BrisanjeProjektaPonovnoLozinkaTextBox
+            // BrisanjeProjektaProfilPictureBox
             // 
-            this.BrisanjeProjektaPonovnoLozinkaTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BrisanjeProjektaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.BrisanjeProjektaPonovnoLozinkaTextBox.Location = new System.Drawing.Point(721, 540);
-            this.BrisanjeProjektaPonovnoLozinkaTextBox.Name = "BrisanjeProjektaPonovnoLozinkaTextBox";
-            this.BrisanjeProjektaPonovnoLozinkaTextBox.Size = new System.Drawing.Size(459, 35);
-            this.BrisanjeProjektaPonovnoLozinkaTextBox.TabIndex = 2;
-            this.BrisanjeProjektaPonovnoLozinkaTextBox.Text = "Ponovite trenutnu lozinku";
+            this.BrisanjeProjektaProfilPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BrisanjeProjektaProfilPictureBox.BackgroundImage")));
+            this.BrisanjeProjektaProfilPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BrisanjeProjektaProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("BrisanjeProjektaProfilPictureBox.Image")));
+            this.BrisanjeProjektaProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("BrisanjeProjektaProfilPictureBox.InitialImage")));
+            this.BrisanjeProjektaProfilPictureBox.Location = new System.Drawing.Point(1823, 13);
+            this.BrisanjeProjektaProfilPictureBox.Name = "BrisanjeProjektaProfilPictureBox";
+            this.BrisanjeProjektaProfilPictureBox.Size = new System.Drawing.Size(65, 65);
+            this.BrisanjeProjektaProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BrisanjeProjektaProfilPictureBox.TabIndex = 27;
+            this.BrisanjeProjektaProfilPictureBox.TabStop = false;
             // 
-            // DodajProjektProfilPanel
+            // BrisanjeProjektaNatragButton
             // 
-            this.DodajProjektProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.DodajProjektProfilPanel.Controls.Add(this.DodajProjektProfilPictureBox);
-            this.DodajProjektProfilPanel.Controls.Add(this.DodajProjektNatragButton);
-            this.DodajProjektProfilPanel.Controls.Add(this.DodajProjektProfilLinkLabel);
-            this.DodajProjektProfilPanel.Location = new System.Drawing.Point(0, 0);
-            this.DodajProjektProfilPanel.Name = "DodajProjektProfilPanel";
-            this.DodajProjektProfilPanel.Size = new System.Drawing.Size(1920, 90);
-            this.DodajProjektProfilPanel.TabIndex = 11;
-            this.DodajProjektProfilPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.DodajProjektProfilPanel_Paint);
+            this.BrisanjeProjektaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BrisanjeProjektaNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BrisanjeProjektaNatragButton.BackgroundImage")));
+            this.BrisanjeProjektaNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BrisanjeProjektaNatragButton.Location = new System.Drawing.Point(12, 12);
+            this.BrisanjeProjektaNatragButton.Name = "BrisanjeProjektaNatragButton";
+            this.BrisanjeProjektaNatragButton.Size = new System.Drawing.Size(64, 64);
+            this.BrisanjeProjektaNatragButton.TabIndex = 26;
+            this.BrisanjeProjektaNatragButton.UseVisualStyleBackColor = false;
             // 
-            // DodajProjektProfilPictureBox
+            // BrisanjeProjektaProfilLinkLabel
             // 
-            this.DodajProjektProfilPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DodajProjektProfilPictureBox.BackgroundImage")));
-            this.DodajProjektProfilPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DodajProjektProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("DodajProjektProfilPictureBox.Image")));
-            this.DodajProjektProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("DodajProjektProfilPictureBox.InitialImage")));
-            this.DodajProjektProfilPictureBox.Location = new System.Drawing.Point(1823, 13);
-            this.DodajProjektProfilPictureBox.Name = "DodajProjektProfilPictureBox";
-            this.DodajProjektProfilPictureBox.Size = new System.Drawing.Size(65, 65);
-            this.DodajProjektProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.DodajProjektProfilPictureBox.TabIndex = 27;
-            this.DodajProjektProfilPictureBox.TabStop = false;
-            // 
-            // DodajProjektNatragButton
-            // 
-            this.DodajProjektNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.DodajProjektNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DodajProjektNatragButton.BackgroundImage")));
-            this.DodajProjektNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DodajProjektNatragButton.Location = new System.Drawing.Point(12, 12);
-            this.DodajProjektNatragButton.Name = "DodajProjektNatragButton";
-            this.DodajProjektNatragButton.Size = new System.Drawing.Size(64, 64);
-            this.DodajProjektNatragButton.TabIndex = 26;
-            this.DodajProjektNatragButton.UseVisualStyleBackColor = false;
-            // 
-            // DodajProjektProfilLinkLabel
-            // 
-            this.DodajProjektProfilLinkLabel.AutoSize = true;
-            this.DodajProjektProfilLinkLabel.BackColor = System.Drawing.Color.Transparent;
-            this.DodajProjektProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.DodajProjektProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DodajProjektProfilLinkLabel.Location = new System.Drawing.Point(1651, 31);
-            this.DodajProjektProfilLinkLabel.Name = "DodajProjektProfilLinkLabel";
-            this.DodajProjektProfilLinkLabel.Size = new System.Drawing.Size(157, 29);
-            this.DodajProjektProfilLinkLabel.TabIndex = 26;
-            this.DodajProjektProfilLinkLabel.TabStop = true;
-            this.DodajProjektProfilLinkLabel.Text = "Sara Bednaić";
+            this.BrisanjeProjektaProfilLinkLabel.AutoSize = true;
+            this.BrisanjeProjektaProfilLinkLabel.BackColor = System.Drawing.Color.Transparent;
+            this.BrisanjeProjektaProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.BrisanjeProjektaProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BrisanjeProjektaProfilLinkLabel.Location = new System.Drawing.Point(1651, 31);
+            this.BrisanjeProjektaProfilLinkLabel.Name = "BrisanjeProjektaProfilLinkLabel";
+            this.BrisanjeProjektaProfilLinkLabel.Size = new System.Drawing.Size(157, 29);
+            this.BrisanjeProjektaProfilLinkLabel.TabIndex = 26;
+            this.BrisanjeProjektaProfilLinkLabel.TabStop = true;
+            this.BrisanjeProjektaProfilLinkLabel.Text = "Sara Bednaić";
             // 
             // BrisanjeProjekta
             // 
@@ -144,19 +174,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1898, 1024);
-            this.Controls.Add(this.DodajProjektProfilPanel);
-            this.Controls.Add(BriasnjeProjektaNaslovLabel);
-            this.Controls.Add(this.BrisanjeProjektaPonovnoLozinkaTextBox);
-            this.Controls.Add(this.BrisanjeProjektaLozinkaTextBox);
+            this.Controls.Add(BrisanjeProjektaLozinkaTextBox);
+            this.Controls.Add(BrisanjeProjektaPonovnoLozinkaTextBox);
+            this.Controls.Add(this.BrisanjeProjektaPanel);
+            this.Controls.Add(BrisanjeProjektaNaslovLabel);
             this.Controls.Add(this.BrisanjeProjektaIzbrisiProjektButton);
+            this.Controls.Add(BrisanjeProjektaPonovnoLozinkaLabel);
+            this.Controls.Add(BrisanjeProjektaLozinkaNazivLabel);
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.MinimumSize = new System.Drawing.Size(1440, 1018);
             this.Name = "BrisanjeProjekta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.DodajProjektProfilPanel.ResumeLayout(false);
-            this.DodajProjektProfilPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DodajProjektProfilPictureBox)).EndInit();
+            this.Load += new System.EventHandler(this.BrisanjeProjekta_Load);
+            this.BrisanjeProjektaPanel.ResumeLayout(false);
+            this.BrisanjeProjektaPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BrisanjeProjektaProfilPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,11 +198,9 @@
         #endregion
 
         private System.Windows.Forms.Button BrisanjeProjektaIzbrisiProjektButton;
-        private System.Windows.Forms.RichTextBox BrisanjeProjektaLozinkaTextBox;
-        private System.Windows.Forms.RichTextBox BrisanjeProjektaPonovnoLozinkaTextBox;
-        private System.Windows.Forms.Panel DodajProjektProfilPanel;
-        private System.Windows.Forms.PictureBox DodajProjektProfilPictureBox;
-        private System.Windows.Forms.Button DodajProjektNatragButton;
-        private System.Windows.Forms.LinkLabel DodajProjektProfilLinkLabel;
+        private System.Windows.Forms.Panel BrisanjeProjektaPanel;
+        private System.Windows.Forms.PictureBox BrisanjeProjektaProfilPictureBox;
+        private System.Windows.Forms.Button BrisanjeProjektaNatragButton;
+        private System.Windows.Forms.LinkLabel BrisanjeProjektaProfilLinkLabel;
     }
 }

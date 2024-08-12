@@ -29,21 +29,37 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Label UrediZadatakNaslovLabel;
+            System.Windows.Forms.Label label4;
+            System.Windows.Forms.Label label3;
+            System.Windows.Forms.Label label2;
+            System.Windows.Forms.Label DodajZadatakVrijemeLabel;
+            System.Windows.Forms.Label DodajZadatakClanoviLabel;
+            System.Windows.Forms.TextBox DodajZadatakNazivTextBox;
+            System.Windows.Forms.Label DodajZadatakLabel;
+            System.Windows.Forms.Label label1;
+            System.Windows.Forms.Button DodajProjektButton;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UrediZadatak));
-            this.UrediZadatakImeProjektaTextBox = new System.Windows.Forms.TextBox();
-            this.UrediZadatakClanoviTextBox = new System.Windows.Forms.TextBox();
-            this.UrediZadatakDatumPocetakTextBox = new System.Windows.Forms.TextBox();
-            this.UrediZadatakDatumKrajTextBox = new System.Windows.Forms.TextBox();
-            this.UrediZadatakStatusTextBox = new System.Windows.Forms.TextBox();
-            this.UrediZadatakStatusButton = new System.Windows.Forms.Button();
-            this.UrediZadatakSubmitButton = new System.Windows.Forms.Button();
-            this.UrediZadatakOpisRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.UrediZadatakDokumentacijaRichTextBox = new System.Windows.Forms.RichTextBox();
             this.DeaktivacijaProfilPanel = new System.Windows.Forms.Panel();
             this.DeaktivacijaNatragButton = new System.Windows.Forms.Button();
             this.DeaktivacijaProfilPictureBox = new System.Windows.Forms.PictureBox();
             this.DeaktivacijaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.UrediZadatakStatusButton = new System.Windows.Forms.Button();
+            this.DodajZadatakOpisRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.DodajZadatakClanoviListBox = new System.Windows.Forms.CheckedListBox();
+            this.DodajZadatakDateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.DodajZadatakDateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DodajZadatakProjektComboBox = new System.Windows.Forms.ComboBox();
+            this.UrediZadatakStatusComboBox = new System.Windows.Forms.ComboBox();
             UrediZadatakNaslovLabel = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            DodajZadatakVrijemeLabel = new System.Windows.Forms.Label();
+            DodajZadatakClanoviLabel = new System.Windows.Forms.Label();
+            DodajZadatakNazivTextBox = new System.Windows.Forms.TextBox();
+            DodajZadatakLabel = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
+            DodajProjektButton = new System.Windows.Forms.Button();
             this.DeaktivacijaProfilPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DeaktivacijaProfilPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +69,7 @@
             UrediZadatakNaslovLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             UrediZadatakNaslovLabel.AutoSize = true;
             UrediZadatakNaslovLabel.Font = new System.Drawing.Font("Leelawadee UI", 25F, System.Drawing.FontStyle.Bold);
-            UrediZadatakNaslovLabel.Location = new System.Drawing.Point(656, 135);
+            UrediZadatakNaslovLabel.Location = new System.Drawing.Point(675, 135);
             UrediZadatakNaslovLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             UrediZadatakNaslovLabel.Name = "UrediZadatakNaslovLabel";
             UrediZadatakNaslovLabel.Size = new System.Drawing.Size(582, 67);
@@ -61,100 +77,117 @@
             UrediZadatakNaslovLabel.Text = "Uredi projektni zadatak";
             UrediZadatakNaslovLabel.Click += new System.EventHandler(this.BriasnjeProjektaNaslovLabel_Click);
             // 
-            // UrediZadatakImeProjektaTextBox
+            // label4
             // 
-            this.UrediZadatakImeProjektaTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.UrediZadatakImeProjektaTextBox.Location = new System.Drawing.Point(625, 282);
-            this.UrediZadatakImeProjektaTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.UrediZadatakImeProjektaTextBox.Name = "UrediZadatakImeProjektaTextBox";
-            this.UrediZadatakImeProjektaTextBox.Size = new System.Drawing.Size(621, 26);
-            this.UrediZadatakImeProjektaTextBox.TabIndex = 13;
-            this.UrediZadatakImeProjektaTextBox.TextChanged += new System.EventHandler(this.UrediZadatakImeProjektaTextBox_TextChanged);
+            label4.BackColor = System.Drawing.Color.Transparent;
+            label4.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            label4.Location = new System.Drawing.Point(603, 395);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(453, 43);
+            label4.TabIndex = 62;
+            label4.Text = "Opis zadatka";
+            label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label4.UseWaitCursor = true;
             // 
-            // UrediZadatakClanoviTextBox
+            // label3
             // 
-            this.UrediZadatakClanoviTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.UrediZadatakClanoviTextBox.Location = new System.Drawing.Point(625, 590);
-            this.UrediZadatakClanoviTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.UrediZadatakClanoviTextBox.Name = "UrediZadatakClanoviTextBox";
-            this.UrediZadatakClanoviTextBox.Size = new System.Drawing.Size(621, 26);
-            this.UrediZadatakClanoviTextBox.TabIndex = 16;
-            this.UrediZadatakClanoviTextBox.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            label3.BackColor = System.Drawing.Color.Transparent;
+            label3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            label3.Location = new System.Drawing.Point(603, 315);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(453, 43);
+            label3.TabIndex = 61;
+            label3.Text = "Naziv zadatka";
+            label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label3.UseWaitCursor = true;
             // 
-            // UrediZadatakDatumPocetakTextBox
+            // label2
             // 
-            this.UrediZadatakDatumPocetakTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.UrediZadatakDatumPocetakTextBox.Location = new System.Drawing.Point(625, 627);
-            this.UrediZadatakDatumPocetakTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.UrediZadatakDatumPocetakTextBox.Name = "UrediZadatakDatumPocetakTextBox";
-            this.UrediZadatakDatumPocetakTextBox.Size = new System.Drawing.Size(104, 26);
-            this.UrediZadatakDatumPocetakTextBox.TabIndex = 17;
-            this.UrediZadatakDatumPocetakTextBox.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            label2.BackColor = System.Drawing.Color.Transparent;
+            label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            label2.Location = new System.Drawing.Point(603, 239);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(453, 43);
+            label2.TabIndex = 60;
+            label2.Text = "Dodijeljeni projekt";
+            label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label2.UseWaitCursor = true;
             // 
-            // UrediZadatakDatumKrajTextBox
+            // DodajZadatakVrijemeLabel
             // 
-            this.UrediZadatakDatumKrajTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.UrediZadatakDatumKrajTextBox.Location = new System.Drawing.Point(743, 627);
-            this.UrediZadatakDatumKrajTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.UrediZadatakDatumKrajTextBox.Name = "UrediZadatakDatumKrajTextBox";
-            this.UrediZadatakDatumKrajTextBox.Size = new System.Drawing.Size(104, 26);
-            this.UrediZadatakDatumKrajTextBox.TabIndex = 18;
-            this.UrediZadatakDatumKrajTextBox.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            DodajZadatakVrijemeLabel.BackColor = System.Drawing.Color.Transparent;
+            DodajZadatakVrijemeLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            DodajZadatakVrijemeLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            DodajZadatakVrijemeLabel.Location = new System.Drawing.Point(603, 739);
+            DodajZadatakVrijemeLabel.Name = "DodajZadatakVrijemeLabel";
+            DodajZadatakVrijemeLabel.Size = new System.Drawing.Size(453, 43);
+            DodajZadatakVrijemeLabel.TabIndex = 53;
+            DodajZadatakVrijemeLabel.Text = "Vrijeme ";
+            DodajZadatakVrijemeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            DodajZadatakVrijemeLabel.UseWaitCursor = true;
             // 
-            // UrediZadatakStatusTextBox
+            // DodajZadatakClanoviLabel
             // 
-            this.UrediZadatakStatusTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.UrediZadatakStatusTextBox.Location = new System.Drawing.Point(625, 671);
-            this.UrediZadatakStatusTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.UrediZadatakStatusTextBox.Name = "UrediZadatakStatusTextBox";
-            this.UrediZadatakStatusTextBox.Size = new System.Drawing.Size(104, 26);
-            this.UrediZadatakStatusTextBox.TabIndex = 19;
+            DodajZadatakClanoviLabel.BackColor = System.Drawing.Color.Transparent;
+            DodajZadatakClanoviLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            DodajZadatakClanoviLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            DodajZadatakClanoviLabel.Location = new System.Drawing.Point(603, 582);
+            DodajZadatakClanoviLabel.Name = "DodajZadatakClanoviLabel";
+            DodajZadatakClanoviLabel.Size = new System.Drawing.Size(287, 43);
+            DodajZadatakClanoviLabel.TabIndex = 52;
+            DodajZadatakClanoviLabel.Text = "Dodijeli zadatak članovima tima";
+            DodajZadatakClanoviLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            DodajZadatakClanoviLabel.UseWaitCursor = true;
             // 
-            // UrediZadatakStatusButton
+            // DodajZadatakNazivTextBox
             // 
-            this.UrediZadatakStatusButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.UrediZadatakStatusButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.UrediZadatakStatusButton.Enabled = false;
-            this.UrediZadatakStatusButton.Location = new System.Drawing.Point(745, 667);
-            this.UrediZadatakStatusButton.Margin = new System.Windows.Forms.Padding(2);
-            this.UrediZadatakStatusButton.Name = "UrediZadatakStatusButton";
-            this.UrediZadatakStatusButton.Size = new System.Drawing.Size(105, 37);
-            this.UrediZadatakStatusButton.TabIndex = 20;
-            this.UrediZadatakStatusButton.UseVisualStyleBackColor = false;
-            this.UrediZadatakStatusButton.Click += new System.EventHandler(this.button1_Click);
+            DodajZadatakNazivTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            DodajZadatakNazivTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            DodajZadatakNazivTextBox.Location = new System.Drawing.Point(607, 359);
+            DodajZadatakNazivTextBox.Name = "DodajZadatakNazivTextBox";
+            DodajZadatakNazivTextBox.Size = new System.Drawing.Size(715, 26);
+            DodajZadatakNazivTextBox.TabIndex = 50;
             // 
-            // UrediZadatakSubmitButton
+            // DodajZadatakLabel
             // 
-            this.UrediZadatakSubmitButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.UrediZadatakSubmitButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.UrediZadatakSubmitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.UrediZadatakSubmitButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.UrediZadatakSubmitButton.Location = new System.Drawing.Point(836, 768);
-            this.UrediZadatakSubmitButton.Margin = new System.Windows.Forms.Padding(2);
-            this.UrediZadatakSubmitButton.Name = "UrediZadatakSubmitButton";
-            this.UrediZadatakSubmitButton.Size = new System.Drawing.Size(214, 62);
-            this.UrediZadatakSubmitButton.TabIndex = 21;
-            this.UrediZadatakSubmitButton.Text = "Uredi zadatak";
-            this.UrediZadatakSubmitButton.UseVisualStyleBackColor = false;
+            DodajZadatakLabel.BackColor = System.Drawing.Color.Transparent;
+            DodajZadatakLabel.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
+            DodajZadatakLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            DodajZadatakLabel.Location = new System.Drawing.Point(809, 756);
+            DodajZadatakLabel.Name = "DodajZadatakLabel";
+            DodajZadatakLabel.Size = new System.Drawing.Size(65, 45);
+            DodajZadatakLabel.TabIndex = 58;
+            DodajZadatakLabel.Text = "_";
+            DodajZadatakLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            DodajZadatakLabel.UseWaitCursor = true;
             // 
-            // UrediZadatakOpisRichTextBox
+            // label1
             // 
-            this.UrediZadatakOpisRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.UrediZadatakOpisRichTextBox.Location = new System.Drawing.Point(625, 399);
-            this.UrediZadatakOpisRichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.UrediZadatakOpisRichTextBox.Name = "UrediZadatakOpisRichTextBox";
-            this.UrediZadatakOpisRichTextBox.Size = new System.Drawing.Size(621, 179);
-            this.UrediZadatakOpisRichTextBox.TabIndex = 22;
-            this.UrediZadatakOpisRichTextBox.Text = "";
+            label1.BackColor = System.Drawing.Color.Transparent;
+            label1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            label1.Location = new System.Drawing.Point(603, 822);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(453, 43);
+            label1.TabIndex = 59;
+            label1.Text = "Status";
+            label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label1.UseWaitCursor = true;
             // 
-            // UrediZadatakDokumentacijaRichTextBox
+            // DodajProjektButton
             // 
-            this.UrediZadatakDokumentacijaRichTextBox.Location = new System.Drawing.Point(637, 328);
-            this.UrediZadatakDokumentacijaRichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.UrediZadatakDokumentacijaRichTextBox.Name = "UrediZadatakDokumentacijaRichTextBox";
-            this.UrediZadatakDokumentacijaRichTextBox.Size = new System.Drawing.Size(618, 53);
-            this.UrediZadatakDokumentacijaRichTextBox.TabIndex = 23;
-            this.UrediZadatakDokumentacijaRichTextBox.Text = "";
+            DodajProjektButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            DodajProjektButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            DodajProjektButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            DodajProjektButton.Location = new System.Drawing.Point(877, 905);
+            DodajProjektButton.Name = "DodajProjektButton";
+            DodajProjektButton.Size = new System.Drawing.Size(220, 60);
+            DodajProjektButton.TabIndex = 65;
+            DodajProjektButton.Text = "Uredi zadatak";
+            DodajProjektButton.UseVisualStyleBackColor = false;
             // 
             // DeaktivacijaProfilPanel
             // 
@@ -203,6 +236,66 @@
             this.DeaktivacijaProfilLinkLabel.TabStop = true;
             this.DeaktivacijaProfilLinkLabel.Text = "Sara Bednaić";
             // 
+            // UrediZadatakStatusButton
+            // 
+            this.UrediZadatakStatusButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.UrediZadatakStatusButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.UrediZadatakStatusButton.Enabled = false;
+            this.UrediZadatakStatusButton.Location = new System.Drawing.Point(716, 858);
+            this.UrediZadatakStatusButton.Margin = new System.Windows.Forms.Padding(2);
+            this.UrediZadatakStatusButton.Name = "UrediZadatakStatusButton";
+            this.UrediZadatakStatusButton.Size = new System.Drawing.Size(105, 35);
+            this.UrediZadatakStatusButton.TabIndex = 64;
+            this.UrediZadatakStatusButton.UseVisualStyleBackColor = false;
+            // 
+            // DodajZadatakOpisRichTextBox
+            // 
+            this.DodajZadatakOpisRichTextBox.Location = new System.Drawing.Point(607, 441);
+            this.DodajZadatakOpisRichTextBox.Name = "DodajZadatakOpisRichTextBox";
+            this.DodajZadatakOpisRichTextBox.Size = new System.Drawing.Size(715, 121);
+            this.DodajZadatakOpisRichTextBox.TabIndex = 63;
+            this.DodajZadatakOpisRichTextBox.Text = "";
+            // 
+            // DodajZadatakClanoviListBox
+            // 
+            this.DodajZadatakClanoviListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.DodajZadatakClanoviListBox.FormattingEnabled = true;
+            this.DodajZadatakClanoviListBox.Location = new System.Drawing.Point(607, 616);
+            this.DodajZadatakClanoviListBox.Name = "DodajZadatakClanoviListBox";
+            this.DodajZadatakClanoviListBox.Size = new System.Drawing.Size(715, 119);
+            this.DodajZadatakClanoviListBox.TabIndex = 51;
+            // 
+            // DodajZadatakDateTimePicker2
+            // 
+            this.DodajZadatakDateTimePicker2.Location = new System.Drawing.Point(870, 785);
+            this.DodajZadatakDateTimePicker2.Name = "DodajZadatakDateTimePicker2";
+            this.DodajZadatakDateTimePicker2.Size = new System.Drawing.Size(200, 26);
+            this.DodajZadatakDateTimePicker2.TabIndex = 57;
+            // 
+            // DodajZadatakDateTimePicker1
+            // 
+            this.DodajZadatakDateTimePicker1.Location = new System.Drawing.Point(607, 785);
+            this.DodajZadatakDateTimePicker1.Name = "DodajZadatakDateTimePicker1";
+            this.DodajZadatakDateTimePicker1.Size = new System.Drawing.Size(200, 26);
+            this.DodajZadatakDateTimePicker1.TabIndex = 56;
+            // 
+            // DodajZadatakProjektComboBox
+            // 
+            this.DodajZadatakProjektComboBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.DodajZadatakProjektComboBox.FormattingEnabled = true;
+            this.DodajZadatakProjektComboBox.Location = new System.Drawing.Point(607, 282);
+            this.DodajZadatakProjektComboBox.Name = "DodajZadatakProjektComboBox";
+            this.DodajZadatakProjektComboBox.Size = new System.Drawing.Size(715, 28);
+            this.DodajZadatakProjektComboBox.TabIndex = 54;
+            // 
+            // UrediZadatakStatusComboBox
+            // 
+            this.UrediZadatakStatusComboBox.FormattingEnabled = true;
+            this.UrediZadatakStatusComboBox.Location = new System.Drawing.Point(607, 860);
+            this.UrediZadatakStatusComboBox.Name = "UrediZadatakStatusComboBox";
+            this.UrediZadatakStatusComboBox.Size = new System.Drawing.Size(95, 28);
+            this.UrediZadatakStatusComboBox.TabIndex = 66;
+            // 
             // UrediZadatak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -210,17 +303,24 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1898, 1024);
-            this.Controls.Add(this.DeaktivacijaProfilPanel);
-            this.Controls.Add(this.UrediZadatakDokumentacijaRichTextBox);
-            this.Controls.Add(this.UrediZadatakOpisRichTextBox);
-            this.Controls.Add(this.UrediZadatakSubmitButton);
+            this.Controls.Add(this.UrediZadatakStatusComboBox);
+            this.Controls.Add(DodajProjektButton);
+            this.Controls.Add(this.DodajZadatakDateTimePicker2);
             this.Controls.Add(this.UrediZadatakStatusButton);
-            this.Controls.Add(this.UrediZadatakStatusTextBox);
-            this.Controls.Add(this.UrediZadatakDatumKrajTextBox);
-            this.Controls.Add(this.UrediZadatakDatumPocetakTextBox);
-            this.Controls.Add(this.UrediZadatakClanoviTextBox);
-            this.Controls.Add(this.UrediZadatakImeProjektaTextBox);
+            this.Controls.Add(this.DodajZadatakOpisRichTextBox);
+            this.Controls.Add(this.DeaktivacijaProfilPanel);
+            this.Controls.Add(label4);
             this.Controls.Add(UrediZadatakNaslovLabel);
+            this.Controls.Add(label3);
+            this.Controls.Add(label1);
+            this.Controls.Add(label2);
+            this.Controls.Add(this.DodajZadatakClanoviListBox);
+            this.Controls.Add(DodajZadatakNazivTextBox);
+            this.Controls.Add(DodajZadatakClanoviLabel);
+            this.Controls.Add(this.DodajZadatakDateTimePicker1);
+            this.Controls.Add(DodajZadatakVrijemeLabel);
+            this.Controls.Add(this.DodajZadatakProjektComboBox);
+            this.Controls.Add(DodajZadatakLabel);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.MinimumSize = new System.Drawing.Size(1086, 826);
@@ -236,18 +336,16 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox UrediZadatakImeProjektaTextBox;
-        private System.Windows.Forms.TextBox UrediZadatakClanoviTextBox;
-        private System.Windows.Forms.TextBox UrediZadatakDatumPocetakTextBox;
-        private System.Windows.Forms.TextBox UrediZadatakDatumKrajTextBox;
-        private System.Windows.Forms.TextBox UrediZadatakStatusTextBox;
-        private System.Windows.Forms.Button UrediZadatakStatusButton;
-        private System.Windows.Forms.Button UrediZadatakSubmitButton;
-        private System.Windows.Forms.RichTextBox UrediZadatakOpisRichTextBox;
-        private System.Windows.Forms.RichTextBox UrediZadatakDokumentacijaRichTextBox;
         private System.Windows.Forms.Panel DeaktivacijaProfilPanel;
         private System.Windows.Forms.Button DeaktivacijaNatragButton;
         private System.Windows.Forms.PictureBox DeaktivacijaProfilPictureBox;
         private System.Windows.Forms.LinkLabel DeaktivacijaProfilLinkLabel;
+        private System.Windows.Forms.Button UrediZadatakStatusButton;
+        private System.Windows.Forms.RichTextBox DodajZadatakOpisRichTextBox;
+        private System.Windows.Forms.CheckedListBox DodajZadatakClanoviListBox;
+        private System.Windows.Forms.DateTimePicker DodajZadatakDateTimePicker2;
+        private System.Windows.Forms.DateTimePicker DodajZadatakDateTimePicker1;
+        private System.Windows.Forms.ComboBox DodajZadatakProjektComboBox;
+        private System.Windows.Forms.ComboBox UrediZadatakStatusComboBox;
     }
 }
