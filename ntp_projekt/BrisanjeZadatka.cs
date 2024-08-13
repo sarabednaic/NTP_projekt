@@ -56,5 +56,7 @@ namespace ntp_projekt
         {
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
+
+        
     }
 }
