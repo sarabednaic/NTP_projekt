@@ -8,6 +8,7 @@ namespace ntp_projekt
 {
     internal static class Program
     {
+          
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -17,9 +18,7 @@ namespace ntp_projekt
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new UrediZadatak());
-
-            
+            new StartApk();
 
         }
     }

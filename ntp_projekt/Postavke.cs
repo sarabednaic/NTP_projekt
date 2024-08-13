@@ -21,5 +21,25 @@ namespace ntp_projekt
         {
 
         }
+
+        private void PostavkeOdjavaButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Prijava();
+        }
+
+        private void PostavkeDeaktivacijaLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Deaktivacija_racuna();
+        }
+
+        private void PostavkePromjenaButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Postavke();
+        }
+
+        private void PostavkeNatragButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
+        }
     }
 }

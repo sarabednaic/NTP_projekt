@@ -83,6 +83,7 @@
             DodajProjektButton.TabIndex = 16;
             DodajProjektButton.Text = "Dodaj projekt";
             DodajProjektButton.UseVisualStyleBackColor = false;
+            DodajProjektButton.Click += new System.EventHandler(this.DodajProjektButton_Click);
             // 
             // DodajProjektClanoviLabel
             // 
@@ -168,6 +169,7 @@
             this.DodajProjektProfilLinkLabel.TabIndex = 26;
             this.DodajProjektProfilLinkLabel.TabStop = true;
             this.DodajProjektProfilLinkLabel.Text = "Sara Bednaić";
+            this.DodajProjektProfilLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.DodajProjektProfilLinkLabel_LinkClicked);
             // 
             // DodajProjektNatragButton
             // 
@@ -179,6 +181,7 @@
             this.DodajProjektNatragButton.Size = new System.Drawing.Size(64, 64);
             this.DodajProjektNatragButton.TabIndex = 26;
             this.DodajProjektNatragButton.UseVisualStyleBackColor = false;
+            this.DodajProjektNatragButton.Click += new System.EventHandler(this.DodajProjektNatragButton_Click);
             // 
             // DodajProjektProfilPictureBox
             // 
@@ -192,6 +195,7 @@
             this.DodajProjektProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.DodajProjektProfilPictureBox.TabIndex = 27;
             this.DodajProjektProfilPictureBox.TabStop = false;
+            this.DodajProjektProfilPictureBox.Click += new System.EventHandler(this.DodajProjektProfilPictureBox_Click);
             // 
             // DodajProjektProfilPanel
             // 
@@ -200,6 +204,7 @@
             this.DodajProjektProfilPanel.Controls.Add(this.DodajProjektNatragButton);
             this.DodajProjektProfilPanel.Controls.Add(this.DodajProjektProfilLinkLabel);
             this.DodajProjektProfilPanel.Location = new System.Drawing.Point(0, 0);
+            this.DodajProjektProfilPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DodajProjektProfilPanel.Name = "DodajProjektProfilPanel";
             this.DodajProjektProfilPanel.Size = new System.Drawing.Size(1920, 90);
             this.DodajProjektProfilPanel.TabIndex = 10;

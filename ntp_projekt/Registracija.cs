@@ -21,5 +21,10 @@ namespace ntp_projekt
         {
 
         }
+
+        private void RegistracijaButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Prijava();
+        }
     }
 }

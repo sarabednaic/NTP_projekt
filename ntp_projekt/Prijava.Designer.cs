@@ -83,6 +83,7 @@
             PrijavaPrijavaButton.TabIndex = 3;
             PrijavaPrijavaButton.Text = "Prijavi se";
             PrijavaPrijavaButton.UseVisualStyleBackColor = false;
+            PrijavaPrijavaButton.Click += new System.EventHandler(this.PrijavaPrijavaButton_Click);
             // 
             // PrijavaLozinkaLabel
             // 
@@ -120,12 +121,13 @@
             this.PrijavaRegistracijaLinkLabel.TabIndex = 4;
             this.PrijavaRegistracijaLinkLabel.TabStop = true;
             this.PrijavaRegistracijaLinkLabel.Text = "Nemate račun? Registrirajte se!";
+            this.PrijavaRegistracijaLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.PrijavaRegistracijaLinkLabel_LinkClicked);
             // 
             // Prijava
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1898, 1024);
+            this.ClientSize = new System.Drawing.Size(1894, 1009);
             this.Controls.Add(this.PrijavaRegistracijaLinkLabel);
             this.Controls.Add(PrijavaPrijavaButton);
             this.Controls.Add(PrijavaLozinkaTextBox);

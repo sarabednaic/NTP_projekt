@@ -56,5 +56,30 @@ namespace ntp_projekt
         {
 
         }
+
+        private void PopisZadatakaNatragButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
+        }
+
+        private void PopisZadatakaReportButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new PopisDokumentacije();
+        }
+
+        private void PopisZadatakaAddButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new DodajZadatak();
+        }
+
+        private void PopisZadatakaProfilPictureBox_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Postavke();
+        }
+
+        private void PopisZadatakaProfilLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Postavke();
+        }
     }
 }

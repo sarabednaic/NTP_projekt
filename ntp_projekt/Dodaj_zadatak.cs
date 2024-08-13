@@ -21,5 +21,25 @@ namespace ntp_projekt
         {
 
         }
+
+        private void DodajZadatakNatragButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new PopisZadataka();
+        }
+
+        private void DodajZadatakProfilLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Postavke();
+        }
+
+        private void DodajZadatakProfilPictureBox_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new Postavke();
+        }
+
+        private void DodajZadatakButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new DodajZadatak();
+        }
     }
 }

@@ -68,9 +68,10 @@
             DodajZadatakVrijemeLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakVrijemeLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             DodajZadatakVrijemeLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            DodajZadatakVrijemeLabel.Location = new System.Drawing.Point(627, 733);
+            DodajZadatakVrijemeLabel.Location = new System.Drawing.Point(836, 916);
+            DodajZadatakVrijemeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             DodajZadatakVrijemeLabel.Name = "DodajZadatakVrijemeLabel";
-            DodajZadatakVrijemeLabel.Size = new System.Drawing.Size(453, 43);
+            DodajZadatakVrijemeLabel.Size = new System.Drawing.Size(604, 54);
             DodajZadatakVrijemeLabel.TabIndex = 33;
             DodajZadatakVrijemeLabel.Text = "Vrijeme ";
             DodajZadatakVrijemeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -81,9 +82,10 @@
             DodajZadatakClanoviLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakClanoviLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             DodajZadatakClanoviLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            DodajZadatakClanoviLabel.Location = new System.Drawing.Point(627, 576);
+            DodajZadatakClanoviLabel.Location = new System.Drawing.Point(836, 720);
+            DodajZadatakClanoviLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             DodajZadatakClanoviLabel.Name = "DodajZadatakClanoviLabel";
-            DodajZadatakClanoviLabel.Size = new System.Drawing.Size(287, 43);
+            DodajZadatakClanoviLabel.Size = new System.Drawing.Size(383, 54);
             DodajZadatakClanoviLabel.TabIndex = 32;
             DodajZadatakClanoviLabel.Text = "Dodijeli zadatak članovima tima";
             DodajZadatakClanoviLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -93,17 +95,19 @@
             // 
             DodajZadatakNazivTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             DodajZadatakNazivTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            DodajZadatakNazivTextBox.Location = new System.Drawing.Point(631, 353);
+            DodajZadatakNazivTextBox.Location = new System.Drawing.Point(841, 441);
+            DodajZadatakNazivTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             DodajZadatakNazivTextBox.Name = "DodajZadatakNazivTextBox";
-            DodajZadatakNazivTextBox.Size = new System.Drawing.Size(715, 26);
+            DodajZadatakNazivTextBox.Size = new System.Drawing.Size(952, 31);
             DodajZadatakNazivTextBox.TabIndex = 29;
             // 
             // DodajZadatakNaslovLabel
             // 
             DodajZadatakNaslovLabel.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            DodajZadatakNaslovLabel.Location = new System.Drawing.Point(568, 141);
+            DodajZadatakNaslovLabel.Location = new System.Drawing.Point(757, 176);
+            DodajZadatakNaslovLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             DodajZadatakNaslovLabel.Name = "DodajZadatakNaslovLabel";
-            DodajZadatakNaslovLabel.Size = new System.Drawing.Size(874, 120);
+            DodajZadatakNaslovLabel.Size = new System.Drawing.Size(1165, 150);
             DodajZadatakNaslovLabel.TabIndex = 27;
             DodajZadatakNaslovLabel.Text = "Dodaj novi projektni zadatak";
             // 
@@ -112,9 +116,10 @@
             DodajZadatakOdDoLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakOdDoLabel.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
             DodajZadatakOdDoLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            DodajZadatakOdDoLabel.Location = new System.Drawing.Point(833, 750);
+            DodajZadatakOdDoLabel.Location = new System.Drawing.Point(1111, 938);
+            DodajZadatakOdDoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             DodajZadatakOdDoLabel.Name = "DodajZadatakOdDoLabel";
-            DodajZadatakOdDoLabel.Size = new System.Drawing.Size(65, 45);
+            DodajZadatakOdDoLabel.Size = new System.Drawing.Size(87, 56);
             DodajZadatakOdDoLabel.TabIndex = 39;
             DodajZadatakOdDoLabel.Text = "_";
             DodajZadatakOdDoLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -126,21 +131,24 @@
             DodajZadatakButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             DodajZadatakButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             DodajZadatakButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            DodajZadatakButton.Location = new System.Drawing.Point(874, 917);
+            DodajZadatakButton.Location = new System.Drawing.Point(1165, 1146);
+            DodajZadatakButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             DodajZadatakButton.Name = "DodajZadatakButton";
-            DodajZadatakButton.Size = new System.Drawing.Size(220, 60);
+            DodajZadatakButton.Size = new System.Drawing.Size(293, 75);
             DodajZadatakButton.TabIndex = 40;
             DodajZadatakButton.Text = "Dodaj projektni zadatak";
             DodajZadatakButton.UseVisualStyleBackColor = false;
+            DodajZadatakButton.Click += new System.EventHandler(this.DodajZadatakButton_Click);
             // 
             // DodajZadatakStatusLabel
             // 
             DodajZadatakStatusLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakStatusLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             DodajZadatakStatusLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            DodajZadatakStatusLabel.Location = new System.Drawing.Point(627, 816);
+            DodajZadatakStatusLabel.Location = new System.Drawing.Point(836, 1020);
+            DodajZadatakStatusLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             DodajZadatakStatusLabel.Name = "DodajZadatakStatusLabel";
-            DodajZadatakStatusLabel.Size = new System.Drawing.Size(453, 43);
+            DodajZadatakStatusLabel.Size = new System.Drawing.Size(604, 54);
             DodajZadatakStatusLabel.TabIndex = 44;
             DodajZadatakStatusLabel.Text = "Status";
             DodajZadatakStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -151,9 +159,10 @@
             DodajZadatakProjektLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakProjektLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             DodajZadatakProjektLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            DodajZadatakProjektLabel.Location = new System.Drawing.Point(627, 233);
+            DodajZadatakProjektLabel.Location = new System.Drawing.Point(836, 291);
+            DodajZadatakProjektLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             DodajZadatakProjektLabel.Name = "DodajZadatakProjektLabel";
-            DodajZadatakProjektLabel.Size = new System.Drawing.Size(453, 43);
+            DodajZadatakProjektLabel.Size = new System.Drawing.Size(604, 54);
             DodajZadatakProjektLabel.TabIndex = 45;
             DodajZadatakProjektLabel.Text = "Dodijeli zadatak projektu";
             DodajZadatakProjektLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -164,9 +173,10 @@
             DodajZadatakNazivLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakNazivLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             DodajZadatakNazivLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            DodajZadatakNazivLabel.Location = new System.Drawing.Point(627, 309);
+            DodajZadatakNazivLabel.Location = new System.Drawing.Point(836, 386);
+            DodajZadatakNazivLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             DodajZadatakNazivLabel.Name = "DodajZadatakNazivLabel";
-            DodajZadatakNazivLabel.Size = new System.Drawing.Size(453, 43);
+            DodajZadatakNazivLabel.Size = new System.Drawing.Size(604, 54);
             DodajZadatakNazivLabel.TabIndex = 46;
             DodajZadatakNazivLabel.Text = "Naziv zadatka";
             DodajZadatakNazivLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -177,9 +187,10 @@
             DodajZadatakOpisLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakOpisLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             DodajZadatakOpisLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            DodajZadatakOpisLabel.Location = new System.Drawing.Point(627, 389);
+            DodajZadatakOpisLabel.Location = new System.Drawing.Point(836, 486);
+            DodajZadatakOpisLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             DodajZadatakOpisLabel.Name = "DodajZadatakOpisLabel";
-            DodajZadatakOpisLabel.Size = new System.Drawing.Size(453, 43);
+            DodajZadatakOpisLabel.Size = new System.Drawing.Size(604, 54);
             DodajZadatakOpisLabel.TabIndex = 47;
             DodajZadatakOpisLabel.Text = "Opis zadatka";
             DodajZadatakOpisLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -189,40 +200,45 @@
             // 
             this.DodajZadatakClanoviListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.DodajZadatakClanoviListBox.FormattingEnabled = true;
-            this.DodajZadatakClanoviListBox.Location = new System.Drawing.Point(631, 610);
+            this.DodajZadatakClanoviListBox.Location = new System.Drawing.Point(841, 762);
+            this.DodajZadatakClanoviListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DodajZadatakClanoviListBox.Name = "DodajZadatakClanoviListBox";
-            this.DodajZadatakClanoviListBox.Size = new System.Drawing.Size(715, 119);
+            this.DodajZadatakClanoviListBox.Size = new System.Drawing.Size(952, 144);
             this.DodajZadatakClanoviListBox.TabIndex = 30;
             // 
             // DodajZadatakProfilPanel
             // 
             this.DodajZadatakProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DodajZadatakProfilPanel.Location = new System.Drawing.Point(0, 0);
+            this.DodajZadatakProfilPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DodajZadatakProfilPanel.Name = "DodajZadatakProfilPanel";
-            this.DodajZadatakProfilPanel.Size = new System.Drawing.Size(1920, 90);
+            this.DodajZadatakProfilPanel.Size = new System.Drawing.Size(2560, 112);
             this.DodajZadatakProfilPanel.TabIndex = 26;
             // 
             // DodajZadatakProjektComboBox
             // 
             this.DodajZadatakProjektComboBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.DodajZadatakProjektComboBox.FormattingEnabled = true;
-            this.DodajZadatakProjektComboBox.Location = new System.Drawing.Point(631, 276);
+            this.DodajZadatakProjektComboBox.Location = new System.Drawing.Point(841, 345);
+            this.DodajZadatakProjektComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DodajZadatakProjektComboBox.Name = "DodajZadatakProjektComboBox";
-            this.DodajZadatakProjektComboBox.Size = new System.Drawing.Size(715, 28);
+            this.DodajZadatakProjektComboBox.Size = new System.Drawing.Size(952, 33);
             this.DodajZadatakProjektComboBox.TabIndex = 34;
             // 
             // DodajZadatakDateTimePicker1
             // 
-            this.DodajZadatakDateTimePicker1.Location = new System.Drawing.Point(631, 779);
+            this.DodajZadatakDateTimePicker1.Location = new System.Drawing.Point(841, 974);
+            this.DodajZadatakDateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DodajZadatakDateTimePicker1.Name = "DodajZadatakDateTimePicker1";
-            this.DodajZadatakDateTimePicker1.Size = new System.Drawing.Size(200, 26);
+            this.DodajZadatakDateTimePicker1.Size = new System.Drawing.Size(265, 31);
             this.DodajZadatakDateTimePicker1.TabIndex = 37;
             // 
             // DodajZadatakDateTimePicker2
             // 
-            this.DodajZadatakDateTimePicker2.Location = new System.Drawing.Point(894, 779);
+            this.DodajZadatakDateTimePicker2.Location = new System.Drawing.Point(1192, 974);
+            this.DodajZadatakDateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DodajZadatakDateTimePicker2.Name = "DodajZadatakDateTimePicker2";
-            this.DodajZadatakDateTimePicker2.Size = new System.Drawing.Size(200, 26);
+            this.DodajZadatakDateTimePicker2.Size = new System.Drawing.Size(265, 31);
             this.DodajZadatakDateTimePicker2.TabIndex = 38;
             // 
             // DodajZadatakProfilPictureBox
@@ -231,23 +247,27 @@
             this.DodajZadatakProfilPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DodajZadatakProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("DodajZadatakProfilPictureBox.Image")));
             this.DodajZadatakProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("DodajZadatakProfilPictureBox.InitialImage")));
-            this.DodajZadatakProfilPictureBox.Location = new System.Drawing.Point(1823, 13);
+            this.DodajZadatakProfilPictureBox.Location = new System.Drawing.Point(2431, 16);
+            this.DodajZadatakProfilPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DodajZadatakProfilPictureBox.Name = "DodajZadatakProfilPictureBox";
-            this.DodajZadatakProfilPictureBox.Size = new System.Drawing.Size(65, 65);
+            this.DodajZadatakProfilPictureBox.Size = new System.Drawing.Size(87, 81);
             this.DodajZadatakProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.DodajZadatakProfilPictureBox.TabIndex = 43;
             this.DodajZadatakProfilPictureBox.TabStop = false;
+            this.DodajZadatakProfilPictureBox.Click += new System.EventHandler(this.DodajZadatakProfilPictureBox_Click);
             // 
             // DodajZadatakNatragButton
             // 
             this.DodajZadatakNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DodajZadatakNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DodajZadatakNatragButton.BackgroundImage")));
             this.DodajZadatakNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DodajZadatakNatragButton.Location = new System.Drawing.Point(12, 12);
+            this.DodajZadatakNatragButton.Location = new System.Drawing.Point(16, 15);
+            this.DodajZadatakNatragButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DodajZadatakNatragButton.Name = "DodajZadatakNatragButton";
-            this.DodajZadatakNatragButton.Size = new System.Drawing.Size(64, 64);
+            this.DodajZadatakNatragButton.Size = new System.Drawing.Size(85, 80);
             this.DodajZadatakNatragButton.TabIndex = 41;
             this.DodajZadatakNatragButton.UseVisualStyleBackColor = false;
+            this.DodajZadatakNatragButton.Click += new System.EventHandler(this.DodajZadatakNatragButton_Click);
             // 
             // DodajZadatakProfilLinkLabel
             // 
@@ -255,18 +275,21 @@
             this.DodajZadatakProfilLinkLabel.BackColor = System.Drawing.Color.Transparent;
             this.DodajZadatakProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.DodajZadatakProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DodajZadatakProfilLinkLabel.Location = new System.Drawing.Point(1651, 31);
+            this.DodajZadatakProfilLinkLabel.Location = new System.Drawing.Point(2201, 39);
+            this.DodajZadatakProfilLinkLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DodajZadatakProfilLinkLabel.Name = "DodajZadatakProfilLinkLabel";
-            this.DodajZadatakProfilLinkLabel.Size = new System.Drawing.Size(157, 29);
+            this.DodajZadatakProfilLinkLabel.Size = new System.Drawing.Size(209, 37);
             this.DodajZadatakProfilLinkLabel.TabIndex = 42;
             this.DodajZadatakProfilLinkLabel.TabStop = true;
             this.DodajZadatakProfilLinkLabel.Text = "Sara Bednaić";
+            this.DodajZadatakProfilLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.DodajZadatakProfilLinkLabel_LinkClicked);
             // 
             // DodajZadatakOpisRichTextBox
             // 
-            this.DodajZadatakOpisRichTextBox.Location = new System.Drawing.Point(631, 435);
+            this.DodajZadatakOpisRichTextBox.Location = new System.Drawing.Point(841, 544);
+            this.DodajZadatakOpisRichTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DodajZadatakOpisRichTextBox.Name = "DodajZadatakOpisRichTextBox";
-            this.DodajZadatakOpisRichTextBox.Size = new System.Drawing.Size(715, 121);
+            this.DodajZadatakOpisRichTextBox.Size = new System.Drawing.Size(952, 150);
             this.DodajZadatakOpisRichTextBox.TabIndex = 48;
             this.DodajZadatakOpisRichTextBox.Text = "";
             // 
@@ -275,27 +298,28 @@
             this.DodajZadatakStatusButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.DodajZadatakStatusButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.DodajZadatakStatusButton.Enabled = false;
-            this.DodajZadatakStatusButton.Location = new System.Drawing.Point(740, 854);
-            this.DodajZadatakStatusButton.Margin = new System.Windows.Forms.Padding(2);
+            this.DodajZadatakStatusButton.Location = new System.Drawing.Point(987, 1068);
+            this.DodajZadatakStatusButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DodajZadatakStatusButton.Name = "DodajZadatakStatusButton";
-            this.DodajZadatakStatusButton.Size = new System.Drawing.Size(105, 30);
+            this.DodajZadatakStatusButton.Size = new System.Drawing.Size(140, 38);
             this.DodajZadatakStatusButton.TabIndex = 49;
             this.DodajZadatakStatusButton.UseVisualStyleBackColor = false;
             // 
             // DodajZadatakStatusComboBox
             // 
             this.DodajZadatakStatusComboBox.FormattingEnabled = true;
-            this.DodajZadatakStatusComboBox.Location = new System.Drawing.Point(631, 854);
+            this.DodajZadatakStatusComboBox.Location = new System.Drawing.Point(841, 1068);
+            this.DodajZadatakStatusComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DodajZadatakStatusComboBox.Name = "DodajZadatakStatusComboBox";
-            this.DodajZadatakStatusComboBox.Size = new System.Drawing.Size(95, 28);
+            this.DodajZadatakStatusComboBox.Size = new System.Drawing.Size(125, 33);
             this.DodajZadatakStatusComboBox.TabIndex = 50;
             // 
             // DodajZadatak
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1898, 1024);
+            this.ClientSize = new System.Drawing.Size(2525, 1261);
             this.Controls.Add(this.DodajZadatakStatusComboBox);
             this.Controls.Add(this.DodajZadatakStatusButton);
             this.Controls.Add(this.DodajZadatakOpisRichTextBox);
@@ -317,8 +341,9 @@
             this.Controls.Add(this.DodajZadatakProfilPanel);
             this.Controls.Add(DodajZadatakOdDoLabel);
             this.Controls.Add(DodajZadatakStatusLabel);
-            this.MaximumSize = new System.Drawing.Size(1920, 1080);
-            this.MinimumSize = new System.Drawing.Size(1440, 1018);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(2551, 1332);
+            this.MinimumSize = new System.Drawing.Size(1911, 1255);
             this.Name = "DodajZadatak";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

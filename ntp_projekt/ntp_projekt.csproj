@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -48,9 +51,11 @@
   <ItemGroup>
     <Compile Include="BrisanjeProjekta.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="BrisanjeProjekta.Designer.cs">
       <DependentUpon>BrisanjeProjekta.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="BrisanjeZadatka.cs">
       <SubType>Form</SubType>
@@ -58,6 +63,10 @@
     <Compile Include="BrisanjeZadatka.Designer.cs">
       <DependentUpon>BrisanjeZadatka.cs</DependentUpon>
     </Compile>
+    <Compile Include="Korisnik.cs" />
+    <Compile Include="Projekt.cs" />
+    <Compile Include="StartApk.cs" />
+    <Compile Include="MainFormManager.cs" />
     <Compile Include="PopisDokumentacije.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,16 +75,18 @@
     </Compile>
     <Compile Include="PopisProjekta.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="PopisProjekta.Designer.cs">
       <DependentUpon>PopisProjekta.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="PopisZadataka.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PopisZadataka.Designer.cs">
       <DependentUpon>PopisZadataka.cs</DependentUpon>
-	</Compile>
+    </Compile>
     <Compile Include="Deaktivacija_racuna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,17 +110,22 @@
     </Compile>
     <Compile Include="Postavke.Designer.cs">
       <DependentUpon>Postavke.cs</DependentUpon>
-
     </Compile>
     <Compile Include="Prijava.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Prijava.Designer.cs">
       <DependentUpon>Prijava.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-
+    <Compile Include="TeamPlanDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TeamPlanDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UrediProjekt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,8 +138,10 @@
     <Compile Include="UrediZadatak.Designer.cs">
       <DependentUpon>UrediZadatak.cs</DependentUpon>
     </Compile>
+    <Compile Include="Zadatak.cs" />
     <EmbeddedResource Include="BrisanjeProjekta.resx">
       <DependentUpon>BrisanjeProjekta.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="BrisanjeZadatka.resx">
       <DependentUpon>BrisanjeZadatka.cs</DependentUpon>
@@ -133,10 +151,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PopisProjekta.resx">
       <DependentUpon>PopisProjekta.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="PopisZadataka.resx">
       <DependentUpon>PopisZadataka.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <Compile Include="Registracija.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,10 +174,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Postavke.resx">
       <DependentUpon>Postavke.cs</DependentUpon>
-      
     </EmbeddedResource>
     <EmbeddedResource Include="Prijava.resx">
       <DependentUpon>Prijava.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -168,16 +188,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-
     <EmbeddedResource Include="UrediProjekt.resx">
       <DependentUpon>UrediProjekt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UrediZadatak.resx">
       <DependentUpon>UrediZadatak.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registracija.resx">
       <DependentUpon>Registracija.cs</DependentUpon>
-
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -188,9 +206,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TeamPlanDataSet.xsc">
+      <DependentUpon>TeamPlanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TeamPlanDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TeamPlanDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TeamPlanDataSet.xss">
+      <DependentUpon>TeamPlanDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TeamPlan.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
