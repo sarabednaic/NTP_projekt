@@ -6,39 +6,17 @@ namespace ntp_projekt
 {
     public partial class Prijava : Form
     {
+        private Baza baza;
+
         public Prijava()
         {
             InitializeComponent();
+            baza = new Baza(@"C:\\Users\\sbednaic\\Desktop\\TeamPlan.mdb");
         }
 
         private void Prijava_Load(object sender, EventArgs e)
         {
-            string connectionString = @"Provider=Microsoft.ACE.OLEDB.16.0;Data Source=""C:\Users\sbednaic\Desktop\TeamPlan.mdb""";
 
-            using (OleDbConnection connection = new OleDbConnection(connectionString))
-            {
-                try
-                {
-                    connection.Open();
-
-
-                    string query = "SELECT ime FROM korisnik WHERE ID = 2;";
-
-                    OleDbCommand command = new OleDbCommand(query, connection);
-
-                    using (OleDbDataReader reader = command.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            label1.Text = reader["ime"].ToString(); 
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Greška: " + ex.Message);
-                }
-            }
         }
 
         private void PrijavaLozinkaTextBox_TextChanged(object sender, EventArgs e)
@@ -53,7 +31,26 @@ namespace ntp_projekt
 
         private void PrijavaPrijavaButton_Click(object sender, EventArgs e)
         {
-            StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
+            try
+            {
+                string korisnicko_ime = PrijavaKorisImeTextBox.Text;
+                string query = $"SELECT lozinka FROM korisnik WHERE korisnicko_ime = \"{korisnicko_ime}\";";
+                string lozinka = baza.BazaRead(query);
+
+                if (PrijavaLozinkaTextBox.Text == lozinka)
+                {
+                    StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
+                }
+                else
+                {
+                    MessageBox.Show("Korisničko ime ili lozinka je netočna!");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Obrada greške - prikaz poruke korisniku
+                MessageBox.Show("Došlo je do greške prilikom prijave: " + ex.Message);
+            }
         }
 
         private void PrijavaRegistracijaLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
