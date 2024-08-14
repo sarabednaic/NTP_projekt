@@ -35,6 +35,7 @@
             System.Windows.Forms.Label PrijavaLozinkaLabel;
             System.Windows.Forms.Label PrijavaKorisnickoImeLabel;
             this.PrijavaRegistracijaLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
             PrijavaNaslovLabel = new System.Windows.Forms.Label();
             PrijavaKorisnickoImeTextBox = new System.Windows.Forms.TextBox();
             PrijavaLozinkaTextBox = new System.Windows.Forms.TextBox();
@@ -123,11 +124,21 @@
             this.PrijavaRegistracijaLinkLabel.Text = "Nemate račun? Registrirajte se!";
             this.PrijavaRegistracijaLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.PrijavaRegistracijaLinkLabel_LinkClicked);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(509, 557);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.TabIndex = 65;
+            this.label1.Text = "label1";
+            // 
             // Prijava
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1894, 1009);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.PrijavaRegistracijaLinkLabel);
             this.Controls.Add(PrijavaPrijavaButton);
             this.Controls.Add(PrijavaLozinkaTextBox);
@@ -140,7 +151,7 @@
             this.Name = "Prijava";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Prijava_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,6 +160,7 @@
         #endregion
 
         private System.Windows.Forms.LinkLabel PrijavaRegistracijaLinkLabel;
+        private System.Windows.Forms.Label label1;
     }
 }
 
