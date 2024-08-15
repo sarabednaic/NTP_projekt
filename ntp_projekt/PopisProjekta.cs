@@ -12,15 +12,11 @@ namespace ntp_projekt
 {
     public partial class PopisProjekta : Form
     {
-        private Baza baza;
+        
         public PopisProjekta()
         {
             InitializeComponent();
-            baza = new Baza(@"..\..\TeamPlan.mdb");
-            string user = Session.DohvatiKorisnika();
-            string ime = baza.BazaRead($"SELECT ime FROM korisnik WHERE korisnicko_ime = \"{user}\";");
-            string prezime = baza.BazaRead($"SELECT prezime FROM korisnik WHERE korisnicko_ime = \"{user}\";");
-            PopisProjektaProfilLinkLabel.Text = ime + " " + prezime;
+            PopisProjektaProfilLinkLabel.Text = Session.DohvatiPunoIme();
         }
 
         private void UrediZadatakNaslovLabel_Click(object sender, EventArgs e)

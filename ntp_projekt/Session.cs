@@ -14,6 +14,7 @@ namespace ntp_projekt
         private static string ime;
         private static string prezime;
         private static string korisnicko_ime;
+        static Baza baza = new Baza(@"..\..\TeamPlan.mdb");
 
         public static void PostaviPodatke(string _username, Baza baza)
         {
@@ -60,7 +61,20 @@ namespace ntp_projekt
 
             } catch (Exception ex)
             {
-                MessageBox.Show("Greška: " + ex.Message);
+                MessageBox.Show("Greška pri dohvatu korisnika: " + ex.Message);
+                return null;
+            }
+        }
+
+        public static string DohvatiPunoIme() {
+            try {
+                string User = Session.DohvatiKorisnika();
+                string ime = baza.BazaRead($"SELECT ime FROM korisnik WHERE korisnicko_ime = \"{User}\";");
+                string prezime = baza.BazaRead($"SELECT prezime FROM korisnik WHERE korisnicko_ime = \"{User}\";");
+                return ime + " " + prezime;
+            } catch (Exception ex) 
+            {
+                MessageBox.Show("Greška pri dohvatu punog imena: " + ex.Message);
                 return null;
             }
         }

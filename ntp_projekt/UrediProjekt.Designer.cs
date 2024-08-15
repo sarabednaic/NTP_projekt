@@ -39,8 +39,8 @@
             this.UrediZadatakSubmitButton = new System.Windows.Forms.Button();
             this.DeaktivacijaProfilPanel = new System.Windows.Forms.Panel();
             this.DeaktivacijaNatragButton = new System.Windows.Forms.Button();
-            this.DeaktivacijaProfilPictureBox = new System.Windows.Forms.PictureBox();
-            this.DeaktivacijaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.UrediProjektProfilPictureBox = new System.Windows.Forms.PictureBox();
+            this.UrediProjektProfilLinkLabel = new System.Windows.Forms.LinkLabel();
             this.DodajProjektOpisRichTextBox = new System.Windows.Forms.RichTextBox();
             this.DodajProjektOvlastiListBox = new System.Windows.Forms.CheckedListBox();
             this.DodajProjektClanoviListBox = new System.Windows.Forms.CheckedListBox();
@@ -52,7 +52,7 @@
             DodajProjektOpisLabel = new System.Windows.Forms.Label();
             DodajProjektButton = new System.Windows.Forms.Button();
             this.DeaktivacijaProfilPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DeaktivacijaProfilPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UrediProjektProfilPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // UrediZadatakNaslovLabel
@@ -166,8 +166,8 @@
             // 
             this.DeaktivacijaProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaNatragButton);
-            this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaProfilPictureBox);
-            this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaProfilLinkLabel);
+            this.DeaktivacijaProfilPanel.Controls.Add(this.UrediProjektProfilPictureBox);
+            this.DeaktivacijaProfilPanel.Controls.Add(this.UrediProjektProfilLinkLabel);
             this.DeaktivacijaProfilPanel.Location = new System.Drawing.Point(0, 0);
             this.DeaktivacijaProfilPanel.Margin = new System.Windows.Forms.Padding(4);
             this.DeaktivacijaProfilPanel.Name = "DeaktivacijaProfilPanel";
@@ -187,34 +187,34 @@
             this.DeaktivacijaNatragButton.UseVisualStyleBackColor = false;
             this.DeaktivacijaNatragButton.Click += new System.EventHandler(this.DeaktivacijaNatragButton_Click);
             // 
-            // DeaktivacijaProfilPictureBox
+            // UrediProjektProfilPictureBox
             // 
-            this.DeaktivacijaProfilPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaProfilPictureBox.BackgroundImage")));
-            this.DeaktivacijaProfilPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DeaktivacijaProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaProfilPictureBox.Image")));
-            this.DeaktivacijaProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("DeaktivacijaProfilPictureBox.InitialImage")));
-            this.DeaktivacijaProfilPictureBox.Location = new System.Drawing.Point(2429, 16);
-            this.DeaktivacijaProfilPictureBox.Margin = new System.Windows.Forms.Padding(4);
-            this.DeaktivacijaProfilPictureBox.Name = "DeaktivacijaProfilPictureBox";
-            this.DeaktivacijaProfilPictureBox.Size = new System.Drawing.Size(87, 81);
-            this.DeaktivacijaProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.DeaktivacijaProfilPictureBox.TabIndex = 22;
-            this.DeaktivacijaProfilPictureBox.TabStop = false;
-            this.DeaktivacijaProfilPictureBox.Click += new System.EventHandler(this.DeaktivacijaProfilPictureBox_Click);
+            this.UrediProjektProfilPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UrediProjektProfilPictureBox.BackgroundImage")));
+            this.UrediProjektProfilPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.UrediProjektProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("UrediProjektProfilPictureBox.Image")));
+            this.UrediProjektProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("UrediProjektProfilPictureBox.InitialImage")));
+            this.UrediProjektProfilPictureBox.Location = new System.Drawing.Point(2429, 16);
+            this.UrediProjektProfilPictureBox.Margin = new System.Windows.Forms.Padding(4);
+            this.UrediProjektProfilPictureBox.Name = "UrediProjektProfilPictureBox";
+            this.UrediProjektProfilPictureBox.Size = new System.Drawing.Size(87, 81);
+            this.UrediProjektProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UrediProjektProfilPictureBox.TabIndex = 22;
+            this.UrediProjektProfilPictureBox.TabStop = false;
+            this.UrediProjektProfilPictureBox.Click += new System.EventHandler(this.DeaktivacijaProfilPictureBox_Click);
             // 
-            // DeaktivacijaProfilLinkLabel
+            // UrediProjektProfilLinkLabel
             // 
-            this.DeaktivacijaProfilLinkLabel.AutoSize = true;
-            this.DeaktivacijaProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.DeaktivacijaProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DeaktivacijaProfilLinkLabel.Location = new System.Drawing.Point(2200, 39);
-            this.DeaktivacijaProfilLinkLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.DeaktivacijaProfilLinkLabel.Name = "DeaktivacijaProfilLinkLabel";
-            this.DeaktivacijaProfilLinkLabel.Size = new System.Drawing.Size(209, 37);
-            this.DeaktivacijaProfilLinkLabel.TabIndex = 0;
-            this.DeaktivacijaProfilLinkLabel.TabStop = true;
-            this.DeaktivacijaProfilLinkLabel.Text = "Sara Bednaić";
-            this.DeaktivacijaProfilLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.DeaktivacijaProfilLinkLabel_LinkClicked);
+            this.UrediProjektProfilLinkLabel.AutoSize = true;
+            this.UrediProjektProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.UrediProjektProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.UrediProjektProfilLinkLabel.Location = new System.Drawing.Point(2200, 39);
+            this.UrediProjektProfilLinkLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.UrediProjektProfilLinkLabel.Name = "UrediProjektProfilLinkLabel";
+            this.UrediProjektProfilLinkLabel.Size = new System.Drawing.Size(209, 37);
+            this.UrediProjektProfilLinkLabel.TabIndex = 0;
+            this.UrediProjektProfilLinkLabel.TabStop = true;
+            this.UrediProjektProfilLinkLabel.Text = "Sara Bednaić";
+            this.UrediProjektProfilLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.DeaktivacijaProfilLinkLabel_LinkClicked);
             // 
             // DodajProjektOpisRichTextBox
             // 
@@ -272,7 +272,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.DeaktivacijaProfilPanel.ResumeLayout(false);
             this.DeaktivacijaProfilPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DeaktivacijaProfilPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UrediProjektProfilPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,8 +282,8 @@
         private System.Windows.Forms.Button UrediZadatakSubmitButton;
         private System.Windows.Forms.Panel DeaktivacijaProfilPanel;
         private System.Windows.Forms.Button DeaktivacijaNatragButton;
-        private System.Windows.Forms.PictureBox DeaktivacijaProfilPictureBox;
-        private System.Windows.Forms.LinkLabel DeaktivacijaProfilLinkLabel;
+        private System.Windows.Forms.PictureBox UrediProjektProfilPictureBox;
+        private System.Windows.Forms.LinkLabel UrediProjektProfilLinkLabel;
         private System.Windows.Forms.RichTextBox DodajProjektOpisRichTextBox;
         private System.Windows.Forms.CheckedListBox DodajProjektOvlastiListBox;
         private System.Windows.Forms.CheckedListBox DodajProjektClanoviListBox;

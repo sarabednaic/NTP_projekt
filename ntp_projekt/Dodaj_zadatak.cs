@@ -12,9 +12,11 @@ namespace ntp_projekt
 {
     public partial class DodajZadatak : Form
     {
+        
         public DodajZadatak()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            DodajZadatakProfilLinkLabel.Text = Session.DohvatiPunoIme();
         }
 
         private void label1_Click(object sender, EventArgs e)

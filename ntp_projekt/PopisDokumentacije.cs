@@ -12,9 +12,11 @@ namespace ntp_projekt
 {
     public partial class PopisDokumentacije : Form
     {
+        
         public PopisDokumentacije()
         {
             InitializeComponent();
+            PopisDokumentacijeProfilLinkLabel.Text = Session.DohvatiPunoIme();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

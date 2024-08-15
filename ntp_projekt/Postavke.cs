@@ -12,9 +12,17 @@ namespace ntp_projekt
 {
     public partial class Postavke : Form
     {
+        Baza baza;
         public Postavke()
         {
             InitializeComponent();
+            baza = new Baza(@"..\..\TeamPlan.mdb");
+            string user = Session.DohvatiKorisnika();
+            string ime = baza.BazaRead($"SELECT ime FROM korisnik WHERE korisnicko_ime = \"{user}\";");
+            string prezime = baza.BazaRead($"SELECT prezime FROM korisnik WHERE korisnicko_ime = \"{user}\";");
+            PostavkeImeTextBox.Text = ime;
+            PostavkePrezimeTextBox.Text = prezime;
+            PostavkeKorisnickoImeTextBox.Text = user;
         }
 
         private void label3_Click(object sender, EventArgs e)

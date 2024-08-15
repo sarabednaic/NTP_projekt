@@ -36,11 +36,8 @@
             System.Windows.Forms.Label PostavkeJezikLabel;
             System.Windows.Forms.Label PostavkeFontLabel;
             System.Windows.Forms.Button PostavkeOdjavaButton;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Postavke));
             System.Windows.Forms.TextBox PostavkeLozinkaTextBox;
-            System.Windows.Forms.TextBox PostavkeKorisnickoImeTextBox;
-            System.Windows.Forms.TextBox PostavkePrezimeTextBox;
-            System.Windows.Forms.TextBox PostavkeImeTextBox;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Postavke));
             this.PostavkeLozinkaLabel = new System.Windows.Forms.Label();
             this.PostavkePonovnoLozinkaLabel = new System.Windows.Forms.Label();
             this.PostavkeJezikComboBox = new System.Windows.Forms.ComboBox();
@@ -52,6 +49,9 @@
             this.PostavkeFontButton2 = new System.Windows.Forms.Button();
             this.PostavkeFontButton1 = new System.Windows.Forms.Button();
             this.PostavkeDeaktivacijaLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.PostavkeImeTextBox = new System.Windows.Forms.TextBox();
+            this.PostavkePrezimeTextBox = new System.Windows.Forms.TextBox();
+            this.PostavkeKorisnickoImeTextBox = new System.Windows.Forms.TextBox();
             PostavkePromjenaButton = new System.Windows.Forms.Button();
             PostavkeNaslovLabel = new System.Windows.Forms.Label();
             PostavkeOpciPodaciLabel = new System.Windows.Forms.Label();
@@ -61,9 +61,6 @@
             PostavkeFontLabel = new System.Windows.Forms.Label();
             PostavkeOdjavaButton = new System.Windows.Forms.Button();
             PostavkeLozinkaTextBox = new System.Windows.Forms.TextBox();
-            PostavkeKorisnickoImeTextBox = new System.Windows.Forms.TextBox();
-            PostavkePrezimeTextBox = new System.Windows.Forms.TextBox();
-            PostavkeImeTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PostavkeProfilnaPictureBox)).BeginInit();
             this.PostavkePanel.SuspendLayout();
             this.SuspendLayout();
@@ -73,7 +70,7 @@
             PostavkePromjenaButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             PostavkePromjenaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             PostavkePromjenaButton.Location = new System.Drawing.Point(1123, 1004);
-            PostavkePromjenaButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            PostavkePromjenaButton.Margin = new System.Windows.Forms.Padding(4);
             PostavkePromjenaButton.Name = "PostavkePromjenaButton";
             PostavkePromjenaButton.Size = new System.Drawing.Size(293, 75);
             PostavkePromjenaButton.TabIndex = 16;
@@ -171,13 +168,21 @@
             PostavkeOdjavaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             PostavkeOdjavaButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             PostavkeOdjavaButton.Location = new System.Drawing.Point(1123, 1091);
-            PostavkeOdjavaButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            PostavkeOdjavaButton.Margin = new System.Windows.Forms.Padding(4);
             PostavkeOdjavaButton.Name = "PostavkeOdjavaButton";
             PostavkeOdjavaButton.Size = new System.Drawing.Size(293, 75);
             PostavkeOdjavaButton.TabIndex = 26;
             PostavkeOdjavaButton.Text = "Odjavi me";
             PostavkeOdjavaButton.UseVisualStyleBackColor = false;
             PostavkeOdjavaButton.Click += new System.EventHandler(this.PostavkeOdjavaButton_Click);
+            // 
+            // PostavkeLozinkaTextBox
+            // 
+            PostavkeLozinkaTextBox.Location = new System.Drawing.Point(117, 425);
+            PostavkeLozinkaTextBox.Margin = new System.Windows.Forms.Padding(4);
+            PostavkeLozinkaTextBox.Name = "PostavkeLozinkaTextBox";
+            PostavkeLozinkaTextBox.Size = new System.Drawing.Size(593, 31);
+            PostavkeLozinkaTextBox.TabIndex = 34;
             // 
             // PostavkeLozinkaLabel
             // 
@@ -213,7 +218,7 @@
             this.PostavkeJezikComboBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.PostavkeJezikComboBox.FormattingEnabled = true;
             this.PostavkeJezikComboBox.Location = new System.Drawing.Point(111, 666);
-            this.PostavkeJezikComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PostavkeJezikComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.PostavkeJezikComboBox.Name = "PostavkeJezikComboBox";
             this.PostavkeJezikComboBox.Size = new System.Drawing.Size(601, 33);
             this.PostavkeJezikComboBox.TabIndex = 20;
@@ -224,7 +229,7 @@
             this.PostavkeProfilnaPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PostavkeProfilnaPictureBox.Image")));
             this.PostavkeProfilnaPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("PostavkeProfilnaPictureBox.InitialImage")));
             this.PostavkeProfilnaPictureBox.Location = new System.Drawing.Point(1089, 179);
-            this.PostavkeProfilnaPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PostavkeProfilnaPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.PostavkeProfilnaPictureBox.Name = "PostavkeProfilnaPictureBox";
             this.PostavkeProfilnaPictureBox.Size = new System.Drawing.Size(333, 312);
             this.PostavkeProfilnaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -237,7 +242,7 @@
             this.PostavkeNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PostavkeNatragButton.BackgroundImage")));
             this.PostavkeNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PostavkeNatragButton.Location = new System.Drawing.Point(16, 15);
-            this.PostavkeNatragButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PostavkeNatragButton.Margin = new System.Windows.Forms.Padding(4);
             this.PostavkeNatragButton.Name = "PostavkeNatragButton";
             this.PostavkeNatragButton.Size = new System.Drawing.Size(85, 80);
             this.PostavkeNatragButton.TabIndex = 22;
@@ -247,13 +252,13 @@
             // PostavkePanel
             // 
             this.PostavkePanel.AutoScroll = true;
+            this.PostavkePanel.Controls.Add(this.PostavkeKorisnickoImeTextBox);
+            this.PostavkePanel.Controls.Add(this.PostavkePrezimeTextBox);
+            this.PostavkePanel.Controls.Add(this.PostavkeImeTextBox);
             this.PostavkePanel.Controls.Add(this.PostavkePonovnoLozinkaLabel);
             this.PostavkePanel.Controls.Add(this.PostavkeLozinkaLabel);
             this.PostavkePanel.Controls.Add(this.PostavkePonovnoLozinkaTextBox);
             this.PostavkePanel.Controls.Add(PostavkeLozinkaTextBox);
-            this.PostavkePanel.Controls.Add(PostavkeKorisnickoImeTextBox);
-            this.PostavkePanel.Controls.Add(PostavkePrezimeTextBox);
-            this.PostavkePanel.Controls.Add(PostavkeImeTextBox);
             this.PostavkePanel.Controls.Add(this.PostavkeFontButton3);
             this.PostavkePanel.Controls.Add(this.PostavkeFontButton2);
             this.PostavkePanel.Controls.Add(PostavkeFontLabel);
@@ -264,7 +269,7 @@
             this.PostavkePanel.Controls.Add(PostavkeOpciPodaciLabel);
             this.PostavkePanel.Controls.Add(this.PostavkeJezikComboBox);
             this.PostavkePanel.Location = new System.Drawing.Point(856, 530);
-            this.PostavkePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PostavkePanel.Margin = new System.Windows.Forms.Padding(4);
             this.PostavkePanel.Name = "PostavkePanel";
             this.PostavkePanel.Size = new System.Drawing.Size(803, 450);
             this.PostavkePanel.TabIndex = 25;
@@ -272,48 +277,16 @@
             // PostavkePonovnoLozinkaTextBox
             // 
             this.PostavkePonovnoLozinkaTextBox.Location = new System.Drawing.Point(117, 495);
-            this.PostavkePonovnoLozinkaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PostavkePonovnoLozinkaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.PostavkePonovnoLozinkaTextBox.Name = "PostavkePonovnoLozinkaTextBox";
             this.PostavkePonovnoLozinkaTextBox.Size = new System.Drawing.Size(593, 31);
             this.PostavkePonovnoLozinkaTextBox.TabIndex = 35;
-            // 
-            // PostavkeLozinkaTextBox
-            // 
-            PostavkeLozinkaTextBox.Location = new System.Drawing.Point(117, 425);
-            PostavkeLozinkaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            PostavkeLozinkaTextBox.Name = "PostavkeLozinkaTextBox";
-            PostavkeLozinkaTextBox.Size = new System.Drawing.Size(593, 31);
-            PostavkeLozinkaTextBox.TabIndex = 34;
-            // 
-            // PostavkeKorisnickoImeTextBox
-            // 
-            PostavkeKorisnickoImeTextBox.Location = new System.Drawing.Point(111, 200);
-            PostavkeKorisnickoImeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            PostavkeKorisnickoImeTextBox.Name = "PostavkeKorisnickoImeTextBox";
-            PostavkeKorisnickoImeTextBox.Size = new System.Drawing.Size(601, 31);
-            PostavkeKorisnickoImeTextBox.TabIndex = 33;
-            // 
-            // PostavkePrezimeTextBox
-            // 
-            PostavkePrezimeTextBox.Location = new System.Drawing.Point(111, 146);
-            PostavkePrezimeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            PostavkePrezimeTextBox.Name = "PostavkePrezimeTextBox";
-            PostavkePrezimeTextBox.Size = new System.Drawing.Size(596, 31);
-            PostavkePrezimeTextBox.TabIndex = 32;
-            // 
-            // PostavkeImeTextBox
-            // 
-            PostavkeImeTextBox.Location = new System.Drawing.Point(111, 92);
-            PostavkeImeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            PostavkeImeTextBox.Name = "PostavkeImeTextBox";
-            PostavkeImeTextBox.Size = new System.Drawing.Size(596, 31);
-            PostavkeImeTextBox.TabIndex = 31;
             // 
             // PostavkeFontButton3
             // 
             this.PostavkeFontButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.PostavkeFontButton3.Location = new System.Drawing.Point(271, 754);
-            this.PostavkeFontButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PostavkeFontButton3.Margin = new System.Windows.Forms.Padding(4);
             this.PostavkeFontButton3.Name = "PostavkeFontButton3";
             this.PostavkeFontButton3.Size = new System.Drawing.Size(72, 51);
             this.PostavkeFontButton3.TabIndex = 30;
@@ -324,7 +297,7 @@
             // 
             this.PostavkeFontButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.PostavkeFontButton2.Location = new System.Drawing.Point(191, 754);
-            this.PostavkeFontButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PostavkeFontButton2.Margin = new System.Windows.Forms.Padding(4);
             this.PostavkeFontButton2.Name = "PostavkeFontButton2";
             this.PostavkeFontButton2.Size = new System.Drawing.Size(72, 51);
             this.PostavkeFontButton2.TabIndex = 29;
@@ -335,7 +308,7 @@
             // 
             this.PostavkeFontButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.PostavkeFontButton1.Location = new System.Drawing.Point(111, 754);
-            this.PostavkeFontButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PostavkeFontButton1.Margin = new System.Windows.Forms.Padding(4);
             this.PostavkeFontButton1.Name = "PostavkeFontButton1";
             this.PostavkeFontButton1.Size = new System.Drawing.Size(72, 51);
             this.PostavkeFontButton1.TabIndex = 26;
@@ -357,6 +330,27 @@
             this.PostavkeDeaktivacijaLinkLabel.Text = "Deaktiviraj korisnički račun";
             this.PostavkeDeaktivacijaLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.PostavkeDeaktivacijaLinkLabel_LinkClicked);
             // 
+            // PostavkeImeTextBox
+            // 
+            this.PostavkeImeTextBox.Location = new System.Drawing.Point(111, 98);
+            this.PostavkeImeTextBox.Name = "PostavkeImeTextBox";
+            this.PostavkeImeTextBox.Size = new System.Drawing.Size(596, 31);
+            this.PostavkeImeTextBox.TabIndex = 38;
+            // 
+            // PostavkePrezimeTextBox
+            // 
+            this.PostavkePrezimeTextBox.Location = new System.Drawing.Point(111, 154);
+            this.PostavkePrezimeTextBox.Name = "PostavkePrezimeTextBox";
+            this.PostavkePrezimeTextBox.Size = new System.Drawing.Size(596, 31);
+            this.PostavkePrezimeTextBox.TabIndex = 39;
+            // 
+            // PostavkeKorisnickoImeTextBox
+            // 
+            this.PostavkeKorisnickoImeTextBox.Location = new System.Drawing.Point(111, 207);
+            this.PostavkeKorisnickoImeTextBox.Name = "PostavkeKorisnickoImeTextBox";
+            this.PostavkeKorisnickoImeTextBox.Size = new System.Drawing.Size(596, 31);
+            this.PostavkeKorisnickoImeTextBox.TabIndex = 40;
+            // 
             // Postavke
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -370,7 +364,7 @@
             this.Controls.Add(this.PostavkeNatragButton);
             this.Controls.Add(this.PostavkeProfilnaPictureBox);
             this.Controls.Add(PostavkeNaslovLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(2550, 1479);
             this.MinimumSize = new System.Drawing.Size(1910, 1015);
             this.Name = "Postavke";
@@ -397,5 +391,8 @@
         private System.Windows.Forms.TextBox PostavkePonovnoLozinkaTextBox;
         private System.Windows.Forms.Label PostavkeLozinkaLabel;
         private System.Windows.Forms.Label PostavkePonovnoLozinkaLabel;
+        private System.Windows.Forms.TextBox PostavkeKorisnickoImeTextBox;
+        private System.Windows.Forms.TextBox PostavkePrezimeTextBox;
+        private System.Windows.Forms.TextBox PostavkeImeTextBox;
     }
 }

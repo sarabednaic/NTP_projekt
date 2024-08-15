@@ -12,9 +12,12 @@ namespace ntp_projekt
 {
     public partial class DodajProjekt : Form
     {
+        
         public DodajProjekt()
         {
             InitializeComponent();
+            
+            DodajProjektProfilLinkLabel.Text = Session.DohvatiPunoIme();
         }
 
         private void DodajProjektClanoviListBox_SelectedIndexChanged(object sender, EventArgs e)

@@ -15,6 +15,7 @@ namespace ntp_projekt
         public PopisZadataka()
         {
             InitializeComponent();
+            PopisZadatakaProfilLinkLabel.Text = Session.DohvatiPunoIme();
         }
 
         private void PopisDokumentacijeArrowButton_Click(object sender, EventArgs e)

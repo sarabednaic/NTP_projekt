@@ -12,9 +12,11 @@ namespace ntp_projekt
 {
     public partial class Deaktivacija_racuna : Form
     {
+        
         public Deaktivacija_racuna()
         {
             InitializeComponent();
+            DeaktivacijaProfilLinkLabel.Text = Session.DohvatiPunoIme();
         }
 
         private void PrijavaNaslovLabel_Click(object sender, EventArgs e)
