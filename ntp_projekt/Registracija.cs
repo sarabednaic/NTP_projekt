@@ -38,8 +38,7 @@ namespace ntp_projekt
                 }
 
                 string sol = Sha256.NasumicnaSol();
-                string hashiranaLozinka = Sha256.Sazimanje(RegistracijaLozinkaTextBox.Text, sol);
-                noviKorisnik.Lozinka = hashiranaLozinka;
+                string hashiranaLozinka = Sha256.Sazimanje(noviKorisnik.Lozinka, sol);
 
                 // Provera da li već postoji korisnik sa istim korisničkim imenom
                 string rezultat = baza.BazaRead("SELECT COUNT(*) FROM korisnik WHERE korisnicko_ime = \"" + noviKorisnik.KorisnickoIme + "\";");
@@ -47,11 +46,12 @@ namespace ntp_projekt
                 if (rezultat == "0")
                 {
                     // SQL upit za upis novog korisnika u bazu
-                    string upit = "INSERT INTO korisnik (korisnicko_ime, ime, prezime, lozinka) VALUES (\""
+                    string upit = "INSERT INTO korisnik (korisnicko_ime, ime, prezime, lozinka, sol) VALUES (\""
                         + noviKorisnik.KorisnickoIme + "\", \""
                         + noviKorisnik.Ime + "\", \""
                         + noviKorisnik.Prezime + "\", \""
-                        + noviKorisnik.Lozinka + "\");";
+                        + hashiranaLozinka + "\", \""
+                        + sol + "\");";
 
                     int prijava = baza.BazaWrite(upit);
 
@@ -61,6 +61,7 @@ namespace ntp_projekt
                         
                         StartApk.MainFormManager.TrenutnaForma = new Prijava();
                     }
+
                     else
                     {
                         MessageBox.Show("Došlo je do greške prilikom registracije.");
