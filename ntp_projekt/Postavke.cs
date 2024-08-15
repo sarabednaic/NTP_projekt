@@ -23,7 +23,8 @@ namespace ntp_projekt
         }
 
         private void PostavkeOdjavaButton_Click(object sender, EventArgs e)
-        {
+        {   
+            Session.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new Prijava();
         }
 
@@ -40,6 +41,16 @@ namespace ntp_projekt
         private void PostavkeNatragButton_Click(object sender, EventArgs e)
         {
             StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
+        }
+
+        private void Postavke_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

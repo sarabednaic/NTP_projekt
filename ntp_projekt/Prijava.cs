@@ -15,6 +15,7 @@ namespace ntp_projekt
         {
             InitializeComponent();
             baza = new Baza(@"..\..\TeamPlan.mdb");
+            
         }
 
         private void Prijava_Load(object sender, EventArgs e)
@@ -44,7 +45,7 @@ namespace ntp_projekt
 
                 if (hashiranaLozinka == lozinkaKorisnika)
                 {
-                    //Session.PostaviPodatke(postojeciKorisnik.KorisnickoIme);
+                    Session.PostaviPodatke(postojeciKorisnik.KorisnickoIme, baza);
                     StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
                 }
                 else

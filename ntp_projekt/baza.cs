@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Data.OleDb;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ntp_projekt
 {
-    internal class Baza
+    public class Baza
     {
-        private string connectionString;
+        public string connectionString;
 
         public Baza(string pathToDatabase)
         {
@@ -43,6 +44,8 @@ namespace ntp_projekt
             }
         }
 
+        public string ConnectionString { get { return connectionString; } }
+
         public int BazaWrite(string query)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
@@ -60,6 +63,36 @@ namespace ntp_projekt
                 {
                     MessageBox.Show("Greška: " + ex.Message);
                     return -1; 
+                }
+            }
+        }
+
+        public Image BazaGetImage(string query)
+        {
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    {
+                        using (OleDbDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return Image.FromFile(@"..\..\Images\profilna.jpg");
+                            }
+                            else
+                            {
+                                return Image.FromFile(@"..\..\Images\profilna.jpg");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Greška: " + ex.Message);
+                    return null;
                 }
             }
         }

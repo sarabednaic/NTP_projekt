@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,11 +17,15 @@ namespace ntp_projekt
         }
 
         public StartApk() {
-            mainFormManager = new MainFormManager
+            RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\NTP_Projekt\TrenutniKorisnik");
+            if (key != null && key.GetValueNames().Length != 0)
             {
-                TrenutnaForma = new Prijava()
-            };
-            
+                mainFormManager = new MainFormManager { TrenutnaForma = new PopisProjekta() };
+            }
+            else 
+            {
+                mainFormManager = new MainFormManager { TrenutnaForma = new Prijava() };
+            }
             Application.Run(mainFormManager);
         }
     }

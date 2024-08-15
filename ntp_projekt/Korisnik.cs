@@ -27,7 +27,10 @@ namespace ntp_projekt
             lozinka = _lozinka;
         }
 
-        public Korisnik(){}
+        public Korisnik(){
+            profilna = Image.FromFile(@"..\..\Images\profilna.jpg");
+        
+        }
 
         public string Ime
         {
