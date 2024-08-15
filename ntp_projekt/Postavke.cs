@@ -34,12 +34,48 @@ namespace ntp_projekt
 
         private void PostavkePromjenaButton_Click(object sender, EventArgs e)
         {
+            if(PostavkeImeTextBox.Text != Session.Ime)
+            {
+
+            }
+
+            if(PostavkePrezimeTextBox.Text != Session.Prezime)
+            {
+
+            }
+
+            if(PostavkeKorisnickoImeTextBox.Text != Session.KorisnickoIme)
+            {
+
+            }
+
+            if(PostavkeLozinkaTextBox.Text !="" && PostavkePonovnoLozinkaTextBox.Text != "")
+            {
+                if(PostavkeLozinkaTextBox.Text == PostavkePonovnoLozinkaTextBox.Text)
+                {
+
+                }
+            }
+
+
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
         private void PostavkeNatragButton_Click(object sender, EventArgs e)
         {
             StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
+        }
+
+        private void Postavke_Load(object sender, EventArgs e)
+        {
+            PostavkeImeTextBox.Text = Session.Ime;
+            PostavkePrezimeTextBox.Text = Session.Prezime;
+            PostavkeKorisnickoImeTextBox.Text = Session.KorisnickoIme;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

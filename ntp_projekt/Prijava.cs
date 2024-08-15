@@ -38,13 +38,15 @@ namespace ntp_projekt
             {
                 Korisnik postojeciKorisnik = new Korisnik();
                 postojeciKorisnik.KorisnickoIme = PrijavaKorisImeTextBox.Text;
+                postojeciKorisnik.Ime = baza.BazaRead($"SELECT ime FROM korisnik WHERE korisnicko_ime = \"{postojeciKorisnik.KorisnickoIme}\";");
+                postojeciKorisnik.Prezime = baza.BazaRead($"SELECT prezime FROM korisnik WHERE korisnicko_ime = \"{postojeciKorisnik.KorisnickoIme}\";");
                 string lozinkaKorisnika = baza.BazaRead($"SELECT lozinka FROM korisnik WHERE korisnicko_ime = \"{postojeciKorisnik.KorisnickoIme}\";");
                 string sol = baza.BazaRead($"SELECT sol FROM korisnik WHERE korisnicko_ime = \"{postojeciKorisnik.KorisnickoIme}\";");
                 string hashiranaLozinka = Sha256.Sazimanje(PrijavaLozinkaTextBox.Text, sol);
 
                 if (hashiranaLozinka == lozinkaKorisnika)
                 {
-                    //Session.PostaviPodatke(postojeciKorisnik.KorisnickoIme);
+                    Session.Podaci(postojeciKorisnik.Ime, postojeciKorisnik.Prezime, postojeciKorisnik.KorisnickoIme);
                     StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
                 }
                 else

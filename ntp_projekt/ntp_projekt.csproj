@@ -66,6 +66,7 @@
     </Compile>
     <Compile Include="Korisnik.cs" />
     <Compile Include="Projekt.cs" />
+    <Compile Include="Session.cs" />
     <Compile Include="Sha256.cs" />
     <Compile Include="StartApk.cs" />
     <Compile Include="MainFormManager.cs" />

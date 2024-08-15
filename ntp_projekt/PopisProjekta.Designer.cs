@@ -49,7 +49,7 @@
             PopisProjektaNaslovLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             PopisProjektaNaslovLabel.AutoSize = true;
             PopisProjektaNaslovLabel.Font = new System.Drawing.Font("Leelawadee UI", 30F, System.Drawing.FontStyle.Bold);
-            PopisProjektaNaslovLabel.Location = new System.Drawing.Point(719, 115);
+            PopisProjektaNaslovLabel.Location = new System.Drawing.Point(715, 109);
             PopisProjektaNaslovLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             PopisProjektaNaslovLabel.Name = "PopisProjektaNaslovLabel";
             PopisProjektaNaslovLabel.Size = new System.Drawing.Size(473, 81);
@@ -63,8 +63,8 @@
             this.PopisProjektaListDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.PopisProjektaListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PopisProjektaListDataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.PopisProjektaListDataGridView.Location = new System.Drawing.Point(484, 290);
-            this.PopisProjektaListDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PopisProjektaListDataGridView.Location = new System.Drawing.Point(480, 284);
+            this.PopisProjektaListDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.PopisProjektaListDataGridView.Name = "PopisProjektaListDataGridView";
             this.PopisProjektaListDataGridView.RowHeadersWidth = 82;
             this.PopisProjektaListDataGridView.RowTemplate.Height = 33;
@@ -78,8 +78,8 @@
             this.PopisProjektaAddButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.PopisProjektaAddButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisProjektaAddButton.BackgroundImage")));
             this.PopisProjektaAddButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisProjektaAddButton.Location = new System.Drawing.Point(1351, 851);
-            this.PopisProjektaAddButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PopisProjektaAddButton.Location = new System.Drawing.Point(1346, 845);
+            this.PopisProjektaAddButton.Margin = new System.Windows.Forms.Padding(2);
             this.PopisProjektaAddButton.Name = "PopisProjektaAddButton";
             this.PopisProjektaAddButton.Size = new System.Drawing.Size(60, 60);
             this.PopisProjektaAddButton.TabIndex = 28;
@@ -92,8 +92,8 @@
             this.PopisProjektaSortButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.PopisProjektaSortButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisProjektaSortButton.BackgroundImage")));
             this.PopisProjektaSortButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisProjektaSortButton.Location = new System.Drawing.Point(1345, 222);
-            this.PopisProjektaSortButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PopisProjektaSortButton.Location = new System.Drawing.Point(1341, 216);
+            this.PopisProjektaSortButton.Margin = new System.Windows.Forms.Padding(2);
             this.PopisProjektaSortButton.Name = "PopisProjektaSortButton";
             this.PopisProjektaSortButton.Size = new System.Drawing.Size(65, 60);
             this.PopisProjektaSortButton.TabIndex = 29;
@@ -102,8 +102,8 @@
             // PopisProjektaSearchRichTextBox
             // 
             this.PopisProjektaSearchRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PopisProjektaSearchRichTextBox.Location = new System.Drawing.Point(749, 218);
-            this.PopisProjektaSearchRichTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PopisProjektaSearchRichTextBox.Location = new System.Drawing.Point(745, 212);
+            this.PopisProjektaSearchRichTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.PopisProjektaSearchRichTextBox.Name = "PopisProjektaSearchRichTextBox";
             this.PopisProjektaSearchRichTextBox.Size = new System.Drawing.Size(367, 33);
             this.PopisProjektaSearchRichTextBox.TabIndex = 31;
@@ -114,8 +114,8 @@
             this.PopisProjektaSearchButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.PopisProjektaSearchButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisProjektaSearchButton.BackgroundImage")));
             this.PopisProjektaSearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisProjektaSearchButton.Location = new System.Drawing.Point(1120, 210);
-            this.PopisProjektaSearchButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PopisProjektaSearchButton.Location = new System.Drawing.Point(1116, 204);
+            this.PopisProjektaSearchButton.Margin = new System.Windows.Forms.Padding(2);
             this.PopisProjektaSearchButton.Name = "PopisProjektaSearchButton";
             this.PopisProjektaSearchButton.Size = new System.Drawing.Size(50, 50);
             this.PopisProjektaSearchButton.TabIndex = 32;
@@ -164,7 +164,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1443, 840);
+            this.ClientSize = new System.Drawing.Size(1857, 1021);
             this.Controls.Add(this.PopisProjektaPanel);
             this.Controls.Add(this.PopisProjektaSearchButton);
             this.Controls.Add(this.PopisProjektaSearchRichTextBox);
@@ -172,7 +172,7 @@
             this.Controls.Add(this.PopisProjektaSortButton);
             this.Controls.Add(this.PopisProjektaAddButton);
             this.Controls.Add(this.PopisProjektaListDataGridView);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(1919, 1077);
             this.MinimumSize = new System.Drawing.Size(1085, 823);
             this.Name = "PopisProjekta";
