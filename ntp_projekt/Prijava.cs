@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Data.OleDb;
+using System.Diagnostics.Eventing.Reader;
 using System.Windows.Forms;
+using static System.Collections.Specialized.BitVector32;
+
 
 namespace ntp_projekt
 {
@@ -33,12 +36,14 @@ namespace ntp_projekt
         {
             try
             {
-                string korisnicko_ime = PrijavaKorisImeTextBox.Text;
-                string query = $"SELECT lozinka FROM korisnik WHERE korisnicko_ime = \"{korisnicko_ime}\";";
-                string lozinka = baza.BazaRead(query);
+                Korisnik postojeciKorisnik = new Korisnik();
+                postojeciKorisnik.KorisnickoIme = PrijavaKorisImeTextBox.Text;
+                string query = $"SELECT lozinka FROM korisnik WHERE korisnicko_ime = \"{postojeciKorisnik.KorisnickoIme}\";";
+                postojeciKorisnik.Lozinka = baza.BazaRead(query);
 
-                if (PrijavaLozinkaTextBox.Text == lozinka)
+                if (PrijavaLozinkaTextBox.Text == postojeciKorisnik.Lozinka)
                 {
+                    Session.PostaviPodatke(postojeciKorisnik.KorisnickoIme);
                     StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
                 }
                 else
@@ -48,7 +53,6 @@ namespace ntp_projekt
             }
             catch (Exception ex)
             {
-                // Obrada greške - prikaz poruke korisniku
                 MessageBox.Show("Došlo je do greške prilikom prijave: " + ex.Message);
             }
         }

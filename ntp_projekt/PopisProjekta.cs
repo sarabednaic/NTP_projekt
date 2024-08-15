@@ -41,5 +41,10 @@ namespace ntp_projekt
         {
 
         }
+
+        private void PopisProjekta_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.Eventing.Reader;
 using System.Windows.Forms;
 
 namespace ntp_projekt
@@ -22,33 +23,48 @@ namespace ntp_projekt
         {
             try
             {
-                string korisnicko_ime = RegistracijaKorisnickoTextBox.Text;
-                string ime = RegistracijaImeTextBox.Text;
-                string prezime = RegistracijaPrezimeTextBox.Text;
-                string lozinka = RegistracijaLozinkaTextBox.Text;
-                string ponovno_lozinka = RegistracijaPonovnoLozinkaTextBox.Text;
+                Korisnik noviKorisnik = new Korisnik(
+                    RegistracijaImeTextBox.Text,
+                    RegistracijaPrezimeTextBox.Text,
+                    RegistracijaKorisnickoTextBox.Text,
+                    RegistracijaLozinkaTextBox.Text
+                );
 
-                
-                string rezultat = baza.BazaRead("SELECT COUNT(*) FROM korisnik WHERE korisnicko_ime = \"{korisnicko_ime}\";");
-
-                if (rezultat == "0" && lozinka == ponovno_lozinka)
+                // Provera da li lozinke odgovaraju
+                if (noviKorisnik.Lozinka != RegistracijaPonovnoLozinkaTextBox.Text)
                 {
-                    string queryInsert = "INSERT INTO korisnik (korisnicko_ime, ime, prezime, lozinka) VALUES (\"" + korisnicko_ime + "\", \"" + ime + "\", \"" + prezime + "\", \"" +  lozinka + "\")"; 
-                    int prijava = baza.BazaWrite(queryInsert);
+                    MessageBox.Show("Lozinke se ne podudaraju.");
+                    return;
+                }
+
+                string sol = Sha256.NasumicnaSol();
+                string hashiranaLozinka = Sha256.Sazimanje(RegistracijaLozinkaTextBox.Text, sol);
+                noviKorisnik.Lozinka = hashiranaLozinka;
+
+                // Provera da li već postoji korisnik sa istim korisničkim imenom
+                string rezultat = baza.BazaRead("SELECT COUNT(*) FROM korisnik WHERE korisnicko_ime = \"" + noviKorisnik.KorisnickoIme + "\";");
+
+                if (rezultat == "0")
+                {
+                    // SQL upit za upis novog korisnika u bazu
+                    string upit = "INSERT INTO korisnik (korisnicko_ime, ime, prezime, lozinka) VALUES (\""
+                        + noviKorisnik.KorisnickoIme + "\", \""
+                        + noviKorisnik.Ime + "\", \""
+                        + noviKorisnik.Prezime + "\", \""
+                        + noviKorisnik.Lozinka + "\");";
+
+                    int prijava = baza.BazaWrite(upit);
 
                     if (prijava > 0)
                     {
                         MessageBox.Show("Registracija uspješna!");
+                        
                         StartApk.MainFormManager.TrenutnaForma = new Prijava();
                     }
                     else
                     {
                         MessageBox.Show("Došlo je do greške prilikom registracije.");
                     }
-                }
-                else if (lozinka != ponovno_lozinka)
-                {
-                    MessageBox.Show("Lozinke se ne podudaraju.");
                 }
                 else
                 {
