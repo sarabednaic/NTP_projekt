@@ -51,7 +51,7 @@ namespace ntp_projekt
 
         private void PopisProjekta_Load(object sender, EventArgs e)
         {
-            PopisProjektaProfilLinkLabel.Text = Session.Ime + " " + Session.Prezime;
+            
         }
     }
 }

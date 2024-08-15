@@ -22,61 +22,70 @@ namespace ntp_projekt
 
         private void RegistracijaButton_Click(object sender, EventArgs e)
         {
-            try
+            if (RegistracijaImeTextBox.Text != "" && RegistracijaPrezimeTextBox.Text != "" &&
+                RegistracijaKorisnickoTextBox.Text != "" && RegistracijaLozinkaTextBox.Text != "")
             {
-                Korisnik noviKorisnik = new Korisnik(
-                    RegistracijaImeTextBox.Text,
-                    RegistracijaPrezimeTextBox.Text,
-                    RegistracijaKorisnickoTextBox.Text,
-                    RegistracijaLozinkaTextBox.Text
-                );
-
-                // Provera da li lozinke odgovaraju
-                if (noviKorisnik.Lozinka != RegistracijaPonovnoLozinkaTextBox.Text)
+                try
                 {
-                    MessageBox.Show("Lozinke se ne podudaraju.");
-                    return;
-                }
+                    Korisnik noviKorisnik = new Korisnik(
+                        RegistracijaImeTextBox.Text,
+                        RegistracijaPrezimeTextBox.Text,
+                        RegistracijaKorisnickoTextBox.Text,
+                        RegistracijaLozinkaTextBox.Text
+                    );
 
-                string sol = Sha256.NasumicnaSol();
-                string hashiranaLozinka = Sha256.Sazimanje(noviKorisnik.Lozinka, sol);
-
-                // Provera da li već postoji korisnik sa istim korisničkim imenom
-                string rezultat = baza.BazaRead("SELECT COUNT(*) FROM korisnik WHERE korisnicko_ime = \"" + noviKorisnik.KorisnickoIme + "\";");
-
-                if (rezultat == "0")
-                {
-                    // SQL upit za upis novog korisnika u bazu
-                    string upit = "INSERT INTO korisnik (korisnicko_ime, ime, prezime, lozinka, sol) VALUES (\""
-                        + noviKorisnik.KorisnickoIme + "\", \""
-                        + noviKorisnik.Ime + "\", \""
-                        + noviKorisnik.Prezime + "\", \""
-                        + hashiranaLozinka + "\", \""
-                        + sol + "\");";
-
-                    int prijava = baza.BazaWrite(upit);
-
-                    if (prijava > 0)
+                    // Provera da li lozinke odgovaraju
+                    if (noviKorisnik.Lozinka != RegistracijaPonovnoLozinkaTextBox.Text)
                     {
-                        MessageBox.Show("Registracija uspješna!");
-
-                        StartApk.MainFormManager.TrenutnaForma = new Prijava();
+                        MessageBox.Show("Lozinke se ne podudaraju.");
+                        return;
                     }
 
+                    string sol = Sha256.NasumicnaSol();
+                    string hashiranaLozinka = Sha256.Sazimanje(noviKorisnik.Lozinka, sol);
+
+                    // Provera da li već postoji korisnik sa istim korisničkim imenom
+                    string rezultat = baza.BazaRead("SELECT COUNT(*) FROM korisnik WHERE korisnicko_ime = \"" + noviKorisnik.KorisnickoIme + "\";");
+
+                    if (rezultat == "0")
+                    {
+                        // SQL upit za upis novog korisnika u bazu
+                        string upit = "INSERT INTO korisnik (korisnicko_ime, ime, prezime, lozinka, sol) VALUES (\""
+                            + noviKorisnik.KorisnickoIme + "\", \""
+                            + noviKorisnik.Ime + "\", \""
+                            + noviKorisnik.Prezime + "\", \""
+                            + hashiranaLozinka + "\", \""
+                            + sol + "\");";
+
+                        int prijava = baza.BazaWrite(upit);
+
+                        if (prijava > 0)
+                        {
+                            MessageBox.Show("Registracija uspješna!");
+
+                            StartApk.MainFormManager.TrenutnaForma = new Prijava();
+                        }
+
+                        else
+                        {
+                            MessageBox.Show("Došlo je do greške prilikom registracije.");
+                        }
+                    }
                     else
                     {
-                        MessageBox.Show("Došlo je do greške prilikom registracije.");
+                        MessageBox.Show("Korisničko ime je već zauzeto.");
                     }
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Korisničko ime je već zauzeto.");
+                    MessageBox.Show("Došlo je do greške: " + ex.Message);
                 }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Došlo je do greške: " + ex.Message);
+                MessageBox.Show("Morate ispuniti sve podatke kako bi se uspiješno registrirali!");
             }
+            
         }
     }
 }

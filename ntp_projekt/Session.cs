@@ -15,40 +15,40 @@ namespace ntp_projekt
         private static string prezime;
         private static string korisnicko_ime;
 
-        public static void PostaviPodatke(string _username, Baza baza) {
+        public static void PostaviPodatke(string _username, Baza baza)
+        {
             string query = $"SELECT ime,prezime,korisnicko_ime,lozinka FROM korisnik WHERE korisnicko_ime = \"{_username}\";";
             RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\NTP_Projekt\TrenutniKorisnik");
             using (OleDbConnection connection = new OleDbConnection(baza.ConnectionString))
-        {
-                try 
             {
+                try
+                {
                     connection.Open();
                     using (OleDbCommand command = new OleDbCommand(query, connection))
-            {
+                    {
                         using (OleDbDataReader reader = command.ExecuteReader())
                         {
                             if (reader.Read())
                             {
-                                for (int i = 0; i < reader.FieldCount;i++) {
+                                for (int i = 0; i < reader.FieldCount; i++)
+                                {
                                     key.SetValue("Varijabla " + i, reader[i].ToString());
-            }
+                                }
                                 key.Close();
-        }
-                            else {
+                            }
+                            else
+                            {
                                 key.Close();
                             }
                         }
                     }
                 }
                 catch (Exception ex)
-            {
+                {
                     MessageBox.Show("Greška pri stvaranju sesije: " + ex.Message);
+                }
             }
-            set
-            {
-                prezime = value;
-            }
-        }
+        } 
 
         public static string DohvatiKorisnika() {
             RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\NTP_Projekt\TrenutniKorisnik");
