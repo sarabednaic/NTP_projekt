@@ -32,5 +32,15 @@ namespace ntp_projekt.Properties {
                 return ((string)(this["TeamPlanConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\TeamPlan.mdb")]
+        public string TeamPlanConnectionString1 {
+            get {
+                return ((string)(this["TeamPlanConnectionString1"]));
+            }
+        }
     }
 }

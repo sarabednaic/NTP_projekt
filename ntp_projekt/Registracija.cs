@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Diagnostics.Eventing.Reader;
 using System.Windows.Forms;
 
@@ -11,7 +12,7 @@ namespace ntp_projekt
         public Registracija()
         {
             InitializeComponent();
-            baza = new Baza(@"C:\\Users\\sbednaic\\Desktop\\TeamPlan.mdb");
+            baza = new Baza(@"..\..\TeamPlan.mdb");
         }
 
         private void Registracija_Load(object sender, EventArgs e)
@@ -38,8 +39,7 @@ namespace ntp_projekt
                 }
 
                 string sol = Sha256.NasumicnaSol();
-                string hashiranaLozinka = Sha256.Sazimanje(RegistracijaLozinkaTextBox.Text, sol);
-                noviKorisnik.Lozinka = hashiranaLozinka;
+                string hashiranaLozinka = Sha256.Sazimanje(noviKorisnik.Lozinka, sol);
 
                 // Provera da li već postoji korisnik sa istim korisničkim imenom
                 string rezultat = baza.BazaRead("SELECT COUNT(*) FROM korisnik WHERE korisnicko_ime = \"" + noviKorisnik.KorisnickoIme + "\";");
@@ -47,20 +47,22 @@ namespace ntp_projekt
                 if (rezultat == "0")
                 {
                     // SQL upit za upis novog korisnika u bazu
-                    string upit = "INSERT INTO korisnik (korisnicko_ime, ime, prezime, lozinka) VALUES (\""
+                    string upit = "INSERT INTO korisnik (korisnicko_ime, ime, prezime, lozinka, sol) VALUES (\""
                         + noviKorisnik.KorisnickoIme + "\", \""
                         + noviKorisnik.Ime + "\", \""
                         + noviKorisnik.Prezime + "\", \""
-                        + noviKorisnik.Lozinka + "\");";
+                        + hashiranaLozinka + "\", \""
+                        + sol + "\");";
 
                     int prijava = baza.BazaWrite(upit);
 
                     if (prijava > 0)
                     {
                         MessageBox.Show("Registracija uspješna!");
-                        
+
                         StartApk.MainFormManager.TrenutnaForma = new Prijava();
                     }
+
                     else
                     {
                         MessageBox.Show("Došlo je do greške prilikom registracije.");

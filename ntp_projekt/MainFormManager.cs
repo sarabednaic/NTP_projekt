@@ -31,10 +31,16 @@ namespace ntp_projekt
                 MainForm.Show();
             }
         }
+
+        public MainFormManager()
+        {
+            Exitapk = true;
+        }
         protected override void OnMainFormClosed(Object sender, EventArgs e)
         {
             if (Exitapk) 
             {
+                
                 base.OnMainFormClosed(sender, e);
             }
         }

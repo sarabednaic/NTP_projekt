@@ -14,7 +14,7 @@ namespace ntp_projekt
         public Prijava()
         {
             InitializeComponent();
-            baza = new Baza(@"C:\\Users\\sbednaic\\Desktop\\TeamPlan.mdb");
+            baza = new Baza(@"..\..\TeamPlan.mdb");
         }
 
         private void Prijava_Load(object sender, EventArgs e)
@@ -38,12 +38,13 @@ namespace ntp_projekt
             {
                 Korisnik postojeciKorisnik = new Korisnik();
                 postojeciKorisnik.KorisnickoIme = PrijavaKorisImeTextBox.Text;
-                string query = $"SELECT lozinka FROM korisnik WHERE korisnicko_ime = \"{postojeciKorisnik.KorisnickoIme}\";";
-                postojeciKorisnik.Lozinka = baza.BazaRead(query);
+                string lozinkaKorisnika = baza.BazaRead($"SELECT lozinka FROM korisnik WHERE korisnicko_ime = \"{postojeciKorisnik.KorisnickoIme}\";");
+                string sol = baza.BazaRead($"SELECT sol FROM korisnik WHERE korisnicko_ime = \"{postojeciKorisnik.KorisnickoIme}\";");
+                string hashiranaLozinka = Sha256.Sazimanje(PrijavaLozinkaTextBox.Text, sol);
 
-                if (PrijavaLozinkaTextBox.Text == postojeciKorisnik.Lozinka)
+                if (hashiranaLozinka == lozinkaKorisnika)
                 {
-                    Session.PostaviPodatke(postojeciKorisnik.KorisnickoIme);
+                    //Session.PostaviPodatke(postojeciKorisnik.KorisnickoIme);
                     StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
                 }
                 else
