@@ -44,7 +44,7 @@
             // PrijavaNaslovLabel
             // 
             PrijavaNaslovLabel.Font = new System.Drawing.Font("Leelawadee UI", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            PrijavaNaslovLabel.Location = new System.Drawing.Point(560, 126);
+            PrijavaNaslovLabel.Location = new System.Drawing.Point(564, 125);
             PrijavaNaslovLabel.Name = "PrijavaNaslovLabel";
             PrijavaNaslovLabel.Size = new System.Drawing.Size(309, 120);
             PrijavaNaslovLabel.TabIndex = 0;

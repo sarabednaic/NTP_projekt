@@ -35,6 +35,9 @@ namespace ntp_projekt
 
         private void PostavkePromjenaButton_Click(object sender, EventArgs e)
         {
+            
+
+
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 

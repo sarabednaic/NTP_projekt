@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ntp_projekt", "ntp_projekt\ntp_projekt.csproj", "{D781B490-2FD3-4D23-82C7-37576E26D6DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{67680308-E972-4427-8CA8-73C9ECF63C57}"
-	ProjectSection(SolutionItems) = preProject
-		Session.cs = Session.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
