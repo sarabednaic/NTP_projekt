@@ -17,6 +17,7 @@ namespace ntp_projekt
         {
             InitializeComponent();
             DeaktivacijaProfilLinkLabel.Text = Session.DohvatiPunoIme();
+            DeaktivacijaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
         }
 
         private void PrijavaNaslovLabel_Click(object sender, EventArgs e)

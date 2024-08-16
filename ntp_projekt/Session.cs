@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,9 +12,7 @@ namespace ntp_projekt
 {
     public static class Session
     {
-        private static string ime;
-        private static string prezime;
-        private static string korisnicko_ime;
+        
         static Baza baza = new Baza(@"..\..\TeamPlan.mdb");
 
         public static void PostaviPodatke(string _username, Baza baza)
@@ -79,6 +78,20 @@ namespace ntp_projekt
 
                 MessageBox.Show("Greška pri dohvatu punog imena: " + ex.Message);
                 return null;
+            }
+        }
+
+        public static Image DohvatiProfilnuSliku() {
+            try
+            {
+                string User = Session.DohvatiKorisnika();
+                Image profilna = baza.BazaGetImage($"SELECT profilna FROM korisnik WHERE korisnicko_ime = \"{User}\";");
+                return profilna;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Greška pri dohvatu profilne slike: " + ex.Message);
+                return Image.FromFile(@"..\..\Images\profilna.jpg");
             }
         }
 

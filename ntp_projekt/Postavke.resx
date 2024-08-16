@@ -152,9 +152,6 @@
   <data name="PostavkePromjenaButton.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="PostavkePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>642, 424</value>
-  </data>
   <data name="&gt;&gt;PostavkeOstalePostavkeLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -175,9 +172,6 @@
   </data>
   <data name="&gt;&gt;PostavkePanel.Name" xml:space="preserve">
     <value>PostavkePanel</value>
-  </data>
-  <data name="PostavkeDeaktivacijaLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="PostavkeProfilnaPictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>817, 143</value>
@@ -205,9 +199,6 @@
   </data>
   <data name="&gt;&gt;PostavkePonovnoLozinkaTextBox.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="&gt;&gt;PostavkeImeTextBox.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="&gt;&gt;PostavkeNatragButton.Name" xml:space="preserve">
     <value>PostavkeNatragButton</value>
@@ -260,9 +251,6 @@
   <data name="&gt;&gt;PostavkeOdjavaButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;PostavkeOpciPodaciLabel.Name" xml:space="preserve">
-    <value>PostavkeOpciPodaciLabel</value>
-  </data>
   <data name="PostavkeNaslovLabel.Text" xml:space="preserve">
     <value>Postavke</value>
   </data>
@@ -275,6 +263,9 @@
   </data>
   <data name="&gt;&gt;PostavkePromjenaButton.Name" xml:space="preserve">
     <value>PostavkePromjenaButton</value>
+  </data>
+  <data name="PostavkeJezikLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
   </data>
   <data name="&gt;&gt;PostavkeLozinkaTextBox.Parent" xml:space="preserve">
     <value>PostavkePanel</value>
@@ -318,11 +309,11 @@
   <data name="&gt;&gt;PostavkeOpciPodaciLabel.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="PostavkeFontLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1443, 840</value>
-  </data>
-  <data name="PostavkeNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Leelawadee UI, 40pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;PostavkePromjenaButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1207,8 +1198,8 @@
   <data name="PostavkePonovnoLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
-  <data name="PostavkeDeaktivacijaLinkLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="PostavkeOdjavaButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="PostavkeOstalePostavkeLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>79, 461</value>
@@ -1333,6 +1324,9 @@
         iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 </value>
   </data>
+  <data name="PostavkeJezikLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
   <data name="PostavkeNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAd0AAAIACAYAAADHdbYCAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -1451,9 +1445,6 @@
   <data name="PostavkeOstalePostavkeLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;PostavkeNatragButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;PostavkePromjenaLabel.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
@@ -1463,9 +1454,6 @@
   <data name="&gt;&gt;PostavkeJezikLabel.Parent" xml:space="preserve">
     <value>PostavkePanel</value>
   </data>
-  <data name="PostavkePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 360</value>
-  </data>
   <data name="&gt;&gt;PostavkeFontLabel.Name" xml:space="preserve">
     <value>PostavkeFontLabel</value>
   </data>
@@ -1474,6 +1462,9 @@
   </data>
   <data name="&gt;&gt;PostavkeLozinkaTextBox.Name" xml:space="preserve">
     <value>PostavkeLozinkaTextBox</value>
+  </data>
+  <data name="PostavkeNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>708, 32</value>
   </data>
   <data name="&gt;&gt;PostavkeLozinkaLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1487,29 +1478,32 @@
   <data name="&gt;&gt;PostavkeDeaktivacijaLinkLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="PostavkeImeTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>448, 26</value>
-  </data>
   <data name="PostavkeProfilnaPictureBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 250</value>
   </data>
   <data name="PostavkeJezikLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 24</value>
   </data>
+  <data name="&gt;&gt;PostavkePonovnoLozinkaTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="PostavkeNatragButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
   </data>
-  <data name="PostavkeOdjavaButton.Text" xml:space="preserve">
-    <value>Odjavi me</value>
+  <data name="PostavkePromjenaLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
-  <data name="PostavkeOstalePostavkeLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="PostavkeNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="PostavkeKorisnickoImeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="PostavkeVelicinaFontaComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
+  </data>
+  <data name="PostavkeOdjavaButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
   </data>
   <data name="PostavkeLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>446, 26</value>
@@ -1529,6 +1523,9 @@
   <data name="&gt;&gt;PostavkeNaslovLabel.Name" xml:space="preserve">
     <value>PostavkeNaslovLabel</value>
   </data>
+  <data name="PostavkeLozinkaLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8pt</value>
+  </data>
   <data name="PostavkePonovnoLozinkaLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
   </data>
@@ -1547,11 +1544,14 @@
   <data name="PostavkeNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>486, 120</value>
   </data>
-  <data name="PostavkePromjenaLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+  <data name="PostavkeImeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 26</value>
   </data>
   <data name="PostavkePromjenaLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>79, 273</value>
+  </data>
+  <data name="PostavkeFontLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 571</value>
   </data>
   <data name="PostavkeVelicinaFontaComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>452, 28</value>
@@ -1561,6 +1561,9 @@
   </data>
   <data name="PostavkeDeaktivacijaLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>241, 25</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;PostavkeOstalePostavkeLabel.Parent" xml:space="preserve">
     <value>PostavkePanel</value>
@@ -1574,8 +1577,8 @@
   <data name="PostavkePonovnoLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>274, 24</value>
   </data>
-  <data name="PostavkeJezikLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+  <data name="PostavkeDeaktivacijaLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="PostavkeFontLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
@@ -1613,8 +1616,8 @@
   <data name="PostavkeDeaktivacijaLinkLabel.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="PostavkeNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>708, 32</value>
+  <data name="&gt;&gt;PostavkeOpciPodaciLabel.Name" xml:space="preserve">
+    <value>PostavkeOpciPodaciLabel</value>
   </data>
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -1622,8 +1625,11 @@
   <data name="&gt;&gt;PostavkePromjenaLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PostavkeOdjavaButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  <data name="PostavkeOstalePostavkeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="PostavkePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>602, 360</value>
   </data>
   <data name="PostavkeJezikComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -1631,8 +1637,8 @@
   <data name="&gt;&gt;PostavkePrezimeTextBox.Name" xml:space="preserve">
     <value>PostavkePrezimeTextBox</value>
   </data>
-  <data name="PostavkeFontLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 571</value>
+  <data name="PostavkeNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Leelawadee UI, 40pt, style=Bold</value>
   </data>
   <data name="PostavkePonovnoLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>85, 368</value>
@@ -1646,8 +1652,8 @@
   <data name="PostavkePromjenaButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
-  <data name="PostavkeOdjavaButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
+  <data name="PostavkeDeaktivacijaLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="&gt;&gt;PostavkeLozinkaTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1664,14 +1670,11 @@
   <data name="&gt;&gt;PostavkeProfilnaPictureBox.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="PostavkeJezikLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomLeft</value>
+  <data name="PostavkePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 424</value>
   </data>
   <data name="&gt;&gt;PostavkeLozinkaLabel.Name" xml:space="preserve">
     <value>PostavkeLozinkaLabel</value>
-  </data>
-  <data name="PostavkeImeTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 78</value>
   </data>
   <data name="&gt;&gt;PostavkePromjenaLabel.Parent" xml:space="preserve">
     <value>PostavkePanel</value>
@@ -1682,14 +1685,14 @@
   <data name="&gt;&gt;PostavkeJezikLabel.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="PostavkeFontLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+  <data name="&gt;&gt;PostavkeImeTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;PostavkeJezikComboBox.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="PostavkeLozinkaLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8pt</value>
+  <data name="&gt;&gt;PostavkeNatragButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="PostavkeOpciPodaciLabel.Text" xml:space="preserve">
     <value>Opći podaci</value>
@@ -1709,14 +1712,14 @@
   <data name="PostavkeNatragButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
   </data>
-  <data name="&gt;&gt;PostavkePonovnoLozinkaTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="PostavkeOdjavaButton.Text" xml:space="preserve">
+    <value>Odjavi me</value>
   </data>
   <data name="PostavkePromjenaLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>242, 43</value>
   </data>
-  <data name="PostavkeNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="PostavkeImeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 78</value>
   </data>
   <data name="PostavkeOdjavaButton.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -1730,7 +1733,7 @@
   <metadata name="PostavkePromjenaButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="PostavkeJezikLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="PostavkeNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="PostavkePromjenaLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -1751,7 +1754,7 @@
   <metadata name="PostavkeFontLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="PostavkeNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="PostavkeJezikLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
 </root>

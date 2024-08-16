@@ -117,54 +117,148 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PostavkePromjenaButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1123, 1004</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PostavkePromjenaButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="PostavkePromjenaButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 75</value>
+  </data>
   <data name="PostavkePromjenaButton.Text" xml:space="preserve">
     <value>Change data</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PostavkeNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>708, 27</value>
+    <value>944, 34</value>
+  </data>
+  <data name="PostavkeNaslovLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="PostavkeNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>648, 150</value>
   </data>
   <data name="PostavkeNaslovLabel.Text" xml:space="preserve">
     <value>Settings</value>
+  </data>
+  <data name="PostavkeOpciPodaciLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 35</value>
+  </data>
+  <data name="PostavkeOpciPodaciLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="PostavkeOpciPodaciLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 54</value>
   </data>
   <data name="PostavkeOpciPodaciLabel.Text" xml:space="preserve">
     <value>General data</value>
   </data>
   <data name="PostavkePromjenaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 252</value>
+    <value>105, 315</value>
+  </data>
+  <data name="PostavkePromjenaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="PostavkePromjenaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>323, 54</value>
   </data>
   <data name="PostavkePromjenaLabel.Text" xml:space="preserve">
     <value>Change password</value>
+  </data>
+  <data name="PostavkeOstalePostavkeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 576</value>
+  </data>
+  <data name="PostavkeOstalePostavkeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="PostavkeOstalePostavkeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 54</value>
   </data>
   <data name="PostavkeOstalePostavkeLabel.Text" xml:space="preserve">
     <value>Other settings</value>
   </data>
   <data name="PostavkeJezikLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 504</value>
+    <value>107, 630</value>
+  </data>
+  <data name="PostavkeJezikLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="PostavkeJezikLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 30</value>
   </data>
   <data name="PostavkeJezikLabel.Text" xml:space="preserve">
     <value>Select a language</value>
   </data>
+  <data name="PostavkeFontLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 714</value>
+  </data>
+  <data name="PostavkeFontLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="PostavkeFontLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 30</value>
+  </data>
   <data name="PostavkeFontLabel.Text" xml:space="preserve">
     <value>Select the font size</value>
+  </data>
+  <data name="PostavkeOdjavaButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1123, 1091</value>
+  </data>
+  <data name="PostavkeOdjavaButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="PostavkeOdjavaButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 75</value>
   </data>
   <data name="PostavkeOdjavaButton.Text" xml:space="preserve">
     <value>Log out</value>
   </data>
   <data name="PostavkeLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 319</value>
+    <value>117, 399</value>
+  </data>
+  <data name="PostavkeLozinkaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="PostavkeLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>593, 31</value>
   </data>
   <data name="PostavkeLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 289</value>
+    <value>113, 361</value>
+  </data>
+  <data name="PostavkeLozinkaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="PostavkeLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 30</value>
   </data>
   <data name="PostavkeLozinkaLabel.Text" xml:space="preserve">
     <value>Enter the desired password</value>
   </data>
   <data name="PostavkePonovnoLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 347</value>
+    <value>113, 434</value>
+  </data>
+  <data name="PostavkePonovnoLozinkaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="PostavkePonovnoLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>365, 30</value>
   </data>
   <data name="PostavkePonovnoLozinkaLabel.Text" xml:space="preserve">
     <value>Repeat the desired password</value>
+  </data>
+  <data name="PostavkeJezikComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 666</value>
+  </data>
+  <data name="PostavkeJezikComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="PostavkeJezikComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>601, 33</value>
+  </data>
+  <data name="PostavkeProfilnaPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="PostavkeProfilnaPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1076,6 +1170,15 @@
         ABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 </value>
   </data>
+  <data name="PostavkeProfilnaPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1089, 179</value>
+  </data>
+  <data name="PostavkeProfilnaPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="PostavkeProfilnaPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 312</value>
+  </data>
   <data name="PostavkeNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAd0AAAIACAYAAADHdbYCAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -1191,16 +1294,91 @@
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="PostavkeNatragButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 15</value>
+  </data>
+  <data name="PostavkeNatragButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="PostavkeNatragButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 80</value>
+  </data>
+  <data name="PostavkePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>856, 530</value>
+  </data>
+  <data name="PostavkePanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="PostavkePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>803, 450</value>
+  </data>
+  <data name="PostavkeVelicinaFontaComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 752</value>
+  </data>
+  <data name="PostavkeVelicinaFontaComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="PostavkeVelicinaFontaComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>601, 33</value>
+  </data>
+  <data name="PostavkeKorisnickoImeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 208</value>
+  </data>
+  <data name="PostavkeKorisnickoImeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="PostavkeKorisnickoImeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 31</value>
+  </data>
+  <data name="PostavkePrezimeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 154</value>
+  </data>
+  <data name="PostavkePrezimeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="PostavkePrezimeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 31</value>
+  </data>
+  <data name="PostavkeImeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 98</value>
+  </data>
+  <data name="PostavkeImeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="PostavkeImeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 31</value>
+  </data>
   <data name="PostavkePonovnoLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 375</value>
+    <value>117, 469</value>
+  </data>
+  <data name="PostavkePonovnoLozinkaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="PostavkePonovnoLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>593, 31</value>
+  </data>
+  <data name="PostavkeDeaktivacijaLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1093, 1186</value>
+  </data>
+  <data name="PostavkeDeaktivacijaLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="PostavkeDeaktivacijaLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>253, 25</value>
+    <value>352, 31</value>
   </data>
   <data name="PostavkeDeaktivacijaLinkLabel.Text" xml:space="preserve">
     <value>Deactivate the user account</value>
   </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>12, 25</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1443, 1020</value>
+    <value>1924, 1275</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>2549, 1475</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1909, 1011</value>
   </data>
 </root>

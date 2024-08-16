@@ -18,6 +18,7 @@ namespace ntp_projekt
             InitializeComponent();
             
             DodajProjektProfilLinkLabel.Text = Session.DohvatiPunoIme();
+            DodajProjektProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
         }
 
         private void DodajProjektClanoviListBox_SelectedIndexChanged(object sender, EventArgs e)

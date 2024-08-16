@@ -8,6 +8,8 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.IO;
 
 namespace ntp_projekt
 {
@@ -15,6 +17,8 @@ namespace ntp_projekt
     {
         Baza baza;
         Ini iniFile;
+        private string curFileName = null;
+        string user = Session.DohvatiKorisnika();
 
         public Postavke()
         {
@@ -23,9 +27,10 @@ namespace ntp_projekt
             iniFile = new Ini();
             iniFile.UcitajDatoteku(@"..\..\postavke.ini");
 
-            string user = Session.DohvatiKorisnika();
+            
             string ime = baza.BazaRead($"SELECT ime FROM korisnik WHERE korisnicko_ime = \"{user}\";");
             string prezime = baza.BazaRead($"SELECT prezime FROM korisnik WHERE korisnicko_ime = \"{user}\";");
+            PostavkeProfilnaPictureBox.Image = Session.DohvatiProfilnuSliku();
 
             PostavkeImeTextBox.Text = ime;
             PostavkePrezimeTextBox.Text = prezime;
@@ -114,6 +119,26 @@ namespace ntp_projekt
         private void PostavkeLozinkaTextBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void PostavkeProfilnaPictureBox_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+                openFileDialog.Title = "Select an Image File";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string selectedFilePath = openFileDialog.FileName;
+
+                    // Display the selected file path (optional)
+                    MessageBox.Show($"Selected file: {selectedFilePath}");
+
+                    // Insert the image into the database
+                    baza.BazaSetImage($"UPDATE korisnik SET profilna = ? WHERE korisnicko_ime = \"{user}\";", selectedFilePath);
+                }
+            }
         }
     }
 }

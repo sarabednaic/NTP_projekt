@@ -117,6 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BrisanjeProjektaLozinkaNazivLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BrisanjeProjektaProfilLinkLabel.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -128,13 +132,15 @@
   <data name="BrisanjeProjektaIzbrisiProjektButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
   <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.Name" xml:space="preserve">
     <value>BrisanjeProjektaProfilPictureBox</value>
   </data>
   <data name="BrisanjeProjektaProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BrisanjeProjektaProfilLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
@@ -182,9 +188,6 @@
   </data>
   <data name="BrisanjeProjektaNatragButton.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
-  </data>
-  <data name="BrisanjeProjektaLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>459, 26</value>
   </data>
   <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaTextBox.Name" xml:space="preserve">
     <value>BrisanjeProjektaPonovnoLozinkaTextBox</value>
@@ -1106,6 +1109,9 @@
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -1174,9 +1180,6 @@
   </data>
   <data name="BrisanjeProjektaIzbrisiProjektButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaIzbrisiProjektButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="BrisanjeProjektaLozinkaNazivLabel.Text" xml:space="preserve">
     <value>Upišite lozinku za potvrdu brisanja zadatka</value>
@@ -1298,11 +1301,11 @@
         iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 </value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaTextBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="BrisanjeProjektaPonovnoLozinkaLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>BrisanjeProjekta</value>
   </data>
   <data name="BrisanjeProjektaLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -1487,8 +1490,8 @@
         iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 </value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>BrisanjeProjekta</value>
+  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="BrisanjeProjektaPonovnoLozinkaLabel.Text" xml:space="preserve">
     <value>Ponovite lozinku za potvrdu brisanja zadatka</value>
@@ -1508,8 +1511,8 @@
   <data name="&gt;&gt;BrisanjeProjektaNaslovLabel.Name" xml:space="preserve">
     <value>BrisanjeProjektaNaslovLabel</value>
   </data>
-  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
+  <data name="BrisanjeProjektaLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>459, 26</value>
   </data>
   <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaLabel.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -1532,8 +1535,8 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1443, 840</value>
   </data>
-  <data name="BrisanjeProjektaLozinkaNazivLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt, style=Bold</value>
+  <data name="&gt;&gt;BrisanjeProjektaIzbrisiProjektButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="BrisanjeProjektaLozinkaNazivLabel.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>

@@ -161,8 +161,10 @@
             // PostavkeProfilnaPictureBox
             // 
             resources.ApplyResources(this.PostavkeProfilnaPictureBox, "PostavkeProfilnaPictureBox");
+            this.PostavkeProfilnaPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PostavkeProfilnaPictureBox.Name = "PostavkeProfilnaPictureBox";
             this.PostavkeProfilnaPictureBox.TabStop = false;
+            this.PostavkeProfilnaPictureBox.Click += new System.EventHandler(this.PostavkeProfilnaPictureBox_Click);
             // 
             // PostavkeNatragButton
             // 

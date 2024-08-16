@@ -16,6 +16,7 @@ namespace ntp_projekt
         {
             InitializeComponent();
             BrisanjeZadatkaProfilLinkLabel.Text = Session.DohvatiPunoIme();
+            BrisanjeZadatkaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
         }
 
         private void BrisanjeProjektaUserButton_Click(object sender, EventArgs e)

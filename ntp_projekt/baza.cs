@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 
 namespace ntp_projekt
@@ -8,6 +12,7 @@ namespace ntp_projekt
     public class Baza
     {
         public string connectionString;
+        public Image DefaultProfilPicture = Image.FromFile(@"..\..\Images\profilna.jpg");
 
         public Baza(string pathToDatabase)
         {
@@ -74,40 +79,99 @@ namespace ntp_projekt
 
         }
 
+        
+
+        public void BazaSetImage(string query, string curFileName) {
+            try
+            {
+                byte[] imageData = File.ReadAllBytes(curFileName);
+
+                
+
+                using (OleDbConnection connection = new OleDbConnection(connectionString))
+                using (OleDbCommand command = new OleDbCommand(query, connection))
+                {
+                    command.Parameters.Add("profilna", OleDbType.LongVarBinary).Value = imageData;
+
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Image inserted successfully!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to insert image.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+
+
+
+        }
+
         public Image BazaGetImage(string query)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
                 try
                 {
+
                     connection.Open();
-                    OleDbDataAdapter adapter = new OleDbDataAdapter(query, connection);
-                    //using (OleDbCommand command = new OleDbCommand(query, connection))
-                    //{
-                    //    using (OleDbDataReader reader = command.ExecuteReader())
-                    //    {
-                    //        if (reader.Read())
-                    //        {
-                    //            connection?.Close();
-                    //            return Image.FromFile(@"..\..\Images\profilna.jpg");
-                    //        }
-                    //        else
-                    //        {
-                    //            connection?.Close();
-                    //            return Image.FromFile(@"..\..\Images\profilna.jpg");
-                    //        }
-                    //    }
-                    //}
+
+                    OleDbCommand command = new OleDbCommand(query, connection);
+
+
+
+                    OleDbDataAdapter dataAdapter = new OleDbDataAdapter(command);
+                    DataSet dataSet = new DataSet();
+                    dataAdapter.Fill(dataSet, "korisnik");
+                    int count = dataSet.Tables["korisnik"].Rows.Count;
+
+                    if (count > 0)
+                    {
+                        byte[] rawData = (byte[])dataSet.Tables["korisnik"].Rows[count - 1]["profilna"];
+                        if (rawData == null || rawData.Length == 0)
+                        { 
+                            return DefaultProfilPicture;
+                        }
+
+                        try
+                        {
+                            using (MemoryStream rawDataStream = new MemoryStream(rawData))
+                            {
+                                Image profilna = Image.FromStream(rawDataStream);
+                                return profilna;
+                            }
+                        }
+                        catch (ArgumentException ex)
+                        {
+                            MessageBox.Show("Invalid image data: " + ex.Message);
+                            return DefaultProfilPicture;
+                        }
+
+                    }
+                    else
+                    {
+                        return DefaultProfilPicture;
+                    }
+
+
                 }
                 catch (Exception ex)
                 {
                     connection?.Close();
                     MessageBox.Show("Greška pri dohvatu OLE objekta iz baze: " + ex.Message);
-                    return null;
+                    return DefaultProfilPicture;
                 }
             }
         }
 
-        
+
     }
 }
