@@ -118,40 +118,123 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PopisProjektaProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 29</value>
+  <data name="PopisProjektaNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>768, 115</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PopisProjektaAddButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="PopisProjektaNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 81</value>
   </data>
-  <data name="&gt;&gt;PopisProjektaListDataGridView.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="PopisProjektaNaslovLabel.Text" xml:space="preserve">
+    <value>Project list</value>
   </data>
-  <data name="PopisProjektaSearchRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 33</value>
+  <data name="PopisProjektaAddButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAMhUlEQVR4Xu3dQa5lZaHFcUJDbGNfZCCK
+        TsEgjgCDszFER0AYhwghNiQYQSeBDICywXvfl9Ai6yWvtM5at+Lvl/yTSlWlbjV29rp3n7P3eQUAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmHnz9N7pw9Pnp69P//qu++v7e/fP7t/5yQkAeEm9enrn
+        9Mnp29P//D+7f/fj069O998AAF4Svzj945QG/nn68vTWCQB4wn54+v0pjfm/270i8P7ptRMA8MT86PTn
+        UxrxF9Gnp9dPAMATccf/76c03C+y+5KAbwIA4Am4l+Yf+ZP/97tXArwcAABjfziloX5k9z0BAMDIz07P
+        c4vfi+p+zXunAQBQdu/RfxG3+v27fXHynAAAKPv1KQ1zs7dPAEDRfcJfGuVmH50AgJL7bP/Fa//f7/4f
+        3jgBAAW/PaVBXvTuCQAouJ/cl8Z40QcnAKDgr6c0xos+OwEABfcz/NMYL/rqBAAUPDulMV70zQkAKEhD
+        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
+        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
+        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
+        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
+        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
+        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
+        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
+        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
+        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
+        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
+        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
+        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
+        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
+        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
+        vAwAKEgjvAwAKEgjvAwAKEgjvAyA73nz9N7pw9Pnp69P/zqlk6gk/Td2z4n33HjPkfdcec+ZPznBS+fV
+        0zunT07fntIBL0n6v7vnzo9Pvzrdcyo8eb84/eOUDmhJ0vP35emtEzxJPzz9/pQOXknSf9a9IvD+6bUT
+        PBk/Ov35lA5aSdKL69PT6yeYu+P/91M6UCVJL777koBvApi6l6L85C9J/e6VAC8HMPOHUzowJUmP774n
+        AOp+dnKLnyTtuufge+cV1Nx7Ut3qJ0n7vjh5TgA1vz6lA1GS1O/tE1TcJ/ylg1CS1O+jEzzcfba/1/4l
+        6el0z8lvnOChfntKB6Akade7J3io+0lV6eCTJO364AQP9ddTOvgkSbs+O8FD3c+sTgefJGnXVyd4qGen
+        dPBJknZ9c4KH8g2AJD29fAPAw3kJQJKeXl4C4OE+P6WDT5K06y8neCi3AUrS08ttgDzce6d08EmSdnkQ
+        EA/nUcCS9LS65+Qfn+DhPj6lg1CS1O+PJ6h455QOQklSv1+eoOLV05endCBKknr97XTPyVDz05P3AkjS
+        rnsO/vkJ6t4/pYNSkvT4fneCiddOn57SgSlJelyfnH5wgpnXT94PIEm9vjjdcy/M3QPRlQBJenz3J3/j
+        z5NyXw647wnwxkBJevHdc+t9zd9lf56st0738lQ6gCVJz9+91e/eeQVP3r0n9e3Tn06uCEjS83fPnR+d
+        7kN+3OfPS+mN029O95OqPjt9fXp2Sge8JP03ds+J/zzdc+Q9V94P9vFsf4AgnUSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
+        AQAFaYSXAQAFz05piBd9cwIACr4+pTFe9NUJACj4/JTGeNFfTgBAwYenNMaLPjgBAAXvndIYL3r3BAAU
+        vHn69pQGudn9P/z4BACUfHxKo9zsjycAoOidUxrlZr88AQBFr56+PKVhbvS30/0/AABlPz0t3gtwv+bP
+        TwDAyPunNNKP7HcnAGDotdOnpzTUj+iT0w9OAMDY66fG+wG+ON2vBQA8EXeYH3kl4P7kb/wB4Am6Lwfc
+        9wS8yDcG3n/rvubvsj8APHFvne7l+jToz9O91e/eaQAAvCTuPfpvn/50ep4rAvfvfnS6D/lxnz8AvMTe
+        OP3mdD+577PT16dn3/XP737v/tn9YB/P9gcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAiVde
+        +V+9b6XGt2ofXQAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="&gt;&gt;PopisProjektaNaslovLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="PopisProjektaSortButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEYAAAAxCAYAAABnCd/9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAABKBJREFUaEPtmksodV8UwC/CCAMG3u8kecUEkRkSkjCSkTynjMhblEykvAoZGhiI
+        8kwiE5GSt0KSPPLIq7z219r/ffb/bPfs42CfW27nV6vvO2uffTvrd/ddZ99zmZCBIoYYDoYYDoYYDoYY
+        DoYYDoYYDrqJGRsbQ87OzigoKAidnJyQ7NccHR2hsLAw5Orqirq7u0nW8ugmJjQ0FJlMJhzV1dUkqw5I
+        8fb2pvMgenp6yKhl0UXM+vo6U5yPjw96enoio8rs7+8jf39/Zp4U/f395CzLoYuYsrIys+KmpqbIqDkH
+        BwdcKRB2dnYWXznCxby9vSFPT0+z4goLC8kZLGorRR4gZ2hoiMzSH+FiRkdHFQtzdHRENzc35Kz/ODw8
+        RAEBAcx5ERER9P8hISG4gUvHllw5wsWkpKTQQhISEpC9vT09HhwcJGcpN9ra2lrcT6Tj1NRUtLGxYSbH
+        Ej1HqJjr62tka2tLixgeHkalpaX0ODo6mpyJUHZ2Ns1DNDU14bxcTFpaGs6BHBcXF5p3cnJCp6eneEwv
+        hIppaWmhF+/u7o5zMzMzNAext7eH8/n5+TQnSQGUxAArKyt05Xh5eaHLy0syog9CxcTGxtKiYB/T0dGB
+        Wltb8Tss5WtqavC5V1dXeH8zMDCAjyV4YoCdnR1UWVmJVldXSUY/hIlZW1ujBamFm5sbvnPxUBNjSYSJ
+        Udq78GJ2dpbMMseqxNze3uLvRFJBSUlJKDMzE2VkZNCQ722g8fJQE/P4+Ijm5ubwv3ojRMzIyAgtBuL4
+        +JiM/I+8YOg59/f3ZIRFTUxUVBTOR0ZGcueLQoiYtrY2bjES8C7L9yO7u7tkhIUn5u7ujuYhNjc3yYg+
+        CBEDKyQuLg6/k7yCgc7OTny3KioqIhlztIqBvY2eCGu+ojDEcDDEcLAqMfAtOTExEW/Vvwp4aFVSUkJm
+        miP/dp6bm0uyf1RMc3Mzc9FaYmtri8xmgV1xe3s7lgfCJf6kmMnJSfw4QH7hauHr64teX1/JbG382R4D
+        jwGWl5fNYmlpCd/K5UUtLCyQWdqxuubb2NjIFFRfX09GvodViYGVYWNjQ4uJj48nI9/HasTAo0voJVIh
+        Hh4eTDNVo6urCz/mvLi4IBl1MQ8PD6ihoQH19fWRzO/RTUxycjItAlbN9PQ0GVFnfHyczgsPD6dyeGLg
+        m738AZkoObqIgXdPXkRdXR0Z+ZqJiQlmbmBgIDo/P1cU8/z8jGJiYph8b28veaXfIVwM3IXkF5qeno7e
+        39/JqDbg8aX8NUAO/Cgnzy0uLppJycvLw7JEIFTM2dkZ01f8/PyYPvEdKioqmKKDg4OZY3ht+bF8lywC
+        YWJeXl6Y35TgZ5T5+Xky+jPKy8uZ4nlRUFCAPj4+yCwxCBMDfUR+sVlZWfhjpRTQMLVSVVXFvO7ngI+P
+        HggRAysDfoJVunClgJ4Bt1gtwEr4/LGSAqR89VcUP0WImJ98idze3iaztfFZDvyRgF5SACFi4HEmNEfY
+        r2iJnJwcMlM7sHLgY+Xg4ICKi4t1lQII6zEAXLyW+A2/na8VoWKsCUMMB0MMB0MMB0MMB0OMIgj9AxFU
+        HjepTS6CAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PopisProjektaAddButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PopisProjektaSortButton.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaSearchRichTextBox.Name" xml:space="preserve">
-    <value>PopisProjektaSearchRichTextBox</value>
-  </data>
-  <data name="PopisProjektaProfilLinkLabel.Text" xml:space="preserve">
-    <value>Sara Bednaić</value>
-  </data>
-  <data name="PopisProjektaPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
+  <data name="PopisProjektaSearchButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAABBJJREFUaEPtmFuITVEYx2dccoskuZfy4BLlEsr1wYuUohhEFGlelDRFKM44c+Zc
+        ZqaDCU/EuJXzgMITyiNJHgilCLnlEkkepjnH77/71rHnNCOcvY9D51//1jrfWvv7/t+311p771NVQQUV
+        /Ieor68fHI1GJ8Xj8TnJZHJhKpWaHYlExthweaG2trZ3LBZbhtjLiUTiDcw5YsvCb/AWiextbGwcbpf9
+        XSBoOXziifQL9vUL2AHTzc3Nw8xF6UH10ibEE0UCoqp7DZ4yXoJKLOvmJeJe/yHLaJK5Kg2o1gBu+xkE
+        eWKsfUC7jvU8yKZVG4Vq1v0s5pwm2R8JJBIfuWaizQkfBDvgC54lid02pLF5+o29DWYQepjKrkyn00M0
+        bgm8tGvF5yVZ9wRaAV2lO+A22SUuHm+85xvTpswT22dtTk6dHvTHQW9fGK/gwt2dUFBNkGcKhhhxn4y0
+        W+231vtN2ggiV9Eupd1Ae4HN+olWCbTJD6fQaPqf5Qu2U/XF8hUK7Mhza/Qx1esrO0G3SwRVX6+KepML
+        wHXjmaN9cNVMunu6zlX9hpmDB84vukAI2GhmD5lMpqd1f4ZOy0GJk/R7fMlfe1NT0wgbCg4E6Y/gtyb8
+        i6t2sUDwCcS7qq82c3DA+TSCeMuEdXvNzEUDv5t8wqNmDg6InY9jd2KcM3PRaGhoWMTecfvmuJmDA+tv
+        gRMOdTIEAoowj4o7v2fNHBxwOt0tFZgxc9HAV43zS3vIzMGB2zkSx19N+EtMgTwwqHbSfOaIsdXMwaGm
+        pqYnwu9aZbI8uufYUFHA351EwjsOs5xUU8wcLNigO014jkoVvUHxMc1VG74yc/DQckH8NyjxHTwpZ9rQ
+        b0MPrGQy/sgKoTW+y4bCAaJbJdyq9JRkxtrQb4FrD5oPCX8S+ocFVR6IcL0F5oPCX36nbm1t7cN1UXe9
+        yJJZA8N/tUXoeAK99gX/gG0H79z9bEqXIOG5zLsN3bEq6mPinfXDXS4CT7wJBPJ/EGRJ5g1sY/ls1hNR
+        Qunr/X0PvF8gWHer3f8b6t29zkKEB5bNKMSdJ5gTotvu6P+I8IvTvFe0SsifuKMKUG8hwgWBlhDwugkt
+        FOLREngBd3FeD25paRnaVVLG0lTeQd+VJLGWZRIj8EkEnKY9wF3ZAqciuNNHhsR1J152GLGpJUX+C9/a
+        LkFCqe7Ei0rOppYfJK6T+Hgn4bKHf9r8KSQOkXnBjhIOjzAl1H8BioKJz1deffbMXo3Zg2uRN7EcYeIl
+        WuIPy8am7sVv75+zkh2VfwJOJYlPqW+VPqY7YGznlXqyN7FcoUpz6hxVpZ1w9Xkaz7Yp5QmErigUTRuz
+        4fIGYusQK8H6e2+/mf8NsDRmsCmn5HK58j0SK6iggu5QVfUdosjINiGFHhIAAAAASUVORK5CYII=
+</value>
   </data>
   <data name="PopisProjektaProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -270,208 +353,122 @@
         iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 </value>
   </data>
-  <data name="PopisProjektaListDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaProfilLinkLabel.Parent" xml:space="preserve">
-    <value>PopisProjektaPanel</value>
-  </data>
-  <data name="PopisProjektaPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 1</value>
-  </data>
-  <data name="PopisProjektaListDataGridView.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaSearchButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="PopisProjektaSearchButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaPanel.Name" xml:space="preserve">
-    <value>PopisProjektaPanel</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaSortButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="PopisProjektaSearchRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>745, 212</value>
-  </data>
-  <data name="PopisProjektaSortButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="PopisProjektaListDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>925, 557</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaSearchRichTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaProfilPictureBox.Name" xml:space="preserve">
-    <value>PopisProjektaProfilPictureBox</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaSortButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaSearchRichTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaSearchRichTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="PopisProjektaProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 65</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaNaslovLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PopisProjektaSortButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 60</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaAddButton.Name" xml:space="preserve">
-    <value>PopisProjektaAddButton</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaSortButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PopisProjektaSearchRichTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaSearchButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaProfilPictureBox.Parent" xml:space="preserve">
-    <value>PopisProjektaPanel</value>
-  </data>
-  <data name="PopisProjektaSearchButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="PopisProjektaProfilLinkLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="PopisProjektaSortButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="PopisProjektaListDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>480, 284</value>
-  </data>
-  <data name="PopisProjektaAddButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="PopisProjektaProfilPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAMhUlEQVR4Xu3dQa5lZaHFcUJDbGNfZCCK
-        TsEgjgCDszFER0AYhwghNiQYQSeBDICywXvfl9Ai6yWvtM5at+Lvl/yTSlWlbjV29rp3n7P3eQUAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmHnz9N7pw9Pnp69P//qu++v7e/fP7t/5yQkAeEm9enrn
-        9Mnp29P//D+7f/fj069O998AAF4Svzj945QG/nn68vTWCQB4wn54+v0pjfm/270i8P7ptRMA8MT86PTn
-        UxrxF9Gnp9dPAMATccf/76c03C+y+5KAbwIA4Am4l+Yf+ZP/97tXArwcAABjfziloX5k9z0BAMDIz07P
-        c4vfi+p+zXunAQBQdu/RfxG3+v27fXHynAAAKPv1KQ1zs7dPAEDRfcJfGuVmH50AgJL7bP/Fa//f7/4f
-        3jgBAAW/PaVBXvTuCQAouJ/cl8Z40QcnAKDgr6c0xos+OwEABfcz/NMYL/rqBAAUPDulMV70zQkAKEhD
-        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
-        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
-        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
-        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
-        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
-        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
-        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
-        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
-        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
-        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
-        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
-        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
-        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
-        vAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgjvAwAKEgj
-        vAwAKEgjvAwAKEgjvAwAKEgjvAyA73nz9N7pw9Pnp69P/zqlk6gk/Td2z4n33HjPkfdcec+ZPznBS+fV
-        0zunT07fntIBL0n6v7vnzo9Pvzrdcyo8eb84/eOUDmhJ0vP35emtEzxJPzz9/pQOXknSf9a9IvD+6bUT
-        PBk/Ov35lA5aSdKL69PT6yeYu+P/91M6UCVJL777koBvApi6l6L85C9J/e6VAC8HMPOHUzowJUmP774n
-        AOp+dnKLnyTtuufge+cV1Nx7Ut3qJ0n7vjh5TgA1vz6lA1GS1O/tE1TcJ/ylg1CS1O+jEzzcfba/1/4l
-        6el0z8lvnOChfntKB6Akade7J3io+0lV6eCTJO364AQP9ddTOvgkSbs+O8FD3c+sTgefJGnXVyd4qGen
-        dPBJknZ9c4KH8g2AJD29fAPAw3kJQJKeXl4C4OE+P6WDT5K06y8neCi3AUrS08ttgDzce6d08EmSdnkQ
-        EA/nUcCS9LS65+Qfn+DhPj6lg1CS1O+PJ6h455QOQklSv1+eoOLV05endCBKknr97XTPyVDz05P3AkjS
-        rnsO/vkJ6t4/pYNSkvT4fneCiddOn57SgSlJelyfnH5wgpnXT94PIEm9vjjdcy/M3QPRlQBJenz3J3/j
-        z5NyXw647wnwxkBJevHdc+t9zd9lf56st0738lQ6gCVJz9+91e/eeQVP3r0n9e3Tn06uCEjS83fPnR+d
-        7kN+3OfPS+mN029O95OqPjt9fXp2Sge8JP03ds+J/zzdc+Q9V94P9vFsf4AgnUSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSXAQAFaYSX
-        AQAFaYSXAQAFz05piBd9cwIACr4+pTFe9NUJACj4/JTGeNFfTgBAwYenNMaLPjgBAAXvndIYL3r3BAAU
-        vHn69pQGudn9P/z4BACUfHxKo9zsjycAoOidUxrlZr88AQBFr56+PKVhbvS30/0/AABlPz0t3gtwv+bP
-        TwDAyPunNNKP7HcnAGDotdOnpzTUj+iT0w9OAMDY66fG+wG+ON2vBQA8EXeYH3kl4P7kb/wB4Am6Lwfc
-        9wS8yDcG3n/rvubvsj8APHFvne7l+jToz9O91e/eaQAAvCTuPfpvn/50ep4rAvfvfnS6D/lxnz8AvMTe
-        OP3mdD+577PT16dn3/XP737v/tn9YB/P9gcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAiVde
-        +V+9b6XGt2ofXQAAAABJRU5ErkJggg==
+        /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
+        DhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQU
+        FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAFoAWgDASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiue8e/ELw38L/AAxd+IfFes2u
+        haNaqWkurt8AkAkIij5nc4O1FBZjwATxX5dftE/8FOvGXxE+06R8OY5vAnh990ZvyUbVLlSGBO8Erb8M
+        vEeXBXIl5xVJNibsfpd8S/jh4B+DtoZ/Gfi3SvD58rzktrq4H2mZN23MUC5kk5/uKe/pXzr4m/4Kn/BX
+        QdSNrp8XibxLDgYvNL0xY4myAcAXEkT8dPu9u/WvyL1HUrvWL+5v766mvb24cyz3VxI0ksrk5LOzfMzH
+        1NVa05ETzH6xf8PbPhR55B8K+NPJxw/2Wz3Z9Nv2rp75rofCn/BUj4J+IbySDUW8R+FY1XIuNW0vzEY/
+        3QLZ5mB+qge9fj5RT5EK7P6Efh38XvBPxa09rzwb4p0rxHEkaSSpYXSySwBwSoljzviJwflcA8Hjiuvr
+        +c3SdZv9B1S11LS7240vUrWRZbe9tJmingZfuski/Mp/3a+3f2bf+Cn3ifwXd2mh/FJZfFvh7AjXWoI0
+        /tK2AQBd4BCzrlRnOJPmZizkBKhx7FKXc/VWisTwV410P4jeFdN8SeGtTt9Y0PUYvOtby2bKuuSCCDyr
+        KwKsrAMrKVIBBFbdZlBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+        FABRRRQAUUUUAFFFFABRRRQAUUUUAFcv8TviRofwi8B6z4w8SXDWujaVD507xpudiWCoiDuzOyqBxyw5
+        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
+        L/5Eo/4dK/CP/oZvHH/gbZf/ACJX21RRzMLI+Jf+HSvwj/6Gbxx/4G2X/wAiUf8ADpX4R/8AQzeOP/A2
+        y/8AkSvtqijmYWR8S/8ADpX4R/8AQzeOP/A2y/8AkSj/AIdK/CP/AKGbxx/4G2X/AMiV9tUUczCyPiX/
+        AIdK/CP/AKGbxx/4G2X/AMiUf8OlfhH/ANDN44/8DbL/AORK+2qKOZhZHxL/AMOlfhH/ANDN44/8DbL/
+        AORKP+HSvwj/AOhm8cf+Btl/8iV9tUUczCyPiX/h0r8I/wDoZvHH/gbZf/IlH/DpX4R/9DN44/8AA2y/
+        +RK+2qKOZhZHxL/w6V+Ef/QzeOP/AANsv/kSj/h0r8I/+hm8cf8AgbZf/IlfbVFHMwsj4l/4dK/CP/oZ
+        vHH/AIG2X/yJR/w6V+Ef/QzeOP8AwNsv/kSvtqijmYWR8Tx/8El/hErqzeJPG0gU52tfWYB+uLUH9a+m
+        Pg78BvAvwE0ObS/BGgw6RFclGurgu0txdMoIUyyuSzYy2FztXc20DJr0CildhYKKKKQwooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 </value>
-  </data>
-  <data name="PopisProjektaNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Leelawadee UI, 30pt, style=Bold</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>PopisProjekta</value>
-  </data>
-  <data name="PopisProjektaSearchRichTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="PopisProjektaAddButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 60</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaSortButton.Name" xml:space="preserve">
-    <value>PopisProjektaSortButton</value>
-  </data>
-  <data name="PopisProjektaNaslovLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="PopisProjektaSortButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEYAAAAxCAYAAABnCd/9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAABKBJREFUaEPtmksodV8UwC/CCAMG3u8kecUEkRkSkjCSkTynjMhblEykvAoZGhiI
-        8kwiE5GSt0KSPPLIq7z219r/ffb/bPfs42CfW27nV6vvO2uffTvrd/ddZ99zmZCBIoYYDoYYDoYYDoYY
-        DoYYDoYYDrqJGRsbQ87OzigoKAidnJyQ7NccHR2hsLAw5Orqirq7u0nW8ugmJjQ0FJlMJhzV1dUkqw5I
-        8fb2pvMgenp6yKhl0UXM+vo6U5yPjw96enoio8rs7+8jf39/Zp4U/f395CzLoYuYsrIys+KmpqbIqDkH
-        BwdcKRB2dnYWXznCxby9vSFPT0+z4goLC8kZLGorRR4gZ2hoiMzSH+FiRkdHFQtzdHRENzc35Kz/ODw8
-        RAEBAcx5ERER9P8hISG4gUvHllw5wsWkpKTQQhISEpC9vT09HhwcJGcpN9ra2lrcT6Tj1NRUtLGxYSbH
-        Ej1HqJjr62tka2tLixgeHkalpaX0ODo6mpyJUHZ2Ns1DNDU14bxcTFpaGs6BHBcXF5p3cnJCp6eneEwv
-        hIppaWmhF+/u7o5zMzMzNAext7eH8/n5+TQnSQGUxAArKyt05Xh5eaHLy0syog9CxcTGxtKiYB/T0dGB
-        Wltb8Tss5WtqavC5V1dXeH8zMDCAjyV4YoCdnR1UWVmJVldXSUY/hIlZW1ujBamFm5sbvnPxUBNjSYSJ
-        Udq78GJ2dpbMMseqxNze3uLvRFJBSUlJKDMzE2VkZNCQ722g8fJQE/P4+Ijm5ubwv3ojRMzIyAgtBuL4
-        +JiM/I+8YOg59/f3ZIRFTUxUVBTOR0ZGcueLQoiYtrY2bjES8C7L9yO7u7tkhIUn5u7ujuYhNjc3yYg+
-        CBEDKyQuLg6/k7yCgc7OTny3KioqIhlztIqBvY2eCGu+ojDEcDDEcLAqMfAtOTExEW/Vvwp4aFVSUkJm
-        miP/dp6bm0uyf1RMc3Mzc9FaYmtri8xmgV1xe3s7lgfCJf6kmMnJSfw4QH7hauHr64teX1/JbG382R4D
-        jwGWl5fNYmlpCd/K5UUtLCyQWdqxuubb2NjIFFRfX09GvodViYGVYWNjQ4uJj48nI9/HasTAo0voJVIh
-        Hh4eTDNVo6urCz/mvLi4IBl1MQ8PD6ihoQH19fWRzO/RTUxycjItAlbN9PQ0GVFnfHyczgsPD6dyeGLg
-        m738AZkoObqIgXdPXkRdXR0Z+ZqJiQlmbmBgIDo/P1cU8/z8jGJiYph8b28veaXfIVwM3IXkF5qeno7e
-        39/JqDbg8aX8NUAO/Cgnzy0uLppJycvLw7JEIFTM2dkZ01f8/PyYPvEdKioqmKKDg4OZY3ht+bF8lywC
-        YWJeXl6Y35TgZ5T5+Xky+jPKy8uZ4nlRUFCAPj4+yCwxCBMDfUR+sVlZWfhjpRTQMLVSVVXFvO7ngI+P
-        HggRAysDfoJVunClgJ4Bt1gtwEr4/LGSAqR89VcUP0WImJ98idze3iaztfFZDvyRgF5SACFi4HEmNEfY
-        r2iJnJwcMlM7sHLgY+Xg4ICKi4t1lQII6zEAXLyW+A2/na8VoWKsCUMMB0MMB0MMB0MMB0OMIgj9AxFU
-        HjepTS6CAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="PopisProjektaPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1920, 90</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaListDataGridView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PopisProjektaAddButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
   </data>
   <data name="PopisProjektaProfilPictureBox.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1266,300 +1263,4 @@
         ABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 </value>
   </data>
-  <data name="PopisProjektaListDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="PopisProjektaProfilPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="PopisProjektaProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1822, 13</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaNaslovLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="PopisProjektaSortButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1341, 216</value>
-  </data>
-  <data name="PopisProjektaNaslovLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1857, 1021</value>
-  </data>
-  <data name="PopisProjektaProfilPictureBox.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="PopisProjektaSearchButton.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 20</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaListDataGridView.Name" xml:space="preserve">
-    <value>PopisProjektaListDataGridView</value>
-  </data>
-  <data name="PopisProjektaAddButton.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="PopisProjektaProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="PopisProjektaSearchButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaSearchButton.Name" xml:space="preserve">
-    <value>PopisProjektaSearchButton</value>
-  </data>
-  <data name="PopisProjektaNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>473, 81</value>
-  </data>
-  <data name="PopisProjektaProfilLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaAddButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PopisProjektaSearchButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAABBJJREFUaEPtmFuITVEYx2dccoskuZfy4BLlEsr1wYuUohhEFGlelDRFKM44c+Zc
-        ZqaDCU/EuJXzgMITyiNJHgilCLnlEkkepjnH77/71rHnNCOcvY9D51//1jrfWvv7/t+311p771NVQQUV
-        /Ieor68fHI1GJ8Xj8TnJZHJhKpWaHYlExthweaG2trZ3LBZbhtjLiUTiDcw5YsvCb/AWiextbGwcbpf9
-        XSBoOXziifQL9vUL2AHTzc3Nw8xF6UH10ibEE0UCoqp7DZ4yXoJKLOvmJeJe/yHLaJK5Kg2o1gBu+xkE
-        eWKsfUC7jvU8yKZVG4Vq1v0s5pwm2R8JJBIfuWaizQkfBDvgC54lid02pLF5+o29DWYQepjKrkyn00M0
-        bgm8tGvF5yVZ9wRaAV2lO+A22SUuHm+85xvTpswT22dtTk6dHvTHQW9fGK/gwt2dUFBNkGcKhhhxn4y0
-        W+231vtN2ggiV9Eupd1Ae4HN+olWCbTJD6fQaPqf5Qu2U/XF8hUK7Mhza/Qx1esrO0G3SwRVX6+KepML
-        wHXjmaN9cNVMunu6zlX9hpmDB84vukAI2GhmD5lMpqd1f4ZOy0GJk/R7fMlfe1NT0wgbCg4E6Y/gtyb8
-        i6t2sUDwCcS7qq82c3DA+TSCeMuEdXvNzEUDv5t8wqNmDg6InY9jd2KcM3PRaGhoWMTecfvmuJmDA+tv
-        gRMOdTIEAoowj4o7v2fNHBxwOt0tFZgxc9HAV43zS3vIzMGB2zkSx19N+EtMgTwwqHbSfOaIsdXMwaGm
-        pqYnwu9aZbI8uufYUFHA351EwjsOs5xUU8wcLNigO014jkoVvUHxMc1VG74yc/DQckH8NyjxHTwpZ9rQ
-        b0MPrGQy/sgKoTW+y4bCAaJbJdyq9JRkxtrQb4FrD5oPCX8S+ocFVR6IcL0F5oPCX36nbm1t7cN1UXe9
-        yJJZA8N/tUXoeAK99gX/gG0H79z9bEqXIOG5zLsN3bEq6mPinfXDXS4CT7wJBPJ/EGRJ5g1sY/ls1hNR
-        Qunr/X0PvF8gWHer3f8b6t29zkKEB5bNKMSdJ5gTotvu6P+I8IvTvFe0SsifuKMKUG8hwgWBlhDwugkt
-        FOLREngBd3FeD25paRnaVVLG0lTeQd+VJLGWZRIj8EkEnKY9wF3ZAqciuNNHhsR1J152GLGpJUX+C9/a
-        LkFCqe7Ei0rOppYfJK6T+Hgn4bKHf9r8KSQOkXnBjhIOjzAl1H8BioKJz1deffbMXo3Zg2uRN7EcYeIl
-        WuIPy8am7sVv75+zkh2VfwJOJYlPqW+VPqY7YGznlXqyN7FcoUpz6hxVpZ1w9Xkaz7Yp5QmErigUTRuz
-        4fIGYusQK8H6e2+/mf8NsDRmsCmn5HK58j0SK6iggu5QVfUdosjINiGFHhIAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaProfilPictureBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="PopisProjektaProfilLinkLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>PopisProjekta</value>
-  </data>
-  <data name="PopisProjektaNaslovLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="PopisProjektaNaslovLabel.Text" xml:space="preserve">
-    <value>Popis projekata</value>
-  </data>
-  <data name="PopisProjektaProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1650, 31</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaNaslovLabel.Name" xml:space="preserve">
-    <value>PopisProjektaNaslovLabel</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaAddButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaProfilPictureBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="PopisProjektaSearchRichTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="PopisProjektaSearchButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1116, 204</value>
-  </data>
-  <data name="PopisProjektaNaslovLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="PopisProjektaAddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1346, 845</value>
-  </data>
-  <data name="PopisProjektaProfilPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
-        DhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQU
-        FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAFoAWgDASIAAhEBAxEB/8QA
-        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
-        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
-        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
-        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
-        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
-        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
-        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
-        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiue8e/ELw38L/AAxd+IfFes2u
-        haNaqWkurt8AkAkIij5nc4O1FBZjwATxX5dftE/8FOvGXxE+06R8OY5vAnh990ZvyUbVLlSGBO8Erb8M
-        vEeXBXIl5xVJNibsfpd8S/jh4B+DtoZ/Gfi3SvD58rzktrq4H2mZN23MUC5kk5/uKe/pXzr4m/4Kn/BX
-        QdSNrp8XibxLDgYvNL0xY4myAcAXEkT8dPu9u/WvyL1HUrvWL+5v766mvb24cyz3VxI0ksrk5LOzfMzH
-        1NVa05ETzH6xf8PbPhR55B8K+NPJxw/2Wz3Z9Nv2rp75rofCn/BUj4J+IbySDUW8R+FY1XIuNW0vzEY/
-        3QLZ5mB+qge9fj5RT5EK7P6Efh38XvBPxa09rzwb4p0rxHEkaSSpYXSySwBwSoljzviJwflcA8Hjiuvr
-        +c3SdZv9B1S11LS7240vUrWRZbe9tJmingZfuski/Mp/3a+3f2bf+Cn3ifwXd2mh/FJZfFvh7AjXWoI0
-        /tK2AQBd4BCzrlRnOJPmZizkBKhx7FKXc/VWisTwV410P4jeFdN8SeGtTt9Y0PUYvOtby2bKuuSCCDyr
-        KwKsrAMrKVIBBFbdZlBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
-        FABRRRQAUUUUAFFFFABRRRQAUUUUAFcv8TviRofwi8B6z4w8SXDWujaVD507xpudiWCoiDuzOyqBxyw5
-        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
-        L/5Eo/4dK/CP/oZvHH/gbZf/ACJX21RRzMLI+Jf+HSvwj/6Gbxx/4G2X/wAiUf8ADpX4R/8AQzeOP/A2
-        y/8AkSvtqijmYWR8S/8ADpX4R/8AQzeOP/A2y/8AkSj/AIdK/CP/AKGbxx/4G2X/AMiV9tUUczCyPiX/
-        AIdK/CP/AKGbxx/4G2X/AMiUf8OlfhH/ANDN44/8DbL/AORK+2qKOZhZHxL/AMOlfhH/ANDN44/8DbL/
-        AORKP+HSvwj/AOhm8cf+Btl/8iV9tUUczCyPiX/h0r8I/wDoZvHH/gbZf/IlH/DpX4R/9DN44/8AA2y/
-        +RK+2qKOZhZHxL/w6V+Ef/QzeOP/AANsv/kSj/h0r8I/+hm8cf8AgbZf/IlfbVFHMwsj4l/4dK/CP/oZ
-        vHH/AIG2X/yJR/w6V+Ef/QzeOP8AwNsv/kSvtqijmYWR8Tx/8El/hErqzeJPG0gU52tfWYB+uLUH9a+m
-        Pg78BvAvwE0ObS/BGgw6RFclGurgu0txdMoIUyyuSzYy2FztXc20DJr0CildhYKKKKQwooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
-</value>
-  </data>
-  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1919, 1077</value>
-  </data>
-  <data name="PopisProjektaListDataGridView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="PopisProjektaNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>715, 109</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaAddButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaSearchButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PopisProjektaSearchRichTextBox.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;PopisProjektaProfilLinkLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PopisProjektaSortButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaProfilLinkLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="PopisProjektaSearchButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1085, 823</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaProfilLinkLabel.Name" xml:space="preserve">
-    <value>PopisProjektaProfilLinkLabel</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaListDataGridView.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="PopisProjektaNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>hr</value>
-  </metadata>
 </root>

@@ -64,6 +64,7 @@
     <Compile Include="BrisanjeZadatka.Designer.cs">
       <DependentUpon>BrisanjeZadatka.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ini.cs" />
     <Compile Include="Korisnik.cs" />
     <Compile Include="Projekt.cs" />
     <Compile Include="Session.cs" />
@@ -142,20 +143,44 @@
       <DependentUpon>UrediZadatak.cs</DependentUpon>
     </Compile>
     <Compile Include="Zadatak.cs" />
+    <EmbeddedResource Include="BrisanjeProjekta.en.resx">
+      <DependentUpon>BrisanjeProjekta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BrisanjeProjekta.resx">
       <DependentUpon>BrisanjeProjekta.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="BrisanjeZadatka.en.resx">
+      <DependentUpon>BrisanjeZadatka.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BrisanjeZadatka.resx">
       <DependentUpon>BrisanjeZadatka.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Deaktivacija_racuna.en.resx">
+      <DependentUpon>Deaktivacija_racuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodaj_projekt.en.resx">
+      <DependentUpon>Dodaj_projekt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodaj_zadatak.en.resx">
+      <DependentUpon>Dodaj_zadatak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopisDokumentacije.en.resx">
+      <DependentUpon>PopisDokumentacije.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PopisDokumentacije.resx">
       <DependentUpon>PopisDokumentacije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopisProjekta.en.resx">
+      <DependentUpon>PopisProjekta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PopisProjekta.resx">
       <DependentUpon>PopisProjekta.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopisZadataka.en.resx">
+      <DependentUpon>PopisZadataka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PopisZadataka.resx">
       <DependentUpon>PopisZadataka.cs</DependentUpon>
@@ -175,6 +200,12 @@
     <EmbeddedResource Include="Dodaj_zadatak.resx">
       <DependentUpon>Dodaj_zadatak.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Postavke.en.resx">
+      <DependentUpon>Postavke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Postavke.hr.resx">
+      <DependentUpon>Postavke.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Postavke.resx">
       <DependentUpon>Postavke.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +222,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UrediProjekt.en.resx">
+      <DependentUpon>UrediProjekt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UrediProjekt.resx">
       <DependentUpon>UrediProjekt.cs</DependentUpon>
     </EmbeddedResource>

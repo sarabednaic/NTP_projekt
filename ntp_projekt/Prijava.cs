@@ -20,7 +20,7 @@ namespace ntp_projekt
 
         private void Prijava_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void PrijavaLozinkaTextBox_TextChanged(object sender, EventArgs e)
