@@ -46,125 +46,73 @@
             // 
             // PopisProjektaNaslovLabel
             // 
-            PopisProjektaNaslovLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            PopisProjektaNaslovLabel.AutoSize = true;
-            PopisProjektaNaslovLabel.Font = new System.Drawing.Font("Leelawadee UI", 30F, System.Drawing.FontStyle.Bold);
-            PopisProjektaNaslovLabel.Location = new System.Drawing.Point(715, 109);
-            PopisProjektaNaslovLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(PopisProjektaNaslovLabel, "PopisProjektaNaslovLabel");
             PopisProjektaNaslovLabel.Name = "PopisProjektaNaslovLabel";
-            PopisProjektaNaslovLabel.Size = new System.Drawing.Size(473, 81);
-            PopisProjektaNaslovLabel.TabIndex = 30;
-            PopisProjektaNaslovLabel.Text = "Popis projekata";
             PopisProjektaNaslovLabel.Click += new System.EventHandler(this.UrediZadatakNaslovLabel_Click);
             // 
             // PopisProjektaListDataGridView
             // 
-            this.PopisProjektaListDataGridView.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            resources.ApplyResources(this.PopisProjektaListDataGridView, "PopisProjektaListDataGridView");
             this.PopisProjektaListDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.PopisProjektaListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PopisProjektaListDataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.PopisProjektaListDataGridView.Location = new System.Drawing.Point(480, 284);
-            this.PopisProjektaListDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.PopisProjektaListDataGridView.Name = "PopisProjektaListDataGridView";
-            this.PopisProjektaListDataGridView.RowHeadersWidth = 82;
             this.PopisProjektaListDataGridView.RowTemplate.Height = 33;
-            this.PopisProjektaListDataGridView.Size = new System.Drawing.Size(925, 557);
-            this.PopisProjektaListDataGridView.TabIndex = 23;
             this.PopisProjektaListDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PopisProjektaListDataGridView_CellContentClick);
             // 
             // PopisProjektaAddButton
             // 
-            this.PopisProjektaAddButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            resources.ApplyResources(this.PopisProjektaAddButton, "PopisProjektaAddButton");
             this.PopisProjektaAddButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.PopisProjektaAddButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisProjektaAddButton.BackgroundImage")));
-            this.PopisProjektaAddButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisProjektaAddButton.Location = new System.Drawing.Point(1346, 845);
-            this.PopisProjektaAddButton.Margin = new System.Windows.Forms.Padding(2);
             this.PopisProjektaAddButton.Name = "PopisProjektaAddButton";
-            this.PopisProjektaAddButton.Size = new System.Drawing.Size(60, 60);
-            this.PopisProjektaAddButton.TabIndex = 28;
             this.PopisProjektaAddButton.UseVisualStyleBackColor = false;
             this.PopisProjektaAddButton.Click += new System.EventHandler(this.PopisProjektaAddButton_Click_1);
             // 
             // PopisProjektaSortButton
             // 
-            this.PopisProjektaSortButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            resources.ApplyResources(this.PopisProjektaSortButton, "PopisProjektaSortButton");
             this.PopisProjektaSortButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PopisProjektaSortButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisProjektaSortButton.BackgroundImage")));
-            this.PopisProjektaSortButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisProjektaSortButton.Location = new System.Drawing.Point(1341, 216);
-            this.PopisProjektaSortButton.Margin = new System.Windows.Forms.Padding(2);
             this.PopisProjektaSortButton.Name = "PopisProjektaSortButton";
-            this.PopisProjektaSortButton.Size = new System.Drawing.Size(65, 60);
-            this.PopisProjektaSortButton.TabIndex = 29;
             this.PopisProjektaSortButton.UseVisualStyleBackColor = false;
             // 
             // PopisProjektaSearchRichTextBox
             // 
-            this.PopisProjektaSearchRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PopisProjektaSearchRichTextBox.Location = new System.Drawing.Point(745, 212);
-            this.PopisProjektaSearchRichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.PopisProjektaSearchRichTextBox, "PopisProjektaSearchRichTextBox");
             this.PopisProjektaSearchRichTextBox.Name = "PopisProjektaSearchRichTextBox";
-            this.PopisProjektaSearchRichTextBox.Size = new System.Drawing.Size(367, 33);
-            this.PopisProjektaSearchRichTextBox.TabIndex = 31;
-            this.PopisProjektaSearchRichTextBox.Text = "";
             // 
             // PopisProjektaSearchButton
             // 
-            this.PopisProjektaSearchButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PopisProjektaSearchButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisProjektaSearchButton.BackgroundImage")));
-            this.PopisProjektaSearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisProjektaSearchButton.Location = new System.Drawing.Point(1116, 204);
-            this.PopisProjektaSearchButton.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.PopisProjektaSearchButton, "PopisProjektaSearchButton");
             this.PopisProjektaSearchButton.Name = "PopisProjektaSearchButton";
-            this.PopisProjektaSearchButton.Size = new System.Drawing.Size(50, 50);
-            this.PopisProjektaSearchButton.TabIndex = 32;
             this.PopisProjektaSearchButton.UseVisualStyleBackColor = true;
             // 
             // PopisProjektaPanel
             // 
+            resources.ApplyResources(this.PopisProjektaPanel, "PopisProjektaPanel");
             this.PopisProjektaPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.PopisProjektaPanel.Controls.Add(this.PopisProjektaProfilPictureBox);
             this.PopisProjektaPanel.Controls.Add(this.PopisProjektaProfilLinkLabel);
-            this.PopisProjektaPanel.Location = new System.Drawing.Point(1, 1);
             this.PopisProjektaPanel.Name = "PopisProjektaPanel";
-            this.PopisProjektaPanel.Size = new System.Drawing.Size(1920, 90);
-            this.PopisProjektaPanel.TabIndex = 33;
             // 
             // PopisProjektaProfilPictureBox
             // 
-            this.PopisProjektaProfilPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisProjektaProfilPictureBox.BackgroundImage")));
-            this.PopisProjektaProfilPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisProjektaProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PopisProjektaProfilPictureBox.Image")));
-            this.PopisProjektaProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("PopisProjektaProfilPictureBox.InitialImage")));
-            this.PopisProjektaProfilPictureBox.Location = new System.Drawing.Point(1822, 13);
+            resources.ApplyResources(this.PopisProjektaProfilPictureBox, "PopisProjektaProfilPictureBox");
             this.PopisProjektaProfilPictureBox.Name = "PopisProjektaProfilPictureBox";
-            this.PopisProjektaProfilPictureBox.Size = new System.Drawing.Size(65, 65);
-            this.PopisProjektaProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PopisProjektaProfilPictureBox.TabIndex = 22;
             this.PopisProjektaProfilPictureBox.TabStop = false;
             this.PopisProjektaProfilPictureBox.Click += new System.EventHandler(this.PopisProjektaProfilPictureBox_Click_1);
             // 
             // PopisProjektaProfilLinkLabel
             // 
-            this.PopisProjektaProfilLinkLabel.AutoSize = true;
-            this.PopisProjektaProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            resources.ApplyResources(this.PopisProjektaProfilLinkLabel, "PopisProjektaProfilLinkLabel");
             this.PopisProjektaProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PopisProjektaProfilLinkLabel.Location = new System.Drawing.Point(1650, 31);
             this.PopisProjektaProfilLinkLabel.Name = "PopisProjektaProfilLinkLabel";
-            this.PopisProjektaProfilLinkLabel.Size = new System.Drawing.Size(157, 29);
-            this.PopisProjektaProfilLinkLabel.TabIndex = 0;
             this.PopisProjektaProfilLinkLabel.TabStop = true;
-            this.PopisProjektaProfilLinkLabel.Text = "Sara Bednaić";
             this.PopisProjektaProfilLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.PopisProjektaProfilLinkLabel_LinkClicked_1);
             // 
             // PopisProjekta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1857, 1021);
             this.Controls.Add(this.PopisProjektaPanel);
             this.Controls.Add(this.PopisProjektaSearchButton);
             this.Controls.Add(this.PopisProjektaSearchRichTextBox);
@@ -172,12 +120,7 @@
             this.Controls.Add(this.PopisProjektaSortButton);
             this.Controls.Add(this.PopisProjektaAddButton);
             this.Controls.Add(this.PopisProjektaListDataGridView);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(1919, 1077);
-            this.MinimumSize = new System.Drawing.Size(1085, 823);
             this.Name = "PopisProjekta";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PopisProjekta";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PopisProjekta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PopisProjektaListDataGridView)).EndInit();

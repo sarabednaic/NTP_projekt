@@ -117,150 +117,215 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="PostavkePromjenaButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="PostavkeNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="PostavkeOpciPodaciLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="PostavkePromjenaLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="PostavkeOstalePostavkeLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="PostavkeJezikLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="PostavkeFontLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="PostavkeOdjavaButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="PostavkeLozinkaTextBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
+  <data name="&gt;&gt;PostavkePonovnoLozinkaTextBox.Name" xml:space="preserve">
+    <value>PostavkePonovnoLozinkaTextBox</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PostavkeProfilnaPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
-        DhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQU
-        FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAFoAWgDASIAAhEBAxEB/8QA
-        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
-        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
-        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
-        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
-        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
-        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
-        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
-        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiue8e/ELw38L/AAxd+IfFes2u
-        haNaqWkurt8AkAkIij5nc4O1FBZjwATxX5dftE/8FOvGXxE+06R8OY5vAnh990ZvyUbVLlSGBO8Erb8M
-        vEeXBXIl5xVJNibsfpd8S/jh4B+DtoZ/Gfi3SvD58rzktrq4H2mZN23MUC5kk5/uKe/pXzr4m/4Kn/BX
-        QdSNrp8XibxLDgYvNL0xY4myAcAXEkT8dPu9u/WvyL1HUrvWL+5v766mvb24cyz3VxI0ksrk5LOzfMzH
-        1NVa05ETzH6xf8PbPhR55B8K+NPJxw/2Wz3Z9Nv2rp75rofCn/BUj4J+IbySDUW8R+FY1XIuNW0vzEY/
-        3QLZ5mB+qge9fj5RT5EK7P6Efh38XvBPxa09rzwb4p0rxHEkaSSpYXSySwBwSoljzviJwflcA8Hjiuvr
-        +c3SdZv9B1S11LS7240vUrWRZbe9tJmingZfuski/Mp/3a+3f2bf+Cn3ifwXd2mh/FJZfFvh7AjXWoI0
-        /tK2AQBd4BCzrlRnOJPmZizkBKhx7FKXc/VWisTwV410P4jeFdN8SeGtTt9Y0PUYvOtby2bKuuSCCDyr
-        KwKsrAMrKVIBBFbdZlBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
-        FABRRRQAUUUUAFFFFABRRRQAUUUUAFcv8TviRofwi8B6z4w8SXDWujaVD507xpudiWCoiDuzOyqBxyw5
-        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
-        L/5Eo/4dK/CP/oZvHH/gbZf/ACJX21RRzMLI+Jf+HSvwj/6Gbxx/4G2X/wAiUf8ADpX4R/8AQzeOP/A2
-        y/8AkSvtqijmYWR8S/8ADpX4R/8AQzeOP/A2y/8AkSj/AIdK/CP/AKGbxx/4G2X/AMiV9tUUczCyPiX/
-        AIdK/CP/AKGbxx/4G2X/AMiUf8OlfhH/ANDN44/8DbL/AORK+2qKOZhZHxL/AMOlfhH/ANDN44/8DbL/
-        AORKP+HSvwj/AOhm8cf+Btl/8iV9tUUczCyPiX/h0r8I/wDoZvHH/gbZf/IlH/DpX4R/9DN44/8AA2y/
-        +RK+2qKOZhZHxL/w6V+Ef/QzeOP/AANsv/kSj/h0r8I/+hm8cf8AgbZf/IlfbVFHMwsj4l/4dK/CP/oZ
-        vHH/AIG2X/yJR/w6V+Ef/QzeOP8AwNsv/kSvtqijmYWR8Tx/8El/hErqzeJPG0gU52tfWYB+uLUH9a+m
-        Pg78BvAvwE0ObS/BGgw6RFclGurgu0txdMoIUyyuSzYy2FztXc20DJr0CildhYKKKKQwooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
-</value>
+  <data name="PostavkePromjenaButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>842, 803</value>
+  </data>
+  <data name="&gt;&gt;PostavkeJezikComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PostavkePromjenaLabel.Name" xml:space="preserve">
+    <value>PostavkePromjenaLabel</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PostavkePanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;PostavkePrezimeTextBox.Parent" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="PostavkePrezimeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 26</value>
+  </data>
+  <data name="&gt;&gt;PostavkeDeaktivacijaLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PostavkeOstalePostavkeLabel.Text" xml:space="preserve">
+    <value>Ostale postavke</value>
+  </data>
+  <data name="&gt;&gt;PostavkeVelicinaFontaComboBox.Name" xml:space="preserve">
+    <value>PostavkeVelicinaFontaComboBox</value>
+  </data>
+  <data name="PostavkePromjenaButton.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="PostavkePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 424</value>
+  </data>
+  <data name="&gt;&gt;PostavkeOstalePostavkeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PostavkePromjenaLabel.Text" xml:space="preserve">
+    <value>Promjena lozinke</value>
+  </data>
+  <data name="&gt;&gt;PostavkeDeaktivacijaLinkLabel.Name" xml:space="preserve">
+    <value>PostavkeDeaktivacijaLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;PostavkePonovnoLozinkaLabel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="PostavkeNaslovLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;PostavkeFontLabel.Parent" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="&gt;&gt;PostavkePanel.Name" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="PostavkeDeaktivacijaLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="PostavkeProfilnaPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>817, 143</value>
+  </data>
+  <data name="&gt;&gt;PostavkePromjenaButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PostavkePromjenaLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;PostavkePrezimeTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PostavkeOdjavaButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PostavkeOdjavaButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PostavkePanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PostavkeFontLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;PostavkePonovnoLozinkaTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;PostavkeImeTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PostavkeNatragButton.Name" xml:space="preserve">
+    <value>PostavkeNatragButton</value>
+  </data>
+  <data name="&gt;&gt;PostavkeImeTextBox.Name" xml:space="preserve">
+    <value>PostavkeImeTextBox</value>
+  </data>
+  <data name="PostavkeLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;PostavkePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PostavkeOstalePostavkeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 43</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1918, 1194</value>
+  </data>
+  <data name="PostavkePromjenaLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PostavkeOstalePostavkeLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;PostavkeVelicinaFontaComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PostavkeOpciPodaciLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;PostavkeImeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PostavkeLozinkaTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="PostavkeLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 24</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Postavke</value>
+  </data>
+  <data name="PostavkeJezikLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 507</value>
+  </data>
+  <data name="&gt;&gt;PostavkeOdjavaButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PostavkeOpciPodaciLabel.Name" xml:space="preserve">
+    <value>PostavkeOpciPodaciLabel</value>
+  </data>
+  <data name="PostavkeNaslovLabel.Text" xml:space="preserve">
+    <value>Postavke</value>
+  </data>
+  <data name="&gt;&gt;PostavkeNaslovLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PostavkePrezimeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;PostavkePromjenaButton.Name" xml:space="preserve">
+    <value>PostavkePromjenaButton</value>
+  </data>
+  <data name="&gt;&gt;PostavkeLozinkaTextBox.Parent" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="PostavkeNatragButton.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;PostavkeNaslovLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PostavkeProfilnaPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PostavkeKorisnickoImeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;PostavkeKorisnickoImeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PostavkeVelicinaFontaComboBox.Parent" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="PostavkeOpciPodaciLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="PostavkeOpciPodaciLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;PostavkePonovnoLozinkaLabel.Name" xml:space="preserve">
+    <value>PostavkePonovnoLozinkaLabel</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;PostavkePonovnoLozinkaTextBox.Parent" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="PostavkeLozinkaLabel.Text" xml:space="preserve">
+    <value>Upišite željenu lozinku</value>
+  </data>
+  <data name="&gt;&gt;PostavkeOpciPodaciLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1443, 840</value>
+  </data>
+  <data name="PostavkeNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Leelawadee UI, 40pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;PostavkePromjenaButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PostavkeProfilnaPictureBox.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1055,6 +1120,219 @@
         ABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 </value>
   </data>
+  <data name="PostavkeLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 310</value>
+  </data>
+  <data name="PostavkeVelicinaFontaComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 602</value>
+  </data>
+  <data name="&gt;&gt;PostavkeKorisnickoImeTextBox.Name" xml:space="preserve">
+    <value>PostavkeKorisnickoImeTextBox</value>
+  </data>
+  <data name="&gt;&gt;PostavkeOpciPodaciLabel.Parent" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="PostavkeProfilnaPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="PostavkeJezikLabel.Text" xml:space="preserve">
+    <value>Odaberite jezik aplikacije</value>
+  </data>
+  <data name="&gt;&gt;PostavkePonovnoLozinkaLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PostavkeJezikLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PostavkePonovnoLozinkaLabel.Parent" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="&gt;&gt;PostavkeImeTextBox.Parent" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="&gt;&gt;PostavkeKorisnickoImeTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PostavkeJezikComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>452, 28</value>
+  </data>
+  <data name="&gt;&gt;PostavkeFontLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PostavkeKorisnickoImeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 166</value>
+  </data>
+  <data name="PostavkePonovnoLozinkaLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="PostavkePonovnoLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 396</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="&gt;&gt;PostavkeOdjavaButton.Name" xml:space="preserve">
+    <value>PostavkeOdjavaButton</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1438, 823</value>
+  </data>
+  <data name="PostavkeJezikLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8pt</value>
+  </data>
+  <data name="PostavkePonovnoLozinkaLabel.Text" xml:space="preserve">
+    <value>Ponovite željenu lozinku</value>
+  </data>
+  <data name="&gt;&gt;PostavkeProfilnaPictureBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PostavkeFontLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8pt</value>
+  </data>
+  <data name="PostavkeOstalePostavkeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;PostavkeLozinkaLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="PostavkePrezimeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;PostavkeJezikComboBox.Parent" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="&gt;&gt;PostavkePrezimeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PostavkePonovnoLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="PostavkeDeaktivacijaLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PostavkeOstalePostavkeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 461</value>
+  </data>
+  <data name="PostavkeProfilnaPictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="PostavkeProfilnaPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
+        DhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQU
+        FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAFoAWgDASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiue8e/ELw38L/AAxd+IfFes2u
+        haNaqWkurt8AkAkIij5nc4O1FBZjwATxX5dftE/8FOvGXxE+06R8OY5vAnh990ZvyUbVLlSGBO8Erb8M
+        vEeXBXIl5xVJNibsfpd8S/jh4B+DtoZ/Gfi3SvD58rzktrq4H2mZN23MUC5kk5/uKe/pXzr4m/4Kn/BX
+        QdSNrp8XibxLDgYvNL0xY4myAcAXEkT8dPu9u/WvyL1HUrvWL+5v766mvb24cyz3VxI0ksrk5LOzfMzH
+        1NVa05ETzH6xf8PbPhR55B8K+NPJxw/2Wz3Z9Nv2rp75rofCn/BUj4J+IbySDUW8R+FY1XIuNW0vzEY/
+        3QLZ5mB+qge9fj5RT5EK7P6Efh38XvBPxa09rzwb4p0rxHEkaSSpYXSySwBwSoljzviJwflcA8Hjiuvr
+        +c3SdZv9B1S11LS7240vUrWRZbe9tJmingZfuski/Mp/3a+3f2bf+Cn3ifwXd2mh/FJZfFvh7AjXWoI0
+        /tK2AQBd4BCzrlRnOJPmZizkBKhx7FKXc/VWisTwV410P4jeFdN8SeGtTt9Y0PUYvOtby2bKuuSCCDyr
+        KwKsrAMrKVIBBFbdZlBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+        FABRRRQAUUUUAFFFFABRRRQAUUUUAFcv8TviRofwi8B6z4w8SXDWujaVD507xpudiWCoiDuzOyqBxyw5
+        HWuor8iv+ClX7SU3xR+KUngHSZyPC3hG6eGUpuH2rUlBSZ2Bx/qstEvHXzTkh1xUVdibseJ/tKftKeJ/
+        2mPHUmu65K1ppVuzxaTosTboLCEkcA/xythfMk6kgAYQKi+QUUV0LQzCiiimAUUUUAFFFFAHvX7Kn7WX
+        iT9mXxdC8E1xf+Dr2dX1XQt+5HUgBpolJAWcKq7WyAwVVYkYI/avwT410P4jeFNM8S+GtSh1fQ9ShE9r
+        eQE7XU8YIIBVgQVZWAZWBUgEEV/O1X3X/wAEw/2kpfBfjxvhbrN1jw94ikabTGlKBbXUQnKbyQdsyx4C
+        /N+8EYUZkc1lOPUcT9VaKKKxNAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+        KKKACiiigAooooAKKKKACiiigAooooA80/aT+KDfBj4E+NPGMTMl7p1gy2TLEJMXcpENsSp4K+dJHn2z
+        16V+BkjtIxZ3aR25LN1b3r9Wv+CtXiyPTfgj4V8PrK6Xeq66twY1AxJDBBJvB78SSwHj0/P8o62gtCJB
+        RRRWpIUUUUAFFFFABRRRQAVc0fVr7QNWsdU0y6ksdSsZ0ubW6hba8MqMGR1P95WVW/CqdFID+gv4K/Eq
+        2+MHwm8J+M7bylGs6fFcyxQMWSGcriaIE9dkgdD7qa7Wvj7/AIJY+KL3Xv2YZNPumDQ6Fr15p9qNoBWN
+        kiuSD6nfcydfYdq+wa5nozRBRRRSGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+        FABRRRQAUUUUAFFFFABRRRQAUUUUAfnD/wAFhmfZ8JFH+rzqxP1As8fpmvzdr9V/+Ct3heG++DHg/wAQ
+        iOV7zTde+yBkxsWGe3lZy3GfvwQgc4575GPyoreGxm9wooorQQUUUUAFFFFABRRRQAUUUUAfqh/wSLa/
+        /wCFQ+OBIf8AiVjXwYB/02+zReb/AOO+TX3hXxz/AMEq/Dd9of7Md1fXcWy31nxDd31m2QS8SxwW5J9P
+        3lvKP+A19jVzS3NFsFFFFSMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+        gAooooAKKKKACiiigAooooA8n/as+Flz8aP2evG/hGwDPqd5ZefYxptBluYHWeGPLEAB3iVCSRgMTX4M
+        e4r+j+vxu/4KJfs4yfBf4zT+IdLgkfwr4ukm1GBwihLW7LFrm34OcDcJFJCjbIVGfKY1rB9CJHyhRRRW
+        xIUUUUAFFFFABRRRQAVLbwS3VxHBDE808rBI4413M7H7qgd8moq+z/8Agmf+zjN8TviivxA1WJT4Y8IX
+        KyQrIjYu9S27oVU4wfJBWVjnIYwjBDNiZOyA/Tf4GfDOD4N/B/wj4LhEO/R9OiguJLfd5c1yRunlXdzh
+        5Wkfn+90HSu6oormNQooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+        gAooooAKKKKACiiigAooooAK4n4yfB/w38dPh/qXhDxTafadOvF3RzR4Wa1mGdk8TYO11J46gglWDKzK
+        e2ooA/Af48fAfxR+z349u/DXiW0ZNrNJZahGpFvfQZ4kiPpyMrnKk4POCfN6/oJ+MPwb8KfHbwPeeFfF
+        +mrf6dP88Uq4We0mAIWaGTGUkXJ56EEqwZWZT+UX7SH/AATz+IXwRkudV0OCTx14SBZhfaXbt9rtUChj
+        9ot1yQAd/wA8e5cJlvLyFraMu5m1Y+U6KByMjkUVqIKKKKACil9Pc4HvX2F+zn/wTc8f/FS/tdU8aW11
+        8P8AwkHBkW9j2apdIGZXWOBsmEnZjdMBjcrKsinFS2luB4x+zf8As3+Kf2nPHkeg6EptdOtysuq61NGW
+        g06Ak4Y8jdI2G2R5BcgkkKHdP27+F/w20T4P/D/RPB3h2GSHR9Jg8mHzm3SOSxZ5HIABd3ZnYgAZY4AH
+        FRfC34T+Ffgv4Qt/DPg/SItI0mJ2lZEJaSaVsbpZXYlpHOANzEnCqBgAAddWEpXNErBRRRUjCiiigAoo
+        ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
+        r5z/AGg/27vhn8A2vdLkvm8U+LoFYDQtHYOYpMOAtxN/q4cMgDLlpFDBvLYU9wPoyivyF8Wf8FSvjBrP
+        iyDU9FTR/Dui28pZNFWzFylxHuyEuJn+dyF4JiMOeoAr6l+Cn/BUn4deNrWK08e20/gLWQoDTlXu9Pmb
+        5R8siKXjJJJw6BVA++xp8rFdHvfxS/ZR+E3xmvzqHizwTp97qjNvfUrUvZ3UrbQoMk0DI8mAoADlgMcC
+        vmvxd/wSP8A39q//AAjXjTxFol20m7dqKQX0Kr/dCKkT/iXNfa3hbxhoPjnShqfhvW9N8QaaXMYvNLu4
+        7mEsMZXehIyMjjPetihSaCyPzf8A+HPB3f8AJXPl9P8AhGuf/Suu38I/8Ekfh3p1rEfEfi/xJrl4sm5j
+        Y+RYwOuB8pQpI/XPIk7j0yfumijmYWR5l8Lv2Z/hd8GJVuPB/grTNKv1d3XUpEa5vV3qFZRczF5QpAxt
+        DbeTxya9NrH8U+MNB8D6UdT8Sa3pvh/TQ4jN5ql3HbQhjnC73IGTg8Z7V8hfGr/gqT8OvBVrLaeArW48
+        e6wVIW4CvaafC3zD5pHXfIQQpwibWB/1gNLVhsfatFfkN4T/AOCpXxg0fxZNqetJo3iLRbmUM+iNZi2S
+        3j3ZZbeZPnQleAZTNjqQa+7f2e/27vhl8fTZaZHft4W8XTqoOhawwQyyYQFbeb7k2WchVysjBSxjUU3F
+        oLpn0ZRRRUjCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+        AooooAKKKKACud8ffEPw38LfC934i8V6za6Ho1qpMl1dPjJwSERRlnc4OEUFmPABNct8fvj/AOF/2dfA
+        s3iPxJPvkYmKw02Fh599NjIjQHoB1Zjwo5PYH8Z/2kf2lPFH7S3jqXXddla00633R6VosMjG3sIW6qOB
+        vkbA3ykAvjGFUIiVGNyW7HtX7UX/AAUe8W/GJbvw94IW68E+DZUMUzLIBqN+u7PzyJnyVICjy4yc/MGd
+        1baPjn+VJRW6ViAoooqgNTw/4m1fwjq0WqaBqt9oepRZ8q+065e3nQEYIEkZVuleweE/24fjt4Ns3tbD
+        4lavPG5B3aosOouMZ6PcxyMOvY+noK8LopWQH0l/w8V/aE24/wCE/GfX+xdP/wDkesHxZ+3D8dvGVmlr
+        f/ErV4I0JO7S1h05znHV7aONj07n19TXhdFLlQGp4g8Tat4u1aTVde1W/wBb1OXHmXupXL3E7AcAGSRm
+        asuiimAUv16UlFMD7H/Zd/4KPeLPg6tp4e8brdeNvBsSCKFmkB1GwXdn5JHx5ygFh5chBHyhXRV2n9WP
+        AfxC8N/FDwxaeIfCms2mu6PdKGjurR9wBIBKOv3kcZG5GAZTwQDxX88Feu/s3ftJ+Kf2afHcev6FKbrT
+        LkLFquizSMLe/hXOAeux152SgEpkjDKXR8pR7DUj946K81+AXx+8LftE+BYfEfhq4KuhEV9pszD7RYzY
+        zskA7HqrDhhyO4HpVYmgUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABR
+        RRQAUUUUAFcd8XPix4d+CXgHU/F/ii6a30uxTiOFQ01xIeEhiUkbnY8AEgDkkqoJHY1+MX7eH7V0/wC0
+        P8Rn0jQr2Y/D7QZWTT4c7UvpwCr3pUH5s5ZY89IznCmRxVRV2Jux5f8AtFftAeIf2kPiNd+KtcxawAGH
+        TtKictHYWobKxqcDe2eXfALNk4VQqjyyiiugzCiiimAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB6n+zr
+        +0B4i/Zu+I1p4p0P/S7fAh1HSpZSsV/bFvmjY4Oxs8o+CVbBwyllP7d/CP4s+Hfjd4B0zxf4XumuNLvl
+        OY5lCTW8o4eGVMnbIh4IyQeCCVIJ/nxr6j/YP/aum/Z4+IyaRrt7MPh9r0qpfwlgyWM5AVL0Kfu4wFkx
+        1jGcMY0FZyj1GnY/Z2iiisDQKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+        igAooqK6uobG2luLiWO3t4UMkk0rBURQMliTwABzk0AfHP8AwUw/aGPwx+FMfgXR7pU8ReLo5IbjY6b7
+        fThhZiQTlTKW8pSVwV84ggpX5FV6z+1H8brj9oH42eIfFzSytpby/ZdJgkBHkWMZKwjaSdpYZlYA43yv
+        ivJq6IqyM3qwoooqxBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAfrt/wTP/AGiW+KPwpk8D
+        axcq/iLwhHHBblmQNcad92EgA5YxbfKYhcbfJJJZzX2VX4L/ALLvxsuP2f8A43eHPFwllXS45fsurQx7
+        j59jIQswKgjeVGJVB43xJX7x2t1De28VxbypPbzIJI5YmDK6kZDAjggjnIrnkrMuOxLRRRUFBRRRQAUU
+        UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV80/8ABQ/4pN8MP2XfEaW7Ol/4ldPD1u6x
+        q6gTq5n3ZPANvHcAMMkMV+o+lq/Lb/grh4+fUvib4K8HRtGbbSdLk1KQxyZYzXMpQK4zgFUtgRxnEp7E
+        VUVdiex8EUUUV0mYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV+1f/BPH4pP8Tv2X
+        fDiXLO+oeG3fw9cu0aopECoYNuD8wFvJbgscEsG+p/FSvvf/AIJH+Pn034m+NfB0hQW+raXHqUbSSYYS
+        20oQqgzyWS5JPfEXoKzmtBrc/UmiiisDQKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACvwy/bh8Xx+Nv2rviRfwo0cVvqQ0wKW3c2sSWznoOrwscds9+tfubX4afttfDnU/hv+0548ttQ
+        RvL1bUZtcs5ipVZre6dpQVJAyFdpIz/tRMOa0huTI8KooorcgKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAK9z/Ye8Xx+Cf2rvhvfzI0kVxqR0wqG283UT2yHoejzKcd8duteGV7r+xL8OdT+J
+        H7TngO209G8vSdRh1y8mCllht7V1lJYgHAZ1jjH+1Ko4qZbAfuXRRRXMahRRRQAUUUUAFFFFABRRRQAU
+        UUUAFFFFABRRRQAUUUUAFFFFABRRRQAV5/8AGL4DeBfj3ocOl+N9Bh1eK2Lta3Adori1ZgAxilQhlzhc
+        rna21dwOBXoFFAHxPJ/wSW+ETOzL4k8bRhjnat9ZkD6ZtSf1pv8Aw6V+Ef8A0M3jj/wNsv8A5Er7aop8
+        zFZHxL/w6V+Ef/QzeOP/AANsv/kSj/h0r8I/+hm8cf8AgbZf/IlfbVFPmYWR8S/8OlfhH/0M3jj/AMDb
+        L/5Eo/4dK/CP/oZvHH/gbZf/ACJX21RRzMLI+Jf+HSvwj/6Gbxx/4G2X/wAiUf8ADpX4R/8AQzeOP/A2
+        y/8AkSvtqijmYWR8S/8ADpX4R/8AQzeOP/A2y/8AkSj/AIdK/CP/AKGbxx/4G2X/AMiV9tUUczCyPiX/
+        AIdK/CP/AKGbxx/4G2X/AMiUf8OlfhH/ANDN44/8DbL/AORK+2qKOZhZHxL/AMOlfhH/ANDN44/8DbL/
+        AORKP+HSvwj/AOhm8cf+Btl/8iV9tUUczCyPiX/h0r8I/wDoZvHH/gbZf/IlH/DpX4R/9DN44/8AA2y/
+        +RK+2qKOZhZHxL/w6V+Ef/QzeOP/AANsv/kSj/h0r8I/+hm8cf8AgbZf/IlfbVFHMwsj4l/4dK/CP/oZ
+        vHH/AIG2X/yJR/w6V+Ef/QzeOP8AwNsv/kSvtqijmYWR8Tx/8El/hErqzeJPG0gU52tfWYB+uLUH9a+m
+        Pg78BvAvwE0ObS/BGgw6RFclGurgu0txdMoIUyyuSzYy2FztXc20DJr0CildhYKKKKQwooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
+</value>
+  </data>
   <data name="PostavkeNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAd0AAAIACAYAAADHdbYCAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -1170,4 +1448,310 @@
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="PostavkeOstalePostavkeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;PostavkeNatragButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PostavkePromjenaLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;PostavkeKorisnickoImeTextBox.Parent" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="&gt;&gt;PostavkeJezikLabel.Parent" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="PostavkePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>602, 360</value>
+  </data>
+  <data name="&gt;&gt;PostavkeFontLabel.Name" xml:space="preserve">
+    <value>PostavkeFontLabel</value>
+  </data>
+  <data name="PostavkePromjenaButton.Text" xml:space="preserve">
+    <value>Promijeni podatke</value>
+  </data>
+  <data name="&gt;&gt;PostavkeLozinkaTextBox.Name" xml:space="preserve">
+    <value>PostavkeLozinkaTextBox</value>
+  </data>
+  <data name="&gt;&gt;PostavkeLozinkaLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PostavkeNaslovLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="PostavkeImeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;PostavkeDeaktivacijaLinkLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PostavkeImeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 26</value>
+  </data>
+  <data name="PostavkeProfilnaPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 250</value>
+  </data>
+  <data name="PostavkeJezikLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 24</value>
+  </data>
+  <data name="PostavkeNatragButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
+  </data>
+  <data name="PostavkeOdjavaButton.Text" xml:space="preserve">
+    <value>Odjavi me</value>
+  </data>
+  <data name="PostavkeOstalePostavkeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="PostavkeKorisnickoImeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="PostavkeVelicinaFontaComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="PostavkeLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>446, 26</value>
+  </data>
+  <data name="PostavkePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="PostavkeLozinkaLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
+  </data>
+  <data name="&gt;&gt;PostavkeDeaktivacijaLinkLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PostavkeOpciPodaciLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 43</value>
+  </data>
+  <data name="&gt;&gt;PostavkeNaslovLabel.Name" xml:space="preserve">
+    <value>PostavkeNaslovLabel</value>
+  </data>
+  <data name="PostavkePonovnoLozinkaLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
+  </data>
+  <data name="PostavkeJezikComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 533</value>
+  </data>
+  <data name="&gt;&gt;PostavkeJezikLabel.Name" xml:space="preserve">
+    <value>PostavkeJezikLabel</value>
+  </data>
+  <data name="&gt;&gt;PostavkeJezikComboBox.Name" xml:space="preserve">
+    <value>PostavkeJezikComboBox</value>
+  </data>
+  <data name="&gt;&gt;PostavkePromjenaButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PostavkeNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>486, 120</value>
+  </data>
+  <data name="PostavkePromjenaLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="PostavkePromjenaLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 273</value>
+  </data>
+  <data name="PostavkeVelicinaFontaComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>452, 28</value>
+  </data>
+  <data name="&gt;&gt;PostavkeProfilnaPictureBox.Name" xml:space="preserve">
+    <value>PostavkeProfilnaPictureBox</value>
+  </data>
+  <data name="PostavkeDeaktivacijaLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 25</value>
+  </data>
+  <data name="&gt;&gt;PostavkeOstalePostavkeLabel.Parent" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="PostavkePonovnoLozinkaLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8pt</value>
+  </data>
+  <data name="PostavkeImeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="PostavkePonovnoLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 24</value>
+  </data>
+  <data name="PostavkeJezikLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="PostavkeFontLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
+  </data>
+  <data name="PostavkeOpciPodaciLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 28</value>
+  </data>
+  <data name="PostavkeDeaktivacijaLinkLabel.Text" xml:space="preserve">
+    <value>Deaktiviraj korisnički račun</value>
+  </data>
+  <data name="PostavkePromjenaButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
+  </data>
+  <data name="PostavkeDeaktivacijaLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>820, 949</value>
+  </data>
+  <data name="&gt;&gt;PostavkeOpciPodaciLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PostavkeVelicinaFontaComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PostavkeOdjavaButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>842, 873</value>
+  </data>
+  <data name="&gt;&gt;PostavkePanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PostavkeFontLabel.Text" xml:space="preserve">
+    <value>Odaberite veličinu fonta</value>
+  </data>
+  <data name="PostavkeLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 340</value>
+  </data>
+  <data name="PostavkeDeaktivacijaLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="PostavkeNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>708, 32</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;PostavkePromjenaLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PostavkeOdjavaButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="PostavkeJezikComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;PostavkePrezimeTextBox.Name" xml:space="preserve">
+    <value>PostavkePrezimeTextBox</value>
+  </data>
+  <data name="PostavkeFontLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 571</value>
+  </data>
+  <data name="PostavkePonovnoLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 368</value>
+  </data>
+  <data name="&gt;&gt;PostavkeLozinkaLabel.Parent" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="PostavkeKorisnickoImeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 26</value>
+  </data>
+  <data name="PostavkePromjenaButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  </data>
+  <data name="PostavkeOdjavaButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
+  </data>
+  <data name="&gt;&gt;PostavkeLozinkaTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PostavkeFontLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 24</value>
+  </data>
+  <data name="&gt;&gt;PostavkeNatragButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PostavkePrezimeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 123</value>
+  </data>
+  <data name="&gt;&gt;PostavkeProfilnaPictureBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PostavkeJezikLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
+  </data>
+  <data name="&gt;&gt;PostavkeLozinkaLabel.Name" xml:space="preserve">
+    <value>PostavkeLozinkaLabel</value>
+  </data>
+  <data name="PostavkeImeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 78</value>
+  </data>
+  <data name="&gt;&gt;PostavkePromjenaLabel.Parent" xml:space="preserve">
+    <value>PostavkePanel</value>
+  </data>
+  <data name="&gt;&gt;PostavkeOstalePostavkeLabel.Name" xml:space="preserve">
+    <value>PostavkeOstalePostavkeLabel</value>
+  </data>
+  <data name="&gt;&gt;PostavkeJezikLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="PostavkeFontLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;PostavkeJezikComboBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="PostavkeLozinkaLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8pt</value>
+  </data>
+  <data name="PostavkeOpciPodaciLabel.Text" xml:space="preserve">
+    <value>Opći podaci</value>
+  </data>
+  <data name="PostavkePonovnoLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>446, 26</value>
+  </data>
+  <data name="&gt;&gt;PostavkeNatragButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PostavkeNaslovLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PostavkeLozinkaLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="PostavkeNatragButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="&gt;&gt;PostavkePonovnoLozinkaTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PostavkePromjenaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 43</value>
+  </data>
+  <data name="PostavkeNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="PostavkeOdjavaButton.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <metadata name="PostavkeLozinkaTextBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+  <metadata name="PostavkePromjenaButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="PostavkeJezikLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="PostavkePromjenaLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="PostavkeOpciPodaciLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="PostavkeOdjavaButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="PostavkeOstalePostavkeLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="PostavkeFontLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="PostavkeNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
 </root>

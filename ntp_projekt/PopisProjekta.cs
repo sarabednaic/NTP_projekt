@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,11 +13,14 @@ namespace ntp_projekt
 {
     public partial class PopisProjekta : Form
     {
-        
+        Ini iniFile;
+
         public PopisProjekta()
         {
             InitializeComponent();
             PopisProjektaProfilLinkLabel.Text = Session.DohvatiPunoIme();
+            iniFile = new Ini();
+            iniFile.UcitajDatoteku(@"..\..\postavke.ini");
         }
 
         private void UrediZadatakNaslovLabel_Click(object sender, EventArgs e)

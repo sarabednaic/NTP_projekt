@@ -117,16 +117,232 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PrijavaKorisnickoImeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;PrijavaRegistracijaLinkLabel.Name" xml:space="preserve">
+    <value>PrijavaRegistracijaLinkLabel</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PrijavaNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>564, 125</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PrijavaKorisImeTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PrijavaKorisImeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1440, 1018</value>
+  </data>
+  <data name="PrijavaKorisnickoImeLabel.Text" xml:space="preserve">
+    <value>Korisničko ime</value>
+  </data>
+  <data name="PrijavaKorisImeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 26</value>
+  </data>
+  <data name="PrijavaLozinkaTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="PrijavaKorisnickoImeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 43</value>
+  </data>
+  <data name="&gt;&gt;PrijavaNaslovLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PrijavaLozinkaLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;PrijavaLozinkaTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PrijavaKorisnickoImeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="PrijavaLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 366</value>
+  </data>
+  <data name="&gt;&gt;PrijavaLozinkaLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PrijavaLozinkaLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;PrijavaLozinkaLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PrijavaKorisImeTextBox.Name" xml:space="preserve">
+    <value>PrijavaKorisImeTextBox</value>
+  </data>
+  <data name="&gt;&gt;PrijavaKorisnickoImeLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="PrijavaPrijavaButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>543, 413</value>
+  </data>
+  <data name="&gt;&gt;PrijavaPrijavaButton.Name" xml:space="preserve">
+    <value>PrijavaPrijavaButton</value>
+  </data>
+  <data name="PrijavaNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Leelawadee UI, 40pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;PrijavaPrijavaButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PrijavaPrijavaButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PrijavaLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="PrijavaKorisImeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 290</value>
+  </data>
+  <data name="PrijavaPrijavaButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="PrijavaLozinkaLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;PrijavaLozinkaTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PrijavaLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>441, 26</value>
+  </data>
+  <data name="PrijavaPrijavaButton.Text" xml:space="preserve">
+    <value>Prijavi se</value>
+  </data>
+  <data name="PrijavaRegistracijaLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;PrijavaRegistracijaLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PrijavaNaslovLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PrijavaLozinkaTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PrijavaNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 120</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1894, 1009</value>
+  </data>
+  <data name="PrijavaRegistracijaLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 20</value>
+  </data>
+  <data name="&gt;&gt;PrijavaRegistracijaLinkLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PrijavaRegistracijaLinkLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;PrijavaNaslovLabel.Name" xml:space="preserve">
+    <value>PrijavaNaslovLabel</value>
+  </data>
+  <data name="PrijavaLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 43</value>
+  </data>
+  <data name="PrijavaPrijavaButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PrijavaLozinkaTextBox.Name" xml:space="preserve">
+    <value>PrijavaLozinkaTextBox</value>
+  </data>
+  <data name="PrijavaNaslovLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PrijavaKorisnickoImeLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PrijavaPrijavaButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Prijava</value>
+  </data>
+  <data name="&gt;&gt;PrijavaLozinkaLabel.Name" xml:space="preserve">
+    <value>PrijavaLozinkaLabel</value>
+  </data>
+  <data name="&gt;&gt;PrijavaNaslovLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PrijavaLozinkaLabel.Text" xml:space="preserve">
+    <value>Lozinka</value>
+  </data>
+  <data name="PrijavaPrijavaButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
+  </data>
+  <data name="&gt;&gt;PrijavaKorisnickoImeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PrijavaKorisImeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PrijavaRegistracijaLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>579, 513</value>
+  </data>
+  <data name="PrijavaRegistracijaLinkLabel.Text" xml:space="preserve">
+    <value>Nemate račun? Registrirajte se!</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1920, 1080</value>
+  </data>
+  <data name="PrijavaKorisnickoImeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="PrijavaLozinkaLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="PrijavaLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 317</value>
+  </data>
+  <data name="&gt;&gt;PrijavaKorisnickoImeLabel.Name" xml:space="preserve">
+    <value>PrijavaKorisnickoImeLabel</value>
+  </data>
+  <data name="PrijavaKorisnickoImeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 245</value>
+  </data>
+  <data name="PrijavaRegistracijaLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="PrijavaNaslovLabel.Text" xml:space="preserve">
+    <value>Prijava</value>
+  </data>
+  <data name="&gt;&gt;PrijavaKorisImeTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <metadata name="PrijavaLozinkaLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>hr-HR</value>
+  </metadata>
+  <metadata name="PrijavaKorisnickoImeLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
   <metadata name="PrijavaNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="PrijavaPrijavaButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="PrijavaLozinkaLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="PrijavaKorisnickoImeLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
 </root>
