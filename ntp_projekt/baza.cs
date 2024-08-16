@@ -27,10 +27,13 @@ namespace ntp_projekt
                         {
                             if (reader.Read())
                             {
-                                return reader[0].ToString(); 
+                                string izlaz = reader[0].ToString();
+                                connection?.Close();
+                                return  izlaz;
                             }
                             else
                             {
+                                connection?.Close();
                                 return "Nema rezultata.";
                             }
                         }
@@ -38,7 +41,8 @@ namespace ntp_projekt
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Greška: " + ex.Message);
+                    connection?.Close();
+                    MessageBox.Show("Greška pri čitanju iz baze: " + ex.Message);
                     return null;
                 }
             }
@@ -55,16 +59,19 @@ namespace ntp_projekt
                     connection.Open();
                     using (OleDbCommand command = new OleDbCommand(query, connection))
                     {
-                        int rowsAffected = command.ExecuteNonQuery(); 
+                        int rowsAffected = command.ExecuteNonQuery();
+                        connection?.Close();
                         return rowsAffected;
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Greška: " + ex.Message);
+                    connection?.Close();
+                    MessageBox.Show("Greška pri upisu u bazu: " + ex.Message);
                     return -1; 
                 }
             }
+
         }
 
         public Image BazaGetImage(string query)
@@ -74,27 +81,33 @@ namespace ntp_projekt
                 try
                 {
                     connection.Open();
-                    using (OleDbCommand command = new OleDbCommand(query, connection))
-                    {
-                        using (OleDbDataReader reader = command.ExecuteReader())
-                        {
-                            if (reader.Read())
-                            {
-                                return Image.FromFile(@"..\..\Images\profilna.jpg");
-                            }
-                            else
-                            {
-                                return Image.FromFile(@"..\..\Images\profilna.jpg");
-                            }
-                        }
-                    }
+                    OleDbDataAdapter adapter = new OleDbDataAdapter(query, connection);
+                    //using (OleDbCommand command = new OleDbCommand(query, connection))
+                    //{
+                    //    using (OleDbDataReader reader = command.ExecuteReader())
+                    //    {
+                    //        if (reader.Read())
+                    //        {
+                    //            connection?.Close();
+                    //            return Image.FromFile(@"..\..\Images\profilna.jpg");
+                    //        }
+                    //        else
+                    //        {
+                    //            connection?.Close();
+                    //            return Image.FromFile(@"..\..\Images\profilna.jpg");
+                    //        }
+                    //    }
+                    //}
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Greška: " + ex.Message);
+                    connection?.Close();
+                    MessageBox.Show("Greška pri dohvatu OLE objekta iz baze: " + ex.Message);
                     return null;
                 }
             }
         }
+
+        
     }
 }

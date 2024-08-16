@@ -46,6 +46,7 @@ namespace ntp_projekt
                 }
                 catch (Exception ex)
                 {
+                    key.Close();
                     MessageBox.Show("Greška pri stvaranju sesije: " + ex.Message);
                 }
             }
@@ -61,6 +62,7 @@ namespace ntp_projekt
 
             } catch (Exception ex)
             {
+                key.Close();
                 MessageBox.Show("Greška pri dohvatu korisnika: " + ex.Message);
                 return null;
             }
@@ -74,6 +76,7 @@ namespace ntp_projekt
                 return ime + " " + prezime;
             } catch (Exception ex) 
             {
+
                 MessageBox.Show("Greška pri dohvatu punog imena: " + ex.Message);
                 return null;
             }
@@ -84,10 +87,11 @@ namespace ntp_projekt
             if (key != null) {
                 var namesArray = key.GetValueNames();
                 foreach (var name in namesArray)
-        {
+                {
                     key.DeleteValue(name, true);
                 }
             }
+            key.Close();
         }
     }
 }
