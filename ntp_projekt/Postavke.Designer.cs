@@ -34,8 +34,6 @@
             System.Windows.Forms.Label PostavkeOpciPodaciLabel;
             System.Windows.Forms.Label PostavkePromjenaLabel;
             System.Windows.Forms.Label PostavkeOstalePostavkeLabel;
-            System.Windows.Forms.Label PostavkeJezikLabel;
-            System.Windows.Forms.Label PostavkeFontLabel;
             System.Windows.Forms.Button PostavkeOdjavaButton;
             System.Windows.Forms.TextBox PostavkeLozinkaTextBox;
             this.PostavkeLozinkaLabel = new System.Windows.Forms.Label();
@@ -44,6 +42,8 @@
             this.PostavkeProfilnaPictureBox = new System.Windows.Forms.PictureBox();
             this.PostavkeNatragButton = new System.Windows.Forms.Button();
             this.PostavkePanel = new System.Windows.Forms.Panel();
+            this.PostavkeFontLabel = new System.Windows.Forms.Label();
+            this.PostavkeJezikLabel = new System.Windows.Forms.Label();
             this.PostavkeVelicinaFontaComboBox = new System.Windows.Forms.ComboBox();
             this.PostavkeKorisnickoImeTextBox = new System.Windows.Forms.TextBox();
             this.PostavkePrezimeTextBox = new System.Windows.Forms.TextBox();
@@ -55,8 +55,6 @@
             PostavkeOpciPodaciLabel = new System.Windows.Forms.Label();
             PostavkePromjenaLabel = new System.Windows.Forms.Label();
             PostavkeOstalePostavkeLabel = new System.Windows.Forms.Label();
-            PostavkeJezikLabel = new System.Windows.Forms.Label();
-            PostavkeFontLabel = new System.Windows.Forms.Label();
             PostavkeOdjavaButton = new System.Windows.Forms.Button();
             PostavkeLozinkaTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PostavkeProfilnaPictureBox)).BeginInit();
@@ -102,22 +100,6 @@
             PostavkeOstalePostavkeLabel.Name = "PostavkeOstalePostavkeLabel";
             PostavkeOstalePostavkeLabel.UseWaitCursor = true;
             PostavkeOstalePostavkeLabel.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // PostavkeJezikLabel
-            // 
-            resources.ApplyResources(PostavkeJezikLabel, "PostavkeJezikLabel");
-            PostavkeJezikLabel.BackColor = System.Drawing.Color.Transparent;
-            PostavkeJezikLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            PostavkeJezikLabel.Name = "PostavkeJezikLabel";
-            PostavkeJezikLabel.UseWaitCursor = true;
-            // 
-            // PostavkeFontLabel
-            // 
-            resources.ApplyResources(PostavkeFontLabel, "PostavkeFontLabel");
-            PostavkeFontLabel.BackColor = System.Drawing.Color.Transparent;
-            PostavkeFontLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            PostavkeFontLabel.Name = "PostavkeFontLabel";
-            PostavkeFontLabel.UseWaitCursor = true;
             // 
             // PostavkeOdjavaButton
             // 
@@ -175,6 +157,8 @@
             // PostavkePanel
             // 
             resources.ApplyResources(this.PostavkePanel, "PostavkePanel");
+            this.PostavkePanel.Controls.Add(this.PostavkeFontLabel);
+            this.PostavkePanel.Controls.Add(this.PostavkeJezikLabel);
             this.PostavkePanel.Controls.Add(this.PostavkeVelicinaFontaComboBox);
             this.PostavkePanel.Controls.Add(this.PostavkeKorisnickoImeTextBox);
             this.PostavkePanel.Controls.Add(this.PostavkePrezimeTextBox);
@@ -182,14 +166,28 @@
             this.PostavkePanel.Controls.Add(this.PostavkeLozinkaLabel);
             this.PostavkePanel.Controls.Add(this.PostavkePonovnoLozinkaTextBox);
             this.PostavkePanel.Controls.Add(PostavkeLozinkaTextBox);
-            this.PostavkePanel.Controls.Add(PostavkeFontLabel);
-            this.PostavkePanel.Controls.Add(PostavkeJezikLabel);
             this.PostavkePanel.Controls.Add(PostavkeOstalePostavkeLabel);
             this.PostavkePanel.Controls.Add(PostavkePromjenaLabel);
             this.PostavkePanel.Controls.Add(PostavkeOpciPodaciLabel);
             this.PostavkePanel.Controls.Add(this.PostavkeJezikComboBox);
             this.PostavkePanel.Controls.Add(this.PostavkePonovnoLozinkaLabel);
             this.PostavkePanel.Name = "PostavkePanel";
+            // 
+            // PostavkeFontLabel
+            // 
+            resources.ApplyResources(this.PostavkeFontLabel, "PostavkeFontLabel");
+            this.PostavkeFontLabel.BackColor = System.Drawing.Color.Transparent;
+            this.PostavkeFontLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.PostavkeFontLabel.Name = "PostavkeFontLabel";
+            this.PostavkeFontLabel.UseWaitCursor = true;
+            // 
+            // PostavkeJezikLabel
+            // 
+            resources.ApplyResources(this.PostavkeJezikLabel, "PostavkeJezikLabel");
+            this.PostavkeJezikLabel.BackColor = System.Drawing.Color.Transparent;
+            this.PostavkeJezikLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.PostavkeJezikLabel.Name = "PostavkeJezikLabel";
+            this.PostavkeJezikLabel.UseWaitCursor = true;
             // 
             // PostavkeVelicinaFontaComboBox
             // 
@@ -201,16 +199,19 @@
             // PostavkeKorisnickoImeTextBox
             // 
             resources.ApplyResources(this.PostavkeKorisnickoImeTextBox, "PostavkeKorisnickoImeTextBox");
+            this.PostavkeKorisnickoImeTextBox.ForeColor = System.Drawing.Color.DimGray;
             this.PostavkeKorisnickoImeTextBox.Name = "PostavkeKorisnickoImeTextBox";
             // 
             // PostavkePrezimeTextBox
             // 
             resources.ApplyResources(this.PostavkePrezimeTextBox, "PostavkePrezimeTextBox");
+            this.PostavkePrezimeTextBox.ForeColor = System.Drawing.Color.DimGray;
             this.PostavkePrezimeTextBox.Name = "PostavkePrezimeTextBox";
             // 
             // PostavkeImeTextBox
             // 
             resources.ApplyResources(this.PostavkeImeTextBox, "PostavkeImeTextBox");
+            this.PostavkeImeTextBox.ForeColor = System.Drawing.Color.DimGray;
             this.PostavkeImeTextBox.Name = "PostavkeImeTextBox";
             // 
             // PostavkePonovnoLozinkaTextBox
@@ -262,5 +263,7 @@
         private System.Windows.Forms.TextBox PostavkePrezimeTextBox;
         private System.Windows.Forms.TextBox PostavkeImeTextBox;
         private System.Windows.Forms.ComboBox PostavkeVelicinaFontaComboBox;
+        private System.Windows.Forms.Label PostavkeFontLabel;
+        private System.Windows.Forms.Label PostavkeJezikLabel;
     }
 }
