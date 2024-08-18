@@ -1,7 +1,6 @@
-﻿
-using System;
-using System.Diagnostics.Eventing.Reader;
+﻿using System;
 using System.Windows.Forms;
+using ntp_projekt.soap;  // Namespace za SOAP servis
 
 namespace ntp_projekt
 {
@@ -20,17 +19,21 @@ namespace ntp_projekt
 
         }
 
-        private void RegistracijaButton_Click(object sender, EventArgs e)
+        private async void RegistracijaButton_Click(object sender, EventArgs e)
         {
             if (RegistracijaImeTextBox.Text != "" && RegistracijaPrezimeTextBox.Text != "" &&
                 RegistracijaKorisnickoTextBox.Text != "" && RegistracijaLozinkaTextBox.Text != "")
             {
                 try
                 {
+                    // Pozivanje SOAP servisa za pretvaranje korisničkog imena u mala slova
+                    ntp_projekt.soap.TextCasingSoapTypeClient soapClient = new ntp_projekt.soap.TextCasingSoapTypeClient("TextCasingSoap");
+                    string korisnickoIme = soapClient.LowercaseWordsWithToken(RegistracijaKorisnickoTextBox.Text,"");
+
                     Korisnik noviKorisnik = new Korisnik(
                         RegistracijaImeTextBox.Text,
                         RegistracijaPrezimeTextBox.Text,
-                        RegistracijaKorisnickoTextBox.Text,
+                        korisnickoIme,  // Korisničko ime s malim slovima
                         RegistracijaLozinkaTextBox.Text
                     );
 
@@ -62,10 +65,8 @@ namespace ntp_projekt
                         if (prijava > 0)
                         {
                             MessageBox.Show("Registracija uspješna!");
-
                             StartApk.MainFormManager.TrenutnaForma = new Prijava();
                         }
-
                         else
                         {
                             MessageBox.Show("Došlo je do greške prilikom registracije.");
@@ -85,7 +86,6 @@ namespace ntp_projekt
             {
                 MessageBox.Show("Morate ispuniti sve podatke kako bi se uspiješno registrirali!");
             }
-            
         }
     }
 }
