@@ -40,9 +40,10 @@
             // 
             // PopisProjektaControlProjektButton
             // 
+            this.PopisProjektaControlProjektButton.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.PopisProjektaControlProjektButton, "PopisProjektaControlProjektButton");
             this.PopisProjektaControlProjektButton.Name = "PopisProjektaControlProjektButton";
-            this.PopisProjektaControlProjektButton.UseVisualStyleBackColor = true;
+            this.PopisProjektaControlProjektButton.UseVisualStyleBackColor = false;
             this.PopisProjektaControlProjektButton.Click += new System.EventHandler(this.PopisProjektaControlProjektButton_Click);
             // 
             // PopisProjektaControlEditButton
@@ -62,16 +63,22 @@
             // PopisProjektaControlNaslovProjektaLabel
             // 
             resources.ApplyResources(this.PopisProjektaControlNaslovProjektaLabel, "PopisProjektaControlNaslovProjektaLabel");
+            this.PopisProjektaControlNaslovProjektaLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.PopisProjektaControlNaslovProjektaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PopisProjektaControlNaslovProjektaLabel.Name = "PopisProjektaControlNaslovProjektaLabel";
             // 
             // PopisProjektaControlOpisLabel
             // 
             resources.ApplyResources(this.PopisProjektaControlOpisLabel, "PopisProjektaControlOpisLabel");
+            this.PopisProjektaControlOpisLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.PopisProjektaControlOpisLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PopisProjektaControlOpisLabel.Name = "PopisProjektaControlOpisLabel";
             // 
             // PopisProjektaControlStatusLabel
             // 
             resources.ApplyResources(this.PopisProjektaControlStatusLabel, "PopisProjektaControlStatusLabel");
+            this.PopisProjektaControlStatusLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.PopisProjektaControlStatusLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PopisProjektaControlStatusLabel.Name = "PopisProjektaControlStatusLabel";
             // 
             // button1
