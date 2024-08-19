@@ -17,6 +17,7 @@ namespace ntp_projekt
         {
             InitializeComponent();
             PopisDokumentacijeProfilLinkLabel.Text = Session.DohvatiPunoIme();
+            PopisDokumentacijeProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

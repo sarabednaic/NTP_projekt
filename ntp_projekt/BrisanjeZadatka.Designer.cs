@@ -37,7 +37,7 @@
             this.BrisanjeZadatkaIzbrisiZadatakButton = new System.Windows.Forms.Button();
             this.BrisanjeZadatkaNatragButton = new System.Windows.Forms.Button();
             this.BrisanjeZadatkaPanel = new System.Windows.Forms.Panel();
-            this.DeaktivacijaProfilPictureBox = new System.Windows.Forms.PictureBox();
+            this.BrisanjeZadatkaProfilPictureBox = new System.Windows.Forms.PictureBox();
             this.BrisanjeZadatkaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
             BriasnjeZadatkaNaslovLabel = new System.Windows.Forms.Label();
             BrisanjeZadatkaLozinkaTextBox = new System.Windows.Forms.TextBox();
@@ -45,7 +45,7 @@
             BrisanjeZadatkaPonovnoLozinkaLabel = new System.Windows.Forms.Label();
             BrisanjeZadatkaLozinkaLabel = new System.Windows.Forms.Label();
             this.BrisanjeZadatkaPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DeaktivacijaProfilPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BrisanjeZadatkaProfilPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // BriasnjeZadatkaNaslovLabel
@@ -104,16 +104,16 @@
             resources.ApplyResources(this.BrisanjeZadatkaPanel, "BrisanjeZadatkaPanel");
             this.BrisanjeZadatkaPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BrisanjeZadatkaPanel.Controls.Add(this.BrisanjeZadatkaNatragButton);
-            this.BrisanjeZadatkaPanel.Controls.Add(this.DeaktivacijaProfilPictureBox);
+            this.BrisanjeZadatkaPanel.Controls.Add(this.BrisanjeZadatkaProfilPictureBox);
             this.BrisanjeZadatkaPanel.Controls.Add(this.BrisanjeZadatkaProfilLinkLabel);
             this.BrisanjeZadatkaPanel.Name = "BrisanjeZadatkaPanel";
             // 
-            // DeaktivacijaProfilPictureBox
+            // BrisanjeZadatkaProfilPictureBox
             // 
-            resources.ApplyResources(this.DeaktivacijaProfilPictureBox, "DeaktivacijaProfilPictureBox");
-            this.DeaktivacijaProfilPictureBox.Name = "DeaktivacijaProfilPictureBox";
-            this.DeaktivacijaProfilPictureBox.TabStop = false;
-            this.DeaktivacijaProfilPictureBox.Click += new System.EventHandler(this.DeaktivacijaProfilPictureBox_Click);
+            resources.ApplyResources(this.BrisanjeZadatkaProfilPictureBox, "BrisanjeZadatkaProfilPictureBox");
+            this.BrisanjeZadatkaProfilPictureBox.Name = "BrisanjeZadatkaProfilPictureBox";
+            this.BrisanjeZadatkaProfilPictureBox.TabStop = false;
+            this.BrisanjeZadatkaProfilPictureBox.Click += new System.EventHandler(this.DeaktivacijaProfilPictureBox_Click);
             // 
             // BrisanjeZadatkaProfilLinkLabel
             // 
@@ -138,7 +138,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.BrisanjeZadatkaPanel.ResumeLayout(false);
             this.BrisanjeZadatkaPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DeaktivacijaProfilPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BrisanjeZadatkaProfilPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,7 +148,7 @@
         private System.Windows.Forms.Button BrisanjeZadatkaIzbrisiZadatakButton;
         private System.Windows.Forms.Button BrisanjeZadatkaNatragButton;
         private System.Windows.Forms.Panel BrisanjeZadatkaPanel;
-        private System.Windows.Forms.PictureBox DeaktivacijaProfilPictureBox;
+        private System.Windows.Forms.PictureBox BrisanjeZadatkaProfilPictureBox;
         private System.Windows.Forms.LinkLabel BrisanjeZadatkaProfilLinkLabel;
     }
 }

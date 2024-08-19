@@ -117,21 +117,70 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="DeaktivacijaButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1143, 788</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DeaktivacijaButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DeaktivacijaButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 75</value>
+  </data>
   <data name="DeaktivacijaButton.Text" xml:space="preserve">
     <value>Deactivate</value>
+  </data>
+  <data name="DeaktivacijaNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>908, 341</value>
+  </data>
+  <data name="DeaktivacijaNaslovLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="DeaktivacijaNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>808, 150</value>
   </data>
   <data name="DeaktivacijaNaslovLabel.Text" xml:space="preserve">
     <value>Deactivate account</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="DeaktivacijaLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>988, 578</value>
+  </data>
+  <data name="DeaktivacijaLozinkaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DeaktivacijaLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>611, 31</value>
+  </data>
+  <data name="DeaktivacijaPonovnoLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>988, 674</value>
+  </data>
+  <data name="DeaktivacijaPonovnoLozinkaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DeaktivacijaPonovnoLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>611, 31</value>
+  </data>
   <data name="DeaktivacijaPonovnoLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>737, 501</value>
+    <value>983, 626</value>
+  </data>
+  <data name="DeaktivacijaPonovnoLozinkaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="DeaktivacijaPonovnoLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 43</value>
+    <value>453, 54</value>
   </data>
   <data name="DeaktivacijaPonovnoLozinkaLabel.Text" xml:space="preserve">
     <value>Repeat the password to confirm </value>
+  </data>
+  <data name="DeaktivacijaLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>983, 532</value>
+  </data>
+  <data name="DeaktivacijaLozinkaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="DeaktivacijaLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 54</value>
   </data>
   <data name="DeaktivacijaLozinkaLabel.Text" xml:space="preserve">
     <value>Enter the password to confirm </value>
@@ -250,6 +299,15 @@
         ZvC/ob3uuuv+/Kqrrrrr5S9/+Y9Wrlz5i0WLFh1YtWrVzosvvvhv3/CGN/zVO9/5zv/yoQ996D9861vf
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="DeaktivacijaNatragButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 15</value>
+  </data>
+  <data name="DeaktivacijaNatragButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DeaktivacijaNatragButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 80</value>
   </data>
   <data name="DeaktivacijaProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1277,5 +1335,47 @@
         ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
         ABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 </value>
+  </data>
+  <data name="DeaktivacijaProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2429, 16</value>
+  </data>
+  <data name="DeaktivacijaProfilPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DeaktivacijaProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 81</value>
+  </data>
+  <data name="DeaktivacijaProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2200, 39</value>
+  </data>
+  <data name="DeaktivacijaProfilLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="DeaktivacijaProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 37</value>
+  </data>
+  <data name="DeaktivacijaProfilPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DeaktivacijaProfilPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>2560, 112</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>12, 25</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1924, 1050</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>2550, 1329</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1910, 1015</value>
   </data>
 </root>

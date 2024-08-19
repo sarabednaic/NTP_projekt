@@ -19,6 +19,7 @@ namespace ntp_projekt
         {
             InitializeComponent();
             PopisProjektaProfilLinkLabel.Text = Session.DohvatiPunoIme();
+            PopisProjektaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
             iniFile = new Ini();
             iniFile.UcitajDatoteku(@"..\..\postavke.ini");
         }

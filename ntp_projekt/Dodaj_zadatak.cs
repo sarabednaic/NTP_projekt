@@ -17,6 +17,7 @@ namespace ntp_projekt
         {
             InitializeComponent(); 
             DodajZadatakProfilLinkLabel.Text = Session.DohvatiPunoIme();
+            DodajZadatakProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 
 namespace ntp_projekt
@@ -8,6 +12,7 @@ namespace ntp_projekt
     public class Baza
     {
         public string connectionString;
+        public Image DefaultProfilPicture = Image.FromFile(@"..\..\Images\profilna.jpg");
 
         public Baza(string pathToDatabase)
         {
@@ -27,10 +32,13 @@ namespace ntp_projekt
                         {
                             if (reader.Read())
                             {
-                                return reader[0].ToString(); 
+                                string izlaz = reader[0].ToString();
+                                connection?.Close();
+                                return  izlaz;
                             }
                             else
                             {
+                                connection?.Close();
                                 return "Nema rezultata.";
                             }
                         }
@@ -38,7 +46,8 @@ namespace ntp_projekt
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Greška: " + ex.Message);
+                    connection?.Close();
+                    MessageBox.Show("Greška pri čitanju iz baze: " + ex.Message);
                     return null;
                 }
             }
@@ -55,16 +64,55 @@ namespace ntp_projekt
                     connection.Open();
                     using (OleDbCommand command = new OleDbCommand(query, connection))
                     {
-                        int rowsAffected = command.ExecuteNonQuery(); 
+                        int rowsAffected = command.ExecuteNonQuery();
+                        connection?.Close();
                         return rowsAffected;
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Greška: " + ex.Message);
+                    connection?.Close();
+                    MessageBox.Show("Greška pri upisu u bazu: " + ex.Message);
                     return -1; 
                 }
             }
+
+        }
+
+        
+
+        public void BazaSetImage(string query, string curFileName) {
+            try
+            {
+                byte[] imageData = File.ReadAllBytes(curFileName);
+
+                
+
+                using (OleDbConnection connection = new OleDbConnection(connectionString))
+                using (OleDbCommand command = new OleDbCommand(query, connection))
+                {
+                    command.Parameters.Add("profilna", OleDbType.LongVarBinary).Value = imageData;
+
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Image inserted successfully!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to insert image.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+
+
+
         }
 
         public Image BazaGetImage(string query)
@@ -73,28 +121,57 @@ namespace ntp_projekt
             {
                 try
                 {
+
                     connection.Open();
-                    using (OleDbCommand command = new OleDbCommand(query, connection))
+
+                    OleDbCommand command = new OleDbCommand(query, connection);
+
+
+
+                    OleDbDataAdapter dataAdapter = new OleDbDataAdapter(command);
+                    DataSet dataSet = new DataSet();
+                    dataAdapter.Fill(dataSet, "korisnik");
+                    int count = dataSet.Tables["korisnik"].Rows.Count;
+
+                    if (count > 0)
                     {
-                        using (OleDbDataReader reader = command.ExecuteReader())
+                        byte[] rawData = (byte[])dataSet.Tables["korisnik"].Rows[count - 1]["profilna"];
+                        if (rawData == null || rawData.Length == 0)
+                        { 
+                            return DefaultProfilPicture;
+                        }
+
+                        try
                         {
-                            if (reader.Read())
+                            using (MemoryStream rawDataStream = new MemoryStream(rawData))
                             {
-                                return Image.FromFile(@"..\..\Images\profilna.jpg");
-                            }
-                            else
-                            {
-                                return Image.FromFile(@"..\..\Images\profilna.jpg");
+                                Image profilna = Image.FromStream(rawDataStream);
+                                return profilna;
                             }
                         }
+                        catch (ArgumentException ex)
+                        {
+                            MessageBox.Show("Invalid image data: " + ex.Message);
+                            return DefaultProfilPicture;
+                        }
+
                     }
+                    else
+                    {
+                        return DefaultProfilPicture;
+                    }
+
+
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Greška: " + ex.Message);
-                    return null;
+                    connection?.Close();
+                    MessageBox.Show("Greška pri dohvatu OLE objekta iz baze: " + ex.Message);
+                    return DefaultProfilPicture;
                 }
             }
         }
+
+
     }
 }

@@ -16,6 +16,7 @@ namespace ntp_projekt
         {
             InitializeComponent();
             UrediProjektProfilLinkLabel.Text = Session.DohvatiPunoIme();
+            UrediProjektProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
         }
 
         private void UrediProjektArrowButton_Click(object sender, EventArgs e)
