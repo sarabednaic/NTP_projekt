@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 
 namespace ntp_projekt
 {
@@ -10,7 +11,7 @@ namespace ntp_projekt
         private string korisnicko_ime;
         private string lozinka;
         private int jezik;
-        private Image profilna;
+        private byte[] profilna;
 
  
         public Korisnik(string _ime, string _prezime, string _korisnicko_ime, string _lozinka)
@@ -19,17 +20,13 @@ namespace ntp_projekt
             prezime = _prezime;
             korisnicko_ime = _korisnicko_ime;
             lozinka = _lozinka;
+            
         }
 
-        public Korisnik(string _korisnicko_ime, string _lozinka)
-        {
-            korisnicko_ime = _korisnicko_ime;
-            lozinka = _lozinka;
-        }
+        
 
         public Korisnik(){
-            profilna = Image.FromFile(@"..\..\Images\profilna.jpg");
-        
+            
         }
 
         public string Ime
@@ -75,6 +72,8 @@ namespace ntp_projekt
                 lozinka = value; 
             }
         }
+
+        
 
     }
 }

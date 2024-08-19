@@ -1171,13 +1171,13 @@
 </value>
   </data>
   <data name="PostavkeProfilnaPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1089, 179</value>
+    <value>1081, 188</value>
   </data>
   <data name="PostavkeProfilnaPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="PostavkeProfilnaPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 312</value>
+    <value>364, 323</value>
   </data>
   <data name="PostavkeNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

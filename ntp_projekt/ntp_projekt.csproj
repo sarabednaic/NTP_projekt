@@ -66,6 +66,18 @@
     </Compile>
     <Compile Include="Ini.cs" />
     <Compile Include="Korisnik.cs" />
+    <Compile Include="PopisProjektaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PopisProjektaControl.Designer.cs">
+      <DependentUpon>PopisProjektaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopisZadatkaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PopisZadatkaControl.Designer.cs">
+      <DependentUpon>PopisZadatkaControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Projekt.cs" />
     <Compile Include="Session.cs" />
     <Compile Include="Sha256.cs" />
@@ -174,16 +186,26 @@
     <EmbeddedResource Include="PopisProjekta.en.resx">
       <DependentUpon>PopisProjekta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PopisProjekta.hr.resx">
+      <DependentUpon>PopisProjekta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PopisProjekta.resx">
       <DependentUpon>PopisProjekta.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopisProjektaControl.en.resx">
+      <DependentUpon>PopisProjektaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopisProjektaControl.resx">
+      <DependentUpon>PopisProjektaControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PopisZadataka.en.resx">
       <DependentUpon>PopisZadataka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PopisZadataka.resx">
       <DependentUpon>PopisZadataka.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Registracija.cs">
       <SubType>Form</SubType>
@@ -200,14 +222,19 @@
     <EmbeddedResource Include="Dodaj_zadatak.resx">
       <DependentUpon>Dodaj_zadatak.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PopisZadatkaControl.resx">
+      <DependentUpon>PopisZadatkaControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Postavke.en.resx">
       <DependentUpon>Postavke.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Postavke.hr.resx">
       <DependentUpon>Postavke.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Postavke.resx">
       <DependentUpon>Postavke.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Prijava.resx">
       <DependentUpon>Prijava.cs</DependentUpon>
