@@ -8,22 +8,43 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ntp_projekt
 {
     public partial class PopisZadataka : Form
     {
+        Baza baza;
         public PopisZadataka()
         {
             InitializeComponent();
             PopisZadatakaProfilLinkLabel.Text = Session.DohvatiPunoIme();
             PopisZadatakaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
-            PopisZadatkaControl popis = new PopisZadatkaControl();
-            PopisZadatakaZadatciFlowLayoutPanel.Controls.Add(popis);
+            
+
+            baza = new Baza(@"..\..\TeamPlan.mdb");
+            string User = Session.DohvatiKorisnika();
+            List<List<string>> polje = baza.NaprednaBazaRead($"SELECT korisnik.ID , zadatak.ID , zadatak.naziv," +
+                $" zadatak.opis , zadatak.vrijeme_pocetak , zadatak.vrijeme_kraj , clanovi_projekta.projekt_ID FROM (((korisnik " +
+                $" inner join clanovi_projekta on korisnik.ID = clanovi_projekta.korisnik_ID)" +
+                $" inner join clanovi_zadatka on clanovi_projekta.ID = clanovi_zadatka.clan_projekta_ID) " +
+                $" inner join zadatak on zadatak.ID = clanovi_zadatka.zadatak_ID) " +
+                $" WHERE korisnik.korisnicko_ime = \"{User}\";");
+
+            if (polje != null)
+            {
+                foreach (List<string> row in polje)
+                {
+                    PopisZadatkaControl PopisZadatakaControl = new PopisZadatkaControl();
+                    PopisZadatakaControl.setNaslov = row[2].ToString();
+                    PopisZadatakaControl.setOpis = row[3].ToString();
+                    PopisZadatakaZadatciFlowLayoutPanel.Controls.Add(PopisZadatakaControl);
+                }
+            }
+            else
+            {
+                MessageBox.Show("prazna lista");
+            }
         }
-
-        
-
-        
 
         private void PopisZadatakaReportButton_Click(object sender, EventArgs e)
         {
@@ -47,9 +68,13 @@ namespace ntp_projekt
 
         private void PopisZadatakaNatragButton_Click(object sender, EventArgs e)
         {
+            
             StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
         }
 
-        
+        private void PopisZadataka_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

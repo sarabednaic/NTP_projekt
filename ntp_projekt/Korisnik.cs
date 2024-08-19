@@ -10,8 +10,7 @@ namespace ntp_projekt
         private string prezime;
         private string korisnicko_ime;
         private string lozinka;
-        private int jezik;
-        private byte[] profilna;
+        
 
  
         public Korisnik(string _ime, string _prezime, string _korisnicko_ime, string _lozinka)

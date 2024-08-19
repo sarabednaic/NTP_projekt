@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
@@ -53,7 +54,39 @@ namespace ntp_projekt
             }
         }
 
-        public string ConnectionString { get { return connectionString; } }
+        public List<List<string>> NaprednaBazaRead(string query)
+        {
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    using (OleDbDataReader reader = command.ExecuteReader())
+                    {
+                        if (!reader.HasRows)
+                            return null;
+
+                        List<List<string>> results = new List<List<string>>();
+                        while (reader.Read())
+                        {
+                            List<string> row = new List<string>();
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                row.Add(reader[i].ToString());
+                            }
+                            results.Add(row);
+                        }
+                        return results;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Greška pri naprednom čitanju iz baze: " + ex.Message);
+                    return null;
+                }
+            }
+        }
 
         public int BazaWrite(string query)
         {
@@ -172,6 +205,7 @@ namespace ntp_projekt
             }
         }
 
+        public string ConnectionString { get { return connectionString; } }
 
     }
 }

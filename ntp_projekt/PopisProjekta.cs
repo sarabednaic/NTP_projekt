@@ -8,12 +8,15 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XmlProjektiLibrary;
 
 namespace ntp_projekt
 {
     public partial class PopisProjekta : Form
     {
         Ini iniFile;
+        Baza baza;
+        
 
         public PopisProjekta()
         {
@@ -22,8 +25,30 @@ namespace ntp_projekt
             PopisProjektaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
             iniFile = new Ini();
             iniFile.UcitajDatoteku(@"..\..\postavke.ini");
-            PopisProjektaControl popis = new PopisProjektaControl();
-            PopisProjektaProjektiFlowLayoutPanel.Controls.Add(popis);
+
+
+            baza = new Baza(@"..\..\TeamPlan.mdb");
+            string User = Session.DohvatiKorisnika();
+            List<List<string>> polje = baza.NaprednaBazaRead($"SELECT korisnik.ID , projekt.ID , projekt.naziv, projekt.opis," +
+                $" clanovi_projekta.admin FROM (korisnik inner join clanovi_projekta on korisnik.ID = clanovi_projekta.korisnik_ID)" +
+                $" inner join projekt on clanovi_projekta.projekt_ID = projekt.id WHERE korisnik.korisnicko_ime = \"{User}\";");
+
+            if (polje != null)
+            {
+                foreach (List<string> row in polje)
+                {
+                    PopisProjektaControl PopisProjektaControl = new PopisProjektaControl();
+                    PopisProjektaControl.setNaslov = row[2].ToString();
+                    PopisProjektaControl.setOpis = row[3].ToString();
+                    PopisProjektaProjektiFlowLayoutPanel.Controls.Add(PopisProjektaControl);
+                    
+                }
+            }
+            else
+            {
+                MessageBox.Show("prazna lista");
+            }
+
         }
 
         private void UrediZadatakNaslovLabel_Click(object sender, EventArgs e)

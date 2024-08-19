@@ -85,7 +85,6 @@
     <Compile Include="PopisZadatkaControl.Designer.cs">
       <DependentUpon>PopisZadatkaControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Projekt.cs" />
     <Compile Include="Session.cs" />
     <Compile Include="Sha256.cs" />
     <Compile Include="StartApk.cs" />
@@ -206,8 +205,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PopisProjektaControl.resx">
       <DependentUpon>PopisProjektaControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="PopisZadataka.en.resx">
+      <DependentUpon>PopisZadataka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopisZadataka.hr.resx">
       <DependentUpon>PopisZadataka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PopisZadataka.resx">
@@ -334,6 +337,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\soap\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XmlProjektiLibrary\XmlProjektiLibrary.csproj">
+      <Project>{833250ab-6832-4920-b515-2796fff18baa}</Project>
+      <Name>XmlProjektiLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -17,7 +17,7 @@ namespace ntp_projekt
     {
         Baza baza;
         Ini iniFile;
-        private string curFileName = null;
+        
         string user = Session.DohvatiKorisnika();
 
         public Postavke()
