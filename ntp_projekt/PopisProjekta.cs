@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dinamicLib;
 
 namespace ntp_projekt
 {
@@ -54,10 +55,15 @@ namespace ntp_projekt
 
         private void PopisProjekta_Load(object sender, EventArgs e)
         {
-            
+            PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
         }
 
         private void PopisProjektaProjektiFlowLayoutPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PopisProjektaPanelLogo_Paint(object sender, PaintEventArgs e)
         {
 
         }

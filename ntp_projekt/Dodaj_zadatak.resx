@@ -117,86 +117,665 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="DodajZadatakVrijemeLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1443, 840</value>
+  <data name="DodajZadatakVrijemeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakClanoviListBox.Parent" xml:space="preserve">
+  <data name="DodajZadatakVrijemeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 733</value>
+  </data>
+  <data name="DodajZadatakVrijemeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 43</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DodajZadatakVrijemeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="DodajZadatakVrijemeLabel.Text" xml:space="preserve">
+    <value>Vrijeme </value>
+  </data>
+  <data name="DodajZadatakVrijemeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakVrijemeLabel.Name" xml:space="preserve">
+    <value>DodajZadatakVrijemeLabel</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakVrijemeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakVrijemeLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakProjektComboBox.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;DodajZadatakVrijemeLabel.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DodajZadatakProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <metadata name="DodajZadatakClanoviLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="DodajZadatakClanoviLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakStatusLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="DodajZadatakClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 576</value>
+  </data>
+  <data name="DodajZadatakClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 43</value>
+  </data>
+  <data name="DodajZadatakClanoviLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="DodajZadatakClanoviLabel.Text" xml:space="preserve">
+    <value>Dodijeli zadatak članovima tima</value>
+  </data>
+  <data name="DodajZadatakClanoviLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakClanoviLabel.Name" xml:space="preserve">
+    <value>DodajZadatakClanoviLabel</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakClanoviLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DodajZadatakClanoviLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="DodajZadatakStatusLabel.Text" xml:space="preserve">
-    <value>Status</value>
+  <data name="&gt;&gt;DodajZadatakClanoviLabel.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakStatusComboBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <metadata name="DodajZadatakNazivTextBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="DodajZadatakNazivTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 353</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakProjektComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNatragButton.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DodajZadatakProfilLinkLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
+  <data name="DodajZadatakNazivTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>715, 26</value>
   </data>
   <data name="DodajZadatakNazivTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakProfilPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;DodajZadatakNazivTextBox.Name" xml:space="preserve">
+    <value>DodajZadatakNazivTextBox</value>
   </data>
-  <data name="DodajZadatakOdDoLabel.Text" xml:space="preserve">
-    <value>_</value>
+  <data name="&gt;&gt;DodajZadatakNazivTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;DodajZadatakNazivTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakNazivTextBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <metadata name="DodajZadatakNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
   <data name="DodajZadatakNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 30pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakOpisLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DodajZadatakNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>568, 141</value>
   </data>
-  <data name="DodajZadatakOdDoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>833, 750</value>
+  <data name="DodajZadatakNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>874, 120</value>
+  </data>
+  <data name="DodajZadatakNaslovLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="DodajZadatakNaslovLabel.Text" xml:space="preserve">
+    <value>Dodaj novi projektni zadatak</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakNaslovLabel.Name" xml:space="preserve">
+    <value>DodajZadatakNaslovLabel</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakNaslovLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DodajZadatakNaslovLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakStatusLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;DodajZadatakNaslovLabel.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <metadata name="DodajZadatakOdDoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="DodajZadatakOdDoLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 20pt, style=Bold</value>
+  </data>
+  <data name="DodajZadatakOdDoLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>833, 750</value>
+  </data>
+  <data name="DodajZadatakOdDoLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 45</value>
+  </data>
+  <data name="DodajZadatakOdDoLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="DodajZadatakOdDoLabel.Text" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="DodajZadatakOdDoLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakOdDoLabel.Name" xml:space="preserve">
+    <value>DodajZadatakOdDoLabel</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakOdDoLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakOdDoLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakOdDoLabel.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <metadata name="DodajZadatakButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="DodajZadatakButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="DodajZadatakButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>874, 917</value>
+  </data>
+  <data name="DodajZadatakButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 81</value>
+  </data>
+  <data name="DodajZadatakButton.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="DodajZadatakButton.Text" xml:space="preserve">
+    <value>Dodaj projektni zadatak</value>
   </data>
   <data name="&gt;&gt;DodajZadatakButton.Name" xml:space="preserve">
     <value>DodajZadatakButton</value>
   </data>
-  <data name="DodajZadatakProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1651, 31</value>
+  <data name="&gt;&gt;DodajZadatakButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakButton.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <metadata name="DodajZadatakStatusLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="DodajZadatakStatusLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="DodajZadatakStatusLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 816</value>
+  </data>
+  <data name="DodajZadatakStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 43</value>
+  </data>
+  <data name="DodajZadatakStatusLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="DodajZadatakStatusLabel.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="DodajZadatakStatusLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakStatusLabel.Name" xml:space="preserve">
+    <value>DodajZadatakStatusLabel</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakStatusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakStatusLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakStatusLabel.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <metadata name="DodajZadatakProjektLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="DodajZadatakProjektLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="DodajZadatakProjektLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 233</value>
+  </data>
+  <data name="DodajZadatakProjektLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 43</value>
+  </data>
+  <data name="DodajZadatakProjektLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="DodajZadatakProjektLabel.Text" xml:space="preserve">
+    <value>Dodijeli zadatak projektu</value>
+  </data>
+  <data name="DodajZadatakProjektLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProjektLabel.Name" xml:space="preserve">
+    <value>DodajZadatakProjektLabel</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProjektLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProjektLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProjektLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="DodajZadatakNazivLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="DodajZadatakNazivLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="DodajZadatakNazivLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 309</value>
+  </data>
+  <data name="DodajZadatakNazivLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 43</value>
+  </data>
+  <data name="DodajZadatakNazivLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="DodajZadatakNazivLabel.Text" xml:space="preserve">
+    <value>Naziv zadatka</value>
+  </data>
+  <data name="DodajZadatakNazivLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakNazivLabel.Name" xml:space="preserve">
+    <value>DodajZadatakNazivLabel</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakNazivLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakNazivLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakNazivLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="DodajZadatakOpisLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="DodajZadatakOpisLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="DodajZadatakOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 389</value>
+  </data>
+  <data name="DodajZadatakOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 43</value>
+  </data>
+  <data name="DodajZadatakOpisLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="DodajZadatakOpisLabel.Text" xml:space="preserve">
+    <value>Opis zadatka</value>
+  </data>
+  <data name="DodajZadatakOpisLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakOpisLabel.Name" xml:space="preserve">
+    <value>DodajZadatakOpisLabel</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakOpisLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakOpisLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakOpisLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="DodajZadatakClanoviListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 610</value>
+  </data>
+  <data name="DodajZadatakClanoviListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>715, 96</value>
+  </data>
+  <data name="DodajZadatakClanoviListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakClanoviListBox.Name" xml:space="preserve">
+    <value>DodajZadatakClanoviListBox</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakClanoviListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakClanoviListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakClanoviListBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="DodajZadatakProfilPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="DodajZadatakProfilPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1920, 90</value>
+  </data>
+  <data name="DodajZadatakProfilPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProfilPanel.Name" xml:space="preserve">
+    <value>DodajZadatakProfilPanel</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProfilPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProfilPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProfilPanel.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="DodajZadatakProjektComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 276</value>
+  </data>
+  <data name="DodajZadatakProjektComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>715, 28</value>
+  </data>
+  <data name="DodajZadatakProjektComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProjektComboBox.Name" xml:space="preserve">
+    <value>DodajZadatakProjektComboBox</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProjektComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProjektComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProjektComboBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="DodajZadatakDateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 779</value>
+  </data>
+  <data name="DodajZadatakDateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 26</value>
+  </data>
+  <data name="DodajZadatakDateTimePicker1.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakDateTimePicker1.Name" xml:space="preserve">
+    <value>DodajZadatakDateTimePicker1</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakDateTimePicker1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakDateTimePicker1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakDateTimePicker1.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="DodajZadatakDateTimePicker2.Location" type="System.Drawing.Point, System.Drawing">
     <value>894, 779</value>
   </data>
-  <data name="DodajZadatakStatusButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 30</value>
+  <data name="DodajZadatakDateTimePicker2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 26</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakStatusLabel.ZOrder" xml:space="preserve">
-    <value>20</value>
+  <data name="DodajZadatakDateTimePicker2.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
   </data>
-  <data name="DodajZadatakProfilPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+  <data name="&gt;&gt;DodajZadatakDateTimePicker2.Name" xml:space="preserve">
+    <value>DodajZadatakDateTimePicker2</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakDateTimePicker2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakDateTimePicker2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakDateTimePicker2.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="DodajZadatakProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
+        DhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQU
+        FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAFoAWgDASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiue8e/ELw38L/AAxd+IfFes2u
+        haNaqWkurt8AkAkIij5nc4O1FBZjwATxX5dftE/8FOvGXxE+06R8OY5vAnh990ZvyUbVLlSGBO8Erb8M
+        vEeXBXIl5xVJNibsfpd8S/jh4B+DtoZ/Gfi3SvD58rzktrq4H2mZN23MUC5kk5/uKe/pXzr4m/4Kn/BX
+        QdSNrp8XibxLDgYvNL0xY4myAcAXEkT8dPu9u/WvyL1HUrvWL+5v766mvb24cyz3VxI0ksrk5LOzfMzH
+        1NVa05ETzH6xf8PbPhR55B8K+NPJxw/2Wz3Z9Nv2rp75rofCn/BUj4J+IbySDUW8R+FY1XIuNW0vzEY/
+        3QLZ5mB+qge9fj5RT5EK7P6Efh38XvBPxa09rzwb4p0rxHEkaSSpYXSySwBwSoljzviJwflcA8Hjiuvr
+        +c3SdZv9B1S11LS7240vUrWRZbe9tJmingZfuski/Mp/3a+3f2bf+Cn3ifwXd2mh/FJZfFvh7AjXWoI0
+        /tK2AQBd4BCzrlRnOJPmZizkBKhx7FKXc/VWisTwV410P4jeFdN8SeGtTt9Y0PUYvOtby2bKuuSCCDyr
+        KwKsrAMrKVIBBFbdZlBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+        FABRRRQAUUUUAFFFFABRRRQAUUUUAFcv8TviRofwi8B6z4w8SXDWujaVD507xpudiWCoiDuzOyqBxyw5
+        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
+        L/5Eo/4dK/CP/oZvHH/gbZf/ACJX21RRzMLI+Jf+HSvwj/6Gbxx/4G2X/wAiUf8ADpX4R/8AQzeOP/A2
+        y/8AkSvtqijmYWR8S/8ADpX4R/8AQzeOP/A2y/8AkSj/AIdK/CP/AKGbxx/4G2X/AMiV9tUUczCyPiX/
+        AIdK/CP/AKGbxx/4G2X/AMiUf8OlfhH/ANDN44/8DbL/AORK+2qKOZhZHxL/AMOlfhH/ANDN44/8DbL/
+        AORKP+HSvwj/AOhm8cf+Btl/8iV9tUUczCyPiX/h0r8I/wDoZvHH/gbZf/IlH/DpX4R/9DN44/8AA2y/
+        +RK+2qKOZhZHxL/w6V+Ef/QzeOP/AANsv/kSj/h0r8I/+hm8cf8AgbZf/IlfbVFHMwsj4l/4dK/CP/oZ
+        vHH/AIG2X/yJR/w6V+Ef/QzeOP8AwNsv/kSvtqijmYWR8Tx/8El/hErqzeJPG0gU52tfWYB+uLUH9a+m
+        Pg78BvAvwE0ObS/BGgw6RFclGurgu0txdMoIUyyuSzYy2FztXc20DJr0CildhYKKKKQwooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DodajZadatakProfilPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="DodajZadatakProfilPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
+        DhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQU
+        FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAFoAWgDASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiue8e/ELw38L/AAxd+IfFes2u
+        haNaqWkurt8AkAkIij5nc4O1FBZjwATxX5dftE/8FOvGXxE+06R8OY5vAnh990ZvyUbVLlSGBO8Erb8M
+        vEeXBXIl5xVJNibsfpd8S/jh4B+DtoZ/Gfi3SvD58rzktrq4H2mZN23MUC5kk5/uKe/pXzr4m/4Kn/BX
+        QdSNrp8XibxLDgYvNL0xY4myAcAXEkT8dPu9u/WvyL1HUrvWL+5v766mvb24cyz3VxI0ksrk5LOzfMzH
+        1NVa05ETzH6xf8PbPhR55B8K+NPJxw/2Wz3Z9Nv2rp75rofCn/BUj4J+IbySDUW8R+FY1XIuNW0vzEY/
+        3QLZ5mB+qge9fj5RT5EK7P6Efh38XvBPxa09rzwb4p0rxHEkaSSpYXSySwBwSoljzviJwflcA8Hjiuvr
+        +c3SdZv9B1S11LS7240vUrWRZbe9tJmingZfuski/Mp/3a+3f2bf+Cn3ifwXd2mh/FJZfFvh7AjXWoI0
+        /tK2AQBd4BCzrlRnOJPmZizkBKhx7FKXc/VWisTwV410P4jeFdN8SeGtTt9Y0PUYvOtby2bKuuSCCDyr
+        KwKsrAMrKVIBBFbdZlBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+        FABRRRQAUUUUAFFFFABRRRQAUUUUAFcv8TviRofwi8B6z4w8SXDWujaVD507xpudiWCoiDuzOyqBxyw5
+        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
+        L/5Eo/4dK/CP/oZvHH/gbZf/ACJX21RRzMLI+Jf+HSvwj/6Gbxx/4G2X/wAiUf8ADpX4R/8AQzeOP/A2
+        y/8AkSvtqijmYWR8S/8ADpX4R/8AQzeOP/A2y/8AkSj/AIdK/CP/AKGbxx/4G2X/AMiV9tUUczCyPiX/
+        AIdK/CP/AKGbxx/4G2X/AMiUf8OlfhH/ANDN44/8DbL/AORK+2qKOZhZHxL/AMOlfhH/ANDN44/8DbL/
+        AORKP+HSvwj/AOhm8cf+Btl/8iV9tUUczCyPiX/h0r8I/wDoZvHH/gbZf/IlH/DpX4R/9DN44/8AA2y/
+        +RK+2qKOZhZHxL/w6V+Ef/QzeOP/AANsv/kSj/h0r8I/+hm8cf8AgbZf/IlfbVFHMwsj4l/4dK/CP/oZ
+        vHH/AIG2X/yJR/w6V+Ef/QzeOP8AwNsv/kSvtqijmYWR8Tx/8El/hErqzeJPG0gU52tfWYB+uLUH9a+m
+        Pg78BvAvwE0ObS/BGgw6RFclGurgu0txdMoIUyyuSzYy2FztXc20DJr0CildhYKKKKQwooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
+</value>
   </data>
   <data name="DodajZadatakProfilPictureBox.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -991,14 +1570,29 @@
         ABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 </value>
   </data>
-  <data name="DodajZadatakOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 389</value>
+  <data name="DodajZadatakProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1823, 13</value>
   </data>
-  <data name="DodajZadatakClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 43</value>
+  <data name="DodajZadatakProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
   </data>
-  <data name="DodajZadatakStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>453, 43</value>
+  <data name="DodajZadatakProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="DodajZadatakProfilPictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProfilPictureBox.Name" xml:space="preserve">
+    <value>DodajZadatakProfilPictureBox</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProfilPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProfilPictureBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProfilPictureBox.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="DodajZadatakNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1115,757 +1709,184 @@
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="DodajZadatakOpisLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNazivLabel.Name" xml:space="preserve">
-    <value>DodajZadatakNazivLabel</value>
-  </data>
-  <data name="DodajZadatakNatragButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
+  <data name="DodajZadatakNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="DodajZadatakNatragButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakClanoviLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakOdDoLabel.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="DodajZadatakProfilLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="DodajZadatakOdDoLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 20pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakOdDoLabel.Name" xml:space="preserve">
-    <value>DodajZadatakOdDoLabel</value>
-  </data>
-  <data name="DodajZadatakProjektLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1919, 1077</value>
-  </data>
-  <data name="DodajZadatakProjektLabel.Text" xml:space="preserve">
-    <value>Dodijeli zadatak projektu</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProfilPictureBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajZadatakStatusLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 816</value>
-  </data>
-  <data name="DodajZadatakVrijemeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>453, 43</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakVrijemeLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakOpisRichTextBox.Name" xml:space="preserve">
-    <value>DodajZadatakOpisRichTextBox</value>
-  </data>
-  <data name="DodajZadatakNazivLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>DodajZadatak</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DodajZadatakClanoviLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProfilLinkLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DodajZadatakOdDoLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="DodajZadatakStatusButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>740, 854</value>
-  </data>
-  <data name="DodajZadatakProfilLinkLabel.Text" xml:space="preserve">
-    <value>Sara Bednaić</value>
-  </data>
-  <data name="DodajZadatakClanoviLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt, style=Bold</value>
-  </data>
-  <data name="DodajZadatakClanoviListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektLabel.Name" xml:space="preserve">
-    <value>DodajZadatakProjektLabel</value>
-  </data>
-  <data name="DodajZadatakStatusLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNazivTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajZadatakNazivTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 26</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProfilPictureBox.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="DodajZadatakVrijemeLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt, style=Bold</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakOdDoLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNazivLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajZadatakOpisRichTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProfilLinkLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajZadatakOpisRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 121</value>
-  </data>
-  <data name="DodajZadatakOpisLabel.Text" xml:space="preserve">
-    <value>Opis zadatka</value>
-  </data>
-  <data name="DodajZadatakOpisLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNazivLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DodajZadatakVrijemeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="DodajZadatakProjektLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 233</value>
-  </data>
-  <data name="DodajZadatakNazivLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>453, 43</value>
-  </data>
-  <data name="DodajZadatakProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1823, 13</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakClanoviLabel.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="DodajZadatakNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProfilPictureBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNazivLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="DodajZadatakButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakStatusComboBox.Name" xml:space="preserve">
-    <value>DodajZadatakStatusComboBox</value>
-  </data>
-  <data name="DodajZadatakProjektLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="DodajZadatakDateTimePicker2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 26</value>
-  </data>
-  <data name="DodajZadatakClanoviLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="DodajZadatakStatusComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 854</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakOpisRichTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakOdDoLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajZadatakProfilLinkLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 20</value>
-  </data>
-  <data name="DodajZadatakNazivLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 309</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakStatusButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajZadatakProjektLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>453, 43</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1439, 826</value>
-  </data>
-  <data name="DodajZadatakOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>453, 43</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProfilLinkLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakDateTimePicker1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakDateTimePicker2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNazivTextBox.Name" xml:space="preserve">
-    <value>DodajZadatakNazivTextBox</value>
-  </data>
-  <data name="DodajZadatakProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
-        DhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQU
-        FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAFoAWgDASIAAhEBAxEB/8QA
-        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
-        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
-        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
-        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
-        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
-        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
-        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
-        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiue8e/ELw38L/AAxd+IfFes2u
-        haNaqWkurt8AkAkIij5nc4O1FBZjwATxX5dftE/8FOvGXxE+06R8OY5vAnh990ZvyUbVLlSGBO8Erb8M
-        vEeXBXIl5xVJNibsfpd8S/jh4B+DtoZ/Gfi3SvD58rzktrq4H2mZN23MUC5kk5/uKe/pXzr4m/4Kn/BX
-        QdSNrp8XibxLDgYvNL0xY4myAcAXEkT8dPu9u/WvyL1HUrvWL+5v766mvb24cyz3VxI0ksrk5LOzfMzH
-        1NVa05ETzH6xf8PbPhR55B8K+NPJxw/2Wz3Z9Nv2rp75rofCn/BUj4J+IbySDUW8R+FY1XIuNW0vzEY/
-        3QLZ5mB+qge9fj5RT5EK7P6Efh38XvBPxa09rzwb4p0rxHEkaSSpYXSySwBwSoljzviJwflcA8Hjiuvr
-        +c3SdZv9B1S11LS7240vUrWRZbe9tJmingZfuski/Mp/3a+3f2bf+Cn3ifwXd2mh/FJZfFvh7AjXWoI0
-        /tK2AQBd4BCzrlRnOJPmZizkBKhx7FKXc/VWisTwV410P4jeFdN8SeGtTt9Y0PUYvOtby2bKuuSCCDyr
-        KwKsrAMrKVIBBFbdZlBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
-        FABRRRQAUUUUAFFFFABRRRQAUUUUAFcv8TviRofwi8B6z4w8SXDWujaVD507xpudiWCoiDuzOyqBxyw5
-        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
-        L/5Eo/4dK/CP/oZvHH/gbZf/ACJX21RRzMLI+Jf+HSvwj/6Gbxx/4G2X/wAiUf8ADpX4R/8AQzeOP/A2
-        y/8AkSvtqijmYWR8S/8ADpX4R/8AQzeOP/A2y/8AkSj/AIdK/CP/AKGbxx/4G2X/AMiV9tUUczCyPiX/
-        AIdK/CP/AKGbxx/4G2X/AMiUf8OlfhH/ANDN44/8DbL/AORK+2qKOZhZHxL/AMOlfhH/ANDN44/8DbL/
-        AORKP+HSvwj/AOhm8cf+Btl/8iV9tUUczCyPiX/h0r8I/wDoZvHH/gbZf/IlH/DpX4R/9DN44/8AA2y/
-        +RK+2qKOZhZHxL/w6V+Ef/QzeOP/AANsv/kSj/h0r8I/+hm8cf8AgbZf/IlfbVFHMwsj4l/4dK/CP/oZ
-        vHH/AIG2X/yJR/w6V+Ef/QzeOP8AwNsv/kSvtqijmYWR8Tx/8El/hErqzeJPG0gU52tfWYB+uLUH9a+m
-        Pg78BvAvwE0ObS/BGgw6RFclGurgu0txdMoIUyyuSzYy2FztXc20DJr0CildhYKKKKQwooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
-</value>
-  </data>
-  <data name="DodajZadatakProfilPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="DodajZadatakVrijemeLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakStatusButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DodajZadatakStatusButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="DodajZadatakStatusComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 28</value>
-  </data>
-  <data name="DodajZadatakNazivTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 353</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DodajZadatakNazivLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DodajZadatakProfilPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="DodajZadatakClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 576</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNazivTextBox.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProfilPanel.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNatragButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakVrijemeLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DodajZadatakButton.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="DodajZadatakStatusComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="DodajZadatakOdDoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 45</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNaslovLabel.Name" xml:space="preserve">
-    <value>DodajZadatakNaslovLabel</value>
-  </data>
-  <data name="DodajZadatakOpisRichTextBox.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="DodajZadatakProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 65</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNazivTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DodajZadatakNaslovLabel.Text" xml:space="preserve">
-    <value>Dodaj novi projektni zadatak</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakOpisLabel.Name" xml:space="preserve">
-    <value>DodajZadatakOpisLabel</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakDateTimePicker1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajZadatakProjektComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 28</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakClanoviLabel.Name" xml:space="preserve">
-    <value>DodajZadatakClanoviLabel</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakClanoviListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektComboBox.Name" xml:space="preserve">
-    <value>DodajZadatakProjektComboBox</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakDateTimePicker2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajZadatakOpisRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 435</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakStatusComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakDateTimePicker2.Name" xml:space="preserve">
-    <value>DodajZadatakDateTimePicker2</value>
-  </data>
-  <data name="DodajZadatakProfilPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1920, 90</value>
-  </data>
-  <data name="DodajZadatakProfilPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
-        DhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQU
-        FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAFoAWgDASIAAhEBAxEB/8QA
-        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
-        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
-        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
-        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
-        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
-        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
-        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
-        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiue8e/ELw38L/AAxd+IfFes2u
-        haNaqWkurt8AkAkIij5nc4O1FBZjwATxX5dftE/8FOvGXxE+06R8OY5vAnh990ZvyUbVLlSGBO8Erb8M
-        vEeXBXIl5xVJNibsfpd8S/jh4B+DtoZ/Gfi3SvD58rzktrq4H2mZN23MUC5kk5/uKe/pXzr4m/4Kn/BX
-        QdSNrp8XibxLDgYvNL0xY4myAcAXEkT8dPu9u/WvyL1HUrvWL+5v766mvb24cyz3VxI0ksrk5LOzfMzH
-        1NVa05ETzH6xf8PbPhR55B8K+NPJxw/2Wz3Z9Nv2rp75rofCn/BUj4J+IbySDUW8R+FY1XIuNW0vzEY/
-        3QLZ5mB+qge9fj5RT5EK7P6Efh38XvBPxa09rzwb4p0rxHEkaSSpYXSySwBwSoljzviJwflcA8Hjiuvr
-        +c3SdZv9B1S11LS7240vUrWRZbe9tJmingZfuski/Mp/3a+3f2bf+Cn3ifwXd2mh/FJZfFvh7AjXWoI0
-        /tK2AQBd4BCzrlRnOJPmZizkBKhx7FKXc/VWisTwV410P4jeFdN8SeGtTt9Y0PUYvOtby2bKuuSCCDyr
-        KwKsrAMrKVIBBFbdZlBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
-        FABRRRQAUUUUAFFFFABRRRQAUUUUAFcv8TviRofwi8B6z4w8SXDWujaVD507xpudiWCoiDuzOyqBxyw5
-        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
-        L/5Eo/4dK/CP/oZvHH/gbZf/ACJX21RRzMLI+Jf+HSvwj/6Gbxx/4G2X/wAiUf8ADpX4R/8AQzeOP/A2
-        y/8AkSvtqijmYWR8S/8ADpX4R/8AQzeOP/A2y/8AkSj/AIdK/CP/AKGbxx/4G2X/AMiV9tUUczCyPiX/
-        AIdK/CP/AKGbxx/4G2X/AMiUf8OlfhH/ANDN44/8DbL/AORK+2qKOZhZHxL/AMOlfhH/ANDN44/8DbL/
-        AORKP+HSvwj/AOhm8cf+Btl/8iV9tUUczCyPiX/h0r8I/wDoZvHH/gbZf/IlH/DpX4R/9DN44/8AA2y/
-        +RK+2qKOZhZHxL/w6V+Ef/QzeOP/AANsv/kSj/h0r8I/+hm8cf8AgbZf/IlfbVFHMwsj4l/4dK/CP/oZ
-        vHH/AIG2X/yJR/w6V+Ef/QzeOP8AwNsv/kSvtqijmYWR8Tx/8El/hErqzeJPG0gU52tfWYB+uLUH9a+m
-        Pg78BvAvwE0ObS/BGgw6RFclGurgu0txdMoIUyyuSzYy2FztXc20DJr0CildhYKKKKQwooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
-</value>
-  </data>
-  <data name="DodajZadatakStatusButton.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakOpisLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakOpisRichTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="DodajZadatakClanoviListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 96</value>
-  </data>
-  <data name="DodajZadatakButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakDateTimePicker1.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProfilPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNatragButton.Name" xml:space="preserve">
-    <value>DodajZadatakNatragButton</value>
-  </data>
-  <data name="DodajZadatakProfilPictureBox.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="DodajZadatakNazivLabel.Text" xml:space="preserve">
-    <value>Naziv zadatka</value>
+  <data name="DodajZadatakNatragButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
   </data>
   <data name="DodajZadatakNatragButton.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakProjektLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;DodajZadatakNatragButton.Name" xml:space="preserve">
+    <value>DodajZadatakNatragButton</value>
   </data>
-  <data name="DodajZadatakOpisLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="DodajZadatakStatusLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt, style=Bold</value>
-  </data>
-  <data name="DodajZadatakNaslovLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNaslovLabel.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakStatusComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DodajZadatakNazivLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="DodajZadatakOdDoLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="DodajZadatakNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>874, 120</value>
-  </data>
-  <data name="DodajZadatakDateTimePicker1.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;DodajZadatakNatragButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakStatusButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="DodajZadatakStatusButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="DodajZadatakDateTimePicker2.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="DodajZadatakProjektComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakStatusLabel.Name" xml:space="preserve">
-    <value>DodajZadatakStatusLabel</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakDateTimePicker2.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="DodajZadatakProjektComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 276</value>
-  </data>
-  <data name="DodajZadatakButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>874, 917</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProfilPanel.Name" xml:space="preserve">
-    <value>DodajZadatakProfilPanel</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakClanoviListBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="DodajZadatakClanoviLabel.Text" xml:space="preserve">
-    <value>Dodijeli zadatak članovima tima</value>
-  </data>
-  <data name="DodajZadatakButton.Text" xml:space="preserve">
-    <value>Dodaj projektni zadatak</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakStatusButton.Name" xml:space="preserve">
-    <value>DodajZadatakStatusButton</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakOpisRichTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DodajZadatakClanoviListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 610</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNaslovLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProfilPictureBox.Name" xml:space="preserve">
-    <value>DodajZadatakProfilPictureBox</value>
-  </data>
-  <data name="DodajZadatakNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>568, 141</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakButton.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakVrijemeLabel.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakVrijemeLabel.Name" xml:space="preserve">
-    <value>DodajZadatakVrijemeLabel</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakClanoviListBox.Name" xml:space="preserve">
-    <value>DodajZadatakClanoviListBox</value>
-  </data>
-  <data name="DodajZadatakProjektLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt, style=Bold</value>
-  </data>
-  <data name="DodajZadatakDateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 779</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProfilLinkLabel.Name" xml:space="preserve">
-    <value>DodajZadatakProfilLinkLabel</value>
-  </data>
-  <data name="DodajZadatakDateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 26</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakDateTimePicker1.Name" xml:space="preserve">
-    <value>DodajZadatakDateTimePicker1</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakOpisLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajZadatakVrijemeLabel.Text" xml:space="preserve">
-    <value>Vrijeme </value>
   </data>
   <data name="&gt;&gt;DodajZadatakNatragButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="DodajZadatakStatusLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
+  <data name="&gt;&gt;DodajZadatakNatragButton.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
-  <data name="DodajZadatakStatusButton.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
+  <data name="DodajZadatakProfilLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="DodajZadatakVrijemeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 733</value>
+  <data name="DodajZadatakProfilLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="DodajZadatakProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1651, 31</value>
   </data>
   <data name="DodajZadatakProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 29</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
-  </metadata>
-  <metadata name="DodajZadatakButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="DodajZadatakProfilLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="DodajZadatakProfilLinkLabel.Text" xml:space="preserve">
+    <value>Sara Bednaić</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProfilLinkLabel.Name" xml:space="preserve">
+    <value>DodajZadatakProfilLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProfilLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProfilLinkLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakProfilLinkLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="DodajZadatakOpisRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 435</value>
+  </data>
+  <data name="DodajZadatakOpisRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>715, 121</value>
+  </data>
+  <data name="DodajZadatakOpisRichTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="DodajZadatakOpisRichTextBox.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;DodajZadatakOpisRichTextBox.Name" xml:space="preserve">
+    <value>DodajZadatakOpisRichTextBox</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakOpisRichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakOpisRichTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakOpisRichTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="DodajZadatakStatusButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="DodajZadatakStatusButton.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
-  </metadata>
-  <metadata name="DodajZadatakNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="DodajZadatakNazivTextBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="DodajZadatakClanoviLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="DodajZadatakNazivLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
+  </data>
+  <data name="DodajZadatakStatusButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>740, 854</value>
+  </data>
+  <data name="DodajZadatakStatusButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="DodajZadatakStatusButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 30</value>
+  </data>
+  <data name="DodajZadatakStatusButton.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakStatusButton.Name" xml:space="preserve">
+    <value>DodajZadatakStatusButton</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakStatusButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakStatusButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakStatusButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DodajZadatakStatusComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 854</value>
+  </data>
+  <data name="DodajZadatakStatusComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 28</value>
+  </data>
+  <data name="DodajZadatakStatusComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakStatusComboBox.Name" xml:space="preserve">
+    <value>DodajZadatakStatusComboBox</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakStatusComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakStatusComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakStatusComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PanelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>808, 0</value>
+  </data>
+  <data name="PanelLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 84</value>
+  </data>
+  <data name="PanelLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.Name" xml:space="preserve">
+    <value>PanelLogo</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="DodajZadatakVrijemeLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="DodajZadatakOdDoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="DodajZadatakOpisLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="DodajZadatakProjektLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="DodajZadatakStatusLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1443, 1021</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1919, 1077</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1439, 826</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DodajZadatak</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

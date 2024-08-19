@@ -44,6 +44,7 @@
             this.DodajProjektOpisRichTextBox = new System.Windows.Forms.RichTextBox();
             this.DodajProjektOvlastiListBox = new System.Windows.Forms.CheckedListBox();
             this.DodajProjektClanoviListBox = new System.Windows.Forms.CheckedListBox();
+            this.PanelLogo = new System.Windows.Forms.Panel();
             UrediZadatakNaslovLabel = new System.Windows.Forms.Label();
             DodajProjektNazivLabel = new System.Windows.Forms.Label();
             DodajProjektOvlastiLabel = new System.Windows.Forms.Label();
@@ -169,10 +170,16 @@
             this.DodajProjektClanoviListBox.FormattingEnabled = true;
             this.DodajProjektClanoviListBox.Name = "DodajProjektClanoviListBox";
             // 
+            // PanelLogo
+            // 
+            resources.ApplyResources(this.PanelLogo, "PanelLogo");
+            this.PanelLogo.Name = "PanelLogo";
+            // 
             // UrediProjekt
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.PanelLogo);
             this.Controls.Add(DodajProjektButton);
             this.Controls.Add(this.DodajProjektOpisRichTextBox);
             this.Controls.Add(this.DeaktivacijaProfilPanel);
@@ -187,6 +194,7 @@
             this.Controls.Add(DodajProjektNazivTextBox);
             this.Name = "UrediProjekt";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.UrediProjekt_Load);
             this.DeaktivacijaProfilPanel.ResumeLayout(false);
             this.DeaktivacijaProfilPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UrediProjektProfilPictureBox)).EndInit();
@@ -204,5 +212,6 @@
         private System.Windows.Forms.RichTextBox DodajProjektOpisRichTextBox;
         private System.Windows.Forms.CheckedListBox DodajProjektOvlastiListBox;
         private System.Windows.Forms.CheckedListBox DodajProjektClanoviListBox;
+        private System.Windows.Forms.Panel PanelLogo;
     }
 }

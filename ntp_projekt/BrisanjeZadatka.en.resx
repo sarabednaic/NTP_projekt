@@ -119,71 +119,31 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BriasnjeZadatkaNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>588, 288</value>
-  </data>
-  <data name="BriasnjeZadatkaNaslovLabel.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>911, 142</value>
-  </data>
-  <data name="BriasnjeZadatkaNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>911, 142</value>
+    <value>628, 252</value>
   </data>
   <data name="BriasnjeZadatkaNaslovLabel.Text" xml:space="preserve">
     <value>Delete the task</value>
   </data>
-  <data name="BrisanjeZadatkaLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>988, 529</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BrisanjeZadatkaLozinkaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="BrisanjeZadatkaLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>611, 31</value>
-  </data>
-  <data name="BrisanjeZadatkaPonovnoLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>988, 625</value>
-  </data>
-  <data name="BrisanjeZadatkaPonovnoLozinkaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="BrisanjeZadatkaPonovnoLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>611, 31</value>
-  </data>
   <data name="BrisanjeZadatkaPonovnoLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>983, 579</value>
-  </data>
-  <data name="BrisanjeZadatkaPonovnoLozinkaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>737, 463</value>
   </data>
   <data name="BrisanjeZadatkaPonovnoLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>468, 54</value>
+    <value>351, 43</value>
   </data>
   <data name="BrisanjeZadatkaPonovnoLozinkaLabel.Text" xml:space="preserve">
     <value>Repeat the password to confirm </value>
   </data>
   <data name="BrisanjeZadatkaLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>983, 479</value>
-  </data>
-  <data name="BrisanjeZadatkaLozinkaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>737, 383</value>
   </data>
   <data name="BrisanjeZadatkaLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>483, 54</value>
+    <value>362, 43</value>
   </data>
   <data name="BrisanjeZadatkaLozinkaLabel.Text" xml:space="preserve">
     <value>Enter the password to confirm </value>
   </data>
   <data name="BrisanjeZadatkaIzbrisiZadatakButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>891, 752</value>
-  </data>
-  <data name="BrisanjeZadatkaIzbrisiZadatakButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="BrisanjeZadatkaIzbrisiZadatakButton.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>304, 78</value>
-  </data>
-  <data name="BrisanjeZadatkaIzbrisiZadatakButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>304, 78</value>
+    <value>860, 565</value>
   </data>
   <data name="BrisanjeZadatkaIzbrisiZadatakButton.Text" xml:space="preserve">
     <value>Delete</value>
@@ -303,15 +263,6 @@
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="BrisanjeZadatkaNatragButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 15</value>
-  </data>
-  <data name="BrisanjeZadatkaNatragButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="BrisanjeZadatkaNatragButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 80</value>
-  </data>
   <data name="BrisanjeZadatkaProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
@@ -429,6 +380,7 @@
         iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 </value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BrisanjeZadatkaProfilPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -1342,43 +1294,22 @@
         ABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 </value>
   </data>
-  <data name="BrisanjeZadatkaProfilPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="BrisanjeZadatkaProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1822, 13</value>
   </data>
   <data name="BrisanjeZadatkaProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 81</value>
+    <value>65, 65</value>
   </data>
   <data name="BrisanjeZadatkaProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="BrisanjeZadatkaProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2200, 39</value>
-  </data>
-  <data name="BrisanjeZadatkaProfilLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="BrisanjeZadatkaProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 37</value>
-  </data>
-  <data name="BrisanjeZadatkaPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="BrisanjeZadatkaPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2560, 112</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>12, 25</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1412, 940</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>1896, 1018</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>2550, 1329</value>
+    <value>1918, 1074</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1438, 1011</value>
+    <value>1084, 820</value>
   </data>
 </root>

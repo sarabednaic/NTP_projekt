@@ -43,6 +43,7 @@
             this.DodajProjektProfilPictureBox = new System.Windows.Forms.PictureBox();
             this.DodajProjektProfilPanel = new System.Windows.Forms.Panel();
             this.DodajProjektOpisRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.PanelLogo = new System.Windows.Forms.Panel();
             DodajProjektNaslovLabel = new System.Windows.Forms.Label();
             DodajProjektNazivTextBox = new System.Windows.Forms.TextBox();
             DodajProjektButton = new System.Windows.Forms.Button();
@@ -61,15 +62,15 @@
             // 
             // DodajProjektNazivTextBox
             // 
-            resources.ApplyResources(DodajProjektNazivTextBox, "DodajProjektNazivTextBox");
             DodajProjektNazivTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             DodajProjektNazivTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(DodajProjektNazivTextBox, "DodajProjektNazivTextBox");
             DodajProjektNazivTextBox.Name = "DodajProjektNazivTextBox";
             // 
             // DodajProjektButton
             // 
-            resources.ApplyResources(DodajProjektButton, "DodajProjektButton");
             DodajProjektButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            resources.ApplyResources(DodajProjektButton, "DodajProjektButton");
             DodajProjektButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             DodajProjektButton.Name = "DodajProjektButton";
             DodajProjektButton.UseVisualStyleBackColor = false;
@@ -77,49 +78,49 @@
             // 
             // DodajProjektClanoviLabel
             // 
-            resources.ApplyResources(DodajProjektClanoviLabel, "DodajProjektClanoviLabel");
             DodajProjektClanoviLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DodajProjektClanoviLabel, "DodajProjektClanoviLabel");
             DodajProjektClanoviLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajProjektClanoviLabel.Name = "DodajProjektClanoviLabel";
             DodajProjektClanoviLabel.UseWaitCursor = true;
             // 
             // DodajProjektOvlastiLabel
             // 
-            resources.ApplyResources(DodajProjektOvlastiLabel, "DodajProjektOvlastiLabel");
             DodajProjektOvlastiLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DodajProjektOvlastiLabel, "DodajProjektOvlastiLabel");
             DodajProjektOvlastiLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajProjektOvlastiLabel.Name = "DodajProjektOvlastiLabel";
             DodajProjektOvlastiLabel.UseWaitCursor = true;
             // 
             // DodajProjektOpisLabel
             // 
-            resources.ApplyResources(DodajProjektOpisLabel, "DodajProjektOpisLabel");
             DodajProjektOpisLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DodajProjektOpisLabel, "DodajProjektOpisLabel");
             DodajProjektOpisLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajProjektOpisLabel.Name = "DodajProjektOpisLabel";
             DodajProjektOpisLabel.UseWaitCursor = true;
             // 
             // DodajProjektNazivLabel
             // 
-            resources.ApplyResources(DodajProjektNazivLabel, "DodajProjektNazivLabel");
             DodajProjektNazivLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DodajProjektNazivLabel, "DodajProjektNazivLabel");
             DodajProjektNazivLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajProjektNazivLabel.Name = "DodajProjektNazivLabel";
             DodajProjektNazivLabel.UseWaitCursor = true;
             // 
             // DodajProjektClanoviListBox
             // 
-            resources.ApplyResources(this.DodajProjektClanoviListBox, "DodajProjektClanoviListBox");
             this.DodajProjektClanoviListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.DodajProjektClanoviListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.DodajProjektClanoviListBox, "DodajProjektClanoviListBox");
             this.DodajProjektClanoviListBox.Name = "DodajProjektClanoviListBox";
             this.DodajProjektClanoviListBox.SelectedIndexChanged += new System.EventHandler(this.DodajProjektClanoviListBox_SelectedIndexChanged);
             // 
             // DodajProjektOvlastiListBox
             // 
-            resources.ApplyResources(this.DodajProjektOvlastiListBox, "DodajProjektOvlastiListBox");
             this.DodajProjektOvlastiListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.DodajProjektOvlastiListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.DodajProjektOvlastiListBox, "DodajProjektOvlastiListBox");
             this.DodajProjektOvlastiListBox.Name = "DodajProjektOvlastiListBox";
             this.DodajProjektOvlastiListBox.SelectedIndexChanged += new System.EventHandler(this.DodajProjektOvlastiListBox_SelectedIndexChanged);
             // 
@@ -134,8 +135,8 @@
             // 
             // DodajProjektNatragButton
             // 
-            resources.ApplyResources(this.DodajProjektNatragButton, "DodajProjektNatragButton");
             this.DodajProjektNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.DodajProjektNatragButton, "DodajProjektNatragButton");
             this.DodajProjektNatragButton.Name = "DodajProjektNatragButton";
             this.DodajProjektNatragButton.UseVisualStyleBackColor = false;
             this.DodajProjektNatragButton.Click += new System.EventHandler(this.DodajProjektNatragButton_Click);
@@ -149,11 +150,11 @@
             // 
             // DodajProjektProfilPanel
             // 
-            resources.ApplyResources(this.DodajProjektProfilPanel, "DodajProjektProfilPanel");
             this.DodajProjektProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DodajProjektProfilPanel.Controls.Add(this.DodajProjektProfilPictureBox);
             this.DodajProjektProfilPanel.Controls.Add(this.DodajProjektNatragButton);
             this.DodajProjektProfilPanel.Controls.Add(this.DodajProjektProfilLinkLabel);
+            resources.ApplyResources(this.DodajProjektProfilPanel, "DodajProjektProfilPanel");
             this.DodajProjektProfilPanel.Name = "DodajProjektProfilPanel";
             // 
             // DodajProjektOpisRichTextBox
@@ -161,10 +162,16 @@
             resources.ApplyResources(this.DodajProjektOpisRichTextBox, "DodajProjektOpisRichTextBox");
             this.DodajProjektOpisRichTextBox.Name = "DodajProjektOpisRichTextBox";
             // 
+            // PanelLogo
+            // 
+            resources.ApplyResources(this.PanelLogo, "PanelLogo");
+            this.PanelLogo.Name = "PanelLogo";
+            // 
             // DodajProjekt
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.PanelLogo);
             this.Controls.Add(this.DodajProjektOpisRichTextBox);
             this.Controls.Add(this.DodajProjektOvlastiListBox);
             this.Controls.Add(this.DodajProjektClanoviListBox);
@@ -195,5 +202,6 @@
         private System.Windows.Forms.PictureBox DodajProjektProfilPictureBox;
         private System.Windows.Forms.Panel DodajProjektProfilPanel;
         private System.Windows.Forms.RichTextBox DodajProjektOpisRichTextBox;
+        private System.Windows.Forms.Panel PanelLogo;
     }
 }

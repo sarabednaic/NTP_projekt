@@ -39,6 +39,7 @@
             this.BrisanjeProjektaProfilPictureBox = new System.Windows.Forms.PictureBox();
             this.BrisanjeProjektaNatragButton = new System.Windows.Forms.Button();
             this.BrisanjeProjektaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.PanelLogo = new System.Windows.Forms.Panel();
             BrisanjeProjektaNaslovLabel = new System.Windows.Forms.Label();
             BrisanjeProjektaLozinkaNazivLabel = new System.Windows.Forms.Label();
             BrisanjeProjektaPonovnoLozinkaLabel = new System.Windows.Forms.Label();
@@ -56,30 +57,30 @@
             // 
             // BrisanjeProjektaLozinkaNazivLabel
             // 
-            resources.ApplyResources(BrisanjeProjektaLozinkaNazivLabel, "BrisanjeProjektaLozinkaNazivLabel");
             BrisanjeProjektaLozinkaNazivLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(BrisanjeProjektaLozinkaNazivLabel, "BrisanjeProjektaLozinkaNazivLabel");
             BrisanjeProjektaLozinkaNazivLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             BrisanjeProjektaLozinkaNazivLabel.Name = "BrisanjeProjektaLozinkaNazivLabel";
             BrisanjeProjektaLozinkaNazivLabel.UseWaitCursor = true;
             // 
             // BrisanjeProjektaPonovnoLozinkaLabel
             // 
-            resources.ApplyResources(BrisanjeProjektaPonovnoLozinkaLabel, "BrisanjeProjektaPonovnoLozinkaLabel");
             BrisanjeProjektaPonovnoLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(BrisanjeProjektaPonovnoLozinkaLabel, "BrisanjeProjektaPonovnoLozinkaLabel");
             BrisanjeProjektaPonovnoLozinkaLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             BrisanjeProjektaPonovnoLozinkaLabel.Name = "BrisanjeProjektaPonovnoLozinkaLabel";
             BrisanjeProjektaPonovnoLozinkaLabel.UseWaitCursor = true;
             // 
             // BrisanjeProjektaPonovnoLozinkaTextBox
             // 
-            resources.ApplyResources(BrisanjeProjektaPonovnoLozinkaTextBox, "BrisanjeProjektaPonovnoLozinkaTextBox");
             BrisanjeProjektaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(BrisanjeProjektaPonovnoLozinkaTextBox, "BrisanjeProjektaPonovnoLozinkaTextBox");
             BrisanjeProjektaPonovnoLozinkaTextBox.Name = "BrisanjeProjektaPonovnoLozinkaTextBox";
             // 
             // BrisanjeProjektaLozinkaTextBox
             // 
-            resources.ApplyResources(BrisanjeProjektaLozinkaTextBox, "BrisanjeProjektaLozinkaTextBox");
             BrisanjeProjektaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(BrisanjeProjektaLozinkaTextBox, "BrisanjeProjektaLozinkaTextBox");
             BrisanjeProjektaLozinkaTextBox.Name = "BrisanjeProjektaLozinkaTextBox";
             // 
             // BrisanjeProjektaIzbrisiProjektButton
@@ -93,11 +94,11 @@
             // 
             // BrisanjeProjektaPanel
             // 
-            resources.ApplyResources(this.BrisanjeProjektaPanel, "BrisanjeProjektaPanel");
             this.BrisanjeProjektaPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BrisanjeProjektaPanel.Controls.Add(this.BrisanjeProjektaProfilPictureBox);
             this.BrisanjeProjektaPanel.Controls.Add(this.BrisanjeProjektaNatragButton);
             this.BrisanjeProjektaPanel.Controls.Add(this.BrisanjeProjektaProfilLinkLabel);
+            resources.ApplyResources(this.BrisanjeProjektaPanel, "BrisanjeProjektaPanel");
             this.BrisanjeProjektaPanel.Name = "BrisanjeProjektaPanel";
             this.BrisanjeProjektaPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.DodajProjektProfilPanel_Paint);
             // 
@@ -110,8 +111,8 @@
             // 
             // BrisanjeProjektaNatragButton
             // 
-            resources.ApplyResources(this.BrisanjeProjektaNatragButton, "BrisanjeProjektaNatragButton");
             this.BrisanjeProjektaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.BrisanjeProjektaNatragButton, "BrisanjeProjektaNatragButton");
             this.BrisanjeProjektaNatragButton.Name = "BrisanjeProjektaNatragButton";
             this.BrisanjeProjektaNatragButton.UseVisualStyleBackColor = false;
             this.BrisanjeProjektaNatragButton.Click += new System.EventHandler(this.BrisanjeProjektaNatragButton_Click);
@@ -125,10 +126,16 @@
             this.BrisanjeProjektaProfilLinkLabel.TabStop = true;
             this.BrisanjeProjektaProfilLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BrisanjeProjektaProfilLinkLabel_LinkClicked);
             // 
+            // PanelLogo
+            // 
+            resources.ApplyResources(this.PanelLogo, "PanelLogo");
+            this.PanelLogo.Name = "PanelLogo";
+            // 
             // BrisanjeProjekta
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.PanelLogo);
             this.Controls.Add(BrisanjeProjektaLozinkaTextBox);
             this.Controls.Add(BrisanjeProjektaPonovnoLozinkaTextBox);
             this.Controls.Add(this.BrisanjeProjektaPanel);
@@ -154,5 +161,6 @@
         private System.Windows.Forms.PictureBox BrisanjeProjektaProfilPictureBox;
         private System.Windows.Forms.Button BrisanjeProjektaNatragButton;
         private System.Windows.Forms.LinkLabel BrisanjeProjektaProfilLinkLabel;
+        private System.Windows.Forms.Panel PanelLogo;
     }
 }

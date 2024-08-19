@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ntp_projekt", "ntp_projekt\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{67680308-E972-4427-8CA8-73C9ECF63C57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dinamicLib", "dinamicLib\dinamicLib.csproj", "{542AFF19-1686-4309-9E05-D0CD55A0D790}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{D781B490-2FD3-4D23-82C7-37576E26D6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D781B490-2FD3-4D23-82C7-37576E26D6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D781B490-2FD3-4D23-82C7-37576E26D6DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542AFF19-1686-4309-9E05-D0CD55A0D790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542AFF19-1686-4309-9E05-D0CD55A0D790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542AFF19-1686-4309-9E05-D0CD55A0D790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542AFF19-1686-4309-9E05-D0CD55A0D790}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

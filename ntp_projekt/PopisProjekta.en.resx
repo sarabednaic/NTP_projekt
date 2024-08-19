@@ -119,10 +119,10 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PopisProjektaNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1025, 117</value>
+    <value>767, 122</value>
   </data>
   <data name="PopisProjektaNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>444, 106</value>
+    <value>333, 81</value>
   </data>
   <data name="PopisProjektaNaslovLabel.Text" xml:space="preserve">
     <value>Project list</value>
@@ -187,6 +187,9 @@
         +V+9b6XGt2ofXQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="PopisProjektaAddButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1344, 873</value>
+  </data>
   <data name="PopisProjektaSortButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEYAAAAxCAYAAABnCd/9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -213,6 +216,12 @@
         HjepTS6CAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="PopisProjektaSortButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1339, 244</value>
+  </data>
+  <data name="PopisProjektaSearchRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>743, 240</value>
+  </data>
   <data name="PopisProjektaSearchButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -235,6 +244,9 @@
         WuIPy8am7sVv75+zkh2VfwJOJYlPqW+VPqY7YGznlXqyN7FcoUpz6hxVpZ1w9Xkaz7Yp5QmErigUTRuz
         4fIGYusQK8H6e2+/mf8NsDRmsCmn5HK58j0SK6iggu5QVfUdosjINiGFHhIAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="PopisProjektaSearchButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1114, 232</value>
   </data>
   <data name="PopisProjektaProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1267,8 +1279,10 @@
   <data name="PopisProjektaProjektiFlowLayoutPanel.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="PopisProjektaProjektiFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>428, 330</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1896, 1018</value>
   </data>
 </root>

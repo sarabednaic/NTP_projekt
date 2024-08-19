@@ -259,8 +259,17 @@
     <EmbeddedResource Include="UrediProjekt.en.resx">
       <DependentUpon>UrediProjekt.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UrediProjekt.hr.resx">
+      <DependentUpon>UrediProjekt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UrediProjekt.resx">
       <DependentUpon>UrediProjekt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrediZadatak.en.resx">
+      <DependentUpon>UrediZadatak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrediZadatak.hr.resx">
+      <DependentUpon>UrediZadatak.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UrediZadatak.resx">
       <DependentUpon>UrediZadatak.cs</DependentUpon>
@@ -334,6 +343,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\soap\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dinamicLib\dinamicLib.csproj">
+      <Project>{542aff19-1686-4309-9e05-d0cd55a0d790}</Project>
+      <Name>dinamicLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

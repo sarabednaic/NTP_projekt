@@ -117,16 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;PopisProjektaNaslovLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PopisProjektaProjektiFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PopisProjektaAddButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PopisProjektaSearchButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>873, 215</value>
+  </data>
   <data name="PopisProjektaSearchRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>488, 40</value>
+    <value>367, 33</value>
   </data>
   <data name="&gt;&gt;PopisProjektaNaslovLabel.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -141,20 +145,13 @@
     <value>Top</value>
   </data>
   <data name="PopisProjektaProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 37</value>
+    <value>157, 29</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PopisProjektaPanel.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
   <data name="PopisProjektaProfilLinkLabel.Text" xml:space="preserve">
     <value>Sara Bednaić</value>
-  </data>
-  <data name="PopisProjektaSearchRichTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
   </data>
   <data name="PopisProjektaProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -273,35 +270,35 @@
         iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 </value>
   </data>
-  <data name="PopisProjektaAddButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="PopisProjektaProfilLinkLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;PopisProjektaAddButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="PopisProjektaProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1650, 31</value>
   </data>
   <data name="&gt;&gt;PopisProjektaSearchRichTextBox.Name" xml:space="preserve">
     <value>PopisProjektaSearchRichTextBox</value>
   </data>
+  <data name="PopisProjektaAddButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 60</value>
+  </data>
   <data name="&gt;&gt;PopisProjektaSearchButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="PopisProjektaProjektiFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>574, 378</value>
+  <data name="PopisProjektaSearchButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
   </data>
-  <data name="&gt;&gt;PopisProjektaPanel.Name" xml:space="preserve">
-    <value>PopisProjektaPanel</value>
+  <data name="&gt;&gt;PanelLogo.Name" xml:space="preserve">
+    <value>PanelLogo</value>
   </data>
   <data name="&gt;&gt;PopisProjektaSortButton.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="PopisProjektaSearchRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>993, 265</value>
+    <value>502, 223</value>
   </data>
   <data name="PopisProjektaSortButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1438, 1011</value>
   </data>
   <data name="PopisProjektaSearchButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -332,8 +329,8 @@
   <data name="&gt;&gt;PopisProjektaProfilPictureBox.Name" xml:space="preserve">
     <value>PopisProjektaProfilPictureBox</value>
   </data>
-  <data name="&gt;&gt;PopisProjektaProfilLinkLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="PanelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="&gt;&gt;PopisProjektaSortButton.Parent" xml:space="preserve">
     <value>$this</value>
@@ -345,19 +342,19 @@
     <value>$this</value>
   </data>
   <data name="PopisProjektaProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 81</value>
+    <value>65, 65</value>
   </data>
-  <data name="PopisProjektaProfilLinkLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>PopisProjekta</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="&gt;&gt;PopisProjektaNaslovLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PopisProjektaSortButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 75</value>
+    <value>65, 60</value>
   </data>
   <data name="&gt;&gt;PopisProjektaAddButton.Name" xml:space="preserve">
     <value>PopisProjektaAddButton</value>
@@ -368,11 +365,20 @@
   <data name="PopisProjektaAddButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="PopisProjektaSearchButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 62</value>
+  <data name="PopisProjektaProfilLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="PopisProjektaSearchRichTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
   </data>
   <data name="&gt;&gt;PopisProjektaSearchButton.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PopisProjektaProjektiFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="PopisProjektaProfilLinkLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -381,7 +387,7 @@
     <value>Top</value>
   </data>
   <data name="PopisProjektaProjektiFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1381, 593</value>
+    <value>1036, 474</value>
   </data>
   <data name="PopisProjektaSortButton.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -446,20 +452,23 @@
         +V+9b6XGt2ofXQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="PopisProjektaPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="PopisProjektaNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Leelawadee UI, 30pt, style=Bold</value>
+  </data>
+  <data name="PopisProjektaNaslovLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="PanelLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
   <data name="&gt;&gt;PopisProjektaProjektiFlowLayoutPanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="PopisProjektaProjektiFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
+  <data name="&gt;&gt;PanelLogo.Parent" xml:space="preserve">
+    <value>PopisProjektaPanel</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>PopisProjekta</value>
-  </data>
-  <data name="PopisProjektaNaslovLabel.Text" xml:space="preserve">
-    <value>Popis projekata</value>
+  <data name="PopisProjektaSearchRichTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="&gt;&gt;PopisProjektaSortButton.Name" xml:space="preserve">
     <value>PopisProjektaSortButton</value>
@@ -494,19 +503,16 @@
 </value>
   </data>
   <data name="PopisProjektaPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2560, 112</value>
+    <value>1920, 90</value>
   </data>
-  <data name="PopisProjektaProfilLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="&gt;&gt;PopisProjektaSearchButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PopisProjektaProfilLinkLabel.Name" xml:space="preserve">
     <value>PopisProjektaProfilLinkLabel</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>PopisProjekta</value>
-  </data>
-  <data name="&gt;&gt;PopisProjektaSearchRichTextBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="PopisProjektaAddButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="PopisProjektaProfilPictureBox.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1310,17 +1316,23 @@
   <data name="PopisProjektaProfilPictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;PopisProjektaNaslovLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PopisProjektaPanel.Name" xml:space="preserve">
+    <value>PopisProjektaPanel</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PopisProjektaSortButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1788, 270</value>
+    <value>1098, 227</value>
   </data>
-  <data name="PopisProjektaNaslovLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
   <data name="PopisProjektaAddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1795, 1056</value>
+    <value>1103, 856</value>
   </data>
   <data name="PopisProjektaProfilPictureBox.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -1328,17 +1340,20 @@
   <data name="PopisProjektaPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 1</value>
   </data>
-  <data name="PopisProjektaProfilPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="PopisProjektaSortButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="PopisProjektaSearchButton.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
+  <data name="&gt;&gt;PopisProjektaNaslovLabel.Name" xml:space="preserve">
+    <value>PopisProjektaNaslovLabel</value>
+  </data>
   <data name="PopisProjektaProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2429, 16</value>
+    <value>1822, 13</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>12, 25</value>
+    <value>9, 20</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -1346,11 +1361,14 @@
   <data name="PopisProjektaAddButton.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
+  <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>808, 0</value>
+  </data>
   <data name="PopisProjektaProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
   <data name="PopisProjektaSearchButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="&gt;&gt;PopisProjektaProfilLinkLabel.Parent" xml:space="preserve">
     <value>PopisProjektaPanel</value>
@@ -1358,44 +1376,44 @@
   <data name="&gt;&gt;PopisProjektaSearchButton.Name" xml:space="preserve">
     <value>PopisProjektaSearchButton</value>
   </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;PopisProjektaProjektiFlowLayoutPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>2550, 1329</value>
-  </data>
-  <data name="PopisProjektaProfilLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <data name="PopisProjektaProjektiFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 313</value>
   </data>
   <data name="&gt;&gt;PopisProjektaAddButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PopisProjektaProfilPictureBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;PopisProjektaAddButton.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="PopisProjektaSearchRichTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PopisProjekta</value>
   </data>
   <data name="PopisProjektaNaslovLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="&gt;&gt;PopisProjektaProjektiFlowLayoutPanel.Name" xml:space="preserve">
-    <value>PopisProjektaProjektiFlowLayoutPanel</value>
+  <data name="PopisProjektaNaslovLabel.Text" xml:space="preserve">
+    <value>Popis projekata</value>
   </data>
-  <data name="PopisProjektaNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Leelawadee UI, 30pt, style=Bold</value>
-  </data>
-  <data name="PopisProjektaProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2200, 39</value>
+  <data name="&gt;&gt;PopisProjektaSearchRichTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>2476, 1258</value>
+    <value>1443, 840</value>
   </data>
-  <data name="PopisProjektaAddButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 75</value>
+  <data name="PopisProjektaSearchButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;PopisProjektaAddButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;PopisProjektaProfilPictureBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1404,13 +1422,16 @@
     <value>1</value>
   </data>
   <data name="PopisProjektaSearchRichTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="PopisProjektaSearchButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1488, 255</value>
+  <data name="PanelLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 84</value>
   </data>
-  <data name="&gt;&gt;PopisProjektaNaslovLabel.Name" xml:space="preserve">
-    <value>PopisProjektaNaslovLabel</value>
+  <data name="PopisProjektaNaslovLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="&gt;&gt;PopisProjektaProfilLinkLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="PopisProjektaProfilPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1529,20 +1550,20 @@
         iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 </value>
   </data>
-  <data name="PopisProjektaSearchButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1918, 1074</value>
   </data>
   <data name="PopisProjektaProjektiFlowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="PopisProjektaNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>953, 136</value>
+    <value>472, 120</value>
   </data>
   <data name="&gt;&gt;PopisProjektaPanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;PopisProjektaSearchButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;PopisProjektaProjektiFlowLayoutPanel.Name" xml:space="preserve">
+    <value>PopisProjektaProjektiFlowLayoutPanel</value>
   </data>
   <data name="PopisProjektaSearchRichTextBox.Text" xml:space="preserve">
     <value />
@@ -1551,7 +1572,7 @@
     <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PopisProjektaSortButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="PopisProjektaSearchButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1559,8 +1580,8 @@
   <data name="PopisProjektaSearchButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="PopisProjektaSortButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1084, 820</value>
   </data>
   <data name="&gt;&gt;PopisProjektaProjektiFlowLayoutPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1569,7 +1590,7 @@
     <value>True</value>
   </data>
   <data name="PopisProjektaNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>632, 106</value>
+    <value>473, 81</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

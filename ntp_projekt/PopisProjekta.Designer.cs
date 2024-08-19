@@ -35,6 +35,7 @@
             this.PopisProjektaSearchRichTextBox = new System.Windows.Forms.RichTextBox();
             this.PopisProjektaSearchButton = new System.Windows.Forms.Button();
             this.PopisProjektaPanel = new System.Windows.Forms.Panel();
+            this.PanelLogo = new System.Windows.Forms.Panel();
             this.PopisProjektaProfilPictureBox = new System.Windows.Forms.PictureBox();
             this.PopisProjektaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
             this.PopisProjektaProjektiFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -79,9 +80,16 @@
             // 
             resources.ApplyResources(this.PopisProjektaPanel, "PopisProjektaPanel");
             this.PopisProjektaPanel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PopisProjektaPanel.Controls.Add(this.PanelLogo);
             this.PopisProjektaPanel.Controls.Add(this.PopisProjektaProfilPictureBox);
             this.PopisProjektaPanel.Controls.Add(this.PopisProjektaProfilLinkLabel);
             this.PopisProjektaPanel.Name = "PopisProjektaPanel";
+            // 
+            // PanelLogo
+            // 
+            resources.ApplyResources(this.PanelLogo, "PanelLogo");
+            this.PanelLogo.Name = "PanelLogo";
+            this.PanelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.PopisProjektaPanelLogo_Paint);
             // 
             // PopisProjektaProfilPictureBox
             // 
@@ -135,5 +143,6 @@
         private System.Windows.Forms.PictureBox PopisProjektaProfilPictureBox;
         private System.Windows.Forms.LinkLabel PopisProjektaProfilLinkLabel;
         private System.Windows.Forms.FlowLayoutPanel PopisProjektaProjektiFlowLayoutPanel;
+        private System.Windows.Forms.Panel PanelLogo;
     }
 }

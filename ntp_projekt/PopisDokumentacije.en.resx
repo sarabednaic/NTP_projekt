@@ -119,53 +119,40 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PopisDokumentacijeNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>757, 168</value>
-  </data>
-  <data name="PopisDokumentacijeNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>673, 125</value>
+    <value>515, 149</value>
   </data>
   <data name="PopisDokumentacijeStatusButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>805, 1044</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PopisDokumentacijeStatusButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="PopisDokumentacijeStatusButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 42</value>
+    <value>551, 850</value>
   </data>
   <data name="PopisDokumentacijeClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>800, 356</value>
+    <value>547, 300</value>
   </data>
   <data name="PopisDokumentacijeClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 35</value>
+    <value>208, 26</value>
   </data>
   <data name="PopisDokumentacijeClanoviLabel.Text" xml:space="preserve">
     <value>Assigned members</value>
   </data>
   <data name="PopisDokumentacijeOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>800, 574</value>
+    <value>547, 474</value>
   </data>
   <data name="PopisDokumentacijeOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 35</value>
+    <value>128, 26</value>
   </data>
   <data name="PopisDokumentacijeOpisLabel.Text" xml:space="preserve">
     <value>Description</value>
   </data>
   <data name="PopisDokumentacijePeriodLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>800, 882</value>
+    <value>547, 721</value>
   </data>
   <data name="PopisDokumentacijePeriodLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 35</value>
+    <value>63, 26</value>
   </data>
   <data name="PopisDokumentacijePeriodLabel.Text" xml:space="preserve">
     <value>Time</value>
   </data>
   <data name="PopisDokumentacijeStatusLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>800, 995</value>
-  </data>
-  <data name="PopisDokumentacijeStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 35</value>
+    <value>547, 811</value>
   </data>
   <data name="PopisDokumentacijeNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -282,14 +269,12 @@
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="PopisDokumentacijeNatragButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 15</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PanelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="PopisDokumentacijeNatragButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="PopisDokumentacijeNatragButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 80</value>
+  <data name="PanelLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 84</value>
   </data>
   <data name="PopisDokumentacijeProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1318,56 +1303,17 @@
         ABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 </value>
   </data>
-  <data name="PopisDokumentacijeProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2429, 16</value>
-  </data>
-  <data name="PopisDokumentacijeProfilPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="PopisDokumentacijeProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 81</value>
-  </data>
-  <data name="PopisDokumentacijeProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2200, 39</value>
-  </data>
-  <data name="PopisDokumentacijeProfilLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="PopisDokumentacijeProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 37</value>
-  </data>
-  <data name="PopisDokumentacijePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 1</value>
-  </data>
-  <data name="PopisDokumentacijePanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="PopisDokumentacijePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2560, 112</value>
-  </data>
   <data name="PopisDokumentacijeBazaClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>800, 401</value>
-  </data>
-  <data name="PopisDokumentacijeBazaClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 32</value>
+    <value>547, 336</value>
   </data>
   <data name="PopisDokumentacijeBazaOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>800, 620</value>
-  </data>
-  <data name="PopisDokumentacijeBazaOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 32</value>
+    <value>547, 511</value>
   </data>
   <data name="PopisDokumentacijeBazaPeriodLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>801, 931</value>
-  </data>
-  <data name="PopisDokumentacijeBazaPeriodLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 32</value>
+    <value>548, 760</value>
   </data>
   <data name="PopisDokumentacijeBazaStatusLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>973, 1049</value>
-  </data>
-  <data name="PopisDokumentacijeBazaStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 32</value>
+    <value>677, 854</value>
   </data>
   <data name="PopisDokumentacijeReportButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -1439,25 +1385,22 @@
   <data name="PopisDokumentacijeReportButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
+  <data name="PopisDokumentacijeReportButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1200, 189</value>
+  </data>
   <data name="PopisDokumentacijeReportButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="PopisDokumentacijeReportButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 75</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>12, 25</value>
+    <value>60, 60</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1924, 1050</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>1896, 1018</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>2550, 1329</value>
+    <value>1918, 1074</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1438, 1011</value>
+    <value>1084, 820</value>
   </data>
 </root>
