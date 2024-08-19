@@ -125,8 +125,8 @@
   <data name="PopisDokumentacijeBazaPeriodLabel.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
-  <data name="PopisDokumentacijeBazaPeriodLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>601, 745</value>
+  <data name="PopisDokumentacijeNaslovLabel.Text" xml:space="preserve">
+    <value>Naziv zadatka</value>
   </data>
   <data name="PopisDokumentacijeBazaOpisLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10pt</value>
@@ -134,14 +134,18 @@
   <data name="PopisDokumentacijeBazaClanoviLabel.Text" xml:space="preserve">
     <value>tekst</value>
   </data>
-  <data name="&gt;&gt;PopisDokumentacijeBazaStatusLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PopisDokumentacijeBazaPeriodLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="PopisDokumentacijeBazaPeriodLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>601, 745</value>
+  </data>
+  <data name="PopisDokumentacijeBazaOpisLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="PopisDokumentacijePanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>1920, 90</value>
-  </data>
-  <data name="&gt;&gt;PopisDokumentacijeNatragButton.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="PopisDokumentacijeProfilLinkLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -167,7 +171,6 @@
   <data name="PopisDokumentacijeNatragButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PopisDokumentacijeBazaClanoviLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
@@ -309,11 +312,11 @@
   <data name="PopisDokumentacijeStatusLabel.Text" xml:space="preserve">
     <value>Status</value>
   </data>
+  <data name="PopisDokumentacijeClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>600, 285</value>
+  </data>
   <data name="PopisDokumentacijePeriodLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 26</value>
-  </data>
-  <data name="PopisDokumentacijeBazaOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>600, 496</value>
   </data>
   <data name="&gt;&gt;PopisDokumentacijeProfilPictureBox.Parent" xml:space="preserve">
     <value>PopisDokumentacijePanel</value>
@@ -1129,9 +1132,6 @@
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>1919, 1077</value>
   </data>
-  <data name="&gt;&gt;PopisDokumentacijePeriodLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
   <data name="PopisDokumentacijePeriodLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 11pt, style=Bold</value>
   </data>
@@ -1140,12 +1140,6 @@
   </data>
   <data name="PopisDokumentacijeBazaStatusLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="PopisDokumentacijePeriodLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;PopisDokumentacijePanel.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;PopisDokumentacijePanel.Name" xml:space="preserve">
     <value>PopisDokumentacijePanel</value>
@@ -1156,8 +1150,14 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>PopisDokumentacije</value>
   </data>
-  <data name="&gt;&gt;PopisDokumentacijeProfilPictureBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="PopisDokumentacijeBazaOpisLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="PopisDokumentacijeStatusLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;PopisDokumentacijePeriodLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1165,11 +1165,11 @@
   <data name="&gt;&gt;PopisDokumentacijeStatusLabel.Name" xml:space="preserve">
     <value>PopisDokumentacijeStatusLabel</value>
   </data>
+  <data name="PopisDokumentacijeBazaPeriodLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt</value>
+  </data>
   <data name="&gt;&gt;PopisDokumentacijeClanoviLabel.Name" xml:space="preserve">
     <value>PopisDokumentacijeClanoviLabel</value>
-  </data>
-  <data name="PopisDokumentacijeOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>600, 459</value>
   </data>
   <data name="&gt;&gt;PopisDokumentacijeOpisLabel.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -1179,9 +1179,6 @@
   </data>
   <data name="PopisDokumentacijeStatusLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
-  </data>
-  <data name="PopisDokumentacijeNaslovLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
   </data>
   <data name="&gt;&gt;PopisDokumentacijeBazaClanoviLabel.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -1204,9 +1201,6 @@
   <data name="PopisDokumentacijeBazaPeriodLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 23</value>
   </data>
-  <data name="PopisDokumentacijeNaslovLabel.Text" xml:space="preserve">
-    <value>Naziv zadatka</value>
-  </data>
   <data name="PopisDokumentacijeProfilPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -1219,17 +1213,14 @@
   <data name="PopisDokumentacijeBazaStatusLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>730, 839</value>
   </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="PopisDokumentacijeReportButton.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
   <data name="PopisDokumentacijePeriodLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="PopisDokumentacijeBazaOpisLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="PopisDokumentacijeBazaOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>600, 496</value>
   </data>
   <data name="&gt;&gt;PopisDokumentacijeStatusButton.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1249,6 +1240,12 @@
   <data name="&gt;&gt;PopisDokumentacijeReportButton.Name" xml:space="preserve">
     <value>PopisDokumentacijeReportButton</value>
   </data>
+  <data name="&gt;&gt;PopisDokumentacijeBazaStatusLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PopisDokumentacijeProfilPictureBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;PopisDokumentacijeBazaStatusLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -1260,6 +1257,9 @@
   </data>
   <data name="PopisDokumentacijeStatusLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>600, 796</value>
+  </data>
+  <data name="PopisDokumentacijeStatusButton.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
   <data name="&gt;&gt;PopisDokumentacijeStatusButton.Name" xml:space="preserve">
     <value>PopisDokumentacijeStatusButton</value>
@@ -1433,14 +1433,11 @@
   <data name="PopisDokumentacijeBazaClanoviLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="PopisDokumentacijeProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1650, 31</value>
-  </data>
   <data name="PopisDokumentacijeBazaPeriodLabel.Text" xml:space="preserve">
     <value>tekst</value>
   </data>
-  <data name="PopisDokumentacijeClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>600, 285</value>
+  <data name="PopisDokumentacijePeriodLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="PopisDokumentacijeProfilPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1562,6 +1559,9 @@
   <data name="PopisDokumentacijeBazaOpisLabel.Text" xml:space="preserve">
     <value>tekst</value>
   </data>
+  <data name="PopisDokumentacijeNatragButton.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
   <data name="PopisDokumentacijeReportButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>1671, 218</value>
   </data>
@@ -1589,17 +1589,20 @@
   <data name="&gt;&gt;PopisDokumentacijeProfilPictureBox.Name" xml:space="preserve">
     <value>PopisDokumentacijeProfilPictureBox</value>
   </data>
+  <data name="PopisDokumentacijeNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
   <data name="PopisDokumentacijeOpisLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="PopisDokumentacijeBazaStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 23</value>
-  </data>
-  <data name="PopisDokumentacijeBazaPeriodLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt</value>
+  <data name="PopisDokumentacijeOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>600, 459</value>
   </data>
   <data name="&gt;&gt;PopisDokumentacijeProfilLinkLabel.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="PopisDokumentacijeProfilLinkLabel.Text" xml:space="preserve">
+    <value>Sara Bednaić</value>
   </data>
   <data name="PopisDokumentacijeStatusButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>604, 835</value>
@@ -1615,6 +1618,9 @@
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
+  </data>
+  <data name="PopisDokumentacijeBazaOpisLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="&gt;&gt;PopisDokumentacijeBazaClanoviLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1646,8 +1652,8 @@
   <data name="PopisDokumentacijeOpisLabel.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="PopisDokumentacijeNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="PopisDokumentacijeNaslovLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="&gt;&gt;PopisDokumentacijeBazaStatusLabel.Name" xml:space="preserve">
     <value>PopisDokumentacijeBazaStatusLabel</value>
@@ -1664,14 +1670,11 @@
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
-  <data name="PopisDokumentacijeBazaOpisLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
+  <data name="PopisDokumentacijeProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1650, 31</value>
   </data>
   <data name="PopisDokumentacijeOpisLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 11pt, style=Bold</value>
-  </data>
-  <data name="PopisDokumentacijeStatusButton.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
   </data>
   <data name="PopisDokumentacijeProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 29</value>
@@ -1682,14 +1685,14 @@
   <data name="&gt;&gt;PopisDokumentacijeNaslovLabel.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="PopisDokumentacijeProfilLinkLabel.Text" xml:space="preserve">
-    <value>Sara Bednaić</value>
+  <data name="PopisDokumentacijeBazaStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 23</value>
   </data>
   <data name="&gt;&gt;PopisDokumentacijeReportButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PopisDokumentacijeBazaPeriodLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;PopisDokumentacijePanel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;PopisDokumentacijeNaslovLabel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1697,17 +1700,14 @@
   <data name="PopisDokumentacijeOpisLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="PopisDokumentacijeStatusLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
+  <data name="&gt;&gt;PopisDokumentacijePeriodLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="PopisDokumentacijeNatragButton.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="&gt;&gt;PopisDokumentacijeNatragButton.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="PopisDokumentacijePanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 1</value>
-  </data>
-  <data name="PopisDokumentacijeNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>568, 134</value>
   </data>
   <data name="PopisDokumentacijeClanoviLabel.Text" xml:space="preserve">
     <value>Dodijeljeni članovi</value>
@@ -1751,8 +1751,8 @@
   <data name="&gt;&gt;PopisDokumentacijeBazaPeriodLabel.Name" xml:space="preserve">
     <value>PopisDokumentacijeBazaPeriodLabel</value>
   </data>
-  <data name="PopisDokumentacijeBazaOpisLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="PopisDokumentacijeNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>568, 134</value>
   </data>
   <data name="PopisDokumentacijeBazaStatusLabel.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>

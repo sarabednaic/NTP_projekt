@@ -57,7 +57,7 @@
             // PopisDokumentacijeStatusButton
             // 
             resources.ApplyResources(this.PopisDokumentacijeStatusButton, "PopisDokumentacijeStatusButton");
-            this.PopisDokumentacijeStatusButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.PopisDokumentacijeStatusButton.BackColor = System.Drawing.Color.Green;
             this.PopisDokumentacijeStatusButton.Name = "PopisDokumentacijeStatusButton";
             this.PopisDokumentacijeStatusButton.UseVisualStyleBackColor = false;
             // 
@@ -66,7 +66,6 @@
             resources.ApplyResources(this.PopisDokumentacijeClanoviLabel, "PopisDokumentacijeClanoviLabel");
             this.PopisDokumentacijeClanoviLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.PopisDokumentacijeClanoviLabel.Name = "PopisDokumentacijeClanoviLabel";
-            
             // 
             // PopisDokumentacijeOpisLabel
             // 
@@ -79,7 +78,6 @@
             resources.ApplyResources(this.PopisDokumentacijePeriodLabel, "PopisDokumentacijePeriodLabel");
             this.PopisDokumentacijePeriodLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.PopisDokumentacijePeriodLabel.Name = "PopisDokumentacijePeriodLabel";
-            
             // 
             // PopisDokumentacijeStatusLabel
             // 
