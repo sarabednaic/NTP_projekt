@@ -43,6 +43,7 @@
             this.PopisDokumentacijeBazaOpisLabel = new System.Windows.Forms.Label();
             this.PopisDokumentacijeBazaPeriodLabel = new System.Windows.Forms.Label();
             this.PopisDokumentacijeBazaStatusLabel = new System.Windows.Forms.Label();
+            this.PopisDokumentacijeReportButton = new System.Windows.Forms.Button();
             PopisDokumentacijeNaslovLabel = new System.Windows.Forms.Label();
             this.PopisDokumentacijePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PopisDokumentacijeProfilPictureBox)).BeginInit();
@@ -65,7 +66,7 @@
             resources.ApplyResources(this.PopisDokumentacijeClanoviLabel, "PopisDokumentacijeClanoviLabel");
             this.PopisDokumentacijeClanoviLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.PopisDokumentacijeClanoviLabel.Name = "PopisDokumentacijeClanoviLabel";
-            this.PopisDokumentacijeClanoviLabel.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // PopisDokumentacijeOpisLabel
             // 
@@ -78,7 +79,7 @@
             resources.ApplyResources(this.PopisDokumentacijePeriodLabel, "PopisDokumentacijePeriodLabel");
             this.PopisDokumentacijePeriodLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.PopisDokumentacijePeriodLabel.Name = "PopisDokumentacijePeriodLabel";
-            this.PopisDokumentacijePeriodLabel.Click += new System.EventHandler(this.label3_Click);
+            
             // 
             // PopisDokumentacijeStatusLabel
             // 
@@ -92,6 +93,7 @@
             this.PopisDokumentacijeNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.PopisDokumentacijeNatragButton.Name = "PopisDokumentacijeNatragButton";
             this.PopisDokumentacijeNatragButton.UseVisualStyleBackColor = false;
+            this.PopisDokumentacijeNatragButton.Click += new System.EventHandler(this.PopisDokumentacijeNatragButton_Click);
             // 
             // PopisDokumentacijePanel
             // 
@@ -141,10 +143,17 @@
             this.PopisDokumentacijeBazaStatusLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.PopisDokumentacijeBazaStatusLabel.Name = "PopisDokumentacijeBazaStatusLabel";
             // 
+            // PopisDokumentacijeReportButton
+            // 
+            resources.ApplyResources(this.PopisDokumentacijeReportButton, "PopisDokumentacijeReportButton");
+            this.PopisDokumentacijeReportButton.Name = "PopisDokumentacijeReportButton";
+            this.PopisDokumentacijeReportButton.UseVisualStyleBackColor = true;
+            // 
             // PopisDokumentacije
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.PopisDokumentacijeReportButton);
             this.Controls.Add(this.PopisDokumentacijeBazaStatusLabel);
             this.Controls.Add(this.PopisDokumentacijeBazaPeriodLabel);
             this.Controls.Add(this.PopisDokumentacijeBazaOpisLabel);
@@ -180,5 +189,6 @@
         private System.Windows.Forms.Label PopisDokumentacijeBazaOpisLabel;
         private System.Windows.Forms.Label PopisDokumentacijeBazaPeriodLabel;
         private System.Windows.Forms.Label PopisDokumentacijeBazaStatusLabel;
+        private System.Windows.Forms.Button PopisDokumentacijeReportButton;
     }
 }

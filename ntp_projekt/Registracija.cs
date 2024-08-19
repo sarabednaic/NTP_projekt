@@ -54,7 +54,7 @@ namespace ntp_projekt
                     if (rezultat == "0")
                     {
                         // SQL upit za upis novog korisnika u bazu
-                        string upit = "INSERT INTO korisnik (korisnicko_ime, ime, prezime, lozinka, sol) VALUES (\""
+                        string upit = "INSERT INTO korisnik (korisnicko_ime, ime, prezime, lozinka , sol) VALUES (\""
                             + noviKorisnik.KorisnickoIme + "\", \""
                             + noviKorisnik.Ime + "\", \""
                             + noviKorisnik.Prezime + "\", \""
@@ -62,6 +62,8 @@ namespace ntp_projekt
                             + sol + "\");";
 
                         int prijava = baza.BazaWrite(upit);
+                        string query = $"UPDATE korisnik SET profilna = ? WHERE korisnicko_ime = \"{noviKorisnik.KorisnickoIme}\";";
+                        baza.BazaSetImage(query, @"..\..\Images\profilna.jpg");
 
                         if (prijava > 0)
                         {

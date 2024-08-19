@@ -17,52 +17,13 @@ namespace ntp_projekt
             InitializeComponent();
             PopisZadatakaProfilLinkLabel.Text = Session.DohvatiPunoIme();
             PopisZadatakaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
+            PopisZadatkaControl popis = new PopisZadatkaControl();
+            PopisZadatakaZadatciFlowLayoutPanel.Controls.Add(popis);
         }
 
-        private void PopisDokumentacijeArrowButton_Click(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        private void PopisDokumentacijePFPButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PopisZadatakaNatragButton_Click(object sender, EventArgs e)
-        {
-            StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
-        }
+        
 
         private void PopisZadatakaReportButton_Click(object sender, EventArgs e)
         {
@@ -83,5 +44,12 @@ namespace ntp_projekt
         {
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
+
+        private void PopisZadatakaNatragButton_Click(object sender, EventArgs e)
+        {
+            StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
+        }
+
+        
     }
 }

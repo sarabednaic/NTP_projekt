@@ -118,23 +118,54 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PopisDokumentacijeNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>757, 168</value>
+  </data>
+  <data name="PopisDokumentacijeNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>673, 125</value>
+  </data>
+  <data name="PopisDokumentacijeStatusButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>805, 1044</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PopisDokumentacijeStatusButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="PopisDokumentacijeStatusButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 42</value>
+  </data>
+  <data name="PopisDokumentacijeClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>800, 356</value>
+  </data>
   <data name="PopisDokumentacijeClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 26</value>
+    <value>290, 35</value>
   </data>
   <data name="PopisDokumentacijeClanoviLabel.Text" xml:space="preserve">
     <value>Assigned members</value>
   </data>
+  <data name="PopisDokumentacijeOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>800, 574</value>
+  </data>
   <data name="PopisDokumentacijeOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 26</value>
+    <value>180, 35</value>
   </data>
   <data name="PopisDokumentacijeOpisLabel.Text" xml:space="preserve">
     <value>Description</value>
   </data>
+  <data name="PopisDokumentacijePeriodLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>800, 882</value>
+  </data>
   <data name="PopisDokumentacijePeriodLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 26</value>
+    <value>83, 35</value>
   </data>
   <data name="PopisDokumentacijePeriodLabel.Text" xml:space="preserve">
     <value>Time</value>
+  </data>
+  <data name="PopisDokumentacijeStatusLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>800, 995</value>
+  </data>
+  <data name="PopisDokumentacijeStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 35</value>
   </data>
   <data name="PopisDokumentacijeNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -250,6 +281,15 @@
         ZvC/ob3uuuv+/Kqrrrrr5S9/+Y9Wrlz5i0WLFh1YtWrVzosvvvhv3/CGN/zVO9/5zv/yoQ996D9861vf
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="PopisDokumentacijeNatragButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 15</value>
+  </data>
+  <data name="PopisDokumentacijeNatragButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="PopisDokumentacijeNatragButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 80</value>
   </data>
   <data name="PopisDokumentacijeProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1277,5 +1317,147 @@
         ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
         ABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 </value>
+  </data>
+  <data name="PopisDokumentacijeProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2429, 16</value>
+  </data>
+  <data name="PopisDokumentacijeProfilPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="PopisDokumentacijeProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 81</value>
+  </data>
+  <data name="PopisDokumentacijeProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2200, 39</value>
+  </data>
+  <data name="PopisDokumentacijeProfilLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="PopisDokumentacijeProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 37</value>
+  </data>
+  <data name="PopisDokumentacijePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 1</value>
+  </data>
+  <data name="PopisDokumentacijePanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="PopisDokumentacijePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>2560, 112</value>
+  </data>
+  <data name="PopisDokumentacijeBazaClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>800, 401</value>
+  </data>
+  <data name="PopisDokumentacijeBazaClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 32</value>
+  </data>
+  <data name="PopisDokumentacijeBazaOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>800, 620</value>
+  </data>
+  <data name="PopisDokumentacijeBazaOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 32</value>
+  </data>
+  <data name="PopisDokumentacijeBazaPeriodLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>801, 931</value>
+  </data>
+  <data name="PopisDokumentacijeBazaPeriodLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 32</value>
+  </data>
+  <data name="PopisDokumentacijeBazaStatusLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>973, 1049</value>
+  </data>
+  <data name="PopisDokumentacijeBazaStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 32</value>
+  </data>
+  <data name="PopisDokumentacijeReportButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="PopisDokumentacijeReportButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEMAAABHCAYAAABcW/plAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAADY1JREFUeF7dnFnIlVUXx9/UShEKysq0sjLFovQqkErNyiIISwlB6CK0qKjoJiSz
+        my4CkbwoKMgGIpDA5rugyWhSy8xwyIwSKQsTbLTBdPf9Nvwf/s86e59zXouyb8FirbOmvfY6e3zO874D
+        Bw4cSAcPHmzhH3/8kSk68Pfff0+fffZZevPNN9Nrr72WXn311fTKK680vMv0Wbw+y8b1pRiyLelrfM32
+        rbfeSjt27Ei//fZb7of3yfsr+UD6H7iBG1KE5cuXpylTpqQjjjjiP4lDhw5NF1xwQVq5cmXuz/79++ly
+        sc8D/sHp999/n2bMmJGGDBlSbOS/hPSBotx0003p559/zv2LfQabaeIGOFx66aX/F4VwHDZsWFqwYEHH
+        MiC+GRkSMoxWrFjRUQg+D7Y4AwMDRbljL5t+YghLtlF29NFH5/WlVJDWAooB82r8+PGtYAyx2267LS9I
+        H3zwQVdcv359UV5CbHvZy+b999+v2kruevg33ngjzZ07N+ev/vCFXnnlla1iqP95ZKgQUALFEXD33Xc3
+        Tlp85Cc+ykC3lSzq3VcUVD7Oy895AL3L3Q+89tprW/058sgj07ffftuyhc/FUGPASy+91HIE16xZ0zQc
+        A4hGXrYulx/tAS53W89HvOvFA1EOBdUGslWrVrX6w5e9cePGxlZ+A2pMAZ577rkOx+3btzeBYwCoePzh
+        AY8bbQHxrgdjPtK7LdgtRtRz5vA+gcyA6JdHhhzha8Vwp8EkKeQzflHvdooL9NuGUHq1oc/QWAz6RDGk
+        l20+dHnDzz77bIcjxZA+BnC5x3K9eEC27hdtuxWixLus1EatGNG2mSYSxpEBfvrpp9kGW9kpgHigVAjX
+        i3c96H7dCtErBiDe/bqNDI/Vcc6ojQx3ighEmdu6XnIoOJhCoHe5/KQvycFe00R2+ZzhWCoGlzR3ch4g
+        SXWEQxuU88oPP/yQfvrpp/Tjjz/mUy02v/zyS/6sewK2AJ9//fXXjJJDxas9kKsCcRWbmLFQzteKEW07
+        bq3dFlDZqmEAumjRojRt2rR08cUXp/nz56cNGzakTz75JI0ZM6bB66+/Pr3++uvp9NNPT6ecckqaPHly
+        9qOze/fuTYsXL04TJ05MkyZNykdmOvr222/na8GFF16YrrjiirR06dL8xXhc8K677moVTX0RH4sBxgWU
+        PvU1TVgzpJetCgGS7OWXX562bt2a+Ysuuij7cPJ77LHH8jkF3fPPP59jPvXUU2nJkiXNN3TjjTemCRMm
+        5CJyzhk5cmSWvfDCCzkGse677758lOYU/O6776YbbrghjRgxIhfsiy++aHIB1Tnly7Xe+wRyokXvtq2R
+        AR+LAcbdBFAAkAJcdtll+XkH3+zVV1+dO4DvHXfckR588ME8Kugcso8//jiPQDr68ssvp2OOOSbdf//9
+        ORZxZ86cmU499dTGhs4zco466qj00Ucf5VFwzz335KJ1GxHiadv7E6eJbFu3VmhtN5EegNdnkqcYw4cP
+        z98UN0PuBNu2bcu+U6dOzdPngQceaEbGOeeck04++eR0++23py+//DJ3+JFHHmniXnXVVemEE07IxSPx
+        4447LsedM2dO2rdvX87BixHzgYLIgNqa4bbwzcMdCZ955pkOR60ZAE5qXH4Ug9GwZ8+edOKJJ+bnBhoZ
+        77zzTrbBlmLQcQpAp5Cx+LGOzJo1K3fsm2++yaPikksuyfa0/9133+XOU3B88YsjA4yFEB+niY8MUH4d
+        06Q0MnyauK14ijF79uyc2Lx58/KtlwWUjjMK0C9cuLCZJuwy+KmwPIU69thj07hx49KoUaOy/6ZNm1rF
+        WL16dY734osvZh/WnNLIiLnB9zNNoH0dx1nB0bujKPjQQw+lJ554IifGIvjwww+nr776KlN00Keffjo/
+        j+Qz26diUBC2VTpPDBbXr7/+OuuRseMweijgk08+mRdj/FhHeO6igiLz3Jwv7SYsoBoR2IEdx/HaNIkN
+        QPGTvwJ6LOmjX+SBKIfiT6Ek89huE2VCyWIxeEazbt26Dr+eu4lGhvRuW+qE87ItJdyNd1mpDWiNL9nW
+        pkm0zcVwYa/dBFr7xqGgOu88ercFgSgXrbUh3ttABrjeaW2auA3YKgZYu5u4U61h8K8WQn5AlIuPhRCt
+        8bWt1W2B1jkDrI0M2QDiRVkY2T04ZUL74aE1vputo2S7du1q5eM8tFYM2QLQvJtQaQlrJ1B3Ar1h7iVs
+        eyXksFSS/53I4c07rz6JLxVD08T71Hrsh6BUDEaGO8XGOEdEn38SeXLv+YgH4GsjA/A+5WkCKEBpmpTO
+        GeLx+7eLceutt+ZclJt49alUDH5KiH1qnTPA2gLqTrKV3+FSDPIBPDfyrU0T9LKB9lxAcSydM7yA7OMc
+        k3sh1/OSnGN6SS6MfvoMxZfH/p6PFwKsTRPZyK9VDGi3c4Zs1BgAL530QsBlMWEAXjYeQ1Q2olHvPOB6
+        8bEYoHYTxSCf5uGOhN3OGXKKvDcsXom5vJfeeWiNd1k/+ZQe7mhkyA/oOHSVpomK4Q1jG3nFALB1edSX
+        5OKBKBOWOg+IL/n1miYANI8MF3abJtgB3RoGXO6IHyB7UedlCx9tHfstBFCaJrq1ArJtpgkAXzt0oQNL
+        DfPwlifWXLMdXSaep9nwUOkcpS/pasgjAeXkuQHkWxsZgPepOWcoQG1kuJNs4cHp06fnX7ZBTpwgPKdD
+        fZZMNiVbyeRXspXe7TmBKh/lBijffnYTaD5nuLC0gLK1lgoBRc7TcPf5p1HnDOUGiAdLxYi3VuiAf4CW
+        iuEXNbcFgX/70KWRoXyUo3DQT8f5huFL00RrhmyhoBrmokYDoBqTr+RR3w/WYgil090EUD8831gMkGJI
+        D+LXjAwpeu0mbivKaZAfixwff/zxDv7RRx8t6rp9lizqHXkeqrxibtBD+hEJYbdDlxoDop/zgMvlJ162
+        iuVy18e40rstCLif8/iV1gwuam4L5JEhJ2i3kaGGsVUQp9K73HnvnGzl53aR71WIUj7igdpu4vnA52JI
+        CNQWUAWGlhomBuDymm2JL9kCNT0ovcuhoHe09COSpgkg20G/01VruKQv2TqvtkuyqPdYoNqTrfPKR/Ju
+        hy5vo5kmClYqhs4ZsvGGnfeOII8onaP7iPckQfkqjvQuly1ywOW9poni9vVOV9xNPAD8ddddl9+tAHm1
+        QBg/O6IrHfOd9zagkkMldzvksRDQbr+1yhe+tZvA1xZQ6T0AAD3UQ9eWLVuyvxdCbcT2+GWNTt155535
+        XKNCn3XWWRnFe8GF/LDt7aoYxPU2Bn3OAOM3cKjF4FF/jKuYkkN5GeWaa67Jv8KX4hwKxuM42DzPkLB2
+        N0EPlobiXxkZ+AOeg/P8CH322WfnPEoxDhXjNAGaaSJhbTeRDSBedNmyZemWW25JN998c0bn9Tki73Dw
+        LgYxaiOCX/V57/vvLgQvyuzcubNpS+21pglQmyalESE/EL1/dr142YgiVyFk4368AcQVXXlQFK7u5557
+        bi4mdxJurI7IQP5ywPsgf9YPTp/ervLpa5ronBETVrBuvFCymITbOQ/S4ZjLvffe27ymgL86IkTOK1S8
+        BRh9x44dm5+k6wWX2HYuBiBhaWTEu4lQMqh4wOVOvRDRTxQEsI3PSXizR+90eTz5gbwsgx2dlx+jafTo
+        0bkQsot+YHPOkEHpZRX9ouYBxEPFK8mS3gsRO+E8oHzYKj0X3htTDPeD4sObPmeeeWbLh/xPO+20tHbt
+        2lYb4j1GxzTp55zRDw91HqokSnpQeqH/RRTIXxVJ53Gh/BrPy3VuDx5//PHpvffeawrsbcQYrd0E2s85
+        oxfvssGMiCiP3zKvPnoMKMh7pdj6YguedNJJzRqBndqQf+Sb3QQK1hZQdwRKPFjqPOByj6UY6KO818gA
+        WSwpBA+HPWd2Dc4SpUJ4Gx6v45zR7dAl2xIvlKxUFLfpxouWiuFxOcHyHjoLpOfLrvHhhx92xI18lPV1
+        zvCRIXtAfKTRNvKyAWq2dLo2MtDTWb59Oi+97xqlkSZUG1Gfi+HVjiMD1AIqx8iXZGC3EQHEhOUnfVwz
+        VIzNmzenM844o6WjKL5rEBuIcUUjD+SHO4AUvc4ZUOcVzGVATQ9K73Jo5OPI4LLGfWYwu0aMC428bIs/
+        IvnQg4/TxL/xKIt62YgHlLDk7geIjyPj/PPPz4WIR3SmBmcMj1Xioc5DAclbawao97u9MeZgtCt1HnA5
+        dqJgTQ8iB8RD48ggF/+iQKYGp04dsQH8I+/tQaWXDOzYTeh4bJC/9CGoAgvxU+KAeNeX+IjyA8VD4wnU
+        kRy5f7CQ1u4a4ksyQDLJWyMDnn+8wR/QeMOs0vyExx/XcOMjASj7OLSEsokyySPvNlBic8fwPDwfpgaH
+        LYqm3NUP74/ksZ8lWTMy3IC/CvK9+3BCRgRFomClQng/ogwsjQjxeWRIKAVXZF4ziNPlcEB2Db1o4p1T
+        7k774aEg8ZppIqGMd+/enf9i8HAZIXwxcdcYTCG62VIIoOOcIZ5FiT964W/HzjvvvCYhKH+v8U8jf6rF
+        elKbGlHuekC868VL35omgBtDaYTCcA9gAeVxvVD/BcllkvfiXdYthvSff/55zkX5xjyjTDwAdbmwPRAO
+        pD8BHoixeIQGVtcAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="PopisDokumentacijeReportButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="PopisDokumentacijeReportButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="PopisDokumentacijeReportButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 75</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>12, 25</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1924, 1050</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>2550, 1329</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1438, 1011</value>
   </data>
 </root>

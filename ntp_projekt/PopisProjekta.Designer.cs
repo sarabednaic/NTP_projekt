@@ -30,7 +30,6 @@
         {
             System.Windows.Forms.Label PopisProjektaNaslovLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopisProjekta));
-            this.PopisProjektaListDataGridView = new System.Windows.Forms.DataGridView();
             this.PopisProjektaAddButton = new System.Windows.Forms.Button();
             this.PopisProjektaSortButton = new System.Windows.Forms.Button();
             this.PopisProjektaSearchRichTextBox = new System.Windows.Forms.RichTextBox();
@@ -38,8 +37,8 @@
             this.PopisProjektaPanel = new System.Windows.Forms.Panel();
             this.PopisProjektaProfilPictureBox = new System.Windows.Forms.PictureBox();
             this.PopisProjektaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.PopisProjektaProjektiFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             PopisProjektaNaslovLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.PopisProjektaListDataGridView)).BeginInit();
             this.PopisProjektaPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PopisProjektaProfilPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -49,16 +48,6 @@
             resources.ApplyResources(PopisProjektaNaslovLabel, "PopisProjektaNaslovLabel");
             PopisProjektaNaslovLabel.Name = "PopisProjektaNaslovLabel";
             PopisProjektaNaslovLabel.Click += new System.EventHandler(this.UrediZadatakNaslovLabel_Click);
-            // 
-            // PopisProjektaListDataGridView
-            // 
-            resources.ApplyResources(this.PopisProjektaListDataGridView, "PopisProjektaListDataGridView");
-            this.PopisProjektaListDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.PopisProjektaListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PopisProjektaListDataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.PopisProjektaListDataGridView.Name = "PopisProjektaListDataGridView";
-            this.PopisProjektaListDataGridView.RowTemplate.Height = 33;
-            this.PopisProjektaListDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PopisProjektaListDataGridView_CellContentClick);
             // 
             // PopisProjektaAddButton
             // 
@@ -109,21 +98,26 @@
             this.PopisProjektaProfilLinkLabel.TabStop = true;
             this.PopisProjektaProfilLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.PopisProjektaProfilLinkLabel_LinkClicked_1);
             // 
+            // PopisProjektaProjektiFlowLayoutPanel
+            // 
+            resources.ApplyResources(this.PopisProjektaProjektiFlowLayoutPanel, "PopisProjektaProjektiFlowLayoutPanel");
+            this.PopisProjektaProjektiFlowLayoutPanel.Name = "PopisProjektaProjektiFlowLayoutPanel";
+            this.PopisProjektaProjektiFlowLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.PopisProjektaProjektiFlowLayoutPanel_Paint);
+            // 
             // PopisProjekta
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.PopisProjektaProjektiFlowLayoutPanel);
             this.Controls.Add(this.PopisProjektaPanel);
             this.Controls.Add(this.PopisProjektaSearchButton);
             this.Controls.Add(this.PopisProjektaSearchRichTextBox);
             this.Controls.Add(PopisProjektaNaslovLabel);
             this.Controls.Add(this.PopisProjektaSortButton);
             this.Controls.Add(this.PopisProjektaAddButton);
-            this.Controls.Add(this.PopisProjektaListDataGridView);
             this.Name = "PopisProjekta";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PopisProjekta_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.PopisProjektaListDataGridView)).EndInit();
             this.PopisProjektaPanel.ResumeLayout(false);
             this.PopisProjektaPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PopisProjektaProfilPictureBox)).EndInit();
@@ -133,8 +127,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView PopisProjektaListDataGridView;
         private System.Windows.Forms.Button PopisProjektaAddButton;
         private System.Windows.Forms.Button PopisProjektaSortButton;
         private System.Windows.Forms.RichTextBox PopisProjektaSearchRichTextBox;
@@ -142,5 +134,6 @@
         private System.Windows.Forms.Panel PopisProjektaPanel;
         private System.Windows.Forms.PictureBox PopisProjektaProfilPictureBox;
         private System.Windows.Forms.LinkLabel PopisProjektaProfilLinkLabel;
+        private System.Windows.Forms.FlowLayoutPanel PopisProjektaProjektiFlowLayoutPanel;
     }
 }

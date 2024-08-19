@@ -118,24 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PopisZadatakaClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>537, 206</value>
-  </data>
-  <data name="PopisZadatakaClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 29</value>
-  </data>
-  <data name="PopisZadatakaClanoviLabel.Text" xml:space="preserve">
-    <value>Assigned members</value>
-  </data>
-  <data name="PopisZadatakaAdminiLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>773, 206</value>
-  </data>
-  <data name="PopisZadatakaAdminiLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 29</value>
-  </data>
-  <data name="PopisZadatakaAdminiLabel.Text" xml:space="preserve">
-    <value>Admins</value>
-  </data>
   <data name="PopisZadatakaReportButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEMAAABHCAYAAABcW/plAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -222,9 +204,6 @@
         WuIPy8am7sVv75+zkh2VfwJOJYlPqW+VPqY7YGznlXqyN7FcoUpz6hxVpZ1w9Xkaz7Yp5QmErigUTRuz
         4fIGYusQK8H6e2+/mf8NsDRmsCmn5HK58j0SK6iggu5QVfUdosjINiGFHhIAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="PopisZadatakaAdminiListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 237</value>
   </data>
   <data name="PopisZadatakaNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1427,14 +1406,5 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAiVde
         +V+9b6XGt2ofXQAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="PopisZadatakaOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 36</value>
-  </data>
-  <data name="PopisZadatakaOpisLabel.Text" xml:space="preserve">
-    <value>Description</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1443, 1021</value>
   </data>
 </root>

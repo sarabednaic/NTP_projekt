@@ -22,6 +22,8 @@ namespace ntp_projekt
             PopisProjektaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
             iniFile = new Ini();
             iniFile.UcitajDatoteku(@"..\..\postavke.ini");
+            PopisProjektaControl popis = new PopisProjektaControl();
+            PopisProjektaProjektiFlowLayoutPanel.Controls.Add(popis);
         }
 
         private void UrediZadatakNaslovLabel_Click(object sender, EventArgs e)
@@ -53,6 +55,11 @@ namespace ntp_projekt
         private void PopisProjekta_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void PopisProjektaProjektiFlowLayoutPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
