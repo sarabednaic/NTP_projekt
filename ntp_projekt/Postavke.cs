@@ -107,7 +107,42 @@ namespace ntp_projekt
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("hr");
             }
 
-            MessageBox.Show("Load");
+            if (font == "S")
+            {
+                PostavkeImeTextBox.Font = new Font("Arial", 7, FontStyle.Regular);
+                PostavkePrezimeTextBox.Font = new Font("Arial", 7, FontStyle.Regular);
+                PostavkeKorisnickoImeTextBox.Font = new Font("Arial", 7, FontStyle.Regular);
+                PostavkeLozinkaLabel.Font = new Font("Arial", 7, FontStyle.Regular);
+                PostavkePonovnoLozinkaLabel.Font = new Font("Arial", 7, FontStyle.Regular);
+                PostavkeLozinkaLabel.Font = new Font("Arial", 7, FontStyle.Regular);
+                PostavkeDeaktivacijaLinkLabel.Font = new Font("Arial", 7, FontStyle.Regular);
+                PostavkeJezikLabel.Font = new Font("Arial", 7, FontStyle.Regular);
+                PostavkeFontLabel.Font = new Font("Arial", 7, FontStyle.Regular);
+            }
+            else if (font == "M")
+            {
+                PostavkeImeTextBox.Font = new Font("Arial", 9, FontStyle.Regular);
+                PostavkePrezimeTextBox.Font = new Font("Arial", 9, FontStyle.Regular);
+                PostavkeKorisnickoImeTextBox.Font = new Font("Arial", 9, FontStyle.Regular);
+                PostavkeLozinkaLabel.Font = new Font("Arial", 9, FontStyle.Regular);
+                PostavkePonovnoLozinkaLabel.Font = new Font("Arial", 9, FontStyle.Regular);
+                PostavkeLozinkaLabel.Font = new Font("Arial", 9, FontStyle.Regular);
+                PostavkeDeaktivacijaLinkLabel.Font = new Font("Arial", 9, FontStyle.Regular);
+                PostavkeJezikLabel.Font = new Font("Arial", 9, FontStyle.Regular);
+                PostavkeFontLabel.Font = new Font("Arial", 9, FontStyle.Regular);
+            }
+            else if (font == "L")
+            {
+                PostavkeImeTextBox.Font = new Font("Arial", 11, FontStyle.Regular);
+                PostavkePrezimeTextBox.Font = new Font("Arial", 11, FontStyle.Regular);
+                PostavkeKorisnickoImeTextBox.Font = new Font("Arial", 11, FontStyle.Regular);
+                PostavkeLozinkaLabel.Font = new Font("Arial", 11, FontStyle.Regular);
+                PostavkePonovnoLozinkaLabel.Font = new Font("Arial", 11, FontStyle.Regular);
+                PostavkeLozinkaLabel.Font = new Font("Arial", 11, FontStyle.Regular);
+                PostavkeDeaktivacijaLinkLabel.Font = new Font("Arial", 11, FontStyle.Regular);
+                PostavkeJezikLabel.Font = new Font("Arial", 11, FontStyle.Regular);
+                PostavkeFontLabel.Font = new Font("Arial", 11, FontStyle.Regular);
+            }
 
         }
 
