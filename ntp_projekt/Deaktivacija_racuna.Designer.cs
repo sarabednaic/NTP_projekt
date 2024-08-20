@@ -39,6 +39,7 @@
             this.DeaktivacijaNatragButton = new System.Windows.Forms.Button();
             this.DeaktivacijaProfilPictureBox = new System.Windows.Forms.PictureBox();
             this.DeaktivacijaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.PanelLogo = new System.Windows.Forms.Panel();
             DeaktivacijaButton = new System.Windows.Forms.Button();
             DeaktivacijaNaslovLabel = new System.Windows.Forms.Label();
             DeaktivacijaLozinkaTextBox = new System.Windows.Forms.TextBox();
@@ -51,8 +52,8 @@
             // 
             // DeaktivacijaButton
             // 
-            resources.ApplyResources(DeaktivacijaButton, "DeaktivacijaButton");
             DeaktivacijaButton.BackColor = System.Drawing.Color.Red;
+            resources.ApplyResources(DeaktivacijaButton, "DeaktivacijaButton");
             DeaktivacijaButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             DeaktivacijaButton.Name = "DeaktivacijaButton";
             DeaktivacijaButton.UseVisualStyleBackColor = false;
@@ -66,45 +67,45 @@
             // 
             // DeaktivacijaLozinkaTextBox
             // 
-            resources.ApplyResources(DeaktivacijaLozinkaTextBox, "DeaktivacijaLozinkaTextBox");
             DeaktivacijaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(DeaktivacijaLozinkaTextBox, "DeaktivacijaLozinkaTextBox");
             DeaktivacijaLozinkaTextBox.Name = "DeaktivacijaLozinkaTextBox";
             // 
             // DeaktivacijaPonovnoLozinkaTextBox
             // 
-            resources.ApplyResources(DeaktivacijaPonovnoLozinkaTextBox, "DeaktivacijaPonovnoLozinkaTextBox");
             DeaktivacijaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(DeaktivacijaPonovnoLozinkaTextBox, "DeaktivacijaPonovnoLozinkaTextBox");
             DeaktivacijaPonovnoLozinkaTextBox.Name = "DeaktivacijaPonovnoLozinkaTextBox";
             // 
             // DeaktivacijaPonovnoLozinkaLabel
             // 
-            resources.ApplyResources(DeaktivacijaPonovnoLozinkaLabel, "DeaktivacijaPonovnoLozinkaLabel");
             DeaktivacijaPonovnoLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DeaktivacijaPonovnoLozinkaLabel, "DeaktivacijaPonovnoLozinkaLabel");
             DeaktivacijaPonovnoLozinkaLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DeaktivacijaPonovnoLozinkaLabel.Name = "DeaktivacijaPonovnoLozinkaLabel";
             DeaktivacijaPonovnoLozinkaLabel.UseWaitCursor = true;
             // 
             // DeaktivacijaLozinkaLabel
             // 
-            resources.ApplyResources(DeaktivacijaLozinkaLabel, "DeaktivacijaLozinkaLabel");
             DeaktivacijaLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DeaktivacijaLozinkaLabel, "DeaktivacijaLozinkaLabel");
             DeaktivacijaLozinkaLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DeaktivacijaLozinkaLabel.Name = "DeaktivacijaLozinkaLabel";
             DeaktivacijaLozinkaLabel.UseWaitCursor = true;
             // 
             // DeaktivacijaProfilPanel
             // 
-            resources.ApplyResources(this.DeaktivacijaProfilPanel, "DeaktivacijaProfilPanel");
             this.DeaktivacijaProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaNatragButton);
             this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaProfilPictureBox);
             this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaProfilLinkLabel);
+            resources.ApplyResources(this.DeaktivacijaProfilPanel, "DeaktivacijaProfilPanel");
             this.DeaktivacijaProfilPanel.Name = "DeaktivacijaProfilPanel";
             // 
             // DeaktivacijaNatragButton
             // 
-            resources.ApplyResources(this.DeaktivacijaNatragButton, "DeaktivacijaNatragButton");
             this.DeaktivacijaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.DeaktivacijaNatragButton, "DeaktivacijaNatragButton");
             this.DeaktivacijaNatragButton.Name = "DeaktivacijaNatragButton";
             this.DeaktivacijaNatragButton.UseVisualStyleBackColor = false;
             this.DeaktivacijaNatragButton.Click += new System.EventHandler(this.DeaktivacijaNatragButton_Click);
@@ -124,10 +125,16 @@
             this.DeaktivacijaProfilLinkLabel.TabStop = true;
             this.DeaktivacijaProfilLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.DeaktivacijaProfilLinkLabel_LinkClicked);
             // 
+            // PanelLogo
+            // 
+            resources.ApplyResources(this.PanelLogo, "PanelLogo");
+            this.PanelLogo.Name = "PanelLogo";
+            // 
             // Deaktivacija_racuna
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.PanelLogo);
             this.Controls.Add(DeaktivacijaLozinkaTextBox);
             this.Controls.Add(DeaktivacijaPonovnoLozinkaTextBox);
             this.Controls.Add(this.DeaktivacijaProfilPanel);
@@ -152,5 +159,6 @@
         private System.Windows.Forms.LinkLabel DeaktivacijaProfilLinkLabel;
         private System.Windows.Forms.PictureBox DeaktivacijaProfilPictureBox;
         private System.Windows.Forms.Button DeaktivacijaNatragButton;
+        private System.Windows.Forms.Panel PanelLogo;
     }
 }

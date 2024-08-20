@@ -50,6 +50,7 @@
             this.DodajZadatakOpisRichTextBox = new System.Windows.Forms.RichTextBox();
             this.DodajZadatakStatusButton = new System.Windows.Forms.Button();
             this.DodajZadatakStatusComboBox = new System.Windows.Forms.ComboBox();
+            this.PanelLogo = new System.Windows.Forms.Panel();
             DodajZadatakVrijemeLabel = new System.Windows.Forms.Label();
             DodajZadatakClanoviLabel = new System.Windows.Forms.Label();
             DodajZadatakNazivTextBox = new System.Windows.Forms.TextBox();
@@ -65,25 +66,25 @@
             // 
             // DodajZadatakVrijemeLabel
             // 
-            resources.ApplyResources(DodajZadatakVrijemeLabel, "DodajZadatakVrijemeLabel");
             DodajZadatakVrijemeLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DodajZadatakVrijemeLabel, "DodajZadatakVrijemeLabel");
             DodajZadatakVrijemeLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakVrijemeLabel.Name = "DodajZadatakVrijemeLabel";
             DodajZadatakVrijemeLabel.UseWaitCursor = true;
             // 
             // DodajZadatakClanoviLabel
             // 
-            resources.ApplyResources(DodajZadatakClanoviLabel, "DodajZadatakClanoviLabel");
             DodajZadatakClanoviLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DodajZadatakClanoviLabel, "DodajZadatakClanoviLabel");
             DodajZadatakClanoviLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakClanoviLabel.Name = "DodajZadatakClanoviLabel";
             DodajZadatakClanoviLabel.UseWaitCursor = true;
             // 
             // DodajZadatakNazivTextBox
             // 
-            resources.ApplyResources(DodajZadatakNazivTextBox, "DodajZadatakNazivTextBox");
             DodajZadatakNazivTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             DodajZadatakNazivTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(DodajZadatakNazivTextBox, "DodajZadatakNazivTextBox");
             DodajZadatakNazivTextBox.Name = "DodajZadatakNazivTextBox";
             // 
             // DodajZadatakNaslovLabel
@@ -93,8 +94,8 @@
             // 
             // DodajZadatakOdDoLabel
             // 
-            resources.ApplyResources(DodajZadatakOdDoLabel, "DodajZadatakOdDoLabel");
             DodajZadatakOdDoLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DodajZadatakOdDoLabel, "DodajZadatakOdDoLabel");
             DodajZadatakOdDoLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakOdDoLabel.Name = "DodajZadatakOdDoLabel";
             DodajZadatakOdDoLabel.UseWaitCursor = true;
@@ -102,8 +103,8 @@
             // 
             // DodajZadatakButton
             // 
-            resources.ApplyResources(DodajZadatakButton, "DodajZadatakButton");
             DodajZadatakButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            resources.ApplyResources(DodajZadatakButton, "DodajZadatakButton");
             DodajZadatakButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             DodajZadatakButton.Name = "DodajZadatakButton";
             DodajZadatakButton.UseVisualStyleBackColor = false;
@@ -111,54 +112,54 @@
             // 
             // DodajZadatakStatusLabel
             // 
-            resources.ApplyResources(DodajZadatakStatusLabel, "DodajZadatakStatusLabel");
             DodajZadatakStatusLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DodajZadatakStatusLabel, "DodajZadatakStatusLabel");
             DodajZadatakStatusLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakStatusLabel.Name = "DodajZadatakStatusLabel";
             DodajZadatakStatusLabel.UseWaitCursor = true;
             // 
             // DodajZadatakProjektLabel
             // 
-            resources.ApplyResources(DodajZadatakProjektLabel, "DodajZadatakProjektLabel");
             DodajZadatakProjektLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DodajZadatakProjektLabel, "DodajZadatakProjektLabel");
             DodajZadatakProjektLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakProjektLabel.Name = "DodajZadatakProjektLabel";
             DodajZadatakProjektLabel.UseWaitCursor = true;
             // 
             // DodajZadatakNazivLabel
             // 
-            resources.ApplyResources(DodajZadatakNazivLabel, "DodajZadatakNazivLabel");
             DodajZadatakNazivLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DodajZadatakNazivLabel, "DodajZadatakNazivLabel");
             DodajZadatakNazivLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakNazivLabel.Name = "DodajZadatakNazivLabel";
             DodajZadatakNazivLabel.UseWaitCursor = true;
             // 
             // DodajZadatakOpisLabel
             // 
-            resources.ApplyResources(DodajZadatakOpisLabel, "DodajZadatakOpisLabel");
             DodajZadatakOpisLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DodajZadatakOpisLabel, "DodajZadatakOpisLabel");
             DodajZadatakOpisLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakOpisLabel.Name = "DodajZadatakOpisLabel";
             DodajZadatakOpisLabel.UseWaitCursor = true;
             // 
             // DodajZadatakClanoviListBox
             // 
-            resources.ApplyResources(this.DodajZadatakClanoviListBox, "DodajZadatakClanoviListBox");
             this.DodajZadatakClanoviListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.DodajZadatakClanoviListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.DodajZadatakClanoviListBox, "DodajZadatakClanoviListBox");
             this.DodajZadatakClanoviListBox.Name = "DodajZadatakClanoviListBox";
             // 
             // DodajZadatakProfilPanel
             // 
-            resources.ApplyResources(this.DodajZadatakProfilPanel, "DodajZadatakProfilPanel");
             this.DodajZadatakProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.DodajZadatakProfilPanel, "DodajZadatakProfilPanel");
             this.DodajZadatakProfilPanel.Name = "DodajZadatakProfilPanel";
             // 
             // DodajZadatakProjektComboBox
             // 
-            resources.ApplyResources(this.DodajZadatakProjektComboBox, "DodajZadatakProjektComboBox");
             this.DodajZadatakProjektComboBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.DodajZadatakProjektComboBox.FormattingEnabled = true;
+            resources.ApplyResources(this.DodajZadatakProjektComboBox, "DodajZadatakProjektComboBox");
             this.DodajZadatakProjektComboBox.Name = "DodajZadatakProjektComboBox";
             // 
             // DodajZadatakDateTimePicker1
@@ -180,8 +181,8 @@
             // 
             // DodajZadatakNatragButton
             // 
-            resources.ApplyResources(this.DodajZadatakNatragButton, "DodajZadatakNatragButton");
             this.DodajZadatakNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.DodajZadatakNatragButton, "DodajZadatakNatragButton");
             this.DodajZadatakNatragButton.Name = "DodajZadatakNatragButton";
             this.DodajZadatakNatragButton.UseVisualStyleBackColor = false;
             this.DodajZadatakNatragButton.Click += new System.EventHandler(this.DodajZadatakNatragButton_Click);
@@ -209,14 +210,21 @@
             // 
             // DodajZadatakStatusComboBox
             // 
-            resources.ApplyResources(this.DodajZadatakStatusComboBox, "DodajZadatakStatusComboBox");
             this.DodajZadatakStatusComboBox.FormattingEnabled = true;
+            resources.ApplyResources(this.DodajZadatakStatusComboBox, "DodajZadatakStatusComboBox");
             this.DodajZadatakStatusComboBox.Name = "DodajZadatakStatusComboBox";
+            // 
+            // PanelLogo
+            // 
+            resources.ApplyResources(this.PanelLogo, "PanelLogo");
+            this.PanelLogo.Name = "PanelLogo";
+            this.PanelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.PopisProjektaPanelLogo_Paint);
             // 
             // DodajZadatak
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.PanelLogo);
             this.Controls.Add(this.DodajZadatakStatusComboBox);
             this.Controls.Add(this.DodajZadatakStatusButton);
             this.Controls.Add(this.DodajZadatakOpisRichTextBox);
@@ -240,6 +248,7 @@
             this.Controls.Add(DodajZadatakStatusLabel);
             this.Name = "DodajZadatak";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.DodajZadatak_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DodajZadatakProfilPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -258,5 +267,6 @@
         private System.Windows.Forms.RichTextBox DodajZadatakOpisRichTextBox;
         private System.Windows.Forms.Button DodajZadatakStatusButton;
         private System.Windows.Forms.ComboBox DodajZadatakStatusComboBox;
+        private System.Windows.Forms.Panel PanelLogo;
     }
 }

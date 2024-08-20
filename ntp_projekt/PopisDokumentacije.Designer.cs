@@ -37,6 +37,7 @@
             this.PopisDokumentacijeStatusLabel = new System.Windows.Forms.Label();
             this.PopisDokumentacijeNatragButton = new System.Windows.Forms.Button();
             this.PopisDokumentacijePanel = new System.Windows.Forms.Panel();
+            this.PanelLogo = new System.Windows.Forms.Panel();
             this.PopisDokumentacijeProfilPictureBox = new System.Windows.Forms.PictureBox();
             this.PopisDokumentacijeProfilLinkLabel = new System.Windows.Forms.LinkLabel();
             this.PopisDokumentacijeBazaClanoviLabel = new System.Windows.Forms.Label();
@@ -87,20 +88,26 @@
             // 
             // PopisDokumentacijeNatragButton
             // 
-            resources.ApplyResources(this.PopisDokumentacijeNatragButton, "PopisDokumentacijeNatragButton");
             this.PopisDokumentacijeNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.PopisDokumentacijeNatragButton, "PopisDokumentacijeNatragButton");
             this.PopisDokumentacijeNatragButton.Name = "PopisDokumentacijeNatragButton";
             this.PopisDokumentacijeNatragButton.UseVisualStyleBackColor = false;
             this.PopisDokumentacijeNatragButton.Click += new System.EventHandler(this.PopisDokumentacijeNatragButton_Click);
             // 
             // PopisDokumentacijePanel
             // 
-            resources.ApplyResources(this.PopisDokumentacijePanel, "PopisDokumentacijePanel");
             this.PopisDokumentacijePanel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PopisDokumentacijePanel.Controls.Add(this.PanelLogo);
             this.PopisDokumentacijePanel.Controls.Add(this.PopisDokumentacijeNatragButton);
             this.PopisDokumentacijePanel.Controls.Add(this.PopisDokumentacijeProfilPictureBox);
             this.PopisDokumentacijePanel.Controls.Add(this.PopisDokumentacijeProfilLinkLabel);
+            resources.ApplyResources(this.PopisDokumentacijePanel, "PopisDokumentacijePanel");
             this.PopisDokumentacijePanel.Name = "PopisDokumentacijePanel";
+            // 
+            // PanelLogo
+            // 
+            resources.ApplyResources(this.PanelLogo, "PanelLogo");
+            this.PanelLogo.Name = "PanelLogo";
             // 
             // PopisDokumentacijeProfilPictureBox
             // 
@@ -165,6 +172,7 @@
             this.Controls.Add(PopisDokumentacijeNaslovLabel);
             this.Name = "PopisDokumentacije";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.PopisDokumentacije_Load);
             this.PopisDokumentacijePanel.ResumeLayout(false);
             this.PopisDokumentacijePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PopisDokumentacijeProfilPictureBox)).EndInit();
@@ -188,5 +196,6 @@
         private System.Windows.Forms.Label PopisDokumentacijeBazaPeriodLabel;
         private System.Windows.Forms.Label PopisDokumentacijeBazaStatusLabel;
         private System.Windows.Forms.Button PopisDokumentacijeReportButton;
+        private System.Windows.Forms.Panel PanelLogo;
     }
 }

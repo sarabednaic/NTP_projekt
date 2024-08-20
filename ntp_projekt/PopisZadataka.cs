@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dinamicLib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -72,6 +73,7 @@ namespace ntp_projekt
 
         private void PopisZadataka_Load(object sender, EventArgs e)
         {
+            PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto()); 
 
         }
     }

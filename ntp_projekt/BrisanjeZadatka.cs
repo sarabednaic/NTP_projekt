@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dinamicLib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -59,6 +60,10 @@ namespace ntp_projekt
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
-        
+        private void BrisanjeZadatka_Load(object sender, EventArgs e)
+        {
+            PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
+
+        }
     }
 }

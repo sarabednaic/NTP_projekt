@@ -125,7 +125,7 @@
     <value>612, 756</value>
   </data>
   <data name="&gt;&gt;DodajProjektOvlastiLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="DodajProjektClanoviListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>715, 119</value>
@@ -136,17 +136,20 @@
   <data name="&gt;&gt;DodajProjektButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="DeaktivacijaProfilPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1920, 90</value>
+  <data name="UrediZadatakSubmitButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="DodajProjektOpisLabel.Text" xml:space="preserve">
     <value>Opis projekta</value>
   </data>
-  <data name="DodajProjektOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 43</value>
+  <data name="UrediZadatakNaslovLabel.Text" xml:space="preserve">
+    <value>Uredi projekt</value>
   </data>
   <data name="UrediProjektProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 29</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="DodajProjektButton.Text" xml:space="preserve">
     <value>Uredi projekt</value>
@@ -166,18 +169,14 @@
   <data name="&gt;&gt;UrediProjektProfilPictureBox.Parent" xml:space="preserve">
     <value>DeaktivacijaProfilPanel</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DodajProjektOvlastiLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>54</value>
-  </data>
   <data name="UrediZadatakNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>477, 93</value>
   </data>
   <data name="&gt;&gt;UrediZadatakSubmitButton.Name" xml:space="preserve">
     <value>UrediZadatakSubmitButton</value>
   </data>
-  <data name="&gt;&gt;DodajProjektOpisRichTextBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="UrediProjektProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1822, 13</value>
   </data>
   <data name="&gt;&gt;DodajProjektOpisRichTextBox.Name" xml:space="preserve">
     <value>DodajProjektOpisRichTextBox</value>
@@ -188,15 +187,16 @@
   <data name="&gt;&gt;UrediProjektProfilLinkLabel.Name" xml:space="preserve">
     <value>UrediProjektProfilLinkLabel</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 20</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="DeaktivacijaNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="DeaktivacijaNatragButton.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
+  </data>
+  <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>808, 0</value>
   </data>
   <data name="&gt;&gt;DodajProjektButton.Name" xml:space="preserve">
     <value>DodajProjektButton</value>
@@ -216,11 +216,17 @@
   <data name="&gt;&gt;DeaktivacijaNatragButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;DodajProjektOpisRichTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;DodajProjektNazivTextBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>1919, 1077</value>
+  </data>
+  <data name="DodajProjektOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 43</value>
   </data>
   <data name="&gt;&gt;UrediZadatakSubmitButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -234,8 +240,8 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>UrediProjekt</value>
   </data>
-  <data name="DodajProjektButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>857, 914</value>
+  <data name="PanelLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 84</value>
   </data>
   <data name="DeaktivacijaProfilPanel.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -1184,16 +1190,19 @@
 </value>
   </data>
   <data name="&gt;&gt;DodajProjektClanoviListBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;DodajProjektButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <data name="DodajProjektOvlastiLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>608, 716</value>
+  <data name="DodajProjektNazivLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;DodajProjektOpisLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;DeaktivacijaNatragButton.Parent" xml:space="preserve">
     <value>DeaktivacijaProfilPanel</value>
@@ -1201,14 +1210,14 @@
   <data name="&gt;&gt;DodajProjektClanoviLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="UrediZadatakSubmitButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
   <data name="UrediProjektProfilLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="UrediZadatakNaslovLabel.Text" xml:space="preserve">
-    <value>Uredi projekt</value>
+  <data name="PanelLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="UrediZadatakSubmitButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>880, 758</value>
   </data>
   <data name="&gt;&gt;UrediProjektProfilPictureBox.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1216,8 +1225,8 @@
   <data name="&gt;&gt;DodajProjektOpisLabel.Name" xml:space="preserve">
     <value>DodajProjektOpisLabel</value>
   </data>
-  <data name="&gt;&gt;DeaktivacijaNatragButton.Name" xml:space="preserve">
-    <value>DeaktivacijaNatragButton</value>
+  <data name="DodajProjektOvlastiLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>608, 716</value>
   </data>
   <data name="DodajProjektButton.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -1228,8 +1237,8 @@
   <data name="&gt;&gt;DodajProjektClanoviListBox.Name" xml:space="preserve">
     <value>DodajProjektClanoviListBox</value>
   </data>
-  <data name="DodajProjektNazivLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="DodajProjektOpisRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>715, 121</value>
   </data>
   <data name="UrediProjektProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -1245,6 +1254,93 @@
   </data>
   <data name="DodajProjektClanoviLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="PanelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="DodajProjektClanoviLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1085, 823</value>
+  </data>
+  <data name="UrediZadatakNaslovLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="UrediZadatakSubmitButton.Text" xml:space="preserve">
+    <value>Uredi projekt</value>
+  </data>
+  <data name="DodajProjektNazivTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>715, 26</value>
+  </data>
+  <data name="&gt;&gt;DeaktivacijaProfilPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="DodajProjektClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 43</value>
+  </data>
+  <data name="&gt;&gt;DodajProjektOpisLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="DodajProjektOpisRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>612, 407</value>
+  </data>
+  <data name="UrediZadatakSubmitButton.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DodajProjektOpisLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="UrediZadatakNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 150</value>
+  </data>
+  <data name="UrediZadatakNaslovLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;DodajProjektOvlastiLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UrediZadatakSubmitButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="DodajProjektButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
+  </data>
+  <data name="UrediZadatakNaslovLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="DeaktivacijaNatragButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="&gt;&gt;DodajProjektClanoviListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="UrediProjektProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="&gt;&gt;DodajProjektNazivTextBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektProfilLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UrediZadatakNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Leelawadee UI, 35pt, style=Bold</value>
+  </data>
+  <data name="DodajProjektOvlastiLabel.Text" xml:space="preserve">
+    <value>Dodijeli administratorske ovlasti</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektProfilLinkLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;DodajProjektOvlastiLabel.Name" xml:space="preserve">
+    <value>DodajProjektOvlastiLabel</value>
   </data>
   <data name="DeaktivacijaNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1361,92 +1457,8 @@
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="&gt;&gt;DodajProjektOpisRichTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajProjektClanoviLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1085, 823</value>
-  </data>
-  <data name="UrediZadatakNaslovLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="UrediZadatakSubmitButton.Text" xml:space="preserve">
-    <value>Uredi projekt</value>
-  </data>
-  <data name="DodajProjektNazivTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 26</value>
-  </data>
-  <data name="&gt;&gt;DeaktivacijaProfilPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajProjektClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 43</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektOpisLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="DodajProjektOpisRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>612, 407</value>
-  </data>
-  <data name="UrediZadatakSubmitButton.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DodajProjektOpisLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt, style=Bold</value>
-  </data>
-  <data name="UrediZadatakNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>747, 188</value>
-  </data>
-  <data name="UrediZadatakNaslovLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektOvlastiLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;UrediZadatakSubmitButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajProjektButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
-  </data>
-  <data name="UrediZadatakNaslovLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="DeaktivacijaNatragButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektClanoviListBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="UrediProjektProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 65</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektNazivTextBox.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;UrediProjektProfilLinkLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="UrediZadatakNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Leelawadee UI, 35pt, style=Bold</value>
-  </data>
-  <data name="UrediProjektProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1650, 31</value>
-  </data>
-  <data name="DodajProjektOvlastiLabel.Text" xml:space="preserve">
-    <value>Dodijeli administratorske ovlasti</value>
-  </data>
-  <data name="&gt;&gt;UrediProjektProfilLinkLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;UrediZadatakSubmitButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;DodajProjektOpisRichTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1458,10 +1470,16 @@
     <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;DodajProjektClanoviLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="DodajProjektClanoviLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
+  </data>
+  <data name="DodajProjektOvlastiListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="DeaktivacijaProfilPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1920, 90</value>
   </data>
   <data name="DodajProjektOvlastiListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>715, 96</value>
@@ -1476,7 +1494,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DodajProjektNazivLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="DodajProjektClanoviLabel.Text" xml:space="preserve">
     <value>Dodijeli članove</value>
@@ -1484,8 +1502,11 @@
   <data name="&gt;&gt;UrediZadatakNaslovLabel.Name" xml:space="preserve">
     <value>UrediZadatakNaslovLabel</value>
   </data>
-  <data name="DodajProjektClanoviListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
+  <data name="&gt;&gt;PanelLogo.Name" xml:space="preserve">
+    <value>PanelLogo</value>
+  </data>
+  <data name="&gt;&gt;DodajProjektOpisRichTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;DeaktivacijaProfilPanel.Name" xml:space="preserve">
     <value>DeaktivacijaProfilPanel</value>
@@ -1502,11 +1523,11 @@
   <data name="UrediZadatakNaslovLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;DodajProjektOvlastiLabel.Name" xml:space="preserve">
-    <value>DodajProjektOvlastiLabel</value>
+  <data name="DodajProjektOvlastiLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
   </data>
-  <data name="DodajProjektOpisRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 121</value>
+  <data name="DodajProjektButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>857, 914</value>
   </data>
   <data name="&gt;&gt;DodajProjektNazivLabel.Name" xml:space="preserve">
     <value>DodajProjektNazivLabel</value>
@@ -1524,7 +1545,7 @@
     <value>Sara Bednaić</value>
   </data>
   <data name="&gt;&gt;UrediZadatakNaslovLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="DodajProjektNazivTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
@@ -1539,7 +1560,7 @@
     <value />
   </data>
   <data name="&gt;&gt;DeaktivacijaProfilPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="DodajProjektOvlastiLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10pt, style=Bold</value>
@@ -1547,8 +1568,11 @@
   <data name="&gt;&gt;DodajProjektOvlastiListBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="DodajProjektOvlastiListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
+  <data name="UrediProjektProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1650, 31</value>
+  </data>
+  <data name="DodajProjektClanoviListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
   </data>
   <data name="UrediProjektProfilPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1674,7 +1698,7 @@
     <value>56</value>
   </data>
   <data name="&gt;&gt;DodajProjektOvlastiListBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="DodajProjektOvlastiLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -1691,34 +1715,34 @@
   <data name="&gt;&gt;DodajProjektButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="UrediZadatakSubmitButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>880, 758</value>
+  <data name="&gt;&gt;DeaktivacijaNatragButton.Name" xml:space="preserve">
+    <value>DeaktivacijaNatragButton</value>
   </data>
-  <data name="UrediProjektProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1822, 13</value>
+  <data name="&gt;&gt;PanelLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <metadata name="DodajProjektOvlastiLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>en</value>
   </metadata>
-  <metadata name="DodajProjektOpisLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="UrediZadatakNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="DodajProjektNazivTextBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="DodajProjektOpisLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="DodajProjektClanoviLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <metadata name="DodajProjektNazivLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="UrediZadatakNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="DodajProjektNazivTextBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="DodajProjektNazivLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="DodajProjektOvlastiLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="DodajProjektButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

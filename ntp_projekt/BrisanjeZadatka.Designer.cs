@@ -39,6 +39,7 @@
             this.BrisanjeZadatkaPanel = new System.Windows.Forms.Panel();
             this.BrisanjeZadatkaProfilPictureBox = new System.Windows.Forms.PictureBox();
             this.BrisanjeZadatkaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.PanelLogo = new System.Windows.Forms.Panel();
             BriasnjeZadatkaNaslovLabel = new System.Windows.Forms.Label();
             BrisanjeZadatkaLozinkaTextBox = new System.Windows.Forms.TextBox();
             BrisanjeZadatkaPonovnoLozinkaTextBox = new System.Windows.Forms.TextBox();
@@ -123,10 +124,16 @@
             this.BrisanjeZadatkaProfilLinkLabel.TabStop = true;
             this.BrisanjeZadatkaProfilLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BrisanjeZadatkaProfilLinkLabel_LinkClicked);
             // 
+            // PanelLogo
+            // 
+            resources.ApplyResources(this.PanelLogo, "PanelLogo");
+            this.PanelLogo.Name = "PanelLogo";
+            // 
             // BrisanjeZadatka
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.PanelLogo);
             this.Controls.Add(BrisanjeZadatkaLozinkaTextBox);
             this.Controls.Add(this.BrisanjeZadatkaPanel);
             this.Controls.Add(BrisanjeZadatkaPonovnoLozinkaTextBox);
@@ -136,6 +143,7 @@
             this.Controls.Add(BriasnjeZadatkaNaslovLabel);
             this.Name = "BrisanjeZadatka";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.BrisanjeZadatka_Load);
             this.BrisanjeZadatkaPanel.ResumeLayout(false);
             this.BrisanjeZadatkaPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BrisanjeZadatkaProfilPictureBox)).EndInit();
@@ -150,5 +158,6 @@
         private System.Windows.Forms.Panel BrisanjeZadatkaPanel;
         private System.Windows.Forms.PictureBox BrisanjeZadatkaProfilPictureBox;
         private System.Windows.Forms.LinkLabel BrisanjeZadatkaProfilLinkLabel;
+        private System.Windows.Forms.Panel PanelLogo;
     }
 }

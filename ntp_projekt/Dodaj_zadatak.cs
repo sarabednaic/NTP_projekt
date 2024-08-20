@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dinamicLib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,6 +44,17 @@ namespace ntp_projekt
         private void DodajZadatakButton_Click(object sender, EventArgs e)
         {
             StartApk.MainFormManager.TrenutnaForma = new DodajZadatak();
+        }
+
+        private void PopisProjektaPanelLogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DodajZadatak_Load(object sender, EventArgs e)
+        {
+            PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
+
         }
     }
 }
