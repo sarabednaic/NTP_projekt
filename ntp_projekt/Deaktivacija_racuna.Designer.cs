@@ -31,10 +31,10 @@
             System.Windows.Forms.Button DeaktivacijaButton;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Deaktivacija_racuna));
             System.Windows.Forms.Label DeaktivacijaNaslovLabel;
-            System.Windows.Forms.TextBox DeaktivacijaLozinkaTextBox;
-            System.Windows.Forms.TextBox DeaktivacijaPonovnoLozinkaTextBox;
             System.Windows.Forms.Label DeaktivacijaPonovnoLozinkaLabel;
             System.Windows.Forms.Label DeaktivacijaLozinkaLabel;
+            this.DeaktivacijaLozinkaTextBox = new System.Windows.Forms.TextBox();
+            this.DeaktivacijaPonovnoLozinkaTextBox = new System.Windows.Forms.TextBox();
             this.DeaktivacijaProfilPanel = new System.Windows.Forms.Panel();
             this.DeaktivacijaNatragButton = new System.Windows.Forms.Button();
             this.DeaktivacijaProfilPictureBox = new System.Windows.Forms.PictureBox();
@@ -42,8 +42,6 @@
             this.PanelLogo = new System.Windows.Forms.Panel();
             DeaktivacijaButton = new System.Windows.Forms.Button();
             DeaktivacijaNaslovLabel = new System.Windows.Forms.Label();
-            DeaktivacijaLozinkaTextBox = new System.Windows.Forms.TextBox();
-            DeaktivacijaPonovnoLozinkaTextBox = new System.Windows.Forms.TextBox();
             DeaktivacijaPonovnoLozinkaLabel = new System.Windows.Forms.Label();
             DeaktivacijaLozinkaLabel = new System.Windows.Forms.Label();
             this.DeaktivacijaProfilPanel.SuspendLayout();
@@ -67,15 +65,17 @@
             // 
             // DeaktivacijaLozinkaTextBox
             // 
-            DeaktivacijaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            resources.ApplyResources(DeaktivacijaLozinkaTextBox, "DeaktivacijaLozinkaTextBox");
-            DeaktivacijaLozinkaTextBox.Name = "DeaktivacijaLozinkaTextBox";
+            this.DeaktivacijaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(this.DeaktivacijaLozinkaTextBox, "DeaktivacijaLozinkaTextBox");
+            this.DeaktivacijaLozinkaTextBox.Name = "DeaktivacijaLozinkaTextBox";
+            this.DeaktivacijaLozinkaTextBox.UseSystemPasswordChar = true;
             // 
             // DeaktivacijaPonovnoLozinkaTextBox
             // 
-            DeaktivacijaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            resources.ApplyResources(DeaktivacijaPonovnoLozinkaTextBox, "DeaktivacijaPonovnoLozinkaTextBox");
-            DeaktivacijaPonovnoLozinkaTextBox.Name = "DeaktivacijaPonovnoLozinkaTextBox";
+            this.DeaktivacijaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(this.DeaktivacijaPonovnoLozinkaTextBox, "DeaktivacijaPonovnoLozinkaTextBox");
+            this.DeaktivacijaPonovnoLozinkaTextBox.Name = "DeaktivacijaPonovnoLozinkaTextBox";
+            this.DeaktivacijaPonovnoLozinkaTextBox.UseSystemPasswordChar = true;
             // 
             // DeaktivacijaPonovnoLozinkaLabel
             // 
@@ -135,8 +135,8 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.PanelLogo);
-            this.Controls.Add(DeaktivacijaLozinkaTextBox);
-            this.Controls.Add(DeaktivacijaPonovnoLozinkaTextBox);
+            this.Controls.Add(this.DeaktivacijaLozinkaTextBox);
+            this.Controls.Add(this.DeaktivacijaPonovnoLozinkaTextBox);
             this.Controls.Add(this.DeaktivacijaProfilPanel);
             this.Controls.Add(DeaktivacijaPonovnoLozinkaLabel);
             this.Controls.Add(DeaktivacijaButton);
@@ -160,5 +160,7 @@
         private System.Windows.Forms.PictureBox DeaktivacijaProfilPictureBox;
         private System.Windows.Forms.Button DeaktivacijaNatragButton;
         private System.Windows.Forms.Panel PanelLogo;
+        private System.Windows.Forms.TextBox DeaktivacijaLozinkaTextBox;
+        private System.Windows.Forms.TextBox DeaktivacijaPonovnoLozinkaTextBox;
     }
 }

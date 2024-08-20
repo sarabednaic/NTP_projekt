@@ -17,7 +17,7 @@ namespace ntp_projekt
     {
         Ini iniFile;
         Baza baza;
-        static Dictionary<string, Projekt> projektiLista = new Dictionary<string, Projekt>();  
+          
 
         public PopisProjekta()
         {
@@ -39,16 +39,13 @@ namespace ntp_projekt
                 foreach (List<string> row in polje)
                 {
                     PopisProjektaControl PopisProjektaControl = new PopisProjektaControl();
-                    PopisProjektaControl.setNaslov = row[2].ToString();
-                    PopisProjektaControl.setOpis = row[3].ToString();
+                    PopisProjektaControl.Id = row[1].ToString();
+                    PopisProjektaControl.Naslov = row[2].ToString();
+                    PopisProjektaControl.Opis = row[3].ToString();
                     PopisProjektaProjektiFlowLayoutPanel.Controls.Add(PopisProjektaControl);
-
                     
                 }
             }
-            
-            
-
         }
 
         private void UrediZadatakNaslovLabel_Click(object sender, EventArgs e)

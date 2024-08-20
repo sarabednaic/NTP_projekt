@@ -125,10 +125,14 @@
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="DeaktivacijaButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>857, 630</value>
+    <value>1143, 788</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DeaktivacijaButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="DeaktivacijaButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
+    <value>293, 75</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="DeaktivacijaButton.TabIndex" type="System.Int32, mscorlib">
@@ -156,10 +160,13 @@
     <value>Arial, 30pt, style=Bold</value>
   </data>
   <data name="DeaktivacijaNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 273</value>
+    <value>908, 341</value>
+  </data>
+  <data name="DeaktivacijaNaslovLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="DeaktivacijaNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>606, 120</value>
+    <value>808, 150</value>
   </data>
   <data name="DeaktivacijaNaslovLabel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -179,17 +186,17 @@
   <data name="&gt;&gt;DeaktivacijaNaslovLabel.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <metadata name="DeaktivacijaLozinkaTextBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <data name="DeaktivacijaLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>741, 462</value>
+    <value>988, 578</value>
+  </data>
+  <data name="DeaktivacijaLozinkaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="DeaktivacijaLozinkaTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
   </data>
   <data name="DeaktivacijaLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>459, 26</value>
+    <value>611, 31</value>
   </data>
   <data name="DeaktivacijaLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
@@ -206,17 +213,17 @@
   <data name="&gt;&gt;DeaktivacijaLozinkaTextBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="DeaktivacijaPonovnoLozinkaTextBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <data name="DeaktivacijaPonovnoLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>741, 539</value>
+    <value>988, 674</value>
+  </data>
+  <data name="DeaktivacijaPonovnoLozinkaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="DeaktivacijaPonovnoLozinkaTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
   </data>
   <data name="DeaktivacijaPonovnoLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>459, 26</value>
+    <value>611, 31</value>
   </data>
   <data name="DeaktivacijaPonovnoLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -240,10 +247,13 @@
     <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="DeaktivacijaPonovnoLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>737, 507</value>
+    <value>983, 634</value>
+  </data>
+  <data name="DeaktivacijaPonovnoLozinkaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="DeaktivacijaPonovnoLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 43</value>
+    <value>383, 54</value>
   </data>
   <data name="DeaktivacijaPonovnoLozinkaLabel.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -273,10 +283,13 @@
     <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="DeaktivacijaLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>737, 426</value>
+    <value>983, 532</value>
+  </data>
+  <data name="DeaktivacijaLozinkaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="DeaktivacijaLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 43</value>
+    <value>383, 54</value>
   </data>
   <data name="DeaktivacijaLozinkaLabel.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -338,8 +351,11 @@
   <data name="DeaktivacijaProfilPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="DeaktivacijaProfilPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="DeaktivacijaProfilPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1920, 90</value>
+    <value>2560, 112</value>
   </data>
   <data name="DeaktivacijaProfilPanel.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -471,15 +487,17 @@
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="DeaktivacijaNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
   <data name="DeaktivacijaNatragButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>16, 15</value>
+  </data>
+  <data name="DeaktivacijaNatragButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="DeaktivacijaNatragButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
+    <value>85, 80</value>
   </data>
   <data name="DeaktivacijaNatragButton.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -1527,10 +1545,13 @@
 </value>
   </data>
   <data name="DeaktivacijaProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1822, 13</value>
+    <value>2429, 16</value>
+  </data>
+  <data name="DeaktivacijaProfilPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="DeaktivacijaProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 65</value>
+    <value>87, 81</value>
   </data>
   <data name="DeaktivacijaProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -1557,10 +1578,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="DeaktivacijaProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1650, 31</value>
+    <value>2200, 39</value>
+  </data>
+  <data name="DeaktivacijaProfilLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="DeaktivacijaProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 29</value>
+    <value>209, 37</value>
   </data>
   <data name="DeaktivacijaProfilLinkLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1584,10 +1608,13 @@
     <value>Stretch</value>
   </data>
   <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 0</value>
+    <value>1077, 0</value>
+  </data>
+  <data name="PanelLogo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="PanelLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 84</value>
+    <value>353, 105</value>
   </data>
   <data name="PanelLogo.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -1608,19 +1635,19 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 20</value>
+    <value>12, 25</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1443, 840</value>
+    <value>1924, 1050</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1919, 1077</value>
+    <value>2550, 1329</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1439, 826</value>
+    <value>1910, 1015</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

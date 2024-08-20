@@ -51,7 +51,7 @@
             // PrijavaPrijavaButton
             // 
             resources.ApplyResources(PrijavaPrijavaButton, "PrijavaPrijavaButton");
-            PrijavaPrijavaButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            PrijavaPrijavaButton.BackColor = System.Drawing.SystemColors.HotTrack;
             PrijavaPrijavaButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             PrijavaPrijavaButton.Name = "PrijavaPrijavaButton";
             PrijavaPrijavaButton.UseVisualStyleBackColor = false;

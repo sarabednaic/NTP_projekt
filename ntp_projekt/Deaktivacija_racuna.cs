@@ -11,11 +11,13 @@ using System.Windows.Forms;
 
 namespace ntp_projekt
 {
+    
     public partial class Deaktivacija_racuna : Form
     {
         
         public Deaktivacija_racuna()
         {
+            
             InitializeComponent();
             DeaktivacijaProfilLinkLabel.Text = Session.DohvatiPunoIme();
             DeaktivacijaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
@@ -38,7 +40,25 @@ namespace ntp_projekt
 
         private void PrijavaPrijavaButton_Click(object sender, EventArgs e)
         {
-            StartApk.MainFormManager.TrenutnaForma = new Postavke();
+            if (DeaktivacijaLozinkaTextBox.Text.Length != 0 && DeaktivacijaPonovnoLozinkaTextBox.Text.Length != 0)
+            {
+                if (DeaktivacijaLozinkaTextBox.Text == DeaktivacijaPonovnoLozinkaTextBox.Text)
+                {
+                    Session.DeaktivirajRacun();
+                    Session.CleanSession();
+                    StartApk.MainFormManager.TrenutnaForma = new Prijava();
+                }
+                else 
+                {
+                    MessageBox.Show("Lozinke se ne podudaraju.Pokušajte ponovno!");
+                }
+            }
+            else 
+            {
+                MessageBox.Show("Polja ne smiju biti prazna!");
+            }
+            
+            
         }
 
         private void PrijavaKorisnickoImeTextBox_TextChanged(object sender, EventArgs e)
