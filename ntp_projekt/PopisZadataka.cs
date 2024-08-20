@@ -38,12 +38,10 @@ namespace ntp_projekt
                     PopisZadatakaControl.setNaslov = row[2].ToString();
                     PopisZadatakaControl.setOpis = row[3].ToString();
                     PopisZadatakaZadatciFlowLayoutPanel.Controls.Add(PopisZadatakaControl);
+
                 }
             }
-            else
-            {
-                MessageBox.Show("prazna lista");
-            }
+            
         }
 
         private void PopisZadatakaReportButton_Click(object sender, EventArgs e)

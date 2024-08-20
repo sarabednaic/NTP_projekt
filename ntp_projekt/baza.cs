@@ -119,8 +119,6 @@ namespace ntp_projekt
             {
                 byte[] imageData = File.ReadAllBytes(curFileName);
 
-                
-
                 using (OleDbConnection connection = new OleDbConnection(connectionString))
                 using (OleDbCommand command = new OleDbCommand(query, connection))
                 {

@@ -16,7 +16,7 @@ namespace ntp_projekt
     {
         Ini iniFile;
         Baza baza;
-        
+        static Dictionary<string, Projekt> projektiLista = new Dictionary<string, Projekt>();  
 
         public PopisProjekta()
         {
@@ -41,13 +41,12 @@ namespace ntp_projekt
                     PopisProjektaControl.setNaslov = row[2].ToString();
                     PopisProjektaControl.setOpis = row[3].ToString();
                     PopisProjektaProjektiFlowLayoutPanel.Controls.Add(PopisProjektaControl);
+
                     
                 }
             }
-            else
-            {
-                MessageBox.Show("prazna lista");
-            }
+            
+            
 
         }
 
