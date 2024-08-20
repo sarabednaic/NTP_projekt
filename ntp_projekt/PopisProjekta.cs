@@ -42,8 +42,6 @@ namespace ntp_projekt
                     PopisProjektaControl.setNaslov = row[2].ToString();
                     PopisProjektaControl.setOpis = row[3].ToString();
                     PopisProjektaProjektiFlowLayoutPanel.Controls.Add(PopisProjektaControl);
-
-                    
                 }
             }
             

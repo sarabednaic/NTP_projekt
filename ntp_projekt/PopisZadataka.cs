@@ -31,6 +31,8 @@ namespace ntp_projekt
                 $" inner join zadatak on zadatak.ID = clanovi_zadatka.zadatak_ID) " +
                 $" WHERE korisnik.korisnicko_ime = \"{User}\";");
 
+            //PopisZadatakaImeProjektaLabel.Text = 
+
             if (polje != null)
             {
                 foreach (List<string> row in polje)
@@ -42,7 +44,18 @@ namespace ntp_projekt
 
                 }
             }
+
+            if (polje != null)
+            {
+                foreach (List<string> row in polje)
+                {
+                    PopisZadatakaClanoviListBox.Items.Add(row[6]);
+
+                }
+            }
+
             
+
         }
 
         private void PopisZadatakaReportButton_Click(object sender, EventArgs e)
@@ -73,7 +86,14 @@ namespace ntp_projekt
 
         private void PopisZadataka_Load(object sender, EventArgs e)
         {
-            PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto()); 
+            PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
+
+           
+
+        }
+
+        private void PopisZadatakaClanoviListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

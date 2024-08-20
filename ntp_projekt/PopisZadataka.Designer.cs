@@ -87,6 +87,7 @@
             resources.GetString("PopisZadatakaClanoviListBox.Items1"),
             resources.GetString("PopisZadatakaClanoviListBox.Items2")});
             this.PopisZadatakaClanoviListBox.Name = "PopisZadatakaClanoviListBox";
+            this.PopisZadatakaClanoviListBox.SelectedIndexChanged += new System.EventHandler(this.PopisZadatakaClanoviListBox_SelectedIndexChanged);
             // 
             // PopisZadatakaAdminiListBox
             // 
