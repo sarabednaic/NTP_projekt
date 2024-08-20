@@ -50,200 +50,113 @@
             // 
             // PopisZadatakaImeProjektaLabel
             // 
-            this.PopisZadatakaImeProjektaLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PopisZadatakaImeProjektaLabel.AutoSize = true;
-            this.PopisZadatakaImeProjektaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.PopisZadatakaImeProjektaLabel, "PopisZadatakaImeProjektaLabel");
             this.PopisZadatakaImeProjektaLabel.ForeColor = System.Drawing.Color.DimGray;
-            this.PopisZadatakaImeProjektaLabel.Location = new System.Drawing.Point(417, 104);
-            this.PopisZadatakaImeProjektaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PopisZadatakaImeProjektaLabel.Name = "PopisZadatakaImeProjektaLabel";
-            this.PopisZadatakaImeProjektaLabel.Size = new System.Drawing.Size(251, 46);
-            this.PopisZadatakaImeProjektaLabel.TabIndex = 14;
-            this.PopisZadatakaImeProjektaLabel.Text = "Ime projekta";
             // 
             // PopisZadatakaClanoviLabel
             // 
-            this.PopisZadatakaClanoviLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PopisZadatakaClanoviLabel.AutoSize = true;
-            this.PopisZadatakaClanoviLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            resources.ApplyResources(this.PopisZadatakaClanoviLabel, "PopisZadatakaClanoviLabel");
             this.PopisZadatakaClanoviLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.PopisZadatakaClanoviLabel.Location = new System.Drawing.Point(417, 207);
-            this.PopisZadatakaClanoviLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PopisZadatakaClanoviLabel.Name = "PopisZadatakaClanoviLabel";
-            this.PopisZadatakaClanoviLabel.Size = new System.Drawing.Size(221, 29);
-            this.PopisZadatakaClanoviLabel.TabIndex = 15;
-            this.PopisZadatakaClanoviLabel.Text = "Assigned members";
             // 
             // PopisZadatakaAdminiLabel
             // 
-            this.PopisZadatakaAdminiLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PopisZadatakaAdminiLabel.AutoSize = true;
-            this.PopisZadatakaAdminiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            resources.ApplyResources(this.PopisZadatakaAdminiLabel, "PopisZadatakaAdminiLabel");
             this.PopisZadatakaAdminiLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.PopisZadatakaAdminiLabel.Location = new System.Drawing.Point(653, 207);
-            this.PopisZadatakaAdminiLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PopisZadatakaAdminiLabel.Name = "PopisZadatakaAdminiLabel";
-            this.PopisZadatakaAdminiLabel.Size = new System.Drawing.Size(93, 29);
-            this.PopisZadatakaAdminiLabel.TabIndex = 16;
-            this.PopisZadatakaAdminiLabel.Text = "Admins";
             // 
             // PopisZadatakaSearchRichTextBox
             // 
-            this.PopisZadatakaSearchRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PopisZadatakaSearchRichTextBox.Location = new System.Drawing.Point(1119, 338);
-            this.PopisZadatakaSearchRichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.PopisZadatakaSearchRichTextBox, "PopisZadatakaSearchRichTextBox");
             this.PopisZadatakaSearchRichTextBox.Name = "PopisZadatakaSearchRichTextBox";
-            this.PopisZadatakaSearchRichTextBox.Size = new System.Drawing.Size(269, 33);
-            this.PopisZadatakaSearchRichTextBox.TabIndex = 18;
-            this.PopisZadatakaSearchRichTextBox.Text = "";
             // 
             // PopisZadatakaSearchButton
             // 
-            this.PopisZadatakaSearchButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PopisZadatakaSearchButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisZadatakaSearchButton.BackgroundImage")));
-            this.PopisZadatakaSearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisZadatakaSearchButton.Location = new System.Drawing.Point(1393, 332);
-            this.PopisZadatakaSearchButton.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.PopisZadatakaSearchButton, "PopisZadatakaSearchButton");
             this.PopisZadatakaSearchButton.Name = "PopisZadatakaSearchButton";
-            this.PopisZadatakaSearchButton.Size = new System.Drawing.Size(45, 45);
-            this.PopisZadatakaSearchButton.TabIndex = 19;
             this.PopisZadatakaSearchButton.UseVisualStyleBackColor = true;
             // 
             // PopisZadatakaClanoviListBox
             // 
-            this.PopisZadatakaClanoviListBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PopisZadatakaClanoviListBox.Enabled = false;
-            this.PopisZadatakaClanoviListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            resources.ApplyResources(this.PopisZadatakaClanoviListBox, "PopisZadatakaClanoviListBox");
             this.PopisZadatakaClanoviListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.PopisZadatakaClanoviListBox.FormattingEnabled = true;
-            this.PopisZadatakaClanoviListBox.ItemHeight = 22;
             this.PopisZadatakaClanoviListBox.Items.AddRange(new object[] {
-            "Filip Sinković",
-            "Petra Velić",
-            "Lara Jurković"});
-            this.PopisZadatakaClanoviListBox.Location = new System.Drawing.Point(424, 238);
-            this.PopisZadatakaClanoviListBox.Margin = new System.Windows.Forms.Padding(2);
+            resources.GetString("PopisZadatakaClanoviListBox.Items"),
+            resources.GetString("PopisZadatakaClanoviListBox.Items1"),
+            resources.GetString("PopisZadatakaClanoviListBox.Items2")});
             this.PopisZadatakaClanoviListBox.Name = "PopisZadatakaClanoviListBox";
-            this.PopisZadatakaClanoviListBox.Size = new System.Drawing.Size(198, 92);
-            this.PopisZadatakaClanoviListBox.TabIndex = 20;
             // 
             // PopisZadatakaAdminiListBox
             // 
-            this.PopisZadatakaAdminiListBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PopisZadatakaAdminiListBox.Enabled = false;
-            this.PopisZadatakaAdminiListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            resources.ApplyResources(this.PopisZadatakaAdminiListBox, "PopisZadatakaAdminiListBox");
             this.PopisZadatakaAdminiListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.PopisZadatakaAdminiListBox.FormattingEnabled = true;
-            this.PopisZadatakaAdminiListBox.ItemHeight = 22;
             this.PopisZadatakaAdminiListBox.Items.AddRange(new object[] {
-            "Sara Bednaić"});
-            this.PopisZadatakaAdminiListBox.Location = new System.Drawing.Point(658, 238);
-            this.PopisZadatakaAdminiListBox.Margin = new System.Windows.Forms.Padding(2);
+            resources.GetString("PopisZadatakaAdminiListBox.Items")});
             this.PopisZadatakaAdminiListBox.Name = "PopisZadatakaAdminiListBox";
-            this.PopisZadatakaAdminiListBox.Size = new System.Drawing.Size(208, 92);
-            this.PopisZadatakaAdminiListBox.TabIndex = 21;
             // 
             // PopisZadatakaNatragButton
             // 
+            resources.ApplyResources(this.PopisZadatakaNatragButton, "PopisZadatakaNatragButton");
             this.PopisZadatakaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.PopisZadatakaNatragButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisZadatakaNatragButton.BackgroundImage")));
-            this.PopisZadatakaNatragButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisZadatakaNatragButton.Location = new System.Drawing.Point(12, 12);
             this.PopisZadatakaNatragButton.Name = "PopisZadatakaNatragButton";
-            this.PopisZadatakaNatragButton.Size = new System.Drawing.Size(64, 64);
-            this.PopisZadatakaNatragButton.TabIndex = 23;
             this.PopisZadatakaNatragButton.UseVisualStyleBackColor = false;
             this.PopisZadatakaNatragButton.Click += new System.EventHandler(this.PopisZadatakaNatragButton_Click);
             // 
             // PopisZadatakaProfilPanel
             // 
+            resources.ApplyResources(this.PopisZadatakaProfilPanel, "PopisZadatakaProfilPanel");
             this.PopisZadatakaProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.PopisZadatakaProfilPanel.Controls.Add(this.PopisZadatakaNatragButton);
             this.PopisZadatakaProfilPanel.Controls.Add(this.PopisZadatakaProfilPictureBox);
             this.PopisZadatakaProfilPanel.Controls.Add(this.PopisZadatakaProfilLinkLabel);
-            this.PopisZadatakaProfilPanel.Location = new System.Drawing.Point(0, 0);
             this.PopisZadatakaProfilPanel.Name = "PopisZadatakaProfilPanel";
-            this.PopisZadatakaProfilPanel.Size = new System.Drawing.Size(1920, 90);
-            this.PopisZadatakaProfilPanel.TabIndex = 24;
             // 
             // PopisZadatakaProfilPictureBox
             // 
-            this.PopisZadatakaProfilPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisZadatakaProfilPictureBox.BackgroundImage")));
-            this.PopisZadatakaProfilPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisZadatakaProfilPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PopisZadatakaProfilPictureBox.Image")));
-            this.PopisZadatakaProfilPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("PopisZadatakaProfilPictureBox.InitialImage")));
-            this.PopisZadatakaProfilPictureBox.Location = new System.Drawing.Point(1822, 13);
+            resources.ApplyResources(this.PopisZadatakaProfilPictureBox, "PopisZadatakaProfilPictureBox");
             this.PopisZadatakaProfilPictureBox.Name = "PopisZadatakaProfilPictureBox";
-            this.PopisZadatakaProfilPictureBox.Size = new System.Drawing.Size(65, 65);
-            this.PopisZadatakaProfilPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PopisZadatakaProfilPictureBox.TabIndex = 22;
             this.PopisZadatakaProfilPictureBox.TabStop = false;
             this.PopisZadatakaProfilPictureBox.Click += new System.EventHandler(this.PopisZadatakaProfilPictureBox_Click);
             // 
             // PopisZadatakaProfilLinkLabel
             // 
-            this.PopisZadatakaProfilLinkLabel.AutoSize = true;
-            this.PopisZadatakaProfilLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            resources.ApplyResources(this.PopisZadatakaProfilLinkLabel, "PopisZadatakaProfilLinkLabel");
             this.PopisZadatakaProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PopisZadatakaProfilLinkLabel.Location = new System.Drawing.Point(1650, 31);
             this.PopisZadatakaProfilLinkLabel.Name = "PopisZadatakaProfilLinkLabel";
-            this.PopisZadatakaProfilLinkLabel.Size = new System.Drawing.Size(157, 29);
-            this.PopisZadatakaProfilLinkLabel.TabIndex = 0;
             this.PopisZadatakaProfilLinkLabel.TabStop = true;
-            this.PopisZadatakaProfilLinkLabel.Text = "Sara Bednaić";
             this.PopisZadatakaProfilLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.PopisZadatakaProfilLinkLabel_LinkClicked);
             // 
             // PopisZadatakaAddButton
             // 
-            this.PopisZadatakaAddButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            resources.ApplyResources(this.PopisZadatakaAddButton, "PopisZadatakaAddButton");
             this.PopisZadatakaAddButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.PopisZadatakaAddButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PopisZadatakaAddButton.BackgroundImage")));
-            this.PopisZadatakaAddButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PopisZadatakaAddButton.Location = new System.Drawing.Point(1305, 853);
-            this.PopisZadatakaAddButton.Margin = new System.Windows.Forms.Padding(2);
             this.PopisZadatakaAddButton.Name = "PopisZadatakaAddButton";
-            this.PopisZadatakaAddButton.Size = new System.Drawing.Size(60, 60);
-            this.PopisZadatakaAddButton.TabIndex = 29;
             this.PopisZadatakaAddButton.UseVisualStyleBackColor = false;
             this.PopisZadatakaAddButton.Click += new System.EventHandler(this.PopisZadatakaAddButton_Click);
             // 
             // PopisZadatakaOpisLabel
             // 
-            this.PopisZadatakaOpisLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PopisZadatakaOpisLabel.AutoSize = true;
-            this.PopisZadatakaOpisLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.PopisZadatakaOpisLabel, "PopisZadatakaOpisLabel");
             this.PopisZadatakaOpisLabel.ForeColor = System.Drawing.Color.DimGray;
-            this.PopisZadatakaOpisLabel.Location = new System.Drawing.Point(420, 158);
-            this.PopisZadatakaOpisLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PopisZadatakaOpisLabel.Name = "PopisZadatakaOpisLabel";
-            this.PopisZadatakaOpisLabel.Size = new System.Drawing.Size(176, 36);
-            this.PopisZadatakaOpisLabel.TabIndex = 30;
-            this.PopisZadatakaOpisLabel.Text = "Description";
             // 
             // PopisZadatakaZadatciFlowLayoutPanel
             // 
-            this.PopisZadatakaZadatciFlowLayoutPanel.AutoScroll = true;
-            this.PopisZadatakaZadatciFlowLayoutPanel.Location = new System.Drawing.Point(406, 393);
-            this.PopisZadatakaZadatciFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.PopisZadatakaZadatciFlowLayoutPanel, "PopisZadatakaZadatciFlowLayoutPanel");
             this.PopisZadatakaZadatciFlowLayoutPanel.Name = "PopisZadatakaZadatciFlowLayoutPanel";
-            this.PopisZadatakaZadatciFlowLayoutPanel.Size = new System.Drawing.Size(1042, 418);
-            this.PopisZadatakaZadatciFlowLayoutPanel.TabIndex = 31;
             // 
             // PanelLogo
             // 
-            this.PanelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PanelLogo.Location = new System.Drawing.Point(808, 0);
+            resources.ApplyResources(this.PanelLogo, "PanelLogo");
             this.PanelLogo.Name = "PanelLogo";
-            this.PanelLogo.Size = new System.Drawing.Size(265, 84);
-            this.PanelLogo.TabIndex = 68;
             // 
             // PopisZadataka
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1896, 1018);
             this.Controls.Add(this.PanelLogo);
             this.Controls.Add(this.PopisZadatakaZadatciFlowLayoutPanel);
             this.Controls.Add(this.PopisZadatakaOpisLabel);
@@ -256,12 +169,7 @@
             this.Controls.Add(this.PopisZadatakaAdminiLabel);
             this.Controls.Add(this.PopisZadatakaClanoviLabel);
             this.Controls.Add(this.PopisZadatakaImeProjektaLabel);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(1918, 1074);
-            this.MinimumSize = new System.Drawing.Size(1084, 820);
             this.Name = "PopisZadataka";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PopisZadataka";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PopisZadataka_Load);
             this.PopisZadatakaProfilPanel.ResumeLayout(false);

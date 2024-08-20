@@ -10,7 +10,7 @@ namespace dinamicLib
     {
         public static string LogoFoto()
         {
-            return "D:\\NTP projekt\\ntp_projekt\\dinamicLib\\Resursi\\logo.png";
+            return @"..\..\..\dinamicLib\Resursi\logo.png";
         }
     }
 }

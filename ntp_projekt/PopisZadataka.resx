@@ -122,7 +122,7 @@
     <value>1922, 1258</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaAdminiLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="PopisZadatakaOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 46</value>
@@ -255,6 +255,9 @@
   <data name="PopisZadatakaSearchButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
+  <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1077, 0</value>
+  </data>
   <data name="&gt;&gt;PopisZadatakaAdminiLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -350,17 +353,17 @@
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
-  <data name="&gt;&gt;PopisZadatakaAdminiLabel.Name" xml:space="preserve">
-    <value>PopisZadatakaAdminiLabel</value>
+  <data name="PopisZadatakaSearchButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaSearchButton.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaSearchRichTextBox.Name" xml:space="preserve">
     <value>PopisZadatakaSearchRichTextBox</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaSearchRichTextBox.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="PopisZadatakaAdminiListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>29</value>
@@ -373,6 +376,9 @@
   </data>
   <data name="PopisZadatakaOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>719, 196</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaNatragButton.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -393,7 +399,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaAdminiListBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="PopisZadatakaProfilPanel.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -402,13 +408,16 @@
     <value>PopisZadatakaZadatciFlowLayoutPanel</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaAddButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>PopisZadataka</value>
   </data>
   <data name="PopisZadatakaZadatciFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
+  </data>
+  <data name="PopisZadatakaProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaAddButton.Name" xml:space="preserve">
     <value>PopisZadatakaAddButton</value>
@@ -417,7 +426,7 @@
     <value>0</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaImeProjektaLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="PopisZadatakaSearchRichTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -1237,7 +1246,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaOpisLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaNatragButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1260,14 +1269,14 @@
   <data name="PopisZadatakaClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>715, 258</value>
   </data>
+  <data name="PopisZadatakaProfilLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="&gt;&gt;PopisZadatakaProfilPanel.Name" xml:space="preserve">
     <value>PopisZadatakaProfilPanel</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PopisZadatakaNatragButton.Parent" xml:space="preserve">
-    <value>PopisZadatakaProfilPanel</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaClanoviListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1305,14 +1314,8 @@
   <data name="&gt;&gt;PopisZadatakaZadatciFlowLayoutPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PopisZadatakaProfilLinkLabel.Name" xml:space="preserve">
-    <value>PopisZadatakaProfilLinkLabel</value>
-  </data>
   <data name="&gt;&gt;PopisZadatakaOpisLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PopisZadatakaAdminiLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaNatragButton.Name" xml:space="preserve">
     <value>PopisZadatakaNatragButton</value>
@@ -1467,8 +1470,8 @@
   <data name="PopisZadatakaSearchRichTextBox.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="PopisZadatakaProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="&gt;&gt;PopisZadatakaNatragButton.Parent" xml:space="preserve">
+    <value>PopisZadatakaProfilPanel</value>
   </data>
   <data name="PopisZadatakaAddButton.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -1720,6 +1723,9 @@
         iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 </value>
   </data>
+  <data name="&gt;&gt;PanelLogo.Name" xml:space="preserve">
+    <value>PanelLogo</value>
+  </data>
   <data name="PopisZadatakaZadatciFlowLayoutPanel.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1730,7 +1736,7 @@
     <value>2</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaProfilPanel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaAdminiListBox.Name" xml:space="preserve">
     <value>PopisZadatakaAdminiListBox</value>
@@ -1753,8 +1759,11 @@
   <data name="&gt;&gt;PopisZadatakaProfilPictureBox.Parent" xml:space="preserve">
     <value>PopisZadatakaProfilPanel</value>
   </data>
-  <data name="PopisZadatakaProfilLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="&gt;&gt;PopisZadatakaProfilLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PopisZadatakaAdminiLabel.Name" xml:space="preserve">
+    <value>PopisZadatakaAdminiLabel</value>
   </data>
   <data name="PopisZadatakaNatragButton.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -1766,13 +1775,16 @@
     <value>1798, 1070</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaClanoviListBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="PopisZadatakaProfilPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;PopisZadatakaProfilLinkLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;PopisZadatakaProfilLinkLabel.Name" xml:space="preserve">
+    <value>PopisZadatakaProfilLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaProfilLinkLabel.Parent" xml:space="preserve">
     <value>PopisZadatakaProfilPanel</value>
@@ -1780,8 +1792,8 @@
   <data name="PopisZadatakaOpisLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 15pt, style=Bold</value>
   </data>
-  <data name="PopisZadatakaSearchButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="PopisZadatakaAdminiLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaProfilPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1804,17 +1816,23 @@
   <data name="PopisZadatakaAdminiLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>1030, 258</value>
   </data>
+  <data name="&gt;&gt;PanelLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PanelLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
   <data name="PopisZadatakaClanoviListBox.Items1" xml:space="preserve">
     <value>Petra Velić</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaClanoviLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="PopisZadatakaNatragButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 80</value>
   </data>
   <data name="&gt;&gt;PopisZadatakaZadatciFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="PopisZadatakaNatragButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
