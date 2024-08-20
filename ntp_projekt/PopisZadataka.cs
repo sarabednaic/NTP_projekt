@@ -53,7 +53,7 @@ namespace ntp_projekt
 
         private void PopisZadataka_Load(object sender, EventArgs e)
         {
-            PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
+            PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto()); 
 
         }
     }
