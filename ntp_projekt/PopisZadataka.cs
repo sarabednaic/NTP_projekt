@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XmlProjektiLibrary;
 
 
 namespace ntp_projekt
@@ -20,7 +21,7 @@ namespace ntp_projekt
             InitializeComponent();
             PopisZadatakaProfilLinkLabel.Text = Session.DohvatiPunoIme();
             PopisZadatakaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
-            
+
 
             baza = new Baza(@"..\..\TeamPlan.mdb");
             string User = Session.DohvatiKorisnika();
@@ -31,30 +32,26 @@ namespace ntp_projekt
                 $" inner join zadatak on zadatak.ID = clanovi_zadatka.zadatak_ID) " +
                 $" WHERE korisnik.korisnicko_ime = \"{User}\";");
 
-            //PopisZadatakaImeProjektaLabel.Text = 
+            Projekt trenutniProjekt = SessionProjekt.dohvatiTrenutniProjekt();
 
             if (polje != null)
             {
                 foreach (List<string> row in polje)
                 {
-                    PopisZadatkaControl PopisZadatakaControl = new PopisZadatkaControl();
-                    PopisZadatakaControl.setNaslov = row[2].ToString();
-                    PopisZadatakaControl.setOpis = row[3].ToString();
-                    PopisZadatakaZadatciFlowLayoutPanel.Controls.Add(PopisZadatakaControl);
-
+                    if (trenutniProjekt.Id == row[6].ToString())
+                    {
+                        PopisZadatkaControl PopisZadatakaControl = new PopisZadatkaControl();
+                        PopisZadatakaControl.setNaslov = row[2].ToString();
+                        PopisZadatakaControl.setOpis = row[3].ToString();
+                        PopisZadatakaZadatciFlowLayoutPanel.Controls.Add(PopisZadatakaControl);
+                    }
                 }
             }
+            PopisZadatakaImeProjektaLabel.Text = trenutniProjekt.Naslov;
+            PopisZadatakaOpisLabel.Text = trenutniProjekt.Opis;
 
-            if (polje != null)
-            {
-                foreach (List<string> row in polje)
-                {
-                    PopisZadatakaClanoviListBox.Items.Add(row[6]);
 
-                }
-            }
 
-            
 
         }
 
@@ -80,20 +77,13 @@ namespace ntp_projekt
 
         private void PopisZadatakaNatragButton_Click(object sender, EventArgs e)
         {
-            
+            SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
         }
 
         private void PopisZadataka_Load(object sender, EventArgs e)
         {
             PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
-
-           
-
-        }
-
-        private void PopisZadatakaClanoviListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
     }

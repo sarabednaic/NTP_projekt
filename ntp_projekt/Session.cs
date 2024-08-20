@@ -98,13 +98,25 @@ namespace ntp_projekt
         public static void CleanSession() {
             RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\NTP_Projekt\TrenutniKorisnik");
             if (key != null) {
-                var namesArray = key.GetValueNames();
-                foreach (var name in namesArray)
+                string[] namesArray = key.GetValueNames();
+                foreach (string name in namesArray)
                 {
                     key.DeleteValue(name, true);
                 }
             }
             key.Close();
+        }
+
+        public static void DeaktivirajRacun() {
+            try
+            {
+                string User = Session.DohvatiKorisnika();
+                baza.BazaDelete($"DELETE FROM korisnik WHERE korisnicko_ime = '{User}'");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Greška pri deaktivaciji računa za trenutnu sesiju: " + ex.Message);
+            }
         }
     }
 }

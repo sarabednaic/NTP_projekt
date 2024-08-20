@@ -203,6 +203,30 @@ namespace ntp_projekt
             }
         }
 
+        public void BazaDelete(string query)
+        {
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    {
+                        int rowsAffected = command.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show($"Uspješna deaktivacija računa.");
+                        }
+                        
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Greška pri deaktivaciji računa: {ex.Message}");
+                }
+            }
+        }
+
         public string ConnectionString { get { return connectionString; } }
 
     }

@@ -13,17 +13,22 @@ namespace ntp_projekt
     public partial class PopisProjektaControl : UserControl
     {
         string id;
+        string naslov;
+        string opis;
+        string status;
+        Color boja;
+        
         
         public PopisProjektaControl()
         {
             InitializeComponent();
         }
-        
-        public string setId { set { id = value; } }
-        public string setNaslov { set { PopisProjektaControlNaslovProjektaLabel.Text = value;  } }
-        public string setOpis { set { PopisProjektaControlOpisLabel.Text = value; } }
-        public string setstatus { set { PopisProjektaControlStatusLabel.Text = value; } }
-        public Color setBoja { set { button1.BackColor = value; } }
+
+        public string Id { get { return id; } set { id = value; } }
+        public string Naslov { get { return naslov; } set { naslov = value; PopisProjektaControlNaslovProjektaLabel.Text = value; } }
+        public string Opis { get { return opis; } set { opis = value; PopisProjektaControlOpisLabel.Text = value; } }
+        public string tatus { get { return status; } set { status = value; PopisProjektaControlStatusLabel.Text = value; } }
+        public Color Boja { get { return boja; } set { boja = value; button1.BackColor = value; } }
 
 
         private void PopisProjektaControlEditButton_Click(object sender, EventArgs e)
@@ -38,7 +43,7 @@ namespace ntp_projekt
 
         private void PopisProjektaControlProjektButton_Click(object sender, EventArgs e)
         {
-            
+            SessionProjekt.postaviTrenutniProjekt(Id, Naslov, Opis);
             StartApk.MainFormManager.TrenutnaForma = new PopisZadataka();
 
         }

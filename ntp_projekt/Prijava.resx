@@ -152,8 +152,9 @@
   <data name="PrijavaKorisnickoImeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>287, 43</value>
   </data>
-  <data name="&gt;&gt;PrijavaNaslovLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="&gt;&gt;PrijavaLozinkaLabel.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -166,6 +167,9 @@
   </data>
   <data name="PrijavaLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>426, 366</value>
+  </data>
+  <data name="&gt;&gt;PrijavaNaslovLabel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;PrijavaLozinkaLabel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -197,11 +201,14 @@
   <data name="&gt;&gt;PrijavaPrijavaButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PrijavaLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>68</value>
+  <data name="PrijavaLozinkaLabel.Text" xml:space="preserve">
+    <value>Lozinka</value>
   </data>
   <data name="PrijavaKorisImeTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>423, 290</value>
+  </data>
+  <data name="PrijavaLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 317</value>
   </data>
   <data name="PrijavaPrijavaButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
@@ -233,7 +240,6 @@
   <data name="PrijavaNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>309, 120</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
@@ -243,14 +249,8 @@
   <data name="PrijavaRegistracijaLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 20</value>
   </data>
-  <data name="&gt;&gt;PrijavaRegistracijaLinkLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;PrijavaRegistracijaLinkLabel.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
   </data>
   <data name="&gt;&gt;PrijavaNaslovLabel.Name" xml:space="preserve">
     <value>PrijavaNaslovLabel</value>
@@ -260,6 +260,9 @@
   </data>
   <data name="PrijavaPrijavaButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="PrijavaPrijavaButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
   </data>
   <data name="&gt;&gt;PrijavaLozinkaTextBox.Name" xml:space="preserve">
     <value>PrijavaLozinkaTextBox</value>
@@ -279,20 +282,14 @@
   <data name="&gt;&gt;PrijavaLozinkaLabel.Name" xml:space="preserve">
     <value>PrijavaLozinkaLabel</value>
   </data>
-  <data name="&gt;&gt;PrijavaNaslovLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;PrijavaRegistracijaLinkLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="PrijavaLozinkaLabel.Text" xml:space="preserve">
-    <value>Lozinka</value>
-  </data>
-  <data name="PrijavaPrijavaButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
+  <data name="PrijavaLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
   </data>
   <data name="&gt;&gt;PrijavaKorisnickoImeLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PrijavaKorisImeTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PrijavaRegistracijaLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>579, 513</value>
@@ -309,14 +306,17 @@
   <data name="PrijavaLozinkaLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="PrijavaLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 317</value>
+  <data name="&gt;&gt;PrijavaKorisImeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PrijavaKorisnickoImeLabel.Name" xml:space="preserve">
     <value>PrijavaKorisnickoImeLabel</value>
   </data>
   <data name="PrijavaKorisnickoImeLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>418, 245</value>
+  </data>
+  <data name="&gt;&gt;PrijavaNaslovLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PrijavaRegistracijaLinkLabel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>

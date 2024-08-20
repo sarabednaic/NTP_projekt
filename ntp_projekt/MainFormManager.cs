@@ -41,6 +41,7 @@ namespace ntp_projekt
             if (Exitapk) 
             {
                 
+                SessionProjekt.CleanSession();
                 base.OnMainFormClosed(sender, e);
             }
         }

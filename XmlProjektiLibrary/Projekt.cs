@@ -16,9 +16,9 @@ namespace XmlProjektiLibrary
         Color boja;
 
 
-        public Projekt(string _Naslov, string _Opis)
+        public Projekt(string _Id,string _Naslov, string _Opis)
         {
-            
+            this.id = _Id;
             this.naslov = _Naslov ;
             this.opis = _Opis ;
         }
