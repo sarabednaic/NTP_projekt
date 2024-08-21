@@ -32,22 +32,22 @@ namespace ntp_projekt
         public string Status { get { return status; } set { status = value; PopisProjektaControlStatusLabel.Text = value; } }
         public void setBoja(string status){
             if (status.Equals("U tijeku")) {
-                boja = Color.Yellow;
+                boja = Color.Green;
                 button1.BackColor = boja;
             }
             else if (status.Equals("Završeno"))
             {
-                boja = Color.Gray;
+                boja = Color.Orange;
                 button1.BackColor = boja;
             }
-            else if (status.Equals("Otvoren problem"))
+            else if (status.Equals("Problem"))
             {
                 boja = Color.Red;
                 button1.BackColor = boja;
             }
-            else if (status.Equals("Nije započet"))
+            else if (status.Equals("Nije započeto"))
             {
-                boja = Color.Green;
+                boja = Color.Gray;
                 button1.BackColor = boja;
             }
             else

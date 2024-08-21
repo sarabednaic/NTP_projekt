@@ -52,7 +52,7 @@ namespace ntp_projekt
                         PopisZadatakaControl.setOpis = row[3].ToString();
                         PopisZadatakaZadatciFlowLayoutPanel.Controls.Add(PopisZadatakaControl);
 
-                        dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"C:\Users\sbednaic\Desktop\proba\proba\statusZadatka.json"));
+                        dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
 
                         foreach (var obj in jsonFile)
                         {

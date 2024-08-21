@@ -10,14 +10,14 @@
 	</projekt>
 	<projekt>
 		<id>3</id>
-		<status>Otvoren problem</status>
+		<status>Problem</status>
 	</projekt>
 	<projekt>
 		<id>4</id>
-		<status>Nije započet</status>
+		<status>Nije započeto</status>
 	</projekt>
 	<projekt>
 		<id>5</id>
-		<status>Nije započet</status>
+		<status>Nije započeto</status>
 	</projekt>
 </projekti>
