@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 using ntp_projekt.soap;  // Namespace za SOAP servis
 
@@ -7,11 +8,17 @@ namespace ntp_projekt
     public partial class Registracija : Form
     {
         private Baza baza;
+        Ini iniFile;
 
         public Registracija()
         {
             InitializeComponent();
             baza = new Baza(@"..\..\TeamPlan.mdb");
+            iniFile = new Ini();
+            iniFile.UcitajDatoteku(@"..\..\postavke.ini");
+
+            RegistracijaJezikComboBox.Items.Add("hrvatski");
+            RegistracijaJezikComboBox.Items.Add("english");
         }
 
         private void Registracija_Load(object sender, EventArgs e)
@@ -64,10 +71,25 @@ namespace ntp_projekt
                         int prijava = baza.BazaWrite(upit);
                         string query = $"UPDATE korisnik SET profilna = ? WHERE korisnicko_ime = \"{noviKorisnik.KorisnickoIme}\";";
                         baza.BazaSetImage(query, @"..\..\Images\profilna.jpg");
+                        iniFile.PostaviVrijednost("Postavke", "Jezik", RegistracijaJezikComboBox.SelectedItem.ToString());
+                        iniFile.SpremiDatoteku(@"..\..\postavke.ini");
+                        string jezik = iniFile.DohvatiVrijednost("Postavke", "Jezik", "hrvatski");
 
                         if (prijava > 0)
                         {
                             MessageBox.Show("Registracija uspješna!");
+
+                            if (jezik == "english")
+                            {
+                                Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
+                                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                            }
+                            else if (jezik == "hrvatski")
+                            {
+                                Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("hr");
+                                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("hr");
+                            }
+
                             StartApk.MainFormManager.TrenutnaForma = new Prijava();
                         }
                         else

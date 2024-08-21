@@ -121,7 +121,7 @@
   <data name="PZControlDeleteButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAAA3CAYAAAC8TkynAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAADSNJREFUaEPNmkmslUUWx1Fja5wCaeOEtgujDQtjdOvK2L3RXpuYGMEGdaGuFEOL
+        DQAACw0B7QfALAAADSNJREFUaEPNmkmslUUWx1Fja5wCaeOEtgujDQtjdOvK2L3RXpuYGMEGdaGuFEOL
         Q0AQBBR14cIYxxYwrU2LEUVR5lEU0URNZFAhzrx3x2+8j+rzO+9WUfW9717e9fKERfGd/3fOqTPUqfNV
         3ce4OI7N4cOHTbVaNYcOHTKtVksxdKVSUTpJEsWNRkMxT3CWZYoHBwcVQ+d5rnS9XlccRZFinuAyO+hD
         Mx+4aAf7YPwBQ6MPzXxg4gBbO9gH4w8Y2tqxPjK/JoDJarWaCsAEQzM5NDJgJgejCE7TVDFyYGiCgEYG
@@ -183,7 +183,7 @@
   <data name="PZControlEditButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAAA3CAYAAAC8TkynAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAB7RJREFUaEPtWulPVFcU79/RCrOyDFsRbNW0lCaa+MG06ScTg5JqqcIX2yZtAQ1Q
+        DQAACw0B7QfALAAAB7RJREFUaEPtWulPVFcU79/RCrOyDFsRbNW0lCaa+MG06ScTg5JqqcIX2yZtAQ1Q
         Y9cvgHyoQ7+aGAuyl0WwBQuViAqJVoosBmLaokZZCkTW0/M7w30Zxje8gVnSqZzklzsz7717z/nds9x7
         37xEL7hsEbDavrAStgQsLi5qePr0KS0sLNDS0tLqVd8lbAmAsTC+paWF9u3bR729vbS8vEwrKyurd/gm
         YUcADATm5+eppqaGHLEOMpvNlPbGm9TX27dhEsKKAMy6mvm2tjaKjIwkU0QkWU1mskWaKXX7drp3756E
