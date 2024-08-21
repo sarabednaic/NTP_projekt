@@ -1,2 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-
+<projekti>
+	<projekt>
+		<id>1</id>
+		<status>U tijeku</status>
+	</projekt>
+	<projekt>
+		<id>2</id>
+		<status>Završeno</status>
+	</projekt>
+	<projekt>
+		<id>3</id>
+		<status>Otvoren problem</status>
+	</projekt>
+	<projekt>
+		<id>4</id>
+		<status>Nije započet</status>
+	</projekt>
+	<projekt>
+		<id>5</id>
+		<status>Nije započet</status>
+	</projekt>
+</projekti>

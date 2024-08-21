@@ -5,38 +5,53 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.Xml.Linq;
 
 namespace XmlProjektiLibrary
 {
     public class XmlOperator
     {
         XmlDocument xmlDoc = new XmlDocument();
-        Projekt[] projekts = null;
-        int count = 0;
 
 
-        public void XmlRead()
+        public XmlOperator() { }
+
+        public string XmlRead(string id)
         {
-            xmlDoc.Load(@"");
+            xmlDoc.Load(@"C:\Users\Matija\Source\Repos\sarabednaic\NTP_projekt\XmlProjektiLibrary\XMLPopisProjekta.xml");
 
-            XmlNodeList xmlNodeList = xmlDoc.SelectNodes("//projekt");
+            XmlNodeList xmlNodeList = xmlDoc.SelectNodes("projekti/projekt");
 
             foreach (XmlNode xmlNode in xmlNodeList)
-            {
-                if (xmlNode.SelectSingleNode("ID").InnerText == projekts[count].Id.ToString())
-                {
-                    projekts[count].Status = xmlNode.SelectSingleNode("status").InnerText;
-                    projekts[count].Boja = Color.FromName(xmlNode.SelectSingleNode("boja").InnerText);
-
+            {   
+                string vrijdnostId = xmlNode.ChildNodes[0].InnerText.ToString();
+                if (vrijdnostId != null && vrijdnostId == id) {
+                    string status = xmlNode.ChildNodes[1].InnerText.ToString();
+                    return status;
                 }
             }
-
-            count++;
+            return "";
         }
-        public void XmlWrite(Projekt[] projekti) {
+        public void XmlWrite(Projekt projekt) 
+        {
+            xmlDoc.Load(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
+            
             
         }
-        public void XmlEdit() { }
+        public void XmlEdit(Projekt projekt) 
+        {
+            xmlDoc.Load(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
+            XmlNodeList aNodes = xmlDoc.SelectNodes("/projekti/projekt");
+            foreach (XmlNode aNode in aNodes)
+            {
+                XmlAttribute idAtribut = aNode.Attributes["id"];
+                if (idAtribut != null && idAtribut.ToString() == projekt.Id.ToString())
+                {
+                    XmlAttribute statusAtribut = aNode.Attributes["status"];
+                    statusAtribut.Value = projekt.Status;
+                }
+            }
+        }
         public void XmlDelete() { }
     }
 }

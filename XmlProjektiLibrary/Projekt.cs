@@ -13,7 +13,7 @@ namespace XmlProjektiLibrary
         string naslov;
         string opis;
         string status;
-        Color boja;
+        
 
 
         public Projekt(string _Id,string _Naslov, string _Opis)
@@ -23,11 +23,17 @@ namespace XmlProjektiLibrary
             this.opis = _Opis ;
         }
 
+        public Projekt(string id , string status) 
+        { 
+            this.id = id; 
+            this.status = status ;
+        }
+
         public string Id { get { return id; } set { id = value; } }
         public string Status { get { return status; } set { status = value; } }
-        public Color Boja { get { return boja; } set { boja = value; } }
         public string Opis { get { return opis; } set { opis = value; } }
         public string Naslov { get { return naslov; } set { naslov = value; } }
 
+        
     }
 }

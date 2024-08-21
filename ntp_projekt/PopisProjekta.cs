@@ -17,7 +17,7 @@ namespace ntp_projekt
     {
         Ini iniFile;
         Baza baza;
-          
+        XmlOperator XmlOperator = new XmlOperator();
 
         public PopisProjekta()
         {
@@ -42,8 +42,10 @@ namespace ntp_projekt
                     PopisProjektaControl.Id = row[1].ToString();
                     PopisProjektaControl.Naslov = row[2].ToString();
                     PopisProjektaControl.Opis = row[3].ToString();
+                    PopisProjektaControl.Status = XmlOperator.XmlRead(row[1].ToString());
+                    PopisProjektaControl.setBoja(PopisProjektaControl.Status);
                     PopisProjektaProjektiFlowLayoutPanel.Controls.Add(PopisProjektaControl);
-                    
+
                 }
             }
         }

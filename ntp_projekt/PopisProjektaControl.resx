@@ -119,14 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PopisProjektaControlProjektButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
+    <value>3, 2</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PopisProjektaControlProjektButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="PopisProjektaControlProjektButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 160</value>
+    <value>1307, 200</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PopisProjektaControlProjektButton.TabIndex" type="System.Int32, mscorlib">
@@ -147,7 +147,7 @@
   <data name="PopisProjektaControlEditButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAAA3CAYAAAC8TkynAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAB7RJREFUaEPtWulPVFcU79/RCrOyDFsRbNW0lCaa+MG06ScTg5JqqcIX2yZtAQ1Q
+        DgAACw4BQL7hQQAAB7RJREFUaEPtWulPVFcU79/RCrOyDFsRbNW0lCaa+MG06ScTg5JqqcIX2yZtAQ1Q
         Y9cvgHyoQ7+aGAuyl0WwBQuViAqJVoosBmLaokZZCkTW0/M7w30Zxje8gVnSqZzklzsz7717z/nds9x7
         37xEL7hsEbDavrAStgQsLi5qePr0KS0sLNDS0tLqVd8lbAmAsTC+paWF9u3bR729vbS8vEwrKyurd/gm
         YUcADATm5+eppqaGHLEOMpvNlPbGm9TX27dhEsKKAMy6mvm2tjaKjIwkU0QkWU1mskWaKXX7drp3756E
@@ -187,13 +187,13 @@
     <value>Zoom</value>
   </data>
   <data name="PopisProjektaControlEditButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>821, 62</value>
+    <value>1095, 78</value>
   </data>
   <data name="PopisProjektaControlEditButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="PopisProjektaControlEditButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 60</value>
+    <value>80, 75</value>
   </data>
   <data name="PopisProjektaControlEditButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -213,7 +213,7 @@
   <data name="PopisProjektaControlDeleteButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAAA3CAYAAAC8TkynAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAADSNJREFUaEPNmkmslUUWx1Fja5wCaeOEtgujDQtjdOvK2L3RXpuYGMEGdaGuFEOL
+        DgAACw4BQL7hQQAADSNJREFUaEPNmkmslUUWx1Fja5wCaeOEtgujDQtjdOvK2L3RXpuYGMEGdaGuFEOL
         Q0AQBBR14cIYxxYwrU2LEUVR5lEU0URNZFAhzrx3x2+8j+rzO+9WUfW9717e9fKERfGd/3fOqTPUqfNV
         3ce4OI7N4cOHTbVaNYcOHTKtVksxdKVSUTpJEsWNRkMxT3CWZYoHBwcVQ+d5rnS9XlccRZFinuAyO+hD
         Mx+4aAf7YPwBQ6MPzXxg4gBbO9gH4w8Y2tqxPjK/JoDJarWaCsAEQzM5NDJgJgejCE7TVDFyYGiCgEYG
@@ -276,13 +276,13 @@
     <value>Zoom</value>
   </data>
   <data name="PopisProjektaControlDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>894, 62</value>
+    <value>1192, 78</value>
   </data>
   <data name="PopisProjektaControlDeleteButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="PopisProjektaControlDeleteButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 60</value>
+    <value>80, 75</value>
   </data>
   <data name="PopisProjektaControlDeleteButton.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -306,13 +306,10 @@
     <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="PopisProjektaControlNaslovProjektaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 35</value>
-  </data>
-  <data name="PopisProjektaControlNaslovProjektaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>44, 44</value>
   </data>
   <data name="PopisProjektaControlNaslovProjektaLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 30</value>
+    <value>257, 39</value>
   </data>
   <data name="PopisProjektaControlNaslovProjektaLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -336,13 +333,10 @@
     <value>True</value>
   </data>
   <data name="PopisProjektaControlOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 93</value>
-  </data>
-  <data name="PopisProjektaControlOpisLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>45, 116</value>
   </data>
   <data name="PopisProjektaControlOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 20</value>
+    <value>139, 25</value>
   </data>
   <data name="PopisProjektaControlOpisLabel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -369,13 +363,13 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="PopisProjektaControlStatusLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>792, 21</value>
+    <value>1026, 30</value>
   </data>
-  <data name="PopisProjektaControlStatusLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="PopisProjektaControlStatusLabel.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
   </data>
   <data name="PopisProjektaControlStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 25</value>
+    <value>92, 31</value>
   </data>
   <data name="PopisProjektaControlStatusLabel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -399,13 +393,13 @@
     <value>False</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>864, 21</value>
+    <value>1152, 26</value>
   </data>
   <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 28</value>
+    <value>120, 35</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -426,13 +420,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 20</value>
+    <value>12, 25</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>985, 165</value>
+    <value>1313, 206</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>PopisProjektaControl</value>
