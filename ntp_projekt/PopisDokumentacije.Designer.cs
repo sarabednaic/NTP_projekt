@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Label PopisDokumentacijeNaslovLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopisDokumentacije));
             this.PopisDokumentacijeStatusButton = new System.Windows.Forms.Button();
             this.PopisDokumentacijeClanoviLabel = new System.Windows.Forms.Label();
@@ -45,15 +44,10 @@
             this.PopisDokumentacijeBazaPeriodLabel = new System.Windows.Forms.Label();
             this.PopisDokumentacijeBazaStatusLabel = new System.Windows.Forms.Label();
             this.PopisDokumentacijeReportButton = new System.Windows.Forms.Button();
-            PopisDokumentacijeNaslovLabel = new System.Windows.Forms.Label();
+            this.PopisDokumentacijeNaslovLabel = new System.Windows.Forms.Label();
             this.PopisDokumentacijePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PopisDokumentacijeProfilPictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // PopisDokumentacijeNaslovLabel
-            // 
-            resources.ApplyResources(PopisDokumentacijeNaslovLabel, "PopisDokumentacijeNaslovLabel");
-            PopisDokumentacijeNaslovLabel.Name = "PopisDokumentacijeNaslovLabel";
             // 
             // PopisDokumentacijeStatusButton
             // 
@@ -154,10 +148,17 @@
             this.PopisDokumentacijeReportButton.Name = "PopisDokumentacijeReportButton";
             this.PopisDokumentacijeReportButton.UseVisualStyleBackColor = true;
             // 
+            // PopisDokumentacijeNaslovLabel
+            // 
+            resources.ApplyResources(this.PopisDokumentacijeNaslovLabel, "PopisDokumentacijeNaslovLabel");
+            this.PopisDokumentacijeNaslovLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.PopisDokumentacijeNaslovLabel.Name = "PopisDokumentacijeNaslovLabel";
+            // 
             // PopisDokumentacije
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.PopisDokumentacijeNaslovLabel);
             this.Controls.Add(this.PopisDokumentacijeReportButton);
             this.Controls.Add(this.PopisDokumentacijeBazaStatusLabel);
             this.Controls.Add(this.PopisDokumentacijeBazaPeriodLabel);
@@ -169,7 +170,6 @@
             this.Controls.Add(this.PopisDokumentacijeOpisLabel);
             this.Controls.Add(this.PopisDokumentacijeClanoviLabel);
             this.Controls.Add(this.PopisDokumentacijeStatusButton);
-            this.Controls.Add(PopisDokumentacijeNaslovLabel);
             this.Name = "PopisDokumentacije";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PopisDokumentacije_Load);
@@ -197,5 +197,6 @@
         private System.Windows.Forms.Label PopisDokumentacijeBazaStatusLabel;
         private System.Windows.Forms.Button PopisDokumentacijeReportButton;
         private System.Windows.Forms.Panel PanelLogo;
+        private System.Windows.Forms.Label PopisDokumentacijeNaslovLabel;
     }
 }

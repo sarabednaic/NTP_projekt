@@ -18,7 +18,7 @@ namespace XmlProjektiLibrary
 
         public string XmlRead(string id)
         {
-            xmlDoc.Load(@"C:\Users\Matija\Source\Repos\sarabednaic\NTP_projekt\XmlProjektiLibrary\XMLPopisProjekta.xml");
+            xmlDoc.Load(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
 
             XmlNodeList xmlNodeList = xmlDoc.SelectNodes("projekti/projekt");
 

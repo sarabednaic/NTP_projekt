@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
+using System.Text;
 using System.Windows.Forms;
 
 namespace ntp_projekt
@@ -87,6 +88,42 @@ namespace ntp_projekt
                 }
             }
         }
+
+        public List<string> ListaBazaRead(string query)
+        {
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    using (OleDbDataReader reader = command.ExecuteReader())
+                    {
+                        if (!reader.HasRows)
+                            return null;
+
+                        List<string> results = new List<string>();
+                        while (reader.Read())
+                        {
+                            StringBuilder row = new StringBuilder();
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                if (i > 0) row.Append(", ");  // Dodavanje separatora između vrijednosti
+                                row.Append(reader[i].ToString());
+                            }
+                            results.Add(row.ToString());
+                        }
+                        return results;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Greška pri naprednom čitanju iz baze: " + ex.Message);
+                    return null;
+                }
+            }
+        }
+
 
         public int BazaWrite(string query)
         {

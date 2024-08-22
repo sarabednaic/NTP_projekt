@@ -1,26 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ntp_projekt
 {
     public partial class PopisZadatkaControl : UserControl
     {
+        public string Naslov
+        {
+            set { PZControlNaslovLabel.Text = value; }
+            get { return PZControlNaslovLabel.Text; }
+        }
+
+        public string Opis
+        {
+            set { PZControlOpisLabel.Text = value; }
+            get { return PZControlOpisLabel.Text; }
+        }
+
+        public string Status
+        {
+            set { PZControlStatusLabel.Text = value; }
+            get { return PZControlStatusLabel.Text; }
+        }
+
+        public Color Boja
+        {
+            set { PZControlStatusButton.BackColor = value; }
+            get { return PZControlStatusButton.BackColor; }
+        }
+
         public PopisZadatkaControl()
         {
             InitializeComponent();
         }
-
-        public string setNaslov { set { PZControlNaslodLabel.Text = value; } }
-        public string setOpis { set { PZControlPopisLabel.Text = value; } }
-        public string setStatus { set { PZControlStatusLabel.Text = value; } }
-        public Color setBoja { set { PZControlStatusButton.BackColor = value; } }
 
         private void PZControlDeleteButton_Click(object sender, EventArgs e)
         {
@@ -34,9 +47,9 @@ namespace ntp_projekt
 
         private void PZControlZadatakButton_Click(object sender, EventArgs e)
         {
+            SessionZadatak.ZadatakaInfo(Naslov, Opis);
+            MessageBox.Show("Control: " + SessionZadatak.Naslov + " " + SessionZadatak.Opis);
             StartApk.MainFormManager.TrenutnaForma = new PopisDokumentacije();
         }
-
-        
     }
 }

@@ -13,6 +13,7 @@ using XmlProjektiLibrary;
 using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using ntp_projekt.TeamPlanDataSetTableAdapters;
 
 
 namespace ntp_projekt
@@ -48,8 +49,8 @@ namespace ntp_projekt
                     if (trenutniProjekt.Id == row[6].ToString())
                     {
                         PopisZadatkaControl PopisZadatakaControl = new PopisZadatkaControl();
-                        PopisZadatakaControl.setNaslov = row[2].ToString();
-                        PopisZadatakaControl.setOpis = row[3].ToString();
+                        PopisZadatakaControl.Naslov = row[2].ToString();
+                        PopisZadatakaControl.Opis = row[3].ToString();
                         PopisZadatakaZadatciFlowLayoutPanel.Controls.Add(PopisZadatakaControl);
 
                         dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
@@ -58,27 +59,45 @@ namespace ntp_projekt
                         {
                             if ((string)obj["Zadatak_ID"] == row[1].ToString())
                             {
-                                PopisZadatakaControl.setStatus = obj["Status"].ToString();
-                                if (obj["Status"].ToString() == "zavrseno") { PopisZadatakaControl.setBoja = Color.Orange; }
-                                else if (obj["Status"].ToString() == "nije zapoceto") { PopisZadatakaControl.setBoja = Color.Gray; }
-                                else if (obj["Status"].ToString() == "problem") { PopisZadatakaControl.setBoja = Color.Red; }
-                                else if (obj["Status"].ToString() == "u tijeku") { PopisZadatakaControl.setBoja = Color.Green; }
+                                PopisZadatakaControl.Status = obj["Status"].ToString();
+                                if (obj["Status"].ToString() == "zavrseno") { PopisZadatakaControl.Boja = Color.Orange; }
+                                else if (obj["Status"].ToString() == "nije zapoceto") { PopisZadatakaControl.Boja = Color.Gray; }
+                                else if (obj["Status"].ToString() == "problem") { PopisZadatakaControl.Boja = Color.Red; }
+                                else if (obj["Status"].ToString() == "u tijeku") { PopisZadatakaControl.Boja = Color.Green; }
                                 break;
                             }
                         }
+
+                    }
+
+                    List<string> clanovi = baza.ListaBazaRead("SELECT korisnik.ime & ' ' & korisnik.prezime AS ime_prezime FROM " +
+                           "(korisnik INNER JOIN clanovi_projekta ON clanovi_projekta.korisnik_ID = korisnik.ID) " +
+                           "INNER JOIN projekt ON projekt.ID = clanovi_projekta.projekt_ID WHERE projekt.ID = " + row[6] + ";");
+
+                    List<string> admini = baza.ListaBazaRead("SELECT korisnik.ime & ' ' & korisnik.prezime AS ime_prezime FROM " +
+                        "(korisnik INNER JOIN clanovi_projekta ON clanovi_projekta.korisnik_ID = korisnik.ID) " +
+                        "INNER JOIN projekt ON projekt.ID = clanovi_projekta.projekt_ID WHERE projekt.ID = " + row[6] + " AND clanovi_projekta.admin = TRUE;");
+
+                    PopisZadatakaClanoviListBox.Items.Clear();
+                    foreach (string clan in clanovi)
+                    {
+                        PopisZadatakaClanoviListBox.Items.Add(clan);
+                    }
+
+                    PopisZadatakaAdminiListBox.Items.Clear();
+                    foreach (string admin in admini)
+                    {
+                        PopisZadatakaAdminiListBox.Items.Add(admin);
                     }
                 }
             }
+
             PopisZadatakaImeProjektaLabel.Text = trenutniProjekt.Naslov;
             PopisZadatakaOpisLabel.Text = trenutniProjekt.Opis;
-
-
-
-
         }
 
         private void PopisZadatakaReportButton_Click(object sender, EventArgs e)
-        {
+        {   
             StartApk.MainFormManager.TrenutnaForma = new PopisDokumentacije();
         }
 
