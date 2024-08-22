@@ -136,9 +136,6 @@
   <data name="DodajZadatakClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>599, 554</value>
   </data>
-  <data name="DodajZadatakNazivTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 336</value>
-  </data>
   <data name="DodajZadatakLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>805, 733</value>
   </data>

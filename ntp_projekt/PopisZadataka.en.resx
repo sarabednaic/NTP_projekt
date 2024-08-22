@@ -333,9 +333,6 @@
   <data name="PopisZadatakaNatragButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
   </data>
-  <data name="PopisZadatakaProfilPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1920, 90</value>
-  </data>
   <data name="PopisZadatakaProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
@@ -1374,6 +1371,9 @@
   </data>
   <data name="PopisZadatakaProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 29</value>
+  </data>
+  <data name="PopisZadatakaProfilPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1920, 90</value>
   </data>
   <data name="PopisZadatakaAddButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

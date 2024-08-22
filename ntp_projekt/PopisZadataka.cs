@@ -39,7 +39,6 @@ namespace ntp_projekt
                 $" WHERE korisnik.korisnicko_ime = \"{User}\";");
 
 
-
             Projekt trenutniProjekt = SessionProjekt.dohvatiTrenutniProjekt();
 
             if (polje != null)
@@ -70,25 +69,6 @@ namespace ntp_projekt
 
                     }
 
-                    List<string> clanovi = baza.ListaBazaRead("SELECT korisnik.ime & ' ' & korisnik.prezime AS ime_prezime FROM " +
-                           "(korisnik INNER JOIN clanovi_projekta ON clanovi_projekta.korisnik_ID = korisnik.ID) " +
-                           "INNER JOIN projekt ON projekt.ID = clanovi_projekta.projekt_ID WHERE projekt.ID = " + row[6] + ";");
-
-                    List<string> admini = baza.ListaBazaRead("SELECT korisnik.ime & ' ' & korisnik.prezime AS ime_prezime FROM " +
-                        "(korisnik INNER JOIN clanovi_projekta ON clanovi_projekta.korisnik_ID = korisnik.ID) " +
-                        "INNER JOIN projekt ON projekt.ID = clanovi_projekta.projekt_ID WHERE projekt.ID = " + row[6] + " AND clanovi_projekta.admin = TRUE;");
-
-                    PopisZadatakaClanoviListBox.Items.Clear();
-                    foreach (string clan in clanovi)
-                    {
-                        PopisZadatakaClanoviListBox.Items.Add(clan);
-                    }
-
-                    PopisZadatakaAdminiListBox.Items.Clear();
-                    foreach (string admin in admini)
-                    {
-                        PopisZadatakaAdminiListBox.Items.Add(admin);
-                    }
                 }
             }
 
@@ -124,8 +104,22 @@ namespace ntp_projekt
 
         private void PopisZadataka_Load(object sender, EventArgs e)
         {
-            PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
+            PopisZadatakaClanoviListBox.Items.Clear();
+            PopisZadatakaAdminiListBox.Items.Clear();
+            List<List<string>> clanovi = baza.NaprednaBazaRead("SELECT korisnik.ime & ' ' & korisnik.prezime AS ime_prezime, clanovi_projekta.admin FROM " +
+             "(korisnik INNER JOIN clanovi_projekta ON clanovi_projekta.korisnik_ID = korisnik.ID) " +
+             "INNER JOIN projekt ON projekt.ID = clanovi_projekta.projekt_ID WHERE projekt.naziv = '" + PopisZadatakaImeProjektaLabel.Text + "';");
 
+
+            foreach (List<string> clan in clanovi)
+            {
+                PopisZadatakaClanoviListBox.Items.Add(clan[0]);
+                if ((string)clan[1] == "True")
+                {
+                    PopisZadatakaAdminiListBox.Items.Add(clan[0]);
+                }
+            }
+            PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
         }
     }
 }
