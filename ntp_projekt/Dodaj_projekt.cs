@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XmlProjektiLibrary;
 
 namespace ntp_projekt
 {
@@ -55,6 +56,14 @@ namespace ntp_projekt
 
         private void DodajProjektButton_Click(object sender, EventArgs e)
         {
+            try 
+            { 
+                //Projekt projekt = new Projekt(,DodajProjektNazivTextBox.Text,DodajProjektOpisRichTextBox.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Greška pri dodavanju projekta: " + ex.Message);
+            }
             StartApk.MainFormManager.TrenutnaForma = new DodajProjekt();
         }
     }

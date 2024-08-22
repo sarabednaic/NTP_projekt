@@ -30,12 +30,12 @@
         {
             System.Windows.Forms.Label DodajProjektNaslovLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DodajProjekt));
-            System.Windows.Forms.TextBox DodajProjektNazivTextBox;
             System.Windows.Forms.Button DodajProjektButton;
             System.Windows.Forms.Label DodajProjektClanoviLabel;
             System.Windows.Forms.Label DodajProjektOvlastiLabel;
             System.Windows.Forms.Label DodajProjektOpisLabel;
             System.Windows.Forms.Label DodajProjektNazivLabel;
+            this.DodajProjektNazivTextBox = new System.Windows.Forms.TextBox();
             this.DodajProjektClanoviListBox = new System.Windows.Forms.CheckedListBox();
             this.DodajProjektOvlastiListBox = new System.Windows.Forms.CheckedListBox();
             this.DodajProjektProfilLinkLabel = new System.Windows.Forms.LinkLabel();
@@ -45,7 +45,6 @@
             this.DodajProjektOpisRichTextBox = new System.Windows.Forms.RichTextBox();
             this.PanelLogo = new System.Windows.Forms.Panel();
             DodajProjektNaslovLabel = new System.Windows.Forms.Label();
-            DodajProjektNazivTextBox = new System.Windows.Forms.TextBox();
             DodajProjektButton = new System.Windows.Forms.Button();
             DodajProjektClanoviLabel = new System.Windows.Forms.Label();
             DodajProjektOvlastiLabel = new System.Windows.Forms.Label();
@@ -62,14 +61,14 @@
             // 
             // DodajProjektNazivTextBox
             // 
-            DodajProjektNazivTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            DodajProjektNazivTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            resources.ApplyResources(DodajProjektNazivTextBox, "DodajProjektNazivTextBox");
-            DodajProjektNazivTextBox.Name = "DodajProjektNazivTextBox";
+            this.DodajProjektNazivTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.DodajProjektNazivTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(this.DodajProjektNazivTextBox, "DodajProjektNazivTextBox");
+            this.DodajProjektNazivTextBox.Name = "DodajProjektNazivTextBox";
             // 
             // DodajProjektButton
             // 
-            DodajProjektButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            DodajProjektButton.BackColor = System.Drawing.SystemColors.HotTrack;
             resources.ApplyResources(DodajProjektButton, "DodajProjektButton");
             DodajProjektButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             DodajProjektButton.Name = "DodajProjektButton";
@@ -179,7 +178,7 @@
             this.Controls.Add(DodajProjektOvlastiLabel);
             this.Controls.Add(DodajProjektClanoviLabel);
             this.Controls.Add(DodajProjektButton);
-            this.Controls.Add(DodajProjektNazivTextBox);
+            this.Controls.Add(this.DodajProjektNazivTextBox);
             this.Controls.Add(DodajProjektNaslovLabel);
             this.Controls.Add(this.DodajProjektProfilPanel);
             this.Controls.Add(DodajProjektOpisLabel);
@@ -203,5 +202,6 @@
         private System.Windows.Forms.Panel DodajProjektProfilPanel;
         private System.Windows.Forms.RichTextBox DodajProjektOpisRichTextBox;
         private System.Windows.Forms.Panel PanelLogo;
+        private System.Windows.Forms.TextBox DodajProjektNazivTextBox;
     }
 }

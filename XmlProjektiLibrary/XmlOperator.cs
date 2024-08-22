@@ -18,7 +18,7 @@ namespace XmlProjektiLibrary
 
         public string XmlRead(string id)
         {
-            xmlDoc.Load(@"C:\Users\Matija\Source\Repos\sarabednaic\NTP_projekt\XmlProjektiLibrary\XMLPopisProjekta.xml");
+            xmlDoc.Load(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
 
             XmlNodeList xmlNodeList = xmlDoc.SelectNodes("projekti/projekt");
 
@@ -32,26 +32,67 @@ namespace XmlProjektiLibrary
             }
             return "";
         }
-        public void XmlWrite(Projekt projekt) 
+        public void XmlAdd(Projekt projekt) 
         {
             xmlDoc.Load(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
-            
-            
-        }
-        public void XmlEdit(Projekt projekt) 
-        {
-            xmlDoc.Load(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
-            XmlNodeList aNodes = xmlDoc.SelectNodes("/projekti/projekt");
-            foreach (XmlNode aNode in aNodes)
+
+            XmlNodeList xmlNodeList = xmlDoc.SelectNodes("projekti/projekt");
+
+
+            foreach (XmlNode xmlNode in xmlNodeList)
             {
-                XmlAttribute idAtribut = aNode.Attributes["id"];
-                if (idAtribut != null && idAtribut.ToString() == projekt.Id.ToString())
+                string vrijdnostId = xmlNode.ChildNodes[0].InnerText.ToString();
+                if (vrijdnostId != null && vrijdnostId != projekt.Id.ToString())
                 {
-                    XmlAttribute statusAtribut = aNode.Attributes["status"];
-                    statusAtribut.Value = projekt.Status;
+                    XmlNode projektNode = xmlDoc.CreateNode("element", "projekt", "");
+                    XmlNode idNode = xmlDoc.CreateNode("element", "id", "");
+                    XmlNode statusNode = xmlDoc.CreateNode("element", "status", "");
+
+                    idNode.InnerText = projekt.Id.ToString();
+                    statusNode.InnerText = "Nije započeto";
+
+                    projektNode.AppendChild(idNode);
+                    projektNode.AppendChild(statusNode);
+
+                    XmlElement root = xmlDoc.DocumentElement;
+                    root.AppendChild(projektNode);
                 }
             }
+            
+            xmlDoc.Save(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
+
         }
-        public void XmlDelete() { }
+        public void XmlEdit(string id, string status) 
+        {
+            xmlDoc.Load(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
+            XmlNodeList xmlNodeList = xmlDoc.SelectNodes("/projekti/projekt");
+            foreach (XmlNode xmlNode in xmlNodeList)
+            {
+                string vrijdnostId = xmlNode.ChildNodes[0].InnerText.ToString();
+                if (vrijdnostId != null && vrijdnostId == id)
+                {
+                    xmlNode.ChildNodes[1].InnerXml = status;
+                }
+            }
+            xmlDoc.Save(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
+        }
+        public void XmlDelete(string id) {
+            xmlDoc.Load(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
+            XmlNodeList xmlNodeList = xmlDoc.SelectNodes("/projekti/projekt");
+            foreach (XmlNode xmlNode in xmlNodeList)
+            {
+                string vrijdnostId = xmlNode.ChildNodes[0].InnerText.ToString();
+                if (vrijdnostId != null && vrijdnostId == id)
+                {
+                    xmlNode.RemoveAll();
+                    XmlNodeList projektlist = xmlDoc.SelectNodes("/projekti");
+                    foreach (XmlNode node in projektlist)
+                    {
+                        node.RemoveChild(xmlNode);
+                    }
+                }
+            }
+            xmlDoc.Save(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
+        }
     }
 }
