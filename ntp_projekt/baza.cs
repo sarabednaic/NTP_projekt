@@ -105,13 +105,10 @@ namespace ntp_projekt
                         List<string> results = new List<string>();
                         while (reader.Read())
                         {
-                            StringBuilder row = new StringBuilder();
                             for (int i = 0; i < reader.FieldCount; i++)
                             {
-                                if (i > 0) row.Append(", ");  // Dodavanje separatora između vrijednosti
-                                row.Append(reader[i].ToString());
+                                results.Add(reader[i].ToString());
                             }
-                            results.Add(row.ToString());
                         }
                         return results;
                     }
