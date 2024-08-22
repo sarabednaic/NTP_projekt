@@ -82,20 +82,20 @@
             // 
             // PopisDokumentacijeNatragButton
             // 
-            this.PopisDokumentacijeNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.PopisDokumentacijeNatragButton, "PopisDokumentacijeNatragButton");
+            this.PopisDokumentacijeNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.PopisDokumentacijeNatragButton.Name = "PopisDokumentacijeNatragButton";
             this.PopisDokumentacijeNatragButton.UseVisualStyleBackColor = false;
             this.PopisDokumentacijeNatragButton.Click += new System.EventHandler(this.PopisDokumentacijeNatragButton_Click);
             // 
             // PopisDokumentacijePanel
             // 
+            resources.ApplyResources(this.PopisDokumentacijePanel, "PopisDokumentacijePanel");
             this.PopisDokumentacijePanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.PopisDokumentacijePanel.Controls.Add(this.PanelLogo);
             this.PopisDokumentacijePanel.Controls.Add(this.PopisDokumentacijeNatragButton);
             this.PopisDokumentacijePanel.Controls.Add(this.PopisDokumentacijeProfilPictureBox);
             this.PopisDokumentacijePanel.Controls.Add(this.PopisDokumentacijeProfilLinkLabel);
-            resources.ApplyResources(this.PopisDokumentacijePanel, "PopisDokumentacijePanel");
             this.PopisDokumentacijePanel.Name = "PopisDokumentacijePanel";
             // 
             // PanelLogo

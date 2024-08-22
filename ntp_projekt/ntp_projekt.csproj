@@ -193,6 +193,9 @@
     <EmbeddedResource Include="PopisDokumentacije.en.resx">
       <DependentUpon>PopisDokumentacije.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PopisDokumentacije.hr.resx">
+      <DependentUpon>PopisDokumentacije.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PopisDokumentacije.resx">
       <DependentUpon>PopisDokumentacije.cs</DependentUpon>
     </EmbeddedResource>

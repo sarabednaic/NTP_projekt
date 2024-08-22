@@ -99,9 +99,6 @@ namespace ntp_projekt
                     using (OleDbCommand command = new OleDbCommand(query, connection))
                     using (OleDbDataReader reader = command.ExecuteReader())
                     {
-                        if (!reader.HasRows)
-                            return null;
-
                         List<string> results = new List<string>();
                         while (reader.Read())
                         {
@@ -115,11 +112,13 @@ namespace ntp_projekt
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Greška pri naprednom čitanju iz baze: " + ex.Message);
-                    return null;
+                    MessageBox.Show("Greška pri čitanju iz baze: " + ex.Message);
+                    return new List<string>(); // Vratiti praznu listu u slučaju greške
                 }
             }
         }
+
+
 
 
         public int BazaWrite(string query)

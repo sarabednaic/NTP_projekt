@@ -48,7 +48,6 @@ namespace ntp_projekt
         private void PZControlZadatakButton_Click(object sender, EventArgs e)
         {
             SessionZadatak.ZadatakaInfo(Naslov, Opis);
-            MessageBox.Show("Control: " + SessionZadatak.Naslov + " " + SessionZadatak.Opis);
             StartApk.MainFormManager.TrenutnaForma = new PopisDokumentacije();
         }
     }
