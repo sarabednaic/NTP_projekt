@@ -40,7 +40,13 @@ namespace ntp_projekt
 
         private void PopisDokumentacije_Load(object sender, EventArgs e)
         {
+            MessageBox.Show("Dokumentacija: " + SessionZadatak.Naslov + SessionZadatak.Opis);
             PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
+            PopisDokumentacijeNaslovLabel.Text = SessionZadatak.Naslov;
+            PopisDokumentacijeBazaClanoviLabel.Text = "";
+            PopisDokumentacijeBazaOpisLabel.Text = SessionZadatak.Opis;
+            PopisDokumentacijeBazaPeriodLabel.Text = SessionZadatak.Pocetak + " - " + SessionZadatak.Kraj;
+            
 
         }
     }

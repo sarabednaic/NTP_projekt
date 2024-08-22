@@ -92,6 +92,7 @@
     </Compile>
     <Compile Include="Session.cs" />
     <Compile Include="SessionProjekt.cs" />
+    <Compile Include="SessionZadatak.cs" />
     <Compile Include="Sha256.cs" />
     <Compile Include="StartApk.cs" />
     <Compile Include="MainFormManager.cs" />
