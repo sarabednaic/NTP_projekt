@@ -117,15 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BrisanjeProjektaNaslovLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BrisanjeProjektaNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>597, 294</value>
+    <value>748, 258</value>
   </data>
   <data name="BrisanjeProjektaNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>719, 106</value>
+    <value>962, 142</value>
   </data>
   <data name="BrisanjeProjektaNaslovLabel.Text" xml:space="preserve">
     <value>Delete the project</value>
+  </data>
+  <data name="BrisanjeProjektaLozinkaNazivLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>928, 459</value>
   </data>
   <data name="BrisanjeProjektaLozinkaNazivLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>320, 43</value>
@@ -134,7 +141,7 @@
     <value>Enter the password to confirm </value>
   </data>
   <data name="BrisanjeProjektaPonovnoLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>717, 507</value>
+    <value>928, 579</value>
   </data>
   <data name="BrisanjeProjektaPonovnoLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>345, 43</value>
@@ -142,8 +149,17 @@
   <data name="BrisanjeProjektaPonovnoLozinkaLabel.Text" xml:space="preserve">
     <value>Repeat the password to confirm </value>
   </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>934, 642</value>
+  </data>
+  <data name="BrisanjeProjektaLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>934, 506</value>
+  </data>
+  <data name="BrisanjeProjektaIzbrisiProjektButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
   <data name="BrisanjeProjektaIzbrisiProjektButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>855, 615</value>
+    <value>1065, 706</value>
   </data>
   <data name="BrisanjeProjektaIzbrisiProjektButton.Text" xml:space="preserve">
     <value>Delete</value>
@@ -1290,20 +1306,7 @@
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PanelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
   <data name="PanelLogo.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 84</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1896, 1018</value>
-  </data>
-  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1918, 1074</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1438, 823</value>
   </data>
 </root>

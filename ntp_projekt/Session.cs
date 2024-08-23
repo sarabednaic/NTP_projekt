@@ -111,7 +111,15 @@ namespace ntp_projekt
             try
             {
                 string User = Session.DohvatiKorisnika();
-                baza.BazaDelete($"DELETE FROM korisnik WHERE korisnicko_ime = '{User}'");
+                int rowsAffected = baza.BazaDelete($"DELETE FROM korisnik WHERE korisnicko_ime = '{User}'");
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show($"Uspješna deaktivacija računa.");
+                }
+                else 
+                {
+                    MessageBox.Show("Greška pri deaktivaciji računa.");
+                }
             }
             catch (Exception ex)
             {

@@ -23,10 +23,10 @@ namespace XmlProjektiLibrary
             this.opis = _Opis ;
         }
 
-        public Projekt(string id , string status) 
+        public Projekt(string _Naslov , string _Opis) 
         { 
-            this.id = id; 
-            this.status = status ;
+            this.naslov = _Naslov; 
+            this.opis = _Opis ;
         }
 
         public string Id { get { return id; } set { id = value; } }

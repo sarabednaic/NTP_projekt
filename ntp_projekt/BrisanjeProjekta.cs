@@ -19,36 +19,7 @@ namespace ntp_projekt
             BrisanjeProjektaProfilLinkLabel.Text = Session.DohvatiPunoIme();
             BrisanjeProjektaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BrisanjeProjektaArrowButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BrisanjeProjektaUserButton_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void DodajProjektProfilPanel_Paint(object sender, PaintEventArgs e)
         {
@@ -62,24 +33,29 @@ namespace ntp_projekt
 
         private void BrisanjeProjektaProfilPictureBox_Click(object sender, EventArgs e)
         {
+            SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
         private void BrisanjeProjektaProfilLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
         private void BrisanjeProjektaNatragButton_Click(object sender, EventArgs e)
         {
+
+            SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
         }
 
-        private void BrisanjeProjektaLozinkaTextBox_TextChanged(object sender, EventArgs e)
+
+        private void BrisanjeProjektaIzbrisiProjektButton_Click(object sender, EventArgs e)
         {
 
+            SessionProjekt.CleanSession();
+            StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
         }
-
-        
     }
 }

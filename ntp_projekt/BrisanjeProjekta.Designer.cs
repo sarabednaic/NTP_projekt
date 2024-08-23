@@ -53,34 +53,33 @@
             // 
             resources.ApplyResources(BrisanjeProjektaNaslovLabel, "BrisanjeProjektaNaslovLabel");
             BrisanjeProjektaNaslovLabel.Name = "BrisanjeProjektaNaslovLabel";
-            BrisanjeProjektaNaslovLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // BrisanjeProjektaLozinkaNazivLabel
             // 
-            BrisanjeProjektaLozinkaNazivLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(BrisanjeProjektaLozinkaNazivLabel, "BrisanjeProjektaLozinkaNazivLabel");
+            BrisanjeProjektaLozinkaNazivLabel.BackColor = System.Drawing.Color.Transparent;
             BrisanjeProjektaLozinkaNazivLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             BrisanjeProjektaLozinkaNazivLabel.Name = "BrisanjeProjektaLozinkaNazivLabel";
             BrisanjeProjektaLozinkaNazivLabel.UseWaitCursor = true;
             // 
             // BrisanjeProjektaPonovnoLozinkaLabel
             // 
-            BrisanjeProjektaPonovnoLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(BrisanjeProjektaPonovnoLozinkaLabel, "BrisanjeProjektaPonovnoLozinkaLabel");
+            BrisanjeProjektaPonovnoLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
             BrisanjeProjektaPonovnoLozinkaLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             BrisanjeProjektaPonovnoLozinkaLabel.Name = "BrisanjeProjektaPonovnoLozinkaLabel";
             BrisanjeProjektaPonovnoLozinkaLabel.UseWaitCursor = true;
             // 
             // BrisanjeProjektaPonovnoLozinkaTextBox
             // 
-            BrisanjeProjektaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             resources.ApplyResources(BrisanjeProjektaPonovnoLozinkaTextBox, "BrisanjeProjektaPonovnoLozinkaTextBox");
+            BrisanjeProjektaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             BrisanjeProjektaPonovnoLozinkaTextBox.Name = "BrisanjeProjektaPonovnoLozinkaTextBox";
             // 
             // BrisanjeProjektaLozinkaTextBox
             // 
-            BrisanjeProjektaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             resources.ApplyResources(BrisanjeProjektaLozinkaTextBox, "BrisanjeProjektaLozinkaTextBox");
+            BrisanjeProjektaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             BrisanjeProjektaLozinkaTextBox.Name = "BrisanjeProjektaLozinkaTextBox";
             // 
             // BrisanjeProjektaIzbrisiProjektButton
@@ -90,15 +89,15 @@
             this.BrisanjeProjektaIzbrisiProjektButton.ForeColor = System.Drawing.Color.White;
             this.BrisanjeProjektaIzbrisiProjektButton.Name = "BrisanjeProjektaIzbrisiProjektButton";
             this.BrisanjeProjektaIzbrisiProjektButton.UseVisualStyleBackColor = false;
-            this.BrisanjeProjektaIzbrisiProjektButton.Click += new System.EventHandler(this.button1_Click);
+            this.BrisanjeProjektaIzbrisiProjektButton.Click += new System.EventHandler(this.BrisanjeProjektaIzbrisiProjektButton_Click);
             // 
             // BrisanjeProjektaPanel
             // 
+            resources.ApplyResources(this.BrisanjeProjektaPanel, "BrisanjeProjektaPanel");
             this.BrisanjeProjektaPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BrisanjeProjektaPanel.Controls.Add(this.BrisanjeProjektaProfilPictureBox);
             this.BrisanjeProjektaPanel.Controls.Add(this.BrisanjeProjektaNatragButton);
             this.BrisanjeProjektaPanel.Controls.Add(this.BrisanjeProjektaProfilLinkLabel);
-            resources.ApplyResources(this.BrisanjeProjektaPanel, "BrisanjeProjektaPanel");
             this.BrisanjeProjektaPanel.Name = "BrisanjeProjektaPanel";
             this.BrisanjeProjektaPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.DodajProjektProfilPanel_Paint);
             // 
@@ -111,8 +110,8 @@
             // 
             // BrisanjeProjektaNatragButton
             // 
-            this.BrisanjeProjektaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.BrisanjeProjektaNatragButton, "BrisanjeProjektaNatragButton");
+            this.BrisanjeProjektaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BrisanjeProjektaNatragButton.Name = "BrisanjeProjektaNatragButton";
             this.BrisanjeProjektaNatragButton.UseVisualStyleBackColor = false;
             this.BrisanjeProjektaNatragButton.Click += new System.EventHandler(this.BrisanjeProjektaNatragButton_Click);

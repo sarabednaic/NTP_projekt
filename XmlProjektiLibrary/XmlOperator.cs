@@ -42,23 +42,24 @@ namespace XmlProjektiLibrary
             foreach (XmlNode xmlNode in xmlNodeList)
             {
                 string vrijdnostId = xmlNode.ChildNodes[0].InnerText.ToString();
-                if (vrijdnostId != null && vrijdnostId != projekt.Id.ToString())
+                if (vrijdnostId != null && vrijdnostId == projekt.Id.ToString())
                 {
-                    XmlNode projektNode = xmlDoc.CreateNode("element", "projekt", "");
-                    XmlNode idNode = xmlDoc.CreateNode("element", "id", "");
-                    XmlNode statusNode = xmlDoc.CreateNode("element", "status", "");
-
-                    idNode.InnerText = projekt.Id.ToString();
-                    statusNode.InnerText = "Nije započeto";
-
-                    projektNode.AppendChild(idNode);
-                    projektNode.AppendChild(statusNode);
-
-                    XmlElement root = xmlDoc.DocumentElement;
-                    root.AppendChild(projektNode);
+                    break;
                 }
             }
-            
+            XmlNode projektNode = xmlDoc.CreateNode("element", "projekt", "");
+            XmlNode idNode = xmlDoc.CreateNode("element", "id", "");
+            XmlNode statusNode = xmlDoc.CreateNode("element", "status", "");
+
+            idNode.InnerText = projekt.Id.ToString();
+            statusNode.InnerText = "Nije započeto";
+
+            projektNode.AppendChild(idNode);
+            projektNode.AppendChild(statusNode);
+
+            XmlElement root = xmlDoc.DocumentElement;
+            root.AppendChild(projektNode);
+
             xmlDoc.Save(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
 
         }

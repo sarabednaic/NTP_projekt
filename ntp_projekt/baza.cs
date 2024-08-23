@@ -118,8 +118,36 @@ namespace ntp_projekt
             }
         }
 
-
-
+        public List<string> ListaBazaReadWithParams(string query, params OleDbParameter[] parameters)
+        {
+            List<string> results = new List<string>();
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    {
+                        command.Parameters.AddRange(parameters);
+                        using (OleDbDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                for (int i = 0; i < reader.FieldCount; i++)
+                                {
+                                    results.Add(reader[i].ToString());
+                                }
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error reading from database: " + ex.Message);
+                }
+            }
+            return results;
+        }
 
         public int BazaWrite(string query)
         {
@@ -130,9 +158,8 @@ namespace ntp_projekt
                     connection.Open();
                     using (OleDbCommand command = new OleDbCommand(query, connection))
                     {
-                        int rowsAffected = command.ExecuteNonQuery();
-                        connection?.Close();
-                        return rowsAffected;
+                        int rowsaffected = command.ExecuteNonQuery();
+                        return rowsaffected;
                     }
                 }
                 catch (Exception ex)
@@ -145,7 +172,52 @@ namespace ntp_projekt
 
         }
 
-        
+        public int BazaWriteWithParams(string query, params OleDbParameter[] parameters)
+        {
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    {
+                        command.Parameters.AddRange(parameters);
+                        command.ExecuteNonQuery();
+
+                        // Get the last inserted ID
+                        command.CommandText = "SELECT @@Identity";
+                        return Convert.ToInt32(command.ExecuteScalar());
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Greška pri upisu u bazu: " + ex.Message);
+                    return -1;
+                }
+            }
+        }
+
+        public object BazaReadWithParams(string query, params OleDbParameter[] parameters)
+        {
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    {
+                        command.Parameters.AddRange(parameters);
+                        return command.ExecuteScalar();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Greška pri čitanju iz baze: " + ex.Message);
+                    return null;
+                }
+            }
+        }
+
 
         public void BazaSetImage(string query, string curFileName) {
             try
@@ -236,7 +308,7 @@ namespace ntp_projekt
             }
         }
 
-        public void BazaDelete(string query)
+        public int BazaDelete(string query)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
@@ -246,16 +318,14 @@ namespace ntp_projekt
                     using (OleDbCommand command = new OleDbCommand(query, connection))
                     {
                         int rowsAffected = command.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            MessageBox.Show($"Uspješna deaktivacija računa.");
-                        }
+                        return rowsAffected;
                         
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Greška pri deaktivaciji računa: {ex.Message}");
+                    MessageBox.Show($"Greška pri birsanju iz baze: {ex.Message}");
+                    return -1;
                 }
             }
         }

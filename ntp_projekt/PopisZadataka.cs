@@ -88,11 +88,13 @@ namespace ntp_projekt
 
         private void PopisZadatakaProfilPictureBox_Click(object sender, EventArgs e)
         {
+            SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
         private void PopisZadatakaProfilLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
@@ -120,6 +122,11 @@ namespace ntp_projekt
                 }
             }
             PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
+        }
+
+        private void PopisZadatakaImeProjektaLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

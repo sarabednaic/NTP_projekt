@@ -58,13 +58,15 @@ namespace ntp_projekt
         }
 
 
-    private void PopisProjektaControlEditButton_Click(object sender, EventArgs e)
+        private void PopisProjektaControlEditButton_Click(object sender, EventArgs e)
         {
+            SessionProjekt.postaviTrenutniProjekt(Id, Naslov, Opis);
             StartApk.MainFormManager.TrenutnaForma = new UrediProjekt();
         }
 
         private void PopisProjektaControlDeleteButton_Click(object sender, EventArgs e)
         {
+            SessionProjekt.postaviTrenutniProjekt(Id, Naslov, Opis);
             StartApk.MainFormManager.TrenutnaForma = new BrisanjeProjekta();
         }
 
