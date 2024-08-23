@@ -308,7 +308,7 @@ namespace ntp_projekt
             }
         }
 
-        public int BazaDelete(string query)
+        public int BazaDelete(string query, params OleDbParameter[] parameters)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
@@ -317,6 +317,7 @@ namespace ntp_projekt
                     connection.Open();
                     using (OleDbCommand command = new OleDbCommand(query, connection))
                     {
+                        command.Parameters.AddRange(parameters);
                         int rowsAffected = command.ExecuteNonQuery();
                         return rowsAffected;
                         
@@ -324,7 +325,7 @@ namespace ntp_projekt
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Greška pri birsanju iz baze: {ex.Message}");
+                    MessageBox.Show($"Greška pri brisanju iz baze: {ex.Message}");
                     return -1;
                 }
             }

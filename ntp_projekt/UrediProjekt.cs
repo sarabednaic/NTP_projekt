@@ -40,57 +40,12 @@ namespace ntp_projekt
 
             // Get members of the current project
             string clanoviQuery = "SELECT korisnik_ID, admin FROM clanovi_projekta WHERE projekt_ID = ?";
-            List<string> clanoviProjekta = baza.ListaBazaReadWithParams(clanoviQuery, new OleDbParameter("@projektID", projektID));
+            List<string> clanoviProjekta = baza.ListaBazaReadWithParams(clanoviQuery, new OleDbParameter("@projekt_ID", projektID));
 
             // Lists to store members and admins
             List<string> clanovi = new List<string>();
             List<string> admini = new List<string>();
 
-            //// Process project members
-            //for (int i = 0; i < clanoviProjekta.Count; i += 2)
-            //{
-            //    int korisnikId = int.Parse(clanoviProjekta[i]);
-            //    bool isAdmin = bool.Parse(clanoviProjekta[i + 1]);
-
-            //    // Find the user's full name
-            //    for (int j = 0; j < registriraniKorisnici.Count; j += 3)
-            //    {
-            //        if (int.Parse(registriraniKorisnici[j]) == korisnikId)
-            //        {
-            //            string punoIme = registriraniKorisnici[j + 1] + " " + registriraniKorisnici[j + 2];
-
-            //            if (isAdmin)
-            //            {
-            //                bool test = false;
-            //                foreach (string admin in admini) {
-            //                    if (admin == punoIme) {
-            //                        test = true;
-            //                    }
-            //                }
-            //                if (!test) {
-            //                    admini.Add(punoIme);
-            //                    clanovi.Add(punoIme);
-            //                }
-                            
-            //            }
-            //            else
-            //            {
-            //                bool test = false;
-            //                foreach (string clan in clanovi) {
-            //                    if (clan == punoIme) {
-            //                        test = true;
-            //                    }
-            //                }
-            //                if (!test)
-            //                {
-            //                    clanovi.Add(punoIme);
-            //                }
-            //            }
-            //            break;
-            //        }
-            //    }
-                
-            //}
 
             for (int i = 0; i < clanoviProjekta.Count; i += 2)
             {
@@ -176,8 +131,10 @@ namespace ntp_projekt
             }
 
 
-            List<string> registriraniKorisnici = baza.ListaBazaRead(korisniciQuery);
-            //Kupi korisnike iz lista i updatea bazu
+            //List<string> registriraniKorisnici = baza.ListaBazaRead(korisniciQuery);
+            //baza.BazaDelete($"DELETE clanovi_projekta FROM clanovi_projekta WHERE korisnicko_ime = '{}'");
+
+            ////Kupi korisnike iz lista i updatea bazu
             //for (int i = 0; i < registriraniKorisnici.Count; i += 3)
             //{
             //    string punoIme = registriraniKorisnici[i + 1] + " " + registriraniKorisnici[i + 2];
@@ -187,7 +144,7 @@ namespace ntp_projekt
             //    {
             //        bool isAdmin = UrediProjektOvlastiListBox.Items.Contains(punoIme);
 
-            //        string insertMemberQuery = "UPDATE clanovi_projekta SET korisnik_ID = ? , admin = ? WHERE projekt_ID = ?";
+            //        string insertMemberQuery = "INSERT INTO clanovi_projekta (korisnik_ID, projekt_ID, admin) VALUES (?, ?, ?)";
             //        int result = baza.BazaWriteWithParams(insertMemberQuery,
             //            new OleDbParameter("@korisnik_ID", korisnikId),
             //            new OleDbParameter("@admin", isAdmin),
@@ -231,10 +188,13 @@ namespace ntp_projekt
         {
             if (UrediProjektDodajClanaTextBox.Text != null && UrediProjektClanoviListBox.Items != null) 
             {
+                List<String> lista = new List<string>(); 
                 foreach (string ime in UrediProjektClanoviListBox.Items)
                 {
-                    if (ime == UrediProjektDodajClanaTextBox.Text)
-                    {
+                    lista.Add(ime);
+                }
+                foreach (string ime in lista) {
+                    if (ime == UrediProjektDodajClanaTextBox.Text) {
                         UrediProjektClanoviListBox.Items.Remove(ime);
                     }
                 }
@@ -245,7 +205,12 @@ namespace ntp_projekt
         {
             if (UrediProjektDodajAdminTextBox.Text != null && UrediProjektOvlastiListBox.Items != null)
             {
+                List<String> lista = new List<string>();
                 foreach (string ime in UrediProjektOvlastiListBox.Items)
+                {
+                    lista.Add(ime);
+                }
+                foreach (string ime in lista)
                 {
                     if (ime == UrediProjektDodajAdminTextBox.Text)
                     {

@@ -14,7 +14,7 @@ namespace ntp_projekt
     
     public partial class Deaktivacija_racuna : Form
     {
-        
+        private Baza baza = new Baza(@"..\..\TeamPlan.mdb");
         public Deaktivacija_racuna()
         {
             
@@ -40,18 +40,24 @@ namespace ntp_projekt
 
         private void PrijavaPrijavaButton_Click(object sender, EventArgs e)
         {
+            string user = Session.DohvatiKorisnika();
+            string lozinkaKorisnika = baza.BazaRead($"SELECT lozinka FROM korisnik WHERE korisnicko_ime = \"{user}\";");
+            string sol = baza.BazaRead($"SELECT sol FROM korisnik WHERE korisnicko_ime = \"{user}\";");
+            string hashiranaLozinka = Sha256.Sazimanje(DeaktivacijaLozinkaTextBox.Text, sol);
             if (DeaktivacijaLozinkaTextBox.Text.Length != 0 && DeaktivacijaPonovnoLozinkaTextBox.Text.Length != 0)
             {
-                if (DeaktivacijaLozinkaTextBox.Text == DeaktivacijaPonovnoLozinkaTextBox.Text)
-                {
-                    Session.DeaktivirajRacun();
-                    Session.CleanSession();
-                    StartApk.MainFormManager.TrenutnaForma = new Prijava();
-                }
-                else 
-                {
-                    MessageBox.Show("Lozinke se ne podudaraju.Pokušajte ponovno!");
-                }
+                if (hashiranaLozinka == lozinkaKorisnika) {
+                    if (DeaktivacijaLozinkaTextBox.Text == DeaktivacijaPonovnoLozinkaTextBox.Text)
+                    {
+                        Session.DeaktivirajRacun();
+                        Session.CleanSession();
+                        StartApk.MainFormManager.TrenutnaForma = new Prijava();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Lozinke se ne podudaraju.Pokušajte ponovno!");
+                    }
+                }          
             }
             else 
             {

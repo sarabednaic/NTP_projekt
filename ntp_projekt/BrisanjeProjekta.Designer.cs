@@ -32,8 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrisanjeProjekta));
             System.Windows.Forms.Label BrisanjeProjektaLozinkaNazivLabel;
             System.Windows.Forms.Label BrisanjeProjektaPonovnoLozinkaLabel;
-            System.Windows.Forms.TextBox BrisanjeProjektaPonovnoLozinkaTextBox;
-            System.Windows.Forms.TextBox BrisanjeProjektaLozinkaTextBox;
+            this.BrisanjeProjektaPonovnoLozinkaTextBox = new System.Windows.Forms.TextBox();
+            this.BrisanjeProjektaLozinkaTextBox = new System.Windows.Forms.TextBox();
             this.BrisanjeProjektaIzbrisiProjektButton = new System.Windows.Forms.Button();
             this.BrisanjeProjektaPanel = new System.Windows.Forms.Panel();
             this.BrisanjeProjektaProfilPictureBox = new System.Windows.Forms.PictureBox();
@@ -43,8 +43,6 @@
             BrisanjeProjektaNaslovLabel = new System.Windows.Forms.Label();
             BrisanjeProjektaLozinkaNazivLabel = new System.Windows.Forms.Label();
             BrisanjeProjektaPonovnoLozinkaLabel = new System.Windows.Forms.Label();
-            BrisanjeProjektaPonovnoLozinkaTextBox = new System.Windows.Forms.TextBox();
-            BrisanjeProjektaLozinkaTextBox = new System.Windows.Forms.TextBox();
             this.BrisanjeProjektaPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BrisanjeProjektaProfilPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -72,15 +70,15 @@
             // 
             // BrisanjeProjektaPonovnoLozinkaTextBox
             // 
-            resources.ApplyResources(BrisanjeProjektaPonovnoLozinkaTextBox, "BrisanjeProjektaPonovnoLozinkaTextBox");
-            BrisanjeProjektaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            BrisanjeProjektaPonovnoLozinkaTextBox.Name = "BrisanjeProjektaPonovnoLozinkaTextBox";
+            resources.ApplyResources(this.BrisanjeProjektaPonovnoLozinkaTextBox, "BrisanjeProjektaPonovnoLozinkaTextBox");
+            this.BrisanjeProjektaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.BrisanjeProjektaPonovnoLozinkaTextBox.Name = "BrisanjeProjektaPonovnoLozinkaTextBox";
             // 
             // BrisanjeProjektaLozinkaTextBox
             // 
-            resources.ApplyResources(BrisanjeProjektaLozinkaTextBox, "BrisanjeProjektaLozinkaTextBox");
-            BrisanjeProjektaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            BrisanjeProjektaLozinkaTextBox.Name = "BrisanjeProjektaLozinkaTextBox";
+            resources.ApplyResources(this.BrisanjeProjektaLozinkaTextBox, "BrisanjeProjektaLozinkaTextBox");
+            this.BrisanjeProjektaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.BrisanjeProjektaLozinkaTextBox.Name = "BrisanjeProjektaLozinkaTextBox";
             // 
             // BrisanjeProjektaIzbrisiProjektButton
             // 
@@ -135,8 +133,8 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.PanelLogo);
-            this.Controls.Add(BrisanjeProjektaLozinkaTextBox);
-            this.Controls.Add(BrisanjeProjektaPonovnoLozinkaTextBox);
+            this.Controls.Add(this.BrisanjeProjektaLozinkaTextBox);
+            this.Controls.Add(this.BrisanjeProjektaPonovnoLozinkaTextBox);
             this.Controls.Add(this.BrisanjeProjektaPanel);
             this.Controls.Add(BrisanjeProjektaNaslovLabel);
             this.Controls.Add(this.BrisanjeProjektaIzbrisiProjektButton);
@@ -161,5 +159,7 @@
         private System.Windows.Forms.Button BrisanjeProjektaNatragButton;
         private System.Windows.Forms.LinkLabel BrisanjeProjektaProfilLinkLabel;
         private System.Windows.Forms.Panel PanelLogo;
+        private System.Windows.Forms.TextBox BrisanjeProjektaPonovnoLozinkaTextBox;
+        private System.Windows.Forms.TextBox BrisanjeProjektaLozinkaTextBox;
     }
 }

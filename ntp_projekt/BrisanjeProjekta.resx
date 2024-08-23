@@ -141,11 +141,14 @@
   <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.Name" xml:space="preserve">
     <value>BrisanjeProjektaProfilPictureBox</value>
   </data>
-  <data name="BrisanjeProjektaProfilLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="BrisanjeProjektaLozinkaTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="BrisanjeProjektaProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1910, 1015</value>
   </data>
   <data name="BrisanjeProjektaProfilPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -165,20 +168,14 @@
   <data name="BrisanjeProjektaNaslovLabel.Text" xml:space="preserve">
     <value>Brisanje projekta</value>
   </data>
-  <data name="BrisanjeProjektaProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
   <data name="BrisanjeProjektaNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>463, 335</value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaNatragButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;BrisanjeProjektaProfilLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="BrisanjeProjektaNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Leelawadee UI, 40pt, style=Bold</value>
-  </data>
-  <data name="BrisanjeProjektaIzbrisiProjektButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 780</value>
   </data>
   <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -191,9 +188,6 @@
   </data>
   <data name="BrisanjeProjektaPanel.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1910, 1015</value>
   </data>
   <data name="BrisanjeProjektaIzbrisiProjektButton.Text" xml:space="preserve">
     <value>Izbriši projekt</value>
@@ -1069,8 +1063,8 @@
   <data name="BrisanjeProjektaProfilPictureBox.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="&gt;&gt;PanelLogo.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="BrisanjeProjektaNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1202,8 +1196,8 @@
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilLinkLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="BrisanjeProjektaNaslovLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="&gt;&gt;BrisanjeProjektaLozinkaNazivLabel.Name" xml:space="preserve">
     <value>BrisanjeProjektaLozinkaNazivLabel</value>
@@ -1337,6 +1331,9 @@
   <data name="BrisanjeProjektaPonovnoLozinkaLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
+  <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1077, 0</value>
+  </data>
   <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1358,8 +1355,8 @@
   <data name="&gt;&gt;BrisanjeProjektaNaslovLabel.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>961, 680</value>
+  <data name="BrisanjeProjektaProfilLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -1385,14 +1382,17 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>BrisanjeProjekta</value>
   </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>961, 680</value>
+  </data>
   <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1077, 0</value>
+  <data name="BrisanjeProjektaIzbrisiProjektButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>787, 780</value>
   </data>
-  <data name="BrisanjeProjektaNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="BrisanjeProjektaLozinkaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1562,8 +1562,8 @@
   <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaLabel.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="BrisanjeProjektaNaslovLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;PanelLogo.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="BrisanjeProjektaProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>2431, 16</value>
@@ -1592,8 +1592,8 @@
   <data name="&gt;&gt;BrisanjeProjektaPanel.Name" xml:space="preserve">
     <value>BrisanjeProjektaPanel</value>
   </data>
-  <data name="BrisanjeProjektaLozinkaTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>*</value>
+  <data name="&gt;&gt;BrisanjeProjektaNatragButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="BrisanjeProjektaNatragButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 15</value>
@@ -1623,13 +1623,7 @@
     <value>3</value>
   </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
-  </metadata>
-  <metadata name="BrisanjeProjektaPonovnoLozinkaTextBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="BrisanjeProjektaLozinkaTextBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
+    <value>hr</value>
   </metadata>
   <metadata name="BrisanjeProjektaLozinkaNazivLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
