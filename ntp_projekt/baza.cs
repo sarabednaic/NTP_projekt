@@ -323,6 +323,7 @@ namespace ntp_projekt
                         {
                             MessageBox.Show($"Uspješno obrisano.");
                         }
+                        return 0;
                         
                     }
                 }

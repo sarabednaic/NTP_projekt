@@ -111,5 +111,10 @@ namespace ntp_projekt
             PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
 
         }
+
+        private void BrisanjeZadatka_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -147,6 +147,7 @@
             resources.ApplyResources(this.PopisDokumentacijeReportButton, "PopisDokumentacijeReportButton");
             this.PopisDokumentacijeReportButton.Name = "PopisDokumentacijeReportButton";
             this.PopisDokumentacijeReportButton.UseVisualStyleBackColor = true;
+            this.PopisDokumentacijeReportButton.Click += new System.EventHandler(this.PopisDokumentacijeReportButton_Click);
             // 
             // PopisDokumentacijeNaslovLabel
             // 

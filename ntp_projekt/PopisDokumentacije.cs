@@ -2,28 +2,31 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Drawing;  // Koristite System.Drawing za Image i Color
 using System.IO;
+using System.Windows.Forms;
+using QuestPDF;
+using QuestPDF.Fluent;
+using QuestPDF.Helpers;
+using QuestPDF.Infrastructure;
+
 
 namespace ntp_projekt
 {
     public partial class PopisDokumentacije : Form
     {
-        
         public PopisDokumentacije()
         {
             InitializeComponent();
+            QuestPDF.Settings.License = LicenseType.Community;
             PopisDokumentacijeProfilLinkLabel.Text = Session.DohvatiPunoIme();
-            PopisDokumentacijeProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
-        }
+            PopisDokumentacijeProfilPictureBox.Image = (System.Drawing.Image)Session.DohvatiProfilnuSliku(); // Dodan cast na System.Drawing.Image
 
-       
+            // Povezivanje događaja s metodama
+            PopisDokumentacijeProfilLinkLabel.LinkClicked += PopisDokumentacijeProfilLinkLabel_LinkClicked;
+            PopisDokumentacijeProfilPictureBox.Click += PopisDokumentacijeProfilPictureBox_Click;
+            PopisDokumentacijeNatragButton.Click += PopisDokumentacijeNatragButton_Click;
+        }
 
         private void PopisDokumentacijeNatragButton_Click(object sender, EventArgs e)
         {
@@ -43,7 +46,7 @@ namespace ntp_projekt
         private void PopisDokumentacije_Load(object sender, EventArgs e)
         {
             Baza baza;
-            PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
+            PanelLogo.BackgroundImage = System.Drawing.Image.FromFile(Logo.LogoFoto()); // Dodano System.Drawing.Image
             PopisDokumentacijeNaslovLabel.Text = SessionZadatak.Naslov;
             PopisDokumentacijeBazaClanoviLabel.Text = "";
             PopisDokumentacijeBazaOpisLabel.Text = SessionZadatak.Opis;
@@ -58,10 +61,11 @@ namespace ntp_projekt
                 if ((string)obj["Zadatak_ID"] == SessionZadatak.Id)
                 {
                     PopisDokumentacijeBazaStatusLabel.Text = obj["Status"].ToString();
-                    if (obj["Status"].ToString() == "zavrseno") { PopisDokumentacijeStatusButton.BackColor = Color.Orange; }
-                    else if (obj["Status"].ToString() == "nije zapoceto") { PopisDokumentacijeStatusButton.BackColor = Color.Gray; }
-                    else if (obj["Status"].ToString() == "problem") { PopisDokumentacijeStatusButton.BackColor = Color.Red; }
-                    else if (obj["Status"].ToString() == "u tijeku") { PopisDokumentacijeStatusButton.BackColor = Color.Green; }
+                    // Korišćenje System.Drawing.Color za boje
+                    if (obj["Status"].ToString() == "zavrseno") { PopisDokumentacijeStatusButton.BackColor = System.Drawing.Color.Orange; }
+                    else if (obj["Status"].ToString() == "nije zapoceto") { PopisDokumentacijeStatusButton.BackColor = System.Drawing.Color.Gray; }
+                    else if (obj["Status"].ToString() == "problem") { PopisDokumentacijeStatusButton.BackColor = System.Drawing.Color.Red; }
+                    else if (obj["Status"].ToString() == "u tijeku") { PopisDokumentacijeStatusButton.BackColor = System.Drawing.Color.Green; }
                     break;
                 }
             }
@@ -71,11 +75,82 @@ namespace ntp_projekt
                 "INNER JOIN clanovi_zadatka ON clanovi_projekta.ID = clanovi_zadatka.clan_projekta_ID " +
                 "WHERE clanovi_zadatka.zadatak_ID = " + SessionZadatak.Id + ";");
 
-            foreach(string clan in clanovi)
+            foreach (string clan in clanovi)
             {
                 PopisDokumentacijeBazaClanoviLabel.Text = PopisDokumentacijeBazaClanoviLabel.Text + Environment.NewLine + clan;
             }
+        }
 
+        private void PopisDokumentacijeReportButton_Click(object sender, EventArgs e)
+        {
+            string naslov = PopisDokumentacijeNaslovLabel.Text;
+            string opis = PopisDokumentacijeBazaOpisLabel.Text;
+            string period = PopisDokumentacijeBazaPeriodLabel.Text;
+            string status = PopisDokumentacijeBazaStatusLabel.Text;
+            string clanovi = PopisDokumentacijeBazaClanoviLabel.Text;
+
+            var pdfDocument = Document.Create(container =>
+            {
+                container.Page(page =>
+                {
+                    page.Margin(2, Unit.Centimetre);
+                    page.Size(210, 297, Unit.Millimetre);
+
+                    page.Header().Text(naslov)
+                        .FontSize(24)
+                        .SemiBold()
+                        .AlignCenter()
+                        .FontColor(QuestPDF.Helpers.Colors.Black); 
+
+                    page.Content().PaddingVertical(1, Unit.Centimetre).Column(column =>
+                    {
+                        column.Item().Text("Opis zadatka:")
+                            .FontSize(18)
+                            .Bold();
+
+                        column.Item().Text(opis)
+                            .FontSize(14);
+
+                        column.Item().PaddingBottom(0.5f, Unit.Centimetre); // Razmak između odjeljaka
+
+                        column.Item().Text("Period:")
+                            .FontSize(18)
+                            .Bold();
+
+                        column.Item().Text(period)
+                            .FontSize(14);
+
+                        column.Item().PaddingBottom(0.5f, Unit.Centimetre); // Razmak između odjeljaka
+
+                        column.Item().Text("Status zadatka:")
+                            .FontSize(18)
+                            .Bold();
+
+                        column.Item().Text(status)
+                            .FontSize(14);
+
+                        column.Item().PaddingBottom(0.5f, Unit.Centimetre); // Razmak između odjeljaka
+
+                        column.Item().Text("Članovi tima:")
+                            .FontSize(18)
+                            .Bold();
+
+                        column.Item().Text(clanovi)
+                            .FontSize(14);
+
+                        column.Item().PaddingBottom(0.5f, Unit.Centimetre); // Razmak između odjeljaka
+                    });
+                });
+            });
+
+            string download = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
+
+            // Define the file name and path
+            string filePath = Path.Combine(download, SessionZadatak.Naslov + ".pdf");
+
+            pdfDocument.GeneratePdf(filePath);
+
+            MessageBox.Show("PDF dokument je uspješno generiran na lokaciji: " + filePath);
         }
     }
 }
