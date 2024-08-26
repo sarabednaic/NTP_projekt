@@ -1,23 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <projekti>
-	<projekt>
-		<id>1</id>
-		<status>U tijeku</status>
-	</projekt>
-	<projekt>
-		<id>2</id>
-		<status>Završeno</status>
-	</projekt>
-	<projekt>
-		<id>3</id>
-		<status>Problem</status>
-	</projekt>
-	<projekt>
-		<id>4</id>
-		<status>Nije započeto</status>
-	</projekt>
-	<projekt>
-		<id>5</id>
-		<status>Nije započeto</status>
-	</projekt>
+  <projekt>
+    <id>1</id>
+    <status>U tijeku</status>
+  </projekt>
+  <projekt>
+    <id>2</id>
+    <status>Završeno</status>
+  </projekt>
+  <projekt>
+    <id>3</id>
+    <status>Problem</status>
+  </projekt>
+  <projekt>
+    <id>4</id>
+    <status>Nije započeto</status>
+  </projekt>
+  <projekt>
+    <id>5</id>
+    <status>Nije započeto</status>
+  </projekt>
 </projekti>

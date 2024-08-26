@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XmlProjektiLibrary;
 
 namespace ntp_projekt
 {
@@ -17,7 +18,7 @@ namespace ntp_projekt
 
         public static void PostaviPodatke(string _username, Baza baza)
         {
-            string query = $"SELECT ime,prezime,korisnicko_ime,lozinka FROM korisnik WHERE korisnicko_ime = \"{_username}\";";
+            string query = $"SELECT ID,ime,prezime,korisnicko_ime,lozinka FROM korisnik WHERE korisnicko_ime = \"{_username}\";";
             RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\NTP_Projekt\TrenutniKorisnik");
             using (OleDbConnection connection = new OleDbConnection(baza.ConnectionString))
             {
@@ -55,7 +56,7 @@ namespace ntp_projekt
             RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\NTP_Projekt\TrenutniKorisnik");
             try 
             {
-                string User = key.GetValue("Varijabla 2").ToString();
+                string User = key.GetValue("Varijabla 3").ToString();
                 key.Close();
                 return User;
 
@@ -66,6 +67,25 @@ namespace ntp_projekt
                 return null;
             }
         }
+
+        public static string DohvatiKorisnikID() {
+            RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\NTP_Projekt\TrenutniKorisnik");
+            try
+            {
+                string User = key.GetValue("Varijabla 0").ToString();
+                key.Close();
+                return User;
+
+            }
+            catch (Exception ex)
+            {
+                key.Close();
+                MessageBox.Show("Greška pri dohvatu korisnika: " + ex.Message);
+                return null;
+            }
+        }
+
+        
 
         public static string DohvatiPunoIme() {
             try {
@@ -110,8 +130,26 @@ namespace ntp_projekt
         public static void DeaktivirajRacun() {
             try
             {
-                string User = Session.DohvatiKorisnika();
-                baza.BazaDelete($"DELETE FROM korisnik WHERE korisnicko_ime = '{User}'");
+                int korisnikID = Int32.Parse(Session.DohvatiKorisnikID());
+
+                string[] queries = new string[]
+                {
+                        "DELETE FROM clanovi_zadatka WHERE clanovi_zadatka.clan_projekta_ID IN (SELECT clanovi_projekta.ID  FROM clanovi_projekta WHERE clanovi_projekta.korisnik_ID = ?);",
+                        "DELETE FROM clanovi_projekta WHERE clanovi_projekta.korisnik_ID = ?;",
+                        "DELETE FROM korisnik WHERE korisnik.ID = ?"
+
+                };
+
+                foreach (string query in queries)
+                {
+                    int result = baza.BazaDelete(query, new OleDbParameter("?", korisnikID));
+                    if (result == -1)
+                    {
+                        MessageBox.Show("Greška pri deaktivaciji računa." );
+                        break;
+                    }
+                }
+                
             }
             catch (Exception ex)
             {

@@ -171,6 +171,9 @@
     <EmbeddedResource Include="BrisanjeProjekta.en.resx">
       <DependentUpon>BrisanjeProjekta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BrisanjeProjekta.hr.resx">
+      <DependentUpon>BrisanjeProjekta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BrisanjeProjekta.resx">
       <DependentUpon>BrisanjeProjekta.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -185,6 +188,9 @@
       <DependentUpon>Deaktivacija_racuna.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dodaj_projekt.en.resx">
+      <DependentUpon>Dodaj_projekt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodaj_projekt.hr.resx">
       <DependentUpon>Dodaj_projekt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dodaj_zadatak.en.resx">

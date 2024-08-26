@@ -117,491 +117,104 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="BrisanjeProjektaNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BrisanjeProjektaNaslovLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BrisanjeProjektaNaslovLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="BrisanjeProjektaNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Leelawadee UI, 40pt, style=Bold</value>
-  </data>
-  <data name="BrisanjeProjektaNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>347, 268</value>
-  </data>
-  <data name="BrisanjeProjektaNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 106</value>
-  </data>
-  <data name="BrisanjeProjektaNaslovLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="BrisanjeProjektaNaslovLabel.Text" xml:space="preserve">
-    <value>Brisanje projekta</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaNaslovLabel.Name" xml:space="preserve">
-    <value>BrisanjeProjektaNaslovLabel</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaNaslovLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaNaslovLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaNaslovLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <metadata name="BrisanjeProjektaLozinkaNazivLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <data name="BrisanjeProjektaLozinkaNazivLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10pt, style=Bold</value>
   </data>
-  <data name="BrisanjeProjektaLozinkaNazivLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>717, 431</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BrisanjeProjektaIzbrisiProjektButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="BrisanjeProjektaLozinkaNazivLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 43</value>
-  </data>
-  <data name="BrisanjeProjektaLozinkaNazivLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>57</value>
-  </data>
-  <data name="BrisanjeProjektaLozinkaNazivLabel.Text" xml:space="preserve">
-    <value>Upišite lozinku za potvrdu brisanja zadatka</value>
-  </data>
-  <data name="BrisanjeProjektaLozinkaNazivLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaLozinkaNazivLabel.Name" xml:space="preserve">
-    <value>BrisanjeProjektaLozinkaNazivLabel</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaLozinkaNazivLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaLozinkaNazivLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaLozinkaNazivLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <metadata name="BrisanjeProjektaPonovnoLozinkaLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="BrisanjeProjektaPonovnoLozinkaLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt, style=Bold</value>
-  </data>
-  <data name="BrisanjeProjektaPonovnoLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>717, 512</value>
-  </data>
-  <data name="BrisanjeProjektaPonovnoLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 43</value>
-  </data>
-  <data name="BrisanjeProjektaPonovnoLozinkaLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
-  </data>
-  <data name="BrisanjeProjektaPonovnoLozinkaLabel.Text" xml:space="preserve">
-    <value>Ponovite lozinku za potvrdu brisanja zadatka</value>
-  </data>
-  <data name="BrisanjeProjektaPonovnoLozinkaLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaLabel.Name" xml:space="preserve">
-    <value>BrisanjeProjektaPonovnoLozinkaLabel</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <metadata name="BrisanjeProjektaPonovnoLozinkaTextBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>721, 544</value>
-  </data>
-  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>*</value>
-  </data>
-  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>459, 26</value>
-  </data>
-  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaTextBox.Name" xml:space="preserve">
-    <value>BrisanjeProjektaPonovnoLozinkaTextBox</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="BrisanjeProjektaLozinkaTextBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="BrisanjeProjektaLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>721, 467</value>
-  </data>
-  <data name="BrisanjeProjektaLozinkaTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>*</value>
-  </data>
-  <data name="BrisanjeProjektaLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>459, 26</value>
-  </data>
-  <data name="BrisanjeProjektaLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.Name" xml:space="preserve">
-    <value>BrisanjeProjektaLozinkaTextBox</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="BrisanjeProjektaIzbrisiProjektButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="BrisanjeProjektaIzbrisiProjektButton.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="BrisanjeProjektaIzbrisiProjektButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="BrisanjeProjektaIzbrisiProjektButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>590, 624</value>
-  </data>
-  <data name="BrisanjeProjektaIzbrisiProjektButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 56</value>
-  </data>
-  <data name="BrisanjeProjektaIzbrisiProjektButton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="BrisanjeProjektaIzbrisiProjektButton.Text" xml:space="preserve">
-    <value>Izbriši projekt</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaIzbrisiProjektButton.Name" xml:space="preserve">
-    <value>BrisanjeProjektaIzbrisiProjektButton</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaIzbrisiProjektButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaIzbrisiProjektButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaIzbrisiProjektButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.Name" xml:space="preserve">
-    <value>BrisanjeProjektaProfilPictureBox</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.Parent" xml:space="preserve">
-    <value>BrisanjeProjektaPanel</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaNatragButton.Name" xml:space="preserve">
-    <value>BrisanjeProjektaNatragButton</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaNatragButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaNatragButton.Parent" xml:space="preserve">
-    <value>BrisanjeProjektaPanel</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BrisanjeProjektaProfilLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
   <data name="&gt;&gt;BrisanjeProjektaNatragButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilLinkLabel.Name" xml:space="preserve">
-    <value>BrisanjeProjektaProfilLinkLabel</value>
+  <data name="BrisanjeProjektaLozinkaNazivLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="BrisanjeProjektaNaslovLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.Name" xml:space="preserve">
+    <value>BrisanjeProjektaProfilPictureBox</value>
+  </data>
+  <data name="BrisanjeProjektaLozinkaTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="BrisanjeProjektaProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1910, 1015</value>
+  </data>
+  <data name="BrisanjeProjektaProfilPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="BrisanjeProjektaProfilLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaNatragButton.Parent" xml:space="preserve">
+    <value>BrisanjeProjektaPanel</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaNaslovLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BrisanjeProjektaProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2201, 39</value>
+  </data>
+  <data name="BrisanjeProjektaNaslovLabel.Text" xml:space="preserve">
+    <value>Brisanje projekta</value>
+  </data>
+  <data name="BrisanjeProjektaNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>463, 335</value>
   </data>
   <data name="&gt;&gt;BrisanjeProjektaProfilLinkLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilLinkLabel.Parent" xml:space="preserve">
-    <value>BrisanjeProjektaPanel</value>
+  <data name="BrisanjeProjektaNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Leelawadee UI, 40pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilLinkLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="BrisanjeProjektaPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
-  <data name="BrisanjeProjektaPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1920, 90</value>
+  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="BrisanjeProjektaPanel.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaPanel.Name" xml:space="preserve">
-    <value>BrisanjeProjektaPanel</value>
+  <data name="BrisanjeProjektaIzbrisiProjektButton.Text" xml:space="preserve">
+    <value>Izbriši projekt</value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="BrisanjeProjektaIzbrisiProjektButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 70</value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaPanel.ZOrder" xml:space="preserve">
+  <data name="BrisanjeProjektaNaslovLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="BrisanjeProjektaProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
-        DhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQU
-        FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAFoAWgDASIAAhEBAxEB/8QA
-        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
-        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
-        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
-        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
-        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
-        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
-        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
-        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiue8e/ELw38L/AAxd+IfFes2u
-        haNaqWkurt8AkAkIij5nc4O1FBZjwATxX5dftE/8FOvGXxE+06R8OY5vAnh990ZvyUbVLlSGBO8Erb8M
-        vEeXBXIl5xVJNibsfpd8S/jh4B+DtoZ/Gfi3SvD58rzktrq4H2mZN23MUC5kk5/uKe/pXzr4m/4Kn/BX
-        QdSNrp8XibxLDgYvNL0xY4myAcAXEkT8dPu9u/WvyL1HUrvWL+5v766mvb24cyz3VxI0ksrk5LOzfMzH
-        1NVa05ETzH6xf8PbPhR55B8K+NPJxw/2Wz3Z9Nv2rp75rofCn/BUj4J+IbySDUW8R+FY1XIuNW0vzEY/
-        3QLZ5mB+qge9fj5RT5EK7P6Efh38XvBPxa09rzwb4p0rxHEkaSSpYXSySwBwSoljzviJwflcA8Hjiuvr
-        +c3SdZv9B1S11LS7240vUrWRZbe9tJmingZfuski/Mp/3a+3f2bf+Cn3ifwXd2mh/FJZfFvh7AjXWoI0
-        /tK2AQBd4BCzrlRnOJPmZizkBKhx7FKXc/VWisTwV410P4jeFdN8SeGtTt9Y0PUYvOtby2bKuuSCCDyr
-        KwKsrAMrKVIBBFbdZlBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
-        FABRRRQAUUUUAFFFFABRRRQAUUUUAFcv8TviRofwi8B6z4w8SXDWujaVD507xpudiWCoiDuzOyqBxyw5
-        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
-        L/5Eo/4dK/CP/oZvHH/gbZf/ACJX21RRzMLI+Jf+HSvwj/6Gbxx/4G2X/wAiUf8ADpX4R/8AQzeOP/A2
-        y/8AkSvtqijmYWR8S/8ADpX4R/8AQzeOP/A2y/8AkSj/AIdK/CP/AKGbxx/4G2X/AMiV9tUUczCyPiX/
-        AIdK/CP/AKGbxx/4G2X/AMiUf8OlfhH/ANDN44/8DbL/AORK+2qKOZhZHxL/AMOlfhH/ANDN44/8DbL/
-        AORKP+HSvwj/AOhm8cf+Btl/8iV9tUUczCyPiX/h0r8I/wDoZvHH/gbZf/IlH/DpX4R/9DN44/8AA2y/
-        +RK+2qKOZhZHxL/w6V+Ef/QzeOP/AANsv/kSj/h0r8I/+hm8cf8AgbZf/IlfbVFHMwsj4l/4dK/CP/oZ
-        vHH/AIG2X/yJR/w6V+Ef/QzeOP8AwNsv/kSvtqijmYWR8Tx/8El/hErqzeJPG0gU52tfWYB+uLUH9a+m
-        Pg78BvAvwE0ObS/BGgw6RFclGurgu0txdMoIUyyuSzYy2FztXc20DJr0CildhYKKKKQwooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
-</value>
+  <data name="BrisanjeProjektaNatragButton.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
-  <data name="BrisanjeProjektaProfilPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="PanelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="BrisanjeProjektaProfilPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
-        DhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQU
-        FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAFoAWgDASIAAhEBAxEB/8QA
-        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
-        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
-        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
-        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
-        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
-        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
-        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
-        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiue8e/ELw38L/AAxd+IfFes2u
-        haNaqWkurt8AkAkIij5nc4O1FBZjwATxX5dftE/8FOvGXxE+06R8OY5vAnh990ZvyUbVLlSGBO8Erb8M
-        vEeXBXIl5xVJNibsfpd8S/jh4B+DtoZ/Gfi3SvD58rzktrq4H2mZN23MUC5kk5/uKe/pXzr4m/4Kn/BX
-        QdSNrp8XibxLDgYvNL0xY4myAcAXEkT8dPu9u/WvyL1HUrvWL+5v766mvb24cyz3VxI0ksrk5LOzfMzH
-        1NVa05ETzH6xf8PbPhR55B8K+NPJxw/2Wz3Z9Nv2rp75rofCn/BUj4J+IbySDUW8R+FY1XIuNW0vzEY/
-        3QLZ5mB+qge9fj5RT5EK7P6Efh38XvBPxa09rzwb4p0rxHEkaSSpYXSySwBwSoljzviJwflcA8Hjiuvr
-        +c3SdZv9B1S11LS7240vUrWRZbe9tJmingZfuski/Mp/3a+3f2bf+Cn3ifwXd2mh/FJZfFvh7AjXWoI0
-        /tK2AQBd4BCzrlRnOJPmZizkBKhx7FKXc/VWisTwV410P4jeFdN8SeGtTt9Y0PUYvOtby2bKuuSCCDyr
-        KwKsrAMrKVIBBFbdZlBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
-        FABRRRQAUUUUAFFFFABRRRQAUUUUAFcv8TviRofwi8B6z4w8SXDWujaVD507xpudiWCoiDuzOyqBxyw5
-        HWuor8iv+ClX7SU3xR+KUngHSZyPC3hG6eGUpuH2rUlBSZ2Bx/qstEvHXzTkh1xUVdibseJ/tKftKeJ/
-        2mPHUmu65K1ppVuzxaTosTboLCEkcA/xythfMk6kgAYQKi+QUUV0LQzCiiimAUUUUAFFFFAHvX7Kn7WX
-        iT9mXxdC8E1xf+Dr2dX1XQt+5HUgBpolJAWcKq7WyAwVVYkYI/avwT410P4jeFNM8S+GtSh1fQ9ShE9r
-        eQE7XU8YIIBVgQVZWAZWBUgEEV/O1X3X/wAEw/2kpfBfjxvhbrN1jw94ikabTGlKBbXUQnKbyQdsyx4C
-        /N+8EYUZkc1lOPUcT9VaKKKxNAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
-        KKKACiiigAooooAKKKKACiiigAooooA80/aT+KDfBj4E+NPGMTMl7p1gy2TLEJMXcpENsSp4K+dJHn2z
-        16V+BkjtIxZ3aR25LN1b3r9Wv+CtXiyPTfgj4V8PrK6Xeq66twY1AxJDBBJvB78SSwHj0/P8o62gtCJB
-        RRRWpIUUUUAFFFFABRRRQAVc0fVr7QNWsdU0y6ksdSsZ0ubW6hba8MqMGR1P95WVW/CqdFID+gv4K/Eq
-        2+MHwm8J+M7bylGs6fFcyxQMWSGcriaIE9dkgdD7qa7Wvj7/AIJY+KL3Xv2YZNPumDQ6Fr15p9qNoBWN
-        kiuSD6nfcydfYdq+wa5nozRBRRRSGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
-        FABRRRQAUUUUAFFFFABRRRQAUUUUAfnD/wAFhmfZ8JFH+rzqxP1As8fpmvzdr9V/+Ct3heG++DHg/wAQ
-        iOV7zTde+yBkxsWGe3lZy3GfvwQgc4575GPyoreGxm9wooorQQUUUUAFFFFABRRRQAUUUUAfqh/wSLa/
-        /wCFQ+OBIf8AiVjXwYB/02+zReb/AOO+TX3hXxz/AMEq/Dd9of7Md1fXcWy31nxDd31m2QS8SxwW5J9P
-        3lvKP+A19jVzS3NFsFFFFSMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
-        gAooooAKKKKACiiigAooooA8n/as+Flz8aP2evG/hGwDPqd5ZefYxptBluYHWeGPLEAB3iVCSRgMTX4M
-        e4r+j+vxu/4KJfs4yfBf4zT+IdLgkfwr4ukm1GBwihLW7LFrm34OcDcJFJCjbIVGfKY1rB9CJHyhRRRW
-        xIUUUUAFFFFABRRRQAVLbwS3VxHBDE808rBI4413M7H7qgd8moq+z/8Agmf+zjN8TviivxA1WJT4Y8IX
-        KyQrIjYu9S27oVU4wfJBWVjnIYwjBDNiZOyA/Tf4GfDOD4N/B/wj4LhEO/R9OiguJLfd5c1yRunlXdzh
-        5Wkfn+90HSu6oormNQooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
-        gAooooAKKKKACiiigAooooAK4n4yfB/w38dPh/qXhDxTafadOvF3RzR4Wa1mGdk8TYO11J46gglWDKzK
-        e2ooA/Af48fAfxR+z349u/DXiW0ZNrNJZahGpFvfQZ4kiPpyMrnKk4POCfN6/oJ+MPwb8KfHbwPeeFfF
-        +mrf6dP88Uq4We0mAIWaGTGUkXJ56EEqwZWZT+UX7SH/AATz+IXwRkudV0OCTx14SBZhfaXbt9rtUChj
-        9ot1yQAd/wA8e5cJlvLyFraMu5m1Y+U6KByMjkUVqIKKKKACil9Pc4HvX2F+zn/wTc8f/FS/tdU8aW11
-        8P8AwkHBkW9j2apdIGZXWOBsmEnZjdMBjcrKsinFS2luB4x+zf8As3+Kf2nPHkeg6EptdOtysuq61NGW
-        g06Ak4Y8jdI2G2R5BcgkkKHdP27+F/w20T4P/D/RPB3h2GSHR9Jg8mHzm3SOSxZ5HIABd3ZnYgAZY4AH
-        FRfC34T+Ffgv4Qt/DPg/SItI0mJ2lZEJaSaVsbpZXYlpHOANzEnCqBgAAddWEpXNErBRRRUjCiiigAoo
-        ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
-        r5z/AGg/27vhn8A2vdLkvm8U+LoFYDQtHYOYpMOAtxN/q4cMgDLlpFDBvLYU9wPoyivyF8Wf8FSvjBrP
-        iyDU9FTR/Dui28pZNFWzFylxHuyEuJn+dyF4JiMOeoAr6l+Cn/BUn4deNrWK08e20/gLWQoDTlXu9Pmb
-        5R8siKXjJJJw6BVA++xp8rFdHvfxS/ZR+E3xmvzqHizwTp97qjNvfUrUvZ3UrbQoMk0DI8mAoADlgMcC
-        vmvxd/wSP8A39q//AAjXjTxFol20m7dqKQX0Kr/dCKkT/iXNfa3hbxhoPjnShqfhvW9N8QaaXMYvNLu4
-        7mEsMZXehIyMjjPetihSaCyPzf8A+HPB3f8AJXPl9P8AhGuf/Suu38I/8Ekfh3p1rEfEfi/xJrl4sm5j
-        Y+RYwOuB8pQpI/XPIk7j0yfumijmYWR5l8Lv2Z/hd8GJVuPB/grTNKv1d3XUpEa5vV3qFZRczF5QpAxt
-        DbeTxya9NrH8U+MNB8D6UdT8Sa3pvh/TQ4jN5ql3HbQhjnC73IGTg8Z7V8hfGr/gqT8OvBVrLaeArW48
-        e6wVIW4CvaafC3zD5pHXfIQQpwibWB/1gNLVhsfatFfkN4T/AOCpXxg0fxZNqetJo3iLRbmUM+iNZi2S
-        3j3ZZbeZPnQleAZTNjqQa+7f2e/27vhl8fTZaZHft4W8XTqoOhawwQyyYQFbeb7k2WchVysjBSxjUU3F
-        oLpn0ZRRRUjCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
-        AooooAKKKKACud8ffEPw38LfC934i8V6za6Ho1qpMl1dPjJwSERRlnc4OEUFmPABNct8fvj/AOF/2dfA
-        s3iPxJPvkYmKw02Fh599NjIjQHoB1Zjwo5PYH8Z/2kf2lPFH7S3jqXXddla00633R6VosMjG3sIW6qOB
-        vkbA3ykAvjGFUIiVGNyW7HtX7UX/AAUe8W/GJbvw94IW68E+DZUMUzLIBqN+u7PzyJnyVICjy4yc/MGd
-        1baPjn+VJRW6ViAoooqgNTw/4m1fwjq0WqaBqt9oepRZ8q+065e3nQEYIEkZVuleweE/24fjt4Ns3tbD
-        4lavPG5B3aosOouMZ6PcxyMOvY+noK8LopWQH0l/w8V/aE24/wCE/GfX+xdP/wDkesHxZ+3D8dvGVmlr
-        f/ErV4I0JO7S1h05znHV7aONj07n19TXhdFLlQGp4g8Tat4u1aTVde1W/wBb1OXHmXupXL3E7AcAGSRm
-        asuiimAUv16UlFMD7H/Zd/4KPeLPg6tp4e8brdeNvBsSCKFmkB1GwXdn5JHx5ygFh5chBHyhXRV2n9WP
-        AfxC8N/FDwxaeIfCms2mu6PdKGjurR9wBIBKOv3kcZG5GAZTwQDxX88Feu/s3ftJ+Kf2afHcev6FKbrT
-        LkLFquizSMLe/hXOAeux152SgEpkjDKXR8pR7DUj946K81+AXx+8LftE+BYfEfhq4KuhEV9pszD7RYzY
-        zskA7HqrDhhyO4HpVYmgUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABR
-        RRQAUUUUAFcd8XPix4d+CXgHU/F/ii6a30uxTiOFQ01xIeEhiUkbnY8AEgDkkqoJHY1+MX7eH7V0/wC0
-        P8Rn0jQr2Y/D7QZWTT4c7UvpwCr3pUH5s5ZY89IznCmRxVRV2Jux5f8AtFftAeIf2kPiNd+KtcxawAGH
-        TtKictHYWobKxqcDe2eXfALNk4VQqjyyiiugzCiiimAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB6n+zr
-        +0B4i/Zu+I1p4p0P/S7fAh1HSpZSsV/bFvmjY4Oxs8o+CVbBwyllP7d/CP4s+Hfjd4B0zxf4XumuNLvl
-        OY5lCTW8o4eGVMnbIh4IyQeCCVIJ/nxr6j/YP/aum/Z4+IyaRrt7MPh9r0qpfwlgyWM5AVL0Kfu4wFkx
-        1jGcMY0FZyj1GnY/Z2iiisDQKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
-        igAooqK6uobG2luLiWO3t4UMkk0rBURQMliTwABzk0AfHP8AwUw/aGPwx+FMfgXR7pU8ReLo5IbjY6b7
-        fThhZiQTlTKW8pSVwV84ggpX5FV6z+1H8brj9oH42eIfFzSytpby/ZdJgkBHkWMZKwjaSdpYZlYA43yv
-        ivJq6IqyM3qwoooqxBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAfrt/wTP/AGiW+KPwpk8D
-        axcq/iLwhHHBblmQNcad92EgA5YxbfKYhcbfJJJZzX2VX4L/ALLvxsuP2f8A43eHPFwllXS45fsurQx7
-        j59jIQswKgjeVGJVB43xJX7x2t1De28VxbypPbzIJI5YmDK6kZDAjggjnIrnkrMuOxLRRRUFBRRRQAUU
-        UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV80/8ABQ/4pN8MP2XfEaW7Ol/4ldPD1u6x
-        q6gTq5n3ZPANvHcAMMkMV+o+lq/Lb/grh4+fUvib4K8HRtGbbSdLk1KQxyZYzXMpQK4zgFUtgRxnEp7E
-        VUVdiex8EUUUV0mYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV+1f/BPH4pP8Tv2X
-        fDiXLO+oeG3fw9cu0aopECoYNuD8wFvJbgscEsG+p/FSvvf/AIJH+Pn034m+NfB0hQW+raXHqUbSSYYS
-        20oQqgzyWS5JPfEXoKzmtBrc/UmiiisDQKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACvwy/bh8Xx+Nv2rviRfwo0cVvqQ0wKW3c2sSWznoOrwscds9+tfubX4afttfDnU/hv+0548ttQ
-        RvL1bUZtcs5ipVZre6dpQVJAyFdpIz/tRMOa0huTI8KooorcgKKKKACiiigAooooAKKKKACiiigAoooo
-        AKKKKACiiigAooooAK9z/Ye8Xx+Cf2rvhvfzI0kVxqR0wqG283UT2yHoejzKcd8duteGV7r+xL8OdT+J
-        H7TngO209G8vSdRh1y8mCllht7V1lJYgHAZ1jjH+1Ko4qZbAfuXRRRXMahRRRQAUUUUAFFFFABRRRQAU
-        UUUAFFFFABRRRQAUUUUAFFFFABRRRQAV5/8AGL4DeBfj3ocOl+N9Bh1eK2Lta3Adori1ZgAxilQhlzhc
-        rna21dwOBXoFFAHxPJ/wSW+ETOzL4k8bRhjnat9ZkD6ZtSf1pv8Aw6V+Ef8A0M3jj/wNsv8A5Er7aop8
-        zFZHxL/w6V+Ef/QzeOP/AANsv/kSj/h0r8I/+hm8cf8AgbZf/IlfbVFPmYWR8S/8OlfhH/0M3jj/AMDb
-        L/5Eo/4dK/CP/oZvHH/gbZf/ACJX21RRzMLI+Jf+HSvwj/6Gbxx/4G2X/wAiUf8ADpX4R/8AQzeOP/A2
-        y/8AkSvtqijmYWR8S/8ADpX4R/8AQzeOP/A2y/8AkSj/AIdK/CP/AKGbxx/4G2X/AMiV9tUUczCyPiX/
-        AIdK/CP/AKGbxx/4G2X/AMiUf8OlfhH/ANDN44/8DbL/AORK+2qKOZhZHxL/AMOlfhH/ANDN44/8DbL/
-        AORKP+HSvwj/AOhm8cf+Btl/8iV9tUUczCyPiX/h0r8I/wDoZvHH/gbZf/IlH/DpX4R/9DN44/8AA2y/
-        +RK+2qKOZhZHxL/w6V+Ef/QzeOP/AANsv/kSj/h0r8I/+hm8cf8AgbZf/IlfbVFHMwsj4l/4dK/CP/oZ
-        vHH/AIG2X/yJR/w6V+Ef/QzeOP8AwNsv/kSvtqijmYWR8Tx/8El/hErqzeJPG0gU52tfWYB+uLUH9a+m
-        Pg78BvAvwE0ObS/BGgw6RFclGurgu0txdMoIUyyuSzYy2FztXc20DJr0CildhYKKKKQwooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
-</value>
+  <data name="BrisanjeProjektaLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>611, 31</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaTextBox.Name" xml:space="preserve">
+    <value>BrisanjeProjektaPonovnoLozinkaTextBox</value>
+  </data>
+  <data name="BrisanjeProjektaLozinkaNazivLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>956, 539</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaProfilLinkLabel.Parent" xml:space="preserve">
+    <value>BrisanjeProjektaPanel</value>
   </data>
   <data name="BrisanjeProjektaProfilPictureBox.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1396,29 +1009,77 @@
         ABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 </value>
   </data>
-  <data name="BrisanjeProjektaProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1823, 13</value>
+  <data name="&gt;&gt;BrisanjeProjektaPanel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="BrisanjeProjektaProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 65</value>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
-  <data name="BrisanjeProjektaProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BrisanjeProjektaLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="BrisanjeProjektaNaslovLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BrisanjeProjektaProfilLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BrisanjeProjektaIzbrisiProjektButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaProfilLinkLabel.Name" xml:space="preserve">
+    <value>BrisanjeProjektaProfilLinkLabel</value>
+  </data>
+  <data name="BrisanjeProjektaProfilPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BrisanjeProjektaProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 37</value>
+  </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>611, 31</value>
+  </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="BrisanjeProjektaPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>2560, 112</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PanelLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="BrisanjeProjektaProfilPictureBox.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.Name" xml:space="preserve">
-    <value>BrisanjeProjektaProfilPictureBox</value>
+  <data name="BrisanjeProjektaNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.Parent" xml:space="preserve">
-    <value>BrisanjeProjektaPanel</value>
+  <data name="&gt;&gt;BrisanjeProjektaNatragButton.Name" xml:space="preserve">
+    <value>BrisanjeProjektaNatragButton</value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.Name" xml:space="preserve">
+    <value>BrisanjeProjektaLozinkaTextBox</value>
+  </data>
+  <data name="BrisanjeProjektaProfilLinkLabel.Text" xml:space="preserve">
+    <value>Sara Bednaić</value>
+  </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>956, 640</value>
   </data>
   <data name="BrisanjeProjektaNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1535,112 +1196,445 @@
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="BrisanjeProjektaNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="BrisanjeProjektaNaslovLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="BrisanjeProjektaNatragButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+  <data name="&gt;&gt;BrisanjeProjektaLozinkaNazivLabel.Name" xml:space="preserve">
+    <value>BrisanjeProjektaLozinkaNazivLabel</value>
   </data>
-  <data name="BrisanjeProjektaNatragButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
-  </data>
-  <data name="BrisanjeProjektaNatragButton.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaNatragButton.Name" xml:space="preserve">
-    <value>BrisanjeProjektaNatragButton</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaNatragButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaNatragButton.Parent" xml:space="preserve">
-    <value>BrisanjeProjektaPanel</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaNatragButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="BrisanjeProjektaProfilLinkLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="BrisanjeProjektaProfilLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="BrisanjeProjektaProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1651, 31</value>
-  </data>
-  <data name="BrisanjeProjektaProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 29</value>
-  </data>
-  <data name="BrisanjeProjektaProfilLinkLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="BrisanjeProjektaProfilLinkLabel.Text" xml:space="preserve">
-    <value>Sara Bednaić</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilLinkLabel.Name" xml:space="preserve">
-    <value>BrisanjeProjektaProfilLinkLabel</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilLinkLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilLinkLabel.Parent" xml:space="preserve">
-    <value>BrisanjeProjektaPanel</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaProfilLinkLabel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaTextBox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="PanelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="BrisanjeProjektaLozinkaNazivLabel.Text" xml:space="preserve">
+    <value>Upišite lozinku za potvrdu brisanja zadatka</value>
+  </data>
+  <data name="BrisanjeProjektaProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
+        DhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQU
+        FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAFoAWgDASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiue8e/ELw38L/AAxd+IfFes2u
+        haNaqWkurt8AkAkIij5nc4O1FBZjwATxX5dftE/8FOvGXxE+06R8OY5vAnh990ZvyUbVLlSGBO8Erb8M
+        vEeXBXIl5xVJNibsfpd8S/jh4B+DtoZ/Gfi3SvD58rzktrq4H2mZN23MUC5kk5/uKe/pXzr4m/4Kn/BX
+        QdSNrp8XibxLDgYvNL0xY4myAcAXEkT8dPu9u/WvyL1HUrvWL+5v766mvb24cyz3VxI0ksrk5LOzfMzH
+        1NVa05ETzH6xf8PbPhR55B8K+NPJxw/2Wz3Z9Nv2rp75rofCn/BUj4J+IbySDUW8R+FY1XIuNW0vzEY/
+        3QLZ5mB+qge9fj5RT5EK7P6Efh38XvBPxa09rzwb4p0rxHEkaSSpYXSySwBwSoljzviJwflcA8Hjiuvr
+        +c3SdZv9B1S11LS7240vUrWRZbe9tJmingZfuski/Mp/3a+3f2bf+Cn3ifwXd2mh/FJZfFvh7AjXWoI0
+        /tK2AQBd4BCzrlRnOJPmZizkBKhx7FKXc/VWisTwV410P4jeFdN8SeGtTt9Y0PUYvOtby2bKuuSCCDyr
+        KwKsrAMrKVIBBFbdZlBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+        FABRRRQAUUUUAFFFFABRRRQAUUUUAFcv8TviRofwi8B6z4w8SXDWujaVD507xpudiWCoiDuzOyqBxyw5
+        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
+        L/5Eo/4dK/CP/oZvHH/gbZf/ACJX21RRzMLI+Jf+HSvwj/6Gbxx/4G2X/wAiUf8ADpX4R/8AQzeOP/A2
+        y/8AkSvtqijmYWR8S/8ADpX4R/8AQzeOP/A2y/8AkSj/AIdK/CP/AKGbxx/4G2X/AMiV9tUUczCyPiX/
+        AIdK/CP/AKGbxx/4G2X/AMiUf8OlfhH/ANDN44/8DbL/AORK+2qKOZhZHxL/AMOlfhH/ANDN44/8DbL/
+        AORKP+HSvwj/AOhm8cf+Btl/8iV9tUUczCyPiX/h0r8I/wDoZvHH/gbZf/IlH/DpX4R/9DN44/8AA2y/
+        +RK+2qKOZhZHxL/w6V+Ef/QzeOP/AANsv/kSj/h0r8I/+hm8cf8AgbZf/IlfbVFHMwsj4l/4dK/CP/oZ
+        vHH/AIG2X/yJR/w6V+Ef/QzeOP8AwNsv/kSvtqijmYWR8Tx/8El/hErqzeJPG0gU52tfWYB+uLUH9a+m
+        Pg78BvAvwE0ObS/BGgw6RFclGurgu0txdMoIUyyuSzYy2FztXc20DJr0CildhYKKKKQwooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
+</value>
+  </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 54</value>
+  </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 0</value>
+    <value>1077, 0</value>
   </data>
-  <data name="PanelLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 84</value>
+  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PanelLogo.TabIndex" type="System.Int32, mscorlib">
-    <value>68</value>
+  <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.Parent" xml:space="preserve">
+    <value>BrisanjeProjektaPanel</value>
   </data>
-  <data name="&gt;&gt;PanelLogo.Name" xml:space="preserve">
-    <value>PanelLogo</value>
+  <data name="&gt;&gt;BrisanjeProjektaLozinkaNazivLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PanelLogo.Type" xml:space="preserve">
+  <data name="&gt;&gt;BrisanjeProjektaPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PanelLogo.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="BrisanjeProjektaIzbrisiProjektButton.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
-  <data name="&gt;&gt;PanelLogo.ZOrder" xml:space="preserve">
+  <data name="BrisanjeProjektaIzbrisiProjektButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 20</value>
+  <data name="&gt;&gt;BrisanjeProjektaNaslovLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="BrisanjeProjektaProfilLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1443, 840</value>
+  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaLabel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1919, 1077</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1439, 826</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>BrisanjeProjekta</value>
+  <data name="BrisanjeProjektaNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>911, 142</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaLabel.Name" xml:space="preserve">
+    <value>BrisanjeProjektaPonovnoLozinkaLabel</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaLozinkaNazivLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>12, 25</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>BrisanjeProjekta</value>
+  </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>961, 680</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BrisanjeProjektaIzbrisiProjektButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>787, 780</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BrisanjeProjektaLozinkaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="BrisanjeProjektaLozinkaNazivLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 54</value>
+  </data>
+  <data name="BrisanjeProjektaPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>2550, 1329</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaProfilLinkLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="BrisanjeProjektaProfilPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsN
+        DhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQU
+        FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAFoAWgDASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+        AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiue8e/ELw38L/AAxd+IfFes2u
+        haNaqWkurt8AkAkIij5nc4O1FBZjwATxX5dftE/8FOvGXxE+06R8OY5vAnh990ZvyUbVLlSGBO8Erb8M
+        vEeXBXIl5xVJNibsfpd8S/jh4B+DtoZ/Gfi3SvD58rzktrq4H2mZN23MUC5kk5/uKe/pXzr4m/4Kn/BX
+        QdSNrp8XibxLDgYvNL0xY4myAcAXEkT8dPu9u/WvyL1HUrvWL+5v766mvb24cyz3VxI0ksrk5LOzfMzH
+        1NVa05ETzH6xf8PbPhR55B8K+NPJxw/2Wz3Z9Nv2rp75rofCn/BUj4J+IbySDUW8R+FY1XIuNW0vzEY/
+        3QLZ5mB+qge9fj5RT5EK7P6Efh38XvBPxa09rzwb4p0rxHEkaSSpYXSySwBwSoljzviJwflcA8Hjiuvr
+        +c3SdZv9B1S11LS7240vUrWRZbe9tJmingZfuski/Mp/3a+3f2bf+Cn3ifwXd2mh/FJZfFvh7AjXWoI0
+        /tK2AQBd4BCzrlRnOJPmZizkBKhx7FKXc/VWisTwV410P4jeFdN8SeGtTt9Y0PUYvOtby2bKuuSCCDyr
+        KwKsrAMrKVIBBFbdZlBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+        FABRRRQAUUUUAFFFFABRRRQAUUUUAFcv8TviRofwi8B6z4w8SXDWujaVD507xpudiWCoiDuzOyqBxyw5
+        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
+        L/5Eo/4dK/CP/oZvHH/gbZf/ACJX21RRzMLI+Jf+HSvwj/6Gbxx/4G2X/wAiUf8ADpX4R/8AQzeOP/A2
+        y/8AkSvtqijmYWR8S/8ADpX4R/8AQzeOP/A2y/8AkSj/AIdK/CP/AKGbxx/4G2X/AMiV9tUUczCyPiX/
+        AIdK/CP/AKGbxx/4G2X/AMiUf8OlfhH/ANDN44/8DbL/AORK+2qKOZhZHxL/AMOlfhH/ANDN44/8DbL/
+        AORKP+HSvwj/AOhm8cf+Btl/8iV9tUUczCyPiX/h0r8I/wDoZvHH/gbZf/IlH/DpX4R/9DN44/8AA2y/
+        +RK+2qKOZhZHxL/w6V+Ef/QzeOP/AANsv/kSj/h0r8I/+hm8cf8AgbZf/IlfbVFHMwsj4l/4dK/CP/oZ
+        vHH/AIG2X/yJR/w6V+Ef/QzeOP8AwNsv/kSvtqijmYWR8Tx/8El/hErqzeJPG0gU52tfWYB+uLUH9a+m
+        Pg78BvAvwE0ObS/BGgw6RFclGurgu0txdMoIUyyuSzYy2FztXc20DJr0CildhYKKKKQwooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+        iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
+</value>
+  </data>
+  <data name="BrisanjeProjektaPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="BrisanjeProjektaLozinkaNazivLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.Name" xml:space="preserve">
+    <value>PanelLogo</value>
+  </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaLabel.Text" xml:space="preserve">
+    <value>Ponovite lozinku za potvrdu brisanja zadatka</value>
+  </data>
+  <data name="BrisanjeProjektaProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 81</value>
+  </data>
+  <data name="BrisanjeProjektaNatragButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 80</value>
+  </data>
+  <data name="BrisanjeProjektaLozinkaNazivLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaNaslovLabel.Name" xml:space="preserve">
+    <value>BrisanjeProjektaNaslovLabel</value>
+  </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BrisanjeProjektaProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2431, 16</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaIzbrisiProjektButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PanelLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 105</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaNaslovLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1924, 1050</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaIzbrisiProjektButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BrisanjeProjektaLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>961, 584</value>
+  </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaPanel.Name" xml:space="preserve">
+    <value>BrisanjeProjektaPanel</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaNatragButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BrisanjeProjektaNatragButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 15</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaIzbrisiProjektButton.Name" xml:space="preserve">
+    <value>BrisanjeProjektaIzbrisiProjektButton</value>
+  </data>
+  <data name="BrisanjeProjektaIzbrisiProjektButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="BrisanjeProjektaNatragButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaLozinkaNazivLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaIzbrisiProjektButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PanelLogo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>hr</value>
+  </metadata>
+  <metadata name="BrisanjeProjektaLozinkaNazivLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="BrisanjeProjektaNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="BrisanjeProjektaPonovnoLozinkaLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

@@ -1278,11 +1278,10 @@
         ABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PopisProjektaPanelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="DodajProjektDodajClanaButton.Text" xml:space="preserve">
+    <value>Add</value>
   </data>
-  <data name="PopisProjektaPanelLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 84</value>
+  <data name="DodajProjektDodajAdminButton.Text" xml:space="preserve">
+    <value>Add</value>
   </data>
 </root>

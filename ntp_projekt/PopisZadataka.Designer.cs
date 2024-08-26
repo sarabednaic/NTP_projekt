@@ -53,6 +53,7 @@
             resources.ApplyResources(this.PopisZadatakaImeProjektaLabel, "PopisZadatakaImeProjektaLabel");
             this.PopisZadatakaImeProjektaLabel.ForeColor = System.Drawing.Color.DimGray;
             this.PopisZadatakaImeProjektaLabel.Name = "PopisZadatakaImeProjektaLabel";
+            this.PopisZadatakaImeProjektaLabel.Click += new System.EventHandler(this.PopisZadatakaImeProjektaLabel_Click);
             // 
             // PopisZadatakaClanoviLabel
             // 

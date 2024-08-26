@@ -119,40 +119,48 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1443, 840</value>
-  </data>
-  <data name="DodajProjektOvlastiListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>612, 756</value>
+    <value>2524, 1258</value>
   </data>
   <data name="&gt;&gt;DodajProjektOvlastiLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>16</value>
   </data>
-  <data name="DodajProjektClanoviListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 119</value>
+  <data name="UrediProjektNazivTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>952, 31</value>
   </data>
-  <data name="DodajProjektNazivTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>612, 335</value>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>DeaktivacijaProfilPanel</value>
   </data>
-  <data name="&gt;&gt;DodajProjektButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="UrediProjektOvlastiListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
   </data>
-  <data name="UrediZadatakSubmitButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="UrediProjektNazivLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
-  <data name="DodajProjektOpisLabel.Text" xml:space="preserve">
-    <value>Opis projekta</value>
+  <data name="&gt;&gt;UrediProjektDodajAdminButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDodajAdminButton.Name" xml:space="preserve">
+    <value>UrediProjektDodajAdminButton</value>
+  </data>
+  <data name="UrediProjektProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2429, 16</value>
+  </data>
+  <data name="UrediProjektDodajAdminButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 40</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="UrediProjektOpisRichTextBox.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="UrediZadatakNaslovLabel.Text" xml:space="preserve">
-    <value>Uredi projekt</value>
+    <value>Edit Project</value>
   </data>
-  <data name="UrediProjektProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 29</value>
-  </data>
-  <data name="&gt;&gt;PanelLogo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="DodajProjektButton.Text" xml:space="preserve">
-    <value>Uredi projekt</value>
+  <data name="DodajProjektOpisLabel.Text" xml:space="preserve">
+    <value>Description</value>
   </data>
   <data name="&gt;&gt;UrediProjektProfilPictureBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -160,76 +168,113 @@
   <data name="&gt;&gt;UrediZadatakNaslovLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;DodajProjektNazivTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;UrediProjektOpisRichTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="DodajProjektOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>608, 370</value>
+    <value>810, 389</value>
   </data>
   <data name="&gt;&gt;UrediProjektProfilPictureBox.Parent" xml:space="preserve">
     <value>DeaktivacijaProfilPanel</value>
   </data>
+  <data name="UrediProjektDodajAdminButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1191, 989</value>
+  </data>
   <data name="UrediZadatakNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>477, 93</value>
-  </data>
-  <data name="&gt;&gt;UrediZadatakSubmitButton.Name" xml:space="preserve">
-    <value>UrediZadatakSubmitButton</value>
-  </data>
-  <data name="UrediProjektProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1822, 13</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektOpisRichTextBox.Name" xml:space="preserve">
-    <value>DodajProjektOpisRichTextBox</value>
+    <value>563, 125</value>
   </data>
   <data name="DodajProjektOvlastiLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>453, 43</value>
+    <value>604, 54</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektNatragButton.Name" xml:space="preserve">
+    <value>UrediProjektNatragButton</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDodajAdminButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="UrediProjektDodajClanaButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1191, 790</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDeleteAdminButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektOvlastiListBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektClanoviListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UrediProjektNatragButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 16</value>
   </data>
   <data name="&gt;&gt;UrediProjektProfilLinkLabel.Name" xml:space="preserve">
     <value>UrediProjektProfilLinkLabel</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DeaktivacijaNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="UrediProjektOpisRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>816, 447</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DeaktivacijaNatragButton.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 0</value>
+  <data name="&gt;&gt;UrediProjektStatusComboBox.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;DodajProjektButton.Name" xml:space="preserve">
-    <value>DodajProjektButton</value>
+  <data name="UrediProjektStatusComboBox.Items2" xml:space="preserve">
+    <value>Problem</value>
   </data>
-  <data name="UrediZadatakSubmitButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 62</value>
+  <data name="UrediProjektStatusComboBox.Items3" xml:space="preserve">
+    <value>Nije započeto</value>
+  </data>
+  <data name="UrediProjektStatusComboBox.Items1" xml:space="preserve">
+    <value>Završeno</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektClanoviListBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="UrediProjektClanoviListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="UrediProjektButton.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;UrediZadatakNaslovLabel.Name" xml:space="preserve">
+    <value>UrediZadatakNaslovLabel</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DodajProjektOvlastiLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DodajProjektNazivTextBox.Name" xml:space="preserve">
-    <value>DodajProjektNazivTextBox</value>
+  <data name="DodajProjektOvlastiLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
-  <data name="UrediZadatakSubmitButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
+  <data name="UrediProjektDodajClanaButton.Text" xml:space="preserve">
+    <value>Add</value>
   </data>
-  <data name="&gt;&gt;DeaktivacijaNatragButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="UrediProjektDeleteAdminButton.Text" xml:space="preserve">
+    <value>Delete</value>
   </data>
-  <data name="&gt;&gt;DodajProjektOpisRichTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="DeaktivacijaProfilPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>2560, 112</value>
   </data>
-  <data name="&gt;&gt;DodajProjektNazivTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;PanelLogo.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1919, 1077</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="DodajProjektOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 43</value>
+  <data name="DodajProjektClanoviLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
   </data>
-  <data name="&gt;&gt;UrediZadatakSubmitButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="UrediProjektProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2200, 39</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDodajAdminTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="DeaktivacijaProfilPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -237,29 +282,44 @@
   <data name="&gt;&gt;DodajProjektOpisLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;UrediProjektNazivLabel.Name" xml:space="preserve">
+    <value>UrediProjektNazivLabel</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>UrediProjekt</value>
   </data>
   <data name="PanelLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 84</value>
+    <value>353, 105</value>
   </data>
   <data name="DeaktivacijaProfilPanel.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
-  <data name="&gt;&gt;DodajProjektOvlastiListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;UrediProjektButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="DeaktivacijaNatragButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
+  <data name="&gt;&gt;UrediProjektNazivTextBox.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
-  <data name="DodajProjektButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  <data name="&gt;&gt;UrediProjektNazivTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DodajProjektClanoviListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="UrediZadatakNaslovLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDodajClanaTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="UrediProjektNatragButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="UrediProjektDodajAdminTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 31</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDodajClanaButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="UrediProjektProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -381,20 +441,14 @@
   <data name="UrediProjektProfilPictureBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="DodajProjektOpisRichTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>57</value>
-  </data>
   <data name="&gt;&gt;UrediZadatakNaslovLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="UrediProjektNazivTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;DeaktivacijaNatragButton.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="UrediProjektProfilPictureBox.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1189,390 +1243,104 @@
         ABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 </value>
   </data>
-  <data name="&gt;&gt;DodajProjektClanoviListBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="DodajProjektNazivLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektOpisLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelLogo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DeaktivacijaNatragButton.Parent" xml:space="preserve">
-    <value>DeaktivacijaProfilPanel</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektClanoviLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="UrediProjektProfilLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="PanelLogo.TabIndex" type="System.Int32, mscorlib">
-    <value>68</value>
-  </data>
-  <data name="UrediZadatakSubmitButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>880, 758</value>
-  </data>
-  <data name="&gt;&gt;UrediProjektProfilPictureBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektOpisLabel.Name" xml:space="preserve">
-    <value>DodajProjektOpisLabel</value>
-  </data>
-  <data name="DodajProjektOvlastiLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>608, 716</value>
-  </data>
-  <data name="DodajProjektButton.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
-  </data>
-  <data name="DodajProjektClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>608, 528</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektClanoviListBox.Name" xml:space="preserve">
-    <value>DodajProjektClanoviListBox</value>
-  </data>
-  <data name="DodajProjektOpisRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 121</value>
-  </data>
-  <data name="UrediProjektProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektClanoviLabel.Name" xml:space="preserve">
-    <value>DodajProjektClanoviLabel</value>
-  </data>
-  <data name="&gt;&gt;UrediProjektProfilLinkLabel.Parent" xml:space="preserve">
-    <value>DeaktivacijaProfilPanel</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektNazivLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajProjektClanoviLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt, style=Bold</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 20</value>
-  </data>
-  <data name="PanelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="DodajProjektClanoviLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1085, 823</value>
-  </data>
-  <data name="UrediZadatakNaslovLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="UrediZadatakSubmitButton.Text" xml:space="preserve">
-    <value>Uredi projekt</value>
-  </data>
-  <data name="DodajProjektNazivTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 26</value>
-  </data>
-  <data name="&gt;&gt;DeaktivacijaProfilPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajProjektClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 43</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektOpisLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="DodajProjektOpisRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>612, 407</value>
-  </data>
-  <data name="UrediZadatakSubmitButton.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DodajProjektOpisLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt, style=Bold</value>
-  </data>
-  <data name="UrediZadatakNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 150</value>
-  </data>
-  <data name="UrediZadatakNaslovLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektOvlastiLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;UrediZadatakSubmitButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DodajProjektButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
-  </data>
-  <data name="UrediZadatakNaslovLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="DeaktivacijaNatragButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektClanoviListBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="UrediProjektProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 65</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektNazivTextBox.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;UrediProjektProfilLinkLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 40</value>
   </data>
   <data name="UrediZadatakNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Leelawadee UI, 35pt, style=Bold</value>
   </data>
-  <data name="DodajProjektOvlastiLabel.Text" xml:space="preserve">
-    <value>Dodijeli administratorske ovlasti</value>
+  <data name="&gt;&gt;UrediProjektButton.Name" xml:space="preserve">
+    <value>UrediProjektButton</value>
   </data>
-  <data name="&gt;&gt;UrediProjektProfilLinkLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>810, 1043</value>
   </data>
-  <data name="&gt;&gt;DodajProjektOvlastiLabel.Name" xml:space="preserve">
-    <value>DodajProjektOvlastiLabel</value>
+  <data name="UrediProjektClanoviListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>952, 116</value>
   </data>
-  <data name="DeaktivacijaNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
+  <data name="UrediProjektDeleteAdminButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 40</value>
   </data>
-  <data name="&gt;&gt;UrediZadatakSubmitButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektOpisRichTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DodajProjektOpisLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="DodajProjektNazivLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektClanoviLabel.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="DodajProjektClanoviLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="DodajProjektOvlastiListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
-  </data>
-  <data name="DeaktivacijaProfilPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1920, 90</value>
-  </data>
-  <data name="DodajProjektOvlastiListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 96</value>
-  </data>
-  <data name="DodajProjektClanoviListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>612, 570</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;DeaktivacijaProfilPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektNazivLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="DodajProjektClanoviLabel.Text" xml:space="preserve">
-    <value>Dodijeli članove</value>
-  </data>
-  <data name="&gt;&gt;UrediZadatakNaslovLabel.Name" xml:space="preserve">
-    <value>UrediZadatakNaslovLabel</value>
-  </data>
-  <data name="&gt;&gt;PanelLogo.Name" xml:space="preserve">
-    <value>PanelLogo</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektOpisRichTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;DeaktivacijaProfilPanel.Name" xml:space="preserve">
-    <value>DeaktivacijaProfilPanel</value>
-  </data>
-  <data name="UrediZadatakSubmitButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="DodajProjektOpisLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektNazivLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;DodajProjektOpisLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="UrediZadatakNaslovLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>604, 54</value>
   </data>
-  <data name="DodajProjektOvlastiLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>54</value>
+  <data name="UrediProjektButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 75</value>
   </data>
-  <data name="DodajProjektButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>857, 914</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektNazivLabel.Name" xml:space="preserve">
-    <value>DodajProjektNazivLabel</value>
-  </data>
-  <data name="UrediProjektProfilLinkLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="DodajProjektNazivLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 43</value>
-  </data>
-  <data name="DodajProjektNazivLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>608, 290</value>
-  </data>
-  <data name="UrediProjektProfilLinkLabel.Text" xml:space="preserve">
-    <value>Sara Bednaić</value>
-  </data>
-  <data name="&gt;&gt;UrediZadatakNaslovLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="DodajProjektNazivTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektClanoviLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;PanelLogo.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="UrediProjektProfilLinkLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;UrediProjektDeleteClanButton.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="DodajProjektOpisRichTextBox.Text" xml:space="preserve">
-    <value />
+  <data name="UrediProjektOvlastiListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="&gt;&gt;DeaktivacijaProfilPanel.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="DeaktivacijaProfilPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="DodajProjektOvlastiLabel.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="UrediProjektOpisRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>952, 150</value>
+  </data>
+  <data name="UrediProjektProfilLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDodajAdminButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="UrediProjektProfilLinkLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektOpisRichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PanelLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektProfilPictureBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="UrediProjektButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1149, 1170</value>
+  </data>
+  <data name="DodajProjektOpisLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="UrediProjektNazivLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;DodajProjektOvlastiListBox.Parent" xml:space="preserve">
+  <data name="UrediProjektNazivTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>816, 344</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektNazivTextBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="UrediProjektProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1650, 31</value>
+  <data name="DodajProjektOvlastiLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>810, 836</value>
   </data>
-  <data name="DodajProjektClanoviListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
+  <data name="DodajProjektClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>810, 609</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDodajClanaButton.Name" xml:space="preserve">
+    <value>UrediProjektDodajClanaButton</value>
+  </data>
+  <data name="UrediProjektButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="UrediProjektProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 37</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="UrediProjektOvlastiListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>952, 88</value>
+  </data>
+  <data name="UrediProjektProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="UrediProjektProfilPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1691,41 +1459,513 @@
         iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 </value>
   </data>
-  <data name="&gt;&gt;UrediProjektProfilPictureBox.Name" xml:space="preserve">
-    <value>UrediProjektProfilPictureBox</value>
+  <data name="&gt;&gt;DodajProjektClanoviLabel.Name" xml:space="preserve">
+    <value>DodajProjektClanoviLabel</value>
   </data>
-  <data name="DodajProjektNazivLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="UrediProjektOpisRichTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektProfilLinkLabel.Parent" xml:space="preserve">
+    <value>DeaktivacijaProfilPanel</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDeleteAdminButton.Name" xml:space="preserve">
+    <value>UrediProjektDeleteAdminButton</value>
+  </data>
+  <data name="DodajProjektClanoviLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>12, 25</value>
+  </data>
+  <data name="UrediProjektStatusComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>816, 1101</value>
+  </data>
+  <data name="PanelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="UrediProjektNatragButton.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1438, 1011</value>
+  </data>
+  <data name="UrediProjektNatragButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 80</value>
+  </data>
+  <data name="&gt;&gt;DodajProjektOvlastiLabel.Name" xml:space="preserve">
+    <value>DodajProjektOvlastiLabel</value>
+  </data>
+  <data name="UrediProjektDeleteClanButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 40</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektOvlastiListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DeaktivacijaProfilPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="DodajProjektClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 54</value>
+  </data>
+  <data name="&gt;&gt;DodajProjektOpisLabel.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="UrediProjektProfilPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDeleteClanButton.Name" xml:space="preserve">
+    <value>UrediProjektDeleteClanButton</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektNazivLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="DodajProjektOpisLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="UrediZadatakNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>929, 132</value>
+  </data>
+  <data name="UrediZadatakNaslovLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDeleteClanButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDeleteAdminButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DodajProjektOvlastiLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="UrediProjektDeleteAdminButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1305, 989</value>
+  </data>
+  <data name="UrediProjektNazivLabel.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
   </data>
-  <data name="&gt;&gt;DodajProjektOvlastiListBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="UrediProjektButton.Text" xml:space="preserve">
+    <value>Edit project</value>
+  </data>
+  <data name="UrediProjektNazivLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 54</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDodajClanaTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UrediProjektDodajClanaButton.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>2550, 1329</value>
+  </data>
+  <data name="UrediZadatakNaslovLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1077, 0</value>
+  </data>
+  <data name="UrediProjektDodajClanaTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>816, 790</value>
+  </data>
+  <data name="UrediProjektStatusComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
   </data>
   <data name="DodajProjektOvlastiLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
+  <data name="UrediProjektDodajClanaButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 40</value>
+  </data>
+  <data name="UrediProjektProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 81</value>
+  </data>
+  <data name="&gt;&gt;UrediZadatakNaslovLabel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="UrediProjektOpisRichTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektProfilLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UrediProjektNazivLabel.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DodajProjektOvlastiLabel.Text" xml:space="preserve">
+    <value>Admin rights</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektProfilLinkLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektOvlastiListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektNazivLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDeleteClanButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DodajProjektClanoviLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;DodajProjektClanoviLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDodajClanaTextBox.Name" xml:space="preserve">
+    <value>UrediProjektDodajClanaTextBox</value>
+  </data>
+  <data name="UrediProjektStatusComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 33</value>
+  </data>
+  <data name="DodajProjektOpisLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDodajAdminTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="UrediProjektClanoviListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>816, 667</value>
+  </data>
+  <data name="&gt;&gt;DodajProjektClanoviLabel.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="UrediProjektOvlastiListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>816, 894</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DodajProjektClanoviLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektNatragButton.Parent" xml:space="preserve">
+    <value>DeaktivacijaProfilPanel</value>
+  </data>
+  <data name="UrediProjektDeleteClanButton.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="UrediProjektButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="UrediProjektClanoviListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDodajClanaButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;DeaktivacijaProfilPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektNatragButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DodajProjektClanoviLabel.Text" xml:space="preserve">
+    <value>Assigned members</value>
+  </data>
+  <data name="UrediProjektNatragButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="UrediProjektDodajAdminTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="UrediProjektDodajClanaTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 31</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDodajClanaTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="UrediProjektDodajAdminButton.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;PanelLogo.Name" xml:space="preserve">
+    <value>PanelLogo</value>
+  </data>
+  <data name="UrediProjektDeleteAdminButton.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="UrediProjektDeleteClanButton.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektNazivTextBox.Name" xml:space="preserve">
+    <value>UrediProjektNazivTextBox</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDodajClanaButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DeaktivacijaProfilPanel.Name" xml:space="preserve">
+    <value>DeaktivacijaProfilPanel</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;DodajProjektOpisLabel.Name" xml:space="preserve">
+    <value>DodajProjektOpisLabel</value>
+  </data>
+  <data name="DodajProjektOpisLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektNatragButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektOvlastiListBox.Name" xml:space="preserve">
+    <value>UrediProjektOvlastiListBox</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDeleteAdminButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="UrediProjektStatusComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektClanoviListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="DodajProjektOvlastiLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="PanelLogo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="UrediProjektStatusComboBox.Items" xml:space="preserve">
+    <value>U tijeku</value>
+  </data>
+  <data name="UrediProjektProfilLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="UrediProjektDodajClanaTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="UrediProjektProfilLinkLabel.Text" xml:space="preserve">
+    <value>Sara Bednaić</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektOpisRichTextBox.Name" xml:space="preserve">
+    <value>UrediProjektOpisRichTextBox</value>
+  </data>
+  <data name="UrediProjektNazivTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="DodajProjektOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 54</value>
+  </data>
+  <data name="&gt;&gt;DodajProjektClanoviLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="UrediProjektProfilLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektNazivLabel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="UrediProjektNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;DeaktivacijaProfilPanel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="UrediProjektDodajAdminButton.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="UrediProjektNazivLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1305, 790</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="UrediProjektDodajAdminTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>816, 989</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektClanoviListBox.Name" xml:space="preserve">
+    <value>UrediProjektClanoviListBox</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektDodajAdminTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektProfilPictureBox.Name" xml:space="preserve">
+    <value>UrediProjektProfilPictureBox</value>
+  </data>
+  <data name="UrediProjektDeleteClanButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1305, 790</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektStatusComboBox.Name" xml:space="preserve">
+    <value>UrediProjektStatusComboBox</value>
+  </data>
+  <data name="DodajProjektOvlastiLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="UrediProjektNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="UrediProjektNazivLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>810, 276</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektStatusComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="UrediProjektProfilPictureBox.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="DodajProjektNazivLabel.Text" xml:space="preserve">
-    <value>Naziv projekta</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektOvlastiListBox.Name" xml:space="preserve">
-    <value>DodajProjektOvlastiListBox</value>
-  </data>
-  <data name="&gt;&gt;DodajProjektButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DeaktivacijaNatragButton.Name" xml:space="preserve">
-    <value>DeaktivacijaNatragButton</value>
+  <data name="&gt;&gt;UrediProjektDodajAdminTextBox.Name" xml:space="preserve">
+    <value>UrediProjektDodajAdminTextBox</value>
   </data>
   <data name="&gt;&gt;PanelLogo.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;UrediProjektOpisRichTextBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;UrediProjektStatusComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>en</value>
-  </metadata>
-  <metadata name="UrediZadatakNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
   </metadata>
   <metadata name="DodajProjektOpisLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -1733,19 +1973,22 @@
   <metadata name="DodajProjektClanoviLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="DodajProjektNazivLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="UrediZadatakNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="DodajProjektNazivTextBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="UrediProjektNazivLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="UrediProjektButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="DodajProjektOvlastiLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="DodajProjektButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
 </root>
