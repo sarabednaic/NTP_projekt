@@ -248,7 +248,7 @@ namespace ntp_projekt
                         int rowsAffected = command.ExecuteNonQuery();
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show($"Uspješna deaktivacija računa.");
+                            MessageBox.Show($"Uspješno obrisano.");
                         }
                         
                     }

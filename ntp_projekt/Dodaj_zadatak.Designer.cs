@@ -135,6 +135,7 @@
             this.DodajZadatakProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.DodajZadatakProfilPanel, "DodajZadatakProfilPanel");
             this.DodajZadatakProfilPanel.Name = "DodajZadatakProfilPanel";
+            this.DodajZadatakProfilPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.DodajZadatakProfilPanel_Paint);
             // 
             // DodajZadatakDateTimePicker1
             // 

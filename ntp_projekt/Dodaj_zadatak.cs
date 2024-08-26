@@ -152,5 +152,10 @@ namespace ntp_projekt
             PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
 
         }
+
+        private void DodajZadatakProfilPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
