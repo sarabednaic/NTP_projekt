@@ -166,7 +166,7 @@
     <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 395</value>
+    <value>597, 343</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>453, 43</value>
@@ -199,7 +199,7 @@
     <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 315</value>
+    <value>597, 263</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>453, 43</value>
@@ -225,39 +225,6 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <metadata name="label2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt, style=Bold</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 239</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>453, 43</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Assigned project</value>
-  </data>
-  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
   <metadata name="DodajZadatakVrijemeLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -265,7 +232,7 @@
     <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="DodajZadatakVrijemeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 739</value>
+    <value>597, 687</value>
   </data>
   <data name="DodajZadatakVrijemeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>453, 43</value>
@@ -289,7 +256,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakVrijemeLabel.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
   </data>
   <metadata name="DodajZadatakClanoviLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -298,7 +265,7 @@
     <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="DodajZadatakClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 577</value>
+    <value>597, 525</value>
   </data>
   <data name="DodajZadatakClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>287, 43</value>
@@ -322,7 +289,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakClanoviLabel.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <metadata name="DodajZadatakLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -331,7 +298,7 @@
     <value>Arial, 20pt, style=Bold</value>
   </data>
   <data name="DodajZadatakLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>809, 756</value>
+    <value>803, 704</value>
   </data>
   <data name="DodajZadatakLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 45</value>
@@ -355,7 +322,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakLabel.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>15</value>
   </data>
   <metadata name="label1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -364,7 +331,7 @@
     <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 822</value>
+    <value>597, 770</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>453, 43</value>
@@ -390,34 +357,34 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <metadata name="DodajProjektButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="UrediZadatakButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <data name="DodajProjektButton.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="UrediZadatakButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
-  <data name="DodajProjektButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>877, 905</value>
+  <data name="UrediZadatakButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>871, 853</value>
   </data>
-  <data name="DodajProjektButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="UrediZadatakButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 60</value>
   </data>
-  <data name="DodajProjektButton.TabIndex" type="System.Int32, mscorlib">
+  <data name="UrediZadatakButton.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
   </data>
-  <data name="DodajProjektButton.Text" xml:space="preserve">
+  <data name="UrediZadatakButton.Text" xml:space="preserve">
     <value>Edit project task</value>
   </data>
-  <data name="&gt;&gt;DodajProjektButton.Name" xml:space="preserve">
-    <value>DodajProjektButton</value>
+  <data name="&gt;&gt;UrediZadatakButton.Name" xml:space="preserve">
+    <value>UrediZadatakButton</value>
   </data>
-  <data name="&gt;&gt;DodajProjektButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;UrediZadatakButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DodajProjektButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;UrediZadatakButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;DodajProjektButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;UrediZadatakButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="PanelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -1695,7 +1662,7 @@
     <value>False</value>
   </data>
   <data name="UrediZadatakStatusButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>716, 858</value>
+    <value>710, 806</value>
   </data>
   <data name="UrediZadatakStatusButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1719,7 +1686,7 @@
     <value>4</value>
   </data>
   <data name="DodajZadatakOpisRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>607, 441</value>
+    <value>601, 389</value>
   </data>
   <data name="DodajZadatakOpisRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>715, 121</value>
@@ -1742,29 +1709,29 @@
   <data name="&gt;&gt;DodajZadatakOpisRichTextBox.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="DodajZadatakClanoviListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>607, 616</value>
+  <data name="UrediZadatakClanoviListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>601, 564</value>
   </data>
-  <data name="DodajZadatakClanoviListBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="UrediZadatakClanoviListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>715, 96</value>
   </data>
-  <data name="DodajZadatakClanoviListBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="UrediZadatakClanoviListBox.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakClanoviListBox.Name" xml:space="preserve">
-    <value>DodajZadatakClanoviListBox</value>
+  <data name="&gt;&gt;UrediZadatakClanoviListBox.Name" xml:space="preserve">
+    <value>UrediZadatakClanoviListBox</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakClanoviListBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;UrediZadatakClanoviListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakClanoviListBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;UrediZadatakClanoviListBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;DodajZadatakClanoviListBox.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;UrediZadatakClanoviListBox.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="DodajZadatakDateTimePicker2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>870, 785</value>
+    <value>864, 733</value>
   </data>
   <data name="DodajZadatakDateTimePicker2.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 26</value>
@@ -1785,7 +1752,7 @@
     <value>3</value>
   </data>
   <data name="DodajZadatakDateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>607, 785</value>
+    <value>601, 733</value>
   </data>
   <data name="DodajZadatakDateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 26</value>
@@ -1803,31 +1770,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakDateTimePicker1.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="DodajZadatakProjektComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>607, 282</value>
-  </data>
-  <data name="DodajZadatakProjektComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 28</value>
-  </data>
-  <data name="DodajZadatakProjektComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>54</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektComboBox.Name" xml:space="preserve">
-    <value>DodajZadatakProjektComboBox</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektComboBox.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>13</value>
   </data>
   <data name="UrediZadatakStatusComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>607, 860</value>
+    <value>601, 808</value>
   </data>
   <data name="UrediZadatakStatusComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 28</value>
@@ -1848,7 +1794,7 @@
     <value>1</value>
   </data>
   <data name="DodajZadatakNazivTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>607, 362</value>
+    <value>601, 310</value>
   </data>
   <data name="DodajZadatakNazivTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>715, 26</value>

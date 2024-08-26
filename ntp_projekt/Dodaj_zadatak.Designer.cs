@@ -31,17 +31,14 @@
             System.Windows.Forms.Label DodajZadatakVrijemeLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DodajZadatak));
             System.Windows.Forms.Label DodajZadatakClanoviLabel;
-            System.Windows.Forms.TextBox DodajZadatakNazivTextBox;
             System.Windows.Forms.Label DodajZadatakNaslovLabel;
             System.Windows.Forms.Label DodajZadatakOdDoLabel;
             System.Windows.Forms.Button DodajZadatakButton;
             System.Windows.Forms.Label DodajZadatakStatusLabel;
-            System.Windows.Forms.Label DodajZadatakProjektLabel;
             System.Windows.Forms.Label DodajZadatakNazivLabel;
             System.Windows.Forms.Label DodajZadatakOpisLabel;
             this.DodajZadatakClanoviListBox = new System.Windows.Forms.CheckedListBox();
             this.DodajZadatakProfilPanel = new System.Windows.Forms.Panel();
-            this.DodajZadatakProjektComboBox = new System.Windows.Forms.ComboBox();
             this.DodajZadatakDateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.DodajZadatakDateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.DodajZadatakProfilPictureBox = new System.Windows.Forms.PictureBox();
@@ -51,14 +48,13 @@
             this.DodajZadatakStatusButton = new System.Windows.Forms.Button();
             this.DodajZadatakStatusComboBox = new System.Windows.Forms.ComboBox();
             this.PanelLogo = new System.Windows.Forms.Panel();
+            this.DodajZadatakNazivTextBox = new System.Windows.Forms.TextBox();
             DodajZadatakVrijemeLabel = new System.Windows.Forms.Label();
             DodajZadatakClanoviLabel = new System.Windows.Forms.Label();
-            DodajZadatakNazivTextBox = new System.Windows.Forms.TextBox();
             DodajZadatakNaslovLabel = new System.Windows.Forms.Label();
             DodajZadatakOdDoLabel = new System.Windows.Forms.Label();
             DodajZadatakButton = new System.Windows.Forms.Button();
             DodajZadatakStatusLabel = new System.Windows.Forms.Label();
-            DodajZadatakProjektLabel = new System.Windows.Forms.Label();
             DodajZadatakNazivLabel = new System.Windows.Forms.Label();
             DodajZadatakOpisLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DodajZadatakProfilPictureBox)).BeginInit();
@@ -79,13 +75,6 @@
             DodajZadatakClanoviLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakClanoviLabel.Name = "DodajZadatakClanoviLabel";
             DodajZadatakClanoviLabel.UseWaitCursor = true;
-            // 
-            // DodajZadatakNazivTextBox
-            // 
-            DodajZadatakNazivTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            DodajZadatakNazivTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            resources.ApplyResources(DodajZadatakNazivTextBox, "DodajZadatakNazivTextBox");
-            DodajZadatakNazivTextBox.Name = "DodajZadatakNazivTextBox";
             // 
             // DodajZadatakNaslovLabel
             // 
@@ -118,14 +107,6 @@
             DodajZadatakStatusLabel.Name = "DodajZadatakStatusLabel";
             DodajZadatakStatusLabel.UseWaitCursor = true;
             // 
-            // DodajZadatakProjektLabel
-            // 
-            DodajZadatakProjektLabel.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(DodajZadatakProjektLabel, "DodajZadatakProjektLabel");
-            DodajZadatakProjektLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            DodajZadatakProjektLabel.Name = "DodajZadatakProjektLabel";
-            DodajZadatakProjektLabel.UseWaitCursor = true;
-            // 
             // DodajZadatakNazivLabel
             // 
             DodajZadatakNazivLabel.BackColor = System.Drawing.Color.Transparent;
@@ -154,13 +135,6 @@
             this.DodajZadatakProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.DodajZadatakProfilPanel, "DodajZadatakProfilPanel");
             this.DodajZadatakProfilPanel.Name = "DodajZadatakProfilPanel";
-            // 
-            // DodajZadatakProjektComboBox
-            // 
-            this.DodajZadatakProjektComboBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.DodajZadatakProjektComboBox.FormattingEnabled = true;
-            resources.ApplyResources(this.DodajZadatakProjektComboBox, "DodajZadatakProjektComboBox");
-            this.DodajZadatakProjektComboBox.Name = "DodajZadatakProjektComboBox";
             // 
             // DodajZadatakDateTimePicker1
             // 
@@ -220,17 +194,22 @@
             this.PanelLogo.Name = "PanelLogo";
             this.PanelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.PopisProjektaPanelLogo_Paint);
             // 
+            // DodajZadatakNazivTextBox
+            // 
+            resources.ApplyResources(this.DodajZadatakNazivTextBox, "DodajZadatakNazivTextBox");
+            this.DodajZadatakNazivTextBox.Name = "DodajZadatakNazivTextBox";
+            // 
             // DodajZadatak
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.DodajZadatakNazivTextBox);
             this.Controls.Add(this.PanelLogo);
             this.Controls.Add(this.DodajZadatakStatusComboBox);
             this.Controls.Add(this.DodajZadatakStatusButton);
             this.Controls.Add(this.DodajZadatakOpisRichTextBox);
             this.Controls.Add(DodajZadatakOpisLabel);
             this.Controls.Add(DodajZadatakNazivLabel);
-            this.Controls.Add(DodajZadatakProjektLabel);
             this.Controls.Add(this.DodajZadatakClanoviListBox);
             this.Controls.Add(this.DodajZadatakProfilPictureBox);
             this.Controls.Add(this.DodajZadatakNatragButton);
@@ -238,10 +217,8 @@
             this.Controls.Add(DodajZadatakButton);
             this.Controls.Add(this.DodajZadatakDateTimePicker2);
             this.Controls.Add(this.DodajZadatakDateTimePicker1);
-            this.Controls.Add(this.DodajZadatakProjektComboBox);
             this.Controls.Add(DodajZadatakVrijemeLabel);
             this.Controls.Add(DodajZadatakClanoviLabel);
-            this.Controls.Add(DodajZadatakNazivTextBox);
             this.Controls.Add(DodajZadatakNaslovLabel);
             this.Controls.Add(this.DodajZadatakProfilPanel);
             this.Controls.Add(DodajZadatakOdDoLabel);
@@ -258,7 +235,6 @@
         #endregion
         private System.Windows.Forms.CheckedListBox DodajZadatakClanoviListBox;
         private System.Windows.Forms.Panel DodajZadatakProfilPanel;
-        private System.Windows.Forms.ComboBox DodajZadatakProjektComboBox;
         private System.Windows.Forms.DateTimePicker DodajZadatakDateTimePicker1;
         private System.Windows.Forms.DateTimePicker DodajZadatakDateTimePicker2;
         private System.Windows.Forms.PictureBox DodajZadatakProfilPictureBox;
@@ -268,5 +244,6 @@
         private System.Windows.Forms.Button DodajZadatakStatusButton;
         private System.Windows.Forms.ComboBox DodajZadatakStatusComboBox;
         private System.Windows.Forms.Panel PanelLogo;
+        private System.Windows.Forms.TextBox DodajZadatakNazivTextBox;
     }
 }

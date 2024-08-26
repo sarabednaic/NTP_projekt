@@ -125,7 +125,7 @@
     <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="DodajZadatakVrijemeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 733</value>
+    <value>604, 676</value>
   </data>
   <data name="DodajZadatakVrijemeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>453, 43</value>
@@ -150,7 +150,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakVrijemeLabel.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
   </data>
   <metadata name="DodajZadatakClanoviLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -159,7 +159,7 @@
     <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="DodajZadatakClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 576</value>
+    <value>604, 519</value>
   </data>
   <data name="DodajZadatakClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>287, 43</value>
@@ -183,31 +183,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakClanoviLabel.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <metadata name="DodajZadatakNazivTextBox.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="DodajZadatakNazivTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 353</value>
-  </data>
-  <data name="DodajZadatakNazivTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 26</value>
-  </data>
-  <data name="DodajZadatakNazivTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNazivTextBox.Name" xml:space="preserve">
-    <value>DodajZadatakNazivTextBox</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNazivTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNazivTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakNazivTextBox.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>15</value>
   </data>
   <metadata name="DodajZadatakNaslovLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -237,7 +213,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakNaslovLabel.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>16</value>
   </data>
   <metadata name="DodajZadatakOdDoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -246,7 +222,7 @@
     <value>Arial, 20pt, style=Bold</value>
   </data>
   <data name="DodajZadatakOdDoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>833, 750</value>
+    <value>810, 693</value>
   </data>
   <data name="DodajZadatakOdDoLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 45</value>
@@ -270,7 +246,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakOdDoLabel.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>18</value>
   </data>
   <metadata name="DodajZadatakButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -279,7 +255,7 @@
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="DodajZadatakButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>874, 917</value>
+    <value>851, 860</value>
   </data>
   <data name="DodajZadatakButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 81</value>
@@ -309,7 +285,7 @@
     <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="DodajZadatakStatusLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 816</value>
+    <value>604, 759</value>
   </data>
   <data name="DodajZadatakStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>453, 43</value>
@@ -333,40 +309,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakStatusLabel.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <metadata name="DodajZadatakProjektLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="DodajZadatakProjektLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 10pt, style=Bold</value>
-  </data>
-  <data name="DodajZadatakProjektLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 233</value>
-  </data>
-  <data name="DodajZadatakProjektLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>453, 43</value>
-  </data>
-  <data name="DodajZadatakProjektLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="DodajZadatakProjektLabel.Text" xml:space="preserve">
-    <value>Dodijeli zadatak projektu</value>
-  </data>
-  <data name="DodajZadatakProjektLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektLabel.Name" xml:space="preserve">
-    <value>DodajZadatakProjektLabel</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>19</value>
   </data>
   <metadata name="DodajZadatakNazivLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -375,7 +318,7 @@
     <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="DodajZadatakNazivLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 309</value>
+    <value>604, 252</value>
   </data>
   <data name="DodajZadatakNazivLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>453, 43</value>
@@ -399,7 +342,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakNazivLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <metadata name="DodajZadatakOpisLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -408,7 +351,7 @@
     <value>Arial, 10pt, style=Bold</value>
   </data>
   <data name="DodajZadatakOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 389</value>
+    <value>604, 332</value>
   </data>
   <data name="DodajZadatakOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>453, 43</value>
@@ -432,10 +375,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakOpisLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="DodajZadatakClanoviListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 610</value>
+    <value>608, 553</value>
   </data>
   <data name="DodajZadatakClanoviListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>715, 96</value>
@@ -474,31 +417,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakProfilPanel.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="DodajZadatakProjektComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 276</value>
-  </data>
-  <data name="DodajZadatakProjektComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>715, 28</value>
-  </data>
-  <data name="DodajZadatakProjektComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektComboBox.Name" xml:space="preserve">
-    <value>DodajZadatakProjektComboBox</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DodajZadatakProjektComboBox.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>17</value>
   </data>
   <data name="DodajZadatakDateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 779</value>
+    <value>608, 722</value>
   </data>
   <data name="DodajZadatakDateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 26</value>
@@ -519,7 +441,7 @@
     <value>13</value>
   </data>
   <data name="DodajZadatakDateTimePicker2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>894, 779</value>
+    <value>871, 722</value>
   </data>
   <data name="DodajZadatakDateTimePicker2.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 26</value>
@@ -1764,7 +1686,7 @@
     <value>10</value>
   </data>
   <data name="DodajZadatakOpisRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 435</value>
+    <value>608, 378</value>
   </data>
   <data name="DodajZadatakOpisRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>715, 121</value>
@@ -1785,7 +1707,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakOpisRichTextBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="DodajZadatakStatusButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -1794,7 +1716,7 @@
     <value>False</value>
   </data>
   <data name="DodajZadatakStatusButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>740, 854</value>
+    <value>480, 795</value>
   </data>
   <data name="DodajZadatakStatusButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1815,10 +1737,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakStatusButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="DodajZadatakStatusComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>631, 854</value>
+    <value>608, 797</value>
   </data>
   <data name="DodajZadatakStatusComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 28</value>
@@ -1836,7 +1758,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DodajZadatakStatusComboBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="PanelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1860,6 +1782,27 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PanelLogo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DodajZadatakNazivTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>608, 299</value>
+  </data>
+  <data name="DodajZadatakNazivTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>715, 26</value>
+  </data>
+  <data name="DodajZadatakNazivTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakNazivTextBox.Name" xml:space="preserve">
+    <value>DodajZadatakNazivTextBox</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakNazivTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakNazivTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DodajZadatakNazivTextBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
