@@ -37,11 +37,13 @@ namespace ntp_projekt
 
         private void PZControlDeleteButton_Click(object sender, EventArgs e)
         {
+            SessionZadatak.ZadatakaInfo(Naslov, Opis);
             StartApk.MainFormManager.TrenutnaForma = new BrisanjeZadatka();
         }
 
         private void PZControlEditButton_Click(object sender, EventArgs e)
         {
+            SessionZadatak.ZadatakaInfo(Naslov, Opis);
             StartApk.MainFormManager.TrenutnaForma = new UrediZadatak();
         }
 

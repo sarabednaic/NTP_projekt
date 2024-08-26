@@ -21,13 +21,13 @@ namespace ntp_projekt
 
         public static void ZadatakaInfo(string naslov, string opis)
         {
-            List<string> info = baza.ListaBazaRead("SELECT zadatak.ID, zadatak.opis, zadatak.naziv, zadatak.vrijeme_pocetak, zadatak.vrijeme_kraj FROM zadatak WHERE zadatak.naziv = '" + naslov + "' AND zadatak.opis = '" + opis + "' ;");
+            List<string> info = baza.ListaBazaRead("SELECT zadatak.ID, zadatak.naziv, zadatak.opis, zadatak.vrijeme_pocetak, zadatak.vrijeme_kraj FROM zadatak WHERE zadatak.naziv = '" + naslov + "' AND zadatak.opis = '" + opis + "' ;");
 
             if (info != null && info.Count == 5)
             {
                 Id = info[0];
-                Opis = info[1];
-                Naslov = info[2];
+                Naslov = info[1];
+                Opis = info[2];
                 Pocetak = info[3];
                 Kraj = info[4];
             }
@@ -37,6 +37,27 @@ namespace ntp_projekt
                 MessageBox.Show("Nema podataka za zadani zadatak.");
             }
         }
-    }
 
+        public static void ZadatakaInfoById(string zadatakId)
+        {
+            List<string> info = baza.ListaBazaRead("SELECT zadatak.ID, zadatak.naziv, zadatak.opis, zadatak.vrijeme_pocetak, zadatak.vrijeme_kraj FROM zadatak WHERE zadatak.ID = " + zadatakId + ";");
+
+            if (info != null && info.Count == 5)
+            {
+                Id = info[0];
+                Naslov = info[1];
+                Opis = info[2];
+                Pocetak = info[3];
+                Kraj = info[4];
+            }
+            else
+            {
+                Id = Naslov = Opis = Pocetak = Kraj = string.Empty;
+                MessageBox.Show("Nema podataka za zadani zadatak.");
+            }
+        }
+
+    }
 }
+
+
