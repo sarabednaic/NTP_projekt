@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Newtonsoft.Json.Linq;
+using System.Net.Http;
 
 namespace ntp_projekt
 {
@@ -147,9 +148,37 @@ namespace ntp_projekt
 
         }
 
-        private void DodajZadatak_Load(object sender, EventArgs e)
+        private async void DodajZadatak_Load(object sender, EventArgs e)
         {
             PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
+
+            using (HttpClient client = new HttpClient())
+            {
+                string url = "http://worldtimeapi.org/api/timezone/Europe/Zagreb";
+
+                HttpResponseMessage response = await client.GetAsync(url);
+
+                // Provjera je li zahtjev uspješan
+                if (response.IsSuccessStatusCode)
+                {
+                    // Čitanje odgovora kao string
+                    string jsonResponse = await response.Content.ReadAsStringAsync();
+
+                    // Parsiranje JSON odgovora
+                    JObject json = JObject.Parse(jsonResponse);
+
+                    // Dohvaćanje trenutnog vremena iz JSON odgovora
+                    string currentTime = json["datetime"].ToString();
+
+                    // Prikaz trenutnog vremena u labeli
+                    DodajZadatakTrenutnoVrijemeLabel.Text = currentTime;
+                }
+                else
+                {
+                    // Ako dođe do greške u API pozivu
+                    DodajZadatakTrenutnoVrijemeLabel.Text = "Pogreška pri dohvaćanju podataka o vremenu.";
+                }
+            }
 
         }
 

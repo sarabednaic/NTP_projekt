@@ -49,6 +49,7 @@
             this.DodajZadatakStatusComboBox = new System.Windows.Forms.ComboBox();
             this.PanelLogo = new System.Windows.Forms.Panel();
             this.DodajZadatakNazivTextBox = new System.Windows.Forms.TextBox();
+            this.DodajZadatakTrenutnoVrijemeLabel = new System.Windows.Forms.Label();
             DodajZadatakVrijemeLabel = new System.Windows.Forms.Label();
             DodajZadatakClanoviLabel = new System.Windows.Forms.Label();
             DodajZadatakNaslovLabel = new System.Windows.Forms.Label();
@@ -200,10 +201,16 @@
             resources.ApplyResources(this.DodajZadatakNazivTextBox, "DodajZadatakNazivTextBox");
             this.DodajZadatakNazivTextBox.Name = "DodajZadatakNazivTextBox";
             // 
+            // DodajZadatakTrenutnoVrijemeLabel
+            // 
+            resources.ApplyResources(this.DodajZadatakTrenutnoVrijemeLabel, "DodajZadatakTrenutnoVrijemeLabel");
+            this.DodajZadatakTrenutnoVrijemeLabel.Name = "DodajZadatakTrenutnoVrijemeLabel";
+            // 
             // DodajZadatak
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.DodajZadatakTrenutnoVrijemeLabel);
             this.Controls.Add(this.DodajZadatakNazivTextBox);
             this.Controls.Add(this.PanelLogo);
             this.Controls.Add(this.DodajZadatakStatusComboBox);
@@ -246,5 +253,6 @@
         private System.Windows.Forms.ComboBox DodajZadatakStatusComboBox;
         private System.Windows.Forms.Panel PanelLogo;
         private System.Windows.Forms.TextBox DodajZadatakNazivTextBox;
+        private System.Windows.Forms.Label DodajZadatakTrenutnoVrijemeLabel;
     }
 }
