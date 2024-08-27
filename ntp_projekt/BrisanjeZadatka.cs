@@ -52,37 +52,49 @@ namespace ntp_projekt
 
         private void BrisanjeZadatkaIzbrisiZadatakButton_Click(object sender, EventArgs e)
         {
-            // Check if both password fields match
+            // Provjera podudaranja lozinki
             if (BrisanjeZadatkaLozTextBox.Text == BrisanjeZadatkaPonovnoLozTextBox.Text)
             {
                 List<string> brisanje = baza.ListaBazaRead("SELECT korisnik.lozinka, korisnik.sol FROM korisnik WHERE (korisnik.ime & ' ' & korisnik.prezime) = '" + Session.DohvatiPunoIme() + "';");
 
                 if (Sha256.Sazimanje(BrisanjeZadatkaLozTextBox.Text, brisanje[1]) == brisanje[0])
                 {
-                    baza.BazaDelete("DELETE FROM clanovi_zadatka WHERE zadatak_ID = " + SessionZadatak.Id + ";");
-                    baza.BazaDelete("DELETE FROM zadatak WHERE zadatak.ID = " + SessionZadatak.Id + ";");
+                    // Otvori dijalog i provjeri koji gumb je korisnik pritisnuo
+                    dll_form_zadatak dll_Form_Zadatak = new dll_form_zadatak();
+                    DialogResult result = dll_Form_Zadatak.ShowDialog();
 
-                    dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
-
-                    JToken zadatakZaBrisanje = null;
-                    foreach (var obj in jsonFile)
+                    if (result == DialogResult.Yes)
                     {
-                        if ((string)obj["Zadatak_ID"] == SessionZadatak.Id.ToString())
+                        // Izvrši brisanje zadatka
+                        baza.BazaDelete("DELETE FROM clanovi_zadatka WHERE zadatak_ID = " + SessionZadatak.Id + ";");
+                        baza.BazaDelete("DELETE FROM zadatak WHERE zadatak.ID = " + SessionZadatak.Id + ";");
+
+                        dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
+                        JToken zadatakZaBrisanje = null;
+
+                        foreach (var obj in jsonFile)
                         {
-                            zadatakZaBrisanje = obj;
-                            break;
+                            if ((string)obj["Zadatak_ID"] == SessionZadatak.Id.ToString())
+                            {
+                                zadatakZaBrisanje = obj;
+                                break;
+                            }
                         }
-                    }
 
-                    if (zadatakZaBrisanje != null)
+                        if (zadatakZaBrisanje != null)
+                        {
+                            jsonFile.Remove(zadatakZaBrisanje);
+                        }
+
+                        File.WriteAllText(@"..\..\statusZadatka.json", JsonConvert.SerializeObject(jsonFile, Formatting.Indented));
+
+                        StartApk.MainFormManager.TrenutnaForma = new PopisZadataka();
+                    }
+                    else if (result == DialogResult.No)
                     {
-                        jsonFile.Remove(zadatakZaBrisanje);
+                        // Ako je korisnik pritisnuo Ne, jednostavno zatvori dijalog
+                        dll_Form_Zadatak.Close();
                     }
-
-                    File.WriteAllText(@"..\..\statusZadatka.json", JsonConvert.SerializeObject(jsonFile, Formatting.Indented));
-
-                    StartApk.MainFormManager.TrenutnaForma = new PopisZadataka();
-
                 }
                 else
                 {
@@ -94,6 +106,7 @@ namespace ntp_projekt
                 MessageBox.Show("Lozinke se ne podudaraju.");
             }
         }
+
 
 
         private void DeaktivacijaProfilPictureBox_Click(object sender, EventArgs e)

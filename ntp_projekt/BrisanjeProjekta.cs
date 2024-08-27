@@ -66,32 +66,39 @@ namespace ntp_projekt
                 {
                     if (BrisanjeProjektaLozinkaTextBox.Text == BrisanjeProjektaPonovnoLozinkaTextBox.Text)
                     {
-                        Projekt projekt = SessionProjekt.dohvatiTrenutniProjekt();
-                        int projektID = Int32.Parse(projekt.Id);
-
-                        string[] queries = new string[]
+                        dll_form_projekt dll_Form_Projekt = new dll_form_projekt();
+                        DialogResult dijalogProjekt = dll_Form_Projekt.ShowDialog();
+                        if (dijalogProjekt == DialogResult.Yes)
                         {
+                            Projekt projekt = SessionProjekt.dohvatiTrenutniProjekt();
+                            int projektID = Int32.Parse(projekt.Id);
+
+                            string[] queries = new string[]
+                            {
                         "DELETE FROM clanovi_zadatka WHERE clanovi_zadatka.clan_projekta_ID IN (SELECT clanovi_projekta.ID  FROM clanovi_projekta WHERE clanovi_projekta.projekt_ID = ?);"
                         ,"DELETE FROM clanovi_projekta WHERE projekt_ID = ?;",
                         "DELETE FROM projekt WHERE ID = ?;"
-                        };
+                            };
 
-                        bool success = true;
-                        foreach (string query in queries)
-                        {
-                            int result = baza.BazaDelete(query, new OleDbParameter("@projekt_ID", projektID));
-                            if (result == -1)
+                            bool success = true;
+                            foreach (string query in queries)
                             {
-                                success = false;
-                                break;
+                                int result = baza.BazaDelete(query, new OleDbParameter("@projekt_ID", projektID));
+                                if (result == -1)
+                                {
+                                    success = false;
+                                    break;
+                                }
                             }
-                        }
 
-                        if (success)
-                        {
-                            SessionProjekt.CleanSession();
-                            StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
-                            MessageBox.Show("Projekt je uspješno izbrisan.");
+                            if (success)
+                            {
+                                SessionProjekt.CleanSession();
+                                StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
+                            }
+                            else if(dijalogProjekt == DialogResult.No){
+                                dll_Form_Projekt.Close();
+                            }
                         }
                         else
                         {
