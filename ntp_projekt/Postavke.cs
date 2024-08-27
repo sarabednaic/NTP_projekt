@@ -50,15 +50,32 @@ namespace ntp_projekt
 
         private void PostavkeOdjavaButton_Click(object sender, EventArgs e)
         {
-            string filePath = @"..\..\prilagodena.dat";
-            using (BinaryWriter writer = new BinaryWriter(File.Open(filePath, FileMode.Append)))
+            string binarnaDatoteka = @"..\..\prilagodena.dat";
+            string format = "OdjavaFormat";
+            string verzija = "1.0";
+
+            // Pisanje u binarnu datoteku
+            using (BinaryWriter writer = new BinaryWriter(File.Open(binarnaDatoteka, FileMode.Append)))
             {
+                // Ako je datoteka prazna (ili nova), upisujemo zaglavlje
+                if (new FileInfo(binarnaDatoteka).Length == 0)
+                {
+                    writer.Write(format);
+                    writer.Write(verzija);
+                }
+
                 DateTime vrijemeOdjave = DateTime.Now;
                 writer.Write(Session.DohvatiPunoIme());
-                writer.Write(DateTime.UtcNow.ToString("HH:mm"));
+                writer.Write(vrijemeOdjave.ToString("HH:mm"));
             }
-            using (BinaryReader reader = new BinaryReader(File.Open(filePath, FileMode.Open)))
+
+            // Čitanje iz binarne datoteke
+            using (BinaryReader reader = new BinaryReader(File.Open(binarnaDatoteka, FileMode.Open)))
             {
+                // Čitanje zaglavlja
+                string readFormatName = reader.ReadString();
+                string readFormatVersion = reader.ReadString();
+
                 while (reader.BaseStream.Position != reader.BaseStream.Length)
                 {
                     string punoime = reader.ReadString();
@@ -67,10 +84,13 @@ namespace ntp_projekt
                     string poruka = $"{punoime} odjavljen u {vrijemeOdjave}";
                     MessageBox.Show(poruka, "Odjava", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                Session.CleanSession();
-                StartApk.MainFormManager.TrenutnaForma = new Prijava();
             }
+
+            // Očistimo sesiju i vratimo se na početnu formu za prijavu
+            Session.CleanSession();
+            StartApk.MainFormManager.TrenutnaForma = new Prijava();
         }
+
 
         private void PostavkeDeaktivacijaLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
