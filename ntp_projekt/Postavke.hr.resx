@@ -1158,4 +1158,7 @@
   <data name="PostavkePonovnoLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>86, 365</value>
   </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1443, 999</value>
+  </data>
 </root>

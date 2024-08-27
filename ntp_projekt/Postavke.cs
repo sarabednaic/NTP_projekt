@@ -49,9 +49,27 @@ namespace ntp_projekt
         }
 
         private void PostavkeOdjavaButton_Click(object sender, EventArgs e)
-        {   
-            Session.CleanSession();
-            StartApk.MainFormManager.TrenutnaForma = new Prijava();
+        {
+            string filePath = @"..\..\prilagodena.dat";
+            using (BinaryWriter writer = new BinaryWriter(File.Open(filePath, FileMode.Append)))
+            {
+                DateTime vrijemeOdjave = DateTime.Now;
+                writer.Write(Session.DohvatiPunoIme());
+                writer.Write(DateTime.UtcNow.ToString("HH:mm"));
+            }
+            using (BinaryReader reader = new BinaryReader(File.Open(filePath, FileMode.Open)))
+            {
+                while (reader.BaseStream.Position != reader.BaseStream.Length)
+                {
+                    string punoime = reader.ReadString();
+                    string vrijemeOdjave = reader.ReadString();
+
+                    string poruka = $"{punoime} odjavljen u {vrijemeOdjave}";
+                    MessageBox.Show(poruka, "Odjava", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                Session.CleanSession();
+                StartApk.MainFormManager.TrenutnaForma = new Prijava();
+            }
         }
 
         private void PostavkeDeaktivacijaLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
