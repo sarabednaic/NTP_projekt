@@ -24,12 +24,14 @@ namespace dinamicLib
 
         private void buttonDaProjekt_Click(object sender, EventArgs e)
         {
+            // postavi rezultat trenutne instance(this) na Yes i zatvori dijalog
             this.DialogResult = DialogResult.Yes;
             this.Close();
         }
 
         private void buttonNeProjekt_Click(object sender, EventArgs e)
         {
+            // postavi rezultat trenutne instance(this) na No i zatvori dijalog
             this.DialogResult = DialogResult.No;
             this.Close();
         }

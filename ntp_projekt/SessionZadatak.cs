@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace ntp_projekt
 {
-    internal static class SessionZadatak
+    public static class SessionZadatak
     {
         static Baza baza = new Baza(@"..\..\TeamPlan.mdb");
 
@@ -34,7 +34,7 @@ namespace ntp_projekt
             else
             {
                 Id = Naslov = Opis = Pocetak = Kraj = string.Empty;
-                MessageBox.Show("Nema podataka za zadani zadatak.");
+                MessageBox.Show("Nema podataka o ovom zadatku zadatku.");
             }
         }
 
@@ -53,7 +53,7 @@ namespace ntp_projekt
             else
             {
                 Id = Naslov = Opis = Pocetak = Kraj = string.Empty;
-                MessageBox.Show("Nema podataka za zadani zadatak.");
+                MessageBox.Show("Nema podataka o ovom zadatku.");
             }
         }
 

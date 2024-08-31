@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+//API za pristup podacima u bazi
 using System.Data.OleDb;
 using System.Drawing;
 using System.IO;
@@ -14,33 +15,41 @@ namespace ntp_projekt
     public class Baza
     {
         public string connectionString;
-        public Image DefaultProfilPicture = Image.FromFile(@"..\..\Images\profilna.jpg");
 
-        public Baza(string pathToDatabase)
+        public Image DefaultProfilna = Image.FromFile(@"..\..\Images\profilna.jpg");
+
+        public Baza(string path)
         {
-           connectionString = $@"Provider=Microsoft.ACE.OLEDB.16.0;Data Source={pathToDatabase};";
+           connectionString = $@"Provider=Microsoft.ACE.OLEDB.16.0;Data Source={path};";
         }
 
-        public string BazaRead(string query)
+        //čitanje jednog podatka iz baze
+        public string BazaRead(string upit)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    using (OleDbCommand command = new OleDbCommand(upit, connection))
                     {
                         using (OleDbDataReader reader = command.ExecuteReader())
                         {
                             if (reader.Read())
                             {
                                 string izlaz = reader[0].ToString();
-                                connection?.Close();
-                                return  izlaz;
+                                if (connection != null)
+                                {
+                                    connection.Close();
+                                }
+                                return izlaz;
                             }
                             else
                             {
-                                connection?.Close();
+                                if (connection != null)
+                                {
+                                    connection.Close();
+                                }
                                 return "Nema rezultata.";
                             }
                         }
@@ -48,26 +57,32 @@ namespace ntp_projekt
                 }
                 catch (Exception ex)
                 {
-                    connection?.Close();
+                    if (connection != null)
+                    {
+                        connection.Close();
+                    }
                     MessageBox.Show("Greška pri čitanju iz baze: " + ex.Message);
                     return null;
                 }
             }
         }
 
-        public List<List<string>> NaprednaBazaRead(string query)
+        //čitanje podataka (lista sa elementima koji su liste)
+        public List<List<string>> NaprednaBazaRead(string upit)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    using (OleDbCommand command = new OleDbCommand(upit, connection))
                     using (OleDbDataReader reader = command.ExecuteReader())
                     {
                         if (!reader.HasRows)
+                        {
                             return null;
-
+                        }
+                            
                         List<List<string>> results = new List<List<string>>();
                         while (reader.Read())
                         {
@@ -78,25 +93,27 @@ namespace ntp_projekt
                             }
                             results.Add(row);
                         }
+
                         return results;
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Greška pri naprednom čitanju iz baze: " + ex.Message);
+                    MessageBox.Show("Greška pri čitanju iz baze: " + ex.Message);
                     return null;
                 }
             }
         }
 
-        public List<string> ListaBazaRead(string query)
+        //čitanje podataka (lista)
+        public List<string> ListaBazaRead(string upit)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    using (OleDbCommand command = new OleDbCommand(upit, connection))
                     using (OleDbDataReader reader = command.ExecuteReader())
                     {
                         List<string> results = new List<string>();
@@ -113,12 +130,13 @@ namespace ntp_projekt
                 catch (Exception ex)
                 {
                     MessageBox.Show("Greška pri čitanju iz baze: " + ex.Message);
-                    return new List<string>(); // Vratiti praznu listu u slučaju greške
+                    return new List<string>(); 
                 }
             }
         }
 
-        public List<string> ListaBazaReadWithParams(string query, params OleDbParameter[] parameters)
+        //traži u bazi prema parametru("naziv_stupca", vrijednost)
+        public List<string> ListaBazaReadParametar(string upit, params OleDbParameter[] parameters)
         {
             List<string> results = new List<string>();
             using (OleDbConnection connection = new OleDbConnection(connectionString))
@@ -126,7 +144,7 @@ namespace ntp_projekt
                 try
                 {
                     connection.Open();
-                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    using (OleDbCommand command = new OleDbCommand(upit, connection))
                     {
                         command.Parameters.AddRange(parameters);
                         using (OleDbDataReader reader = command.ExecuteReader())
@@ -143,20 +161,21 @@ namespace ntp_projekt
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error reading from database: " + ex.Message);
+                    MessageBox.Show("Greška pri čitanju iz baze: " + ex.Message);
                 }
             }
             return results;
         }
 
-        public int BazaWrite(string query)
+        //upis u bazu
+        public int BazaWrite(string upit)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    using (OleDbCommand command = new OleDbCommand(upit, connection))
                     {
                         int rowsaffected = command.ExecuteNonQuery();
                         return rowsaffected;
@@ -164,7 +183,10 @@ namespace ntp_projekt
                 }
                 catch (Exception ex)
                 {
-                    connection?.Close();
+                    if (connection != null)
+                    {
+                        connection.Close();
+                    }
                     MessageBox.Show("Greška pri upisu u bazu: " + ex.Message);
                     return -1; 
                 }
@@ -172,19 +194,20 @@ namespace ntp_projekt
 
         }
 
-        public int BazaWriteWithParams(string query, params OleDbParameter[] parameters)
+        //upisuje u bazu prema parametru(upit, "naziv_stupca", vrijednost) tj. pod koji stupac što
+        public int BazaWriteParametar(string upit, params OleDbParameter[] parameters)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    using (OleDbCommand command = new OleDbCommand(upit, connection))
                     {
                         command.Parameters.AddRange(parameters);
                         command.ExecuteNonQuery();
 
-                        // Get the last inserted ID
+                        //posljednji ID
                         command.CommandText = "SELECT @@Identity";
                         return Convert.ToInt32(command.ExecuteScalar());
                     }
@@ -197,14 +220,15 @@ namespace ntp_projekt
             }
         }
 
-        public object BazaReadWithParams(string query, params OleDbParameter[] parameters)
+        //obično čitanje iz baze sa parametrom
+        public object BazaReadParametar(string upit, params OleDbParameter[] parameters)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    using (OleDbCommand command = new OleDbCommand(upit, connection))
                     {
                         command.Parameters.AddRange(parameters);
                         return command.ExecuteScalar();
@@ -218,14 +242,14 @@ namespace ntp_projekt
             }
         }
 
-
-        public void BazaSetImage(string query, string curFileName) {
+        //upis postavljene profilne u bazu
+        public void BazaSetImage(string upit, string fileName) {
             try
             {
-                byte[] imageData = File.ReadAllBytes(curFileName);
+                byte[] imageData = File.ReadAllBytes(fileName);
 
                 using (OleDbConnection connection = new OleDbConnection(connectionString))
-                using (OleDbCommand command = new OleDbCommand(query, connection))
+                using (OleDbCommand command = new OleDbCommand(upit, connection))
                 {
                     command.Parameters.Add("profilna", OleDbType.LongVarBinary).Value = imageData;
 
@@ -234,34 +258,33 @@ namespace ntp_projekt
 
                     if (rowsAffected > 0)
                     {
-                        MessageBox.Show("Image inserted successfully!");
+                        MessageBox.Show("Fotografija uspješno postavljena!");
                     }
                     else
                     {
-                        MessageBox.Show("Failed to insert image.");
+                        MessageBox.Show("Greška pri postavljanju fotografije.");
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex.Message}");
+                MessageBox.Show($"Greška: {ex.Message}");
             }
 
 
 
         }
 
-        public Image BazaGetImage(string query)
+        //vraćanje profilne iz baze
+        public Image BazaGetImage(string upit)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
                 try
                 {
-
                     connection.Open();
 
-                    OleDbCommand command = new OleDbCommand(query, connection);
-
+                    OleDbCommand command = new OleDbCommand(upit, connection);
 
 
                     OleDbDataAdapter dataAdapter = new OleDbDataAdapter(command);
@@ -274,7 +297,7 @@ namespace ntp_projekt
                         byte[] rawData = (byte[])dataSet.Tables["korisnik"].Rows[count - 1]["profilna"];
                         if (rawData == null || rawData.Length == 0)
                         { 
-                            return DefaultProfilPicture;
+                            return DefaultProfilna;
                         }
 
                         try
@@ -288,34 +311,38 @@ namespace ntp_projekt
                         catch (ArgumentException ex)
                         {
                             MessageBox.Show("Invalid image data: " + ex.Message);
-                            return DefaultProfilPicture;
+                            return DefaultProfilna;
                         }
 
                     }
                     else
                     {
-                        return DefaultProfilPicture;
+                        return DefaultProfilna;
                     }
 
 
                 }
                 catch (Exception ex)
                 {
-                    connection?.Close();
-                    MessageBox.Show("Greška pri dohvatu OLE objekta iz baze: " + ex.Message);
-                    return DefaultProfilPicture;
+                    if (connection != null)
+                    {
+                        connection.Close();
+                    }
+                    MessageBox.Show("Greška pri dohvatu prifilne fotografije iz baze: " + ex.Message);
+                    return DefaultProfilna;
                 }
             }
         }
 
-        public int BazaDelete(string query, params OleDbParameter[] parameters)
+        //brisanje iz baze prema upitu i parametrina
+        public int BazaDelete(string upit, params OleDbParameter[] parameters)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    using (OleDbCommand command = new OleDbCommand(upit, connection))
                     {
                         command.Parameters.AddRange(parameters);
                         int rowsAffected = command.ExecuteNonQuery();

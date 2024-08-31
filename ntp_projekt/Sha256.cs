@@ -9,23 +9,25 @@ namespace ntp_projekt
 {
     internal class Sha256
     {
-        // Generira nasumičnu sol
-        public static string NasumicnaSol(int n = 16)
+        //generiranje promjenjive soli
+        //n je velicina soli u bitovima
+        public static string PromjenjivaSol()
         {
-            var sol = new byte[n];
+            var sol = new byte[16];
             using (var rng = new RNGCryptoServiceProvider())
             {
+                //generira nasumične znakove za kako bi popunio bitove soli
                 rng.GetBytes(sol);
             }
             return Convert.ToBase64String(sol);
         }
 
-        // Sažima lozinku koristeći SHA-256 i dodaje sol
+        //dodaje sol lozinci te ih hashira
         public static string Sazimanje(string lozinka, string sol)
         {
             using (var sha256 = SHA256.Create())
             {
-                var lozinkaSol = lozinka + sol;
+                string lozinkaSol = lozinka + sol;
                 var hashiranje = sha256.ComputeHash(Encoding.UTF8.GetBytes(lozinkaSol));
                 return Convert.ToBase64String(hashiranje);
             }

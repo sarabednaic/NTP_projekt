@@ -177,7 +177,6 @@
     <Compile Include="UrediZadatak.Designer.cs">
       <DependentUpon>UrediZadatak.cs</DependentUpon>
     </Compile>
-    <Compile Include="Zadatak.cs" />
     <EmbeddedResource Include="BrisanjeProjekta.en.resx">
       <DependentUpon>BrisanjeProjekta.cs</DependentUpon>
     </EmbeddedResource>

@@ -52,7 +52,7 @@ namespace ntp_projekt
                         return;
                     }
 
-                    string sol = Sha256.NasumicnaSol();
+                    string sol = Sha256.PromjenjivaSol();
                     string hashiranaLozinka = Sha256.Sazimanje(noviKorisnik.Lozinka, sol);
 
                     // Provera da li već postoji korisnik sa istim korisničkim imenom

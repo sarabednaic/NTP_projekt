@@ -40,7 +40,7 @@ namespace ntp_projekt
 
             // Get members of the current project
             string clanoviQuery = "SELECT korisnik_ID, admin FROM clanovi_projekta WHERE projekt_ID = ?";
-            List<string> clanoviProjekta = baza.ListaBazaReadWithParams(clanoviQuery, new OleDbParameter("@projekt_ID", projektID));
+            List<string> clanoviProjekta = baza.ListaBazaReadParametar(clanoviQuery, new OleDbParameter("@projekt_ID", projektID));
 
             // Lists to store members and admins
             List<string> clanovi = new List<string>();
@@ -116,7 +116,7 @@ namespace ntp_projekt
                 string projektNaziv = UrediProjektNazivTextBox.Text;
 
                 string Query = "UPDATE projekt SET naziv = ? WHERE ID = ?";
-                int rowsAffected = baza.BazaWriteWithParams(Query,
+                int rowsAffected = baza.BazaWriteParametar(Query,
                     new OleDbParameter("@naziv", projektNaziv),
                     new OleDbParameter("@id", projektID));
             }
@@ -125,7 +125,7 @@ namespace ntp_projekt
                 string projektOpis = UrediProjektOpisRichTextBox.Text;
 
                 string Query = "UPDATE projekt SET opis = ? WHERE ID = ?";
-                int rowsAffected = baza.BazaWriteWithParams(Query,
+                int rowsAffected = baza.BazaWriteParametar(Query,
                     new OleDbParameter("@opis", projektOpis),
                     new OleDbParameter("@id", projektID));
             }
@@ -145,7 +145,7 @@ namespace ntp_projekt
             //        bool isAdmin = UrediProjektOvlastiListBox.Items.Contains(punoIme);
 
             //        string insertMemberQuery = "INSERT INTO clanovi_projekta (korisnik_ID, projekt_ID, admin) VALUES (?, ?, ?)";
-            //        int result = baza.BazaWriteWithParams(insertMemberQuery,
+            //        int result = baza.BazaWriteParametar(insertMemberQuery,
             //            new OleDbParameter("@korisnik_ID", korisnikId),
             //            new OleDbParameter("@admin", isAdmin),
             //            new OleDbParameter("@projekt_ID", projektID));
