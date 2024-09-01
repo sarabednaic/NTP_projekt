@@ -131,7 +131,7 @@ namespace ntp_projekt
             {
                 int korisnikID = Int32.Parse(Session.DohvatiKorisnikID());
 
-                string[] queries = new string[]
+                string[] upiti = new string[]
                 {
                         "DELETE FROM clanovi_zadatka WHERE clanovi_zadatka.clan_projekta_ID IN (SELECT clanovi_projekta.ID  FROM clanovi_projekta WHERE clanovi_projekta.korisnik_ID = ?);",
                         "DELETE FROM clanovi_projekta WHERE clanovi_projekta.korisnik_ID = ?;",
@@ -139,7 +139,7 @@ namespace ntp_projekt
 
                 };
 
-                foreach (string upit in queries)
+                foreach (string upit in upiti)
                 {
                     int result = baza.BazaDelete(upit, new OleDbParameter("?", korisnikID));
                     if (result == -1)

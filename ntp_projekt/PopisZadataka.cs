@@ -176,7 +176,7 @@ namespace ntp_projekt
                     }
                     else
                     {
-                        MessageBox.Show("No results found or an error occurred.");
+                        MessageBox.Show("Nema rezultata UDP klijenta.");
                     }
                 }
             }

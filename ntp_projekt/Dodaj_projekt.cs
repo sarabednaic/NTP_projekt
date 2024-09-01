@@ -71,7 +71,7 @@ namespace ntp_projekt
                 string projektNaziv = DodajProjektNazivTextBox.Text;
                 string projektOpis = DodajProjektOpisRichTextBox.Text;
 
-                // Check if project already exists
+                //provjerava se ako već ostoji projekt pod tim imenom
                 string provjeraQuery = "SELECT COUNT(*) FROM projekt WHERE naziv = ?";
                 int projectCount = Convert.ToInt32(baza.BazaReadParametar(provjeraQuery, new OleDbParameter("@naziv", projektNaziv)));
 
@@ -81,7 +81,7 @@ namespace ntp_projekt
                     return;
                 }
 
-                // Insert new project
+                //dodavanje porojekta
                 string insertProjectQuery = "INSERT INTO projekt (naziv, opis) VALUES (?, ?)";
                 int projectId = baza.BazaWriteParametar(insertProjectQuery,
                     new OleDbParameter("@naziv", projektNaziv),
@@ -93,16 +93,15 @@ namespace ntp_projekt
                     return;
                 }
 
-                // Add project to XML
+                //dodavanje u XML
                 XmlOperator xmlOperator = new XmlOperator();
                 Projekt noviProjekt = new Projekt(projectId.ToString(), projektNaziv, projektOpis);
                 xmlOperator.XmlAdd(noviProjekt);
 
-                // Get all registered users
-                string korisniciQuery = "SELECT ID, ime, prezime FROM korisnik";
-                List<string> registriraniKorisnici = baza.ListaBazaRead(korisniciQuery);
+                //dodavanje korisnika na projekt
+                string korisniciUpit = "SELECT ID, ime, prezime FROM korisnik";
+                List<string> registriraniKorisnici = baza.ListaBazaRead(korisniciUpit);
 
-                // Insert project members
                 for (int i = 0; i < registriraniKorisnici.Count; i += 3)
                 {
                     string punoIme = registriraniKorisnici[i + 1] + " " + registriraniKorisnici[i + 2];

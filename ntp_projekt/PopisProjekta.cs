@@ -36,6 +36,7 @@ namespace ntp_projekt
             iniFile.UcitajDatoteku(@"..\..\postavke.ini");
             server = new tcpServer();
             
+            //pretraga projekata po nazivu preko servera
             client = new SimpleTcpClient("127.0.0.1:13001");
             client.Connect();
             client.Events.DataReceived += Events_DataReceived;
@@ -70,12 +71,12 @@ namespace ntp_projekt
 
         private void Events_Disconnected(object sender, ConnectionEventArgs e)
         {
-            MessageBox.Show("Client disconnected");
+            MessageBox.Show("Klijent nije povezan.");
         }
 
         private void Events_Connected(object sender, ConnectionEventArgs e)
         {
-            MessageBox.Show("Client connected");
+            MessageBox.Show("Klijent povezan.");
         }
 
         private void UrediZadatakNaslovLabel_Click(object sender, EventArgs e)
@@ -128,7 +129,7 @@ namespace ntp_projekt
 
         private void PopisProjektaSearchButton_Click(object sender, EventArgs e)
         {
-            
+            //pretraga TCP
             if (server.Server.IsListening && client.IsConnected)
             {
                 if (PopisProjektaSearchRichTextBox.Text != "")
@@ -151,16 +152,12 @@ namespace ntp_projekt
 
             if (polje != null)
             {
-                // Use Invoke to ensure UI updates happen on the UI thread
                 this.Invoke((MethodInvoker)delegate
                 {
-                    // Create a HashSet of project IDs from the received data for faster lookup
                     HashSet<string> receivedProjectIds = new HashSet<string>(polje.Select(row => row[0]));
 
-                    // Create a list of controls to remove
                     List<Control> controlsToRemove = new List<Control>();
 
-                    // Identify controls to remove
                     foreach (Control control in PopisProjektaProjektiFlowLayoutPanel.Controls)
                     {
                         if (control is PopisProjektaControl ppc)
@@ -172,14 +169,12 @@ namespace ntp_projekt
                         }
                     }
 
-                    // Remove identified controls
                     foreach (Control control in controlsToRemove)
                     {
                         PopisProjektaProjektiFlowLayoutPanel.Controls.Remove(control);
-                        control.Dispose(); // Dispose of the control to free resources
+                        control.Dispose(); 
                     }
 
-                    // Refresh the FlowLayoutPanel
                     PopisProjektaProjektiFlowLayoutPanel.Refresh();
                 });
             }

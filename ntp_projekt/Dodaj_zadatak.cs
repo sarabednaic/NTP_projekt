@@ -27,6 +27,7 @@ namespace ntp_projekt
             DodajZadatakProfilLinkLabel.Text = Session.DohvatiPunoIme();
             DodajZadatakProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
 
+            //članovi
             List<List<string>> clanovi = baza.NaprednaBazaRead("SELECT clanovi_projekta.ID, korisnik.ime, korisnik.prezime, clanovi_projekta.admin " +
                                                                "FROM (clanovi_projekta " +
                                                                "INNER JOIN korisnik ON korisnik.ID = clanovi_projekta.korisnik_ID) " +
@@ -46,6 +47,7 @@ namespace ntp_projekt
 
         }
 
+        //kada se dogodi promjena statusa automatski se mijenja boja
         public void DodajZadatakStatusComboBox_SelectedValueChanged(object sender, EventArgs e)
         {
             string selectedValue = DodajZadatakStatusComboBox.SelectedItem.ToString();
@@ -94,15 +96,15 @@ namespace ntp_projekt
             string formatiraniPocetak = DodajZadatakDateTimePicker1.Value.ToString("dd.MM.yyyy");
             string formatiraniKraj = DodajZadatakDateTimePicker2.Value.ToString("dd.MM.yyyy");
 
-            // Dodavanje zadatka u bazu podataka
+            //dodavanje zadatka u bazu podataka
             int upis = baza.BazaWrite("INSERT INTO zadatak (naziv, opis, vrijeme_pocetak, vrijeme_kraj) " +
                                       "VALUES ('" + DodajZadatakNazivTextBox.Text + "', '" + DodajZadatakOpisRichTextBox.Text + "', '" +
                                       formatiraniPocetak + "', '" + formatiraniKraj + "');");
 
-            // Dohvaćanje ID-a novog zadatka
+            //dohvaca zadnji ID tj dodanog zadatka
             string zadatak_ID = baza.BazaRead("SELECT MAX(zadatak.id) FROM zadatak");
 
-            // Povezivanje članova sa zadatkom
+            //povezivanje članova sa zadatkom o ID-u zadatka
             foreach (var item in DodajZadatakClanoviListBox.CheckedItems)
             {
                 string imePrezime = item.ToString();
@@ -116,29 +118,26 @@ namespace ntp_projekt
                 {
                     int clan_projekta_ID = int.Parse(clan[0][0]);
 
-                    // Dodavanje u tablicu clanovi_zadatka
                     int upisClanoviZadatka = baza.BazaWrite("INSERT INTO clanovi_zadatka (clan_projekta_ID, zadatak_ID) " +
                                                             "VALUES (" + clan_projekta_ID + ", " + zadatak_ID + ");");
                 }
             }
 
-            // Učitavanje postojećeg JSON-a
             dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
 
-            // Dodavanje novog zadatka s početnim statusom "nije zapoceto"
+            //zadatkam s početnim statusom "nije zapoceto"
             var noviZadatak = new
             {
                 Zadatak_ID = int.Parse(zadatak_ID),
                 Status = "nije zapoceto"
             };
 
-            // Dodaj novi zadatak u jsonFile
+            //dodavanje zadatka
             jsonFile.Add(JObject.FromObject(noviZadatak));
 
-            // Snimanje ažuriranog JSON-a natrag u datoteku
+            //spremi JSON
             File.WriteAllText(@"..\..\statusZadatka.json", JsonConvert.SerializeObject(jsonFile, Formatting.Indented));
 
-            // Nakon dodavanja, preusmjeravanje na novu formu
             StartApk.MainFormManager.TrenutnaForma = new PopisZadataka();
         }
 
@@ -152,30 +151,22 @@ namespace ntp_projekt
         {
             PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
 
+            //HTTP klijent koji kaze trenutno vrijeme kako bi ravnali vrijeme projekta
             using (HttpClient client = new HttpClient())
             {
                 string url = "http://worldtimeapi.org/api/timezone/Europe/Zagreb";
 
-                HttpResponseMessage response = await client.GetAsync(url);
+                HttpResponseMessage zahtjev = await client.GetAsync(url);
 
-                // Provjera je li zahtjev uspješan
-                if (response.IsSuccessStatusCode)
+                if (zahtjev.IsSuccessStatusCode)
                 {
-                    // Čitanje odgovora kao string
-                    string jsonResponse = await response.Content.ReadAsStringAsync();
-
-                    // Parsiranje JSON odgovora
-                    JObject json = JObject.Parse(jsonResponse);
-
-                    // Dohvaćanje trenutnog vremena iz JSON odgovora
+                    string odgovor = await zahtjev.Content.ReadAsStringAsync();
+                    JObject json = JObject.Parse(odgovor);
                     string currentTime = json["datetime"].ToString();
-
-                    // Prikaz trenutnog vremena u labeli
                     DodajZadatakTrenutnoVrijemeLabel.Text = currentTime;
                 }
                 else
                 {
-                    // Ako dođe do greške u API pozivu
                     DodajZadatakTrenutnoVrijemeLabel.Text = "Pogreška pri dohvaćanju podataka o vremenu.";
                 }
             }

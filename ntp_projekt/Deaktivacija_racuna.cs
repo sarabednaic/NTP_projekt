@@ -63,8 +63,6 @@ namespace ntp_projekt
             {
                 MessageBox.Show("Polja ne smiju biti prazna!");
             }
-            
-            
         }
 
         private void PrijavaKorisnickoImeTextBox_TextChanged(object sender, EventArgs e)
