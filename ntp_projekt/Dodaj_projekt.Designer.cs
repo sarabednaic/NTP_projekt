@@ -107,7 +107,6 @@
             // DodajProjektNazivTextBox
             // 
             resources.ApplyResources(this.DodajProjektNazivTextBox, "DodajProjektNazivTextBox");
-            this.DodajProjektNazivTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.DodajProjektNazivTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.DodajProjektNazivTextBox.Name = "DodajProjektNazivTextBox";
             // 

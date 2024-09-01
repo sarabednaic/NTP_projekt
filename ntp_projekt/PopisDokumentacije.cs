@@ -23,9 +23,9 @@ namespace ntp_projekt
             PopisDokumentacijeProfilPictureBox.Image = (System.Drawing.Image)Session.DohvatiProfilnuSliku(); // Dodan cast na System.Drawing.Image
 
             // Povezivanje događaja s metodama
-            PopisDokumentacijeProfilLinkLabel.LinkClicked += PopisDokumentacijeProfilLinkLabel_LinkClicked;
-            PopisDokumentacijeProfilPictureBox.Click += PopisDokumentacijeProfilPictureBox_Click;
-            PopisDokumentacijeNatragButton.Click += PopisDokumentacijeNatragButton_Click;
+            //PopisDokumentacijeProfilLinkLabel.LinkClicked += PopisDokumentacijeProfilLinkLabel_LinkClicked;
+            //PopisDokumentacijeProfilPictureBox.Click += PopisDokumentacijeProfilPictureBox_Click;
+            //PopisDokumentacijeNatragButton.Click += PopisDokumentacijeNatragButton_Click;
         }
 
         private void PopisDokumentacijeNatragButton_Click(object sender, EventArgs e)

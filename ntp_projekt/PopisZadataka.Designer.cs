@@ -77,6 +77,7 @@
             resources.ApplyResources(this.PopisZadatakaSearchButton, "PopisZadatakaSearchButton");
             this.PopisZadatakaSearchButton.Name = "PopisZadatakaSearchButton";
             this.PopisZadatakaSearchButton.UseVisualStyleBackColor = true;
+            this.PopisZadatakaSearchButton.Click += new System.EventHandler(this.PopisZadatakaSearchButton_Click);
             // 
             // PopisZadatakaClanoviListBox
             // 

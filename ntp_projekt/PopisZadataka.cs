@@ -14,6 +14,11 @@ using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using ntp_projekt.TeamPlanDataSetTableAdapters;
+using System.Net.Sockets;
+using System.Net;
+using System.Net.Http.Headers;
+using TCPServer;
+using UDPServer;
 
 
 namespace ntp_projekt
@@ -21,12 +26,15 @@ namespace ntp_projekt
     public partial class PopisZadataka : Form
     {
         Baza baza;
+        public static udpServer server;
+        UdpClient klient;
+        public static IPEndPoint remoteEndPoint = new IPEndPoint(IPAddress.Any, 0);
         public PopisZadataka()
         {
             InitializeComponent();
             PopisZadatakaProfilLinkLabel.Text = Session.DohvatiPunoIme();
             PopisZadatakaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
-
+            
 
             baza = new Baza(@"..\..\TeamPlan.mdb");
             string statusZadatka = @"..\..\statusZadatka.json";
@@ -76,30 +84,36 @@ namespace ntp_projekt
             PopisZadatakaOpisLabel.Text = trenutniProjekt.Opis;
         }
 
-        private void PopisZadatakaReportButton_Click(object sender, EventArgs e)
-        {   
-            StartApk.MainFormManager.TrenutnaForma = new PopisDokumentacije();
-        }
+        
 
         private void PopisZadatakaAddButton_Click(object sender, EventArgs e)
         {
+            server.StopListening();
+            server.Dispose();
+            SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new DodajZadatak();
         }
 
         private void PopisZadatakaProfilPictureBox_Click(object sender, EventArgs e)
         {
+            server.StopListening();
+            server.Dispose();
             SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
         private void PopisZadatakaProfilLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            server.StopListening();
+            server.Dispose();
             SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
         private void PopisZadatakaNatragButton_Click(object sender, EventArgs e)
         {
+            server.StopListening();
+            server.Dispose();
             SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
         }
@@ -122,11 +136,83 @@ namespace ntp_projekt
                 }
             }
             PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
+
+            server = new udpServer();
+            Task.Run(() => server.StartListeningAsync());
         }
 
         private void PopisZadatakaImeProjektaLabel_Click(object sender, EventArgs e)
         {
 
         }
+
+        private async void PopisZadatakaSearchButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(PopisZadatakaSearchRichTextBox.Text))
+                {
+                    server.StopListening();
+                    server.Dispose();
+                    StartApk.MainFormManager.TrenutnaForma = new PopisZadataka();
+                    return;
+                }
+
+                using (var client = new UdpClient())
+                {
+                    var serverEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 11000);
+                    client.Connect(serverEndPoint);
+
+                    var zahtjev = Encoding.UTF8.GetBytes(PopisZadatakaSearchRichTextBox.Text);
+                    await client.SendAsync(zahtjev, zahtjev.Length);
+
+                    var receiveResult = await client.ReceiveAsync();
+                    var responseData = receiveResult.Buffer;
+
+                    var polje = ListToBytes.ConvertByteToList(responseData);
+                    if (polje != null && polje.Count > 0)
+                    {
+                        await UpdateUIWithResults(polje);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No results found or an error occurred.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Problem pri povezivanju UDP klijenta sa UDP serverom: {ex.Message}");
+            }
+        }
+
+        private async Task UpdateUIWithResults(List<List<string>> polje)
+        {
+            await Task.Run(() =>
+            {
+                this.Invoke((MethodInvoker)delegate
+                {
+                    var receivedProjectIds = new HashSet<string>(polje.Select(row => row[1]));
+                    var controlsToRemove = new List<Control>();
+
+                    foreach (Control control in PopisZadatakaZadatciFlowLayoutPanel.Controls)
+                    {
+                        if (control is PopisZadatkaControl pzc && !receivedProjectIds.Contains(pzc.Naslov))
+                        {
+                            controlsToRemove.Add(control);
+                        }
+                    }
+
+                    foreach (var control in controlsToRemove)
+                    {
+                        PopisZadatakaZadatciFlowLayoutPanel.Controls.Remove(control);
+                        control.Dispose();
+                    }
+
+                    PopisZadatakaZadatciFlowLayoutPanel.Refresh();
+                });
+            });
+        }
+        
     }
 }

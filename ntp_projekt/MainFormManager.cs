@@ -40,7 +40,9 @@ namespace ntp_projekt
         {
             if (Exitapk) 
             {
-                
+                if (PopisProjekta.server.Server.IsListening) { PopisProjekta.server.Server.Stop(); }
+                PopisZadataka.server.StopListening();
+                PopisZadataka.server.Dispose();
                 SessionProjekt.CleanSession();
                 base.OnMainFormClosed(sender, e);
             }

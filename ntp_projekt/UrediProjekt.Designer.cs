@@ -46,12 +46,6 @@
             this.UrediProjektClanoviListBox = new System.Windows.Forms.CheckedListBox();
             this.PanelLogo = new System.Windows.Forms.Panel();
             this.UrediProjektStatusComboBox = new System.Windows.Forms.ComboBox();
-            this.UrediProjektDodajAdminTextBox = new System.Windows.Forms.TextBox();
-            this.UrediProjektDodajClanaTextBox = new System.Windows.Forms.TextBox();
-            this.UrediProjektDodajClanaButton = new System.Windows.Forms.Button();
-            this.UrediProjektDodajAdminButton = new System.Windows.Forms.Button();
-            this.UrediProjektDeleteClanButton = new System.Windows.Forms.Button();
-            this.UrediProjektDeleteAdminButton = new System.Windows.Forms.Button();
             UrediZadatakNaslovLabel = new System.Windows.Forms.Label();
             UrediProjektNazivLabel = new System.Windows.Forms.Label();
             DodajProjektOvlastiLabel = new System.Windows.Forms.Label();
@@ -70,40 +64,40 @@
             // 
             // UrediProjektNazivLabel
             // 
-            resources.ApplyResources(UrediProjektNazivLabel, "UrediProjektNazivLabel");
             UrediProjektNazivLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(UrediProjektNazivLabel, "UrediProjektNazivLabel");
             UrediProjektNazivLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             UrediProjektNazivLabel.Name = "UrediProjektNazivLabel";
             UrediProjektNazivLabel.UseWaitCursor = true;
             // 
             // DodajProjektOvlastiLabel
             // 
-            resources.ApplyResources(DodajProjektOvlastiLabel, "DodajProjektOvlastiLabel");
             DodajProjektOvlastiLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DodajProjektOvlastiLabel, "DodajProjektOvlastiLabel");
             DodajProjektOvlastiLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajProjektOvlastiLabel.Name = "DodajProjektOvlastiLabel";
             DodajProjektOvlastiLabel.UseWaitCursor = true;
             // 
             // DodajProjektClanoviLabel
             // 
-            resources.ApplyResources(DodajProjektClanoviLabel, "DodajProjektClanoviLabel");
             DodajProjektClanoviLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DodajProjektClanoviLabel, "DodajProjektClanoviLabel");
             DodajProjektClanoviLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajProjektClanoviLabel.Name = "DodajProjektClanoviLabel";
             DodajProjektClanoviLabel.UseWaitCursor = true;
             // 
             // DodajProjektOpisLabel
             // 
-            resources.ApplyResources(DodajProjektOpisLabel, "DodajProjektOpisLabel");
             DodajProjektOpisLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(DodajProjektOpisLabel, "DodajProjektOpisLabel");
             DodajProjektOpisLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajProjektOpisLabel.Name = "DodajProjektOpisLabel";
             DodajProjektOpisLabel.UseWaitCursor = true;
             // 
             // UrediProjektButton
             // 
-            resources.ApplyResources(UrediProjektButton, "UrediProjektButton");
             UrediProjektButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            resources.ApplyResources(UrediProjektButton, "UrediProjektButton");
             UrediProjektButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             UrediProjektButton.Name = "UrediProjektButton";
             UrediProjektButton.UseVisualStyleBackColor = false;
@@ -111,33 +105,32 @@
             // 
             // label1
             // 
-            resources.ApplyResources(label1, "label1");
             label1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(label1, "label1");
             label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             label1.Name = "label1";
             label1.UseWaitCursor = true;
             // 
             // UrediProjektNazivTextBox
             // 
-            resources.ApplyResources(this.UrediProjektNazivTextBox, "UrediProjektNazivTextBox");
-            this.UrediProjektNazivTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.UrediProjektNazivTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.UrediProjektNazivTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(this.UrediProjektNazivTextBox, "UrediProjektNazivTextBox");
             this.UrediProjektNazivTextBox.Name = "UrediProjektNazivTextBox";
             // 
             // DeaktivacijaProfilPanel
             // 
-            resources.ApplyResources(this.DeaktivacijaProfilPanel, "DeaktivacijaProfilPanel");
             this.DeaktivacijaProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DeaktivacijaProfilPanel.Controls.Add(this.UrediProjektNatragButton);
             this.DeaktivacijaProfilPanel.Controls.Add(this.UrediProjektProfilPictureBox);
             this.DeaktivacijaProfilPanel.Controls.Add(this.UrediProjektProfilLinkLabel);
+            resources.ApplyResources(this.DeaktivacijaProfilPanel, "DeaktivacijaProfilPanel");
             this.DeaktivacijaProfilPanel.Name = "DeaktivacijaProfilPanel";
             // 
             // UrediProjektNatragButton
             // 
-            resources.ApplyResources(this.UrediProjektNatragButton, "UrediProjektNatragButton");
             this.UrediProjektNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.UrediProjektNatragButton, "UrediProjektNatragButton");
             this.UrediProjektNatragButton.Name = "UrediProjektNatragButton";
             this.UrediProjektNatragButton.UseVisualStyleBackColor = false;
             this.UrediProjektNatragButton.Click += new System.EventHandler(this.UrediProjektNatragButton_Click);
@@ -164,16 +157,16 @@
             // 
             // UrediProjektOvlastiListBox
             // 
-            resources.ApplyResources(this.UrediProjektOvlastiListBox, "UrediProjektOvlastiListBox");
             this.UrediProjektOvlastiListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.UrediProjektOvlastiListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.UrediProjektOvlastiListBox, "UrediProjektOvlastiListBox");
             this.UrediProjektOvlastiListBox.Name = "UrediProjektOvlastiListBox";
             // 
             // UrediProjektClanoviListBox
             // 
-            resources.ApplyResources(this.UrediProjektClanoviListBox, "UrediProjektClanoviListBox");
             this.UrediProjektClanoviListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.UrediProjektClanoviListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.UrediProjektClanoviListBox, "UrediProjektClanoviListBox");
             this.UrediProjektClanoviListBox.Name = "UrediProjektClanoviListBox";
             // 
             // PanelLogo
@@ -183,63 +176,19 @@
             // 
             // UrediProjektStatusComboBox
             // 
-            resources.ApplyResources(this.UrediProjektStatusComboBox, "UrediProjektStatusComboBox");
             this.UrediProjektStatusComboBox.FormattingEnabled = true;
             this.UrediProjektStatusComboBox.Items.AddRange(new object[] {
             resources.GetString("UrediProjektStatusComboBox.Items"),
             resources.GetString("UrediProjektStatusComboBox.Items1"),
             resources.GetString("UrediProjektStatusComboBox.Items2"),
             resources.GetString("UrediProjektStatusComboBox.Items3")});
+            resources.ApplyResources(this.UrediProjektStatusComboBox, "UrediProjektStatusComboBox");
             this.UrediProjektStatusComboBox.Name = "UrediProjektStatusComboBox";
-            // 
-            // UrediProjektDodajAdminTextBox
-            // 
-            resources.ApplyResources(this.UrediProjektDodajAdminTextBox, "UrediProjektDodajAdminTextBox");
-            this.UrediProjektDodajAdminTextBox.Name = "UrediProjektDodajAdminTextBox";
-            // 
-            // UrediProjektDodajClanaTextBox
-            // 
-            resources.ApplyResources(this.UrediProjektDodajClanaTextBox, "UrediProjektDodajClanaTextBox");
-            this.UrediProjektDodajClanaTextBox.Name = "UrediProjektDodajClanaTextBox";
-            // 
-            // UrediProjektDodajClanaButton
-            // 
-            resources.ApplyResources(this.UrediProjektDodajClanaButton, "UrediProjektDodajClanaButton");
-            this.UrediProjektDodajClanaButton.Name = "UrediProjektDodajClanaButton";
-            this.UrediProjektDodajClanaButton.UseVisualStyleBackColor = true;
-            this.UrediProjektDodajClanaButton.Click += new System.EventHandler(this.UrediProjektDodajClanaButton_Click);
-            // 
-            // UrediProjektDodajAdminButton
-            // 
-            resources.ApplyResources(this.UrediProjektDodajAdminButton, "UrediProjektDodajAdminButton");
-            this.UrediProjektDodajAdminButton.Name = "UrediProjektDodajAdminButton";
-            this.UrediProjektDodajAdminButton.UseVisualStyleBackColor = true;
-            this.UrediProjektDodajAdminButton.Click += new System.EventHandler(this.UrediProjektDodajAdminButton_Click);
-            // 
-            // UrediProjektDeleteClanButton
-            // 
-            resources.ApplyResources(this.UrediProjektDeleteClanButton, "UrediProjektDeleteClanButton");
-            this.UrediProjektDeleteClanButton.Name = "UrediProjektDeleteClanButton";
-            this.UrediProjektDeleteClanButton.UseVisualStyleBackColor = true;
-            this.UrediProjektDeleteClanButton.Click += new System.EventHandler(this.UrediProjektDeleteClanButton_Click);
-            // 
-            // UrediProjektDeleteAdminButton
-            // 
-            resources.ApplyResources(this.UrediProjektDeleteAdminButton, "UrediProjektDeleteAdminButton");
-            this.UrediProjektDeleteAdminButton.Name = "UrediProjektDeleteAdminButton";
-            this.UrediProjektDeleteAdminButton.UseVisualStyleBackColor = true;
-            this.UrediProjektDeleteAdminButton.Click += new System.EventHandler(this.UrediProjektDeleteAdminButton_Click);
             // 
             // UrediProjekt
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.UrediProjektDeleteAdminButton);
-            this.Controls.Add(this.UrediProjektDeleteClanButton);
-            this.Controls.Add(this.UrediProjektDodajAdminButton);
-            this.Controls.Add(this.UrediProjektDodajClanaButton);
-            this.Controls.Add(this.UrediProjektDodajClanaTextBox);
-            this.Controls.Add(this.UrediProjektDodajAdminTextBox);
             this.Controls.Add(this.UrediProjektStatusComboBox);
             this.Controls.Add(label1);
             this.Controls.Add(this.PanelLogo);
@@ -275,12 +224,6 @@
         private System.Windows.Forms.Panel PanelLogo;
         private System.Windows.Forms.ComboBox UrediProjektStatusComboBox;
         private System.Windows.Forms.TextBox UrediProjektNazivTextBox;
-        private System.Windows.Forms.TextBox UrediProjektDodajAdminTextBox;
-        private System.Windows.Forms.TextBox UrediProjektDodajClanaTextBox;
-        private System.Windows.Forms.Button UrediProjektDodajClanaButton;
-        private System.Windows.Forms.Button UrediProjektDodajAdminButton;
-        private System.Windows.Forms.Button UrediProjektDeleteClanButton;
-        private System.Windows.Forms.Button UrediProjektDeleteAdminButton;
         private System.Windows.Forms.Button UrediProjektNatragButton;
     }
 }

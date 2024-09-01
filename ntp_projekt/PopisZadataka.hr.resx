@@ -119,28 +119,47 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PopisZadatakaImeProjektaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>641, 126</value>
+    <value>454, 66</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PopisZadatakaImeProjektaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="PopisZadatakaImeProjektaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 31</value>
   </data>
   <data name="PopisZadatakaClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>645, 297</value>
+    <value>456, 154</value>
+  </data>
+  <data name="PopisZadatakaClanoviLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="PopisZadatakaClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 37</value>
+    <value>121, 20</value>
   </data>
   <data name="PopisZadatakaClanoviLabel.Text" xml:space="preserve">
     <value>Članovi projekta</value>
   </data>
   <data name="PopisZadatakaAdminiLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>955, 297</value>
+    <value>612, 154</value>
+  </data>
+  <data name="PopisZadatakaAdminiLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="PopisZadatakaAdminiLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 37</value>
+    <value>106, 20</value>
   </data>
   <data name="PopisZadatakaAdminiLabel.Text" xml:space="preserve">
     <value>Administratori</value>
   </data>
   <data name="PopisZadatakaSearchRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1620, 416</value>
+    <value>944, 216</value>
+  </data>
+  <data name="PopisZadatakaSearchRichTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 1, 2, 1</value>
+  </data>
+  <data name="PopisZadatakaSearchRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 23</value>
   </data>
   <data name="PopisZadatakaSearchButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -166,13 +185,38 @@
 </value>
   </data>
   <data name="PopisZadatakaSearchButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1985, 409</value>
+    <value>1126, 213</value>
+  </data>
+  <data name="PopisZadatakaSearchButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 1, 2, 1</value>
+  </data>
+  <data name="PopisZadatakaSearchButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 29</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PopisZadatakaClanoviListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="PopisZadatakaClanoviListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>652, 336</value>
+    <value>460, 175</value>
+  </data>
+  <data name="PopisZadatakaClanoviListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 1, 2, 1</value>
+  </data>
+  <data name="PopisZadatakaClanoviListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 64</value>
+  </data>
+  <data name="PopisZadatakaAdminiListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="PopisZadatakaAdminiListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>962, 336</value>
+    <value>615, 175</value>
+  </data>
+  <data name="PopisZadatakaAdminiListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 1, 2, 1</value>
+  </data>
+  <data name="PopisZadatakaAdminiListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 64</value>
   </data>
   <data name="PopisZadatakaNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -289,9 +333,14 @@
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PopisZadatakaNatragButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
   <data name="PopisZadatakaNatragButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="PopisZadatakaNatragButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 42</value>
   </data>
   <data name="PopisZadatakaProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1320,14 +1369,29 @@
         ABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 </value>
   </data>
+  <data name="PopisZadatakaProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1214, 8</value>
+  </data>
   <data name="PopisZadatakaProfilPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="PopisZadatakaProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 42</value>
+  </data>
+  <data name="PopisZadatakaProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1100, 20</value>
   </data>
   <data name="PopisZadatakaProfilLinkLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 5, 0</value>
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="PopisZadatakaProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
   </data>
   <data name="PopisZadatakaProfilPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="PopisZadatakaProfilPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 58</value>
   </data>
   <data name="PopisZadatakaAddButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1390,39 +1454,60 @@
 </value>
   </data>
   <data name="PopisZadatakaAddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1965, 1065</value>
+    <value>1116, 554</value>
+  </data>
+  <data name="PopisZadatakaAddButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 1, 2, 1</value>
+  </data>
+  <data name="PopisZadatakaAddButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 39</value>
   </data>
   <data name="PopisZadatakaOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>644, 198</value>
+    <value>456, 103</value>
+  </data>
+  <data name="PopisZadatakaOpisLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="PopisZadatakaOpisLabel.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1400, 0</value>
+    <value>700, 0</value>
+  </data>
+  <data name="PopisZadatakaOpisLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 25</value>
   </data>
   <data name="PopisZadatakaZadatciFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>659, 491</value>
+    <value>330, 255</value>
   </data>
   <data name="PopisZadatakaZadatciFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 1, 2, 1</value>
   </data>
   <data name="PopisZadatakaZadatciFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1389, 522</value>
+    <value>694, 271</value>
   </data>
   <data name="PanelLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>538, 0</value>
+  </data>
   <data name="PanelLogo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 1, 2, 1</value>
   </data>
   <data name="PanelLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>353, 105</value>
+    <value>176, 55</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>2523, 1254</value>
+    <value>1230, 552</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 1, 2, 1</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>2549, 1325</value>
+    <value>1282, 708</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1437, 1007</value>
+    <value>726, 542</value>
   </data>
 </root>

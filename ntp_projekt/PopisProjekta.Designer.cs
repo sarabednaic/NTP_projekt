@@ -31,7 +31,6 @@
             System.Windows.Forms.Label PopisProjektaNaslovLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopisProjekta));
             this.PopisProjektaAddButton = new System.Windows.Forms.Button();
-            this.PopisProjektaSortButton = new System.Windows.Forms.Button();
             this.PopisProjektaSearchRichTextBox = new System.Windows.Forms.RichTextBox();
             this.PopisProjektaSearchButton = new System.Windows.Forms.Button();
             this.PopisProjektaPanel = new System.Windows.Forms.Panel();
@@ -58,13 +57,6 @@
             this.PopisProjektaAddButton.UseVisualStyleBackColor = false;
             this.PopisProjektaAddButton.Click += new System.EventHandler(this.PopisProjektaAddButton_Click_1);
             // 
-            // PopisProjektaSortButton
-            // 
-            resources.ApplyResources(this.PopisProjektaSortButton, "PopisProjektaSortButton");
-            this.PopisProjektaSortButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PopisProjektaSortButton.Name = "PopisProjektaSortButton";
-            this.PopisProjektaSortButton.UseVisualStyleBackColor = false;
-            // 
             // PopisProjektaSearchRichTextBox
             // 
             resources.ApplyResources(this.PopisProjektaSearchRichTextBox, "PopisProjektaSearchRichTextBox");
@@ -75,6 +67,7 @@
             resources.ApplyResources(this.PopisProjektaSearchButton, "PopisProjektaSearchButton");
             this.PopisProjektaSearchButton.Name = "PopisProjektaSearchButton";
             this.PopisProjektaSearchButton.UseVisualStyleBackColor = true;
+            this.PopisProjektaSearchButton.Click += new System.EventHandler(this.PopisProjektaSearchButton_Click);
             // 
             // PopisProjektaPanel
             // 
@@ -121,7 +114,6 @@
             this.Controls.Add(this.PopisProjektaSearchButton);
             this.Controls.Add(this.PopisProjektaSearchRichTextBox);
             this.Controls.Add(PopisProjektaNaslovLabel);
-            this.Controls.Add(this.PopisProjektaSortButton);
             this.Controls.Add(this.PopisProjektaAddButton);
             this.Name = "PopisProjekta";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -136,7 +128,6 @@
 
         #endregion
         private System.Windows.Forms.Button PopisProjektaAddButton;
-        private System.Windows.Forms.Button PopisProjektaSortButton;
         private System.Windows.Forms.RichTextBox PopisProjektaSearchRichTextBox;
         private System.Windows.Forms.Button PopisProjektaSearchButton;
         private System.Windows.Forms.Panel PopisProjektaPanel;

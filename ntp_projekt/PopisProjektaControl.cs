@@ -18,12 +18,13 @@ namespace ntp_projekt
         string opis;
         string status;
         static Color boja;
+        Boolean admin;
         
         
         public PopisProjektaControl()
         {
             InitializeComponent();
-            
+
         }
 
         public string Id { get { return id; } set { id = value; } }
@@ -57,24 +58,51 @@ namespace ntp_projekt
             }
         }
 
+        public Boolean Admin { get { return admin; } set { admin = value; } }
+
+        public void Check() {
+            if (!Admin)
+            {
+                PopisProjektaControlEditButton.Enabled = false;
+                PopisProjektaControlDeleteButton.Enabled = false;
+            }
+            else {
+                PopisProjektaControlEditButton.Enabled = true;
+                PopisProjektaControlDeleteButton.Enabled = true;
+            }
+        }
 
         private void PopisProjektaControlEditButton_Click(object sender, EventArgs e)
         {
+            PopisProjekta.server.Server.Stop();
             SessionProjekt.postaviTrenutniProjekt(Id, Naslov, Opis);
             StartApk.MainFormManager.TrenutnaForma = new UrediProjekt();
         }
 
         private void PopisProjektaControlDeleteButton_Click(object sender, EventArgs e)
         {
+            PopisProjekta.server.Server.Stop();
             SessionProjekt.postaviTrenutniProjekt(Id, Naslov, Opis);
             StartApk.MainFormManager.TrenutnaForma = new BrisanjeProjekta();
         }
 
         private void PopisProjektaControlProjektButton_Click(object sender, EventArgs e)
         {
+            PopisProjekta.server.Server.Stop();
             SessionProjekt.postaviTrenutniProjekt(Id, Naslov, Opis);
             StartApk.MainFormManager.TrenutnaForma = new PopisZadataka();
 
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is PopisProjektaControl control &&
+                   id == control.id &&
+                   naslov == control.naslov &&
+                   opis == control.opis &&
+                   Id == control.Id &&
+                   Naslov == control.Naslov &&
+                   Opis == control.Opis;
         }
     }
 }
