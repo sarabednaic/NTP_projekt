@@ -124,7 +124,7 @@ namespace ntp_projekt
                 "vrijeme_kraj = '" + formatiraniKraj + "' " +
                 "WHERE ID = " + SessionZadatak.Id + ";");
 
-
+            //Dohvaća statuse zadataka iz json datoteke i mijenja ih po potrebi
             dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
             foreach (var obj in jsonFile)
             {
@@ -136,6 +136,7 @@ namespace ntp_projekt
             }
             File.WriteAllText(@"..\..\statusZadatka.json", JsonConvert.SerializeObject(jsonFile, Formatting.Indented));
 
+            //Brise članove zadatake ako su odkvačeni u listboxu
             for (int i = 0; i < UrediZadatakClanoviListBox.Items.Count; i++)
             {
                 if (UrediZadatakClanoviListBox.GetItemChecked(i) == false)

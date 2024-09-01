@@ -56,6 +56,7 @@ namespace ntp_projekt
 
         private void BrisanjeProjektaIzbrisiProjektButton_Click(object sender, EventArgs e)
         {
+            XmlOperator obrisi = new XmlOperator();
             string user = Session.DohvatiKorisnika();
             string lozinkaKorisnika = baza.BazaRead($"SELECT lozinka FROM korisnik WHERE korisnicko_ime = \"{user}\";");
             string sol = baza.BazaRead($"SELECT sol FROM korisnik WHERE korisnicko_ime = \"{user}\";");
@@ -90,6 +91,7 @@ namespace ntp_projekt
                                     break;
                                 }
                             }
+                            obrisi.XmlDelete(projekt.Id);
 
                             if (success)
                             {

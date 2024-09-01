@@ -73,21 +73,24 @@ namespace ntp_projekt
                     }
                 }
             }
+
+            //Dodaje članove u listbox
             foreach (string clan in clanovi)
             {
                 UrediProjektClanoviListBox.Items.Add(clan);
             }
-
+            //stavlja kvačice pokraj svakog clana u listboxu
             for (int i = 0; i < clanovi.Count; i++)
             {
                 UrediProjektClanoviListBox.SetItemChecked(i, true);
             }
-
+            //Dodaje admine u listbox
             foreach (string admin in admini)
             {
                 UrediProjektOvlastiListBox.Items.Add(admin);
             }
 
+            //stavlja kvačice pokraj svakog admina u listboxu
             for (int i = 0; i < admini.Count; i++)
             {
                 UrediProjektOvlastiListBox.SetItemChecked(i, true);
@@ -96,16 +99,17 @@ namespace ntp_projekt
 
         private void UrediProjekt_Load(object sender, EventArgs e)
         {
+            //Postavlja logo
             PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
 
         }
 
 
 
-
+        //Uzima podatke koji su upisanu u svima textboxovima , listboxovima i sprema/brise ih u/iz baze
         private void UrediProjektButton_Click(object sender, EventArgs e)
         {
-
+            //Updatea naziv projekta
             int projektID = Int32.Parse(trenutniprojekt.Id);
             if (UrediProjektNazivTextBox.Text != "")
             {
@@ -117,6 +121,7 @@ namespace ntp_projekt
                     new OleDbParameter("@id", projektID));
             }
 
+            //Updatea opis projekta
             if (UrediProjektOpisRichTextBox.Text != "")
             {
                 string projektOpis = UrediProjektOpisRichTextBox.Text;
@@ -127,6 +132,7 @@ namespace ntp_projekt
                     new OleDbParameter("@id", projektID));
             }
 
+            //brise clanove i admine koji su odznačeni u listboxu
             for (int i = 0; i < UrediProjektClanoviListBox.Items.Count; i++)
             {
                 if (UrediProjektClanoviListBox.GetItemChecked(i) == false)
@@ -157,7 +163,7 @@ namespace ntp_projekt
 
 
 
-
+            //Updatea status projekta
             if (UrediProjektStatusComboBox.SelectedItem != null)
             {
                 XmlOperator xmlOperator = new XmlOperator();

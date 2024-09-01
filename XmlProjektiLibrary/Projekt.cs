@@ -15,7 +15,7 @@ namespace XmlProjektiLibrary
         string status;
         
 
-
+        //Za potrebe baratanja sa podatcima iz baze koji se odnose na tablicu projekti
         public Projekt(string _Id,string _Naslov, string _Opis)
         {
             this.id = _Id;
@@ -23,11 +23,6 @@ namespace XmlProjektiLibrary
             this.opis = _Opis ;
         }
 
-        public Projekt(string _Naslov , string _Opis) 
-        { 
-            this.naslov = _Naslov; 
-            this.opis = _Opis ;
-        }
 
         public string Id { get { return id; } set { id = value; } }
         public string Status { get { return status; } set { status = value; } }

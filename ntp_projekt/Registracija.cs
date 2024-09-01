@@ -12,6 +12,7 @@ namespace ntp_projekt
 
         public Registracija()
         {
+            //Dodaje sliku, spaja bazu , učitava ini datoteku...
             InitializeComponent();
             baza = new Baza(@"..\..\TeamPlan.mdb");
             iniFile = new Ini();
@@ -68,6 +69,7 @@ namespace ntp_projekt
                             + hashiranaLozinka + "\", \""
                             + sol + "\");";
 
+                        //Mijenja podatke o korisniku na temelju teksta u textboxovima
                         int prijava = baza.BazaWrite(upit);
                         string query = $"UPDATE korisnik SET profilna = ? WHERE korisnicko_ime = \"{noviKorisnik.KorisnickoIme}\";";
                         baza.BazaSetImage(query, @"..\..\Images\profilna.jpg");
@@ -75,6 +77,7 @@ namespace ntp_projekt
                         iniFile.SpremiDatoteku(@"..\..\postavke.ini");
                         string jezik = iniFile.DohvatiVrijednost("Postavke", "Jezik", "hrvatski");
 
+                        //Postavlja jezik ovisno o ini filu
                         if (prijava > 0)
                         {
                             MessageBox.Show("Registracija uspješna!");

@@ -9,7 +9,7 @@ namespace TCPServer
 {
     public class ListToBytes
     {
-        public static byte[] ConvertListToByte(List<List<string>> nestedList)
+        public static byte[] pretvoriListToByte(List<List<string>> nestedList)
         {
             try
             {
@@ -17,37 +17,37 @@ namespace TCPServer
                 {
                     using (BinaryWriter writer = new BinaryWriter(ms))
                     {
-                        // Write the number of outer lists
+                        //Zapisuje broj lista koje sadrže podatke o specifičnom projektu
                         writer.Write(nestedList.Count);
-                        foreach (var innerList in nestedList)
+                        foreach (var vanjskaLista in nestedList)
                         {
-                            // Write the number of strings in this inner list
-                            writer.Write(innerList.Count);
-                            foreach (var str in innerList)
+                            // Zapisuje broj polja stupaca tj. podataka o projektu u bazi
+                            writer.Write(vanjskaLista.Count);
+                            foreach (var str in vanjskaLista)
                             {
-                                // Write the length of the string
+                                // Zapisuje duljine svakog podatka određenog stupca
                                 byte[] strBytes = Encoding.UTF8.GetBytes(str);
                                 writer.Write(strBytes.Length);
-                                // Write the string bytes
+                                // Zapisuje string u bajtove
                                 writer.Write(strBytes);
                             }
                         }
                     }
 
                     byte[] result = ms.ToArray();
-                    Console.WriteLine($"Converted byte array length: {result.Length}");
+                    Console.WriteLine($"Broj konvertiranih bajtovu: {result.Length}");
                     return result;
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Exception in ConvertListToByte: {ex.Message}");
+                Console.WriteLine($"Iznimka u pretvoriListToByte: {ex.Message}");
                 Console.WriteLine($"Stack Trace: {ex.StackTrace}");
                 return null;
             }
         }
 
-        public static List<List<string>> ConvertByteToList(byte[] byteArray)
+        public static List<List<string>> pretvoriByteToList(byte[] byteArray)
         {
             List<List<string>> result = new List<List<string>>();
 
@@ -55,22 +55,24 @@ namespace TCPServer
             {
                 using (BinaryReader reader = new BinaryReader(ms))
                 {
-                    int outerListCount = reader.ReadInt32();
-
-                    for (int i = 0; i < outerListCount; i++)
+                    int vanjskaListaCount = reader.ReadInt32();
+                    //Čita broj lista koje sadrže podatke o specifičnom projektu
+                    for (int i = 0; i < vanjskaListaCount; i++)
                     {
-                        List<string> innerList = new List<string>();
-                        int innerListCount = reader.ReadInt32();
+                        // Čita broj polja stupaca tj. podataka o projektu u bazi
+                        List<string> unutarnjaLista = new List<string>();
+                        int unutarnjaListaCount = reader.ReadInt32();
 
-                        for (int j = 0; j < innerListCount; j++)
+                        for (int j = 0; j < unutarnjaListaCount; j++)
                         {
+                            // Čita duljine svakog podatka određenog stupca
                             int strLength = reader.ReadInt32();
                             byte[] strBytes = reader.ReadBytes(strLength);
                             string str = Encoding.UTF8.GetString(strBytes);
-                            innerList.Add(str);
+                            unutarnjaLista.Add(str);
                         }
-
-                        result.Add(innerList);
+                        //Sprema podatke u listu
+                        result.Add(unutarnjaLista);
                     }
                 }
             }
