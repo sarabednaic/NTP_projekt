@@ -90,7 +90,7 @@ namespace ntp_projekt
         {
             server.StopListening();
             server.Dispose();
-            SessionProjekt.CleanSession();
+            
             StartApk.MainFormManager.TrenutnaForma = new DodajZadatak();
         }
 

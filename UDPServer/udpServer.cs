@@ -13,7 +13,7 @@ namespace UDPServer
     {
         private const int PORT = 11000;
         private UdpClient server;
-        private bool isListening = false;
+        public static bool isListening = false;
         private readonly string connectionString = @"Provider=Microsoft.ACE.OLEDB.16.0;Data Source= ..\..\TeamPlan.mdb;";
 
         public udpServer()

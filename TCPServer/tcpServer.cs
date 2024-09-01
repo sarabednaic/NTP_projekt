@@ -25,10 +25,10 @@ namespace TCPServer
 
         
 
-        private void Events_DataReceived(object sender, DataReceivedEventArgs e)
+        private void Events_DataReceived(object sender, DataReceivedEventArgs poljeBitova)
         {
-            byte[] dataArray = e.Data.ToArray();
-            message = Encoding.UTF8.GetString(dataArray);
+            byte[] zahtjev = poljeBitova.Data.ToArray();
+            message = Encoding.UTF8.GetString(zahtjev);
             byte[] odgovor;
 
             string query = $"SELECT projekt.ID , projekt.naziv, projekt.opis FROM projekt WHERE projekt.naziv = \"{message}\"";
@@ -60,7 +60,7 @@ namespace TCPServer
                 }
             }
             
-            server.Send(e.IpPort , odgovor);
+            server.Send(poljeBitova.IpPort , odgovor);
         }
 
         

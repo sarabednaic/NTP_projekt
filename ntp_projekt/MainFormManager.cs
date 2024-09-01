@@ -5,6 +5,7 @@ using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UDPServer;
 
 namespace ntp_projekt
 {
@@ -43,8 +44,11 @@ namespace ntp_projekt
             if (ExitApk==true) 
             {
                 if (PopisProjekta.server.Server.IsListening) { PopisProjekta.server.Server.Stop(); }
-                PopisZadataka.server.StopListening();
-                PopisZadataka.server.Dispose();
+                if (udpServer.isListening) {
+                    PopisZadataka.server.StopListening();
+                    PopisZadataka.server.Dispose();
+                }
+                
                 SessionProjekt.CleanSession();
                 base.OnMainFormClosed(sender, e);
             }

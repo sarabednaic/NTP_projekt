@@ -3039,7 +3039,7 @@ namespace ntp_projekt.TeamPlanDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::ntp_projekt.Properties.Settings.Default.TeamPlanConnectionString1;
+            this._connection.ConnectionString = global::ntp_projekt.Properties.Settings.Default.TeamPlanConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3394,7 +3394,7 @@ namespace ntp_projekt.TeamPlanDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::ntp_projekt.Properties.Settings.Default.TeamPlanConnectionString1;
+            this._connection.ConnectionString = global::ntp_projekt.Properties.Settings.Default.TeamPlanConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3764,7 +3764,7 @@ namespace ntp_projekt.TeamPlanDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::ntp_projekt.Properties.Settings.Default.TeamPlanConnectionString1;
+            this._connection.ConnectionString = global::ntp_projekt.Properties.Settings.Default.TeamPlanConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4203,7 +4203,7 @@ namespace ntp_projekt.TeamPlanDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::ntp_projekt.Properties.Settings.Default.TeamPlanConnectionString1;
+            this._connection.ConnectionString = global::ntp_projekt.Properties.Settings.Default.TeamPlanConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4545,7 +4545,7 @@ namespace ntp_projekt.TeamPlanDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::ntp_projekt.Properties.Settings.Default.TeamPlanConnectionString1;
+            this._connection.ConnectionString = global::ntp_projekt.Properties.Settings.Default.TeamPlanConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

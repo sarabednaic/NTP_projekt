@@ -41,7 +41,7 @@ namespace ntp_projekt
             List<string> registriraniKorisnici = baza.ListaBazaRead(korisniciQuery);
 
             //Dohvaca calnove koji rade na projektu
-            List<string> clanoviProjekta = baza.ListaBazaReadWithParams(clanoviQuery, new OleDbParameter("@projekt_ID", projektID));
+            List<string> clanoviProjekta = baza.ListaBazaReadParametar(clanoviQuery, new OleDbParameter("@projekt_ID", projektID));
 
             // Pohranjuje clanove za ubacivanje u LIstBox
             List<string> clanovi = new List<string>();
@@ -112,7 +112,7 @@ namespace ntp_projekt
                 string projektNaziv = UrediProjektNazivTextBox.Text;
 
                 string Query = "UPDATE projekt SET naziv = ? WHERE ID = ?";
-                int rowsAffected = baza.BazaWriteWithParams(Query,
+                int rowsAffected = baza.BazaWriteParametar(Query,
                     new OleDbParameter("@naziv", projektNaziv),
                     new OleDbParameter("@id", projektID));
             }
@@ -122,7 +122,7 @@ namespace ntp_projekt
                 string projektOpis = UrediProjektOpisRichTextBox.Text;
 
                 string Query = "UPDATE projekt SET opis = ? WHERE ID = ?";
-                int rowsAffected = baza.BazaWriteWithParams(Query,
+                int rowsAffected = baza.BazaWriteParametar(Query,
                     new OleDbParameter("@opis", projektOpis),
                     new OleDbParameter("@id", projektID));
             }
