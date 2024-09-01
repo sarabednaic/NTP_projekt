@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Drawing;  // Koristite System.Drawing za Image i Color
+using System.Drawing; 
 using System.IO;
 using System.Windows.Forms;
 using QuestPDF;
@@ -18,14 +18,10 @@ namespace ntp_projekt
         public PopisDokumentacije()
         {
             InitializeComponent();
+            //bez licence nece raditi
             QuestPDF.Settings.License = LicenseType.Community;
             PopisDokumentacijeProfilLinkLabel.Text = Session.DohvatiPunoIme();
-            PopisDokumentacijeProfilPictureBox.Image = (System.Drawing.Image)Session.DohvatiProfilnuSliku(); // Dodan cast na System.Drawing.Image
-
-            // Povezivanje događaja s metodama
-            //PopisDokumentacijeProfilLinkLabel.LinkClicked += PopisDokumentacijeProfilLinkLabel_LinkClicked;
-            //PopisDokumentacijeProfilPictureBox.Click += PopisDokumentacijeProfilPictureBox_Click;
-            //PopisDokumentacijeNatragButton.Click += PopisDokumentacijeNatragButton_Click;
+            PopisDokumentacijeProfilPictureBox.Image = (System.Drawing.Image)Session.DohvatiProfilnuSliku(); 
         }
 
         private void PopisDokumentacijeNatragButton_Click(object sender, EventArgs e)
@@ -46,7 +42,7 @@ namespace ntp_projekt
         private void PopisDokumentacije_Load(object sender, EventArgs e)
         {
             Baza baza;
-            PanelLogo.BackgroundImage = System.Drawing.Image.FromFile(Logo.LogoFoto()); // Dodano System.Drawing.Image
+            PanelLogo.BackgroundImage = System.Drawing.Image.FromFile(Logo.LogoFoto()); 
             PopisDokumentacijeNaslovLabel.Text = SessionZadatak.Naslov;
             PopisDokumentacijeBazaClanoviLabel.Text = "";
             PopisDokumentacijeBazaOpisLabel.Text = SessionZadatak.Opis;
@@ -61,7 +57,7 @@ namespace ntp_projekt
                 if ((string)obj["Zadatak_ID"] == SessionZadatak.Id)
                 {
                     PopisDokumentacijeBazaStatusLabel.Text = obj["Status"].ToString();
-                    // Korišćenje System.Drawing.Color za boje
+                    // treba ici system drawings jer colors postoji u ovom PDF lib
                     if (obj["Status"].ToString() == "zavrseno") { PopisDokumentacijeStatusButton.BackColor = System.Drawing.Color.Orange; }
                     else if (obj["Status"].ToString() == "nije zapoceto") { PopisDokumentacijeStatusButton.BackColor = System.Drawing.Color.Gray; }
                     else if (obj["Status"].ToString() == "problem") { PopisDokumentacijeStatusButton.BackColor = System.Drawing.Color.Red; }
@@ -111,7 +107,7 @@ namespace ntp_projekt
                         column.Item().Text(opis)
                             .FontSize(14);
 
-                        column.Item().PaddingBottom(0.5f, Unit.Centimetre); // Razmak između odjeljaka
+                        column.Item().PaddingBottom(0.5f, Unit.Centimetre); 
 
                         column.Item().Text("Period:")
                             .FontSize(18)
@@ -120,7 +116,7 @@ namespace ntp_projekt
                         column.Item().Text(period)
                             .FontSize(14);
 
-                        column.Item().PaddingBottom(0.5f, Unit.Centimetre); // Razmak između odjeljaka
+                        column.Item().PaddingBottom(0.5f, Unit.Centimetre); 
 
                         column.Item().Text("Status zadatka:")
                             .FontSize(18)
@@ -129,7 +125,7 @@ namespace ntp_projekt
                         column.Item().Text(status)
                             .FontSize(14);
 
-                        column.Item().PaddingBottom(0.5f, Unit.Centimetre); // Razmak između odjeljaka
+                        column.Item().PaddingBottom(0.5f, Unit.Centimetre); 
 
                         column.Item().Text("Članovi tima:")
                             .FontSize(18)
@@ -138,14 +134,13 @@ namespace ntp_projekt
                         column.Item().Text(clanovi)
                             .FontSize(14);
 
-                        column.Item().PaddingBottom(0.5f, Unit.Centimetre); // Razmak između odjeljaka
+                        column.Item().PaddingBottom(0.5f, Unit.Centimetre); 
                     });
                 });
             });
 
             string download = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
 
-            // Define the file name and path
             string filePath = Path.Combine(download, SessionZadatak.Naslov + ".pdf");
 
             pdfDocument.GeneratePdf(filePath);

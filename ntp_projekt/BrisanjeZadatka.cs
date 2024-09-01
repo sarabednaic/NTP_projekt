@@ -52,23 +52,21 @@ namespace ntp_projekt
 
         private void BrisanjeZadatkaIzbrisiZadatakButton_Click(object sender, EventArgs e)
         {
-            // Provjera podudaranja lozinki
             if (BrisanjeZadatkaLozTextBox.Text == BrisanjeZadatkaPonovnoLozTextBox.Text)
             {
                 List<string> brisanje = baza.ListaBazaRead("SELECT korisnik.lozinka, korisnik.sol FROM korisnik WHERE (korisnik.ime & ' ' & korisnik.prezime) = '" + Session.DohvatiPunoIme() + "';");
 
                 if (Sha256.Sazimanje(BrisanjeZadatkaLozTextBox.Text, brisanje[1]) == brisanje[0])
                 {
-                    // Otvori dijalog i provjeri koji gumb je korisnik pritisnuo
                     dll_form_zadatak dll_Form_Zadatak = new dll_form_zadatak();
                     DialogResult result = dll_Form_Zadatak.ShowDialog();
 
                     if (result == DialogResult.Yes)
                     {
-                        // Izvrši brisanje zadatka
                         baza.BazaDelete("DELETE FROM clanovi_zadatka WHERE zadatak_ID = " + SessionZadatak.Id + ";");
                         baza.BazaDelete("DELETE FROM zadatak WHERE zadatak.ID = " + SessionZadatak.Id + ";");
 
+                        //dynamic znači da će se odmah odraditi u runtimeu
                         dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
                         JToken zadatakZaBrisanje = null;
 
@@ -81,6 +79,7 @@ namespace ntp_projekt
                             }
                         }
 
+                        //zapravo obriše file i ponovno ga spremi pod tim imenom sa novim podacima
                         if (zadatakZaBrisanje != null)
                         {
                             jsonFile.Remove(zadatakZaBrisanje);
@@ -92,7 +91,6 @@ namespace ntp_projekt
                     }
                     else if (result == DialogResult.No)
                     {
-                        // Ako je korisnik pritisnuo Ne, jednostavno zatvori dijalog
                         dll_Form_Zadatak.Close();
                     }
                 }
@@ -122,7 +120,6 @@ namespace ntp_projekt
         private void BrisanjeZadatka_Load(object sender, EventArgs e)
         {
             PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
-
         }
 
         private void BrisanjeZadatka_Load_1(object sender, EventArgs e)

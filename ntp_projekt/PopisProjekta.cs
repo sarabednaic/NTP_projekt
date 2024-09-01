@@ -36,6 +36,7 @@ namespace ntp_projekt
             iniFile.UcitajDatoteku(@"..\..\postavke.ini");
             server = new tcpServer();
             
+            //pretraga projekata po nazivu preko servera
             client = new SimpleTcpClient("127.0.0.1:13001");
             client.Connect();
             client.Events.DataReceived += Events_DataReceived;
@@ -70,12 +71,12 @@ namespace ntp_projekt
 
         private void Events_Disconnected(object sender, ConnectionEventArgs e)
         {
-            MessageBox.Show("Client disconnected");
+            MessageBox.Show("Klijent nije povezan.");
         }
 
         private void Events_Connected(object sender, ConnectionEventArgs e)
         {
-            MessageBox.Show("Client connected");
+            MessageBox.Show("Klijent povezan.");
         }
 
         private void UrediZadatakNaslovLabel_Click(object sender, EventArgs e)

@@ -22,7 +22,6 @@ namespace ntp_projekt
             BrisanjeProjektaProfilLinkLabel.Text = Session.DohvatiPunoIme();
             BrisanjeProjektaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
         }
-      
 
         private void DodajProjektProfilPanel_Paint(object sender, PaintEventArgs e)
         {
@@ -53,7 +52,6 @@ namespace ntp_projekt
             StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
         }
 
-
         private void BrisanjeProjektaIzbrisiProjektButton_Click(object sender, EventArgs e)
         {
             XmlOperator obrisi = new XmlOperator();
@@ -74,17 +72,18 @@ namespace ntp_projekt
                             Projekt projekt = SessionProjekt.dohvatiTrenutniProjekt();
                             int projektID = Int32.Parse(projekt.Id);
 
-                            string[] queries = new string[]
+                            string[] upiti = new string[]
                             {
-                        "DELETE FROM clanovi_zadatka WHERE clanovi_zadatka.clan_projekta_ID IN (SELECT clanovi_projekta.ID  FROM clanovi_projekta WHERE clanovi_projekta.projekt_ID = ?);"
-                        ,"DELETE FROM clanovi_projekta WHERE projekt_ID = ?;",
-                        "DELETE FROM projekt WHERE ID = ?;"
+                                "DELETE FROM clanovi_zadatka WHERE clanovi_zadatka.clan_projekta_ID IN (SELECT clanovi_projekta.ID  FROM clanovi_projekta WHERE clanovi_projekta.projekt_ID = ?);"
+                                ,"DELETE FROM clanovi_projekta WHERE projekt_ID = ?;",
+                                "DELETE FROM projekt WHERE ID = ?;"
                             };
 
                             bool success = true;
-                            foreach (string query in queries)
+                            //provjera da li je svaki upit brisanja prosao
+                            foreach (string upit in upiti)
                             {
-                                int result = baza.BazaDelete(query, new OleDbParameter("@projekt_ID", projektID));
+                                int result = baza.BazaDelete(upit, new OleDbParameter("@projekt_ID", projektID));
                                 if (result == -1)
                                 {
                                     success = false;
@@ -93,15 +92,22 @@ namespace ntp_projekt
                             }
                             obrisi.XmlDelete(projekt.Id);
 
-                            if (success)
+                            obrisi.XmlDelete(projekt.Id);
+
+                            if (success==true)
                             {
+                                //maknuti session kada je sve potrebno obrisano
                                 SessionProjekt.CleanSession();
                                 StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
                             }
-                            else if(dijalogProjekt == DialogResult.No){
-                                dll_Form_Projekt.Close();
-                            }
+
                         }
+
+                        else if (dijalogProjekt == DialogResult.No)
+                        {
+                            dll_Form_Projekt.Close();
+                        }
+
                         else
                         {
                             MessageBox.Show("Došlo je do greške prilikom brisanja projekta. Molimo pokušajte ponovno.");
@@ -117,8 +123,7 @@ namespace ntp_projekt
             {
                 MessageBox.Show("Polja ne smiju biti prazna!");
             }
-            
-            
+
         }
     }
 }

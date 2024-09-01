@@ -205,10 +205,8 @@ namespace ntp_projekt
                 {
                     string selectedFilePath = openFileDialog.FileName;
 
-                    // Display the selected file path (optional)
                     MessageBox.Show($"Selected file: {selectedFilePath}");
 
-                    // Insert the image into the database
                     baza.BazaSetImage($"UPDATE korisnik SET profilna = ? WHERE korisnicko_ime = \"{user}\";", selectedFilePath);
                 }
             }
