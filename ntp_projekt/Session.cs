@@ -13,19 +13,18 @@ namespace ntp_projekt
 {
     public static class Session
     {
-        
         static Baza baza = new Baza(@"..\..\TeamPlan.mdb");
 
         public static void PostaviPodatke(string _username, Baza baza)
         {
-            string query = $"SELECT ID,ime,prezime,korisnicko_ime,lozinka FROM korisnik WHERE korisnicko_ime = \"{_username}\";";
+            string upit = $"SELECT ID,ime,prezime,korisnicko_ime,lozinka FROM korisnik WHERE korisnicko_ime = \"{_username}\";";
             RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\NTP_Projekt\TrenutniKorisnik");
             using (OleDbConnection connection = new OleDbConnection(baza.ConnectionString))
             {
                 try
                 {
                     connection.Open();
-                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    using (OleDbCommand command = new OleDbCommand(upit, connection))
                     {
                         using (OleDbDataReader reader = command.ExecuteReader())
                         {
@@ -63,7 +62,7 @@ namespace ntp_projekt
             } catch (Exception ex)
             {
                 key.Close();
-                MessageBox.Show("Greška pri dohvatu korisnika: " + ex.Message);
+                MessageBox.Show("Greška pri dohvaćanju korisnika: " + ex.Message);
                 return null;
             }
         }
@@ -80,7 +79,7 @@ namespace ntp_projekt
             catch (Exception ex)
             {
                 key.Close();
-                MessageBox.Show("Greška pri dohvatu korisnika: " + ex.Message);
+                MessageBox.Show("Greška pri dohvaćanju korisnika: " + ex.Message);
                 return null;
             }
         }
@@ -96,7 +95,7 @@ namespace ntp_projekt
             } catch (Exception ex) 
             {
 
-                MessageBox.Show("Greška pri dohvatu punog imena: " + ex.Message);
+                MessageBox.Show("Greška pri dohvaćanju imena korisnika: " + ex.Message);
                 return null;
             }
         }
@@ -110,7 +109,7 @@ namespace ntp_projekt
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Greška pri dohvatu profilne slike: " + ex.Message);
+                MessageBox.Show("Greška pri dohvaćanju profilne slike: " + ex.Message);
                 return Image.FromFile(@"..\..\Images\profilna.jpg");
             }
         }
@@ -140,9 +139,9 @@ namespace ntp_projekt
 
                 };
 
-                foreach (string query in queries)
+                foreach (string upit in queries)
                 {
-                    int result = baza.BazaDelete(query, new OleDbParameter("?", korisnikID));
+                    int result = baza.BazaDelete(upit, new OleDbParameter("?", korisnikID));
                     if (result == -1)
                     {
                         MessageBox.Show("Greška pri deaktivaciji računa." );

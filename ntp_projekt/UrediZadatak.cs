@@ -163,7 +163,6 @@ namespace ntp_projekt
 
             SessionZadatak.ZadatakaInfoById(SessionZadatak.Id);
 
-
             List<string> clanovi = baza.ListaBazaRead("SELECT korisnik.ime & ' ' & korisnik.prezime AS ImePrezime " +
                 "FROM ((korisnik INNER JOIN clanovi_projekta ON korisnik.ID = clanovi_projekta.korisnik_ID) " +
                 "INNER JOIN clanovi_zadatka ON clanovi_projekta.ID = clanovi_zadatka.clan_projekta_ID) " +

@@ -10,7 +10,6 @@ namespace ntp_projekt
         private string prezime;
         private string korisnicko_ime;
         private string lozinka;
-        
 
  
         public Korisnik(string _ime, string _prezime, string _korisnicko_ime, string _lozinka)
@@ -21,8 +20,6 @@ namespace ntp_projekt
             lozinka = _lozinka;
             
         }
-
-        
 
         public Korisnik(){
             
@@ -71,8 +68,6 @@ namespace ntp_projekt
                 lozinka = value; 
             }
         }
-
-        
 
     }
 }

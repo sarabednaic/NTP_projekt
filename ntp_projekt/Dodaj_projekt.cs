@@ -73,7 +73,7 @@ namespace ntp_projekt
 
                 // Check if project already exists
                 string provjeraQuery = "SELECT COUNT(*) FROM projekt WHERE naziv = ?";
-                int projectCount = Convert.ToInt32(baza.BazaReadWithParams(provjeraQuery, new OleDbParameter("@naziv", projektNaziv)));
+                int projectCount = Convert.ToInt32(baza.BazaReadParametar(provjeraQuery, new OleDbParameter("@naziv", projektNaziv)));
 
                 if (projectCount > 0)
                 {
@@ -83,7 +83,7 @@ namespace ntp_projekt
 
                 // Insert new project
                 string insertProjectQuery = "INSERT INTO projekt (naziv, opis) VALUES (?, ?)";
-                int projectId = baza.BazaWriteWithParams(insertProjectQuery,
+                int projectId = baza.BazaWriteParametar(insertProjectQuery,
                     new OleDbParameter("@naziv", projektNaziv),
                     new OleDbParameter("@opis", projektOpis));
 
@@ -113,7 +113,7 @@ namespace ntp_projekt
                         bool isAdmin = DodajProjektOvlastiListBox.Items.Contains(punoIme);
 
                         string insertMemberQuery = "INSERT INTO clanovi_projekta (korisnik_ID, projekt_ID, admin) VALUES (?, ?, ?)";
-                        int result = baza.BazaWriteWithParams(insertMemberQuery,
+                        int result = baza.BazaWriteParametar(insertMemberQuery,
                             new OleDbParameter("@korisnik_ID", korisnikId),
                             new OleDbParameter("@projekt_ID", projectId),
                             new OleDbParameter("@admin", isAdmin));

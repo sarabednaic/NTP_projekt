@@ -36,10 +36,10 @@ namespace ntp_projekt
 
             int projektID = Int32.Parse(trenutniprojekt.Id);
 
-            
+
             //Dohvaca registrirane korisnike
             List<string> registriraniKorisnici = baza.ListaBazaRead(korisniciQuery);
-            
+
             //Dohvaca calnove koji rade na projektu
             List<string> clanoviProjekta = baza.ListaBazaReadWithParams(clanoviQuery, new OleDbParameter("@projekt_ID", projektID));
 
@@ -53,7 +53,7 @@ namespace ntp_projekt
                 int korisnikId = int.Parse(clanoviProjekta[i]);
                 bool isAdmin = bool.Parse(clanoviProjekta[i + 1]);
 
-                
+
                 for (int j = 0; j < registriraniKorisnici.Count; j += 3)
                 {
                     if (int.Parse(registriraniKorisnici[j]) == korisnikId)
@@ -69,7 +69,7 @@ namespace ntp_projekt
                             admini.Add(punoIme);
                         }
 
-                        break; 
+                        break;
                     }
                 }
             }
@@ -101,13 +101,14 @@ namespace ntp_projekt
         }
 
 
-        
+
 
         private void UrediProjektButton_Click(object sender, EventArgs e)
         {
 
             int projektID = Int32.Parse(trenutniprojekt.Id);
-            if (UrediProjektNazivTextBox.Text != ""){
+            if (UrediProjektNazivTextBox.Text != "")
+            {
                 string projektNaziv = UrediProjektNazivTextBox.Text;
 
                 string Query = "UPDATE projekt SET naziv = ? WHERE ID = ?";
@@ -115,8 +116,9 @@ namespace ntp_projekt
                     new OleDbParameter("@naziv", projektNaziv),
                     new OleDbParameter("@id", projektID));
             }
-            
-            if (UrediProjektOpisRichTextBox.Text != "") {
+
+            if (UrediProjektOpisRichTextBox.Text != "")
+            {
                 string projektOpis = UrediProjektOpisRichTextBox.Text;
 
                 string Query = "UPDATE projekt SET opis = ? WHERE ID = ?";
@@ -141,24 +143,25 @@ namespace ntp_projekt
                         ,"DELETE FROM clanovi_projekta WHERE korisnik_ID = ? AND projekt_ID = ?;"
                             };
 
-                    
+
                     foreach (string query in queries)
                     {
                         int result = baza.BazaDelete(query, new OleDbParameter("@korisnik_ID", id), new OleDbParameter("@projekt_ID", trenutniProjektID));
                         if (result == -1)
-                        { 
+                        {
                             break;
                         }
                     }
                 };
             }
 
-            
 
 
-            if (UrediProjektStatusComboBox.SelectedItem != null) {
+
+            if (UrediProjektStatusComboBox.SelectedItem != null)
+            {
                 XmlOperator xmlOperator = new XmlOperator();
-                xmlOperator.XmlEdit(trenutniprojekt.Id , UrediProjektStatusComboBox.Text);
+                xmlOperator.XmlEdit(trenutniprojekt.Id, UrediProjektStatusComboBox.Text);
             }
             SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
@@ -182,10 +185,10 @@ namespace ntp_projekt
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
-        
 
-        
 
-        
+
+
+
     }
 }

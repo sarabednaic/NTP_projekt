@@ -13,14 +13,14 @@ namespace dinamicLib
 
         private void buttonZadatakDa_Click(object sender, EventArgs e)
         {
-            // Postavi rezultat na Yes i zatvori dijalog
+            // postavi rezultat trenutne instance(this) na Yes i zatvori dijalog
             this.DialogResult = DialogResult.Yes;
             this.Close();
         }
 
         private void buttonZadatakNe_Click(object sender, EventArgs e)
         {
-            // Postavi rezultat na No i zatvori dijalog
+            // postavi rezultat trenutne instance(this) na No i zatvori dijalog
             this.DialogResult = DialogResult.No;
             this.Close();
         }

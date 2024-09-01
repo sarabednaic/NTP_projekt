@@ -11,23 +11,19 @@ namespace ntp_projekt
     {
         private static Mutex mutex = null;
 
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // Unique identifier for your application to prevent multiple instances
+            //mutex
             const string mutexProjekt = "ntp_projekt_Mutex";
-
-            // Create a new Mutex, and check if another instance is already running
             bool novaApp;
 
+            //omogućuje samo jednoj dretvi(threadu) da pristupi kodu
+            //true -> daje ownership prvo pokrenutoj aplikaciji jer vidi pa postoji ime 
             mutex = new Mutex(true, mutexProjekt, out novaApp);
 
             if (!novaApp)
             {
-                // If another instance is running, show a message and exit
                 MessageBox.Show("Aplikacija je već pokrenuta.", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -37,7 +33,7 @@ namespace ntp_projekt
 
             new StartApk();
 
-            // Release the mutex when the application closes
+            //briše mutex kada se aplikacija ugasi
             GC.KeepAlive(mutex);
         }
     }

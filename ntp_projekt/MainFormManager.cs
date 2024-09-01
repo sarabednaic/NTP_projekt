@@ -10,8 +10,9 @@ namespace ntp_projekt
 {
     public class MainFormManager : ApplicationContext 
     {
-        protected bool Exitapk;
+        protected bool ExitApk;
 
+        //zatvaranje forme pa zatim aplikacije
         public Form TrenutnaForma 
         {
             get 
@@ -23,9 +24,9 @@ namespace ntp_projekt
             {
                 if (MainForm != null)
                 {
-                    Exitapk = false;
+                    ExitApk = false;
                     MainForm.Close();
-                    Exitapk = true;
+                    ExitApk = true;
                 }
                 MainForm = value;
                 MainForm.Show();
@@ -34,11 +35,12 @@ namespace ntp_projekt
 
         public MainFormManager()
         {
-            Exitapk = true;
+            ExitApk = true;
         }
+
         protected override void OnMainFormClosed(Object sender, EventArgs e)
         {
-            if (Exitapk) 
+            if (ExitApk==true) 
             {
                 if (PopisProjekta.server.Server.IsListening) { PopisProjekta.server.Server.Stop(); }
                 PopisZadataka.server.StopListening();

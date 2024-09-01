@@ -11,12 +11,15 @@ namespace ntp_projekt
 {
     public class StartApk
     {
+        //služi za incijalizaciju glavne forme koja se prva treba prikazati i skriva i pokazuje druge potrebne forme
         private static MainFormManager mainFormManager;
+
         public static MainFormManager MainFormManager 
         {
             get { return mainFormManager; }
         }
 
+        //ucitavanje glavnih postavki aplikacije
         public StartApk() {
             Ini iniFile;
             iniFile = new Ini();
@@ -36,6 +39,8 @@ namespace ntp_projekt
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("hr");
             }
 
+            //kod prijavljenog korisnika automatski se otvori Popis projekata
+            //ako ne postoji prijavljeni korisnik tada nas prebacuje na Prijavu
             RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\NTP_Projekt\TrenutniKorisnik");
             if (key != null && key.GetValueNames().Length != 0)
             {

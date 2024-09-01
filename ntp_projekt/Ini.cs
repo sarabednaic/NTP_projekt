@@ -4,9 +4,10 @@ using System.IO;
 
 public class Ini
 {
+    //Prva osoba => [Ime][Sara], [Prezime][Bednaić];
     private Dictionary<string, Dictionary<string, string>> podaci = new Dictionary<string, Dictionary<string, string>>(StringComparer.InvariantCultureIgnoreCase);
 
-    // Učitavanje INI datoteke
+    //ucita datoteku sa konkretne lokacije
     public void UcitajDatoteku(string lokacijaDatoteke)
     {
         if (!File.Exists(lokacijaDatoteke))
@@ -38,7 +39,7 @@ public class Ini
         }
     }
 
-    // Spremanje podataka u INI datoteku
+    //sprema datoteku sa promjenama na lokaciju
     public void SpremiDatoteku(string lokacijaDatoteke)
     {
         List<string> linije = new List<string>();
@@ -56,7 +57,7 @@ public class Ini
         File.WriteAllLines(lokacijaDatoteke, linije);
     }
 
-    // Metoda za zapisivanje vrijednosti u INI datoteku
+    //postavljanje vrijednosti(POTREBNO POSEBNO SPREMITI DATOTEKU!)
     public void PostaviVrijednost(string sekcija, string kljuc, string vrijednost)
     {
         if (!podaci.ContainsKey(sekcija))
@@ -67,7 +68,7 @@ public class Ini
         podaci[sekcija][kljuc] = vrijednost;
     }
 
-    // Metoda za dobivanje vrijednosti iz INI datoteke
+    //čitanje iz datoteke(sekcija, kljuc, ako nije postavljeno onda je ovo default vrijednost)
     public string DohvatiVrijednost(string sekcija, string kljuc, string defaultVrijednost)
     {
         if (podaci.ContainsKey(sekcija) && podaci[sekcija].ContainsKey(kljuc))
