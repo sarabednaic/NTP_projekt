@@ -188,6 +188,12 @@ namespace ntp_projekt
                     PopisProjektaProjektiFlowLayoutPanel.Refresh();
                 });
             }
-        }   
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {   
+            Form forma = new HTTPDownload();
+            forma.Show();
+        }
     }
 }

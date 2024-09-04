@@ -94,15 +94,5 @@ namespace ntp_projekt
 
         }
 
-        public override bool Equals(object obj)
-        {
-            return obj is PopisProjektaControl control &&
-                   id == control.id &&
-                   naslov == control.naslov &&
-                   opis == control.opis &&
-                   Id == control.Id &&
-                   Naslov == control.Naslov &&
-                   Opis == control.Opis;
-        }
     }
 }
