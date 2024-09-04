@@ -88,7 +88,7 @@ namespace ntp_projekt
 
         private void PopisZadatakaAddButton_Click(object sender, EventArgs e)
         {
-            server.StopListening();
+            server.ZaustaviServer();
             server.Dispose();
             
             StartApk.MainFormManager.TrenutnaForma = new DodajZadatak();
@@ -96,7 +96,7 @@ namespace ntp_projekt
 
         private void PopisZadatakaProfilPictureBox_Click(object sender, EventArgs e)
         {
-            server.StopListening();
+            server.ZaustaviServer();
             server.Dispose();
             SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
@@ -104,7 +104,7 @@ namespace ntp_projekt
 
         private void PopisZadatakaProfilLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            server.StopListening();
+            server.ZaustaviServer();
             server.Dispose();
             SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
@@ -112,7 +112,7 @@ namespace ntp_projekt
 
         private void PopisZadatakaNatragButton_Click(object sender, EventArgs e)
         {
-            server.StopListening();
+            server.ZaustaviServer();
             server.Dispose();
             SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
@@ -137,8 +137,9 @@ namespace ntp_projekt
             }
             PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
 
+            //Kreira instancu servera i zapoćinje slušanje na predodređenom portu
             server = new udpServer();
-            Task.Run(() => server.StartListeningAsync());
+            Task.Run(() => server.ZapocniServerAsinkrono());
         }
 
         private void PopisZadatakaImeProjektaLabel_Click(object sender, EventArgs e)
@@ -150,14 +151,16 @@ namespace ntp_projekt
         {
             try
             {
+                //Gleda da li je upisan tekst u search area
                 if (string.IsNullOrEmpty(PopisZadatakaSearchRichTextBox.Text))
                 {
-                    server.StopListening();
+                    server.ZaustaviServer();
                     server.Dispose();
                     StartApk.MainFormManager.TrenutnaForma = new PopisZadataka();
                     return;
                 }
 
+                //Uspostavlja novi UDP klijent te šalje i stvara zahtjev
                 using (var client = new UdpClient())
                 {
                     var serverEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 11000);
@@ -169,27 +172,31 @@ namespace ntp_projekt
                     var receiveResult = await client.ReceiveAsync();
                     var responseData = receiveResult.Buffer;
 
-                    var polje = ListToBytes.ConvertByteToList(responseData);
+                    var polje = ListToBytes.pretvoriByteToList(responseData);
                     if (polje != null && polje.Count > 0)
                     {
-                        await UpdateUIWithResults(polje);
+                        await PopisZadatakaOsvježiFlowLayout(polje);
                     }
                     else
                     {
-                        MessageBox.Show("Nema rezultata UDP klijenta.");
+                        MessageBox.Show("Nema rezultat ili je došlo do pogreške");
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Problem pri povezivanju UDP klijenta sa UDP serverom: {ex.Message}");
+                //Baca error ako nema rezultata u bazi ili na listi
+                MessageBox.Show($"Problem pri povezivanju UDP klijenta sa UDP serverom.: {ex.Message}");
             }
         }
 
-        private async Task UpdateUIWithResults(List<List<string>> polje)
+        //Postavlja novi sadržaj u Flow layout palen
+        private async Task PopisZadatakaOsvježiFlowLayout(List<List<string>> polje)
         {
+            //Izvršava zadatak koji je postavljen na Threadpool 
             await Task.Run(() =>
             {
+
                 this.Invoke((MethodInvoker)delegate
                 {
                     var receivedProjectIds = new HashSet<string>(polje.Select(row => row[1]));

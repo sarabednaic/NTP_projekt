@@ -13,7 +13,7 @@ namespace UDPServer
     {
         private const int PORT = 11000;
         private UdpClient server;
-        public static bool isListening = false;
+        public static bool aktivan = false;
         private readonly string connectionString = @"Provider=Microsoft.ACE.OLEDB.16.0;Data Source= ..\..\TeamPlan.mdb;";
 
         public udpServer()
@@ -21,37 +21,39 @@ namespace UDPServer
             server = new UdpClient(PORT);
         }
 
-        public async Task StartListeningAsync()
+        //Započinje UDP server i čeka zahtjeve na zadanom portu
+        public async Task ZapocniServerAsinkrono()
         {
-            isListening = true;
-            while (isListening)
+            aktivan = true;
+            while (aktivan)
             {
                 try
                 {
-                    var result = await server.ReceiveAsync();
-                    var zahtjev = Encoding.UTF8.GetString(result.Buffer);
-                    var results = await ExecuteQueryAsync(zahtjev);
+                    var tok = await server.ReceiveAsync();
+                    var zahtjev = Encoding.UTF8.GetString(tok.Buffer);
+                    var rezultati = await IzvrsiQueryAsinkrono(zahtjev);
 
                     byte[] odgovor;
-                    if (results.Count > 0)
+                    if (rezultati.Count > 0)
                     {
-                        odgovor = ListToBytes.ConvertListToByte(results);
+                        odgovor = ListToBytes.pretvoriListToByte(rezultati);
                     }
                     else
                     {
-                        odgovor = Encoding.UTF8.GetBytes("No results found");
+                        odgovor = Encoding.UTF8.GetBytes("Nema toka zahtjeva");
                     }
 
-                    await server.SendAsync(odgovor, odgovor.Length, result.RemoteEndPoint);
+                    await server.SendAsync(odgovor, odgovor.Length, tok.RemoteEndPoint);
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"Error in UDP server: {ex.Message}");
+                    Console.WriteLine($"Greška pri dohvaćanju zahtjeva u UDP serveru: {ex.Message}");
                 }
             }
         }
 
-        private async Task<List<List<string>>> ExecuteQueryAsync(string zahtjev)
+        //Metoda vraća rezultat pretrage baze ovisno o zahtjevu koji je poslan
+        private async Task<List<List<string>>> IzvrsiQueryAsinkrono(string zahtjev)
         {
             var query = "SELECT zadatak.ID, zadatak.naziv, zadatak.opis, zadatak.vrijeme_pocetak, zadatak.vrijeme_kraj FROM zadatak WHERE zadatak.naziv = @zahtjev";
             var results = new List<List<string>>();
@@ -80,11 +82,13 @@ namespace UDPServer
             return results;
         }
 
-        public void StopListening()
+        //Mijenja bool aktivnosti
+        public void ZaustaviServer()
         {
-            isListening = false;
+            aktivan = false;
         }
 
+        //Zatvara UDP vezu servera i oslobađa resurse koji su bili korišteni od servera
         public void Dispose()
         {
             server?.Close();

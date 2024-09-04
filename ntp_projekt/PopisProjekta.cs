@@ -129,35 +129,43 @@ namespace ntp_projekt
 
         private void PopisProjektaSearchButton_Click(object sender, EventArgs e)
         {
-            //pretraga TCP
+            //Provjerava da li je server aktivan i da li je klijent povezan
             if (server.Server.IsListening && client.IsConnected)
             {
+                //ako text box za pretraživanje nije prazan onda šalje string u text boxu
                 if (PopisProjektaSearchRichTextBox.Text != "")
                 {
                     client.Send(PopisProjektaSearchRichTextBox.Text);
                 }
                 else 
                 {
+                    //Zaustavlja server i odspaja klijenta
                     server.Server.Stop();
+                    client.Disconnect();
                     StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
                 }
             }
             
         }
 
+        //Odgovora na paket koji je klijent primo od servera
         private void Events_DataReceived(object sender, DataReceivedEventArgs e)
         {
             byte[] dataArray = e.Data.ToArray();
-            List<List<string>> polje = ListToBytes.ConvertByteToList(dataArray);
+            List<List<string>> polje = ListToBytes.pretvoriByteToList(dataArray);
 
             if (polje != null)
             {
+                // Koristimo Invoke kako bi osigurali da UI ažuriranje se dogodi na UI threadu
                 this.Invoke((MethodInvoker)delegate
                 {
+                    // Kreira HashSet IDa projekata od primljenog paketa za brži pregled
                     HashSet<string> receivedProjectIds = new HashSet<string>(polje.Select(row => row[0]));
 
+                    // Kreira listu Controla koje trebamo maknuti iz Flow Layout panela
                     List<Control> controlsToRemove = new List<Control>();
 
+                    // Pronalazi kontrole koje treba maknuti
                     foreach (Control control in PopisProjektaProjektiFlowLayoutPanel.Controls)
                     {
                         if (control is PopisProjektaControl ppc)
@@ -169,12 +177,14 @@ namespace ntp_projekt
                         }
                     }
 
+                    // Uklanja kontrole koje treba maknuti
                     foreach (Control control in controlsToRemove)
                     {
                         PopisProjektaProjektiFlowLayoutPanel.Controls.Remove(control);
-                        control.Dispose(); 
+                        control.Dispose(); // Oslobađa resurse
                     }
 
+                    // Osvježava prikaz Flow Layout Panela
                     PopisProjektaProjektiFlowLayoutPanel.Refresh();
                 });
             }

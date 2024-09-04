@@ -90,6 +90,7 @@ namespace ntp_projekt
                                     break;
                                 }
                             }
+                            obrisi.XmlDelete(projekt.Id);
 
                             obrisi.XmlDelete(projekt.Id);
 

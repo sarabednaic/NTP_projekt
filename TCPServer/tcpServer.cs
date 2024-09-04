@@ -24,13 +24,15 @@ namespace TCPServer
         }
 
         
-
+        //Odgovoran na zahtjev
         private void Events_DataReceived(object sender, DataReceivedEventArgs poljeBitova)
         {
+            //Dojvaca tok bajtova i pretvara ih u string
             byte[] zahtjev = poljeBitova.Data.ToArray();
             message = Encoding.UTF8.GetString(zahtjev);
             byte[] odgovor;
 
+            //string message uzima kao uvijek za query kojim pretrazuje bazu i vraća odgovor na query
             string query = $"SELECT projekt.ID , projekt.naziv, projekt.opis FROM projekt WHERE projekt.naziv = \"{message}\"";
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
@@ -50,7 +52,7 @@ namespace TCPServer
                             }
                             results.Add(row);
                         }
-                        odgovor = ListToBytes.ConvertListToByte(results).ToArray();
+                        odgovor = ListToBytes.pretvoriListToByte(results).ToArray();
                     }
                     else 
                     {
@@ -59,7 +61,7 @@ namespace TCPServer
                     
                 }
             }
-            
+            //Šalje odgovor klijentu na zahtjev gdje poljeBitova.IpPort predstavlja drugaciji port nego port koji smo postavili za server
             server.Send(poljeBitova.IpPort , odgovor);
         }
 

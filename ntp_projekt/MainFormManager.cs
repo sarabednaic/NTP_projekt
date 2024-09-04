@@ -44,8 +44,8 @@ namespace ntp_projekt
             if (ExitApk==true) 
             {
                 if (PopisProjekta.server.Server.IsListening) { PopisProjekta.server.Server.Stop(); }
-                if (udpServer.isListening) {
-                    PopisZadataka.server.StopListening();
+                if (udpServer.aktivan) {
+                    PopisZadataka.server.ZaustaviServer();
                     PopisZadataka.server.Dispose();
                 }
                 
