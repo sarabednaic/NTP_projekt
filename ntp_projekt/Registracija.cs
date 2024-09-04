@@ -34,7 +34,7 @@ namespace ntp_projekt
             {
                 try
                 {
-                    // Pozivanje SOAP servisa za pretvaranje korisničkog imena u mala slova
+                    //pozivanje SOAP servisa za pretvaranje korisničkog imena u mala slova
                     ntp_projekt.soap.TextCasingSoapTypeClient soapClient = new ntp_projekt.soap.TextCasingSoapTypeClient("TextCasingSoap");
                     string korisnickoIme = soapClient.LowercaseWordsWithToken(RegistracijaKorisnickoTextBox.Text,"");
 
@@ -45,7 +45,6 @@ namespace ntp_projekt
                         RegistracijaLozinkaTextBox.Text
                     );
 
-                    // Provera da li lozinke odgovaraju
                     if (noviKorisnik.Lozinka != RegistracijaPonovnoLozinkaTextBox.Text)
                     {
                         MessageBox.Show("Lozinke se ne podudaraju.");

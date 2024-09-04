@@ -54,10 +54,10 @@ namespace ntp_projekt
             string format = "OdjavaFormat";
             string verzija = "1.0";
 
-            // Pisanje u binarnu datoteku
+            //pisanje
             using (BinaryWriter writer = new BinaryWriter(File.Open(binarnaDatoteka, FileMode.Append)))
             {
-                // Ako je datoteka prazna (ili nova), upisujemo zaglavlje
+                //pisanje zaglavlja ako je datoteka nova
                 if (new FileInfo(binarnaDatoteka).Length == 0)
                 {
                     writer.Write(format);
@@ -65,31 +65,40 @@ namespace ntp_projekt
                 }
 
                 DateTime vrijemeOdjave = DateTime.Now;
-                writer.Write(Session.DohvatiPunoIme());
-                writer.Write(vrijemeOdjave.ToString("HH:mm"));
+                string punoIme = Session.DohvatiPunoIme();
+                string datumOdjave = vrijemeOdjave.ToString("dd.MM.yyyy.");
+                string vrijemeOdjaveFormatirano = vrijemeOdjave.ToString("HH:mm");
+
+                writer.Write(punoIme);
+                writer.Write(datumOdjave);
+                writer.Write(vrijemeOdjaveFormatirano); 
             }
 
-            // Čitanje iz binarne datoteke
+            //čitanje
             using (BinaryReader reader = new BinaryReader(File.Open(binarnaDatoteka, FileMode.Open)))
             {
-                // Čitanje zaglavlja
                 string readFormatName = reader.ReadString();
                 string readFormatVersion = reader.ReadString();
+                string punoIme = null;
+                string datumOdjave = null;
+                string vrijemeOdjave = null;
 
                 while (reader.BaseStream.Position != reader.BaseStream.Length)
                 {
-                    string punoime = reader.ReadString();
-                    string vrijemeOdjave = reader.ReadString();
-
-                    string poruka = $"{punoime} odjavljen u {vrijemeOdjave}";
-                    MessageBox.Show(poruka, "Odjava", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    punoIme = reader.ReadString();
+                    datumOdjave = reader.ReadString(); 
+                    vrijemeOdjave = reader.ReadString(); 
                 }
+
+                string poruka = $"{punoIme} odjavljen {datumOdjave} u {vrijemeOdjave}";
+                MessageBox.Show(poruka, "Odjava", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            // Očistimo sesiju i vratimo se na početnu formu za prijavu
+            //maknuemo sesiju korisnika
             Session.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new Prijava();
         }
+
 
 
         private void PostavkeDeaktivacijaLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

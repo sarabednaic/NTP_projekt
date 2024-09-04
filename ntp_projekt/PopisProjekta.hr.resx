@@ -118,6 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PopisProjektaNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>709, 133</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PopisProjektaNaslovLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="PopisProjektaNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>473, 81</value>
+  </data>
+  <data name="PopisProjektaNaslovLabel.Text" xml:space="preserve">
+    <value>Popis projekata</value>
+  </data>
   <data name="PopisProjektaAddButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -178,31 +191,23 @@
         +V+9b6XGt2ofXQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="PopisProjektaSortButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEYAAAAxCAYAAABnCd/9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAABKBJREFUaEPtmksodV8UwC/CCAMG3u8kecUEkRkSkjCSkTynjMhblEykvAoZGhiI
-        8kwiE5GSt0KSPPLIq7z219r/ffb/bPfs42CfW27nV6vvO2uffTvrd/ddZ99zmZCBIoYYDoYYDoYYDoYY
-        DoYYDoYYDrqJGRsbQ87OzigoKAidnJyQ7NccHR2hsLAw5Orqirq7u0nW8ugmJjQ0FJlMJhzV1dUkqw5I
-        8fb2pvMgenp6yKhl0UXM+vo6U5yPjw96enoio8rs7+8jf39/Zp4U/f395CzLoYuYsrIys+KmpqbIqDkH
-        BwdcKRB2dnYWXznCxby9vSFPT0+z4goLC8kZLGorRR4gZ2hoiMzSH+FiRkdHFQtzdHRENzc35Kz/ODw8
-        RAEBAcx5ERER9P8hISG4gUvHllw5wsWkpKTQQhISEpC9vT09HhwcJGcpN9ra2lrcT6Tj1NRUtLGxYSbH
-        Ej1HqJjr62tka2tLixgeHkalpaX0ODo6mpyJUHZ2Ns1DNDU14bxcTFpaGs6BHBcXF5p3cnJCp6eneEwv
-        hIppaWmhF+/u7o5zMzMzNAext7eH8/n5+TQnSQGUxAArKyt05Xh5eaHLy0syog9CxcTGxtKiYB/T0dGB
-        Wltb8Tss5WtqavC5V1dXeH8zMDCAjyV4YoCdnR1UWVmJVldXSUY/hIlZW1ujBamFm5sbvnPxUBNjSYSJ
-        Udq78GJ2dpbMMseqxNze3uLvRFJBSUlJKDMzE2VkZNCQ722g8fJQE/P4+Ijm5ubwv3ojRMzIyAgtBuL4
-        +JiM/I+8YOg59/f3ZIRFTUxUVBTOR0ZGcueLQoiYtrY2bjES8C7L9yO7u7tkhIUn5u7ujuYhNjc3yYg+
-        CBEDKyQuLg6/k7yCgc7OTny3KioqIhlztIqBvY2eCGu+ojDEcDDEcLAqMfAtOTExEW/Vvwp4aFVSUkJm
-        miP/dp6bm0uyf1RMc3Mzc9FaYmtri8xmgV1xe3s7lgfCJf6kmMnJSfw4QH7hauHr64teX1/JbG382R4D
-        jwGWl5fNYmlpCd/K5UUtLCyQWdqxuubb2NjIFFRfX09GvodViYGVYWNjQ4uJj48nI9/HasTAo0voJVIh
-        Hh4eTDNVo6urCz/mvLi4IBl1MQ8PD6ihoQH19fWRzO/RTUxycjItAlbN9PQ0GVFnfHyczgsPD6dyeGLg
-        m738AZkoObqIgXdPXkRdXR0Z+ZqJiQlmbmBgIDo/P1cU8/z8jGJiYph8b28veaXfIVwM3IXkF5qeno7e
-        39/JqDbg8aX8NUAO/Cgnzy0uLppJycvLw7JEIFTM2dkZ01f8/PyYPvEdKioqmKKDg4OZY3ht+bF8lywC
-        YWJeXl6Y35TgZ5T5+Xky+jPKy8uZ4nlRUFCAPj4+yCwxCBMDfUR+sVlZWfhjpRTQMLVSVVXFvO7ngI+P
-        HggRAysDfoJVunClgJ4Bt1gtwEr4/LGSAqR89VcUP0WImJ98idze3iaztfFZDvyRgF5SACFi4HEmNEfY
-        r2iJnJwcMlM7sHLgY+Xg4ICKi4t1lQII6zEAXLyW+A2/na8VoWKsCUMMB0MMB0MMB0MMB0OMIgj9AxFU
-        HjepTS6CAAAAAElFTkSuQmCC
-</value>
+  <data name="PopisProjektaAddButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1346, 875</value>
+  </data>
+  <data name="PopisProjektaAddButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="PopisProjektaAddButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 60</value>
+  </data>
+  <data name="PopisProjektaSearchRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>746, 242</value>
+  </data>
+  <data name="PopisProjektaSearchRichTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="PopisProjektaSearchRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 33</value>
   </data>
   <data name="PopisProjektaSearchButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -226,6 +231,21 @@
         WuIPy8am7sVv75+zkh2VfwJOJYlPqW+VPqY7YGznlXqyN7FcoUpz6hxVpZ1w9Xkaz7Yp5QmErigUTRuz
         4fIGYusQK8H6e2+/mf8NsDRmsCmn5HK58j0SK6iggu5QVfUdosjINiGFHhIAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="PopisProjektaSearchButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1116, 234</value>
+  </data>
+  <data name="PopisProjektaSearchButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="PopisProjektaSearchButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 49</value>
+  </data>
+  <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>808, 0</value>
+  </data>
+  <data name="PanelLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 85</value>
   </data>
   <data name="PopisProjektaProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1254,8 +1274,46 @@
         ABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 </value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PopisProjektaProjektiFlowLayoutPanel.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="PopisProjektaProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1822, 12</value>
+  </data>
+  <data name="PopisProjektaProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 65</value>
+  </data>
+  <data name="PopisProjektaProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1650, 31</value>
+  </data>
+  <data name="PopisProjektaProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 29</value>
+  </data>
+  <data name="PopisProjektaPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="PopisProjektaPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1920, 89</value>
+  </data>
+  <data name="PopisProjektaProjektiFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 332</value>
+  </data>
+  <data name="PopisProjektaProjektiFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="PopisProjektaProjektiFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1036, 474</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1894, 1015</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1916, 1071</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1080, 808</value>
   </data>
 </root>
