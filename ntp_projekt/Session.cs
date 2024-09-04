@@ -101,7 +101,7 @@ namespace ntp_projekt
         }
 
         public static Image DohvatiProfilnuSliku() {
-            try
+            try 
             {
                 string User = Session.DohvatiKorisnika();
                 Image profilna = baza.BazaGetImage($"SELECT profilna FROM korisnik WHERE korisnicko_ime = \"{User}\";");
