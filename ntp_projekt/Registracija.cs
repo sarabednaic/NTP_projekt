@@ -28,7 +28,7 @@ namespace ntp_projekt
         }
 
 
-        private async void RegistracijaButton_Click(object sender, EventArgs e)
+        private void RegistracijaButton_Click(object sender, EventArgs e)
         {
             if (RegistracijaImeTextBox.Text != "" && RegistracijaPrezimeTextBox.Text != "" &&
                 RegistracijaKorisnickoTextBox.Text != "" && RegistracijaLozinkaTextBox.Text != "")

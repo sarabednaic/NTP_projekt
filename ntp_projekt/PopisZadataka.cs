@@ -27,7 +27,6 @@ namespace ntp_projekt
     {
         Baza baza;
         public static udpServer server;
-        UdpClient klient;
         public static IPEndPoint remoteEndPoint = new IPEndPoint(IPAddress.Any, 0);
         public PopisZadataka()
         {
@@ -37,7 +36,7 @@ namespace ntp_projekt
             
 
             baza = new Baza(@"..\..\TeamPlan.mdb");
-            string statusZadatka = @"..\..\statusZadatka.json";
+            
             string User = Session.DohvatiKorisnika();
             List<List<string>> polje = baza.NaprednaBazaRead($"SELECT korisnik.ID , zadatak.ID , zadatak.naziv," +
                 $" zadatak.opis , zadatak.vrijeme_pocetak , zadatak.vrijeme_kraj , clanovi_projekta.projekt_ID FROM (((korisnik " +
