@@ -210,6 +210,9 @@
     <EmbeddedResource Include="Dodaj_zadatak.en.resx">
       <DependentUpon>Dodaj_zadatak.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PopisDokumentacije.en-AS.resx">
+      <DependentUpon>PopisDokumentacije.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PopisDokumentacije.en.resx">
       <DependentUpon>PopisDokumentacije.cs</DependentUpon>
     </EmbeddedResource>
@@ -291,6 +294,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UrediProjekt.en.resx">
       <DependentUpon>UrediProjekt.cs</DependentUpon>
@@ -365,6 +369,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\download.png" />
+    <None Include="Resources\d.png" />
     <Content Include="TeamPlan.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

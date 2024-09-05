@@ -145,6 +145,7 @@
             // PopisDokumentacijeReportButton
             // 
             resources.ApplyResources(this.PopisDokumentacijeReportButton, "PopisDokumentacijeReportButton");
+            this.PopisDokumentacijeReportButton.BackgroundImage = global::ntp_projekt.Properties.Resources.d;
             this.PopisDokumentacijeReportButton.Name = "PopisDokumentacijeReportButton";
             this.PopisDokumentacijeReportButton.UseVisualStyleBackColor = true;
             this.PopisDokumentacijeReportButton.Click += new System.EventHandler(this.PopisDokumentacijeReportButton_Click);
