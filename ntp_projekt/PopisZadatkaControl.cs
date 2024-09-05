@@ -37,18 +37,24 @@ namespace ntp_projekt
 
         private void PZControlDeleteButton_Click(object sender, EventArgs e)
         {
+            PopisZadataka.server.ZaustaviServer();
+            PopisZadataka.server.Dispose();
             SessionZadatak.ZadatakaInfo(Naslov, Opis);
             StartApk.MainFormManager.TrenutnaForma = new BrisanjeZadatka();
         }
 
         private void PZControlEditButton_Click(object sender, EventArgs e)
         {
+            PopisZadataka.server.ZaustaviServer();
+            PopisZadataka.server.Dispose();
             SessionZadatak.ZadatakaInfo(Naslov, Opis);
             StartApk.MainFormManager.TrenutnaForma = new UrediZadatak();
         }
 
         private void PZControlZadatakButton_Click(object sender, EventArgs e)
         {
+            PopisZadataka.server.ZaustaviServer();
+            PopisZadataka.server.Dispose();
             SessionZadatak.ZadatakaInfo(Naslov, Opis);
             StartApk.MainFormManager.TrenutnaForma = new PopisDokumentacije();
         }

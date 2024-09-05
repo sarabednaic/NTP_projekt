@@ -9,7 +9,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using XmlProjektiLibrary;
+using DinamicLibrary;
 using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;

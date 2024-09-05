@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using XmlProjektiLibrary;
+using DinamicLibrary;
 using dinamicLib;
 using System.Net.Http;
 using SuperSimpleTcp;
 using TCPServer;
 using System.Runtime.CompilerServices;
+using System.Diagnostics;
 
 namespace ntp_projekt
 {
@@ -22,7 +23,8 @@ namespace ntp_projekt
         Ini iniFile;
         Baza baza;
         XmlOperator XmlOperator = new XmlOperator();
-        static public tcpServer server;
+        //static public tcpServer server;
+        public static Process server;
         SimpleTcpClient client;
 
         public PopisProjekta()
@@ -34,11 +36,11 @@ namespace ntp_projekt
             PopisProjektaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
             iniFile = new Ini();
             iniFile.UcitajDatoteku(@"..\..\postavke.ini");
-            server = new tcpServer();
+            //server = new tcpServer();
             
             //pretraga projekata po nazivu preko servera
             client = new SimpleTcpClient("127.0.0.1:13001");
-            client.Connect();
+            //client.Connect();
             client.Events.DataReceived += Events_DataReceived;
             client.Events.Connected += Events_Connected;
             client.Events.Disconnected += Events_Disconnected;
@@ -71,12 +73,12 @@ namespace ntp_projekt
 
         private void Events_Disconnected(object sender, ConnectionEventArgs e)
         {
-            MessageBox.Show("Klijent nije povezan.");
+            //MessageBox.Show("Klijent nije povezan.");
         }
 
         private void Events_Connected(object sender, ConnectionEventArgs e)
         {
-            MessageBox.Show("Klijent povezan.");
+            //MessageBox.Show("Klijent povezan.");
         }
 
         private void UrediZadatakNaslovLabel_Click(object sender, EventArgs e)
@@ -86,22 +88,22 @@ namespace ntp_projekt
 
         private void PopisProjektaProfilPictureBox_Click_1(object sender, EventArgs e)
         {
-            server.Server.Stop();
-            PopisProjektaProjektiFlowLayoutPanel.Controls.Clear();
+            //server.Server.Stop();
+            //PopisProjektaProjektiFlowLayoutPanel.Controls.Clear();
+            //if (!server.HasExited) server.Kill();
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
         private void PopisProjektaProfilLinkLabel_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            server.Server.Stop();
-            PopisProjektaProjektiFlowLayoutPanel.Controls.Clear();
+            //server.Server.Stop();
+            //if (!server.HasExited) server.Kill();
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
         private void PopisProjektaAddButton_Click_1(object sender, EventArgs e)
         {
-            server.Server.Stop();
-            PopisProjektaProjektiFlowLayoutPanel.Controls.Clear();
+            //if(!server.HasExited) server.Kill();
             StartApk.MainFormManager.TrenutnaForma = new DodajProjekt();
         }
 
@@ -129,9 +131,12 @@ namespace ntp_projekt
 
         private void PopisProjektaSearchButton_Click(object sender, EventArgs e)
         {
+            server = Process.Start(@"..\..\..\TCPServerExe\bin\Debug\TCPServerExe.exe");
+            client.Connect();
             //Provjerava da li je server aktivan i da li je klijent povezan
-            if (server.Server.IsListening && client.IsConnected)
+            if (client.IsConnected)
             {
+                server.Refresh();
                 //ako text box za pretraživanje nije prazan onda šalje string u text boxu
                 if (PopisProjektaSearchRichTextBox.Text != "")
                 {
@@ -140,7 +145,9 @@ namespace ntp_projekt
                 else 
                 {
                     //Zaustavlja server i odspaja klijenta
-                    server.Server.Stop();
+                    //server.Server.Stop();
+                    
+                    server.Kill();
                     client.Disconnect();
                     StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
                 }
@@ -149,7 +156,7 @@ namespace ntp_projekt
         }
 
         //Odgovora na paket koji je klijent primo od servera
-        private void Events_DataReceived(object sender, DataReceivedEventArgs e)
+        private void Events_DataReceived(object sender, SuperSimpleTcp.DataReceivedEventArgs e)
         {
             byte[] dataArray = e.Data.ToArray();
             List<List<string>> polje = ListToBytes.pretvoriByteToList(dataArray);

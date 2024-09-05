@@ -395,6 +395,14 @@
     <WCFMetadataStorage Include="Connected Services\soap\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DinamicLibrary\DinamicLibrary.csproj">
+      <Project>{833250ab-6832-4920-b515-2796fff18baa}</Project>
+      <Name>DinamicLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TCPServerExe\TCPServerExe.csproj">
+      <Project>{d0970279-fa0d-499b-974f-033a9983710f}</Project>
+      <Name>TCPServerExe</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TCPServer\TCPServer.csproj">
       <Project>{9dd8e0c5-706c-47c0-9bae-9d410f4b5db7}</Project>
       <Name>TCPServer</Name>
@@ -402,10 +410,6 @@
     <ProjectReference Include="..\UDPServer\UDPServer.csproj">
       <Project>{18f8bb56-00e3-4a38-a866-25f411375410}</Project>
       <Name>UDPServer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\XmlProjektiLibrary\XmlProjektiLibrary.csproj">
-      <Project>{833250ab-6832-4920-b515-2796fff18baa}</Project>
-      <Name>XmlProjektiLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

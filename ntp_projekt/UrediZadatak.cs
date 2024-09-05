@@ -7,7 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using XmlProjektiLibrary;
+using DinamicLibrary;
 
 namespace ntp_projekt
 {

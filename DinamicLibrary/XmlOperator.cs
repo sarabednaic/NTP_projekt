@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace XmlProjektiLibrary
+namespace DinamicLibrary
 {
     public class XmlOperator
     {
@@ -19,7 +19,7 @@ namespace XmlProjektiLibrary
         //Metoda za dohvaćanje statusa iz xml  datoteke ovisno o ID-u projekta iz baze
         public string XmlRead(string id)
         {
-            xmlDoc.Load(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
+            xmlDoc.Load(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");
 
             XmlNodeList xmlNodeList = xmlDoc.SelectNodes("projekti/projekt");
 
@@ -37,7 +37,7 @@ namespace XmlProjektiLibrary
         //Metoda za dodavanje statusa u xml datoteke ovisno za nove dodane projekte pri kreiranju projekta
         public void XmlAdd(Projekt projekt) 
         {
-            xmlDoc.Load(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
+            xmlDoc.Load(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");
 
             XmlNodeList xmlNodeList = xmlDoc.SelectNodes("projekti/projekt");
 
@@ -63,14 +63,14 @@ namespace XmlProjektiLibrary
             XmlElement root = xmlDoc.DocumentElement;
             root.AppendChild(projektNode);
 
-            xmlDoc.Save(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
+            xmlDoc.Save(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");
 
         }
 
         //Metoda za uređivanje statusa projekta ovisno o spremljenom ID projekta iz baze
         public void XmlEdit(string id, string status) 
         {
-            xmlDoc.Load(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
+            xmlDoc.Load(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");
             XmlNodeList xmlNodeList = xmlDoc.SelectNodes("/projekti/projekt");
             foreach (XmlNode xmlNode in xmlNodeList)
             {
@@ -80,12 +80,12 @@ namespace XmlProjektiLibrary
                     xmlNode.ChildNodes[1].InnerXml = status;
                 }
             }
-            xmlDoc.Save(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
+            xmlDoc.Save(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");
         }
 
         //Metoda za brisanje zapisa o statusu projekta ovisno o ID projekta iz baze
         public void XmlDelete(string id) {
-            xmlDoc.Load(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
+            xmlDoc.Load(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");
             XmlNodeList xmlNodeList = xmlDoc.SelectNodes("/projekti/projekt");
             foreach (XmlNode xmlNode in xmlNodeList)
             {
@@ -100,7 +100,7 @@ namespace XmlProjektiLibrary
                     }
                 }
             }
-            xmlDoc.Save(@"..\..\..\XmlProjektiLibrary\XMLPopisProjekta.xml");
+            xmlDoc.Save(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");
         }
     }
 }

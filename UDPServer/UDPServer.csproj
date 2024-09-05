@@ -45,6 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DinamicLibrary\DinamicLibrary.csproj">
+      <Project>{833250ab-6832-4920-b515-2796fff18baa}</Project>
+      <Name>DinamicLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TCPServer\TCPServer.csproj">
       <Project>{9dd8e0c5-706c-47c0-9bae-9d410f4b5db7}</Project>
       <Name>TCPServer</Name>

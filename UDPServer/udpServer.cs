@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
-using TCPServer;
+using DinamicLibrary;
 
 namespace UDPServer
 {
@@ -18,6 +18,7 @@ namespace UDPServer
 
         public udpServer()
         {
+            
             server = new UdpClient(PORT);
         }
 
@@ -90,9 +91,10 @@ namespace UDPServer
 
         //Zatvara UDP vezu servera i oslobađa resurse koji su bili korišteni od servera
         public void Dispose()
-        {
-            server?.Close();
-            server?.Dispose();
+        {   
+            server?.Client.Close();
+            server?.Client.Dispose();
+            
         }
     }
 }

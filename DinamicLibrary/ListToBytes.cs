@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TCPServer
+namespace DinamicLibrary
 {
-    public class ListToBytes
+    public static class ListToBytes
     {
         public static byte[] pretvoriListToByte(List<List<string>> nestedList)
         {
