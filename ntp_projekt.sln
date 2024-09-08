@@ -14,6 +14,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDPServer", "UDPServer\UDPServer.csproj", "{18F8BB56-00E3-4A38-A866-25F411375410}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPServerExe", "TCPServerExe\TCPServerExe.csproj", "{D0970279-FA0D-499B-974F-033A9983710F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{4D23AC6A-B9ED-4A93-9ED4-8B2A1411B33E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinamicLibrary", "DinamicLibrary\DinamicLibrary.csproj", "{833250AB-6832-4920-B515-2796FFF18BAA}"
 EndProject
@@ -47,6 +48,10 @@ Global
 		{833250AB-6832-4920-B515-2796FFF18BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{833250AB-6832-4920-B515-2796FFF18BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{833250AB-6832-4920-B515-2796FFF18BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D23AC6A-B9ED-4A93-9ED4-8B2A1411B33E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D23AC6A-B9ED-4A93-9ED4-8B2A1411B33E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D23AC6A-B9ED-4A93-9ED4-8B2A1411B33E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D23AC6A-B9ED-4A93-9ED4-8B2A1411B33E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
