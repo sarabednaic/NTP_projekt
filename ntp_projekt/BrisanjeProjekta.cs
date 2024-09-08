@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using XmlProjektiLibrary;
+using DinamicLibrary;
 
 namespace ntp_projekt
 {
@@ -94,7 +94,7 @@ namespace ntp_projekt
 
                             obrisi.XmlDelete(projekt.Id);
 
-                            if (success==true)
+                            if (success == true)
                             {
                                 //maknuti session kada je sve potrebno obrisano
                                 TaskHistory newTask = new TaskHistory(Session.DohvatiKorisnikID(), DateTime.Now.ToString(), "projekt obrisan", SessionProjekt.dohvatiTrenutniProjekt().Id);
@@ -119,6 +119,10 @@ namespace ntp_projekt
                     {
                         MessageBox.Show("Lozinke se ne podudaraju.Pokušajte ponovno!");
                     }
+                }
+                else 
+                {
+                    MessageBox.Show("Kriva lozinka.Pokušajte ponovno!");
                 }
             }
             else

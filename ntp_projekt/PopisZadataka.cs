@@ -9,7 +9,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using XmlProjektiLibrary;
+using DinamicLibrary;
 using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -17,7 +17,7 @@ using ntp_projekt.TeamPlanDataSetTableAdapters;
 using System.Net.Sockets;
 using System.Net;
 using System.Net.Http.Headers;
-using TCPServer;
+using TCPServerExe;
 using UDPServer;
 
 
@@ -185,7 +185,7 @@ namespace ntp_projekt
             catch (Exception ex)
             {
                 //Baca error ako nema rezultata u bazi ili na listi
-                MessageBox.Show($"Problem pri povezivanju UDP klijenta sa UDP serverom.: {ex.Message}");
+                MessageBox.Show($"Problem pri povezivanju UDP klijenta sa UDP serverom zadatak s tim nazivom ne postoji: {ex.Message}");
             }
         }
 
