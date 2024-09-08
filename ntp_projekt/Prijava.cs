@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.OleDb;
 using System.Diagnostics.Eventing.Reader;
+using System.IO;
 using System.Windows.Forms;
 using static System.Collections.Specialized.BitVector32;
 
@@ -48,6 +49,29 @@ namespace ntp_projekt
                 if (hashiranaLozinka == lozinkaKorisnika)
                 {
                     Session.PostaviPodatke(postojeciKorisnik.KorisnickoIme, baza);
+
+                    string binarnaDatoteka = @"..\..\prilagodena.dat";
+                    string format = "OdjavaFormat";
+                    string verzija = "1.0";
+                    using (BinaryWriter writer = new BinaryWriter(File.Open(binarnaDatoteka, FileMode.Append)))
+                    {
+                        //pisanje zaglavlja ako je datoteka nova
+                        if (new FileInfo(binarnaDatoteka).Length == 0)
+                        {
+                            writer.Write(format);
+                            writer.Write(verzija);
+                        }
+
+                        DateTime vrijemeOdjave = DateTime.Now;
+                        string punoIme = Session.DohvatiPunoIme();
+                        string datumOdjave = vrijemeOdjave.ToString("dd.MM.yyyy.");
+                        string vrijemeOdjaveFormatirano = vrijemeOdjave.ToString("HH:mm");
+
+                        writer.Write("prijava");
+                        writer.Write(punoIme);
+                        writer.Write(datumOdjave);
+                        writer.Write(vrijemeOdjaveFormatirano);
+                    }
                     StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
                 }
                 else

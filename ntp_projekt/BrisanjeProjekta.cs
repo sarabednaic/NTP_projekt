@@ -97,6 +97,8 @@ namespace ntp_projekt
                             if (success==true)
                             {
                                 //maknuti session kada je sve potrebno obrisano
+                                TaskHistory newTask = new TaskHistory(Session.DohvatiKorisnikID(), DateTime.Now.ToString(), "projekt obrisan", SessionProjekt.dohvatiTrenutniProjekt().Id);
+                                TaskHistory.saveHistory(newTask);
                                 SessionProjekt.CleanSession();
                                 StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();
                             }

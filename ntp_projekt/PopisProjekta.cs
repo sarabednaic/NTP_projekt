@@ -14,6 +14,7 @@ using System.Net.Http;
 using SuperSimpleTcp;
 using TCPServer;
 using System.Runtime.CompilerServices;
+using System.Diagnostics;
 
 namespace ntp_projekt
 {
@@ -114,7 +115,6 @@ namespace ntp_projekt
         {
             PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
             
-            
         }
 
         private void PopisProjektaProjektiFlowLayoutPanel_Paint(object sender, PaintEventArgs e)
@@ -149,7 +149,7 @@ namespace ntp_projekt
         }
 
         //Odgovora na paket koji je klijent primo od servera
-        private void Events_DataReceived(object sender, DataReceivedEventArgs e)
+        private void Events_DataReceived(object sender, SuperSimpleTcp.DataReceivedEventArgs e)
         {
             byte[] dataArray = e.Data.ToArray();
             List<List<string>> polje = ListToBytes.pretvoriByteToList(dataArray);
@@ -194,6 +194,39 @@ namespace ntp_projekt
         {   
             Form forma = new HTTPDownload();
             forma.Show();
+        }
+
+        private void buttonHistory_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string appPath = @"C:\Users\sbednaic\source\repos\API\API\bin\Debug\net8.0\API.exe";
+
+                using (Process procesB = new Process())
+                {
+                    procesB.StartInfo.FileName = appPath;
+                    procesB.Start();
+
+                    procesB.WaitForExit();
+
+                    int exitCode = procesB.ExitCode;
+
+                    if (exitCode == 0)
+                    {
+                        MessageBox.Show("Datoteka povijesti aktivnosti je preuzeta.");
+                    }
+                    else if (exitCode == 1)
+                    {
+                        {
+                            MessageBox.Show($"Proces je završio s greškom.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Došlo je do greške: {ex.Message}");
+            }
         }
     }
 }

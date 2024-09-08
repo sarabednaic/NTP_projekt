@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Newtonsoft.Json.Linq;
+using System.Text.Json;
 using System.Net.Http;
 
 namespace ntp_projekt
@@ -91,7 +92,7 @@ namespace ntp_projekt
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
-        private void DodajZadatakButton_Click(object sender, EventArgs e)
+        private async void DodajZadatakButton_Click(object sender, EventArgs e)
         {
             string formatiraniPocetak = DodajZadatakDateTimePicker1.Value.ToString("dd.MM.yyyy");
             string formatiraniKraj = DodajZadatakDateTimePicker2.Value.ToString("dd.MM.yyyy");
@@ -125,18 +126,9 @@ namespace ntp_projekt
 
             dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
 
-            //zadatkam s početnim statusom "nije zapoceto"
-            var noviZadatak = new
-            {
-                Zadatak_ID = int.Parse(zadatak_ID),
-                Status = "nije zapoceto"
-            };
+            TaskHistory newTask = new TaskHistory(Session.DohvatiKorisnikID(), DateTime.Now.ToString(), "zadatak dodan", zadatak_ID);
+            TaskHistory.saveHistory(newTask);
 
-            //dodavanje zadatka
-            jsonFile.Add(JObject.FromObject(noviZadatak));
-
-            //spremi JSON
-            File.WriteAllText(@"..\..\statusZadatka.json", JsonConvert.SerializeObject(jsonFile, Formatting.Indented));
 
             StartApk.MainFormManager.TrenutnaForma = new PopisZadataka();
         }

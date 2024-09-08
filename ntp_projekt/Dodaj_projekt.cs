@@ -123,7 +123,8 @@ namespace ntp_projekt
                         }
                     }
                 }
-
+                TaskHistory newTask = new TaskHistory(Session.DohvatiKorisnikID(), DateTime.Now.ToString(), "projekt dodan", projectId.ToString());
+                TaskHistory.saveHistory(newTask);
                 MessageBox.Show("Projekt uspješno dodan!");
             }
             catch (Exception ex)

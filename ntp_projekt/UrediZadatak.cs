@@ -135,7 +135,7 @@ namespace ntp_projekt
                 }
             }
             File.WriteAllText(@"..\..\statusZadatka.json", JsonConvert.SerializeObject(jsonFile, Formatting.Indented));
-
+            
             //Brise članove zadatake ako su odkvačeni u listboxu
             for (int i = 0; i < UrediZadatakClanoviListBox.Items.Count; i++)
             {
@@ -149,7 +149,8 @@ namespace ntp_projekt
                         "AND clanovi_zadatka.zadatak_ID = " + SessionZadatak.Id + ";");
                 };
             }
-
+            TaskHistory newTask = new TaskHistory(Session.DohvatiKorisnikID(), DateTime.Now.ToString(), "zadatak uređen", SessionZadatak.Id);
+            TaskHistory.saveHistory(newTask);
             StartApk.MainFormManager.TrenutnaForma = new UrediZadatak();
         }
 

@@ -69,6 +69,7 @@ namespace ntp_projekt
                 string datumOdjave = vrijemeOdjave.ToString("dd.MM.yyyy.");
                 string vrijemeOdjaveFormatirano = vrijemeOdjave.ToString("HH:mm");
 
+                writer.Write("odjava");
                 writer.Write(punoIme);
                 writer.Write(datumOdjave);
                 writer.Write(vrijemeOdjaveFormatirano); 
@@ -79,12 +80,14 @@ namespace ntp_projekt
             {
                 string readFormatName = reader.ReadString();
                 string readFormatVersion = reader.ReadString();
+                string dogadaj = null;
                 string punoIme = null;
                 string datumOdjave = null;
                 string vrijemeOdjave = null;
 
                 while (reader.BaseStream.Position != reader.BaseStream.Length)
                 {
+                    dogadaj = reader.ReadString();
                     punoIme = reader.ReadString();
                     datumOdjave = reader.ReadString(); 
                     vrijemeOdjave = reader.ReadString(); 

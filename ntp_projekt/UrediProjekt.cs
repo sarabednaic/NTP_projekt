@@ -131,7 +131,8 @@ namespace ntp_projekt
                     new OleDbParameter("@opis", projektOpis),
                     new OleDbParameter("@id", projektID));
             }
-
+            TaskHistory newTask = new TaskHistory(Session.DohvatiKorisnikID(), DateTime.Now.ToString(), "projekt uređen", SessionProjekt.dohvatiTrenutniProjekt().Id);
+            TaskHistory.saveHistory(newTask);
             //brise clanove i admine koji su odznačeni u listboxu
             for (int i = 0; i < UrediProjektClanoviListBox.Items.Count; i++)
             {

@@ -19,7 +19,7 @@ namespace ntp_projekt
         int brzinaUKBps;
         long preuzetiBitovi = 0;
         DateTime azuriranoVrijemePreuzimanja = DateTime.UtcNow;
-        readonly string url = "https://lungdiseasenews.com/wp-content/uploads/2016/08/shutterstock_276536750.jpg";
+        readonly string url = "https://i.ibb.co/L9yX8YK/TeamPlan.png";
         HttpDownloader preuzimatelj;
         bool trenutnoPreuzima = false;
         public HTTPDownload()
@@ -71,8 +71,6 @@ namespace ntp_projekt
 
         private void Preuzimatelj_ProgressChanged(object sender, AltoHttp.ProgressChangedEventArgs e)
         {
-            
-
             azurirajBrzinuPreuzimanja(e.TotalBytesReceived);    
             PreuzimanjeProgressBar.Value = (int)e.Progress;
             PreuzimanjePostotakLabel.Text = $"{e.Progress.ToString("0.00")}%";

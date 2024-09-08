@@ -63,6 +63,8 @@ namespace ntp_projekt
 
                     if (result == DialogResult.Yes)
                     {
+                        TaskHistory newTask = new TaskHistory(Session.DohvatiKorisnikID(), DateTime.Now.ToString(), "zadatak obrisan", SessionZadatak.Id);
+                        TaskHistory.saveHistory(newTask);
                         baza.BazaDelete("DELETE FROM clanovi_zadatka WHERE zadatak_ID = " + SessionZadatak.Id + ";");
                         baza.BazaDelete("DELETE FROM zadatak WHERE zadatak.ID = " + SessionZadatak.Id + ";");
 
