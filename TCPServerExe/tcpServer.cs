@@ -40,6 +40,7 @@ namespace TCPServerExe
         //Odgovoran na zahtjev
         private void Events_DataReceived(object sender, DataReceivedEventArgs poljeBitova)
         {
+            Status1.Text = "Connected: " + server.IsConnected(poljeBitova.IpPort.ToString()).ToString();
             //Dojvaca tok bajtova i pretvara ih u string
             byte[] zahtjev = poljeBitova.Data.ToArray();
             message = Encoding.UTF8.GetString(zahtjev);

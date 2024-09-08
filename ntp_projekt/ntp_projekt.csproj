@@ -403,10 +403,6 @@
       <Project>{d0970279-fa0d-499b-974f-033a9983710f}</Project>
       <Name>TCPServerExe</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TCPServer\TCPServer.csproj">
-      <Project>{9dd8e0c5-706c-47c0-9bae-9d410f4b5db7}</Project>
-      <Name>TCPServer</Name>
-    </ProjectReference>
     <ProjectReference Include="..\UDPServer\UDPServer.csproj">
       <Project>{18f8bb56-00e3-4a38-a866-25f411375410}</Project>
       <Name>UDPServer</Name>

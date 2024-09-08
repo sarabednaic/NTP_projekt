@@ -12,7 +12,6 @@ using DinamicLibrary;
 using dinamicLib;
 using System.Net.Http;
 using SuperSimpleTcp;
-using TCPServer;
 using System.Runtime.CompilerServices;
 using System.Diagnostics;
 
@@ -36,11 +35,11 @@ namespace ntp_projekt
             PopisProjektaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
             iniFile = new Ini();
             iniFile.UcitajDatoteku(@"..\..\postavke.ini");
-            //server = new tcpServer();
+            
             
             //pretraga projekata po nazivu preko servera
             client = new SimpleTcpClient("127.0.0.1:13001");
-            //client.Connect();
+            
             client.Events.DataReceived += Events_DataReceived;
             client.Events.Connected += Events_Connected;
             client.Events.Disconnected += Events_Disconnected;
@@ -88,22 +87,19 @@ namespace ntp_projekt
 
         private void PopisProjektaProfilPictureBox_Click_1(object sender, EventArgs e)
         {
-            //server.Server.Stop();
-            //PopisProjektaProjektiFlowLayoutPanel.Controls.Clear();
-            //if (!server.HasExited) server.Kill();
+            
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
         private void PopisProjektaProfilLinkLabel_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //server.Server.Stop();
-            //if (!server.HasExited) server.Kill();
+            
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
 
         private void PopisProjektaAddButton_Click_1(object sender, EventArgs e)
         {
-            //if(!server.HasExited) server.Kill();
+            
             StartApk.MainFormManager.TrenutnaForma = new DodajProjekt();
         }
 
@@ -145,7 +141,6 @@ namespace ntp_projekt
                 else 
                 {
                     //Zaustavlja server i odspaja klijenta
-                    //server.Server.Stop();
                     
                     server.Kill();
                     client.Disconnect();
@@ -193,6 +188,9 @@ namespace ntp_projekt
 
                     // Osvježava prikaz Flow Layout Panela
                     PopisProjektaProjektiFlowLayoutPanel.Refresh();
+
+                    //server.Kill();
+                    //client.Disconnect();
                 });
             }
         }
