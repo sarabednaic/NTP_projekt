@@ -63,20 +63,6 @@
             DeaktivacijaNaslovLabel.Name = "DeaktivacijaNaslovLabel";
             DeaktivacijaNaslovLabel.Click += new System.EventHandler(this.PrijavaNaslovLabel_Click);
             // 
-            // DeaktivacijaLozinkaTextBox
-            // 
-            this.DeaktivacijaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            resources.ApplyResources(this.DeaktivacijaLozinkaTextBox, "DeaktivacijaLozinkaTextBox");
-            this.DeaktivacijaLozinkaTextBox.Name = "DeaktivacijaLozinkaTextBox";
-            this.DeaktivacijaLozinkaTextBox.UseSystemPasswordChar = true;
-            // 
-            // DeaktivacijaPonovnoLozinkaTextBox
-            // 
-            this.DeaktivacijaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            resources.ApplyResources(this.DeaktivacijaPonovnoLozinkaTextBox, "DeaktivacijaPonovnoLozinkaTextBox");
-            this.DeaktivacijaPonovnoLozinkaTextBox.Name = "DeaktivacijaPonovnoLozinkaTextBox";
-            this.DeaktivacijaPonovnoLozinkaTextBox.UseSystemPasswordChar = true;
-            // 
             // DeaktivacijaPonovnoLozinkaLabel
             // 
             DeaktivacijaPonovnoLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
@@ -92,6 +78,20 @@
             DeaktivacijaLozinkaLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DeaktivacijaLozinkaLabel.Name = "DeaktivacijaLozinkaLabel";
             DeaktivacijaLozinkaLabel.UseWaitCursor = true;
+            // 
+            // DeaktivacijaLozinkaTextBox
+            // 
+            this.DeaktivacijaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(this.DeaktivacijaLozinkaTextBox, "DeaktivacijaLozinkaTextBox");
+            this.DeaktivacijaLozinkaTextBox.Name = "DeaktivacijaLozinkaTextBox";
+            this.DeaktivacijaLozinkaTextBox.UseSystemPasswordChar = true;
+            // 
+            // DeaktivacijaPonovnoLozinkaTextBox
+            // 
+            this.DeaktivacijaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(this.DeaktivacijaPonovnoLozinkaTextBox, "DeaktivacijaPonovnoLozinkaTextBox");
+            this.DeaktivacijaPonovnoLozinkaTextBox.Name = "DeaktivacijaPonovnoLozinkaTextBox";
+            this.DeaktivacijaPonovnoLozinkaTextBox.UseSystemPasswordChar = true;
             // 
             // DeaktivacijaProfilPanel
             // 

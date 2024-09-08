@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using XmlProjektiLibrary;
+using DinamicLibrary;
 
 namespace ntp_projekt
 {
@@ -74,21 +74,21 @@ namespace ntp_projekt
 
         private void PopisProjektaControlEditButton_Click(object sender, EventArgs e)
         {
-            PopisProjekta.server.Server.Stop();
+            //PopisProjekta.server.Server.Stop();
             SessionProjekt.postaviTrenutniProjekt(Id, Naslov, Opis);
             StartApk.MainFormManager.TrenutnaForma = new UrediProjekt();
         }
 
         private void PopisProjektaControlDeleteButton_Click(object sender, EventArgs e)
         {
-            PopisProjekta.server.Server.Stop();
+            //PopisProjekta.server.Server.Stop();
             SessionProjekt.postaviTrenutniProjekt(Id, Naslov, Opis);
             StartApk.MainFormManager.TrenutnaForma = new BrisanjeProjekta();
         }
 
         private void PopisProjektaControlProjektButton_Click(object sender, EventArgs e)
         {
-            PopisProjekta.server.Server.Stop();
+            //PopisProjekta.server.Server.Stop();
             SessionProjekt.postaviTrenutniProjekt(Id, Naslov, Opis);
             StartApk.MainFormManager.TrenutnaForma = new PopisZadataka();
 
