@@ -33,10 +33,10 @@ namespace ntp_projekt
             InitializeComponent();
             PopisZadatakaProfilLinkLabel.Text = Session.DohvatiPunoIme();
             PopisZadatakaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
-            
+
 
             baza = new Baza(@"..\..\TeamPlan.mdb");
-            
+
             string User = Session.DohvatiKorisnika();
             List<List<string>> polje = baza.NaprednaBazaRead($"SELECT korisnik.ID , zadatak.ID , zadatak.naziv," +
                 $" zadatak.opis , zadatak.vrijeme_pocetak , zadatak.vrijeme_kraj , clanovi_projekta.projekt_ID FROM (((korisnik " +
@@ -83,13 +83,13 @@ namespace ntp_projekt
             PopisZadatakaOpisLabel.Text = trenutniProjekt.Opis;
         }
 
-        
+
 
         private void PopisZadatakaAddButton_Click(object sender, EventArgs e)
         {
             server.ZaustaviServer();
             server.Dispose();
-            
+
             StartApk.MainFormManager.TrenutnaForma = new DodajZadatak();
         }
 
@@ -219,6 +219,6 @@ namespace ntp_projekt
                 });
             });
         }
-        
+
     }
 }

@@ -113,8 +113,8 @@ namespace ntp_projekt
         private void DodajProjektButton_Click(object sender, EventArgs e)
         {
             // Pretpostavimo da Access očekuje format datuma 'dd.MM.yyyy'
-            string formatiraniPocetak = DodajZadatakDateTimePicker1.Value.ToString("dd.MM.yyyy");
-            string formatiraniKraj = DodajZadatakDateTimePicker2.Value.ToString("dd.MM.yyyy");
+            string formatiraniPocetak = DodajZadatakDateTimePicker1.Value.ToString("dd.MM.yyyy.");
+            string formatiraniKraj = DodajZadatakDateTimePicker2.Value.ToString("dd.MM.yyyy.");
 
             // Ažuriranje zapisa u bazi podataka s formatiranim datumima
             int upis = baza.BazaWrite("UPDATE zadatak " +
