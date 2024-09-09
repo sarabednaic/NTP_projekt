@@ -71,6 +71,7 @@
             this.Controls.Add(this.buttonZadatakNe);
             this.Controls.Add(this.buttonZadatakDa);
             this.Name = "dll_form_zadatak";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Brisanje zadatka";
             this.Load += new System.EventHandler(this.dll_form_zadatak_Load);
             this.ResumeLayout(false);

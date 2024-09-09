@@ -28,19 +28,6 @@ namespace ntp_projekt
             zadatakId = _zadatakId;
         }
 
-        public static List<TaskHistory> getHistory()
-        {
-            var client = new HttpClient();
-            var url = "https://projecthistoryteamplan-default-rtdb.firebaseio.com/taskHistory.json";
-            var response = client.GetAsync(url).Result;
-
-            var responseJson = response.Content.ReadAsStringAsync().Result;
-            var responseBody = JsonConvert.DeserializeObject<List<TaskHistory>>(responseJson);
-
-            return responseBody;
-
-        }
-
         public static TaskHistory saveHistory(TaskHistory newTask)
         {
 

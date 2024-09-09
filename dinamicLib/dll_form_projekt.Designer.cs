@@ -71,6 +71,7 @@
             this.Controls.Add(this.buttonNeProjekt);
             this.Controls.Add(this.buttonDaProjekt);
             this.Name = "dll_form_projekt";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Brisanje projekta";
             this.Load += new System.EventHandler(this.dll_form_projekt_Load);
             this.ResumeLayout(false);

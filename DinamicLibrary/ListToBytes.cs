@@ -21,14 +21,14 @@ namespace DinamicLibrary
                         writer.Write(nestedList.Count);
                         foreach (var vanjskaLista in nestedList)
                         {
-                            // Zapisuje broj polja stupaca tj. podataka o projektu u bazi
+                            //Zapisuje broj polja stupaca tj. podataka o projektu u bazi
                             writer.Write(vanjskaLista.Count);
                             foreach (var str in vanjskaLista)
                             {
-                                // Zapisuje duljine svakog podatka određenog stupca
+                                //Zapisuje duljine svakog podatka određenog stupca
                                 byte[] strBytes = Encoding.UTF8.GetBytes(str);
                                 writer.Write(strBytes.Length);
-                                // Zapisuje string u bajtove
+                                //Zapisuje string u bajtove
                                 writer.Write(strBytes);
                             }
                         }

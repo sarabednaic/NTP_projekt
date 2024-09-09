@@ -142,32 +142,13 @@ namespace ntp_projekt
         private async void DodajZadatak_Load(object sender, EventArgs e)
         {
             PanelLogo.BackgroundImage = Image.FromFile(Logo.LogoFoto());
-
-            //HTTP klijent koji kaze trenutno vrijeme kako bi ravnali vrijeme projekta
-            using (HttpClient client = new HttpClient())
-            {
-                string url = "http://worldtimeapi.org/api/timezone/Europe/Zagreb";
-
-                HttpResponseMessage zahtjev = await client.GetAsync(url);
-
-                if (zahtjev.IsSuccessStatusCode)
-                {
-                    string odgovor = await zahtjev.Content.ReadAsStringAsync();
-                    JObject json = JObject.Parse(odgovor);
-                    string currentTime = json["datetime"].ToString();
-                    DodajZadatakTrenutnoVrijemeLabel.Text = currentTime;
-                }
-                else
-                {
-                    DodajZadatakTrenutnoVrijemeLabel.Text = "Pogreška pri dohvaćanju podataka o vremenu.";
-                }
-            }
-
         }
+
 
         private void DodajZadatakProfilPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
     }
+    
 }

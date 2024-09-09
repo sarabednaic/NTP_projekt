@@ -16,7 +16,7 @@ namespace DinamicLibrary
         //prazan konstruktor kako bi mogli baratati sa metodama u klasi
         public XmlOperator() { }
 
-        //Metoda za dohvaćanje statusa iz xml  datoteke ovisno o ID-u projekta iz baze
+        //Metoda za dohvaćanje statusa iz xml datoteke ovisno o ID-u projekta iz baze
         public string XmlRead(string id)
         {
             xmlDoc.Load(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");

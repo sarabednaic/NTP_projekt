@@ -81,7 +81,7 @@ namespace TCPServerExe
             }
             //Šalje odgovor klijentu na zahtjev gdje poljeBitova.IpPort predstavlja drugaciji port nego port koji smo postavili za server
             if (imaOdgovora) IsListeningOdgovor.Text = "Has responded: True";
-            server.Send(poljeBitova.IpPort, odgovor);
+            server.Send(poljeBitova.IpPort, odgovor);//server je na jednom portu, a kijent na drugom pa on zapravo salje na temelju zahtjeva koji je dobil na klijentov port
         }
 
         public static void Zatvori()

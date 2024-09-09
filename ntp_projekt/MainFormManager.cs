@@ -43,7 +43,6 @@ namespace ntp_projekt
         {
             if (ExitApk==true) 
             {
-                
                 if (udpServer.aktivan) {
                     PopisZadataka.server.ZaustaviServer();
                     PopisZadataka.server.Dispose();
