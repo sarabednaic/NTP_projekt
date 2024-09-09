@@ -111,26 +111,68 @@ namespace ntp_projekt
 
         private void PostavkePromjenaButton_Click(object sender, EventArgs e)
         {
+            string novoIme = PostavkeImeTextBox.Text;
+            string novoPrezime = PostavkePrezimeTextBox.Text;
+            string novoKorisnickoIme = PostavkeKorisnickoImeTextBox.Text;
+            string novaLozinka = PostavkeLozinkaTextBox.Text;
+            string ponovnoLozinka = PostavkePonovnoLozinkaTextBox.Text;
+
+            //korisničko ime
+            if (novoKorisnickoIme != user)
+            {
+                string korisnikPostoji = baza.BazaRead($"SELECT COUNT(*) FROM korisnik WHERE korisnicko_ime = \"{novoKorisnickoIme}\";");
+
+                if (korisnikPostoji != "0")
+                {
+                    MessageBox.Show("Korisničko ime već postoji. Odaberite drugo korisničko ime.", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Ažuriranje korisničkog imena
+                baza.BazaWrite($"UPDATE korisnik SET korisnicko_ime = \"{novoKorisnickoIme}\" WHERE korisnicko_ime = \"{user}\";");
+                user = novoKorisnickoIme; // Ažuriraj lokalnu varijablu korisničkog imena
+            }
+
+            //ime
+            if (novoIme != baza.BazaRead($"SELECT ime FROM korisnik WHERE korisnicko_ime = \"{user}\";"))
+            {
+                baza.BazaWrite($"UPDATE korisnik SET ime = \"{novoIme}\" WHERE korisnicko_ime = \"{user}\";");
+            }
+
+            //prezime
+            if (novoPrezime != baza.BazaRead($"SELECT prezime FROM korisnik WHERE korisnicko_ime = \"{user}\";"))
+            {
+                baza.BazaWrite($"UPDATE korisnik SET prezime = \"{novoPrezime}\" WHERE korisnicko_ime = \"{user}\";");
+            }
+
+            //lozinke
+            if (!string.IsNullOrEmpty(novaLozinka) || !string.IsNullOrEmpty(ponovnoLozinka))
+            {
+                if (novaLozinka != ponovnoLozinka)
+                {
+                    MessageBox.Show("Lozinke se ne podudaraju.", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                string sol = Sha256.PromjenjivaSol();
+                string hashiranaLozinka = Sha256.Sazimanje(novaLozinka, sol);
+                baza.BazaWrite($"UPDATE korisnik SET lozinka = \"{hashiranaLozinka}\", sol = \"{sol}\" WHERE korisnicko_ime = \"{user}\";");
+            }
+
+
+            Session.PostaviPodatke(novoKorisnickoIme, baza);
+
+            MessageBox.Show("Promjene su uspješno spremljene.", "Obavijest", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            //jezika i fonta u ini datoteku
             iniFile.PostaviVrijednost("Postavke", "Jezik", PostavkeJezikComboBox.SelectedItem.ToString());
             iniFile.PostaviVrijednost("Postavke", "Font", PostavkeVelicinaFontaComboBox.SelectedItem.ToString());
             iniFile.SpremiDatoteku(@"..\..\postavke.ini");
 
-            string jezik = iniFile.DohvatiVrijednost("Postavke", "Jezik", "hrvatski");
-            string font = iniFile.DohvatiVrijednost("Postavke", "Font", "M");
-
-            if (jezik == "english")
-            {
-                Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
-                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
-            }
-            else if (jezik == "hrvatski")
-            {
-                Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("hr");
-                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("hr");
-            }
-
             StartApk.MainFormManager.TrenutnaForma = new Postavke();
         }
+
+
 
         private void PostavkeNatragButton_Click(object sender, EventArgs e)
         {

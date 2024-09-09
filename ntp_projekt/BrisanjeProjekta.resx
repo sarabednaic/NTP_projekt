@@ -141,14 +141,11 @@
   <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.Name" xml:space="preserve">
     <value>BrisanjeProjektaProfilPictureBox</value>
   </data>
-  <data name="BrisanjeProjektaLozinkaTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>*</value>
-  </data>
   <data name="BrisanjeProjektaProfilPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1910, 1015</value>
+  <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="BrisanjeProjektaProfilPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -176,6 +173,9 @@
   </data>
   <data name="BrisanjeProjektaNaslovLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Leelawadee UI, 40pt, style=Bold</value>
+  </data>
+  <data name="BrisanjeProjektaIzbrisiProjektButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>787, 780</value>
   </data>
   <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1063,8 +1063,8 @@
   <data name="BrisanjeProjektaProfilPictureBox.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="BrisanjeProjektaNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="&gt;&gt;PanelLogo.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1196,8 +1196,8 @@
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="BrisanjeProjektaNaslovLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
+  <data name="BrisanjeProjektaPonovnoLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 54</value>
   </data>
   <data name="&gt;&gt;BrisanjeProjektaLozinkaNazivLabel.Name" xml:space="preserve">
     <value>BrisanjeProjektaLozinkaNazivLabel</value>
@@ -1325,14 +1325,11 @@
         iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 </value>
   </data>
-  <data name="BrisanjeProjektaPonovnoLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 54</value>
+  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="BrisanjeProjektaPonovnoLozinkaLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
-  </data>
-  <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1077, 0</value>
   </data>
   <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1388,11 +1385,11 @@
   <data name="&gt;&gt;BrisanjeProjektaProfilPictureBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="BrisanjeProjektaIzbrisiProjektButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 780</value>
+  <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1077, 0</value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaLozinkaTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="BrisanjeProjektaNatragButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="BrisanjeProjektaLozinkaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1403,8 +1400,14 @@
   <data name="BrisanjeProjektaLozinkaNazivLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>383, 54</value>
   </data>
+  <data name="&gt;&gt;BrisanjeProjektaLozinkaNazivLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="BrisanjeProjektaPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;BrisanjeProjektaNatragButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>2550, 1329</value>
@@ -1562,8 +1565,8 @@
   <data name="&gt;&gt;BrisanjeProjektaPonovnoLozinkaLabel.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;PanelLogo.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="BrisanjeProjektaNaslovLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="BrisanjeProjektaProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>2431, 16</value>
@@ -1592,8 +1595,8 @@
   <data name="&gt;&gt;BrisanjeProjektaPanel.Name" xml:space="preserve">
     <value>BrisanjeProjektaPanel</value>
   </data>
-  <data name="&gt;&gt;BrisanjeProjektaNatragButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="BrisanjeProjektaLozinkaTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
   </data>
   <data name="BrisanjeProjektaNatragButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 15</value>
@@ -1607,11 +1610,8 @@
   <data name="BrisanjeProjektaNatragButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;BrisanjeProjektaLozinkaNazivLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1910, 1015</value>
   </data>
   <data name="&gt;&gt;BrisanjeProjektaIzbrisiProjektButton.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -1623,7 +1623,7 @@
     <value>3</value>
   </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>hr</value>
+    <value>en</value>
   </metadata>
   <metadata name="BrisanjeProjektaLozinkaNazivLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>

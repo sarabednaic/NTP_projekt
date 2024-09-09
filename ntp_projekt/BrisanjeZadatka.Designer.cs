@@ -33,13 +33,12 @@
             System.Windows.Forms.Label BrisanjeZadatkaPonovnoLozinkaLabel;
             System.Windows.Forms.Label BrisanjeZadatkaLozinkaLabel;
             this.BrisanjeZadatkaIzbrisiZadatakButton = new System.Windows.Forms.Button();
-            this.BrisanjeZadatkaNatragButton = new System.Windows.Forms.Button();
             this.BrisanjeZadatkaPanel = new System.Windows.Forms.Panel();
-            this.BrisanjeZadatkaProfilPictureBox = new System.Windows.Forms.PictureBox();
-            this.BrisanjeZadatkaProfilLinkLabel = new System.Windows.Forms.LinkLabel();
             this.PanelLogo = new System.Windows.Forms.Panel();
             this.BrisanjeZadatkaLozTextBox = new System.Windows.Forms.TextBox();
             this.BrisanjeZadatkaPonovnoLozTextBox = new System.Windows.Forms.TextBox();
+            this.BrisanjeZadatkaNatragButton = new System.Windows.Forms.Button();
+            this.BrisanjeZadatkaProfilPictureBox = new System.Windows.Forms.PictureBox();
             BriasnjeZadatkaNaslovLabel = new System.Windows.Forms.Label();
             BrisanjeZadatkaPonovnoLozinkaLabel = new System.Windows.Forms.Label();
             BrisanjeZadatkaLozinkaLabel = new System.Windows.Forms.Label();
@@ -55,16 +54,16 @@
             // 
             // BrisanjeZadatkaPonovnoLozinkaLabel
             // 
-            BrisanjeZadatkaPonovnoLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(BrisanjeZadatkaPonovnoLozinkaLabel, "BrisanjeZadatkaPonovnoLozinkaLabel");
+            BrisanjeZadatkaPonovnoLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
             BrisanjeZadatkaPonovnoLozinkaLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             BrisanjeZadatkaPonovnoLozinkaLabel.Name = "BrisanjeZadatkaPonovnoLozinkaLabel";
             BrisanjeZadatkaPonovnoLozinkaLabel.UseWaitCursor = true;
             // 
             // BrisanjeZadatkaLozinkaLabel
             // 
-            BrisanjeZadatkaLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(BrisanjeZadatkaLozinkaLabel, "BrisanjeZadatkaLozinkaLabel");
+            BrisanjeZadatkaLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
             BrisanjeZadatkaLozinkaLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             BrisanjeZadatkaLozinkaLabel.Name = "BrisanjeZadatkaLozinkaLabel";
             BrisanjeZadatkaLozinkaLabel.UseWaitCursor = true;
@@ -78,37 +77,13 @@
             this.BrisanjeZadatkaIzbrisiZadatakButton.UseVisualStyleBackColor = false;
             this.BrisanjeZadatkaIzbrisiZadatakButton.Click += new System.EventHandler(this.BrisanjeZadatkaIzbrisiZadatakButton_Click);
             // 
-            // BrisanjeZadatkaNatragButton
-            // 
-            this.BrisanjeZadatkaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            resources.ApplyResources(this.BrisanjeZadatkaNatragButton, "BrisanjeZadatkaNatragButton");
-            this.BrisanjeZadatkaNatragButton.Name = "BrisanjeZadatkaNatragButton";
-            this.BrisanjeZadatkaNatragButton.UseVisualStyleBackColor = false;
-            this.BrisanjeZadatkaNatragButton.Click += new System.EventHandler(this.BrisanjeZadatkaNatragButton_Click);
-            // 
             // BrisanjeZadatkaPanel
             // 
+            resources.ApplyResources(this.BrisanjeZadatkaPanel, "BrisanjeZadatkaPanel");
             this.BrisanjeZadatkaPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BrisanjeZadatkaPanel.Controls.Add(this.BrisanjeZadatkaNatragButton);
             this.BrisanjeZadatkaPanel.Controls.Add(this.BrisanjeZadatkaProfilPictureBox);
-            this.BrisanjeZadatkaPanel.Controls.Add(this.BrisanjeZadatkaProfilLinkLabel);
-            resources.ApplyResources(this.BrisanjeZadatkaPanel, "BrisanjeZadatkaPanel");
             this.BrisanjeZadatkaPanel.Name = "BrisanjeZadatkaPanel";
-            // 
-            // BrisanjeZadatkaProfilPictureBox
-            // 
-            resources.ApplyResources(this.BrisanjeZadatkaProfilPictureBox, "BrisanjeZadatkaProfilPictureBox");
-            this.BrisanjeZadatkaProfilPictureBox.Name = "BrisanjeZadatkaProfilPictureBox";
-            this.BrisanjeZadatkaProfilPictureBox.TabStop = false;
-            this.BrisanjeZadatkaProfilPictureBox.Click += new System.EventHandler(this.DeaktivacijaProfilPictureBox_Click);
-            // 
-            // BrisanjeZadatkaProfilLinkLabel
-            // 
-            resources.ApplyResources(this.BrisanjeZadatkaProfilLinkLabel, "BrisanjeZadatkaProfilLinkLabel");
-            this.BrisanjeZadatkaProfilLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BrisanjeZadatkaProfilLinkLabel.Name = "BrisanjeZadatkaProfilLinkLabel";
-            this.BrisanjeZadatkaProfilLinkLabel.TabStop = true;
-            this.BrisanjeZadatkaProfilLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BrisanjeZadatkaProfilLinkLabel_LinkClicked);
             // 
             // PanelLogo
             // 
@@ -124,6 +99,21 @@
             // 
             resources.ApplyResources(this.BrisanjeZadatkaPonovnoLozTextBox, "BrisanjeZadatkaPonovnoLozTextBox");
             this.BrisanjeZadatkaPonovnoLozTextBox.Name = "BrisanjeZadatkaPonovnoLozTextBox";
+            // 
+            // BrisanjeZadatkaNatragButton
+            // 
+            resources.ApplyResources(this.BrisanjeZadatkaNatragButton, "BrisanjeZadatkaNatragButton");
+            this.BrisanjeZadatkaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BrisanjeZadatkaNatragButton.Name = "BrisanjeZadatkaNatragButton";
+            this.BrisanjeZadatkaNatragButton.UseVisualStyleBackColor = false;
+            this.BrisanjeZadatkaNatragButton.Click += new System.EventHandler(this.BrisanjeZadatkaNatragButton_Click);
+            // 
+            // BrisanjeZadatkaProfilPictureBox
+            // 
+            resources.ApplyResources(this.BrisanjeZadatkaProfilPictureBox, "BrisanjeZadatkaProfilPictureBox");
+            this.BrisanjeZadatkaProfilPictureBox.Name = "BrisanjeZadatkaProfilPictureBox";
+            this.BrisanjeZadatkaProfilPictureBox.TabStop = false;
+            this.BrisanjeZadatkaProfilPictureBox.Click += new System.EventHandler(this.DeaktivacijaProfilPictureBox_Click);
             // 
             // BrisanjeZadatka
             // 
@@ -141,7 +131,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.BrisanjeZadatka_Load);
             this.BrisanjeZadatkaPanel.ResumeLayout(false);
-            this.BrisanjeZadatkaPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BrisanjeZadatkaProfilPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -153,7 +142,6 @@
         private System.Windows.Forms.Button BrisanjeZadatkaNatragButton;
         private System.Windows.Forms.Panel BrisanjeZadatkaPanel;
         private System.Windows.Forms.PictureBox BrisanjeZadatkaProfilPictureBox;
-        private System.Windows.Forms.LinkLabel BrisanjeZadatkaProfilLinkLabel;
         private System.Windows.Forms.Panel PanelLogo;
         private System.Windows.Forms.TextBox BrisanjeZadatkaLozTextBox;
         private System.Windows.Forms.TextBox BrisanjeZadatkaPonovnoLozTextBox;

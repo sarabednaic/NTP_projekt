@@ -35,13 +35,13 @@
             System.Windows.Forms.Label PostavkePromjenaLabel;
             System.Windows.Forms.Label PostavkeOstalePostavkeLabel;
             System.Windows.Forms.Button PostavkeOdjavaButton;
-            System.Windows.Forms.TextBox PostavkeLozinkaTextBox;
             this.PostavkeLozinkaLabel = new System.Windows.Forms.Label();
             this.PostavkePonovnoLozinkaLabel = new System.Windows.Forms.Label();
             this.PostavkeJezikComboBox = new System.Windows.Forms.ComboBox();
             this.PostavkeProfilnaPictureBox = new System.Windows.Forms.PictureBox();
             this.PostavkeNatragButton = new System.Windows.Forms.Button();
             this.PostavkePanel = new System.Windows.Forms.Panel();
+            this.PostavkeLozinkaTextBox = new System.Windows.Forms.TextBox();
             this.PostavkeFontLabel = new System.Windows.Forms.Label();
             this.PostavkeJezikLabel = new System.Windows.Forms.Label();
             this.PostavkeVelicinaFontaComboBox = new System.Windows.Forms.ComboBox();
@@ -56,7 +56,6 @@
             PostavkePromjenaLabel = new System.Windows.Forms.Label();
             PostavkeOstalePostavkeLabel = new System.Windows.Forms.Label();
             PostavkeOdjavaButton = new System.Windows.Forms.Button();
-            PostavkeLozinkaTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PostavkeProfilnaPictureBox)).BeginInit();
             this.PostavkePanel.SuspendLayout();
             this.SuspendLayout();
@@ -110,12 +109,6 @@
             PostavkeOdjavaButton.UseVisualStyleBackColor = false;
             PostavkeOdjavaButton.Click += new System.EventHandler(this.PostavkeOdjavaButton_Click);
             // 
-            // PostavkeLozinkaTextBox
-            // 
-            resources.ApplyResources(PostavkeLozinkaTextBox, "PostavkeLozinkaTextBox");
-            PostavkeLozinkaTextBox.Name = "PostavkeLozinkaTextBox";
-            PostavkeLozinkaTextBox.TextChanged += new System.EventHandler(this.PostavkeLozinkaTextBox_TextChanged);
-            // 
             // PostavkeLozinkaLabel
             // 
             resources.ApplyResources(this.PostavkeLozinkaLabel, "PostavkeLozinkaLabel");
@@ -159,6 +152,7 @@
             // PostavkePanel
             // 
             resources.ApplyResources(this.PostavkePanel, "PostavkePanel");
+            this.PostavkePanel.Controls.Add(this.PostavkeLozinkaTextBox);
             this.PostavkePanel.Controls.Add(this.PostavkeFontLabel);
             this.PostavkePanel.Controls.Add(this.PostavkeJezikLabel);
             this.PostavkePanel.Controls.Add(this.PostavkeVelicinaFontaComboBox);
@@ -167,13 +161,17 @@
             this.PostavkePanel.Controls.Add(this.PostavkeImeTextBox);
             this.PostavkePanel.Controls.Add(this.PostavkeLozinkaLabel);
             this.PostavkePanel.Controls.Add(this.PostavkePonovnoLozinkaTextBox);
-            this.PostavkePanel.Controls.Add(PostavkeLozinkaTextBox);
             this.PostavkePanel.Controls.Add(PostavkeOstalePostavkeLabel);
             this.PostavkePanel.Controls.Add(PostavkePromjenaLabel);
             this.PostavkePanel.Controls.Add(PostavkeOpciPodaciLabel);
             this.PostavkePanel.Controls.Add(this.PostavkeJezikComboBox);
             this.PostavkePanel.Controls.Add(this.PostavkePonovnoLozinkaLabel);
             this.PostavkePanel.Name = "PostavkePanel";
+            // 
+            // PostavkeLozinkaTextBox
+            // 
+            resources.ApplyResources(this.PostavkeLozinkaTextBox, "PostavkeLozinkaTextBox");
+            this.PostavkeLozinkaTextBox.Name = "PostavkeLozinkaTextBox";
             // 
             // PostavkeFontLabel
             // 
@@ -267,5 +265,6 @@
         private System.Windows.Forms.ComboBox PostavkeVelicinaFontaComboBox;
         private System.Windows.Forms.Label PostavkeFontLabel;
         private System.Windows.Forms.Label PostavkeJezikLabel;
+        private System.Windows.Forms.TextBox PostavkeLozinkaTextBox;
     }
 }

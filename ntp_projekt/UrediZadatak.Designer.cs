@@ -69,56 +69,56 @@
             // 
             // label4
             // 
-            label4.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(label4, "label4");
+            label4.BackColor = System.Drawing.Color.Transparent;
             label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             label4.Name = "label4";
             label4.UseWaitCursor = true;
             // 
             // label3
             // 
-            label3.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(label3, "label3");
+            label3.BackColor = System.Drawing.Color.Transparent;
             label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             label3.Name = "label3";
             label3.UseWaitCursor = true;
             // 
             // DodajZadatakVrijemeLabel
             // 
-            DodajZadatakVrijemeLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(DodajZadatakVrijemeLabel, "DodajZadatakVrijemeLabel");
+            DodajZadatakVrijemeLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakVrijemeLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakVrijemeLabel.Name = "DodajZadatakVrijemeLabel";
             DodajZadatakVrijemeLabel.UseWaitCursor = true;
             // 
             // DodajZadatakClanoviLabel
             // 
-            DodajZadatakClanoviLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(DodajZadatakClanoviLabel, "DodajZadatakClanoviLabel");
+            DodajZadatakClanoviLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakClanoviLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakClanoviLabel.Name = "DodajZadatakClanoviLabel";
             DodajZadatakClanoviLabel.UseWaitCursor = true;
             // 
             // DodajZadatakLabel
             // 
-            DodajZadatakLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(DodajZadatakLabel, "DodajZadatakLabel");
+            DodajZadatakLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakLabel.Name = "DodajZadatakLabel";
             DodajZadatakLabel.UseWaitCursor = true;
             // 
             // label1
             // 
-            label1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(label1, "label1");
+            label1.BackColor = System.Drawing.Color.Transparent;
             label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             label1.Name = "label1";
             label1.UseWaitCursor = true;
             // 
             // UrediZadatakButton
             // 
-            UrediZadatakButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             resources.ApplyResources(UrediZadatakButton, "UrediZadatakButton");
+            UrediZadatakButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             UrediZadatakButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             UrediZadatakButton.Name = "UrediZadatakButton";
             UrediZadatakButton.UseVisualStyleBackColor = false;
@@ -126,12 +126,12 @@
             // 
             // DeaktivacijaProfilPanel
             // 
+            resources.ApplyResources(this.DeaktivacijaProfilPanel, "DeaktivacijaProfilPanel");
             this.DeaktivacijaProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DeaktivacijaProfilPanel.Controls.Add(this.PanelLogo);
             this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaNatragButton);
             this.DeaktivacijaProfilPanel.Controls.Add(this.UrediZadatakProfilPictureBox);
             this.DeaktivacijaProfilPanel.Controls.Add(this.UrediZadatakProfilLinkLabel);
-            resources.ApplyResources(this.DeaktivacijaProfilPanel, "DeaktivacijaProfilPanel");
             this.DeaktivacijaProfilPanel.Name = "DeaktivacijaProfilPanel";
             // 
             // PanelLogo
@@ -141,8 +141,8 @@
             // 
             // DeaktivacijaNatragButton
             // 
-            this.DeaktivacijaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.DeaktivacijaNatragButton, "DeaktivacijaNatragButton");
+            this.DeaktivacijaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DeaktivacijaNatragButton.Name = "DeaktivacijaNatragButton";
             this.DeaktivacijaNatragButton.UseVisualStyleBackColor = false;
             this.DeaktivacijaNatragButton.Click += new System.EventHandler(this.DeaktivacijaNatragButton_Click);
@@ -176,9 +176,9 @@
             // 
             // UrediZadatakClanoviListBox
             // 
+            resources.ApplyResources(this.UrediZadatakClanoviListBox, "UrediZadatakClanoviListBox");
             this.UrediZadatakClanoviListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.UrediZadatakClanoviListBox.FormattingEnabled = true;
-            resources.ApplyResources(this.UrediZadatakClanoviListBox, "UrediZadatakClanoviListBox");
             this.UrediZadatakClanoviListBox.Name = "UrediZadatakClanoviListBox";
             this.UrediZadatakClanoviListBox.SelectedIndexChanged += new System.EventHandler(this.DodajZadatakClanoviListBox_SelectedIndexChanged);
             // 
@@ -195,8 +195,8 @@
             // 
             // UrediZadatakStatusComboBox
             // 
-            this.UrediZadatakStatusComboBox.FormattingEnabled = true;
             resources.ApplyResources(this.UrediZadatakStatusComboBox, "UrediZadatakStatusComboBox");
+            this.UrediZadatakStatusComboBox.FormattingEnabled = true;
             this.UrediZadatakStatusComboBox.Name = "UrediZadatakStatusComboBox";
             // 
             // DodajZadatakNazivTextBox

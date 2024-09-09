@@ -21,8 +21,6 @@ namespace ntp_projekt
         {
             InitializeComponent();
             baza = new Baza(@"..\..\TeamPlan.mdb");
-            BrisanjeZadatkaProfilLinkLabel.Text = Session.DohvatiPunoIme();
-            BrisanjeZadatkaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
         }
 
         private void BrisanjeProjektaUserButton_Click(object sender, EventArgs e)

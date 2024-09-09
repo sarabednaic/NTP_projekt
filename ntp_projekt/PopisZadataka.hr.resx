@@ -119,13 +119,13 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PopisZadatakaImeProjektaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>470, 96</value>
+    <value>493, 96</value>
   </data>
   <data name="PopisZadatakaImeProjektaLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>251, 46</value>
   </data>
   <data name="PopisZadatakaClanoviLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>473, 231</value>
+    <value>496, 231</value>
   </data>
   <data name="PopisZadatakaClanoviLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>186, 29</value>
@@ -134,7 +134,7 @@
     <value>Članovi projekta</value>
   </data>
   <data name="PopisZadatakaAdminiLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>707, 231</value>
+    <value>730, 231</value>
   </data>
   <data name="PopisZadatakaAdminiLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 29</value>
@@ -143,7 +143,7 @@
     <value>Administratori</value>
   </data>
   <data name="PopisZadatakaSearchRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1205, 326</value>
+    <value>1228, 326</value>
   </data>
   <data name="PopisZadatakaSearchRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>268, 33</value>
@@ -172,7 +172,7 @@
 </value>
   </data>
   <data name="PopisZadatakaSearchButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1478, 322</value>
+    <value>1501, 322</value>
   </data>
   <data name="PopisZadatakaSearchButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 45</value>
@@ -182,7 +182,7 @@
     <value>22</value>
   </data>
   <data name="PopisZadatakaClanoviListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>479, 263</value>
+    <value>502, 263</value>
   </data>
   <data name="PopisZadatakaClanoviListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>199, 92</value>
@@ -191,7 +191,7 @@
     <value>22</value>
   </data>
   <data name="PopisZadatakaAdminiListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>711, 263</value>
+    <value>734, 263</value>
   </data>
   <data name="PopisZadatakaAdminiListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 92</value>
@@ -1430,13 +1430,13 @@
 </value>
   </data>
   <data name="PopisZadatakaAddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1674, 852</value>
+    <value>1391, 843</value>
   </data>
   <data name="PopisZadatakaAddButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 60</value>
   </data>
   <data name="PopisZadatakaOpisLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>473, 152</value>
+    <value>496, 152</value>
   </data>
   <data name="PopisZadatakaOpisLabel.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>1050, 0</value>
@@ -1445,7 +1445,7 @@
     <value>176, 36</value>
   </data>
   <data name="PopisZadatakaZadatciFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 392</value>
+    <value>503, 392</value>
   </data>
   <data name="PopisZadatakaZadatciFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -1469,7 +1469,7 @@
     <value>9, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1845, 849</value>
+    <value>1890, 1003</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>1912, 1059</value>

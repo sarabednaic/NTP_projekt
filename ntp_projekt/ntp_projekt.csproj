@@ -231,9 +231,15 @@
       <DependentUpon>BrisanjeProjekta.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="BrisanjeZadatka.en-AS.resx">
+      <DependentUpon>BrisanjeZadatka.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BrisanjeZadatka.en.resx">
       <DependentUpon>BrisanjeZadatka.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrisanjeZadatka.hr.resx">
+      <DependentUpon>BrisanjeZadatka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BrisanjeZadatka.resx">
       <DependentUpon>BrisanjeZadatka.cs</DependentUpon>
@@ -263,6 +269,12 @@
     <EmbeddedResource Include="PopisDokumentacije.resx">
       <DependentUpon>PopisDokumentacije.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PopisProjekta.aa.resx">
+      <DependentUpon>PopisProjekta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopisProjekta.en-AS.resx">
+      <DependentUpon>PopisProjekta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PopisProjekta.en.resx">
       <DependentUpon>PopisProjekta.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,6 +294,9 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="PopisZadataka.en.resx">
+      <DependentUpon>PopisZadataka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopisZadataka.hr-HR.resx">
       <DependentUpon>PopisZadataka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PopisZadataka.hr.resx">
@@ -312,6 +327,12 @@
     <EmbeddedResource Include="Postavke.en.resx">
       <DependentUpon>Postavke.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Postavke.hr-BA.resx">
+      <DependentUpon>Postavke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Postavke.hr-HR.resx">
+      <DependentUpon>Postavke.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Postavke.hr.resx">
       <DependentUpon>Postavke.cs</DependentUpon>
@@ -345,6 +366,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UrediProjekt.resx">
       <DependentUpon>UrediProjekt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrediZadatak.aa.resx">
+      <DependentUpon>UrediZadatak.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UrediZadatak.en.resx">
       <DependentUpon>UrediZadatak.cs</DependentUpon>

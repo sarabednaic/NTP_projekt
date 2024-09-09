@@ -46,7 +46,7 @@ namespace ntp_projekt
             PopisDokumentacijeNaslovLabel.Text = SessionZadatak.Naslov;
             PopisDokumentacijeBazaClanoviLabel.Text = "";
             PopisDokumentacijeBazaOpisLabel.Text = SessionZadatak.Opis;
-            PopisDokumentacijeBazaPeriodLabel.Text = SessionZadatak.Pocetak + " - " + SessionZadatak.Kraj;
+            PopisDokumentacijeBazaPeriodLabel.Text = SessionZadatak.Pocetak + ". - " + SessionZadatak.Kraj + ".";
 
             baza = new Baza(@"..\..\TeamPlan.mdb");
 

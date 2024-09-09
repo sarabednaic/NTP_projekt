@@ -123,46 +123,58 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BrisanjeProjektaNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>748, 258</value>
+    <value>566, 206</value>
   </data>
   <data name="BrisanjeProjektaNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>962, 142</value>
+    <value>719, 106</value>
   </data>
   <data name="BrisanjeProjektaNaslovLabel.Text" xml:space="preserve">
     <value>Delete the project</value>
   </data>
   <data name="BrisanjeProjektaLozinkaNazivLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>928, 459</value>
+    <value>696, 367</value>
   </data>
   <data name="BrisanjeProjektaLozinkaNazivLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 43</value>
+    <value>240, 34</value>
   </data>
   <data name="BrisanjeProjektaLozinkaNazivLabel.Text" xml:space="preserve">
     <value>Enter the password to confirm </value>
   </data>
   <data name="BrisanjeProjektaPonovnoLozinkaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>928, 579</value>
+    <value>696, 463</value>
   </data>
   <data name="BrisanjeProjektaPonovnoLozinkaLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 43</value>
+    <value>259, 34</value>
   </data>
   <data name="BrisanjeProjektaPonovnoLozinkaLabel.Text" xml:space="preserve">
     <value>Repeat the password to confirm </value>
   </data>
   <data name="BrisanjeProjektaPonovnoLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>934, 642</value>
+    <value>700, 514</value>
+  </data>
+  <data name="BrisanjeProjektaPonovnoLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>459, 26</value>
   </data>
   <data name="BrisanjeProjektaLozinkaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>934, 506</value>
+    <value>700, 405</value>
+  </data>
+  <data name="BrisanjeProjektaLozinkaTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>459, 26</value>
   </data>
   <data name="BrisanjeProjektaIzbrisiProjektButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
   </data>
   <data name="BrisanjeProjektaIzbrisiProjektButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1065, 706</value>
+    <value>818, 583</value>
+  </data>
+  <data name="BrisanjeProjektaIzbrisiProjektButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 56</value>
   </data>
   <data name="BrisanjeProjektaIzbrisiProjektButton.Text" xml:space="preserve">
     <value>Delete</value>
+  </data>
+  <data name="BrisanjeProjektaPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1920, 90</value>
   </data>
   <data name="BrisanjeProjektaProfilPictureBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1191,6 +1203,12 @@
         ABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 </value>
   </data>
+  <data name="BrisanjeProjektaProfilPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1823, 13</value>
+  </data>
+  <data name="BrisanjeProjektaProfilPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
   <data name="BrisanjeProjektaNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAd0AAAIACAYAAADHdbYCAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -1306,7 +1324,37 @@
         +if79u1bkv54cGqH5/1/3Ejhak2VcHIAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="BrisanjeProjektaNatragButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="BrisanjeProjektaNatragButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 64</value>
+  </data>
+  <data name="BrisanjeProjektaProfilLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1651, 31</value>
+  </data>
+  <data name="BrisanjeProjektaProfilLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 29</value>
+  </data>
+  <data name="PanelLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>808, 0</value>
+  </data>
   <data name="PanelLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 84</value>
+    <value>199, 67</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1443, 840</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1918, 1074</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1438, 823</value>
   </data>
 </root>

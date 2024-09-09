@@ -101,19 +101,19 @@
             // 
             // PopisZadatakaNatragButton
             // 
-            resources.ApplyResources(this.PopisZadatakaNatragButton, "PopisZadatakaNatragButton");
             this.PopisZadatakaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.PopisZadatakaNatragButton, "PopisZadatakaNatragButton");
             this.PopisZadatakaNatragButton.Name = "PopisZadatakaNatragButton";
             this.PopisZadatakaNatragButton.UseVisualStyleBackColor = false;
             this.PopisZadatakaNatragButton.Click += new System.EventHandler(this.PopisZadatakaNatragButton_Click);
             // 
             // PopisZadatakaProfilPanel
             // 
-            resources.ApplyResources(this.PopisZadatakaProfilPanel, "PopisZadatakaProfilPanel");
             this.PopisZadatakaProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.PopisZadatakaProfilPanel.Controls.Add(this.PopisZadatakaNatragButton);
             this.PopisZadatakaProfilPanel.Controls.Add(this.PopisZadatakaProfilPictureBox);
             this.PopisZadatakaProfilPanel.Controls.Add(this.PopisZadatakaProfilLinkLabel);
+            resources.ApplyResources(this.PopisZadatakaProfilPanel, "PopisZadatakaProfilPanel");
             this.PopisZadatakaProfilPanel.Name = "PopisZadatakaProfilPanel";
             // 
             // PopisZadatakaProfilPictureBox

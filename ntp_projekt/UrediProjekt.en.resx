@@ -119,7 +119,28 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="UrediZadatakNaslovLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 69</value>
+    <value>538, 129</value>
+  </data>
+  <data name="UrediZadatakNaslovLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 93</value>
+  </data>
+  <data name="UrediZadatakNaslovLabel.Text" xml:space="preserve">
+    <value>Edit the project</value>
+  </data>
+  <data name="UrediProjektNazivLabel.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DodajProjektOvlastiLabel.Text" xml:space="preserve">
+    <value>Administrative powers</value>
+  </data>
+  <data name="DodajProjektClanoviLabel.Text" xml:space="preserve">
+    <value>Assigned members</value>
+  </data>
+  <data name="DodajProjektOpisLabel.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="UrediProjektButton.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
   <data name="UrediProjektNatragButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1267,6 +1288,6 @@
 </value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1158, 671</value>
+    <value>1611, 1006</value>
   </data>
 </root>
