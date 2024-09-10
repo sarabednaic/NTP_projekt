@@ -62,16 +62,16 @@
             // 
             // DodajZadatakVrijemeLabel
             // 
-            DodajZadatakVrijemeLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(DodajZadatakVrijemeLabel, "DodajZadatakVrijemeLabel");
+            DodajZadatakVrijemeLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakVrijemeLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakVrijemeLabel.Name = "DodajZadatakVrijemeLabel";
             DodajZadatakVrijemeLabel.UseWaitCursor = true;
             // 
             // DodajZadatakClanoviLabel
             // 
-            DodajZadatakClanoviLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(DodajZadatakClanoviLabel, "DodajZadatakClanoviLabel");
+            DodajZadatakClanoviLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakClanoviLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakClanoviLabel.Name = "DodajZadatakClanoviLabel";
             DodajZadatakClanoviLabel.UseWaitCursor = true;
@@ -83,8 +83,8 @@
             // 
             // DodajZadatakOdDoLabel
             // 
-            DodajZadatakOdDoLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(DodajZadatakOdDoLabel, "DodajZadatakOdDoLabel");
+            DodajZadatakOdDoLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakOdDoLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakOdDoLabel.Name = "DodajZadatakOdDoLabel";
             DodajZadatakOdDoLabel.UseWaitCursor = true;
@@ -92,8 +92,8 @@
             // 
             // DodajZadatakButton
             // 
-            DodajZadatakButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             resources.ApplyResources(DodajZadatakButton, "DodajZadatakButton");
+            DodajZadatakButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             DodajZadatakButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             DodajZadatakButton.Name = "DodajZadatakButton";
             DodajZadatakButton.UseVisualStyleBackColor = false;
@@ -101,39 +101,39 @@
             // 
             // DodajZadatakStatusLabel
             // 
-            DodajZadatakStatusLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(DodajZadatakStatusLabel, "DodajZadatakStatusLabel");
+            DodajZadatakStatusLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakStatusLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakStatusLabel.Name = "DodajZadatakStatusLabel";
             DodajZadatakStatusLabel.UseWaitCursor = true;
             // 
             // DodajZadatakNazivLabel
             // 
-            DodajZadatakNazivLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(DodajZadatakNazivLabel, "DodajZadatakNazivLabel");
+            DodajZadatakNazivLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakNazivLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakNazivLabel.Name = "DodajZadatakNazivLabel";
             DodajZadatakNazivLabel.UseWaitCursor = true;
             // 
             // DodajZadatakOpisLabel
             // 
-            DodajZadatakOpisLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(DodajZadatakOpisLabel, "DodajZadatakOpisLabel");
+            DodajZadatakOpisLabel.BackColor = System.Drawing.Color.Transparent;
             DodajZadatakOpisLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DodajZadatakOpisLabel.Name = "DodajZadatakOpisLabel";
             DodajZadatakOpisLabel.UseWaitCursor = true;
             // 
             // DodajZadatakClanoviListBox
             // 
+            resources.ApplyResources(this.DodajZadatakClanoviListBox, "DodajZadatakClanoviListBox");
             this.DodajZadatakClanoviListBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.DodajZadatakClanoviListBox.FormattingEnabled = true;
-            resources.ApplyResources(this.DodajZadatakClanoviListBox, "DodajZadatakClanoviListBox");
             this.DodajZadatakClanoviListBox.Name = "DodajZadatakClanoviListBox";
             // 
             // DodajZadatakProfilPanel
             // 
-            this.DodajZadatakProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.DodajZadatakProfilPanel, "DodajZadatakProfilPanel");
+            this.DodajZadatakProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DodajZadatakProfilPanel.Name = "DodajZadatakProfilPanel";
             this.DodajZadatakProfilPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.DodajZadatakProfilPanel_Paint);
             // 
@@ -156,8 +156,8 @@
             // 
             // DodajZadatakNatragButton
             // 
-            this.DodajZadatakNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.DodajZadatakNatragButton, "DodajZadatakNatragButton");
+            this.DodajZadatakNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DodajZadatakNatragButton.Name = "DodajZadatakNatragButton";
             this.DodajZadatakNatragButton.UseVisualStyleBackColor = false;
             this.DodajZadatakNatragButton.Click += new System.EventHandler(this.DodajZadatakNatragButton_Click);
@@ -185,8 +185,8 @@
             // 
             // DodajZadatakStatusComboBox
             // 
-            this.DodajZadatakStatusComboBox.FormattingEnabled = true;
             resources.ApplyResources(this.DodajZadatakStatusComboBox, "DodajZadatakStatusComboBox");
+            this.DodajZadatakStatusComboBox.FormattingEnabled = true;
             this.DodajZadatakStatusComboBox.Name = "DodajZadatakStatusComboBox";
             // 
             // PanelLogo

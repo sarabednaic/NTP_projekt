@@ -31,7 +31,6 @@ namespace ntp_projekt
             UrediZadatakStatusComboBox.SelectedValueChanged += new EventHandler(UrediZadatakStatusComboBox_SelectedValueChanged);
         }
 
-        // Metoda koja se poziva kada se promijeni vrijednost u ComboBox-u
         public void UrediZadatakStatusComboBox_SelectedValueChanged(object sender, EventArgs e)
         {
             string selectedValue = UrediZadatakStatusComboBox.SelectedItem.ToString();
@@ -57,37 +56,30 @@ namespace ntp_projekt
 
         private void UrediProjektArrowButton_Click(object sender, EventArgs e)
         {
-            // Implementacija funkcionalnosti nije definirana
         }
 
         private void BriasnjeProjektaNaslovLabel_Click(object sender, EventArgs e)
         {
-            // Implementacija funkcionalnosti nije definirana
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            // Implementacija funkcionalnosti nije definirana
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Implementacija funkcionalnosti nije definirana
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            // Implementacija funkcionalnosti nije definirana
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            // Implementacija funkcionalnosti nije definirana
         }
 
         private void UrediZadatakImeProjektaTextBox_TextChanged(object sender, EventArgs e)
         {
-            // Implementacija funkcionalnosti nije definirana
         }
 
         private void DeaktivacijaNatragButton_Click(object sender, EventArgs e)
@@ -205,7 +197,7 @@ namespace ntp_projekt
 
         private void DodajZadatakClanoviListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Implementacija funkcionalnosti nije definirana
+          
         }
     }
 }

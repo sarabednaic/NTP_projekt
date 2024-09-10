@@ -74,15 +74,9 @@ namespace ntp_projekt
                         {
                             if ((string)obj["Zadatak_ID"] == SessionZadatak.Id.ToString())
                             {
-                                zadatakZaBrisanje = obj;
+                                jsonFile.Remove(obj);
                                 break;
                             }
-                        }
-
-                        //zapravo obriše file i ponovno ga spremi pod tim imenom sa novim podacima
-                        if (zadatakZaBrisanje != null)
-                        {
-                            jsonFile.Remove(zadatakZaBrisanje);
                         }
 
                         File.WriteAllText(@"..\..\statusZadatka.json", JsonConvert.SerializeObject(jsonFile, Formatting.Indented));

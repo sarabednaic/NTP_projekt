@@ -84,8 +84,6 @@ namespace ntp_projekt
             }
         }
 
-        
-
         public static string DohvatiPunoIme() {
             try {
                 string User = Session.DohvatiKorisnika();

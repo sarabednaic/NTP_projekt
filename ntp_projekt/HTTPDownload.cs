@@ -59,12 +59,8 @@ namespace ntp_projekt
                     PreuzimanjeProgressBar.MarqueeAnimationSpeed = 2500;
                 }
 
-
                 preuzimatelj.Start();
             }
-            
-            
-            
 
     
         }

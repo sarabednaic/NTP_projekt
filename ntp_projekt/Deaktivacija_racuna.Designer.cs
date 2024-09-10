@@ -50,8 +50,8 @@
             // 
             // DeaktivacijaButton
             // 
-            DeaktivacijaButton.BackColor = System.Drawing.Color.Red;
             resources.ApplyResources(DeaktivacijaButton, "DeaktivacijaButton");
+            DeaktivacijaButton.BackColor = System.Drawing.Color.Red;
             DeaktivacijaButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             DeaktivacijaButton.Name = "DeaktivacijaButton";
             DeaktivacijaButton.UseVisualStyleBackColor = false;
@@ -65,47 +65,47 @@
             // 
             // DeaktivacijaPonovnoLozinkaLabel
             // 
-            DeaktivacijaPonovnoLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(DeaktivacijaPonovnoLozinkaLabel, "DeaktivacijaPonovnoLozinkaLabel");
+            DeaktivacijaPonovnoLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
             DeaktivacijaPonovnoLozinkaLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DeaktivacijaPonovnoLozinkaLabel.Name = "DeaktivacijaPonovnoLozinkaLabel";
             DeaktivacijaPonovnoLozinkaLabel.UseWaitCursor = true;
             // 
             // DeaktivacijaLozinkaLabel
             // 
-            DeaktivacijaLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(DeaktivacijaLozinkaLabel, "DeaktivacijaLozinkaLabel");
+            DeaktivacijaLozinkaLabel.BackColor = System.Drawing.Color.Transparent;
             DeaktivacijaLozinkaLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             DeaktivacijaLozinkaLabel.Name = "DeaktivacijaLozinkaLabel";
             DeaktivacijaLozinkaLabel.UseWaitCursor = true;
             // 
             // DeaktivacijaLozinkaTextBox
             // 
-            this.DeaktivacijaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             resources.ApplyResources(this.DeaktivacijaLozinkaTextBox, "DeaktivacijaLozinkaTextBox");
+            this.DeaktivacijaLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.DeaktivacijaLozinkaTextBox.Name = "DeaktivacijaLozinkaTextBox";
             this.DeaktivacijaLozinkaTextBox.UseSystemPasswordChar = true;
             // 
             // DeaktivacijaPonovnoLozinkaTextBox
             // 
-            this.DeaktivacijaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             resources.ApplyResources(this.DeaktivacijaPonovnoLozinkaTextBox, "DeaktivacijaPonovnoLozinkaTextBox");
+            this.DeaktivacijaPonovnoLozinkaTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.DeaktivacijaPonovnoLozinkaTextBox.Name = "DeaktivacijaPonovnoLozinkaTextBox";
             this.DeaktivacijaPonovnoLozinkaTextBox.UseSystemPasswordChar = true;
             // 
             // DeaktivacijaProfilPanel
             // 
+            resources.ApplyResources(this.DeaktivacijaProfilPanel, "DeaktivacijaProfilPanel");
             this.DeaktivacijaProfilPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaNatragButton);
             this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaProfilPictureBox);
             this.DeaktivacijaProfilPanel.Controls.Add(this.DeaktivacijaProfilLinkLabel);
-            resources.ApplyResources(this.DeaktivacijaProfilPanel, "DeaktivacijaProfilPanel");
             this.DeaktivacijaProfilPanel.Name = "DeaktivacijaProfilPanel";
             // 
             // DeaktivacijaNatragButton
             // 
-            this.DeaktivacijaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.DeaktivacijaNatragButton, "DeaktivacijaNatragButton");
+            this.DeaktivacijaNatragButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DeaktivacijaNatragButton.Name = "DeaktivacijaNatragButton";
             this.DeaktivacijaNatragButton.UseVisualStyleBackColor = false;
             this.DeaktivacijaNatragButton.Click += new System.EventHandler(this.DeaktivacijaNatragButton_Click);

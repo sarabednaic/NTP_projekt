@@ -101,7 +101,6 @@ namespace ntp_projekt
 
         private void PopisProjektaAddButton_Click_1(object sender, EventArgs e)
         {
-            
             StartApk.MainFormManager.TrenutnaForma = new DodajProjekt();
         }
 

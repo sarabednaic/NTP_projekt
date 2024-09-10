@@ -46,25 +46,5 @@
   {
     "Zadatak_ID": 12,
     "Status": "zavrseno"
-  },
-  {
-    "Zadatak_ID": 19,
-    "Status": "nije zapoceto"
-  },
-  {
-    "Zadatak_ID": 19,
-    "Status": "nije zapoceto"
-  },
-  {
-    "Zadatak_ID": 23,
-    "Status": "nije zapoceto"
-  },
-  {
-    "Zadatak_ID": 25,
-    "Status": "nije zapoceto"
-  },
-  {
-    "Zadatak_ID": 26,
-    "Status": "nije zapoceto"
   }
 ]

@@ -33,6 +33,7 @@ class Program
                     taskHistoryList.Add(taskDetails);
                 }
 
+
                 string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads", "taskHistory.txt");
 
                 using (StreamWriter writer = new StreamWriter(filePath))

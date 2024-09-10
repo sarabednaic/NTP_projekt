@@ -124,7 +124,23 @@ namespace ntp_projekt
                 }
             }
 
-            dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
+            string jsonFilePath = @"..\..\statusZadatka.json";
+            var jsonContent = File.ReadAllText(jsonFilePath);
+            var jsonArray = JArray.Parse(jsonContent);
+
+            string selectedStatus = DodajZadatakStatusComboBox.SelectedItem.ToString();
+
+            JObject noviZadatak = new JObject
+            {
+                { "Zadatak_ID", int.Parse(zadatak_ID) },
+                { "Status", selectedStatus }
+            };
+
+            jsonArray.Add(noviZadatak);
+
+            // Spremanje izmijenjenog JSON-a natrag u datoteku
+            File.WriteAllText(jsonFilePath, jsonArray.ToString());
+
 
             TaskHistory newTask = new TaskHistory(Session.DohvatiKorisnikID(), DateTime.Now.ToString(), "zadatak dodan", zadatak_ID);
             TaskHistory.saveHistory(newTask);
