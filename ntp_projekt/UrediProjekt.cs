@@ -21,6 +21,8 @@ namespace ntp_projekt
         string korisniciQuery = "SELECT ID, ime, prezime FROM korisnik";
         string clanoviQuery = "SELECT korisnik_ID, admin FROM clanovi_projekta WHERE projekt_ID = ?";
         Projekt trenutniprojekt = SessionProjekt.dohvatiTrenutniProjekt();
+        string PutanjaXMLProjekt = @"..\..\..\DinamicLibrary\XMLPopisProjekta.xml";
+        string nodes = "/projekti/projekt";
 
 
         public UrediProjekt()
@@ -168,7 +170,7 @@ namespace ntp_projekt
             if (UrediProjektStatusComboBox.SelectedItem != null)
             {
                 XmlOperator xmlOperator = new XmlOperator();
-                xmlOperator.XmlEdit(trenutniprojekt.Id, UrediProjektStatusComboBox.Text);
+                xmlOperator.XmlEdit(trenutniprojekt.Id, UrediProjektStatusComboBox.Text, PutanjaXMLProjekt, nodes);
             }
             SessionProjekt.CleanSession();
             StartApk.MainFormManager.TrenutnaForma = new PopisProjekta();

@@ -434,6 +434,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admini.xml" />
     <None Include="Resources\download.png" />
     <None Include="Resources\d.png" />
     <None Include="Resources\32223.png" />

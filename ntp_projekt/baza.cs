@@ -74,6 +74,7 @@ namespace ntp_projekt
             {
                 try
                 {
+                    
                     connection.Open();
                     using (OleDbCommand command = new OleDbCommand(upit, connection))
                     using (OleDbDataReader reader = command.ExecuteReader())
@@ -95,7 +96,52 @@ namespace ntp_projekt
                         }
 
                         return results;
+                        
                     }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Greška pri čitanju iz baze: " + ex.Message);
+                    return null;
+                }
+            }
+        }
+
+        public List<List<string>> NaprednaBazaReadAdmin(string upit)
+        {
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                try
+                {
+
+                    connection.Open();
+                    using (OleDbCommand command = new OleDbCommand(upit, connection)) {
+
+                        command.Parameters.AddWithValue("@admin", true);
+
+                        using (OleDbDataReader reader = command.ExecuteReader())
+                        {
+                            if (!reader.HasRows)
+                            {
+                                return null;
+                            }
+
+                            List<List<string>> results = new List<List<string>>();
+                            while (reader.Read())
+                            {
+                                List<string> row = new List<string>();
+                                for (int i = 0; i < reader.FieldCount; i++)
+                                {
+                                    row.Add(reader[i].ToString());
+                                }
+                                results.Add(row);
+                            }
+
+                            return results;
+
+                        }
+                    }
+                    
                 }
                 catch (Exception ex)
                 {

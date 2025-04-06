@@ -16,6 +16,8 @@ namespace ntp_projekt
     public partial class DodajProjekt : Form
     {
         Baza baza = new Baza(@"..\..\TeamPlan.mdb");
+        string PutanjaXMLProjekt = @"..\..\..\DinamicLibrary\XMLPopisProjekta.xml";
+        string nodes = "/projekti/projekt";
         public DodajProjekt()
         {
             InitializeComponent();
@@ -96,7 +98,7 @@ namespace ntp_projekt
                 //dodavanje u XML
                 XmlOperator xmlOperator = new XmlOperator();
                 Projekt noviProjekt = new Projekt(projectId.ToString(), projektNaziv, projektOpis);
-                xmlOperator.XmlAdd(noviProjekt);
+                xmlOperator.XmlAdd(noviProjekt, PutanjaXMLProjekt, nodes);
 
                 //dodavanje korisnika na projekt
                 string korisniciUpit = "SELECT ID, ime, prezime FROM korisnik";

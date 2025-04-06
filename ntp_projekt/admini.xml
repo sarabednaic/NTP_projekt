@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Admini>
+  <Admin>
+    <IDkorisnika>1</IDkorisnika>
+    <Ime>Sara</Ime>
+    <Prezime>Bednaić</Prezime>
+    <KorisnickoIme>sara.bednaic</KorisnickoIme>
+    <Lozinka>sara123</Lozinka>
+  </Admin>
+  <Admin>
+    <IDkorisnika>2</IDkorisnika>
+    <Ime>Matija</Ime>
+    <Prezime>Bertović</Prezime>
+    <KorisnickoIme>matija.bertovic</KorisnickoIme>
+    <Lozinka>matija123</Lozinka>
+  </Admin>
+  <Admin>
+    <IDkorisnika>3</IDkorisnika>
+    <Ime>Filip</Ime>
+    <Prezime>Sinković</Prezime>
+    <KorisnickoIme>filip.sinkovic</KorisnickoIme>
+    <Lozinka>filip123</Lozinka>
+  </Admin>
+</Admini>

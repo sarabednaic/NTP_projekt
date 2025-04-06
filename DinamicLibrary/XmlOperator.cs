@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
+
 
 namespace DinamicLibrary
 {
@@ -17,11 +19,11 @@ namespace DinamicLibrary
         public XmlOperator() { }
 
         //Metoda za dohvaćanje statusa iz xml datoteke ovisno o ID-u projekta iz baze
-        public string XmlRead(string id)
+        public string XmlRead(string id, string path, string nodes)
         {
-            xmlDoc.Load(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");
+            xmlDoc.Load(path);
 
-            XmlNodeList xmlNodeList = xmlDoc.SelectNodes("projekti/projekt");
+            XmlNodeList xmlNodeList = xmlDoc.SelectNodes(nodes);
 
             foreach (XmlNode xmlNode in xmlNodeList)
             {
@@ -36,11 +38,11 @@ namespace DinamicLibrary
         }
 
         //Metoda za dodavanje statusa u xml datoteke ovisno za nove dodane projekte pri kreiranju projekta
-        public void XmlAdd(Projekt projekt)
+        public void XmlAdd(Projekt projekt, string path, string nodes)
         {
-            xmlDoc.Load(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");
+            xmlDoc.Load(path);
 
-            XmlNodeList xmlNodeList = xmlDoc.SelectNodes("projekti/projekt");
+            XmlNodeList xmlNodeList = xmlDoc.SelectNodes(nodes);
 
 
             foreach (XmlNode xmlNode in xmlNodeList)
@@ -64,15 +66,64 @@ namespace DinamicLibrary
             XmlElement root = xmlDoc.DocumentElement;
             root.AppendChild(projektNode);
 
-            xmlDoc.Save(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");
+            xmlDoc.Save(path);
 
         }
 
+        public void XmlAdminAdd(string id,string ime, string prezime, string korisnickoIme ,/*string[] projektID,*/ string path, string nodes) {
+            xmlDoc.Load(path);
+
+            XmlNodeList xmlNodeList = xmlDoc.SelectNodes(nodes);
+
+            Boolean test = false;
+            foreach (XmlNode xmlNode in xmlNodeList)
+            {
+                string vrijdnostId = xmlNode.ChildNodes[3].InnerText.ToString();
+                if (vrijdnostId != null && vrijdnostId.Equals(korisnickoIme))
+                {
+                    test = true;
+                }
+            }
+
+            if (test) return;
+            XmlNode adminNode = xmlDoc.CreateNode("element", "Admin", "");
+            XmlNode idNode = xmlDoc.CreateNode("element", "IDkorisnika", "");
+            XmlNode imeNode = xmlDoc.CreateNode("element", "Ime", "");
+            XmlNode prezimeNode = xmlDoc.CreateNode("element", "Prezime", "");
+            XmlNode korisnickoImeNode = xmlDoc.CreateNode("element", "KorisnickoIme", "");
+            XmlNode lozinkaNode = xmlDoc.CreateNode("element", "Lozinka", "");
+            //XmlNode projetkiAdminNode = xmlDoc.CreateNode("element", "Admin projekata", "");
+
+            idNode.InnerText = id;
+            imeNode.InnerText = ime;
+            prezimeNode.InnerText = prezime;
+            korisnickoImeNode.InnerText = korisnickoIme;
+            lozinkaNode.InnerText = ime.ToLower() + "123";
+
+            //string popis = "";
+            //foreach (string projekt in projektID) {
+            //    popis = projekt + " ";
+            //}
+            //projetkiAdminNode.InnerText = popis;
+
+            adminNode.AppendChild(idNode);
+            adminNode.AppendChild(imeNode);
+            adminNode.AppendChild(prezimeNode);
+            adminNode.AppendChild(korisnickoImeNode);
+            adminNode.AppendChild(lozinkaNode);
+            //adminNode.AppendChild(projetkiAdminNode);
+
+            XmlElement root = xmlDoc.DocumentElement;
+            root.AppendChild(adminNode);
+
+            xmlDoc.Save(path);
+        }
+
         //Metoda za uređivanje statusa projekta ovisno o spremljenom ID projekta iz baze
-        public void XmlEdit(string id, string status)
+        public void XmlEdit(string id, string status, string path, string nodes)
         {
-            xmlDoc.Load(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");
-            XmlNodeList xmlNodeList = xmlDoc.SelectNodes("/projekti/projekt");
+            xmlDoc.Load(path);
+            XmlNodeList xmlNodeList = xmlDoc.SelectNodes(nodes);
             foreach (XmlNode xmlNode in xmlNodeList)
             {
                 string vrijdnostId = xmlNode.ChildNodes[0].InnerText.ToString();
@@ -81,28 +132,28 @@ namespace DinamicLibrary
                     xmlNode.ChildNodes[1].InnerXml = status;
                 }
             }
-            xmlDoc.Save(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");
+            xmlDoc.Save(path);
         }
 
         //Metoda za brisanje zapisa o statusu projekta ovisno o ID projekta iz baze
-        public void XmlDelete(string id)
+        public void XmlDelete(string id, string path, string nodes, string MainNode)
         {
-            xmlDoc.Load(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");
-            XmlNodeList xmlNodeList = xmlDoc.SelectNodes("/projekti/projekt");
+            xmlDoc.Load(path);
+            XmlNodeList xmlNodeList = xmlDoc.SelectNodes(nodes);
             foreach (XmlNode xmlNode in xmlNodeList)
             {
                 string vrijdnostId = xmlNode.ChildNodes[0].InnerText.ToString();
                 if (vrijdnostId != null && vrijdnostId == id)
                 {
                     xmlNode.RemoveAll();
-                    XmlNodeList projektlist = xmlDoc.SelectNodes("/projekti");
+                    XmlNodeList projektlist = xmlDoc.SelectNodes(MainNode);
                     foreach (XmlNode node in projektlist)
                     {
                         node.RemoveChild(xmlNode);
                     }
                 }
             }
-            xmlDoc.Save(@"..\..\..\DinamicLibrary\XMLPopisProjekta.xml");
+            xmlDoc.Save(path);
         }
     }
 }

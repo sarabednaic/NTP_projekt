@@ -26,6 +26,13 @@ namespace ntp_projekt
         //static public tcpServer server;
         public static Process server;
         SimpleTcpClient client;
+        string PutanjaXMLProjekt = @"..\..\..\DinamicLibrary\XMLPopisProjekta.xml";
+        string nodes = "/projekti/projekt";
+
+        string adminXMLputanja = @"..\..\..\ntp_projekt\admini.xml";
+        string adminNodes = "/Admini/Admin";
+
+
 
 
         public PopisProjekta()
@@ -60,7 +67,7 @@ namespace ntp_projekt
                     PopisProjektaControl.Id = row[1].ToString();
                     PopisProjektaControl.Naslov = row[2].ToString();
                     PopisProjektaControl.Opis = row[3].ToString();
-                    PopisProjektaControl.Status = XmlOperator.XmlRead(row[1].ToString());
+                    PopisProjektaControl.Status = XmlOperator.XmlRead(row[1].ToString(), PutanjaXMLProjekt, nodes);
                     PopisProjektaControl.setBoja(PopisProjektaControl.Status);
                     PopisProjektaControl.Admin = Convert.ToBoolean(row[4].ToString());
                     PopisProjektaControl.Check();
@@ -68,8 +75,44 @@ namespace ntp_projekt
 
                 }
             }
-
             
+            List<List<string>> tablica = baza.NaprednaBazaRead($"SELECT korisnik.ID , korisnik.ime , korisnik.prezime , korisnik.korisnicko_ime , projekt_ID FROM " +
+                    $"korisnik inner join clanovi_projekta on korisnik.ID = clanovi_projekta.korisnik_ID WHERE clanovi_projekta.admin = True;");
+
+            if (tablica != null)
+            {
+                foreach (List<string> row in tablica)
+                {
+                    XmlOperator.XmlAdminAdd(row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), adminXMLputanja, adminNodes);
+                }
+            }
+
+
+            /*Dictionary<int, string[]> Mapa = new Dictionary<int, string[]>();
+            string[] projekti = null;
+            int count = 1;
+            int i = 0;
+            if (tablica != null )
+            {
+                do
+                {
+                    foreach (List<string> redak in tablica)
+                    {
+                        if (count.ToString() == redak[0].ToString())
+                        {
+                            projekti.Append(redak[4].ToString());
+                        }
+                        
+                    }
+                    
+                    Mapa.Add(count, projekti);
+                    count++;
+                    projekti = null;
+                }while ();
+                
+            }
+            count = 0;*/
+
         }
 
         private void Events_Disconnected(object sender, ConnectionEventArgs e)

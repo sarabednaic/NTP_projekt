@@ -16,6 +16,10 @@ namespace ntp_projekt
     public partial class BrisanjeProjekta : Form
     {
         Baza baza = new Baza(@"..\..\TeamPlan.mdb");
+        string PutanjaXMLProjekt = @"..\..\..\DinamicLibrary\XMLPopisProjekta.xml";
+        string nodes = "/projekti/projekt";
+        string MainNode = "/projekti";
+
         public BrisanjeProjekta()
         {
             InitializeComponent();
@@ -59,6 +63,7 @@ namespace ntp_projekt
             string lozinkaKorisnika = baza.BazaRead($"SELECT lozinka FROM korisnik WHERE korisnicko_ime = \"{user}\";");
             string sol = baza.BazaRead($"SELECT sol FROM korisnik WHERE korisnicko_ime = \"{user}\";");
             string hashiranaLozinka = Sha256.Sazimanje(BrisanjeProjektaLozinkaTextBox.Text, sol);
+            
             if (BrisanjeProjektaLozinkaTextBox.Text.Length != 0 && BrisanjeProjektaPonovnoLozinkaTextBox.Text.Length != 0)
             {
                 if (hashiranaLozinka == lozinkaKorisnika)
@@ -90,9 +95,9 @@ namespace ntp_projekt
                                     break;
                                 }
                             }
-                            obrisi.XmlDelete(projekt.Id);
+                            obrisi.XmlDelete(projekt.Id, PutanjaXMLProjekt, nodes, MainNode);
 
-                            obrisi.XmlDelete(projekt.Id);
+                            obrisi.XmlDelete(projekt.Id, PutanjaXMLProjekt, nodes, MainNode);
 
                             if (success == true)
                             {
