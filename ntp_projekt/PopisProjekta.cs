@@ -76,14 +76,14 @@ namespace ntp_projekt
                 }
             }
             
-            List<List<string>> tablica = baza.NaprednaBazaRead($"SELECT korisnik.ID , korisnik.ime , korisnik.prezime , korisnik.korisnicko_ime , projekt_ID FROM " +
+            List<List<string>> tablica = baza.NaprednaBazaRead($"SELECT korisnik.ID , korisnik.ime , korisnik.prezime , korisnik.korisnicko_ime , korisnik.lozinka, korisnik.sol, projekt_ID FROM " +
                     $"korisnik inner join clanovi_projekta on korisnik.ID = clanovi_projekta.korisnik_ID WHERE clanovi_projekta.admin = True;");
 
             if (tablica != null)
             {
                 foreach (List<string> row in tablica)
                 {
-                    XmlOperator.XmlAdminAdd(row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), adminXMLputanja, adminNodes);
+                    XmlOperator.XmlAdminAdd(row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString(), row[5].ToString(), adminXMLputanja, adminNodes);
                 }
             }
 

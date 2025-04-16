@@ -70,7 +70,7 @@ namespace DinamicLibrary
 
         }
 
-        public void XmlAdminAdd(string id,string ime, string prezime, string korisnickoIme ,/*string[] projektID,*/ string path, string nodes) {
+        public void XmlAdminAdd(string id,string ime, string prezime, string korisnickoIme , string lozinka , string sol,/*string[] projektID,*/ string path, string nodes) {
             xmlDoc.Load(path);
 
             XmlNodeList xmlNodeList = xmlDoc.SelectNodes(nodes);
@@ -92,13 +92,15 @@ namespace DinamicLibrary
             XmlNode prezimeNode = xmlDoc.CreateNode("element", "Prezime", "");
             XmlNode korisnickoImeNode = xmlDoc.CreateNode("element", "KorisnickoIme", "");
             XmlNode lozinkaNode = xmlDoc.CreateNode("element", "Lozinka", "");
+            XmlNode solNode = xmlDoc.CreateNode("element", "Sol", "");
             //XmlNode projetkiAdminNode = xmlDoc.CreateNode("element", "Admin projekata", "");
 
             idNode.InnerText = id;
             imeNode.InnerText = ime;
             prezimeNode.InnerText = prezime;
             korisnickoImeNode.InnerText = korisnickoIme;
-            lozinkaNode.InnerText = ime.ToLower() + "123";
+            lozinkaNode.InnerText = lozinka;
+            solNode.InnerText = sol;
 
             //string popis = "";
             //foreach (string projekt in projektID) {
@@ -111,6 +113,7 @@ namespace DinamicLibrary
             adminNode.AppendChild(prezimeNode);
             adminNode.AppendChild(korisnickoImeNode);
             adminNode.AppendChild(lozinkaNode);
+            adminNode.AppendChild(solNode);
             //adminNode.AppendChild(projetkiAdminNode);
 
             XmlElement root = xmlDoc.DocumentElement;
