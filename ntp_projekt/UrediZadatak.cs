@@ -9,6 +9,7 @@ using System.Linq;
 using System.Windows.Forms;
 using DinamicLibrary;
 
+
 namespace ntp_projekt
 {
     public partial class UrediZadatak : Form
@@ -19,6 +20,8 @@ namespace ntp_projekt
         {
             InitializeComponent();
             baza = new Baza(@"..\..\TeamPlan.mdb");
+
+            
 
             UrediZadatakProfilLinkLabel.Text = Session.DohvatiPunoIme();
             UrediZadatakProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
@@ -104,9 +107,19 @@ namespace ntp_projekt
 
         private void DodajProjektButton_Click(object sender, EventArgs e)
         {
+
+            string zadatakXMLputanja = @"..\..\..\ntp_projekt\Zadatak.xml";
+            string zadatakNodes = "/Zadatci/Zadatak";
+
             // Pretpostavimo da Access očekuje format datuma 'dd.MM.yyyy'
             string formatiraniPocetak = DodajZadatakDateTimePicker1.Value.ToString("dd.MM.yyyy.");
             string formatiraniKraj = DodajZadatakDateTimePicker2.Value.ToString("dd.MM.yyyy.");
+
+            if (!string.IsNullOrEmpty(SessionZadatak.Id))
+            {
+                XmlOperator.XmlZadatakAdd(SessionZadatak.Id, SessionZadatak.Naslov, SessionZadatak.Opis, formatiraniPocetak, formatiraniKraj, zadatakXMLputanja, zadatakNodes);
+            }
+            
 
             // Ažuriranje zapisa u bazi podataka s formatiranim datumima
             int upis = baza.BazaWrite("UPDATE zadatak " +

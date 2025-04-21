@@ -70,6 +70,50 @@ namespace DinamicLibrary
 
         }
 
+        static public void XmlZadatakAdd(string id, string naziv, string opis, string pocetak, string kraj, string path, string nodes)
+        {
+            XmlDocument zadatakxmlDoc = new XmlDocument();
+            zadatakxmlDoc.Load(path);
+
+            XmlNodeList xmlNodeList = zadatakxmlDoc.SelectNodes(nodes);
+
+            Boolean test = false;
+            foreach (XmlNode xmlNode in xmlNodeList)
+            {
+                string vrijdnostId = xmlNode.ChildNodes[3].InnerText.ToString();
+                if (vrijdnostId != null && vrijdnostId.Equals(id))
+                {
+                    test = true;
+                }
+            }
+
+            if (test) return;
+            XmlNode zadatakNode = zadatakxmlDoc.CreateNode("element", "Zadatak", "");
+            XmlNode idNode = zadatakxmlDoc.CreateNode("element", "ID", "");
+            XmlNode nazivNode = zadatakxmlDoc.CreateNode("element", "Naziv", "");
+            XmlNode opisNode = zadatakxmlDoc.CreateNode("element", "Opis", "");
+            XmlNode pocetakNode = zadatakxmlDoc.CreateNode("element", "Vrijeme_pocetak", "");
+            XmlNode krajNode = zadatakxmlDoc.CreateNode("element", "Vrijeme_kraj", "");
+
+            idNode.InnerText = id;
+            nazivNode.InnerText = naziv;
+            opisNode.InnerText = opis;
+            pocetakNode.InnerText = pocetak;
+            krajNode.InnerText = kraj;
+
+            zadatakNode.AppendChild(idNode);
+            zadatakNode.AppendChild(nazivNode);
+            zadatakNode.AppendChild(opisNode);
+            zadatakNode.AppendChild(pocetakNode);
+            zadatakNode.AppendChild(krajNode);
+
+
+            XmlElement root = zadatakxmlDoc.DocumentElement;
+            root.AppendChild(zadatakNode);
+
+            zadatakxmlDoc.Save(path);
+        }
+
         public void XmlAdminAdd(string id,string ime, string prezime, string korisnickoIme , string lozinka , string sol,/*string[] projektID,*/ string path, string nodes) {
             xmlDoc.Load(path);
 
