@@ -14,7 +14,7 @@ namespace ntp_projekt
         {
             //Dodaje sliku, spaja bazu , učitava ini datoteku...
             InitializeComponent();
-            baza = new Baza(@"..\..\TeamPlan.mdb");
+            baza = new Baza(@"c:\TeamPlan.mdb");
             iniFile = new Ini();
             iniFile.UcitajDatoteku(@"..\..\postavke.ini");
 

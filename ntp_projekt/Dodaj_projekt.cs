@@ -15,7 +15,7 @@ namespace ntp_projekt
 {
     public partial class DodajProjekt : Form
     {
-        Baza baza = new Baza(@"..\..\TeamPlan.mdb");
+        Baza baza = new Baza(@"c:\TeamPlan.mdb");
         string PutanjaXMLProjekt = @"..\..\..\DinamicLibrary\XMLPopisProjekta.xml";
         string nodes = "/projekti/projekt";
         public DodajProjekt()

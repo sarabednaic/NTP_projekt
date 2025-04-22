@@ -35,7 +35,7 @@ namespace ntp_projekt
             PopisZadatakaProfilPictureBox.Image = Session.DohvatiProfilnuSliku();
 
 
-            baza = new Baza(@"..\..\TeamPlan.mdb");
+            baza = new Baza(@"c:\TeamPlan.mdb");
 
             string User = Session.DohvatiKorisnika();
             List<List<string>> polje = baza.NaprednaBazaRead($"SELECT korisnik.ID , zadatak.ID , zadatak.naziv," +

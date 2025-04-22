@@ -13,7 +13,7 @@ namespace ntp_projekt
 {
     public static class Session
     {
-        static Baza baza = new Baza(@"..\..\TeamPlan.mdb");
+        static Baza baza = new Baza(@"c:\TeamPlan.mdb");
 
         public static void PostaviPodatke(string _username, Baza baza)
         {

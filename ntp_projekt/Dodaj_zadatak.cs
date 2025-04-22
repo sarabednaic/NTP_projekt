@@ -23,7 +23,7 @@ namespace ntp_projekt
         public DodajZadatak()
         {
             InitializeComponent();
-            baza = new Baza(@"..\..\TeamPlan.mdb");
+            baza = new Baza(@"c:\TeamPlan.mdb");
 
             DodajZadatakProfilLinkLabel.Text = Session.DohvatiPunoIme();
             DodajZadatakProfilPictureBox.Image = Session.DohvatiProfilnuSliku();

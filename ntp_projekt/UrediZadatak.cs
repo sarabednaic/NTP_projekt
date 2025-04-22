@@ -19,7 +19,7 @@ namespace ntp_projekt
         public UrediZadatak()
         {
             InitializeComponent();
-            baza = new Baza(@"..\..\TeamPlan.mdb");
+            baza = new Baza(@"c:\TeamPlan.mdb");
 
             
 
@@ -108,7 +108,7 @@ namespace ntp_projekt
         private void DodajProjektButton_Click(object sender, EventArgs e)
         {
 
-            string zadatakXMLputanja = @"..\..\..\ntp_projekt\Zadatak.xml";
+            string zadatakXMLputanja = @"c:\Zadatak.xml";
             string zadatakNodes = "/Zadatci/Zadatak";
 
             // Pretpostavimo da Access očekuje format datuma 'dd.MM.yyyy'
@@ -122,13 +122,13 @@ namespace ntp_projekt
             
 
             // Ažuriranje zapisa u bazi podataka s formatiranim datumima
-            int upis = baza.BazaWrite("UPDATE zadatak " +
+            /*int upis = baza.BazaWrite("UPDATE zadatak " +
                 "SET naziv = '" + DodajZadatakNazivTextBox.Text + "', " +
                 "opis = '" + DodajZadatakOpisRichTextBox.Text + "', " +
                 "vrijeme_pocetak = '" + formatiraniPocetak + "', " +
                 "vrijeme_kraj = '" + formatiraniKraj + "' " +
                 "WHERE ID = " + SessionZadatak.Id + ";");
-
+            */
             //Dohvaća statuse zadataka iz json datoteke i mijenja ih po potrebi
             dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
             foreach (var obj in jsonFile)
@@ -142,7 +142,7 @@ namespace ntp_projekt
             File.WriteAllText(@"..\..\statusZadatka.json", JsonConvert.SerializeObject(jsonFile, Formatting.Indented));
             
             //Brise članove zadatake ako su odkvačeni u listboxu
-            for (int i = 0; i < UrediZadatakClanoviListBox.Items.Count; i++)
+            /*for (int i = 0; i < UrediZadatakClanoviListBox.Items.Count; i++)
             {
                 if (UrediZadatakClanoviListBox.GetItemChecked(i) == false)
                 {
@@ -153,7 +153,8 @@ namespace ntp_projekt
                         "WHERE korisnik.ime & ' ' & korisnik.prezime = '" + UrediZadatakClanoviListBox.Items[i] + "' " +
                         "AND clanovi_zadatka.zadatak_ID = " + SessionZadatak.Id + ";");
                 };
-            }
+            }*/
+
             TaskHistory newTask = new TaskHistory(Session.DohvatiKorisnikID(), DateTime.Now.ToString(), "zadatak uređen", SessionZadatak.Id);
             TaskHistory.saveHistory(newTask);
             StartApk.MainFormManager.TrenutnaForma = new UrediZadatak();

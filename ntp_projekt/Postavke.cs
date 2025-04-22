@@ -23,7 +23,7 @@ namespace ntp_projekt
         public Postavke()
         {
             InitializeComponent();
-            baza = new Baza(@"..\..\TeamPlan.mdb");
+            baza = new Baza(@"c:\TeamPlan.mdb");
             iniFile = new Ini();
             iniFile.UcitajDatoteku(@"..\..\postavke.ini");
 
