@@ -15,7 +15,7 @@ namespace ntp_projekt
         public Prijava()
         {
             InitializeComponent();
-            baza = new Baza(@"c:\TeamPlan.mdb");
+            baza = new Baza(@"C:\xampp\htdocs\TeamPlan\TeamPlan.mdb");
             
         }
 

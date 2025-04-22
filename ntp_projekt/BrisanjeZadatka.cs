@@ -20,7 +20,7 @@ namespace ntp_projekt
         public BrisanjeZadatka()
         {
             InitializeComponent();
-            baza = new Baza(@"c:\TeamPlan.mdb");
+            baza = new Baza(@"C:\xampp\htdocs\TeamPlan\TeamPlan.mdb");
         }
 
         private void BrisanjeProjektaUserButton_Click(object sender, EventArgs e)

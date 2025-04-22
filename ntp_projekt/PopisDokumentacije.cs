@@ -48,7 +48,7 @@ namespace ntp_projekt
             PopisDokumentacijeBazaOpisLabel.Text = SessionZadatak.Opis;
             PopisDokumentacijeBazaPeriodLabel.Text = SessionZadatak.Pocetak + ". - " + SessionZadatak.Kraj + ".";
 
-            baza = new Baza(@"c:\TeamPlan.mdb");
+            baza = new Baza(@"C:\xampp\htdocs\TeamPlan\TeamPlan.mdb");
 
             dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
 

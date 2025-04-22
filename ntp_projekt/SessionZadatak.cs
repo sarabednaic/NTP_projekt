@@ -12,7 +12,7 @@ namespace ntp_projekt
 {
     public static class SessionZadatak
     {
-        static Baza baza = new Baza(@"c:\TeamPlan.mdb");
+        static Baza baza = new Baza(@"C:\xampp\htdocs\TeamPlan\TeamPlan.mdb");
 
         public static string Id { get; private set; }
         public static string Naslov { get; private set; }

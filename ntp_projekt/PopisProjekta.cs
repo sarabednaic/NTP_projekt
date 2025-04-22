@@ -53,7 +53,7 @@ namespace ntp_projekt
             client.Events.Connected += Events_Connected;
             client.Events.Disconnected += Events_Disconnected;
 
-            baza = new Baza(@"c:\TeamPlan.mdb");
+            baza = new Baza(@"C:\xampp\htdocs\TeamPlan\TeamPlan.mdb");
             string User = Session.DohvatiKorisnika();
             List<List<string>> polje = baza.NaprednaBazaRead($"SELECT korisnik.ID , projekt.ID , projekt.naziv, projekt.opis," +
                 $" clanovi_projekta.admin FROM (korisnik inner join clanovi_projekta on korisnik.ID = clanovi_projekta.korisnik_ID)" +

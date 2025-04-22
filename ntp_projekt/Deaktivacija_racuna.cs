@@ -14,7 +14,7 @@ namespace ntp_projekt
     
     public partial class Deaktivacija_racuna : Form
     {
-        private Baza baza = new Baza(@"c:\TeamPlan.mdb");
+        private Baza baza = new Baza(@"C:\xampp\htdocs\TeamPlan\TeamPlan.mdb");
         public Deaktivacija_racuna()
         {
             

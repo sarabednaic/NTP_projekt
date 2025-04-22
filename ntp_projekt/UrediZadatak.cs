@@ -19,7 +19,7 @@ namespace ntp_projekt
         public UrediZadatak()
         {
             InitializeComponent();
-            baza = new Baza(@"c:\TeamPlan.mdb");
+            baza = new Baza(@"C:\xampp\htdocs\TeamPlan\TeamPlan.mdb");
 
             
 
@@ -108,16 +108,16 @@ namespace ntp_projekt
         private void DodajProjektButton_Click(object sender, EventArgs e)
         {
 
-            string zadatakXMLputanja = @"c:\Zadatak.xml";
+            string zadatakXMLputanja = @"C:\xampp\htdocs\TeamPlan\Zadatak.xml";
             string zadatakNodes = "/Zadatci/Zadatak";
 
             // Pretpostavimo da Access očekuje format datuma 'dd.MM.yyyy'
-            string formatiraniPocetak = DodajZadatakDateTimePicker1.Value.ToString("dd.MM.yyyy.");
-            string formatiraniKraj = DodajZadatakDateTimePicker2.Value.ToString("dd.MM.yyyy.");
+            string formatiraniPocetak = DodajZadatakDateTimePicker1.Value.ToString("MM/dd/yyyy");
+            string formatiraniKraj = DodajZadatakDateTimePicker2.Value.ToString("MM/dd/yyyy");
 
             if (!string.IsNullOrEmpty(SessionZadatak.Id))
             {
-                XmlOperator.XmlZadatakAdd(SessionZadatak.Id, SessionZadatak.Naslov, SessionZadatak.Opis, formatiraniPocetak, formatiraniKraj, zadatakXMLputanja, zadatakNodes);
+                XmlOperator.XmlZadatakAdd(SessionZadatak.Id, DodajZadatakNazivTextBox.Text, DodajZadatakOpisRichTextBox.Text, formatiraniPocetak, formatiraniKraj, zadatakXMLputanja, zadatakNodes);
             }
             
 

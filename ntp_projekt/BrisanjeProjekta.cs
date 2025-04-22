@@ -15,7 +15,7 @@ namespace ntp_projekt
 {
     public partial class BrisanjeProjekta : Form
     {
-        Baza baza = new Baza(@"c:\TeamPlan.mdb");
+        Baza baza = new Baza(@"C:\xampp\htdocs\TeamPlan\TeamPlan.mdb");
         string PutanjaXMLProjekt = @"..\..\..\DinamicLibrary\XMLPopisProjekta.xml";
         string nodes = "/projekti/projekt";
         string MainNode = "/projekti";

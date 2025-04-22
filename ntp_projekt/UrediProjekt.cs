@@ -17,7 +17,7 @@ namespace ntp_projekt
 {
     public partial class UrediProjekt : Form
     {
-        Baza baza = new Baza(@"c:\TeamPlan.mdb");
+        Baza baza = new Baza(@"C:\xampp\htdocs\TeamPlan\TeamPlan.mdb");
         string korisniciQuery = "SELECT ID, ime, prezime FROM korisnik";
         string clanoviQuery = "SELECT korisnik_ID, admin FROM clanovi_projekta WHERE projekt_ID = ?";
         Projekt trenutniprojekt = SessionProjekt.dohvatiTrenutniProjekt();
