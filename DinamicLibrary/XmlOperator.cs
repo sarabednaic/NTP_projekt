@@ -70,7 +70,7 @@ namespace DinamicLibrary
 
         }
 
-        static public void XmlZadatakAdd(string id, string naziv, string opis, string pocetak, string kraj, string path, string nodes)
+        static public void XmlZadatakAdd(string id,string idAdmina, string naziv, string opis, string pocetak, string kraj,List<string> dodani, List<string> izbrisani, string path, string nodes)
         {
             XmlDocument zadatakxmlDoc = new XmlDocument();
             zadatakxmlDoc.Load(path);
@@ -90,24 +90,57 @@ namespace DinamicLibrary
             if (test) return;
             XmlNode zadatakNode = zadatakxmlDoc.CreateNode("element", "Zadatak", "");
             XmlNode idNode = zadatakxmlDoc.CreateNode("element", "ID", "");
+            XmlNode idAdminNode = zadatakxmlDoc.CreateNode("element", "ID_admina_projekta" , "");
             XmlNode nazivNode = zadatakxmlDoc.CreateNode("element", "Naziv", "");
             XmlNode opisNode = zadatakxmlDoc.CreateNode("element", "Opis", "");
             XmlNode pocetakNode = zadatakxmlDoc.CreateNode("element", "Vrijeme_pocetak", "");
             XmlNode krajNode = zadatakxmlDoc.CreateNode("element", "Vrijeme_kraj", "");
+            XmlNode dodaniNode = zadatakxmlDoc.CreateNode("element", "Dodani_clanovi", "");
+            XmlNode izbrisaniNode = zadatakxmlDoc.CreateNode("element", "Izbrisani_clanovi", "");
+            
 
             idNode.InnerText = id;
+            idAdminNode.InnerText = idAdmina;
             nazivNode.InnerText = naziv;
             opisNode.InnerText = opis;
             pocetakNode.InnerText = pocetak;
             krajNode.InnerText = kraj;
 
+
             zadatakNode.AppendChild(idNode);
+            zadatakNode.AppendChild(idAdminNode);
             zadatakNode.AppendChild(nazivNode);
             zadatakNode.AppendChild(opisNode);
             zadatakNode.AppendChild(pocetakNode);
             zadatakNode.AppendChild(krajNode);
+            zadatakNode.AppendChild(dodaniNode);
+            zadatakNode.AppendChild(izbrisaniNode);
+            
+            if (dodani.Count != 0) 
+            {
+                for (int i = 0; i < dodani.Count; i++)
+                {
+                    XmlNode clanNodeDodani = zadatakxmlDoc.CreateNode("element", "Clan", "");
+                    XmlNode idClanNodeDodani = zadatakxmlDoc.CreateNode("element", "ID_clana", "");
+                    dodaniNode.AppendChild(clanNodeDodani);
+                    idClanNodeDodani.InnerText = dodani[i];
+                    clanNodeDodani.AppendChild(idClanNodeDodani);
+                }
+            }
+                
 
-
+            if (izbrisani.Count != 0)
+            {
+                for (int i = 0; i < izbrisani.Count; i++)
+                {
+                    XmlNode clanNodeIzbrisani = zadatakxmlDoc.CreateNode("element", "Clan", "");
+                    XmlNode idClanNodeIzbrisani = zadatakxmlDoc.CreateNode("element", "ID_clana", "");
+                    izbrisaniNode.AppendChild(clanNodeIzbrisani);
+                    idClanNodeIzbrisani.InnerText = izbrisani[i];
+                    clanNodeIzbrisani.AppendChild(idClanNodeIzbrisani);
+                }
+            }
+            
             XmlElement root = zadatakxmlDoc.DocumentElement;
             root.AppendChild(zadatakNode);
 
