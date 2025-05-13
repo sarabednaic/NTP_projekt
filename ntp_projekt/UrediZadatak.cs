@@ -158,7 +158,21 @@ namespace ntp_projekt
                 }
             }
 
-            
+            List<string> idDodani = new List<string>();
+            List<string> idIzbrisani = new List<string>();
+
+            foreach (string imeDodani in dodani) 
+            {
+                string id = baza.BazaRead("SELECT korisnik.ime & ' ' & korisnik.prezime AS ime_prezime FROM korisnik WHERE ime_prezime = '"+ imeDodani +" ';");
+                idDodani.Add(id);
+            }
+
+            foreach (string imeIzbrisani in izbrisani) 
+            {
+                string id = baza.BazaRead("SELECT korisnik.ime & ' ' & korisnik.prezime AS ime_prezime FROM korisnik WHERE ime_prezime = '" + imeIzbrisani + " ';");
+                idDodani.Add(id);
+            }
+
 
             if (!string.IsNullOrEmpty(SessionZadatak.Id))
             {
