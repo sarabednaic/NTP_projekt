@@ -163,13 +163,13 @@ namespace ntp_projekt
 
             foreach (string imeDodani in dodani) 
             {
-                string id = baza.BazaRead("SELECT korisnik.id FROM korisnik WHERE CONCAT(korisnik.ime, ' ' , korisnik.prezime) = '"+ imeDodani +" ';");
+                string id = baza.BazaRead("SELECT ID FROM korisnik WHERE [ime] & ' ' & [prezime] = '"+imeDodani+"';");
                 idDodani.Add(id);
             }
 
             foreach (string imeIzbrisani in izbrisani) 
             {
-                string id = baza.BazaRead("SELECT korisnik.id FROM korisnik WHERE CONCAT(korisnik.ime, ' ' , korisnik.prezime) = '" + imeIzbrisani + " ';");
+                string id = baza.BazaRead("SELECT ID FROM korisnik WHERE [ime] & ' ' & [prezime] = '" + imeIzbrisani + "';");
                 idDodani.Add(id);
             }
 
