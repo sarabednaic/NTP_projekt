@@ -176,7 +176,7 @@ namespace ntp_projekt
 
             if (!string.IsNullOrEmpty(SessionZadatak.Id))
             {
-                XmlOperator.XmlZadatakAdd(SessionZadatak.Id, adminID, DodajZadatakNazivTextBox.Text, DodajZadatakOpisRichTextBox.Text, formatiraniPocetak, formatiraniKraj,dodani, izbrisani, zadatakXMLputanja, zadatakNodes);
+                XmlOperator.XmlZadatakAdd(SessionZadatak.Id, adminID, DodajZadatakNazivTextBox.Text, DodajZadatakOpisRichTextBox.Text, formatiraniPocetak, formatiraniKraj,idDodani, idIzbrisani, zadatakXMLputanja, zadatakNodes);
             }
             
 
