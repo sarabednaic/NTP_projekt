@@ -174,7 +174,7 @@ namespace ntp_projekt
                 string id = baza.BazaRead("SELECT korisnik_ID FROM clanovi_projekta WHERE korisnik_ID in" +
                                             "(SELECT ID FROM korisnik where korisnik.ime & ' ' & korisnik.prezime = '" + imeIzbrisani + "')" +
                                             " and projekt_ID in (SELECT ID from projekt where projekt.naziv = '" + SessionProjekt.dohvatiTrenutniProjekt().Naslov + "');");
-                idDodani.Add(id);
+                idIzbrisani.Add(id);
             }
 
 
