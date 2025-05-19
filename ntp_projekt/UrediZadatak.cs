@@ -122,10 +122,10 @@ namespace ntp_projekt
             if(admin.Equals("True")) { isAdmin = true; }
 
 
-            if (!DodajZadatakNazivTextBox.Text.Equals(SessionZadatak.Naslov) &&
-            !DodajZadatakOpisRichTextBox.Text.Equals (SessionZadatak.Opis) &&
-            !DodajZadatakDateTimePicker1.Text.Equals( SessionZadatak.Pocetak) &&
-            !DodajZadatakDateTimePicker2.Text.Equals(SessionZadatak.Kraj) &&
+            if (!DodajZadatakNazivTextBox.Text.Equals(SessionZadatak.Naslov) ||
+            !DodajZadatakOpisRichTextBox.Text.Equals (SessionZadatak.Opis) ||
+            !DodajZadatakDateTimePicker1.Text.Equals( SessionZadatak.Pocetak) ||
+            !DodajZadatakDateTimePicker2.Text.Equals(SessionZadatak.Kraj) ||
             test == false) 
             {
                 string formatiraniPocetak = DodajZadatakDateTimePicker1.Value.ToString("MM/dd/yyyy");
