@@ -17,6 +17,7 @@ namespace ntp_projekt
         private Baza baza;
         Dictionary<string, Boolean> trenutniParovi = new Dictionary<string, Boolean>();
         Dictionary<string, Boolean> noviParovi = new Dictionary<string, Boolean>();
+        string status;
 
         public UrediZadatak()
         {
@@ -108,119 +109,141 @@ namespace ntp_projekt
 
         private void DodajProjektButton_Click(object sender, EventArgs e)
         {
+            Boolean isAdmin = false;
+            Boolean test = false;
 
-            string zadatakXMLputanja = @"C:\xampp\htdocs\TeamPlan\Zadatak.xml";
-            string zadatakNodes = "/Zadatci/Zadatak";
+            if (UrediZadatakStatusComboBox.Text.Equals(status)) { test = true; }
 
-            // Pretpostavimo da Access očekuje format datuma 'dd.MM.yyyy'
-            string formatiraniPocetak = DodajZadatakDateTimePicker1.Value.ToString("MM/dd/yyyy");
-            string formatiraniKraj = DodajZadatakDateTimePicker2.Value.ToString("MM/dd/yyyy");
-
-            for (int i = 0; i  < UrediZadatakClanoviListBox.Items.Count; i++) {
-                
-            }
-
-            List<List<string>> clanovi = baza.NaprednaBazaRead("SELECT clanovi_projekta.korisnik_ID, clanovi_projekta.admin FROM " +
+            string admin = baza.BazaRead($"SELECT clanovi_projekta.admin FROM " +
              "(korisnik INNER JOIN clanovi_projekta ON clanovi_projekta.korisnik_ID = korisnik.ID) " +
-             "INNER JOIN projekt ON projekt.ID = clanovi_projekta.projekt_ID WHERE projekt.naziv = '" + SessionProjekt.dohvatiTrenutniProjekt().Naslov + "';");
+             "INNER JOIN projekt ON projekt.ID = clanovi_projekta.projekt_ID WHERE projekt.naziv = '" + SessionProjekt.dohvatiTrenutniProjekt().Naslov +
+             "' and korisnik.ID = '" + Session.DohvatiKorisnikID() + "';");
 
-            string adminID = null;
-            foreach (List<string> clan in clanovi)
+            if(admin.Equals("True")) { isAdmin = true; }
+
+
+            if (!DodajZadatakNazivTextBox.Text.Equals(SessionZadatak.Naslov) &&
+            !DodajZadatakOpisRichTextBox.Text.Equals (SessionZadatak.Opis) &&
+            !DodajZadatakDateTimePicker1.Text.Equals( SessionZadatak.Pocetak) &&
+            !DodajZadatakDateTimePicker2.Text.Equals(SessionZadatak.Kraj) &&
+            test == false) 
+            {
+                string formatiraniPocetak = DodajZadatakDateTimePicker1.Value.ToString("MM/dd/yyyy");
+                string formatiraniKraj = DodajZadatakDateTimePicker2.Value.ToString("MM/dd/yyyy");
+                if (isAdmin)
                 {
-                    if ((string)clan[1] == "True")
+                    // Ažuriranje zapisa u bazi podataka s formatiranim datumima
+                    int upis = baza.BazaWrite("UPDATE zadatak " +
+                        "SET naziv = '" + DodajZadatakNazivTextBox.Text + "', " +
+                        "opis = '" + DodajZadatakOpisRichTextBox.Text + "', " +
+                        "vrijeme_pocetak = '" + formatiraniPocetak + "', " +
+                        "vrijeme_kraj = '" + formatiraniKraj + "' " +
+                        "WHERE ID = " + SessionZadatak.Id + ";");
+
+                    //Dohvaća statuse zadataka iz json datoteke i mijenja ih po potrebi
+                    dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
+                    foreach (var obj in jsonFile)
                     {
-                        adminID = clan[0].ToString();
+                        if ((string)obj["Zadatak_ID"] == SessionZadatak.Id)
+                        {
+                            obj["Status"] = UrediZadatakStatusComboBox.SelectedItem.ToString();
+                            break;
+                        }
                     }
-                }
+                    File.WriteAllText(@"..\..\statusZadatka.json", JsonConvert.SerializeObject(jsonFile, Formatting.Indented));
 
-            for (int i = 0; i < UrediZadatakClanoviListBox.Items.Count; i++)
-            {
-                if (UrediZadatakClanoviListBox.GetItemCheckState(i).ToString().Equals("Checked"))
-                {
-                    noviParovi.Add(UrediZadatakClanoviListBox.Items[i].ToString(), true);
-                }
-                else 
-                {
-                    noviParovi.Add(UrediZadatakClanoviListBox.Items[i].ToString(), false);
-                }
-            }
-
-            List<string> dodani = new List<string>();
-            List<string> izbrisani = new List<string>();
-
-            foreach (KeyValuePair<string, bool> entry1 in noviParovi)
-            {
-                foreach (KeyValuePair<string, bool> entry2 in trenutniParovi) {
-                    if (entry1.Key.Equals(entry2.Key) && !entry1.Value.Equals(entry2.Value)) {
-                        if(entry1.Value.Equals(true) && entry2.Value.Equals(false)) dodani.Add(entry2.Key);
-                        else if(entry1.Value.Equals(false) && entry2.Value.Equals(true)) izbrisani.Add(entry2.Key);
+                    //Brise članove zadatake ako su odkvačeni u listboxu
+                    for (int i = 0; i < UrediZadatakClanoviListBox.Items.Count; i++)
+                    {
+                        if (UrediZadatakClanoviListBox.GetItemChecked(i) == false)
+                        {
+                            baza.BazaDelete("DELETE clanovi_zadatka.* " +
+                                "FROM (clanovi_zadatka " +
+                                "INNER JOIN clanovi_projekta ON clanovi_zadatka.clan_projekta_ID = clanovi_projekta.ID) " +
+                                "INNER JOIN korisnik ON clanovi_projekta.korisnik_ID = korisnik.ID " +
+                                "WHERE korisnik.ime & ' ' & korisnik.prezime = '" + UrediZadatakClanoviListBox.Items[i] + "' " +
+                                "AND clanovi_zadatka.zadatak_ID = " + SessionZadatak.Id + ";");
+                        };
                     }
+                    TaskHistory newTask = new TaskHistory(Session.DohvatiKorisnikID(), DateTime.Now.ToString(), "zadatak uređen", SessionZadatak.Id);
+                    TaskHistory.saveHistory(newTask);
                 }
-            }
+                else if (!isAdmin) {
+                    string zadatakXMLputanja = @"C:\xampp\htdocs\TeamPlan\Zadatak.xml";
+                    string zadatakNodes = "/Zadatci/Zadatak";
 
-            List<string> idDodani = new List<string>();
-            List<string> idIzbrisani = new List<string>();
-
-            foreach (string imeDodani in dodani) 
-            {
-                string id = baza.BazaRead("SELECT korisnik_ID FROM clanovi_projekta WHERE korisnik_ID in" +
-                                            "(SELECT ID FROM korisnik where korisnik.ime & ' ' & korisnik.prezime = '" +imeDodani + "')" +
-                                            " and projekt_ID in (SELECT ID from projekt where projekt.naziv = '" + SessionProjekt.dohvatiTrenutniProjekt().Naslov +"');");
-                idDodani.Add(id);
-            }
-
-            foreach (string imeIzbrisani in izbrisani) 
-            {
-                string id = baza.BazaRead("SELECT korisnik_ID FROM clanovi_projekta WHERE korisnik_ID in" +
-                                            "(SELECT ID FROM korisnik where korisnik.ime & ' ' & korisnik.prezime = '" + imeIzbrisani + "')" +
-                                            " and projekt_ID in (SELECT ID from projekt where projekt.naziv = '" + SessionProjekt.dohvatiTrenutniProjekt().Naslov + "');");
-                idIzbrisani.Add(id);
-            }
+                    // Pretpostavimo da Access očekuje format datuma 'dd.MM.yyyy'
 
 
-            if (!string.IsNullOrEmpty(SessionZadatak.Id))
-            {
-                XmlOperator.XmlZadatakAdd(SessionZadatak.Id, adminID, DodajZadatakNazivTextBox.Text, DodajZadatakOpisRichTextBox.Text, formatiraniPocetak, formatiraniKraj,idDodani, idIzbrisani, zadatakXMLputanja, zadatakNodes);
-            }
-            
+                    List<List<string>> clanovi = baza.NaprednaBazaRead("SELECT clanovi_projekta.korisnik_ID, clanovi_projekta.admin FROM " +
+                     "(korisnik INNER JOIN clanovi_projekta ON clanovi_projekta.korisnik_ID = korisnik.ID) " +
+                     "INNER JOIN projekt ON projekt.ID = clanovi_projekta.projekt_ID WHERE projekt.naziv = '" + SessionProjekt.dohvatiTrenutniProjekt().Naslov + "';");
 
-            // Ažuriranje zapisa u bazi podataka s formatiranim datumima
-            /*int upis = baza.BazaWrite("UPDATE zadatak " +
-                "SET naziv = '" + DodajZadatakNazivTextBox.Text + "', " +
-                "opis = '" + DodajZadatakOpisRichTextBox.Text + "', " +
-                "vrijeme_pocetak = '" + formatiraniPocetak + "', " +
-                "vrijeme_kraj = '" + formatiraniKraj + "' " +
-                "WHERE ID = " + SessionZadatak.Id + ";");
-            */
-            //Dohvaća statuse zadataka iz json datoteke i mijenja ih po potrebi
-            dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
-            foreach (var obj in jsonFile)
-            {
-                if ((string)obj["Zadatak_ID"] == SessionZadatak.Id)
-                {
-                    obj["Status"] = UrediZadatakStatusComboBox.SelectedItem.ToString();
-                    break;
+                    string adminID = null;
+                    foreach (List<string> clan in clanovi)
+                    {
+                        if ((string)clan[1] == "True")
+                        {
+                            adminID = clan[0].ToString();
+                        }
+                    }
+
+                    for (int i = 0; i < UrediZadatakClanoviListBox.Items.Count; i++)
+                    {
+                        if (UrediZadatakClanoviListBox.GetItemCheckState(i).ToString().Equals("Checked"))
+                        {
+                            noviParovi.Add(UrediZadatakClanoviListBox.Items[i].ToString(), true);
+                        }
+                        else
+                        {
+                            noviParovi.Add(UrediZadatakClanoviListBox.Items[i].ToString(), false);
+                        }
+                    }
+
+                    List<string> dodani = new List<string>();
+                    List<string> izbrisani = new List<string>();
+
+                    foreach (KeyValuePair<string, bool> entry1 in noviParovi)
+                    {
+                        foreach (KeyValuePair<string, bool> entry2 in trenutniParovi)
+                        {
+                            if (entry1.Key.Equals(entry2.Key) && !entry1.Value.Equals(entry2.Value))
+                            {
+                                if (entry1.Value.Equals(true) && entry2.Value.Equals(false)) dodani.Add(entry2.Key);
+                                else if (entry1.Value.Equals(false) && entry2.Value.Equals(true)) izbrisani.Add(entry2.Key);
+                            }
+                        }
+                    }
+
+                    List<string> idDodani = new List<string>();
+                    List<string> idIzbrisani = new List<string>();
+
+                    foreach (string imeDodani in dodani)
+                    {
+                        string id = baza.BazaRead("SELECT korisnik_ID FROM clanovi_projekta WHERE korisnik_ID in" +
+                                                    "(SELECT ID FROM korisnik where korisnik.ime & ' ' & korisnik.prezime = '" + imeDodani + "')" +
+                                                    " and projekt_ID in (SELECT ID from projekt where projekt.naziv = '" + SessionProjekt.dohvatiTrenutniProjekt().Naslov + "');");
+                        idDodani.Add(id);
+                    }
+
+                    foreach (string imeIzbrisani in izbrisani)
+                    {
+                        string id = baza.BazaRead("SELECT korisnik_ID FROM clanovi_projekta WHERE korisnik_ID in" +
+                                                    "(SELECT ID FROM korisnik where korisnik.ime & ' ' & korisnik.prezime = '" + imeIzbrisani + "')" +
+                                                    " and projekt_ID in (SELECT ID from projekt where projekt.naziv = '" + SessionProjekt.dohvatiTrenutniProjekt().Naslov + "');");
+                        idIzbrisani.Add(id);
+                    }
+
+
+                    if (!string.IsNullOrEmpty(SessionZadatak.Id))
+                    {
+                        XmlOperator.XmlZadatakAdd(SessionZadatak.Id, adminID, DodajZadatakNazivTextBox.Text, DodajZadatakOpisRichTextBox.Text, formatiraniPocetak, formatiraniKraj, idDodani, idIzbrisani, zadatakXMLputanja, zadatakNodes);
+                    }
+
                 }
+                
+                StartApk.MainFormManager.TrenutnaForma = new UrediZadatak();
             }
-            File.WriteAllText(@"..\..\statusZadatka.json", JsonConvert.SerializeObject(jsonFile, Formatting.Indented));
-            
-            //Brise članove zadatake ako su odkvačeni u listboxu
-            /*for (int i = 0; i < UrediZadatakClanoviListBox.Items.Count; i++)
-            {
-                if (UrediZadatakClanoviListBox.GetItemChecked(i) == false)
-                {
-                    baza.BazaDelete("DELETE clanovi_zadatka.* " +
-                        "FROM (clanovi_zadatka " +
-                        "INNER JOIN clanovi_projekta ON clanovi_zadatka.clan_projekta_ID = clanovi_projekta.ID) " +
-                        "INNER JOIN korisnik ON clanovi_projekta.korisnik_ID = korisnik.ID " +
-                        "WHERE korisnik.ime & ' ' & korisnik.prezime = '" + UrediZadatakClanoviListBox.Items[i] + "' " +
-                        "AND clanovi_zadatka.zadatak_ID = " + SessionZadatak.Id + ";");
-                };
-            }*/
-
-            TaskHistory newTask = new TaskHistory(Session.DohvatiKorisnikID(), DateTime.Now.ToString(), "zadatak uređen", SessionZadatak.Id);
-            TaskHistory.saveHistory(newTask);
-            StartApk.MainFormManager.TrenutnaForma = new UrediZadatak();
         }
 
         private void UrediZadatak_Load(object sender, EventArgs e)
@@ -292,6 +315,8 @@ namespace ntp_projekt
                     break;
                 }
             }
+
+            status = UrediZadatakStatusComboBox.Text;
         }
 
 

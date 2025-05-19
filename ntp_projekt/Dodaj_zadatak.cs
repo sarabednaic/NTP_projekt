@@ -94,8 +94,8 @@ namespace ntp_projekt
 
         private async void DodajZadatakButton_Click(object sender, EventArgs e)
         {
-            string formatiraniPocetak = DodajZadatakDateTimePicker1.Value.ToString("dd.MM.yyyy.");
-            string formatiraniKraj = DodajZadatakDateTimePicker2.Value.ToString("dd.MM.yyyy.");
+            string formatiraniPocetak = DodajZadatakDateTimePicker1.Value.ToString("MM/dd/yyyy");
+            string formatiraniKraj = DodajZadatakDateTimePicker2.Value.ToString("MM/dd/yyyy");
 
             //dodavanje zadatka u bazu podataka
             int upis = baza.BazaWrite("INSERT INTO zadatak (naziv, opis, vrijeme_pocetak, vrijeme_kraj) " +
