@@ -241,6 +241,17 @@ namespace ntp_projekt
                         XmlOperator.XmlZadatakAdd(SessionZadatak.Id, adminID, DodajZadatakNazivTextBox.Text, DodajZadatakOpisRichTextBox.Text, formatiraniPocetak, formatiraniKraj, idDodani, idIzbrisani, zadatakXMLputanja, zadatakNodes);
                     }
 
+                    dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
+                    foreach (var obj in jsonFile)
+                    {
+                        if ((string)obj["Zadatak_ID"] == SessionZadatak.Id)
+                        {
+                            obj["Status"] = UrediZadatakStatusComboBox.SelectedItem.ToString();
+                            break;
+                        }
+                    }
+                    File.WriteAllText(@"..\..\statusZadatka.json", JsonConvert.SerializeObject(jsonFile, Formatting.Indented));
+
                 }
                 
                 StartApk.MainFormManager.TrenutnaForma = new UrediZadatak();
