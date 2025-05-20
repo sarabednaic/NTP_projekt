@@ -114,10 +114,11 @@ namespace ntp_projekt
 
             if (UrediZadatakStatusComboBox.Text.Equals(status)) { test = true; }
 
+
             string admin = baza.BazaRead($"SELECT clanovi_projekta.admin FROM " +
              "(korisnik INNER JOIN clanovi_projekta ON clanovi_projekta.korisnik_ID = korisnik.ID) " +
              "INNER JOIN projekt ON projekt.ID = clanovi_projekta.projekt_ID WHERE projekt.naziv = '" + SessionProjekt.dohvatiTrenutniProjekt().Naslov +
-             "' and korisnik.ID = '" + Session.DohvatiKorisnikID() + "';");
+             "' And korisnik.ID = " + Session.DohvatiKorisnikID() + ";");
 
             if(admin.Equals("True")) { isAdmin = true; }
 
@@ -169,7 +170,7 @@ namespace ntp_projekt
                     TaskHistory.saveHistory(newTask);
                 }
                 else if (!isAdmin) {
-                    string zadatakXMLputanja = @"C:\xampp\htdocs\TeamPlan\Zadatak.xml";
+                    string zadatakXMLputanja = @"..\..\Zadatak.xml";
                     string zadatakNodes = "/Zadatci/Zadatak";
 
                     // Pretpostavimo da Access očekuje format datuma 'dd.MM.yyyy'
