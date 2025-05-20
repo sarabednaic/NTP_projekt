@@ -170,7 +170,7 @@ namespace ntp_projekt
                     TaskHistory.saveHistory(newTask);
                 }
                 else if (!isAdmin) {
-                    string zadatakXMLputanja = @"..\..\Zadatak.xml";
+                    string zadatakXMLputanja = @"C:\xampp\htdocs\TeamPlan\Zadatak.xml";
                     string zadatakNodes = "/Zadatci/Zadatak";
 
                     // Pretpostavimo da Access očekuje format datuma 'dd.MM.yyyy'
