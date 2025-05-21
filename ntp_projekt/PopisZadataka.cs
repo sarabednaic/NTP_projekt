@@ -51,17 +51,11 @@ namespace ntp_projekt
              "' And korisnik.ID = " + Session.DohvatiKorisnikID() + ";");
 
             if (admin.Equals("True")) {
-                PopisZadatkaControl kontrola = new PopisZadatkaControl();
-                kontrola.Admin = true;
-                kontrola.provjera();
                 PopisZadatakaAddButton.Enabled = true;
                 PopisZadatakaAddButton.Show();
                 PopisZadatakaAddButton.BackColor = Color.LightBlue;    
             }
             else {
-                PopisZadatkaControl kontrola = new PopisZadatkaControl();
-                kontrola.Admin = false;
-                kontrola.provjera();
                 PopisZadatakaAddButton.Enabled = false;
                 PopisZadatakaAddButton.Hide();
             }
@@ -77,6 +71,8 @@ namespace ntp_projekt
                         PopisZadatkaControl PopisZadatakaControl = new PopisZadatkaControl();
                         PopisZadatakaControl.Naslov = row[2].ToString();
                         PopisZadatakaControl.Opis = row[3].ToString();
+                        PopisZadatakaControl.Admin = Convert.ToBoolean(admin.ToString());
+                        PopisZadatakaControl.provjera();
                         PopisZadatakaZadatciFlowLayoutPanel.Controls.Add(PopisZadatakaControl);
 
                         dynamic jsonFile = JsonConvert.DeserializeObject(File.ReadAllText(@"..\..\statusZadatka.json"));
