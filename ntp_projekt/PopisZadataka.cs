@@ -50,8 +50,12 @@ namespace ntp_projekt
              "INNER JOIN projekt ON projekt.ID = clanovi_projekta.projekt_ID WHERE projekt.naziv = '" + SessionProjekt.dohvatiTrenutniProjekt().Naslov +
              "' And korisnik.ID = " + Session.DohvatiKorisnikID() + ";");
 
-            if (admin.Equals("True")) { PopisZadatakaAddButton.Enabled = true; }
-            else { PopisZadatakaAddButton.Enabled = false; }
+            if (admin.Equals("True")) { PopisZadatakaAddButton.Enabled = true;
+                PopisZadatakaAddButton.BackColor = Color.LightBlue;    
+            }
+            else { PopisZadatakaAddButton.Enabled = false;
+                PopisZadatakaAddButton.BackColor = Color.DimGray;
+            }
 
             Projekt trenutniProjekt = SessionProjekt.dohvatiTrenutniProjekt();
 
