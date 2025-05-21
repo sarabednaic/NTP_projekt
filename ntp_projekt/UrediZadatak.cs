@@ -183,7 +183,7 @@ namespace ntp_projekt
                             if (Check) {
                                 string clan_projekta_ID = baza.BazaRead("SELECT clanovi_projekta.ID FROM (clanovi_projekta INNER JOIN korisnik ON korisnik.ID = clanovi_projekta.korisnik_ID) "+
                                                                         "WHERE korisnik.ime & ' ' & korisnik.prezime = '"+ UrediZadatakClanoviListBox.Items[i] +"' AND clanovi_projekta.projekt_ID = "+ SessionProjekt.dohvatiTrenutniProjekt().Id +";");
-                                baza.BazaWrite("INSERT INTO clanovi_zadatka (clan_projekta_ID,zadatak_ID) VALUES (," + SessionZadatak.Id + ")");
+                                baza.BazaWrite("INSERT INTO clanovi_zadatka (clan_projekta_ID,zadatak_ID) VALUES ("+ clan_projekta_ID +"," + SessionZadatak.Id + ")");
                             }
                             
                         };
