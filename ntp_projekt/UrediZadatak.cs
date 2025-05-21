@@ -162,7 +162,7 @@ namespace ntp_projekt
                                 "FROM (clanovi_zadatka " +
                                 "INNER JOIN clanovi_projekta ON clanovi_zadatka.clan_projekta_ID = clanovi_projekta.ID) " +
                                 "INNER JOIN korisnik ON clanovi_projekta.korisnik_ID = korisnik.ID " +
-                                "WHERE korisnik.ime & ' ' & korisnik.prezime = '" + UrediZadatakClanoviListBox.Items[i].ToString() + "' " +
+                                "WHERE korisnik.ime & ' ' & korisnik.prezime = '" + UrediZadatakClanoviListBox.Items[i] + "' " +
                                 "AND clanovi_projekta.projekt_ID = "+ SessionProjekt.dohvatiTrenutniProjekt().Id + "" +
                                 "AND clanovi_zadatka.zadatak_ID = " + SessionZadatak.Id + ";");
                         }
@@ -174,15 +174,15 @@ namespace ntp_projekt
                             "FROM (clanovi_zadatka " +
                             "INNER JOIN clanovi_projekta ON clanovi_zadatka.clan_projekta_ID = clanovi_projekta.ID) " +
                             "INNER JOIN korisnik ON clanovi_projekta.korisnik_ID = korisnik.ID " +
-                            "WHERE korisnik.ime & ' ' & korisnik.prezime = '" + UrediZadatakClanoviListBox.Items[i].ToString() + "' " +
+                            "WHERE korisnik.ime & ' ' & korisnik.prezime = '" + UrediZadatakClanoviListBox.Items[i] + "' " +
                             "AND clanovi_projekta.projekt_ID = " + SessionProjekt.dohvatiTrenutniProjekt().Id + "" +
                             "AND clanovi_zadatka.zadatak_ID = " + SessionZadatak.Id + ";");
 
-                            if(provjera == null) Check = true;
+                            if(provjera.Count == 0) Check = true;
 
                             if (Check) {
                                 string clan_projekta_ID = baza.BazaRead("SELECT clanovi_projekta.ID FROM (clanovi_projekta INNER JOIN korisnik ON korisnik.ID = clanovi_projekta.korisnik_ID) "+
-                                                                        "WHERE korisnik.ime & ' ' & korisnik.prezime = '"+ UrediZadatakClanoviListBox.Items[i].ToString() +"' AND clanovi_projekta.projekt_ID = "+ SessionProjekt.dohvatiTrenutniProjekt().Id +";");
+                                                                        "WHERE korisnik.ime & ' ' & korisnik.prezime = '"+ UrediZadatakClanoviListBox.Items[i] +"' AND clanovi_projekta.projekt_ID = "+ SessionProjekt.dohvatiTrenutniProjekt().Id +";");
                                 baza.BazaWrite("INSERT INTO clanovi_zadatka (clan_projekta_ID,zadatak_ID) VALUES ("+ clan_projekta_ID +"," + SessionZadatak.Id + ")");
                                 Check = false;
                             }
