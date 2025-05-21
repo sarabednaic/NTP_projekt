@@ -54,7 +54,7 @@ namespace ntp_projekt
                 PopisZadatakaAddButton.BackColor = Color.LightBlue;    
             }
             else { PopisZadatakaAddButton.Enabled = false;
-                PopisZadatakaAddButton.BackColor = Color.DimGray;
+                PopisZadatakaAddButton.BackColor = Color.LightGray;
             }
 
             Projekt trenutniProjekt = SessionProjekt.dohvatiTrenutniProjekt();
