@@ -51,10 +51,11 @@ namespace ntp_projekt
              "' And korisnik.ID = " + Session.DohvatiKorisnikID() + ";");
 
             if (admin.Equals("True")) { PopisZadatakaAddButton.Enabled = true;
+                PopisZadatakaAddButton.Show();
                 PopisZadatakaAddButton.BackColor = Color.LightBlue;    
             }
             else { PopisZadatakaAddButton.Enabled = false;
-                PopisZadatakaAddButton.BackColor = Color.LightGray;
+                PopisZadatakaAddButton.Hide();
             }
 
             Projekt trenutniProjekt = SessionProjekt.dohvatiTrenutniProjekt();

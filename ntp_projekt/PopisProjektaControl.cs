@@ -65,10 +65,15 @@ namespace ntp_projekt
             {
                 PopisProjektaControlEditButton.Enabled = false;
                 PopisProjektaControlDeleteButton.Enabled = false;
+                PopisProjektaControlEditButton.Hide();
+                PopisProjektaControlDeleteButton.Hide();
             }
             else {
                 PopisProjektaControlEditButton.Enabled = true;
                 PopisProjektaControlDeleteButton.Enabled = true;
+                PopisProjektaControlEditButton.Show();
+                PopisProjektaControlDeleteButton.Show();
+
             }
         }
 
