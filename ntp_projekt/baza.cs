@@ -350,10 +350,7 @@ namespace ntp_projekt
                     {
                         command.Parameters.AddRange(parameters);
                         int rowsAffected = command.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            MessageBox.Show($"Uspješno obrisano.");
-                        }
+                        
                         return 0;
                         
                     }
