@@ -6,6 +6,11 @@ namespace ntp_projekt
 {
     public partial class PopisZadatkaControl : UserControl
     {
+        Boolean admin;
+
+        
+
+
         public string Naslov
         {
             set { PZControlNaslovLabel.Text = value; }
@@ -28,6 +33,22 @@ namespace ntp_projekt
         {
             set { PZControlStatusButton.BackColor = value; }
             get { return PZControlStatusButton.BackColor; }
+        }
+
+        public Boolean Admin { get { return admin; } set { admin = value; } }
+
+        public void provjera() {
+            if (!Admin)
+            {
+                PZControlDeleteButton.Enabled = false;
+                PZControlDeleteButton.Hide();
+            }
+            else
+            {
+                PZControlDeleteButton.Enabled = true;
+                PZControlDeleteButton.Show();
+
+            }
         }
 
         public PopisZadatkaControl()

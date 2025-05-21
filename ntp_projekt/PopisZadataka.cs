@@ -50,11 +50,19 @@ namespace ntp_projekt
              "INNER JOIN projekt ON projekt.ID = clanovi_projekta.projekt_ID WHERE projekt.naziv = '" + SessionProjekt.dohvatiTrenutniProjekt().Naslov +
              "' And korisnik.ID = " + Session.DohvatiKorisnikID() + ";");
 
-            if (admin.Equals("True")) { PopisZadatakaAddButton.Enabled = true;
+            if (admin.Equals("True")) {
+                PopisZadatkaControl kontrola = new PopisZadatkaControl();
+                kontrola.Admin = true;
+                kontrola.provjera();
+                PopisZadatakaAddButton.Enabled = true;
                 PopisZadatakaAddButton.Show();
                 PopisZadatakaAddButton.BackColor = Color.LightBlue;    
             }
-            else { PopisZadatakaAddButton.Enabled = false;
+            else {
+                PopisZadatkaControl kontrola = new PopisZadatkaControl();
+                kontrola.Admin = false;
+                kontrola.provjera();
+                PopisZadatakaAddButton.Enabled = false;
                 PopisZadatakaAddButton.Hide();
             }
 
