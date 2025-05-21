@@ -45,6 +45,13 @@ namespace ntp_projekt
                 $" inner join zadatak on zadatak.ID = clanovi_zadatka.zadatak_ID) " +
                 $" WHERE korisnik.korisnicko_ime = \"{User}\";");
 
+            string admin = baza.BazaRead($"SELECT clanovi_projekta.admin FROM " +
+             "(korisnik INNER JOIN clanovi_projekta ON clanovi_projekta.korisnik_ID = korisnik.ID) " +
+             "INNER JOIN projekt ON projekt.ID = clanovi_projekta.projekt_ID WHERE projekt.naziv = '" + SessionProjekt.dohvatiTrenutniProjekt().Naslov +
+             "' And korisnik.ID = " + Session.DohvatiKorisnikID() + ";");
+
+            if (admin.Equals("True")) { PopisZadatakaAddButton.Enabled = true; }
+            else { PopisZadatakaAddButton.Enabled = false; }
 
             Projekt trenutniProjekt = SessionProjekt.dohvatiTrenutniProjekt();
 
