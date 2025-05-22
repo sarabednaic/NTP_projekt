@@ -178,7 +178,7 @@ namespace ntp_projekt
                             "AND clanovi_projekta.projekt_ID = " + SessionProjekt.dohvatiTrenutniProjekt().Id + "" +
                             "AND clanovi_zadatka.zadatak_ID = " + SessionZadatak.Id + ";");
 
-                            if(provjera.Count == 0) Check = true;
+                            if(provjera == null) Check = true;
 
                             if (Check) {
                                 string clan_projekta_ID = baza.BazaRead("SELECT clanovi_projekta.ID FROM (clanovi_projekta INNER JOIN korisnik ON korisnik.ID = clanovi_projekta.korisnik_ID) "+
